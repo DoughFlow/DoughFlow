@@ -9,4 +9,4 @@ class StockMarketData(models.Model):
     volume = models.IntegerField()
 
     class Meta:
-        db_table = 'apple_stock_data'
+        db_table = 'stock_data'
