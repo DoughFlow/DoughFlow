@@ -1,6 +1,11 @@
 # write class for django data model
 
-The class should be located in the /python_server/app/migrations/models.py
+The class should be located in the /python_server/app/migrations/models.py on 
+the branch django_server
+
+## for hypertables
+timestamp must be primary key (postgres partitions based on primary key and 
+timescale partitions by timestamp)
 
 # run commands to migrate to db
 
