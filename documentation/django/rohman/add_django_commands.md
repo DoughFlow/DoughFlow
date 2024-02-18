@@ -10,4 +10,4 @@ python3 manage.py name_of_command_file
 
 for create_hypertable.py:
 
-python3 manage.py creat_hypertabl:
+python3 manage.py creat_hypertable
