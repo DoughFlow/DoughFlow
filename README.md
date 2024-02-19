@@ -24,31 +24,31 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Directories
 
-All files used by node live in the "frontend" directory
+All files used by node live in the "frontend" directory  
 
-app/api- Any Django API settings or interactable functions live here
+app/api- Any Django API settings or interactable functions live here    
 
-app/components- All JS components live in here
+app/components- All JS components live in here   
 
-app/layouts- RootLayout and custom page layouts
+app/layouts- RootLayout and custom page layouts   
 
-app/pages- All pages for app
+app/pages- All pages for app   
 
-app/styles- Any globally applied styles or css files
+app/styles- Any globally applied styles or css files  
 
 public/- Files that can be loaded directly to the root directory of NextJS app
 
 node_modules/- dependencies from NextJS, additional installs are listed here
     -N/A
 
-configuration files- any misc file found in root directory (./frontend)
-    -"next-env.d.ts" TypeScript declarations for NextJS env
-    -"next.config.mjs" Middleware for the NextJS build process
-    -"package.json" metadata on project and dependencies
-    -"package-lock.json" records of versioning for dependencies
-    -"postcss.config.js"
-    -"tsconfig.json" TypeScript compiler and configuration options
-    -"tailwind.config.ts" Tailwind CSS customization and configuration options
+configuration files- any misc file found in root directory (./frontend)  
+    -"next-env.d.ts" TypeScript declarations for NextJS env  
+    -"next.config.mjs" Middleware for the NextJS build process  
+    -"package.json" metadata on project and dependencies  
+    -"package-lock.json" records of versioning for dependencies  
+    -"postcss.config.js"  
+    -"tsconfig.json" TypeScript compiler and configuration options  
+    -"tailwind.config.ts" Tailwind CSS customization and configuration options  
 
 ## Learn More
 
