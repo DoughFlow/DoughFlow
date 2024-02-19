@@ -1,20 +1,16 @@
 # DoughFlow
 
-## Main Title
-
-![DoughFlow Icon](url/to/doughflow-icon.png)
-
-Welcome to DoughFlow, a collaborative project that integrates Django and NextJS to create a powerful web application for managing time-series data related to financial transactions.
+Welcome to DoughFlow, a collaborative project that integrates Django, {insert DB choice once made here} and NextJS to create a powerful web application for managing time-series data related to financial transactions.
 
 ### Django Stack
 
 #### Django Rest API
 
-Our Django backend serves as a robust REST API, providing seamless communication between the frontend and the database.
+Our Django backend will serve as a robust REST API, providing seamless communication between the frontend and the database.
 
 #### Django Python Object Interaction
 
-Utilizing Django's ORM, we ensure efficient interaction with the database, supporting both SQL and NoSQL data models.
+Utilizing Django's ORM, we will ensure efficient interaction with the database, allowing for a slightly abstracted (SQL or NoSQL) approach to data management.
 
 ### NextJS Stack
 
@@ -22,39 +18,49 @@ Utilizing Django's ORM, we ensure efficient interaction with the database, suppo
 
 In the NextJS frontend, we adhere to ECMA standards, employing components for modularity and maintainability.
 
-#### Use of Node.js and Other Services
+#### UI|UX focused application
 
-Node.js powers our NextJS application, enabling server-side rendering and enhancing overall performance. Additional services enhance the user experience.
+With a focus on creating a responsive and highly-customized UI we will use many of the features of both NextJS and node.js to optimize and bundle our application efficiently and effectively. Our UX will explore industry trends in component styles, coloring, and human-computer interaction.
 
-#### Overall Statement of NextJS as a Frontend Stack
+#### Overall Goals of Frontend Stack using NextJS
 
-NextJS, chosen as our frontend stack, excels in building dynamic, high-performance web applications. It complements our Django backend without being used as a full-stack solution.
+Create a plug-and-play frontend that can be easily integrated into an extensive django rest API with straightforward and organized components.
 
 ### Time-Series Dataset and Database
 
-We are currently exploring options for our time-series dataset and database. The choice between PostgreSQL and MongoDB is under consideration, and we welcome community input.
-
-### Database: PostgreSQL or MongoDB
+We are currently exploring options for our time-series dataset and database.(PostgreSQL and MongoDB or OracleDB)  
+### Database: (PostgreSQL, MongoDB, or some Oracle DB)
 
 #### Time-Series Data Format and Usage
 
-Our time-series data involves the recording of financial transactions over time, capturing essential information like datetime, stock ticker, open, close, and volume.
+Our time-series data involves the recording of financial transactions over time, capturing information like datetime, stock ticker, open, close, and volume.
 
 #### Connection and Maintenance
 
-The connection between the Django backend API and the chosen database (PostgreSQL or MongoDB) is carefully established and maintained to ensure data integrity and reliability.
+The connection between the Django backend API and the chosen database (PostgreSQL or MongoDB) will be carefully established and maintained to ensure data integrity and reliability.  
 
 #### Example Schema
 
 ##### SQL (Time-Series Structure)
 
 ```sql
-CREATE TABLE financial_data (
-    id SERIAL PRIMARY KEY,
+TABLE financial_data (
+    id _ID PRIMARY KEY,
     datetime TIMESTAMP,
     stock_ticker VARCHAR(10),
     open DECIMAL,
     close DECIMAL,
     volume INT
-);
+);  
 
+##### NoSQL (Time-Series Structure)
+
+{
+    "_id": ObjectId("5f43a7d8c9e77c4e3b3f36c4"),  
+    "datetime": ISODate("2024-02-18T12:00:00Z"),  
+    "open": 150.0,  
+    "high": 155.0,  
+    "low": 145.0,  
+    "close": 152.0,  
+    "volume": 1000000  
+}
