@@ -15,6 +15,7 @@ services:
         build:
             context: ./django
             dockerfile: Dockerfile
+        # REMOVE HOST PORT BINDING BEFORE DEPLOYING
         ports:
           - "8000:8000"
         volumes:
