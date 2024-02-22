@@ -2,9 +2,8 @@ version: "3.8"
 
 services:
     nginx:
-        build:
-            context: ./nginx
-            dockerfile: Dockerfile
+        # Temp image until github action is implemented
+        image: freesaid/doughflow-nginx:latest
         ports:
           - "80:80"
           - "443:443"
@@ -13,11 +12,6 @@ services:
           - nextjs
    
     django:
-        build:
-            context: ./django
-            dockerfile: Dockerfile
-
+        image: freesaid/doughflow-django:latest
     nextjs:
-        build:
-            context: ./frontend
-            dockerfile: Dockerfile
+        image: freesaid/doughflow-nextjs:latest
