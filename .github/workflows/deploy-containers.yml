@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-      push-nginx-image:
+      Nginx-Image:
         runs-on: ubuntu-latest
         defaults:
           run:
@@ -17,17 +17,16 @@ jobs:
             uses: actions/checkout@main
 
           - name: 'Login to GitHub Container Registry'
-            uses: docker/login-action@v1
-            with:
-              registry: ghcr.io
-              username: ${{github.actor}}
-              password: ${{secrets.CONTAINER_REGISTRY_KEY}}
+            run: echo ${{ secrets.CONTAINER_REGISTRY_KEY }} | docker login docker.pkg.github.com -u ${{ github.repository }} --password-stdin
 
           - name: 'Build Nginx Image'
-            run: |
-              docker build . --tag ghcr.io/messerli-wallace/doughflow-nginx:latest
-              docker push ghcr.io/messerli-wallace/doughflow-nginx:latest
-      push-django-image:
+            run: docker build -t docker.pkg.github.com/messerli-wallace/doughflow/nginx:latest
+
+          - name: 'Push Nginx Image'
+            if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+            run: docker push docker.pkg.github.com/messerli-wallace/doughflow/nginx:latest
+
+      Django-Image:
         runs-on: ubuntu-latest
         defaults:
           run:
@@ -36,14 +35,12 @@ jobs:
           - name: 'Checkout GitHub Action'
             uses: actions/checkout@main
 
-          - name: 'Login to Github Container Registry'
-            uses: docker/login-action@v1
-            with:
-              registry: ghcr.io
-              username: ${{github.actor}}
-              password: ${{secrets.CONTAINER_REGISTRY_KEY}}
+          - name: 'Login to GitHub Container Registry'
+            run: echo ${{ secrets.CONTAINER_REGISTRY_KEY }} | docker login docker.pkg.github.com -u ${{ github.repository }} --password-stdin
 
           - name: 'Build Django Image'
-            run: |
-              docker build . --tag ghcr.io/messerli-wallace/doughflow-django:latest
-              docker push ghcr.io/messerli-wallace/doughflow-django:latest
+            run: docker build -t docker.pkg.github.com/messerli-wallace/doughflow/django:latest
+
+          - name: 'Push Django Image'
+            if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+            run: docker push docker.pkg.github.com/messerli-wallace/doughflow/django:latest 
