@@ -20,7 +20,7 @@ jobs:
             run: echo ${{ secrets.CONTAINER_REGISTRY_KEY }} | docker login docker.pkg.github.com -u ${{ github.repository }} --password-stdin
 
           - name: 'Build Nginx Image'
-            run: docker build -t docker.pkg.github.com/messerli-wallace/doughflow/nginx:latest
+            run: docker build -t docker.pkg.github.com/messerli-wallace/doughflow/nginx:latest .
 
           - name: 'Push Nginx Image'
             if: github.ref == 'refs/heads/main' && github.event_name == 'push'
@@ -39,7 +39,7 @@ jobs:
             run: echo ${{ secrets.CONTAINER_REGISTRY_KEY }} | docker login docker.pkg.github.com -u ${{ github.repository }} --password-stdin
 
           - name: 'Build Django Image'
-            run: docker build -t docker.pkg.github.com/messerli-wallace/doughflow/django:latest
+            run: docker build -t docker.pkg.github.com/messerli-wallace/doughflow/django:latest .
 
           - name: 'Push Django Image'
             if: github.ref == 'refs/heads/main' && github.event_name == 'push'
