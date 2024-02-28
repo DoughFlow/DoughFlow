@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-    nginx:
+  nginx:
         # Temp image until github action is implemented
-        image: freesaid/doughflow-nginx:latest
+        image: ghcr.io/messerli-wallace/doughflow/nginx:latest
         ports:
           - "80:80"
           - "443:443"
@@ -12,6 +12,6 @@ services:
           - nextjs
    
     django:
-        image: freesaid/doughflow-django:latest
+        image: ghcr.io/messerli-wallace/doughflow/django:latest
     nextjs:
         image: freesaid/doughflow-nextjs:latest
