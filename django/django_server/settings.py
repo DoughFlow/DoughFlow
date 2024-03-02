@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
-SQL_PASSWORD = os.getenv('SQL_PASSWORD')
+SQL_PASSWORD = os.getenv("SQL_PASSWORD")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -76,18 +76,16 @@ WSGI_APPLICATION = "django_server.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_db',
-        'USER': 'django_user',
-        'PASSWORD': SQL_PASSWORD,
-        'HOST': 'localhost',
-        'PORT': '5432',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "stockdata",
+        "USER": "django_user",
+        "PASSWORD": SQL_PASSWORD,
+        "HOST": "ec2-3-137-223-121.us-east-2.compute.amazonaws.com",  # Your EC2 instance's public DNS or IP
+        "PORT": "5432",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
