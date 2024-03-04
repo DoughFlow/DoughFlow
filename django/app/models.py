@@ -1,4 +1,7 @@
 from django.db import models
+from django.db.models import Max, Min, F
+from datetime import timedelta
+import datetime
 
 
 class StockMarketData(models.Model):
@@ -13,3 +16,37 @@ class StockMarketData(models.Model):
 
     class Meta:
         db_table = 'stock_data'
+
+    @staticmethod
+    def get_aggregated_data(ticker, candle_time=1440):
+        now = datetime.datetime.now()
+        one_month_ago = now - timedelta(days=30)
+
+        # Get the latest timestamp in the database to ensure we are working with the latest data
+        latest_timestamp = StockMarketData.objects.filter(ticker=ticker).aggregate(Max('timestamp'))['timestamp__max']
+        if latest_timestamp:
+            one_month_ago = latest_timestamp - timedelta(days=30)
+
+        # Aggregate query to get the first open, last close, max high, min low, and sum volume
+        aggregation = StockMarketData.objects.filter(
+            ticker=ticker,
+            timestamp__gte=one_month_ago,
+            candle_time=candle_time
+        ).annotate(
+            date=F('timestamp__date')
+        ).values(
+            'date'
+        ).annotate(
+            open_price=Min('timestamp'),
+            close_price=Max('timestamp'),
+            max_high=Max('high_price'),
+            min_low=Min('low_price'),
+            total_volume=Sum('volume')
+        ).order_by('date')
+
+        # Adjust the query to get the first open and last close
+        for day_data in aggregation:
+            day_data['open_price'] = StockMarketData.objects.filter(timestamp=day_data['open_price']).first().open_price
+            day_data['close_price'] = StockMarketData.objects.filter(timestamp=day_data['close_price']).last().close_price
+
+        return aggregation
