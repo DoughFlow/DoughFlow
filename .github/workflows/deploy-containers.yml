@@ -36,7 +36,7 @@ jobs:
           - name: 'Build Nginx Image'
             uses: docker/build-push-action@v5
             with:
-              context: .
+              context: ./nginx
               push: true
               tags: ${{ steps.meta.outputs.tags }}
               labels: ${{ steps.meta.outputs.labels }}    
@@ -66,7 +66,7 @@ jobs:
           - name: 'Build Django Image'
             uses: docker/build-push-action@v5
             with:
-              context: .
+              context: ./django
               push: true
               tags: ${{ steps.meta.outputs.tags }}
               labels: ${{ steps.meta.outputs.labels }}
