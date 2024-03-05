@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "app",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -79,10 +80,10 @@ WSGI_APPLICATION = "django_server.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "stockdata",
+        "NAME": "django_data",
         "USER": "django_user",
         "PASSWORD": SQL_PASSWORD,
-        "HOST": "ec2-3-137-223-121.us-east-2.compute.amazonaws.com",  # Your EC2 instance's public DNS or IP
+        "HOST": "ec2-3-137-223-121.us-east-2.compute.amazonaws.com",
         "PORT": "5432",
     }
 }
