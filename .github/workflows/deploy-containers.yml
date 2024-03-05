@@ -13,9 +13,11 @@ env:
 jobs:
       Nginx-Image:
         runs-on: ubuntu-latest
-        defaults:
-          run:
-            working-directory: './nginx'
+
+        permissions:
+          contents: read
+          packages: write
+        
         steps:
           - name: 'Checkout GitHub Action'
             uses: actions/checkout@main
@@ -43,9 +45,11 @@ jobs:
 
       Django-Image:
         runs-on: ubuntu-latest
-        defaults:
-          run:
-            working-directory: './django'
+
+        permissions:
+          contents: read
+          packages: write
+        
         steps:
           - name: 'Checkout GitHub Action'
             uses: actions/checkout@main
