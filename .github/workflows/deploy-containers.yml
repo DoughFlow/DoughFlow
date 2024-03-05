@@ -8,13 +8,16 @@ on:
 
 env:
   REGISTRY: ghcr.io
+  REPOSITORY_NAME: ${{ github.repository }}
 
 jobs:
       Nginx-Image:
         runs-on: ubuntu-latest
-        defaults:
-          run:
-            working-directory: './nginx'
+
+        permissions:
+          contents: read
+          packages: write
+        
         steps:
           - name: 'Checkout GitHub Action'
             uses: actions/checkout@main
@@ -30,21 +33,23 @@ jobs:
             id: meta
             uses: docker/metadata-action@v5
             with:
-              images: ${{ env.REGISSTRY }}/nginx
+              images: ${{ env.REGISTRY }}/${{ env.REPOSITORY_NAME }}/nginx
 
           - name: 'Build Nginx Image'
             uses: docker/build-push-action@v5
             with:
-              context: .
+              context: ./nginx
               push: true
               tags: ${{ steps.meta.outputs.tags }}
               labels: ${{ steps.meta.outputs.labels }}    
 
       Django-Image:
         runs-on: ubuntu-latest
-        defaults:
-          run:
-            working-directory: './django'
+
+        permissions:
+          contents: read
+          packages: write
+        
         steps:
           - name: 'Checkout GitHub Action'
             uses: actions/checkout@main
@@ -60,12 +65,12 @@ jobs:
             id: meta
             uses: docker/metadata-action@v5
             with:
-              images: ${{ env.REGISSTRY }}/django
+              images: ${{ env.REGISTRY }}/${{ env.REPOSITORY_NAME }}/django
 
           - name: 'Build Django Image'
             uses: docker/build-push-action@v5
             with:
-              context: .
+              context: ./django
               push: true
               tags: ${{ steps.meta.outputs.tags }}
               labels: ${{ steps.meta.outputs.labels }}
