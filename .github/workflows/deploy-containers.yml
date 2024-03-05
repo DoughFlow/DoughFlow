@@ -31,7 +31,7 @@ jobs:
             id: meta
             uses: docker/metadata-action@v5
             with:
-              images: ${{ env.REGISSTRY }}/${{ env.REPOSITORY_NAME }}/nginx
+              images: ${{ env.REGISTRY }}/${{ env.REPOSITORY_NAME }}/nginx
 
           - name: 'Build Nginx Image'
             uses: docker/build-push-action@v5
@@ -61,7 +61,7 @@ jobs:
             id: meta
             uses: docker/metadata-action@v5
             with:
-              images: ${{ env.REGISSTRY }}/${{ env.REPOSITORY_NAME }}/django
+              images: ${{ env.REGISTRY }}/${{ env.REPOSITORY_NAME }}/django
 
           - name: 'Build Django Image'
             uses: docker/build-push-action@v5
