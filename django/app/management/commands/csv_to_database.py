@@ -25,8 +25,8 @@ class Command(BaseCommand):
             with transaction.atomic():  # Use a transaction to ensure data integrity
                 for row in reader:
                     # Ensure the timestamp is properly formatted
-                    timestamp_str = row['timestamp'] if ':' in row['timestamp'] else f"{row['timestamp']}:00"
-                    naive_timestamp = datetime.strptime(timestamp_str, '%m/%d/%y %H:%M')
+                    timestamp_str = row['timestamp']
+                    naive_timestamp = datetime.strptime(timestamp_str, '%Y-%m-%d %H:%M:%S')
                     localized_timestamp = eastern.localize(naive_timestamp)
 
                     # Calculate seconds since last timestamp
@@ -38,10 +38,10 @@ class Command(BaseCommand):
                     stock_market_data = StockMarketData(
                         timestamp=localized_timestamp,
                         ticker=ticker_symbol,  # Use the specified ticker for all rows
-                        open_price=row['open'],
-                        high_price=row['high'],
-                        low_price=row['low'],
-                        close_price=row['close'],
+                        open_price=row['open_price'],
+                        high_price=row['high_price'],
+                        low_price=row['low_price'],
+                        close_price=row['close_price'],
                         volume=row['volume'],
                         candle_time=delta  # Add the calculated seconds difference here
                     )

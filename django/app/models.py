@@ -1,8 +1,10 @@
 from django.db import models
+import uuid
 
 
 class StockMarketData(models.Model):
-    timestamp = models.DateTimeField(auto_now_add=True, db_index=True, primary_key=True)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    timestamp = models.DateTimeField(auto_now_add=True)
     ticker = models.CharField(max_length=25)
     open_price = models.DecimalField(max_digits=10, decimal_places=2)
     high_price = models.DecimalField(max_digits=10, decimal_places=2)
@@ -13,3 +15,4 @@ class StockMarketData(models.Model):
 
     class Meta:
         db_table = 'stock_data'
+        unique_together = (('timestamp', 'ticker'),)

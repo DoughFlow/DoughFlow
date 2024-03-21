@@ -7,6 +7,6 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         with connection.cursor() as cursor:
-            cursor.execute("SELECT create_hypertable('stock_data', by_range('timestamp'));")
+            cursor.execute("SELECT create_hypertable('stock_data', 'timestamp');");
             self.stdout.write(self.style.SUCCESS('Successfully created hypertable.'))
 

@@ -80,10 +80,10 @@ WSGI_APPLICATION = "django_server.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "django_data",
+        "NAME": "django_db",
         "USER": "django_user",
-        "PASSWORD": SQL_PASSWORD,
-        "HOST": "ec2-3-137-223-121.us-east-2.compute.amazonaws.com",
+        "PASSWORD": "1057",
+        "HOST": "localhost",
         "PORT": "5432",
     }
 }
