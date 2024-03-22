@@ -1,17 +1,49 @@
-version: "3.8"
+version: '3.8'
 
 services:
-    nginx:
-        # Temp image until github action is implemented
-        image: freesaid/doughflow-nginx:latest
-        ports:
-          - "80:80"
-          - "443:443"
-        depends_on:
-          - django
-          - nextjs
-   
-    django:
-        image: freesaid/doughflow-django:latest
-    nextjs:
-        image: freesaid/doughflow-nextjs:latest
+  db:
+    build: ./postgres
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  django:
+    build: ./django
+    command: >
+      sh -c "python manage.py collectstatic --noinput &&
+             gunicorn django_server.wsgi:application --bind 0.0.0.0:8000"
+    volumes:
+      - ./django:/app
+      - static_volume:/app/collected_static
+      - media_volume:/app/media
+      - /home/ethanrohman/git_repos/stock_data:/data/csv_files
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_NAME=${POSTGRES_DB}
+      - DB_USER=${POSTGRES_USER}
+      - DB_PASS=${POSTGRES_PASSWORD}
+      - DB_HOST=db
+      - DB_PORT=5432
+    depends_on:
+      - db
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - static_volume:/app/static
+      - media_volume:/app/media
+    depends_on:
+      - django
+
+volumes:
+  postgres_data:
+  static_volume:
+  media_volume:
+
