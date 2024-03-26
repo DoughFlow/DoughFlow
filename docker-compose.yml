@@ -23,3 +23,10 @@ services:
     depends_on:
       - django
 
+  #  front:
+    # build: ./frontend
+    # ports:
+
+    # depends_on:
+      #  - nginx
+
