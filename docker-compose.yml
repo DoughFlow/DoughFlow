@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: ghcr.io/doughflow/doughflow/nginx:main
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - django
+      - nextjs
+
+  django:
+    image: ghcr.io/doughflow/doughflow/django:main
+
+  nextjs:
+    # Temp remote
+    image: freesaid/doughflow-nextjs:latest

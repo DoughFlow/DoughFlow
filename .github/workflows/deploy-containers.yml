@@ -1,0 +1,76 @@
+name: Deploy Images to GHCR
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  REGISTRY: ghcr.io
+  REPOSITORY_NAME: ${{ github.repository }}
+
+jobs:
+      Nginx-Image:
+        runs-on: ubuntu-latest
+
+        permissions:
+          contents: read
+          packages: write
+        
+        steps:
+          - name: 'Checkout GitHub Action'
+            uses: actions/checkout@main
+
+          - name: 'Login to GitHub Container Registry'
+            uses: docker/login-action@v3
+            with:
+              registry: ${{ env.REGISTRY }}
+              username: ${{ github.actor }}
+              password: ${{ secrets.GITHUB_TOKEN }}
+
+          - name: 'Extract metadata for Docker'
+            id: meta
+            uses: docker/metadata-action@v5
+            with:
+              images: ${{ env.REGISTRY }}/${{ env.REPOSITORY_NAME }}/nginx
+
+          - name: 'Build Nginx Image'
+            uses: docker/build-push-action@v5
+            with:
+              context: ./nginx
+              push: true
+              tags: ${{ steps.meta.outputs.tags }}
+              labels: ${{ steps.meta.outputs.labels }}    
+
+      Django-Image:
+        runs-on: ubuntu-latest
+
+        permissions:
+          contents: read
+          packages: write
+        
+        steps:
+          - name: 'Checkout GitHub Action'
+            uses: actions/checkout@main
+
+          - name: 'Login to GitHub Container Registry'
+            uses: docker/login-action@v3
+            with:
+              registry: ${{ env.REGISTRY }}
+              username: ${{ github.actor }}
+              password: ${{ secrets.GITHUB_TOKEN }}
+
+          - name: 'Extract metadata for Docker'
+            id: meta
+            uses: docker/metadata-action@v5
+            with:
+              images: ${{ env.REGISTRY }}/${{ env.REPOSITORY_NAME }}/django
+
+          - name: 'Build Django Image'
+            uses: docker/build-push-action@v5
+            with:
+              context: ./django
+              push: true
+              tags: ${{ steps.meta.outputs.tags }}
+              labels: ${{ steps.meta.outputs.labels }}
