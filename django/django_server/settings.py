@@ -79,10 +79,10 @@ WSGI_APPLICATION = "django_server.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        'NAME': os.environ.get('DB_NAME', 'django_db'),
-        'USER': os.environ.get('DB_USER', 'django_user'),
-        'PASSWORD': os.environ.get('DB_PASS', '1057'),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),
+        'NAME': os.environ.get('POSTGRES_DB', 'django_db'),
+        'USER': os.environ.get('POSTGRES_USER', 'django_user'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', '1057'),
+        'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
         "PORT": "5432",
     }
 }
@@ -116,14 +116,6 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.0/howto/static-files/
-
-STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'collected_static'
-STATICFILES_DIRS = [BASE_DIR / 'static',]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
