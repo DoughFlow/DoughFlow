@@ -1,5 +1,6 @@
 "use client"
 import { Chart } from "@components/chart";
+import CandleChart from "@components/candlestick_ts";
 import CandlestickChart from "@components/candlestick";
 
 let data_test = [
@@ -171,7 +172,8 @@ let new_data = [
         },];
 
 // convert the datetime from string to Date
-new_data.forEach(item => {
+let new_data_date = new_data;
+new_data_date.forEach(item => {
     item.datetime = new Date(item.datetime) // typescript hates this but it works in this case
 });
 
@@ -183,7 +185,11 @@ export default function Home() {
           </div>
 
           <div>
-          <CandlestickChart newData={new_data}/>
+          <CandlestickChart newData={new_data_date}/>
+          </div>
+
+          <div>
+          <CandleChart newData={new_data}/>
           </div>
         </main>
       );
