@@ -2,8 +2,7 @@ import React, { useEffect, useRef} from 'react';
 import * as d3 from 'd3';
 
 // https://medium.com/@suryanksingh/candle-stick-with-d3-js-023ae0831bc6
-// other potential sources:
-/* 
+/* other potential sources:
     *
     * https://gist.github.com/abeppu/1074045
     * https://codepen.io/jazon3008/pen/zgGjqN

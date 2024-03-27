@@ -169,6 +169,12 @@ let new_data = [
             "close": "182.63000",
             "volume": "54318900"
         },];
+
+// convert the datetime from string to Date
+new_data.forEach(item => {
+    item.datetime = new Date(item.datetime) // typescript hates this but it works in this case
+});
+
 export default function Home() {
   return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
