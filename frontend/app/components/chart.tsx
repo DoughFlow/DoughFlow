@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import { CSSProperties } from "react";
 
 export function Chart({ data }: { data: { value: number; date: Date }[] }) {
+    console.log("starting plot");
   let xScale = d3
     .scaleTime()
     .domain([data[0].date, data[data.length - 1].date])
@@ -20,6 +21,7 @@ export function Chart({ data }: { data: { value: number; date: Date }[] }) {
   let d = line(data);
 
   if (!d) {
+      console.log("no data!!!!!!!!\n");
     return null;
   }
 
