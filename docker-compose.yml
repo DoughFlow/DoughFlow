@@ -8,12 +8,8 @@ services:
       - ./django:/app
     ports:
       - "8000:8000"
-    environment:
-      - DB_NAME=${POSTGRES_DB}
-      - DB_USER=${POSTGRES_USER}
-      - DB_PASS=${POSTGRES_PASSWORD}
-      - DB_HOST=${POSTGRES_HOST}
-      - DB_PORT=5432
+    env_file:
+      - ./django/.secrets
 
   nginx:
     build: ./nginx
