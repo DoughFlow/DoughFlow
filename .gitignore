@@ -4,3 +4,4 @@ node_modules/
 .awskeycache
 .secrets
 .DS_Store
+.venv
