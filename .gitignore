@@ -1,1 +1,6 @@
 __pycache__/
+.next/
+node_modules/
+.awskeycache
+.secrets
+.DS_Store
