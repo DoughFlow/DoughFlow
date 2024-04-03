@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef} from 'react';
 import * as d3 from 'd3';
 
@@ -8,18 +9,124 @@ import * as d3 from 'd3';
     * https://codepen.io/jazon3008/pen/zgGjqN
     * https://observablehq.com/@d3/candlestick-chart
     * */
-interface stock_data {
+interface StockData {
     datetime: Date;
     open: number;
     high: number;
     low: number;
     close: number;
-    volume: number;
 }
+/*
+ * CandleStick from observables*/
+const CandleStickChartObs = ({data}: {data: StockData[]}) => {
+    console.log(data.slice(0,2));
+    const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+    const width  = 928;
+    const height = 600;
 
-const CandleChart = ({newData}: {newData: stock_data[]}) => {
-  const data = Object.values(newData)
-  //console.log(data.slice(0,2));
+    //trying to make this a react element
+    const svgRef = useRef(null);
+
+    useEffect(() => {
+    d3.select(svgRef.current).selectAll('svg').remove();
+    
+    // declare positional encodings
+//    const x = d3.scaleBand()
+//        .domain(d3.utcDay
+//                .range(data.at(0)?.datetime, +data.at(-1).datetime + 1)
+//                .filter(d => d.getUTCDay() !== 0 && d.getUTCDay() !== 6))
+//        .range([margin.left, width-margin.right]).padding(0.2);
+
+
+    const x = d3.scaleBand()
+    .domain(
+        d3.utcDay
+            .range(data.at(0)?.datetime, +data.at(-1).datetime + 1)
+            .filter(d => d.getUTCDay() !== 0 && d.getUTCDay() !== 6)
+            .map(d => d.toISOString()) // Convert Date objects to string representations
+    )
+    .range([margin.left, width-margin.right]).padding(0.2);
+
+
+    const y = d3.scaleLog()
+        .domain([d3.min(data, d => d.low), d3.max(data, d => d.high)])
+        .rangeRound([height - margin.bottom, margin.top]);
+
+    // create SVG Containter
+    // const svg = d3.create("svg")
+    const svg = d3.select(svgRef.current)
+        .append('svg')
+        .attr("viewBox", [0, 0, width, height]);
+
+    // append the axes
+    svg.append("g")
+        .attr("transform",`translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x)
+                .tickValues(d3.utcMonday
+                    .every(width > 720 ? 1:2)
+                    .range(data.at(0).datetime, data.at(-1).datetime))
+                .tickFormat(d3.utcFormat("%-m/%-d")))
+        .call(g => g.select(".domain").remove());
+
+    svg.append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y)
+                .tickFormat(d3.format("$~f"))
+                .tickValues(d3.scaleLinear().domain(y.domain()).ticks()))
+        .call(g => g.selectAll(".tick line").clone()
+                .attr("stroke-opacity", 0.2)
+                .attr("x2", width - margin.left - margin.right))
+        .call(g => g.select(".domain").remove());
+
+    // create a group for each day of data, and append two lines to it
+    const g = svg.append("g")
+        .attr("stroke-linecap", "round")
+        .attr("stroke", "black")
+        .selectAll("g")
+        .data(data)
+        .join("g")
+        .attr("transform", d => `translate(${x(d.datetime.getUTCDay().toString())},0)`);
+
+    g.append("line")
+        .attr("y1", d => y(d.low))
+        .attr("y2", d => y(d.high));
+
+    g.append("line")
+        .attr("y1", d => y(d.open))
+        .attr("y2", d => y(d.close))
+        .attr("stroke-width", x.bandwidth())
+        .attr("stroke", d => d.open > d.close ? d3.schemeSet1[0]
+                : d.close > d.open ? d3.schemeSet1[2]
+                : d3.schemeSet1[8]);
+
+    // append a title (tooltip)
+    const formatDate = d3.utcFormat("%B %-d, %Y");
+    const formatValue = d3.format(".2f");
+    const formatChange = ((f) => (y0: number, y1: number) => f((y1 - y0) / y0))(d3.format("+.2%"));
+
+    g.append("title")
+        .text(d => `${formatDate(d.datetime)}
+Open: ${formatValue(d.open)}
+Close: ${formatValue(d.close)} (${formatChange(d.open, d.close)})
+Low: ${formatValue(d.low)}
+High: ${formatValue(d.high)}`);
+}, [data]);
+
+    return (
+    <div ref={svgRef} style={{width: 'auto', overflowX:'scroll'}}></div>)
+};
+
+export { CandleStickChartObs };
+
+
+
+/* 
+ * CandleChart from medium
+ * */
+const CandleChart = ({newData}: {newData: StockData[]}) => {
+  console.log("begining 'Medium' plot");
+  const data = newData;
+  console.log(data.slice(0,2));
   const svgRef = useRef(null);
 
   useEffect(() => {
@@ -51,11 +158,11 @@ const CandleChart = ({newData}: {newData: stock_data[]}) => {
     
     const xScale = d3.scaleBand()
                       .range([0, width])
-                      .domain(data.map((d) => d.datetime));
+                      .domain(data.map((d) => d.datetime)); // works even with errors
 
     const yScale = d3.scaleLinear()
                       .range([height, 0])
-                      .domain([d3.min(data, (d) => d.low), d3.max(data, (d) => d.high)]);
+                      .domain([d3.min(data, (d) => d.low), d3.max(data, (d) => d.high)]); // works with typescript errors
     
     
     g.selectAll('.candle')
@@ -129,5 +236,5 @@ const CandleChart = ({newData}: {newData: stock_data[]}) => {
   );
 };
 
+export {CandleChart};
 
-export default CandleChart;
