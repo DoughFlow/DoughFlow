@@ -2,6 +2,13 @@ __pycache__/
 .next/
 node_modules/
 .awskeycache
+<<<<<<< HEAD
 .secrets
 .DS_Store
 .venv
+=======
+.next/
+node_modules/
+npm-debug.log*
+.DS_Store
+>>>>>>> 07d3270 (Made Next directory)

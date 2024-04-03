@@ -2,20 +2,20 @@ version: '3.8'
 
 services:
   django:
+    container_name: df-dev-frontend-django
     build: ./django
     command: gunicorn django_server.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./django:/app
     ports:
       - "8000:8000"
-    environment:
-      - DB_NAME=${POSTGRES_DB}
-      - DB_USER=${POSTGRES_USER}
-      - DB_PASS=${POSTGRES_PASSWORD}
-      - DB_HOST=${POSTGRES_HOST}
-      - DB_PORT=5432
+    env_file:
+      - .env  # Specify the path to your .env file
+    depends_on:
+      - db
 
   nginx:
+    container_name: df-dev-frontend-nginx
     build: ./nginx
     ports:
       - "80:80"
@@ -23,10 +23,18 @@ services:
     depends_on:
       - django
 
-  #  front:
-    # build: ./frontend
-    # ports:
+  frontend:
+    container_name: df-dev-frontend-frontend
+    build: ./next
+    ports:
+      - "3000:3000"  # Assuming your frontend runs on port 3000
+    depends_on:
+      - nginx
 
-    # depends_on:
-      #  - nginx
-
+  db:
+    container_name: df-dev-frontend-db
+    image: postgres:16
+    env_file:
+      - .env  # Specify the path to your .env file
+    ports:
+      - "5432:5432"  # Mapping PostgreSQL port to the host
