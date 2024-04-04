@@ -4,20 +4,6 @@ import { CandleChart, CandleStickChartObs } from "@components/candlestick_ts";
 import {CandlestickChart, CandleStickChart_Obs} from "@components/candlestick";
 import DummyData from "./loader";
 
-let data_test = [
-        { value: 10, date: new Date("2024-03-26") },
-        { value: 20, date: new Date("2024-03-27") },
-        { value: 15, date: new Date("2024-03-28") },
-        { value: 25, date: new Date("2024-03-29") },
-        { value: 18, date: new Date("2024-03-30") },
-        { value: 22, date: new Date("2024-03-31") },
-        { value: 30, date: new Date("2024-04-01") },
-        { value: 17, date: new Date("2024-04-02") },
-        { value: 29, date: new Date("2024-04-03") },
-        { value: 35, date: new Date("2024-04-04") },
-        // Add more data items as needed
-    ];
-
 let new_data = [
         {
             "datetime": "2024-03-22",
@@ -84,6 +70,7 @@ export default function Home() {
           </div>
 */}
           <CandleChart newData={ddata.values}/>
+          <Chart data={ddata.values}/>
           <CandleStickChartObs data={ddata.values}/>
         </main>
       );
