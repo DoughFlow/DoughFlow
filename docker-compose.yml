@@ -12,7 +12,8 @@ services:
     env_file:
       - .env  # Specify the path to your .env file
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
   nginx:
     container_name: df-dev-frontend-nginx
@@ -22,19 +23,25 @@ services:
       - "443:443"
     depends_on:
       - django
+      - frontend
 
   frontend:
     container_name: df-dev-frontend-frontend
     build: ./next
     ports:
       - "3000:3000"  # Assuming your frontend runs on port 3000
-    depends_on:
-      - nginx
+    hostname: nextjs
 
   db:
     container_name: df-dev-frontend-db
     image: postgres:16
     env_file:
       - .env  # Specify the path to your .env file
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
+      interval: 15s
+      timeout: 60s
+      retries: 3
+      start_period: 10s  
     ports:
       - "5432:5432"  # Mapping PostgreSQL port to the host
