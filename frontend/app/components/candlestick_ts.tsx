@@ -19,7 +19,8 @@ interface StockData {
 /*
  * CandleStick from observables*/
 const CandleStickChartObs = ({data}: {data: StockData[]}) => {
-    console.log(data.slice(0,2));
+    console.log("starting observable plot");
+    //console.log(data.slice(0,2));
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
     const width  = 928;
     const height = 600;
@@ -126,7 +127,7 @@ export { CandleStickChartObs };
 const CandleChart = ({newData}: {newData: StockData[]}) => {
   console.log("begining 'Medium' plot");
   const data = newData;
-  console.log(data.slice(0,2));
+  //console.log(data.slice(0,2));
   const svgRef = useRef(null);
 
   useEffect(() => {
