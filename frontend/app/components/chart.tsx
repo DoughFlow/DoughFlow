@@ -36,7 +36,7 @@ export function Chart({ data }: { data: StockData[] }) {
     }
     return (
             <div
-            className="@container relative h-full w-full overflow-scroll"
+            className="grid grid-rows-2 grid-flow-col gap-4 @container relative h-full w-full overflow-scroll"
             style={
             {
             "--marginTop": "10px",
@@ -46,6 +46,7 @@ export function Chart({ data }: { data: StockData[] }) {
             } as CSSProperties
             }
             >
+            <div>
             {/* Chart area */}
             <svg
             className="absolute inset-0
@@ -105,48 +106,7 @@ export function Chart({ data }: { data: StockData[] }) {
                     ))}
         </svg>
             </svg>
-
-            {/* X axis */}
-        <svg
-            className="overflow-scroll absolute inset-x-0 bottom-0
-            h-[calc(100%-var(--marginTop))]
-            w-[calc(100%-var(--marginLeft)-var(--marginRight))]
-            translate-x-[var(--marginLeft)]
-            translate-y-[var(--marginTop)]
-            "
-            >
-            {data.map((day, i) => (
-                        <g key={i} className="overflow-visible font-medium text-gray-500">
-                        <text
-                        x={`${xScale(day.datetime)}%`}
-                        y="100%"
-                        textAnchor={'center'}
-                        /*{
-                          i === 0 ? "start" : i === data.length - 1 ? "end" : "middle"
-                          }*/
-                        fill="currentColor"
-                        className="@sm:inline hidden text-sm"
-                        >
-                        {format(day.datetime, "EEE")}
-                        </text>
-                        {/*
-                            <text
-                            x={`${xScale(day.datetime)}%`}
-                            y="100%"
-                            textAnchor={
-                            i === 0 ? "start" : i === data.length - 1 ? "end" : "middle"
-                            }
-                            fill="currentColor"
-                            className="@sm:hidden text-xs"
-                            >
-                            {format(day.datetime, "EEEEE")}
-                            </text>
-                            */}
-            </g>
-                ))}
-        </svg>
-
-        {/* Y axis */}
+            {/* Y axis */}
         <svg
             className="absolute inset-0
             h-[calc(100%-var(--marginTop)-var(--marginBottom))]
@@ -171,6 +131,48 @@ export function Chart({ data }: { data: StockData[] }) {
                                 ))}
                 </g>
                     </svg>
+
+                    </div>
+                    {/* X axis */}
+                <svg
+                    className="overflow-scroll absolute inset-x-0 bottom-0
+                    h-[calc(100%-var(--marginTop))]
+                    w-[calc(100%-var(--marginLeft)-var(--marginRight))]
+                    translate-x-[var(--marginLeft)]
+                    translate-y-[var(--marginTop)]
+                    "
+                    >
+                    {data.map((day, i) => (
+                                <g key={i} className="overflow-visible font-medium text-gray-500">
+                                <text
+                                x={`${xScale(day.datetime)}%`}
+                                y="100%"
+                                textAnchor={'center'}
+                                /*{
+                                  i === 0 ? "start" : i === data.length - 1 ? "end" : "middle"
+                                  }*/
+                                fill="currentColor"
+                                className="@sm:inline hidden text-sm"
+                                >
+                                {format(day.datetime, "EEE")}
+                                </text>
+                                {/*
+                                    <text
+                                    x={`${xScale(day.datetime)}%`}
+                                    y="100%"
+                                    textAnchor={
+                                    i === 0 ? "start" : i === data.length - 1 ? "end" : "middle"
+                                    }
+                                    fill="currentColor"
+                                    className="@sm:hidden text-xs"
+                                    >
+                                    {format(day.datetime, "EEEEE")}
+                                    </text>
+                                    */}
+                    </g>
+                        ))}
+                </svg>
+
 
                     </div>
                     );
