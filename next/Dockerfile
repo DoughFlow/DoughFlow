@@ -21,4 +21,3 @@ EXPOSE 3000
 
 # Command to run the Next.js application
 CMD ["npm", "start"]
-
