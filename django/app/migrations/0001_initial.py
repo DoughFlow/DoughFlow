@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             name='StockMarketData',
             fields=[
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
-                ('timestamp', models.DateTimeField(auto_now_add=True, db_index=True)),
+                ('timestamp', models.DateField(db_index=True)),
                 ('ticker', models.CharField(max_length=25)),
                 ('open_price', models.DecimalField(decimal_places=2, max_digits=10)),
                 ('high_price', models.DecimalField(decimal_places=2, max_digits=10)),
