@@ -9,3 +9,9 @@ class StockDataView(APIView):
         stock_data = StockMarketData.objects.all()
         serializer = StockMarketDataSerializer(stock_data, many=True)
         return Response(serializer.data)
+
+class TickerDynamicView(APIView):
+    def get(self, request, my_ticker):
+        obj = StockMarketData.objects.filter(ticker=my_ticker)
+        serializer = StockMarketDataSerializer(obj, many=True)
+        return Response(serializer.data)
