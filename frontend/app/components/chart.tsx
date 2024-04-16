@@ -36,31 +36,43 @@ export function Chart({ data }: { data: StockData[] }) {
     }
     return (
             <div
-            className="grid grid-rows-2 grid-flow-col gap-4 @container relative h-full w-full overflow-scroll"
-            style={
-            {
-            "--marginTop": "10px",
-            "--marginRight": "8px",
-            "--marginBottom": "25px",
-            "--marginLeft": "25px",
-            } as CSSProperties
-            }
+            className="flex flex-col md:flex-row items-center justify-center"
             >
-            <div>
-            {/* Chart area */}
+
+            {/* Y axis */}
+            <div className="order-1 md:order-none">
             <svg
-            className="absolute inset-0
-            h-[calc(100%-var(--marginTop)-var(--marginBottom))]
-            w-[calc(100%-var(--marginLeft)-var(--marginRight))]
-            translate-x-[var(--marginLeft)]
-            translate-y-[var(--marginTop)]
-            "
             >
-            <svg
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            >
-            {/* Grid lines */}
+            <g>
+            {yScale
+            .ticks(8)
+            .map(yScale.tickFormat(8, "d"))
+            .map((value, i) => (
+                        <text
+                        key={i}
+                        y={`${yScale(+value)}%`}
+                        alignmentBaseline="middle"
+                        textAnchor="start" // was end, that made it dis
+                        className="text-blue"
+                        fill="currentColor"
+                        >
+                        {value}
+                        </text>
+                        ))}
+    </g>
+        </svg>
+        </div>
+
+
+        <div className="order-2 md:order-none md:order-3 mt-4 md:ml-0">
+        {/* Chart area */}
+    <svg
+        >
+        <svg
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        >
+        {/* Grid lines */}
     {yScale
         .ticks(8)
             .map(yScale.tickFormat(8, "d"))
@@ -91,14 +103,14 @@ export function Chart({ data }: { data: StockData[] }) {
             vectorEffect="non-scaling-stroke"
             />
 
-            {/* Circles */}
+            {/* Data Points */}
         {data.map((d) => (
                     <path
                     key={d.datetime.toString()}
                     d={`M ${xScale(d.datetime)} ${yScale(d.open)} l 0.0001 0`}
                     vectorEffect="non-scaling-stroke"
                     strokeWidth="8"
-                    strokeLinecap="round"
+                    strokeLinecap="square"
                     fill="none"
                     stroke="currentColor"
                     className="text-gray-400"
@@ -106,75 +118,46 @@ export function Chart({ data }: { data: StockData[] }) {
                     ))}
         </svg>
             </svg>
-            {/* Y axis */}
+
+            </div>
+
+            {/* X axis */}
+            <div className="order-3 md:order-none md:order-2 mt-4 md:mt-0">
         <svg
-            className="absolute inset-0
-            h-[calc(100%-var(--marginTop)-var(--marginBottom))]
-            translate-y-[var(--marginTop)]
-            "
             >
-            <g className="translate-x-4">
-            {yScale
-                .ticks(8)
-                    .map(yScale.tickFormat(8, "d"))
-                    .map((value, i) => (
-                                <text
-                                key={i}
-                                y={`${yScale(+value)}%`}
-                                alignmentBaseline="middle"
-                                textAnchor="end"
-                                className="text-xs tabular-nums text-gray"
-                                fill="currentColor"
-                                >
-                                {value}
-                                </text>
-                                ))}
-                </g>
-                    </svg>
+            {data.map((day, i) => (
+                        <g key={i} className="overflow-visible font-medium text-gray-500">
+                        <text
+                        x={`${xScale(day.datetime)}%`}
+                        y="100%"
+                        textAnchor={'center'}
+                        /*{
+                          i === 0 ? "start" : i === data.length - 1 ? "end" : "middle"
+                          }*/
+                        fill="currentColor"
+                        className="@sm:inline hidden text-sm"
+                        >
+                        {format(day.datetime, "EEE")}
+                        </text>
+                        {/*
+                            <text
+                            x={`${xScale(day.datetime)}%`}
+                            y="100%"
+                            textAnchor={
+                            i === 0 ? "start" : i === data.length - 1 ? "end" : "middle"
+                            }
+                            fill="currentColor"
+                            className="@sm:hidden text-xs"
+                            >
+                            {format(day.datetime, "EEEEE")}
+                            </text>
+                            */}
+            </g>
+                ))}
+        </svg>
+            </div>
 
-                    </div>
-                    {/* X axis */}
-                <svg
-                    className="overflow-scroll absolute inset-x-0 bottom-0
-                    h-[calc(100%-var(--marginTop))]
-                    w-[calc(100%-var(--marginLeft)-var(--marginRight))]
-                    translate-x-[var(--marginLeft)]
-                    translate-y-[var(--marginTop)]
-                    "
-                    >
-                    {data.map((day, i) => (
-                                <g key={i} className="overflow-visible font-medium text-gray-500">
-                                <text
-                                x={`${xScale(day.datetime)}%`}
-                                y="100%"
-                                textAnchor={'center'}
-                                /*{
-                                  i === 0 ? "start" : i === data.length - 1 ? "end" : "middle"
-                                  }*/
-                                fill="currentColor"
-                                className="@sm:inline hidden text-sm"
-                                >
-                                {format(day.datetime, "EEE")}
-                                </text>
-                                {/*
-                                    <text
-                                    x={`${xScale(day.datetime)}%`}
-                                    y="100%"
-                                    textAnchor={
-                                    i === 0 ? "start" : i === data.length - 1 ? "end" : "middle"
-                                    }
-                                    fill="currentColor"
-                                    className="@sm:hidden text-xs"
-                                    >
-                                    {format(day.datetime, "EEEEE")}
-                                    </text>
-                                    */}
-                    </g>
-                        ))}
-                </svg>
-
-
-                    </div>
-                    );
+            </div>
+            );
 }
 

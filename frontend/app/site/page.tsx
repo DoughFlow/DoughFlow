@@ -70,7 +70,7 @@ export default function Home() {
           </div>
           <CandleChart newData={ddata.values}/>
 */}
-
+          <CandleChart newData={ddata.values} />
           <Chart data={ddata.values.slice(0,10)}/>
           <Chart data={ddata.values}/>
 

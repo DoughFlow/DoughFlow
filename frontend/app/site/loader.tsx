@@ -32,6 +32,9 @@ function parseJsonData(data: any): stock_json{
         low: parseFloat(item.low), // Convert to number
         close: parseFloat(item.close), // Convert to number
         }))
+    // Sort the values based on datetime
+    values.sort((a, b) => a.datetime.getTime() - b.datetime.getTime());
+
     return {meta: data.meta,
     values,}
 }

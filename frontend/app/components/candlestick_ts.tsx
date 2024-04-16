@@ -164,7 +164,16 @@ const CandleChart = ({newData}: {newData: StockData[]}) => {
     const yScale = d3.scaleLinear()
                       .range([height, 0])
                       .domain([d3.min(data, (d) => d.low), d3.max(data, (d) => d.high)]); // works with typescript errors
-    
+   
+    // Let's create a tooltip SVG text element
+    /* Source:
+     * https://observablehq.com/@john-guerra/how-to-add-a-tooltip-in-d3#cell-70
+     * */
+    const tooltip = g
+        .append("text")
+        .attr("class", "tooltip")
+        .attr("fill", "black")
+        .style("pointer-events", "none");
     
     g.selectAll('.candle')
       .data(data)
@@ -175,7 +184,25 @@ const CandleChart = ({newData}: {newData: StockData[]}) => {
       .attr('y', d => yScale(Math.max(d.open, d.close)))
       .attr('width', "20px")
       .attr('height', d => Math.abs(yScale(d.open) - yScale(d.close)))
-      .attr('fill', d => (d.close >= d.open ? 'green' : 'red'));
+      .attr('fill', d => (d.close >= d.open ? 'green' : 'red'))
+      .on("mouseenter", (evt, d) => {
+              const [mx, my] = d3.pointer(evt);
+              const tooltipText =
+`Open: ${(d.open)}
+Close: ${(d.close)} (${(d.open, d.close)})
+Low: ${(d.low)}
+High: ${(d.high)}`;
+              tooltip
+              .attr("transform", `translate(${mx}, ${my})`)
+              .selectAll("tspan")
+              .data(tooltipText.split("\n"))
+              .join("tspan")
+              .attr("dy", "1.5em")
+              .attr("x", "20px")
+              .text((text) => text );
+              })
+    .on("mouseout", () => tooltip.selectAll("tspan").remove());
+
 
     g.selectAll(".wick")
       .data(data)
@@ -230,7 +257,9 @@ const CandleChart = ({newData}: {newData: StockData[]}) => {
     .attr('stroke', "green")
     .attr('stroke-width', .5);
 
+
   }, [data]);
+
 
   return (
         <div ref={svgRef} style={{width:'auto' , overflowX:'scroll'}} ></div>
