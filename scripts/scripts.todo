@@ -1,0 +1,20 @@
+STD for getting population script-program live
+not completed (-), completed (X)
+
+    - Create json_to_database endpoint that accepts .json
+
+    - Get NYSE and NASDAQ comprehensive ticker lists
+
+    - Write api script that fetches data and immediately
+      passes to json_to_database endpoint
+    
+    - Test-case scripts using ticker retrieval endpoint
+
+    - Flesh out logic for completed_ticker_list and
+      pick-up/put-down functionality with no redundancy
+
+    - NASDAQ index test-case passed
+
+    - NYSE index test-case passed
+
+    - Done
