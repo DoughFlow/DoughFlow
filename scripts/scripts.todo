@@ -4,11 +4,14 @@ not completed (-), completed (X)
     - Create json_to_database endpoint that accepts .json
 
     - Get NYSE and NASDAQ comprehensive ticker lists
+	X NASDAQ: https://stockanalysis.com/list/nasdaq-stocks/
+	X NYSE: https://stockanalysis.com/list/nyse-stocks/
 
     - Write api script that fetches data and immediately
       passes to json_to_database endpoint
     
     - Test-case scripts using ticker retrieval endpoint
+	- Basically, are all stocks there? Yes | No
 
     - Flesh out logic for completed_ticker_list and
       pick-up/put-down functionality with no redundancy
