@@ -3,7 +3,7 @@ import requests
 import json
 
 def write_call(ticker):
-    response = requests.get(f"https://api.twelvedata.com/time_series?apikey=359b90199050434db9205eebad602506&interval=1day&format=JSON&symbol={ticker}&dp=2&start_date=2019-04-23 00:00:00&end_date=2024-04-22 00:00:00").json()
+    response = requests.get(f"https://api.twelvedata.com/time_series?apikey={apikey}&interval=1day&format=JSON&symbol={ticker}&dp=2&start_date=2019-04-23 00:00:00&end_date=2024-04-22 00:00:00").json()
     filename = f"{ticker}.json"
     path = os.path.join("data/",filename)
     with open(path, 'w') as file:
