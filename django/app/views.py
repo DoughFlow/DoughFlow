@@ -1,7 +1,8 @@
-from rest_framework.response import Response
 from rest_framework.views import APIView
-from app.models import StockMarketData
-from app.serializers import StockMarketDataSerializer
+from rest_framework.response import Response
+from .models import StockMarketData
+from .serializers import StockMarketDataSerializer
+from django.utils.dateparse import parse_datetime
 
 
 class StockDataView(APIView):
@@ -11,15 +12,7 @@ class StockDataView(APIView):
         return Response(serializer.data)
 
 
-"""
-from django.db.models import Q
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from .models import StockMarketData
-from .serializers import StockMarketDataSerializer
-from django.utils.dateparse import parse_datetime
-
-class StockDataView(APIView):
+class StockFilterView(APIView):
     def get(self, request, ticker, start_date, end_date):
         # Parse dates
         start = parse_datetime(f'{start_date}T00:00:00Z')
@@ -38,4 +31,3 @@ class StockDataView(APIView):
         serializer = StockMarketDataSerializer(stock_data, many=True)
         return Response(serializer.data)
 
-"""
