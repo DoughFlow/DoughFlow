@@ -1,0 +1,393 @@
+3001	NXL	Nexalin Technology, Inc.	12.15M	1.63	13.99%	110.75K
+3002	MEGL	Magic Empire Global Limited	12.14M	0.60	-0.50%	1.20M
+3003	MTEK	Maris-Tech Ltd.	12.04M	1.53	-1.29%	4.03M
+3004	CNFR	Conifer Holdings, Inc.	11.81M	0.97	5.91%	98.76M
+3005	INHD	Inno Holdings Inc.	11.72M	0.56	-2.61%	657.36K
+3006	MDJH	MDJM Ltd	11.69M	1.01	-2.88%	29.45K
+3007	GDHG	Golden Heaven Group Holdings Ltd.	11.61M	0.22	-6.60%	31.79M
+3008	VVPR	VivoPower International PLC	11.56M	3.68	10.51%	12.24M
+3009	CTHR	Charles & Colvard, Ltd.	11.53M	0.39	9.83%	25.06M
+3010	PPBT	Purple Biotech Ltd.	11.51M	0.46	1.10%	-
+3011	JNVR	Janover Inc.	11.40M	1.03	-3.74%	2.00M
+3012	IMNN	Imunon, Inc.	11.37M	1.21	3.42%	-
+3013	PETZ	TDH Holdings, Inc.	11.25M	1.09	-5.22%	3.20M
+3014	OMH	Ohmyhome Limited	11.24M	0.53	7.07%	4.27M
+3015	YGMZ	MingZhu Logistics Holdings Limited	11.15M	0.41	-15.60%	109.83M
+3016	ERNA	Eterna Therapeutics Inc.	11.09M	2.05	-4.65%	68.00K
+3017	LEDS	SemiLEDs Corporation	11.05M	1.54	-2.53%	5.67M
+3018	PIXY	ShiftPixy, Inc.	11.02M	1.83	7.02%	14.87M
+3019	SQFT	Presidio Property Trust, Inc.	11.01M	0.84	0.26%	17.64M
+3020	CMAX	CareMax, Inc.	10.99M	2.80	8.75%	751.10M
+3021	MNPR	Monopar Therapeutics Inc.	10.91M	0.63	-2.36%	-
+3022	EZFL	EZFill Holdings Inc.	10.84M	2.38	1.28%	23.22M
+3023	MINM	Minim, Inc.	10.79M	3.63	-7.16%	26.11M
+3024	LDWY	Lendway, Inc.	10.79M	6.19	0.65%	-
+3025	ICCT	iCoreConnect Inc.	10.77M	1.10	-5.98%	8.15M
+3026	BFI	BurgerFi International, Inc.	10.74M	0.40	-4.75%	170.10M
+3027	SXTC	China SXT Pharmaceuticals, Inc.	10.66M	1.02	-	29.92K
+3028	SHPW	Shapeways Holdings, Inc.	10.59M	1.63	-	34.46M
+3029	GENE	Genetic Technologies Limited	10.55M	2.36	1.72%	5.78M
+3030	SVRE	SaverOne 2014 Ltd	10.54M	0.69	-4.54%	2.72M
+3031	RGF	The Real Good Food Company, Inc.	10.52M	0.31	1.31%	156.38M
+3032	BHAT	Blue Hat Interactive Entertainment Technology	10.48M	1.06	-1.94%	51.69M
+3033	BTBD	BT Brands, Inc.	10.47M	1.62	4.52%	14.08M
+3034	GHSI	Guardion Health Sciences, Inc.	10.43M	8.00	0.63%	12.25M
+3035	MBRX	Moleculin Biotech, Inc.	10.36M	4.65	-	-
+3036	ABVC	ABVC BioPharma, Inc.	10.35M	0.98	-1.02%	152.43K
+3037	ONVO	Organovo Holdings, Inc.	10.34M	1.04	-5.45%	242.00K
+3038	PWM	Prestige Wealth Inc.	10.34M	1.13	10.78%	348.53K
+3039	GRTX	Galera Therapeutics, Inc.	10.33M	0.19	3.21%	-
+3040	SPPL	SIMPPLE LTD.	10.31M	0.67	2.66%	4.78M
+3041	PBM	Psyence Biomedical Ltd.	10.31M	0.80	18.36%	-
+3042	ELAB	Elevai Labs, Inc.	10.24M	0.59	3.32%	1.71M
+3043	BNOX	Bionomics Limited	10.16M	0.95	-3.01%	15.00K
+3044	UPXI	Upexi, Inc.	10.13M	0.49	1.57%	91.21M
+3045	CHNR	China Natural Resources, Inc.	10.12M	1.06	6.00%	2.91M
+3046	IDEX	Ideanomics, Inc.	10.11M	0.84	2.15%	36.48M
+3047	ARTW	Art's-Way Manufacturing Co., Inc.	10.04M	1.98	-0.45%	29.70M
+3048	VISL	Vislink Technologies, Inc.	9.89M	4.05	8.87%	27.48M
+3049	WRNT	Warrantee Inc.	9.86M	0.28	-34.14%	1.57M
+3050	BCDA	BioCardia, Inc.	9.85M	0.37	2.19%	477.00K
+3051	JEWL	Adamas One Corp.	9.81M	0.35	3.12%	1.82M
+3052	KAVL	Kaival Brands Innovations Group, Inc.	9.80M	3.50	-6.17%	13.77M
+3053	FGI	FGI Industries Ltd.	9.79M	1.03	1.49%	117.24M
+3054	SGD	Safe and Green Development Corporation	9.77M	0.68	-2.28%	-
+3055	CREG	Smart Powerr Corp.	9.72M	1.22	2.52%	-
+3056	IKT	Inhibikase Therapeutics, Inc.	9.72M	1.54	-24.51%	260.50K
+3057	AEHL	Antelope Enterprise Holdings Limited	9.64M	2.05	-0.97%	63.62M
+3058	NVOS	Novo Integrated Sciences, Inc.	9.62M	0.50	10.86%	13.66M
+3059	TBIO	Telesis Bio, Inc.	9.58M	0.32	3.53%	27.51M
+3060	ILAG	Intelligent Living Application Group Inc.	9.57M	0.53	12.55%	6.75M
+3061	JVA	Coffee Holding Co., Inc.	9.53M	1.65	-3.51%	69.39M
+3062	CYN	Cyngn Inc.	9.52M	0.12	8.51%	1.49M
+3063	AEZS	Aeterna Zentaris Inc.	9.52M	1.95	-	4.50M
+3064	EEIQ	EpicQuest Education Group International Limited	9.43M	0.76	-12.64%	5.71M
+3065	WLGS	WANG & LEE GROUP, Inc.	9.42M	0.64	6.23%	6.83M
+3066	ELWS	Earlyworks Co., Ltd	9.37M	0.62	2.13%	300.92K
+3067	HIHO	Highway Holdings Limited	9.36M	2.12	1.39%	-
+3068	WHLR	Wheeler Real Estate Investment Trust, Inc.	9.35M	0.14	-2.05%	102.33M
+3069	BRTX	BioRestorative Therapies, Inc.	9.34M	1.35	-1.46%	145.80K
+3070	CMMB	Chemomab Therapeutics Ltd.	9.32M	0.66	-3.50%	-
+3071	VSME	VS Media Holdings Limited	9.26M	0.43	4.95%	9.03M
+3072	ATIF	ATIF Holdings Limited	9.15M	0.95	1.06%	400.00K
+3073	LGVN	Longeveron Inc.	9.12M	2.00	4.17%	709.00K
+3074	LTRY	Lottery.com Inc.	9.11M	1.94	3.19%	6.48M
+3075	KZIA	Kazia Therapeutics Limited	9.10M	0.39	3.72%	15.65K
+3076	WKSP	Worksport Ltd.	9.07M	0.38	-2.46%	1.53M
+3077	FRES	Fresh2 Group Ltd	9.03M	0.40	7.25%	2.35M
+3078	XXII	22nd Century Group, Inc.	8.97M	1.60	-1.23%	32.20M
+3079	GRNQ	Greenpro Capital Corp.	8.79M	1.17	0.86%	3.48M
+3080	GV	Visionary Holdings Inc.	8.73M	0.17	6.76%	11.52M
+3081	PRPO	Precipio, Inc.	8.69M	6.33	-2.16%	15.20M
+3082	LKCO	Luokung Technology Corp.	8.61M	0.52	-0.15%	36.98M
+3083	SPEC	Spectaire Holdings Inc.	8.56M	0.56	-7.03%	-
+3084	ENG	ENGlobal Corporation	8.51M	1.80	10.12%	39.04M
+3085	NURO	NeuroMetrix, Inc.	8.48M	4.33	0.70%	5.90M
+3086	NCNA	NuCana plc	8.48M	4.05	7.14%	-
+3087	VIRI	Virios Therapeutics, Inc.	8.47M	0.44	1.01%	-
+3088	WISA	WiSA Technologies, Inc.	8.46M	4.88	-19.47%	2.08M
+3089	TKLF	Yoshitsu Co., Ltd	8.45M	0.23	-2.83%	166.27M
+3090	ASLN	ASLAN Pharmaceuticals Limited	8.45M	0.47	-8.75%	12.00M
+3091	WAFU	Wah Fu Education Group Limited	8.42M	1.91	1.06%	8.89M
+3092	GVP	GSE Systems, Inc.	8.42M	2.59	-0.77%	45.04M
+3093	AIHS	Senmiao Technology Limited	8.42M	0.88	2.33%	7.30M
+3094	JTAI	Jet.AI Inc.	8.41M	0.69	-4.41%	12.21M
+3095	HEPA	Hepion Pharmaceuticals, Inc.	8.41M	1.55	-26.19%	-
+3096	SLE	Super League Enterprise, Inc.	8.38M	1.40	0.72%	25.08M
+3097	NTBL	Notable Labs, Ltd.	8.34M	0.93	-5.12%	310.00K
+3098	MARPS	Marine Petroleum Trust	8.34M	4.17	-2.11%	1.18M
+3099	WATT	Energous Corporation	8.33M	1.37	-	474.18K
+3100	IMCC	IM Cannabis Corp.	8.30M	0.62	2.13%	54.78M
+3101	CYCN	Cyclerion Therapeutics, Inc.	8.27M	3.05	-8.13%	-
+3102	COSM	Cosmos Health Inc.	8.13M	0.50	3.14%	49.59M
+3103	AKTX	Akari Therapeutics, Plc	8.07M	1.22	9.91%	-
+3104	MEDS	TRxADE HEALTH, Inc.	8.05M	6.68	3.89%	9.09M
+3105	BLBX	Blackboxstocks Inc.	8.03M	2.49	-10.27%	3.11M
+3106	PAVS	Paranovus Entertainment Technology Ltd.	8.00M	1.10	3.77%	51.46M
+3107	PRZO	ParaZero Technologies Ltd.	8.00M	0.74	-3.10%	620.51K
+3108	CARV	Carver Bancorp, Inc.	7.94M	1.61	3.21%	27.57M
+3109	BFRI	Biofrontera Inc.	7.89M	1.55	-8.28%	34.07M
+3110	WLDS	Wearable Devices Ltd.	7.81M	0.48	-0.02%	82.00K
+3111	SCKT	Socket Mobile, Inc.	7.77M	1.03	-	17.03M
+3112	ESGL	ESGL Holdings Ltd	7.67M	0.64	7.56%	8.39M
+3113	OPGN	OpGen, Inc.	7.67M	0.59	-6.35%	3.07M
+3114	MTEM	Molecular Templates, Inc.	7.66M	1.46	-0.68%	57.31M
+3115	JXJT	JX Luxventure Limited	7.64M	1.26	-	49.91M
+3116	ROMA	Roma Green Finance Limited	7.61M	0.73	0.68%	1.74M
+3117	LIXT	Lixte Biotechnology Holdings, Inc.	7.60M	3.38	-1.17%	-
+3118	RAYA	Erayak Power Solution Group Inc.	7.60M	0.63	-6.67%	20.32M
+3119	ADIL	Adial Pharmaceuticals, Inc.	7.54M	1.87	-3.11%	-
+3120	DXYN	The Dixie Group, Inc.	7.49M	0.52	3.59%	276.34M
+3121	INBS	Intelligent Bio Solutions Inc.	7.47M	2.63	-4.20%	2.88M
+3122	PYPD	PolyPid Ltd.	7.44M	4.50	0.22%	-
+3123	RVYL	Ryvyl Inc.	7.41M	1.23	-3.91%	65.87M
+3124	UPC	Universe Pharmaceuticals INC	7.34M	2.01	-3.17%	32.31M
+3125	PULM	Pulmatrix, Inc.	7.30M	2.00	0.50%	7.30M
+3126	CNET	ZW Data Action Technologies Inc.	7.28M	1.01	3.06%	29.74M
+3127	VEEE	Twin Vee Powercats Co.	7.26M	0.76	-9.30%	33.43M
+3128	KTTA	Pasithea Therapeutics Corp.	7.19M	6.90	-2.95%	-
+3129	VVOS	Vivos Therapeutics, Inc.	7.16M	2.62	-3.68%	13.80M
+3130	FRZA	Forza X1, Inc.	7.15M	0.45	5.09%	37.12K
+3131	TENX	Tenax Therapeutics, Inc.	7.15M	3.64	0.55%	-
+3132	BCAN	BYND Cannasoft Enterprises Inc.	7.15M	0.92	5.10%	1.08M
+3133	TFFP	TFF Pharmaceuticals, Inc.	7.13M	2.81	-10.95%	733.87K
+3134	ISUN	iSun, Inc.	7.11M	0.15	-5.06%	95.68M
+3135	MSGM	Motorsport Games Inc.	7.08M	2.60	-2.26%	6.91M
+3136	MRIN	Marin Software Incorporated	7.08M	2.35	-20.07%	17.73M
+3137	MIND	MIND Technology, Inc.	7.02M	4.17	-0.43%	38.72M
+3138	OST	Ostin Technology Group Co., Ltd.	6.98M	0.42	1.07%	57.53M
+3139	IDAI	T Stamp Inc.	6.94M	0.75	-8.52%	4.56M
+3140	VCNX	Vaccinex, Inc.	6.94M	4.70	-3.31%	570.00K
+3141	CPOP	Pop Culture Group Co., Ltd	6.93M	1.76	-4.35%	18.54M
+3142	KA	Kineta, Inc.	6.91M	0.65	22.39%	5.44M
+3143	SYRA	Syra Health Corp.	6.89M	1.05	3.96%	5.52M
+3144	SPGC	Sacks Parente Golf, Inc.	6.86M	0.46	-2.87%	349.00K
+3145	BNZI	Banzai International, Inc.	6.85M	0.39	6.65%	4.56M
+3146	AYRO	Ayro, Inc.	6.81M	1.36	0.07%	498.92K
+3147	CLVR	Clever Leaves Holdings Inc.	6.81M	3.88	-3.96%	17.42M
+3148	SHPH	Shuttle Pharmaceuticals Holdings, Inc.	6.72M	0.40	3.37%	-
+3149	PSTV	Plus Therapeutics, Inc.	6.71M	1.57	-4.27%	4.91M
+3150	MNTS	Momentus Inc.	6.70M	0.48	30.91%	2.19M
+3151	GXAI	Gaxos.ai Inc.	6.69M	6.12	1.31%	256.00
+3152	EFTR	eFFECTOR Therapeutics, Inc.	6.67M	1.80	5.88%	-
+3153	PIK	Kidpik Corp.	6.67M	3.42	-3.96%	14.24M
+3154	AQB	AquaBounty Technologies, Inc.	6.63M	1.72	1.18%	2.47M
+3155	LMFA	LM Funding America, Inc.	6.61M	2.65	1.92%	12.98M
+3156	CELZ	Creative Medical Technology Holdings, Inc.	6.58M	4.85	0.83%	9.00K
+3157	MGRX	Mangoceuticals, Inc.	6.57M	0.29	-1.70%	731.49K
+3158	HSCS	Heart Test Laboratories, Inc.	6.56M	0.10	-0.20%	18.60K
+3159	SLNA	Selina Hospitality PLC	6.56M	0.06	-12.54%	-
+3160	SVMH	SRIVARU Holding Limited	6.47M	0.20	3.68%	112.41K
+3161	LIDR	AEye, Inc.	6.44M	0.96	-3.99%	1.46M
+3162	VMAR	Vision Marine Technologies Inc.	6.42M	0.55	-1.43%	3.80M
+3163	AVGR	Avinger, Inc.	6.42M	3.77	-3.58%	7.65M
+3164	HCTI	Healthcare Triangle, Inc.	6.42M	1.39	0.72%	33.20M
+3165	TTNP	Titan Pharmaceuticals, Inc.	6.41M	7.01	-0.14%	184.00K
+3166	POLA	Polar Power, Inc.	6.40M	0.36	6.02%	15.29M
+3167	CVKD	Cadrenal Therapeutics, Inc.	6.37M	0.42	4.58%	-
+3168	ENVB	Enveric Biosciences, Inc.	6.37M	0.86	-2.45%	-
+3169	KTRA	Kintara Therapeutics, Inc.	6.30M	0.11	-5.77%	-
+3170	LYT	Lytus Technologies Holdings PTV. Ltd.	6.25M	4.00	-4.53%	22.62M
+3171	EFOI	Energy Focus, Inc.	6.22M	1.40	-	5.72M
+3172	SLNH	Soluna Holdings, Inc.	6.11M	2.18	-0.91%	21.07M
+3173	AIMD	Ainos, Inc.	6.07M	1.02	-0.97%	-
+3174	OXBR	Oxbridge Re Holdings Limited	6.05M	1.02	-1.92%	-7.05M
+3175	PRTG	Portage Biotech Inc.	6.03M	0.32	15.11%	-
+3176	CEAD	CEA Industries Inc.	6.00M	0.73	2.67%	6.91M
+3177	GROM	Grom Social Enterprises, Inc.	5.98M	0.67	2.29%	4.04M
+3178	DGLY	Digital Ally, Inc.	5.94M	2.12	0.95%	28.25M
+3179	ASST	Asset Entities Inc.	5.86M	0.41	0.75%	277.04K
+3180	GPAK	Gamer Pakistan Inc.	5.80M	0.22	-8.95%	-
+3181	XBIO	Xenetic Biosciences, Inc.	5.79M	3.76	-5.29%	2.54M
+3182	PXMD	PaxMedica, Inc.	5.78M	0.78	2.94%	-
+3183	APDN	Applied DNA Sciences, Inc.	5.77M	0.34	-3.68%	9.00M
+3184	ATXI	Avenue Therapeutics, Inc.	5.70M	0.13	-1.00%	-
+3185	NVFY	Nova LifeStyle, Inc.	5.69M	2.45	-11.12%	11.09M
+3186	CAUD	Collective Audience, Inc.	5.64M	0.41	2.24%	28.63M
+3187	BTCT	BTC Digital Ltd.	5.64M	2.69	-0.11%	1.28M
+3188	SILO	Silo Pharma, Inc.	5.63M	1.98	0.51%	72.10K
+3189	XWEL	XWELL, Inc.	5.61M	1.34	-3.60%	30.11M
+3190	PTIX	Protagenic Therapeutics, Inc.	5.59M	1.26	-1.56%	-
+3191	ANTE	AirNet Technology Inc.	5.58M	1.33	9.92%	918.00K
+3192	AEI	Alset EHome International Inc.	5.56M	0.60	-0.38%	22.09M
+3193	OLB	The OLB Group, Inc.	5.55M	0.31	-10.47%	30.57M
+3194	BNRG	Brenmiller Energy Ltd	5.48M	2.23	3.10%	621.00K
+3195	MYMD	MyMD Pharmaceuticals, Inc.	5.48M	2.53	1.12%	-
+3196	MOB	Mobilicom Ltd	5.45M	1.12	0.45%	2.25M
+3197	SONN	Sonnet BioTherapeutics Holdings, Inc.	5.44M	1.77	-2.21%	129.18K
+3198	TGL	Treasure Global Inc.	5.42M	4.90	4.48%	53.59M
+3199	HOTH	Hoth Therapeutics, Inc.	5.33M	1.21	4.31%	-
+3200	YOSH	Yoshiharu Global Co.	5.32M	3.91	-3.46%	9.21M
+3201	VERO	Venus Concept Inc.	5.29M	0.83	2.10%	76.35M
+3202	FWBI	First Wave BioPharma, Inc.	5.29M	2.57	-2.65%	-
+3203	GDC	GD Culture Group Limited	5.29M	0.70	5.01%	-
+3204	NMHI	Nature's Miracle Holding Inc.	5.27M	0.92	1.10%	8.93M
+3205	SNTG	Sentage Holdings Inc.	5.25M	1.96	2.62%	-16.04K
+3206	TRVN	Trevena, Inc.	5.23M	0.34	-2.24%	3.13M
+3207	GWAV	Greenwave Technology Solutions, Inc.	5.23M	0.12	5.40%	35.67M
+3208	OCTO	Eightco Holdings Inc.	5.21M	0.62	0.67%	75.30M
+3209	GTBP	GT Biopharma, Inc.	5.18M	3.75	2.74%	-
+3210	SOBR	SOBR Safe, Inc.	5.16M	0.26	-0.92%	157.29K
+3211	IFBD	Infobird Co., Ltd	5.12M	3.82	-1.24%	2.93M
+3212	FAMI	Farmmi, Inc.	5.11M	0.81	-1.07%	110.36M
+3213	BOXL	Boxlight Corporation	5.06M	0.52	0.97%	176.72M
+3214	CAMP	CalAmp Corp.	5.05M	3.04	5.19%	264.74M
+3215	FORD	Forward Industries, Inc.	5.03M	0.50	-0.20%	33.03M
+3216	BIOL	BIOLASE, Inc.	5.01M	0.15	11.08%	49.16M
+3217	POAI	Predictive Oncology Inc.	5.00M	1.23	6.03%	1.78M
+3218	LFLY	Leafly Holdings, Inc.	4.95M	2.18	0.37%	42.25M
+3219	THMO	ThermoGenesis Holdings, Inc.	4.91M	0.62	-4.17%	9.45M
+3220	IONM	Assure Holdings Corp.	4.91M	0.55	25.00%	3.57M
+3221	AFIB	Acutus Medical, Inc.	4.89M	0.16	-3.94%	7.16M
+3222	NLSP	NLS Pharmaceutics AG	4.89M	0.12	-10.77%	-
+3223	DRUG	Bright Minds Biosciences Inc.	4.88M	1.13	1.80%	-
+3224	EZGO	EZGO Technologies Ltd.	4.88M	1.92	-2.54%	15.92M
+3225	MICS	The Singing Machine Company, Inc.	4.88M	0.79	9.72%	32.58M
+3226	DBGI	Digital Brands Group, Inc.	4.87M	2.87	5.79%	14.92M
+3227	SINT	Sintx Technologies, Inc.	4.86M	0.04	-4.07%	2.63M
+3228	SISI	Shineco, Inc.	4.84M	0.75	9.00%	3.43M
+3229	LQR	LQR House Inc.	4.83M	1.00	-3.85%	1.12M
+3230	CJJD	China Jo-Jo Drugstores, Inc.	4.81M	2.86	-0.69%	154.66M
+3231	AMST	Amesite Inc.	4.81M	1.89	-	432.36K
+3232	NEXI	NexImmune, Inc.	4.76M	3.59	6.85%	-
+3233	BAOS	Baosheng Media Group Holdings Limited	4.76M	3.10	-2.82%	3.46M
+3234	XCUR	Exicure, Inc.	4.75M	0.55	-2.14%	23.79M
+3235	LCFY	Locafy Limited	4.72M	3.70	2.21%	3.11M
+3236	LXEH	Lixiang Education Holding Co., Ltd.	4.67M	0.42	6.81%	7.24M
+3237	SNPX	Synaptogenix, Inc.	4.67M	4.31	-0.58%	-
+3238	BOF	BranchOut Food Inc.	4.67M	1.14	1.61%	2.83M
+3239	ALZN	Alzamend Neuro, Inc.	4.60M	0.68	0.67%	-
+3240	CSSE	Chicken Soup for the Soul Entertainment, Inc.	4.52M	0.14	-0.97%	294.41M
+3241	OMQS	OMNIQ Corp.	4.49M	0.42	-4.29%	81.19M
+3242	XYLO	Xylo Technologies Ltd.	4.47M	2.60	-0.76%	83.45M
+3243	SEEL	Seelos Therapeutics, Inc.	4.45M	0.33	-1.55%	2.20M
+3244	SOPA	Society Pass Incorporated	4.44M	0.12	-4.00%	8.17M
+3245	LIPO	Lipella Pharmaceuticals Inc.	4.44M	0.71	0.01%	449.62K
+3246	EVOK	Evoke Pharma, Inc.	4.41M	0.52	8.79%	5.18M
+3247	VINO	Gaucho Group Holdings, Inc.	4.40M	0.63	4.14%	1.99M
+3248	STSS	Sharps Technology, Inc.	4.39M	0.29	1.12%	-
+3249	NVVE	Nuvve Holding Corp.	4.38M	0.72	5.14%	8.33M
+3250	HSDT	Helius Medical Technologies, Inc.	4.37M	4.93	-1.99%	644.00K
+3251	REBN	Reborn Coffee, Inc.	4.37M	1.46	10.61%	5.95M
+3252	PTPI	Petros Pharmaceuticals, Inc.	4.37M	0.64	-5.55%	5.82M
+3253	NXU	Nxu, Inc.	4.35M	0.37	-0.73%	-
+3254	PCSA	Processa Pharmaceuticals, Inc.	4.34M	1.55	-1.90%	-
+3255	SNAX	Stryve Foods, Inc.	4.34M	1.36	-2.16%	17.71M
+3256	THAR	Tharimmune, Inc.	4.34M	0.37	-0.62%	-
+3257	ADTX	Aditxt, Inc.	4.28M	2.16	-8.04%	645.18K
+3258	ZVSA	ZyVersa Therapeutics, Inc.	4.27M	0.57	-2.74%	-
+3259	SBET	SharpLink Gaming Ltd.	4.27M	1.24	-10.14%	-
+3260	ARTL	Artelo Biosciences, Inc.	4.23M	1.31	-1.50%	-
+3261	VLCN	Volcon, Inc.	4.22M	0.23	-1.23%	3.26M
+3262	SNGX	Soligenix, Inc.	4.21M	0.40	-6.17%	839.36K
+3263	OCG	Oriental Culture Holding LTD	4.21M	0.99	-	1.57M
+3264	GNPX	Genprex, Inc.	4.09M	2.15	1.13%	-
+3265	IMTE	Integrated Media Technology Limited	4.07M	1.90	19.18%	573.11K
+3266	AUUD	Auddia Inc.	4.02M	1.83	-5.18%	-
+3267	YTEN	Yield10 Bioscience, Inc.	4.00M	0.28	10.16%	60.00K
+3268	WAVD	WaveDancer, Inc.	4.00M	1.98	2.06%	7.98M
+3269	RSLS	ReShape Lifesciences Inc.	3.98M	0.17	2.66%	8.68M
+3270	VRPX	Virpax Pharmaceuticals, Inc.	3.97M	3.39	-6.09%	-
+3271	EGOX	Next.e.GO N.V.	3.90M	0.04	-19.53%	-
+3272	FUV	Arcimoto, Inc.	3.81M	0.40	-0.45%	6.61M
+3273	TRNR	Interactive Strength Inc.	3.80M	0.19	9.16%	962.00K
+3274	ATXG	Addentax Group Corp.	3.79M	0.88	-0.90%	5.15M
+3275	MBIO	Mustang Bio, Inc.	3.75M	0.38	10.74%	-
+3276	AEMD	Aethlon Medical, Inc.	3.72M	1.42	-2.67%	574.25K
+3277	MGOL	MGO Global Inc.	3.68M	0.23	1.17%	5.36M
+3278	DCFC	Tritium DCFC Limited	3.67M	1.32	-63.93%	184.54M
+3279	FNCH	Finch Therapeutics Group, Inc.	3.66M	2.28	4.98%	107.00K
+3280	GOVX	GeoVax Labs, Inc.	3.65M	1.58	5.53%	-
+3281	CMND	Clearmind Medicine Inc.	3.64M	1.15	-4.33%	-
+3282	PHIO	Phio Pharmaceuticals Corp.	3.63M	0.90	43.83%	-
+3283	CNEY	CN Energy Group. Inc.	3.62M	0.72	1.69%	57.90M
+3284	QH	Quhuo Limited	3.61M	0.59	-4.10%	522.20M
+3285	SNES	SenesTech, Inc.	3.61M	0.71	-4.25%	1.19M
+3286	AGFY	Agrify Corporation	3.60M	0.27	-2.56%	16.87M
+3287	HPCO	Hempacco Co., Inc.	3.59M	0.99	-1.00%	2.53M
+3288	RETO	ReTo Eco-Solutions, Inc.	3.56M	0.91	4.00%	4.82M
+3289	JCSE	JE Cleantech Holdings Limited	3.54M	0.71	-0.16%	14.89M
+3290	INVO	INVO Bioscience, Inc.	3.51M	1.27	-7.30%	3.02M
+3291	BACK	IMAC Holdings, Inc.	3.50M	3.05	-1.61%	-
+3292	ALBT	Avalon GloboCare Corp.	3.44M	0.31	2.96%	1.26M
+3293	CING	Cingulate Inc.	3.44M	0.89	1.24%	-
+3294	CLEU	China Liberal Education Holdings Limited	3.44M	1.07	2.88%	2.89M
+3295	DATS	DatChat, Inc.	3.44M	1.14	1.06%	672.00
+3296	NITO	N2OFF, Inc.	3.43M	1.16	0.87%	263.45K
+3297	AGRI	AgriFORCE Growing Systems Ltd.	3.38M	0.15	-8.49%	16.28K
+3298	IVP	Inspire Veterinary Partners, Inc.	3.38M	0.04	-1.25%	16.68M
+3299	REVB	Revelation Biosciences, Inc.	3.33M	2.14	-4.46%	-
+3300	CETX	Cemtrex, Inc.	3.29M	3.14	1.29%	64.28M
+3301	BRSH	Bruush Oral Care Inc.	3.29M	0.05	-5.24%	-
+3302	VS	Versus Systems Inc.	3.26M	1.30	4.00%	271.17K
+3303	CYTO	Altamira Therapeutics Ltd.	3.25M	1.45	2.84%	-
+3304	KXIN	Kaixin Auto Holdings	3.20M	0.12	-2.23%	68.40M
+3305	WNW	Meiwu Technology Company Limited	3.11M	1.23	12.84%	30.30M
+3306	BPTS	Biophytis S.A.	3.09M	0.25	-13.79%	-
+3307	BKYI	BIO-key International, Inc.	3.08M	1.70	1.19%	8.59M
+3308	LUCY	Innovative Eyewear, Inc.	3.03M	0.23	-1.35%	1.15M
+3309	KWE	KWESST Micro Systems Inc.	3.02M	0.76	4.11%	786.61K
+3310	RNAZ	TransCode Therapeutics, Inc.	3.01M	0.45	-7.09%	-
+3311	INTZ	Intrusion Inc.	2.99M	1.54	-9.41%	5.61M
+3312	ISPC	iSpecimen Inc.	2.98M	0.31	7.71%	9.93M
+3313	RKDA	Arcadia Biosciences, Inc.	2.95M	2.16	5.00%	5.33M
+3314	PEGY	Pineapple Energy Inc.	2.95M	0.05	-10.00%	79.63M
+3315	ONFO	Onfolio Holdings, Inc.	2.92M	0.57	31.65%	5.24M
+3316	SPRC	SciSparc Ltd.	2.92M	1.19	-3.09%	2.88M
+3317	SXTP	60 Degrees Pharmaceuticals, Inc.	2.90M	0.25	4.15%	253.57K
+3318	WTO	UTime Limited	2.88M	0.24	1.17%	21.55M
+3319	PRSO	Peraso Inc.	2.85M	1.30	-4.41%	13.75M
+3320	FLJ	FLJ Group Limited	2.84M	0.60	0.33%	-
+3321	CRKN	Crown ElectroKinetics Corp.	2.82M	0.06	0.90%	153.00K
+3322	SGBX	Safe & Green Holdings Corp	2.78M	0.15	-1.29%	18.67M
+3323	MYSZ	My Size, Inc.	2.77M	0.56	14.05%	7.00M
+3324	TNON	Tenon Medical, Inc.	2.76M	0.78	5.84%	2.93M
+3325	ONCO	Onconetix, Inc.	2.74M	0.12	-2.36%	58.47K
+3326	NDRA	ENDRA Life Sciences Inc.	2.73M	0.25	0.04%	-
+3327	SECO	Secoo Holding Limited	2.72M	0.39	-6.43%	413.47M
+3328	DYNT	Dynatronics Corporation	2.72M	0.56	4.62%	35.18M
+3329	NCPL	Netcapital Inc.	2.64M	0.13	0.76%	7.72M
+3330	SPCB	SuperCom Ltd.	2.63M	0.28	28.59%	25.51M
+3331	TANH	Tantech Holdings Ltd	2.61M	0.74	8.18%	46.21M
+3332	BSFC	Blue Star Foods Corp.	2.61M	0.06	-15.66%	6.12M
+3333	NTRP	NextTrip, Inc.	2.57M	2.71	-6.55%	522.87K
+3334	WORX	SCWorx Corp.	2.57M	2.12	-3.20%	3.92M
+3335	TC	TuanChe Limited	2.55M	1.49	-9.52%	22.90M
+3336	AUVI	Applied UV, Inc.	2.51M	0.58	-10.85%	40.72M
+3337	SNOA	Sonoma Pharmaceuticals, Inc.	2.46M	0.16	5.27%	12.31M
+3338	ADD	Color Star Technology Co., Ltd.	2.44M	0.23	1.55%	-
+3339	ASNS	Actelis Networks, Inc.	2.34M	0.78	0.66%	5.61M
+3340	STAF	Staffing 360 Solutions, Inc.	2.30M	0.31	4.81%	258.50M
+3341	FFIE	Faraday Future Intelligent Electric Inc.	2.29M	0.05	-9.71%	551.00K
+3342	DRMA	Dermata Therapeutics, Inc.	2.28M	0.35	4.85%	-
+3343	CYCC	Cyclacel Pharmaceuticals, Inc.	2.28M	1.74	-2.79%	420.00K
+3344	FRGT	Freight Technologies, Inc.	2.27M	0.91	1.14%	19.68M
+3345	BPTH	Bio-Path Holdings, Inc.	2.27M	3.03	-29.49%	-
+3346	TIRX	Tian Ruixiang Holdings Ltd	2.26M	0.69	-7.97%	1.13M
+3347	JWEL	Jowell Global Ltd.	2.25M	1.05	-0.75%	193.98M
+3348	NAOV	NanoVibronix, Inc.	2.23M	0.80	6.52%	2.28M
+3349	SLRX	Salarius Pharmaceuticals, Inc.	2.20M	0.52	5.41%	-
+3350	GNLN	Greenlane Holdings, Inc.	2.17M	0.58	-7.48%	77.34M
+3351	AWIN	AERWINS Technologies Inc.	2.15M	3.34	5.39%	3.18M
+3352	CNSP	CNS Pharmaceuticals, Inc.	2.08M	0.20	-3.07%	-
+3353	OBLG	Oblong, Inc.	2.08M	0.12	-4.30%	3.81M
+3354	AREB	American Rebel Holdings, Inc.	2.05M	0.34	12.16%	16.23M
+3355	SCNI	Scinai Immunotherapeutics Ltd.	2.05M	0.47	0.86%	-
+3356	LSDI	Lucy Scientific Discovery Inc.	2.01M	1.14	2.70%	16.73K
+3357	PRFX	PainReform Ltd.	2.00M	0.81	-7.72%	-
+3358	RCRT	Recruiter.com Group, Inc.	2.00M	1.37	-2.84%	3.19M
+3359	ASTI	Ascent Solar Technologies, Inc.	1.98M	0.10	4.58%	458.26K
+3360	ACON	Aclarion, Inc.	1.97M	0.28	-5.69%	75.40K
+3361	QLGN	Qualigen Therapeutics, Inc.	1.96M	0.31	2.82%	-
+3362	CISS	C3is Inc.	1.95M	1.20	2.56%	28.74M
+3363	TBLT	ToughBuilt Industries, Inc.	1.90M	2.41	7.59%	89.62M
+3364	LGMK	LogicMark, Inc.	1.89M	0.83	-2.80%	9.93M
+3365	EDBL	Edible Garden AG Incorporated	1.85M	6.16	63.83%	14.05M
+3366	NUWE	Nuwellis, Inc.	1.84M	0.26	1.98%	8.86M
+3367	ENSC	Ensysce Biosciences, Inc.	1.76M	0.54	-5.08%	-
+3368	SYTA	Siyata Mobile Inc.	1.71M	2.83	10.98%	8.23M
+3369	NUZE	NuZee, Inc.	1.70M	1.33	5.16%	3.35M
+3370	TIVC	Tivic Health Systems, Inc.	1.69M	1.15	3.60%	1.18M
+3371	BJDX	Bluejay Diagnostics, Inc.	1.68M	0.62	8.96%	-
+3372	VRAX	Virax Biolabs Group Limited	1.66M	0.71	3.37%	79.30K
+3373	INM	InMed Pharmaceuticals Inc.	1.65M	0.27	-5.91%	5.49M
+3374	TAOP	Taoping Inc.	1.64M	1.05	-1.87%	27.77M
+3375	EAST	Eastside Distilling, Inc.	1.63M	0.96	3.69%	10.50M
+3376	RELI	Reliance Global Group, Inc.	1.59M	0.28	1.38%	13.73M
+3377	SBFM	Sunshine Biopharma, Inc.	1.59M	1.61	-9.07%	24.09M
+3378	TCBP	TC Biopharm (Holdings) Plc	1.59M	1.55	5.44%	-
+3379	ATNF	180 Life Sciences Corp.	1.56M	1.83	-0.54%	-
+3380	NBSE	NeuBase Therapeutics, Inc.	1.51M	0.40	-2.83%	-
+3381	GRI	GRI Bio, Inc.	1.50M	0.47	-8.29%	-
+3382	BBLG	Bone Biologics Corporation	1.42M	1.62	-5.26%	-
+3383	GLMD	Galmed Pharmaceuticals Ltd.	1.37M	0.36	-3.12%	-
+3384	UK	Ucommune International Ltd	1.24M	2.29	0.88%	87.50M
+3385	AKAN	Akanda Corp.	1.17M	0.10	3.92%	3.94M
+3386	SMX	SMX (Security Matters) PLC	886.86K	0.15	-8.49%	-
+3387	LGHL	Lion Group Holding Ltd.	674.19K	0.58	-19.22%	15.18M
+3388	QNRX	Quoin Pharmaceuticals, Ltd.	651.57K	0.66	-5.35%	-
+3389	ALLR	Allarity Therapeutics, Inc.	605.46K	1.29	-7.55%	-
+3390	APVO	Aptevo Therapeutics Inc.	465.34K	0.69	-4.72%	-
+3391	JFBR	Jeffs' Brands Ltd	344.87K	0.29	-1.28%	10.01M
+3392	BDRX	Biodexa Pharmaceuticals Plc	177.43K	0.75	-2.60%	482.28K
+3393	AIMAU	Aimfinity Investment Corp. I	99.78K	11.22	0.99%	-

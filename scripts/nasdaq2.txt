@@ -1,0 +1,1000 @@
+1001	NYAX	Nayax Ltd.	827.72M	24.86	0.88%	235.49M
+1002	WRLD	World Acceptance Corporation	825.91M	135.84	1.85%	575.18M
+1003	TYRA	Tyra Biosciences, Inc.	824.10M	15.70	4.77%	-
+1004	HTLD	Heartland Express, Inc.	822.91M	10.40	-0.86%	1.21B
+1005	MATW	Matthews International Corporation	822.28M	26.83	1.49%	1.88B
+1006	NRIX	Nurix Therapeutics, Inc.	821.55M	13.84	1.84%	80.89M
+1007	NRC	National Research Corporation	818.68M	34.31	0.82%	148.58M
+1008	HUT	Hut 8 Mining Corp.	815.63M	9.12	13.29%	56.29M
+1009	DXPE	DXP Enterprises, Inc.	814.44M	50.26	-0.42%	1.68B
+1010	ELVN	Enliven Therapeutics, Inc.	812.07M	17.36	0.43%	-
+1011	PRAX	Praxis Precision Medicines, Inc.	811.59M	47.57	1.45%	2.45M
+1012	ASTL	Algoma Steel Group Inc.	811.50M	7.79	-0.13%	2.14B
+1013	BBSI	Barrett Business Services, Inc.	809.33M	123.19	0.69%	1.07B
+1014	SNPO	Snap One Holdings Corp.	808.97M	10.57	0.05%	1.06B
+1015	AVO	Mission Produce, Inc.	803.40M	11.34	-1.78%	999.10M
+1016	SNCY	Sun Country Airlines Holdings, Inc.	800.96M	15.05	1.18%	1.05B
+1017	CECO	CECO Environmental Corp.	800.95M	23.17	0.56%	544.85M
+1018	SBGI	Sinclair Broadcast Group, Inc.	798.84M	12.50	1.21%	3.13B
+1019	METC	Ramaco Resources, Inc.	796.53M	15.67	0.51%	693.52M
+1020	BFC	Bank First Corporation	794.72M	79.22	0.92%	186.91M
+1021	CYRX	Cryoport, Inc.	793.44M	16.25	0.74%	233.26M
+1022	SPRY	ARS Pharmaceuticals, Inc.	793.24M	8.26	-2.48%	30.00K
+1023	AUTL	Autolus Therapeutics plc	792.16M	4.55	0.55%	1.70M
+1024	CRML	Critical Metals Corp.	791.91M	9.70	19.75%	-
+1025	THRY	Thryv Holdings, Inc.	791.87M	22.32	0.40%	916.96M
+1026	GDYN	Grid Dynamics Holdings, Inc.	791.65M	10.41	0.48%	312.91M
+1027	METCB	Ramaco Resources, Inc.	783.28M	11.55	1.05%	693.52M
+1028	RLAY	Relay Therapeutics, Inc.	781.83M	6.00	0.67%	25.55M
+1029	ERII	Energy Recovery, Inc.	780.83M	13.70	-0.07%	128.35M
+1030	SWBI	Smith & Wesson Brands, Inc.	779.70M	17.14	1.33%	521.46M
+1031	SAGE	Sage Therapeutics, Inc.	777.78M	12.98	-2.63%	86.46M
+1032	TNGX	Tango Therapeutics, Inc.	776.91M	7.30	-0.14%	36.53M
+1033	RGNX	REGENXBIO Inc.	776.54M	15.92	1.47%	90.24M
+1034	EU	enCore Energy Corp.	775.11M	4.20	0.72%	-
+1035	FBMS	The First Bancshares, Inc.	772.58M	24.82	1.10%	281.53M
+1036	HAYN	Haynes International, Inc.	770.43M	60.28	0.05%	604.64M
+1037	ROOT	Root, Inc.	769.13M	52.45	1.96%	455.00M
+1038	XMTR	Xometry, Inc.	768.99M	15.88	-1.18%	463.41M
+1039	BLDP	Ballard Power Systems Inc.	768.53M	2.58	-2.09%	102.37M
+1040	TWKS	Thoughtworks Holding, Inc.	766.49M	2.37	2.16%	1.13B
+1041	TTGT	TechTarget, Inc.	766.05M	26.83	-1.25%	229.96M
+1042	ABL	Abacus Life, Inc.	764.34M	12.00	1.35%	66.40M
+1043	BIOX	Bioceres Crop Solutions Corp.	763.99M	12.16	0.33%	450.32M
+1044	CTBI	Community Trust Bancorp, Inc.	763.90M	42.43	1.46%	223.96M
+1045	PLRX	Pliant Therapeutics, Inc.	763.83M	12.69	1.36%	1.58M
+1046	BELFA	Bel Fuse Inc.	760.59M	70.00	1.00%	639.81M
+1047	ZEUS	Olympic Steel, Inc.	758.46M	68.28	0.60%	2.16B
+1048	BELFB	Bel Fuse Inc.	758.19M	57.31	1.31%	639.81M
+1049	BLFS	BioLife Solutions, Inc.	755.15M	16.67	5.11%	143.27M
+1050	WULF	TeraWulf Inc.	753.77M	2.52	9.83%	69.23M
+1051	CTKB	Cytek Biosciences, Inc.	751.58M	5.76	-2.70%	193.02M
+1052	BTDR	Bitdeer Technologies Group	750.98M	6.51	8.14%	368.55M
+1053	CRGX	CARGO Therapeutics, Inc.	749.47M	19.01	-0.94%	-
+1054	OCUL	Ocular Therapeutix, Inc.	746.85M	5.02	-3.93%	58.44M
+1055	FMBH	First Mid Bancshares, Inc.	746.79M	31.35	0.71%	274.15M
+1056	KRNT	Kornit Digital Ltd.	744.43M	15.60	0.74%	219.79M
+1057	VEON	VEON Ltd.	743.92M	23.68	-0.84%	1.72B
+1058	DCOM	Dime Community Bancshares, Inc.	742.76M	19.14	2.46%	350.01M
+1059	ALXO	ALX Oncology Holdings Inc.	738.74M	14.71	-5.71%	-
+1060	HSTM	HealthStream, Inc.	737.51M	24.36	-1.93%	279.06M
+1061	IREN	Iris Energy Limited	736.05M	5.32	7.47%	85.48M
+1062	ATRI	Atrion Corporation	736.04M	410.17	1.94%	169.33M
+1063	BJRI	BJ's Restaurants, Inc.	735.59M	31.49	-1.90%	1.33B
+1064	ARCT	Arcturus Therapeutics Holdings Inc.	735.32M	27.32	5.16%	166.80M
+1065	CGC	Canopy Growth Corporation	734.38M	8.11	2.27%	248.53M
+1066	CNOB	ConnectOne Bancorp, Inc.	731.02M	19.04	2.15%	260.91M
+1067	COGT	Cogent Biosciences, Inc.	727.91M	7.03	4.77%	-
+1068	PFC	Premier Financial Corp.	726.81M	20.32	1.45%	302.71M
+1069	STKL	SunOpta Inc.	725.79M	6.28	5.29%	630.30M
+1070	IMXI	International Money Express, Inc.	723.90M	21.48	0.61%	658.74M
+1071	AUPH	Aurinia Pharmaceuticals Inc.	723.09M	5.00	0.20%	175.51M
+1072	RMR	The RMR Group Inc.	722.01M	22.77	0.89%	973.25M
+1073	SHEN	Shenandoah Telecommunications Company	720.88M	14.23	-3.13%	287.38M
+1074	WKME	WalkMe Ltd.	719.86M	7.88	0.25%	266.95M
+1075	KIDS	OrthoPediatrics Corp.	715.51M	30.12	-0.63%	148.73M
+1076	HYMC	Hycroft Mining Holding Corporation	710.96M	3.57	-2.19%	-
+1077	BWMX	Betterware de México, S.A.P.I. de C.V.	708.27M	19.15	5.10%	767.35M
+1078	FIP	FTAI Infrastructure Inc.	707.79M	6.97	4.42%	320.47M
+1079	CFFN	Capitol Federal Financial, Inc.	706.78M	5.28	-	-41.97M
+1080	PRTC	PureTech Health plc	706.60M	26.15	-0.46%	15.62M
+1081	CRESY	Cresud S.A.C.I.F. y A.	705.62M	9.65	5.23%	743.19M
+1082	ACCD	Accolade, Inc.	703.25M	9.10	-0.33%	388.49M
+1083	EOLS	Evolus, Inc.	703.23M	11.45	-0.69%	202.09M
+1084	IRON	Disc Medicine, Inc.	698.84M	28.25	-1.53%	-
+1085	WALD	Waldencast plc	697.83M	5.71	4.58%	201.71M
+1086	AMAL	Amalgamated Financial Corp.	696.62M	22.89	1.91%	275.98M
+1087	MBUU	Malibu Boats, Inc.	694.03M	33.98	-1.45%	1.21B
+1088	PHAR	Pharming Group N.V.	692.32M	10.00	4.00%	272.57M
+1089	VREX	Varex Imaging Corporation	692.23M	17.07	0.47%	877.80M
+1090	SSYS	Stratasys Ltd.	689.13M	9.88	-1.45%	627.60M
+1091	KC	Kingsoft Cloud Holdings Limited	686.65M	2.70	1.70%	994.00M
+1092	RDWR	Radware Ltd.	685.10M	16.43	1.14%	261.29M
+1093	OFLX	Omega Flex, Inc.	683.28M	67.69	1.03%	111.47M
+1094	SPTN	SpartanNash Company	682.67M	19.72	0.25%	9.73B
+1095	DNTH	Dianthus Therapeutics, Inc.	682.02M	23.52	1.16%	2.83M
+1096	CGEM	Cullinan Oncology, Inc.	680.22M	15.80	0.89%	-
+1097	TRIN	Trinity Capital Inc.	680.18M	14.66	2.09%	181.86M
+1098	TMCI	Treace Medical Concepts, Inc.	678.07M	11.00	0.27%	187.12M
+1099	LBPH	Longboard Pharmaceuticals, Inc.	676.76M	18.88	8.26%	-
+1100	SILK	Silk Road Medical, Inc	676.15M	17.27	-0.29%	177.13M
+1101	HA	Hawaiian Holdings, Inc.	669.31M	12.95	-0.04%	2.72B
+1102	STGW	Stagwell Inc.	668.12M	5.67	1.43%	2.53B
+1103	LVRO	Lavoro Limited	667.98M	5.88	0.51%	1.90B
+1104	SVRA	Savara Inc.	666.56M	4.83	0.42%	-
+1105	YMAB	Y-mAbs Therapeutics, Inc.	665.19M	15.18	0.33%	84.82M
+1106	EGBN	Eagle Bancorp, Inc.	657.54M	22.03	1.87%	280.81M
+1107	BRY	Berry Corporation	655.70M	8.58	2.02%	903.46M
+1108	OSBC	Old Second Bancorp, Inc.	655.00M	14.63	1.39%	269.61M
+1109	IMNM	Immunome, Inc.	652.48M	15.33	-0.97%	14.02M
+1110	NVTS	Navitas Semiconductor Corporation	652.48M	3.65	0.27%	79.46M
+1111	HLVX	HilleVax, Inc.	650.09M	13.11	6.59%	-
+1112	ENGN	enGene Holdings Inc.	644.98M	14.63	-0.78%	-
+1113	NYMT	New York Mortgage Trust, Inc.	644.57M	7.06	1.44%	198.87M
+1114	REAX	The Real Brokerage Inc.	644.40M	3.58	5.29%	689.16M
+1115	CABA	Cabaletta Bio, Inc.	644.03M	13.44	0.71%	-
+1116	MERC	Mercer International Inc.	641.97M	9.65	1.15%	1.99B
+1117	HFWA	Heritage Financial Corporation	638.78M	18.26	0.50%	239.54M
+1118	CNDT	Conduent Incorporated	637.27M	3.04	-0.65%	3.72B
+1119	CCAP	Crescent Capital BDC, Inc.	635.79M	17.16	-0.09%	184.13M
+1120	PGY	Pagaya Technologies Ltd.	634.28M	8.99	-4.92%	812.05M
+1121	SIBN	SI-BONE, Inc.	632.39M	15.47	0.32%	138.89M
+1122	AVTE	Aerovate Therapeutics, Inc.	630.54M	22.64	2.68%	-
+1123	PNTG	The Pennant Group, Inc.	626.36M	20.84	2.64%	544.89M
+1124	GSBC	Great Southern Bancorp, Inc.	625.81M	53.19	1.41%	226.37M
+1125	HSII	Heidrick & Struggles International, Inc.	625.07M	31.03	1.72%	1.04B
+1126	SDA	SunCar Technology Group Inc.	624.66M	7.09	-	317.06M
+1127	HCKT	The Hackett Group, Inc.	623.70M	22.60	-	296.59M
+1128	CFB	CrossFirst Bankshares, Inc.	619.78M	12.55	0.97%	231.02M
+1129	EZPW	EZCORP, Inc.	619.65M	11.23	0.22%	1.08B
+1130	RILY	B. Riley Financial, Inc.	618.23M	20.34	1.75%	1.79B
+1131	QTRX	Quanterix Corporation	617.31M	16.17	2.15%	122.37M
+1132	EVER	EverQuote, Inc.	616.65M	18.04	-1.93%	287.92M
+1133	RDFN	Redfin Corporation	615.88M	5.19	-0.19%	976.67M
+1134	FCBC	First Community Bankshares, Inc.	615.63M	33.28	0.54%	157.15M
+1135	ZYME	Zymeworks Inc.	615.35M	8.72	-1.47%	76.01M
+1136	TIPT	Tiptree Inc.	615.35M	16.73	2.42%	1.65B
+1137	HBT	HBT Financial, Inc.	615.32M	19.53	5.43%	219.55M
+1138	FDUS	Fidus Investment Corporation	612.78M	20.00	0.20%	130.11M
+1139	FLGT	Fulgent Genetics, Inc.	612.67M	20.58	1.06%	289.21M
+1140	BITF	Bitfarms Ltd.	611.26M	2.03	5.47%	146.37M
+1141	EMBC	Embecta Corp.	610.62M	10.64	0.19%	1.12B
+1142	MCBS	MetroCity Bankshares, Inc.	610.48M	24.47	3.16%	119.70M
+1143	MNMD	Mind Medicine (MindMed) Inc.	603.84M	8.55	-1.50%	-
+1144	PLPC	Preformed Line Products Company	603.23M	123.70	-0.77%	669.68M
+1145	ALTI	AlTi Global, Inc.	600.82M	4.99	7.54%	250.88M
+1146	EVLV	Evolv Technologies Holdings, Inc.	599.76M	3.87	1.04%	80.42M
+1147	ORIC	ORIC Pharmaceuticals, Inc.	598.97M	8.90	-3.16%	-
+1148	FWRD	Forward Air Corporation	598.18M	23.30	-2.04%	1.37B
+1149	ALLO	Allogene Therapeutics, Inc.	597.74M	3.55	2.31%	95.00K
+1150	GHRS	GH Research PLC	596.62M	11.44	3.72%	-
+1151	LYEL	Lyell Immunopharma, Inc.	595.86M	2.37	6.05%	130.00K
+1152	WVE	Wave Life Sciences Ltd.	594.30M	4.90	0.62%	113.31M
+1153	MBWM	Mercantile Bank Corporation	592.77M	36.76	1.91%	217.99M
+1154	CCRN	Cross Country Healthcare, Inc.	591.73M	17.03	-2.69%	2.02B
+1155	NBBK	NB Bancorp, Inc.	591.05M	13.84	1.73%	131.75M
+1156	FLWS	1-800-FLOWERS.COM, Inc.	590.79M	9.19	2.11%	1.91B
+1157	ATEX	Anterix Inc.	590.41M	31.96	0.76%	3.54M
+1158	MITK	Mitek Systems, Inc.	589.33M	12.58	3.28%	163.77M
+1159	VMEO	Vimeo, Inc.	588.99M	3.51	-0.71%	417.21M
+1160	FRPH	FRP Holdings, Inc.	585.22M	30.80	1.45%	41.51M
+1161	CVLG	Covenant Logistics Group, Inc.	582.79M	44.59	-0.28%	1.10B
+1162	UVSP	Univest Financial Corporation	582.31M	19.75	1.59%	286.05M
+1163	CASS	Cass Information Systems, Inc.	581.26M	43.18	3.67%	197.51M
+1164	UFCS	United Fire Group, Inc.	579.61M	22.86	0.26%	1.10B
+1165	MESO	Mesoblast Limited	579.43M	5.43	4.22%	7.25M
+1166	IGIC	International General Insurance Holdings Ltd.	579.28M	13.35	1.37%	471.96M
+1167	SIGA	SIGA Technologies, Inc.	579.04M	8.17	-2.04%	139.92M
+1168	CVAC	CureVac N.V.	577.62M	2.54	4.10%	45.62M
+1169	DHC	Diversified Healthcare Trust	572.19M	2.39	-0.83%	1.41B
+1170	STOK	Stoke Therapeutics, Inc.	570.97M	11.07	-8.13%	8.78M
+1171	PROK	ProKidney Corp.	569.05M	2.50	22.30%	-
+1172	LPRO	Open Lending Corporation	568.83M	4.78	2.58%	117.46M
+1173	MGIC	Magic Software Enterprises Ltd.	568.01M	11.55	-	535.05M
+1174	NVAX	Novavax, Inc.	563.31M	4.04	1.76%	983.71M
+1175	OTLY	Oatly Group AB	562.28M	0.95	-0.44%	783.35M
+1176	EWCZ	European Wax Center, Inc.	562.20M	11.57	-0.09%	221.02M
+1177	MLYS	Mineralys Therapeutics, Inc.	561.33M	11.16	-1.15%	-
+1178	ATRO	Astronics Corporation	558.78M	16.24	1.34%	689.21M
+1179	AOSL	Alpha and Omega Semiconductor Limited	558.78M	19.80	1.28%	640.00M
+1180	VINP	Vinci Partners Investments Ltd.	558.62M	10.26	0.10%	93.31M
+1181	OABI	OmniAb, Inc.	554.59M	4.73	1.28%	34.16M
+1182	HPH	Highest Performances Holdings Inc.	554.27M	9.19	7.36%	15.81M
+1183	BFST	Business First Bancshares, Inc.	551.25M	21.71	3.14%	247.29M
+1184	MLAB	Mesa Laboratories, Inc.	551.22M	102.46	1.70%	212.87M
+1185	CORZ	Core Scientific, Inc.	550.50M	3.21	3.39%	502.40M
+1186	FATE	Fate Therapeutics, Inc.	549.74M	4.85	1.15%	63.53M
+1187	ARKO	Arko Corp.	548.40M	4.57	0.44%	9.41B
+1188	INNV	InnovAge Holding Corp.	547.67M	4.03	2.03%	720.80M
+1189	OLMA	Olema Pharmaceuticals, Inc.	547.40M	9.81	-1.21%	-
+1190	ATXS	Astria Therapeutics, Inc.	546.29M	9.97	2.26%	-
+1191	TAST	Carrols Restaurant Group, Inc.	546.01M	9.52	-0.05%	1.88B
+1192	CDLX	Cardlytics, Inc.	542.98M	12.32	0.82%	309.20M
+1193	AVBP	ArriVent BioPharma, Inc.	542.93M	16.20	4.52%	-
+1194	PRME	Prime Medicine, Inc.	542.73M	4.64	2.88%	-
+1195	CSTL	Castle Biosciences, Inc.	541.86M	19.71	2.07%	219.79M
+1196	HAIN	The Hain Celestial Group, Inc.	541.69M	6.03	0.42%	1.78B
+1197	VERV	Verve Therapeutics, Inc.	541.60M	6.98	5.12%	11.76M
+1198	VALN	Valneva SE	539.91M	7.76	1.84%	170.79M
+1199	ASTS	AST SpaceMobile, Inc.	538.97M	2.11	0.72%	-
+1200	LAZR	Luminar Technologies, Inc.	538.62M	1.34	2.29%	69.78M
+1201	DDI	DoubleDown Interactive Co., Ltd.	537.16M	10.77	9.23%	308.86M
+1202	CELC	Celcuity Inc.	536.85M	17.55	1.80%	-
+1203	ANAB	AnaptysBio, Inc.	535.80M	20.07	1.01%	17.16M
+1204	RSVR	Reservoir Media, Inc.	535.43M	8.26	3.25%	140.52M
+1205	IRMD	IRadimed Corporation	535.41M	42.27	3.09%	65.56M
+1206	LQDT	Liquidity Services, Inc.	534.82M	17.41	2.08%	313.51M
+1207	EXAI	Exscientia plc	534.22M	4.25	0.12%	25.42M
+1208	HBNC	Horizon Bancorp, Inc.	533.30M	12.09	2.11%	185.28M
+1209	ADSE	ADS-TEC Energy PLC	533.21M	10.87	0.65%	60.74M
+1210	KRRO	Korro Bio, Inc.	530.81M	66.17	-0.85%	-
+1211	CMPO	CompoSecure, Inc.	530.24M	6.58	0.77%	390.63M
+1212	PAHC	Phibro Animal Health Corporation	529.79M	13.07	-1.73%	982.01M
+1213	KRT	Karat Packaging Inc.	528.06M	26.45	-1.42%	405.65M
+1214	ECX	ECARX Holdings, Inc.	527.38M	1.56	-	4.67B
+1215	TITN	Titan Machinery Inc.	527.12M	23.08	-0.69%	2.76B
+1216	GOOD	Gladstone Commercial Corporation	526.85M	13.16	0.08%	147.58M
+1217	PHAT	Phathom Pharmaceuticals, Inc.	526.59M	9.06	1.00%	682.00K
+1218	CCB	Coastal Financial Corporation	526.58M	39.62	0.94%	261.91M
+1219	ABSI	Absci Corporation	525.58M	4.66	-2.31%	5.72M
+1220	CHUY	Chuy's Holdings, Inc.	525.43M	30.41	-0.59%	461.31M
+1221	LNZA	LanzaTech Global, Inc.	525.04M	2.67	-6.64%	62.63M
+1222	ALT	Altimmune, Inc.	524.63M	7.41	7.24%	426.00K
+1223	KE	Kimball Electronics, Inc.	523.37M	20.98	0.96%	1.84B
+1224	RDUS	Radius Health, Inc.	522.92M	18.57	0.87%	2.82B
+1225	IIIV	i3 Verticals, Inc.	522.85M	22.39	0.27%	376.20M
+1226	NKTX	Nkarta, Inc.	520.76M	7.40	1.51%	-
+1227	TALK	Talkspace, Inc.	517.69M	3.07	-2.23%	150.05M
+1228	MSBI	Midland States Bancorp, Inc.	516.53M	24.04	1.18%	281.48M
+1229	TRST	TrustCo Bank Corp NY	514.13M	26.99	0.23%	188.91M
+1230	APLT	Applied Therapeutics, Inc.	514.09M	4.52	3.20%	9.99M
+1231	CMPS	COMPASS Pathways plc	513.51M	8.32	-0.72%	-
+1232	TMC	TMC the metals company Inc.	513.27M	1.61	-	-
+1233	IBCP	Independent Bank Corporation	512.18M	24.69	1.33%	200.80M
+1234	SCWX	SecureWorks Corp.	512.06M	5.80	-3.17%	365.88M
+1235	NNOX	Nano-X Imaging Ltd.	511.34M	8.94	3.95%	9.91M
+1236	PERI	Perion Network Ltd.	511.32M	10.88	-0.91%	743.16M
+1237	EVGO	EVgo, Inc.	511.07M	1.70	-2.02%	160.95M
+1238	RWAY	Runway Growth Finance Corp.	510.21M	12.58	0.16%	164.21M
+1239	BWMN	Bowman Consulting Group Ltd.	509.66M	30.81	1.83%	346.26M
+1240	ITRN	Ituran Location and Control Ltd.	509.35M	25.36	1.24%	319.98M
+1241	ZJYL	Jin Medical International Ltd.	508.93M	3.29	-14.99%	-
+1242	LASR	nLIGHT, Inc.	507.89M	10.72	-1.38%	209.92M
+1243	AMNB	American National Bankshares Inc.	507.72M	47.76	-	102.42M
+1244	YORW	The York Water Company	507.70M	35.46	1.11%	71.03M
+1245	HSAI	Hesai Group	507.16M	4.05	2.02%	264.74M
+1246	DADA	Dada Nexus Limited	506.99M	1.93	3.76%	1.48B
+1247	GAIN	Gladstone Investment Corporation	504.62M	14.06	0.14%	83.52M
+1248	ACIC	American Coastal Insurance Corporation	503.33M	10.52	-0.99%	286.54M
+1249	NNDM	Nano Dimension Ltd.	503.00M	2.43	1.67%	56.31M
+1250	CATC	Cambridge Bancorp	501.39M	64.03	1.72%	161.63M
+1251	HTBK	Heritage Commerce Corp	500.98M	8.19	0.86%	191.47M
+1252	MNTK	Montauk Renewables, Inc.	500.79M	3.49	0.29%	174.90M
+1253	TIGR	UP Fintech Holding Limited	499.55M	3.20	1.59%	225.55M
+1254	GLDD	Great Lakes Dredge & Dock Corporation	497.85M	7.46	0.13%	589.63M
+1255	ICG	Intchains Group Limited	497.49M	8.30	1.59%	82.23M
+1256	ALEC	Alector, Inc.	496.94M	5.20	2.06%	97.06M
+1257	ALNT	Allient Inc.	495.47M	29.71	0.27%	578.63M
+1258	ACTG	Acacia Research Corporation	493.94M	4.95	1.33%	125.10M
+1259	GCBC	Greene County Bancorp, Inc.	492.76M	28.94	1.19%	68.41M
+1260	CLNE	Clean Energy Fuels Corp.	492.24M	2.21	-0.45%	425.16M
+1261	KALV	KalVista Pharmaceuticals, Inc.	491.70M	11.66	0.73%	-
+1262	CVGW	Calavo Growers, Inc.	490.40M	27.54	-3.06%	873.35M
+1263	CNSL	Consolidated Communications Holdings, Inc.	490.11M	4.24	-0.70%	1.11B
+1264	OFIX	Orthofix Medical Inc.	488.53M	13.07	-0.23%	746.64M
+1265	MCBC	Macatawa Bank Corporation	487.76M	14.20	0.46%	105.34M
+1266	LEGH	Legacy Housing Corporation	484.67M	19.84	-0.75%	189.14M
+1267	PETQ	PetIQ, Inc.	483.06M	16.56	1.72%	1.10B
+1268	ABUS	Arbutus Biopharma Corporation	482.87M	2.68	-1.47%	18.14M
+1269	SNDL	SNDL Inc.	482.76M	1.84	-1.60%	685.16M
+1270	ANNX	Annexon, Inc.	481.29M	4.58	0.44%	-
+1271	SMBC	Southern Missouri Bancorp, Inc.	480.18M	42.51	2.11%	153.93M
+1272	HDSN	Hudson Technologies, Inc.	478.77M	10.54	0.09%	289.03M
+1273	AMCX	AMC Networks Inc.	478.09M	10.97	0.46%	2.71B
+1274	DJCO	Daily Journal Corporation	476.88M	347.41	-0.16%	71.40M
+1275	THRD	Third Harmonic Bio, Inc.	476.77M	11.71	0.26%	-
+1276	URGN	UroGen Pharma Ltd.	476.69M	14.11	2.73%	82.71M
+1277	RICK	RCI Hospitality Holdings, Inc.	476.41M	50.92	-1.39%	297.73M
+1278	SLRN	Acelyrin, Inc.	474.04M	4.87	-2.89%	-
+1279	FMNB	Farmers National Banc Corp.	473.45M	12.59	1.45%	170.49M
+1280	CCCC	C4 Therapeutics, Inc.	472.32M	6.91	2.83%	20.76M
+1281	CALT	Calliditas Therapeutics AB (publ)	469.63M	17.50	-6.42%	105.88M
+1282	GRVY	Gravity Co., Ltd.	466.97M	67.20	1.14%	560.16M
+1283	CCBG	Capital City Bank Group, Inc.	466.66M	27.50	1.51%	220.88M
+1284	LWLG	Lightwave Logic, Inc.	464.82M	3.91	-2.86%	40.50K
+1285	HAFC	Hanmi Financial Corporation	463.69M	15.33	0.79%	251.11M
+1286	EDIT	Editas Medicine, Inc.	462.98M	5.62	2.37%	78.12M
+1287	DGICA	Donegal Group Inc.	462.29M	14.01	-0.07%	927.34M
+1288	DGICB	Donegal Group Inc.	461.96M	12.83	-1.60%	927.34M
+1289	FSBC	Five Star Bancorp	461.00M	22.22	1.25%	114.39M
+1290	GLAD	Gladstone Capital Corporation	459.46M	21.11	0.26%	90.36M
+1291	CGNT	Cognyte Software Ltd.	458.84M	6.53	1.71%	313.40M
+1292	LAND	Gladstone Land Corporation	456.58M	12.76	0.51%	90.40M
+1293	DMRC	Digimarc Corporation	455.07M	22.36	-1.02%	34.85M
+1294	TREE	LendingTree, Inc.	454.02M	34.89	2.23%	672.50M
+1295	TBPH	Theravance Biopharma, Inc.	452.75M	9.40	0.64%	57.42M
+1296	TVTX	Travere Therapeutics, Inc.	449.36M	5.90	3.15%	145.24M
+1297	CEVA	CEVA, Inc.	447.26M	18.95	1.53%	97.42M
+1298	HONE	HarborOne Bancorp, Inc.	446.49M	9.87	1.23%	163.45M
+1299	STTK	Shattuck Labs, Inc.	444.84M	9.32	-2.71%	1.66M
+1300	GDEV	GDEV Inc.	444.23M	2.25	2.27%	-
+1301	CAC	Camden National Corporation	444.15M	30.61	1.83%	161.20M
+1302	RBBN	Ribbon Communications Inc.	443.23M	2.57	-	826.34M
+1303	CTLP	Cantaloupe, Inc.	442.61M	6.09	-1.22%	252.57M
+1304	LILM	Lilium N.V.	442.55M	0.89	-0.24%	-
+1305	GLRE	Greenlight Capital Re, Ltd.	442.02M	12.53	0.40%	667.08M
+1306	WASH	Washington Trust Bancorp, Inc.	441.07M	25.90	1.35%	190.04M
+1307	FULC	Fulcrum Therapeutics, Inc.	440.98M	7.11	3.95%	2.81M
+1308	ANSC	Agriculture & Natural Solutions Acquisition Corporation	440.74M	10.22	-	-
+1309	AVAH	Aveanna Healthcare Holdings Inc.	440.55M	2.29	-	1.90B
+1310	DHIL	Diamond Hill Investment Group, Inc.	440.23M	152.86	1.35%	136.72M
+1311	NCMI	National CineMedia, Inc.	440.01M	4.53	0.56%	165.20M
+1312	OCS	Oculis Holding AG	439.80M	12.00	1.87%	1.05M
+1313	BIGC	BigCommerce Holdings, Inc.	439.68M	5.75	-2.46%	309.39M
+1314	ATNI	ATN International, Inc.	438.36M	28.43	0.39%	762.22M
+1315	LMB	Limbach Holdings, Inc.	437.81M	39.27	-0.10%	516.35M
+1316	PGC	Peapack-Gladstone Financial Corporation	435.84M	24.67	2.24%	215.58M
+1317	HTBI	HomeTrust Bancshares, Inc.	435.60M	24.85	2.26%	186.41M
+1318	DAVE	Dave Inc.	435.58M	35.73	7.27%	259.09M
+1319	TSHA	Taysha Gene Therapies, Inc.	435.56M	2.33	2.42%	15.45M
+1320	JOUT	Johnson Outdoors Inc.	435.44M	42.69	-1.77%	624.15M
+1321	THFF	First Financial Corporation	435.23M	36.82	0.57%	202.67M
+1322	HUMA	Humacyte, Inc.	434.06M	3.64	-1.76%	-
+1323	HEPS	D-Market Elektronik Hizmetler ve Ticaret A.S.	433.81M	1.34	1.91%	1.21B
+1324	SPFI	South Plains Financial, Inc.	433.50M	26.48	1.85%	214.36M
+1325	BAND	Bandwidth Inc.	432.98M	17.30	-0.23%	601.12M
+1326	TRDA	Entrada Therapeutics, Inc.	429.25M	12.73	4.73%	129.01M
+1327	WOOF	Petco Health and Wellness Company, Inc.	427.28M	1.58	-4.82%	6.26B
+1328	DENN	Denny's Corporation	425.87M	8.16	-0.12%	463.92M
+1329	PWFL	PowerFleet, Inc.	425.20M	3.98	-0.38%	132.20M
+1330	NTGR	NETGEAR, Inc.	425.19M	14.37	0.74%	740.84M
+1331	LYTS	LSI Industries Inc.	423.55M	14.52	-1.22%	473.55M
+1332	AAOI	Applied Optoelectronics, Inc.	423.34M	10.98	-9.41%	217.65M
+1333	VTRU	Vitru Limited	422.83M	12.50	-0.48%	402.98M
+1334	AMSC	American Superconductor Corporation	420.99M	11.70	0.34%	135.35M
+1335	CLFD	Clearfield, Inc.	420.10M	28.69	1.45%	217.01M
+1336	BHRB	Burke & Herbert Bank & Trust Company	420.07M	55.67	2.85%	111.50M
+1337	CDNA	CareDx, Inc	419.66M	8.14	-2.05%	280.32M
+1338	ALRS	Alerus Financial Corporation	419.00M	21.07	1.54%	166.01M
+1339	ZIMV	ZimVie Inc.	418.98M	15.46	0.19%	457.43M
+1340	LXRX	Lexicon Pharmaceuticals, Inc.	418.60M	1.71	3.33%	1.20M
+1341	NBN	Northeast Bank	418.38M	53.97	2.16%	142.81M
+1342	SENEA	Seneca Foods Corporation	417.21M	58.73	1.59%	1.48B
+1343	DAKT	Daktronics, Inc.	416.86M	9.04	-1.15%	812.07M
+1344	CDMO	Avid Bioservices, Inc.	416.43M	6.60	3.29%	140.94M
+1345	PACB	Pacific Biosciences of California, Inc.	415.33M	1.56	0.65%	200.52M
+1346	IGMS	IGM Biosciences, Inc.	413.81M	7.04	-2.22%	2.13M
+1347	LE	Lands' End, Inc.	412.55M	13.10	2.55%	1.47B
+1348	LXEO	Lexeo Therapeutics, Inc.	411.85M	12.47	3.49%	-
+1349	BTMD	biote Corp.	411.41M	5.52	-0.36%	185.36M
+1350	SMMF	Summit Financial Group, Inc.	411.14M	28.02	3.01%	165.20M
+1351	VYGR	Voyager Therapeutics, Inc.	411.06M	7.60	1.27%	250.01M
+1352	AVNW	Aviat Networks, Inc.	410.17M	32.73	-0.40%	357.26M
+1353	CRNC	Cerence Inc.	408.41M	9.79	-5.41%	349.15M
+1354	LRMR	Larimar Therapeutics, Inc.	408.32M	6.38	-2.37%	-
+1355	MXCT	MaxCyte, Inc.	407.67M	3.92	-0.89%	41.29M
+1356	PPTA	Perpetua Resources Corp.	405.90M	6.36	3.20%	-
+1357	LENZ	LENZ Therapeutics, Inc.	404.45M	15.76	-1.62%	-
+1358	SKIN	The Beauty Health Company	404.22M	3.28	0.31%	397.99M
+1359	NGNE	Neurogene Inc.	403.71M	31.30	2.64%	-
+1360	SENEB	Seneca Foods Corporation	403.71M	57.20	1.04%	1.48B
+1361	CCNE	CNB Financial Corporation	403.68M	19.13	2.08%	217.17M
+1362	SKYT	SkyWater Technology, Inc.	400.17M	8.49	1.13%	286.68M
+1363	NETD	Nabors Energy Transition Corp. II	399.72M	10.50	0.10%	-
+1364	BYND	Beyond Meat, Inc.	399.06M	6.15	-4.06%	343.38M
+1365	NPCE	NeuroPace, Inc.	398.95M	13.96	-0.14%	65.42M
+1366	LSEA	Landsea Homes Corporation	398.76M	11.06	0.55%	1.21B
+1367	CTNM	Contineum Therapeutics, Inc.	398.70M	15.87	2.89%	50.00M
+1368	TRML	Tourmaline Bio, Inc.	398.03M	15.49	0.26%	-
+1369	LFMD	LifeMD, Inc.	396.80M	9.84	1.44%	152.55M
+1370	NEXN	Nexxen International Ltd.	395.97M	5.75	2.68%	331.99M
+1371	HRTX	Heron Therapeutics, Inc.	394.61M	2.63	-0.57%	127.04M
+1372	REPL	Replimune Group, Inc.	394.11M	6.43	-0.31%	-
+1373	BMEA	Biomea Fusion, Inc.	394.01M	11.07	2.03%	-
+1374	OSPN	OneSpan Inc.	392.63M	10.39	3.80%	235.11M
+1375	CRBP	Corbus Pharmaceuticals Holdings, Inc.	391.60M	37.46	-4.54%	-
+1376	LCAA	L Catterton Asia Acquisition Corp	391.06M	13.51	2.43%	-
+1377	OSUR	OraSure Technologies, Inc.	390.01M	5.29	0.09%	405.47M
+1378	NFBK	Northfield Bancorp, Inc. (Staten Island, NY)	389.73M	8.77	3.06%	135.21M
+1379	LIND	Lindblad Expeditions Holdings, Inc.	389.23M	7.29	0.97%	569.54M
+1380	TTEC	TTEC Holdings, Inc.	388.44M	8.16	-2.16%	2.46B
+1381	PLSE	Pulse Biosciences, Inc.	387.96M	7.03	-2.29%	-
+1382	CBUS	Cibus, Inc.	387.80M	16.02	7.52%	1.82M
+1383	FCEL	FuelCell Energy, Inc.	387.25M	0.85	-3.65%	103.01M
+1384	RVNC	Revance Therapeutics, Inc.	387.16M	3.73	-1.32%	234.04M
+1385	CWCO	Consolidated Water Co. Ltd.	386.84M	24.48	0.12%	180.21M
+1386	ITOS	iTeos Therapeutics, Inc.	385.31M	10.76	1.89%	12.60M
+1387	ESQ	Esquire Financial Holdings, Inc.	384.79M	46.41	-0.41%	109.00M
+1388	AROW	Arrow Financial Corporation	383.87M	23.20	1.80%	130.57M
+1389	MRSN	Mersana Therapeutics, Inc.	383.45M	3.19	-1.85%	36.86M
+1390	QRTEB	Qurate Retail, Inc.	383.05M	3.88	2.92%	10.92B
+1391	GMGI	Golden Matrix Group, Inc.	382.81M	3.22	1.90%	45.24M
+1392	RGP	Resources Connection, Inc.	382.70M	11.33	0.53%	669.05M
+1393	ORGO	Organogenesis Holdings Inc.	382.69M	2.90	-	433.14M
+1394	HRZN	Horizon Technology Finance Corporation	382.40M	11.47	-0.22%	113.48M
+1395	SHYF	The Shyft Group, Inc.	381.58M	11.13	4.41%	872.20M
+1396	NVEC	NVE Corporation	381.43M	78.65	0.83%	35.52M
+1397	KRNY	Kearny Financial Corp.	381.04M	5.91	1.11%	148.37M
+1398	SPWR	SunPower Corporation	379.91M	2.15	-2.71%	1.83B
+1399	BLZE	Backblaze, Inc.	379.86M	9.21	0.33%	102.02M
+1400	WLDN	Willdan Group, Inc.	377.85M	27.46	2.27%	510.10M
+1401	ANIK	Anika Therapeutics, Inc.	376.64M	25.76	-0.31%	166.66M
+1402	HROW	Harrow Health, Inc.	374.84M	10.64	1.82%	130.19M
+1403	GRPN	Groupon, Inc.	374.54M	9.56	0.47%	514.91M
+1404	QRTEA	Qurate Retail, Inc.	373.85M	0.98	-2.37%	10.92B
+1405	AQST	Aquestive Therapeutics, Inc.	373.32M	4.16	1.22%	50.58M
+1406	MREO	Mereo BioPharma Group plc	373.26M	2.67	0.95%	10.00M
+1407	ADTN	ADTRAN Holdings, Inc.	372.64M	4.72	0.53%	1.28B
+1408	SMXT	SolarMax Technology, Inc.	372.03M	7.90	22.98%	54.14M
+1409	HIFS	Hingham Institution for Savings	369.76M	172.71	1.22%	170.25M
+1410	VNET	VNET Group, Inc.	369.52M	1.48	-1.01%	1.05B
+1411	VLGEA	Village Super Market, Inc.	368.67M	27.51	-0.15%	2.20B
+1412	CRMT	America's Car-Mart, Inc.	368.38M	57.99	-0.43%	1.42B
+1413	NATR	Nature's Sunshine Products, Inc.	367.35M	19.43	0.73%	445.32M
+1414	SOHU	Sohu.com Limited	366.84M	11.08	1.00%	600.67M
+1415	DCGO	DocGo Inc.	366.68M	3.51	-1.68%	624.29M
+1416	FORR	Forrester Research, Inc.	366.50M	19.01	1.39%	480.78M
+1417	SRDX	Surmodics, Inc.	364.73M	25.63	-3.27%	138.20M
+1418	ARTNA	Artesian Resources Corporation	363.42M	35.24	1.05%	98.86M
+1419	MCFT	MasterCraft Boat Holdings, Inc.	362.14M	21.30	0.95%	537.04M
+1420	ZYXI	Zynex, Inc.	361.91M	11.25	-1.14%	184.32M
+1421	JFIN	Jiayin Group Inc.	358.55M	6.43	-0.31%	771.07M
+1422	AURA	Aura Biosciences, Inc.	358.41M	7.23	0.56%	-
+1423	FBLG	FibroBiologics, Inc.	358.27M	10.82	6.60%	-
+1424	AMRN	Amarin Corporation plc	356.70M	0.87	1.54%	306.91M
+1425	GGR	Gogoro Inc.	356.41M	1.47	4.26%	349.85M
+1426	BBCP	Concrete Pumping Holdings, Inc.	356.37M	6.62	-0.68%	446.38M
+1427	CRBU	Caribou Biosciences, Inc.	355.39M	3.95	2.47%	34.48M
+1428	RXT	Rackspace Technology, Inc.	353.83M	1.64	2.19%	2.96B
+1429	SHBI	Shore Bancshares, Inc.	353.36M	10.64	2.01%	137.51M
+1430	ASLE	AerSale Corporation	352.39M	6.66	-	334.50M
+1431	VALU	Value Line, Inc.	352.29M	37.01	-	38.20M
+1432	FARO	FARO Technologies, Inc.	352.26M	18.60	-0.59%	358.83M
+1433	LMNR	Limoneira Company	351.82M	19.40	-0.97%	181.73M
+1434	AMSWA	American Software, Inc.	350.80M	10.55	-0.66%	110.31M
+1435	TNYA	Tenaya Therapeutics, Inc.	349.40M	4.45	3.01%	-
+1436	ONEW	OneWater Marine Inc.	348.88M	23.83	-	1.93B
+1437	ADPT	Adaptive Biotechnologies Corporation	348.22M	2.41	0.42%	170.28M
+1438	FFIC	Flushing Financial Corporation	348.12M	12.04	2.38%	191.22M
+1439	ATLC	Atlanticus Holdings Corporation	348.03M	23.46	-3.62%	354.81M
+1440	JRVR	James River Group Holdings, Ltd.	347.98M	9.24	-1.07%	812.01M
+1441	CWBC	Community West Bancshares	347.16M	18.25	0.80%	89.14M
+1442	PEPG	PepGen Inc.	345.27M	10.59	0.52%	-
+1443	TCMD	Tactile Systems Technology, Inc.	345.23M	14.52	0.80%	274.42M
+1444	SWIM	Latham Group, Inc.	345.00M	3.00	-2.28%	566.49M
+1445	RANI	Rani Therapeutics Holdings, Inc.	344.84M	6.80	-3.82%	-
+1446	PGEN	Precigen, Inc.	343.51M	1.38	3.38%	6.23M
+1447	RDZN	Roadzen, Inc.	342.55M	5.00	2.04%	-
+1448	MPB	Mid Penn Bancorp, Inc.	339.60M	20.48	-0.10%	163.69M
+1449	RBB	RBB Bancorp	337.80M	18.18	1.93%	130.94M
+1450	BWB	Bridgewater Bancshares, Inc.	337.23M	12.15	4.11%	111.84M
+1451	SLDB	Solid Biosciences Inc.	337.06M	8.93	2.64%	-
+1452	WETH	Wetouch Technology Inc.	336.98M	2.27	11.82%	39.71M
+1453	MOFG	MidWestOne Financial Group, Inc.	336.90M	21.34	2.84%	156.75M
+1454	JSPR	Jasper Therapeutics, Inc.	336.60M	22.46	4.01%	-
+1455	BOOM	DMC Global Inc.	335.77M	16.98	-0.24%	719.19M
+1456	BETR	Better Home & Finance Holding Company	335.48M	0.43	0.35%	76.82M
+1457	RRBI	Red River Bancshares, Inc.	333.81M	47.00	1.31%	106.82M
+1458	LOVE	The Lovesac Company	332.87M	21.48	3.27%	700.27M
+1459	REAL	The RealReal, Inc.	331.35M	3.18	2.42%	549.30M
+1460	SOPH	SOPHiA GENETICS SA	330.43M	5.05	1.81%	62.37M
+1461	IPXX	Inflection Point Acquisition Corp. II	328.89M	10.52	-0.06%	-
+1462	GAMB	Gambling.com Group Limited	326.81M	8.79	1.03%	108.65M
+1463	HCAT	Health Catalyst, Inc.	326.20M	5.57	-0.18%	295.94M
+1464	ESPR	Esperion Therapeutics, Inc.	325.50M	1.92	-1.79%	116.33M
+1465	PANL	Pangaea Logistics Solutions, Ltd.	323.82M	6.93	1.17%	499.27M
+1466	MTC	MMTec, Inc.	323.61M	1.60	-1.23%	3.22M
+1467	PRCH	Porch Group, Inc.	321.58M	3.30	0.76%	430.30M
+1468	MYPS	PLAYSTUDIOS, Inc.	321.45M	2.35	1.73%	310.89M
+1469	SSP	The E.W. Scripps Company	320.29M	3.78	5.15%	2.29B
+1470	AIRS	AirSculpt Technologies, Inc.	319.33M	5.55	-2.63%	195.92M
+1471	MGTX	MeiraGTx Holdings plc	319.26M	5.02	-1.34%	-
+1472	RNAC	Cartesian Therapeutics, Inc.	318.44M	18.46	3.07%	26.00M
+1473	AUDC	AudioCodes Ltd.	318.36M	10.50	0.77%	244.38M
+1474	OCGN	Ocugen, Inc.	317.80M	1.24	-6.44%	6.04M
+1475	CDRO	Codere Online Luxembourg, S.A.	317.54M	7.00	2.56%	152.88M
+1476	FNKO	Funko, Inc.	317.46M	6.26	4.08%	1.10B
+1477	VSTA	Vasta Platform Limited	317.38M	3.84	3.50%	305.19M
+1478	LINC	Lincoln Educational Services Corporation	316.48M	9.97	2.84%	378.07M
+1479	MODV	ModivCare Inc.	315.69M	22.11	4.00%	2.76B
+1480	NWPX	Northwest Pipe Company	315.46M	31.84	-0.03%	444.36M
+1481	APLD	Applied Digital Corporation	315.44M	2.56	3.64%	143.91M
+1482	UHG	United Homes Group, Inc.	314.41M	6.50	2.36%	421.47M
+1483	AVIR	Atea Pharmaceuticals, Inc.	314.35M	3.74	0.40%	-
+1484	MTRX	Matrix Service Company	313.10M	11.47	-1.21%	765.45M
+1485	WLFC	Willis Lease Finance Corporation	312.98M	49.15	-1.48%	418.56M
+1486	PKOH	Park-Ohio Holdings Corp.	312.47M	23.86	-0.17%	1.66B
+1487	ZUMZ	Zumiez Inc.	312.37M	15.75	3.82%	875.49M
+1488	LYRA	Lyra Therapeutics, Inc.	311.86M	5.25	1.16%	1.56M
+1489	FRBA	First Bank	311.32M	12.48	-1.89%	125.94M
+1490	PBPB	Potbelly Corporation	310.23M	10.50	0.57%	491.41M
+1491	TCRX	TScan Therapeutics, Inc.	308.73M	7.08	3.81%	21.05M
+1492	CLOV	Clover Health Investments, Corp.	308.49M	0.62	-2.00%	2.03B
+1493	XOMA	XOMA Corporation	308.08M	26.38	3.53%	4.76M
+1494	GUTS	Fractyl Health, Inc.	307.86M	6.33	-3.36%	120.00K
+1495	NAUT	Nautilus Biotechnology, Inc.	307.74M	2.44	-1.02%	-
+1496	RENB	Renovaro Biosciences Inc.	307.45M	2.17	-	-
+1497	POWW	AMMO, Inc.	307.41M	2.60	2.36%	148.32M
+1498	CERS	Cerus Corporation	307.27M	1.70	0.89%	186.80M
+1499	MTLS	Materialise NV	306.85M	5.20	-0.40%	284.59M
+1500	ISPR	Ispire Technology Inc.	306.56M	5.44	-1.77%	141.32M
+1501	TGAN	Transphorm, Inc.	306.25M	4.83	0.84%	18.76M
+1502	SERA	Sera Prognostics, Inc.	306.08M	9.73	-0.21%	306.00K
+1503	PROC	Procaps Group S.A.	305.75M	2.71	4.23%	414.10M
+1504	ITIC	Investors Title Company	305.69M	161.69	3.57%	224.75M
+1505	SPOK	Spok Holdings, Inc.	305.07M	15.20	1.27%	139.03M
+1506	GILT	Gilat Satellite Networks Ltd.	305.04M	5.35	0.66%	266.09M
+1507	CVRX	CVRx, Inc.	304.92M	14.63	-1.81%	39.30M
+1508	AEHR	Aehr Test Systems	303.60M	10.54	1.74%	71.89M
+1509	FMAO	Farmers & Merchants Bancorp, Inc.	303.56M	22.22	5.79%	95.69M
+1510	VMD	Viemed Healthcare, Inc.	302.52M	7.86	-0.25%	183.01M
+1511	NODK	NI Holdings, Inc.	302.21M	15.00	-1.06%	365.70M
+1512	NYXH	Nyxoah S.A.	301.52M	10.77	4.46%	4.83M
+1513	HBCP	Home Bancorp, Inc.	301.44M	37.37	3.53%	132.99M
+1514	ATAI	Atai Life Sciences N.V.	301.34M	1.82	-1.89%	314.00K
+1515	TERN	Terns Pharmaceuticals, Inc.	301.28M	4.66	2.19%	-
+1516	CLMB	Climb Global Solutions, Inc.	300.93M	65.60	-0.06%	352.01M
+1517	IPX	IperionX Limited	300.62M	13.95	-0.14%	-
+1518	PTSI	P.A.M. Transportation Services, Inc.	300.44M	13.66	-2.18%	810.81M
+1519	EPIX	ESSA Pharma Inc.	300.38M	6.80	7.59%	-
+1520	EBTC	Enterprise Bancorp, Inc.	300.03M	24.69	2.98%	161.44M
+1521	HIVE	HIVE Blockchain Technologies Ltd.	299.67M	2.87	5.72%	95.81M
+1522	SEZL	Sezzle Inc.	299.23M	53.12	-4.94%	159.36M
+1523	UXIN	Uxin Limited	298.61M	1.60	-3.61%	200.74M
+1524	AVXL	Anavex Life Sciences Corp.	298.29M	3.70	-2.25%	-
+1525	GENK	GEN Restaurant Group, Inc.	298.19M	9.21	0.66%	181.01M
+1526	WHF	WhiteHorse Finance, Inc.	297.40M	12.77	0.63%	103.26M
+1527	GWRS	Global Water Resources, Inc.	296.87M	12.31	-1.05%	53.03M
+1528	KMDA	Kamada Ltd.	295.99M	5.15	1.98%	142.52M
+1529	TLSI	TriSalus Life Sciences, Inc.	294.96M	9.80	3.27%	18.51M
+1530	AXGN	AxoGen, Inc.	292.72M	6.77	4.15%	159.01M
+1531	SNBR	Sleep Number Corporation	292.44M	13.13	-3.53%	1.89B
+1532	LWAY	Lifeway Foods, Inc.	292.35M	19.90	2.58%	160.12M
+1533	ADTH	AdTheorent Holding Company, Inc.	291.60M	3.19	0.16%	170.81M
+1534	SLDP	Solid Power, Inc.	291.56M	1.61	-1.83%	17.41M
+1535	VRCA	Verrica Pharmaceuticals Inc.	290.99M	6.88	-1.43%	5.12M
+1536	FBIZ	First Business Financial Services, Inc.	290.73M	35.22	2.67%	135.71M
+1537	LX	LexinFintech Holdings Ltd.	290.64M	1.63	0.62%	1.84B
+1538	HNST	The Honest Company, Inc.	290.08M	3.02	-0.50%	344.37M
+1539	STRO	Sutro Biopharma, Inc.	289.97M	3.76	3.58%	153.73M
+1540	LUNG	Pulmonx Corporation	289.03M	7.54	0.33%	68.68M
+1541	ACRV	Acrivon Therapeutics, Inc.	287.88M	9.24	-1.60%	-
+1542	ENTA	Enanta Pharmaceuticals, Inc.	287.51M	13.60	2.10%	73.62M
+1543	QTTB	Q32 Bio Inc.	287.38M	24.49	8.87%	1.16M
+1544	AKBA	Akebia Therapeutics, Inc.	285.79M	1.37	0.37%	194.62M
+1545	REFI	Chicago Atlantic Real Estate Finance, Inc.	284.79M	15.68	1.23%	57.15M
+1546	NEGG	Newegg Commerce, Inc.	284.41M	0.75	-0.54%	-
+1547	WTBA	West Bancorporation, Inc.	284.33M	16.99	0.47%	78.40M
+1548	IMMP	Immutep Limited	284.13M	2.36	4.89%	4.58M
+1549	CRMD	CorMedix Inc.	283.93M	5.17	-2.08%	-
+1550	DOMO	Domo, Inc.	283.71M	7.48	-2.86%	318.99M
+1551	BYRN	Byrna Technologies Inc.	283.07M	12.41	-3.39%	50.89M
+1552	INBK	First Internet Bancorp	282.27M	32.61	1.34%	84.38M
+1553	NBTX	Nanobiotix S.A.	282.27M	5.80	7.12%	7.41M
+1554	ORRF	Orrstown Financial Services, Inc.	281.97M	26.39	1.66%	128.88M
+1555	UROY	Uranium Royalty Corp.	281.95M	2.35	0.43%	33.08M
+1556	ERAS	Erasca, Inc.	281.79M	1.87	4.47%	-
+1557	BVS	Bioventus Inc.	281.40M	4.43	-1.12%	512.35M
+1558	SMTI	Sanara MedTech Inc.	281.19M	32.61	-3.49%	64.99M
+1559	CZNC	Citizens & Northern Corporation	280.65M	18.25	2.93%	104.63M
+1560	BSRR	Sierra Bancorp	280.58M	19.16	2.16%	139.12M
+1561	TTSH	Tile Shop Holdings, Inc.	280.42M	6.31	-0.47%	377.15M
+1562	GLUE	Monte Rosa Therapeutics, Inc.	280.36M	5.67	-3.08%	-
+1563	TVGN	Tevogen Bio Holdings Inc.	279.83M	1.69	-8.92%	-
+1564	SGC	Superior Group of Companies, Inc.	279.55M	16.83	1.51%	543.30M
+1565	OPT	Opthea Limited	278.83M	3.40	2.41%	385.28K
+1566	CBNK	Capital Bancorp, Inc.	278.03M	19.97	1.27%	156.99M
+1567	GRIN	Grindrod Shipping Holdings Ltd.	277.96M	14.06	2.11%	387.10M
+1568	VNDA	Vanda Pharmaceuticals Inc.	277.34M	4.84	-5.28%	192.64M
+1569	NEWT	Newtek Business Services Corp.	277.23M	11.19	2.61%	191.70M
+1570	AFRI	Forafric Global PLC	277.12M	10.31	-0.77%	280.40M
+1571	WEYS	Weyco Group, Inc.	276.66M	28.76	-1.30%	318.05M
+1572	ACNB	ACNB Corporation	276.34M	33.71	8.39%	105.92M
+1573	RAPT	RAPT Therapeutics, Inc.	275.60M	7.94	-0.13%	-
+1574	INZY	Inozyme Pharma, Inc.	274.27M	4.45	-1.33%	-
+1575	WGS	GeneDx Holdings Corp.	273.56M	10.51	9.02%	202.57M
+1576	PFIS	Peoples Financial Services Corp.	273.06M	38.77	1.79%	100.32M
+1577	NVX	Novonix Limited	272.56M	2.23	2.29%	8.05M
+1578	FISI	Financial Institutions, Inc.	271.65M	17.68	1.84%	200.28M
+1579	UNTY	Unity Bancorp, Inc.	271.42M	26.81	-0.37%	99.97M
+1580	TRUE	TrueCar, Inc.	271.06M	2.96	1.55%	158.71M
+1581	FRST	Primis Financial Corp.	271.01M	10.98	1.57%	133.22M
+1582	MVIS	MicroVision, Inc.	270.44M	1.39	-0.71%	7.26M
+1583	IVVD	Invivyd, Inc.	270.04M	2.27	-1.52%	-
+1584	PYXS	Pyxis Oncology, Inc.	270.03M	4.60	10.58%	-
+1585	FSTR	L.B. Foster Company	269.81M	24.53	1.55%	543.74M
+1586	EDAP	EDAP TMS S.A.	269.74M	7.27	0.14%	67.14M
+1587	BDTX	Black Diamond Therapeutics, Inc.	269.45M	5.21	-1.05%	-
+1588	CARE	Carter Bankshares, Inc.	267.40M	11.59	1.40%	-
+1589	NATH	Nathan's Famous, Inc.	265.50M	65.10	0.25%	137.03M
+1590	EGHT	8x8, Inc.	265.36M	2.15	-1.38%	733.82M
+1591	TCBX	Third Coast Bancshares, Inc.	263.84M	19.53	2.01%	141.41M
+1592	LUNR	Intuitive Machines, Inc.	263.58M	5.16	-0.77%	79.52M
+1593	FDBC	Fidelity D & D Bancorp, Inc.	263.20M	45.97	-2.15%	72.13M
+1594	DOYU	DouYu International Holdings Limited	263.18M	8.23	2.11%	780.03M
+1595	BCAL	Southern California Bancorp	261.60M	14.12	0.28%	96.60M
+1596	GPRO	GoPro, Inc.	261.60M	1.71	0.29%	1.01B
+1597	BRLT	Brilliant Earth Group, Inc.	261.29M	2.67	-0.37%	446.38M
+1598	LSAK	Lesaka Technologies, Inc.	260.46M	4.18	-0.60%	547.10M
+1599	VTYX	Ventyx Biosciences, Inc.	258.93M	4.36	-2.46%	-
+1600	SLAM	Slam Corp.	258.45M	11.02	-0.18%	-
+1601	LOCO	El Pollo Loco Holdings, Inc.	256.48M	8.23	-1.14%	468.66M
+1602	SGHT	Sight Sciences, Inc.	256.44M	5.20	1.36%	81.06M
+1603	PLAO	Patria Latin American Opportunity Acquisition Corp.	256.40M	11.33	0.18%	-
+1604	MVBF	MVB Financial Corp.	256.24M	20.25	0.35%	144.92M
+1605	MGX	Metagenomi, Inc.	255.94M	6.79	-1.45%	44.76M
+1606	FNLC	The First Bancorp, Inc.	255.77M	23.17	0.78%	79.46M
+1607	BMRC	Bank of Marin Bancorp	255.38M	15.66	0.87%	105.52M
+1608	VBNK	VersaBank	254.63M	9.58	-0.42%	83.26M
+1609	BSVN	Bank7 Corp.	254.51M	27.64	0.18%	70.64M
+1610	PRLD	Prelude Therapeutics Incorporated	254.14M	3.75	0.81%	-
+1611	LNKB	LINKBANCORP, Inc.	253.97M	6.80	3.50%	30.50M
+1612	HEAR	Turtle Beach Corporation	253.87M	14.42	-0.14%	258.12M
+1613	SFIX	Stitch Fix, Inc.	253.56M	2.12	-1.17%	1.47B
+1614	FENC	Fennec Pharmaceuticals Inc.	253.38M	9.37	0.27%	21.25M
+1615	SBT	Sterling Bancorp, Inc. (Southfield, MI)	253.31M	4.87	-0.71%	76.27M
+1616	IONR	ioneer Ltd	253.26M	5.20	-	-
+1617	RMNI	Rimini Street, Inc.	252.57M	2.82	-1.40%	431.50M
+1618	BTBT	Bit Digital, Inc.	251.60M	2.13	7.58%	44.92M
+1619	ANGO	AngioDynamics, Inc.	251.54M	6.30	0.64%	324.01M
+1620	NKTR	Nektar Therapeutics	250.64M	1.37	10.08%	90.12M
+1621	NRIM	Northrim BanCorp, Inc.	250.23M	45.69	-1.51%	125.79M
+1622	XERS	Xeris Biopharma Holdings, Inc.	250.20M	1.79	2.59%	163.91M
+1623	HOWL	Werewolf Therapeutics, Inc.	249.80M	5.84	-1.02%	19.94M
+1624	VSTM	Verastem, Inc.	249.67M	9.89	0.46%	-
+1625	RDVT	Red Violet, Inc.	248.98M	17.85	0.11%	60.20M
+1626	OBT	Orange County Bancorp, Inc.	248.93M	44.37	1.52%	93.94M
+1627	PBYI	Puma Biotechnology, Inc.	248.27M	5.16	2.99%	235.64M
+1628	AFCG	AFC Gamma, Inc.	247.39M	11.93	2.42%	64.18M
+1629	NAAS	NaaS Technology Inc.	247.00M	1.00	2.04%	45.14M
+1630	FSBW	FS Bancorp, Inc.	246.19M	31.85	1.11%	139.02M
+1631	UTMD	Utah Medical Products, Inc.	245.95M	69.23	0.95%	50.22M
+1632	ILPT	Industrial Logistics Properties Trust	245.60M	3.73	1.91%	437.34M
+1633	SVII	Spring Valley Acquisition Corp. II	245.57M	11.01	-0.14%	-
+1634	TLS	Telos Corporation	245.22M	3.35	0.90%	145.38M
+1635	CDXC	ChromaDex Corporation	245.13M	3.27	-11.38%	83.57M
+1636	CHRS	Coherus BioSciences, Inc.	244.59M	2.15	3.86%	257.24M
+1637	ANL	Adlai Nortye Ltd.	244.49M	14.39	16.05%	5.00M
+1638	JMSB	John Marshall Bancorp, Inc.	244.45M	17.25	-0.58%	38.80M
+1639	CCSI	Consensus Cloud Solutions, Inc.	244.07M	12.67	-1.63%	362.56M
+1640	PRTH	Priority Technology Holdings, Inc.	244.05M	3.20	-0.78%	755.61M
+1641	SHCR	Sharecare, Inc.	243.90M	0.67	2.40%	445.25M
+1642	XBIT	XBiotech Inc.	243.19M	7.99	-0.62%	-
+1643	ACIU	AC Immune SA	243.03M	2.47	4.66%	17.62M
+1644	PLMJ	Plum Acquisition Corp. III	242.07M	10.69	-0.47%	-
+1645	AIP	Arteris, Inc.	241.86M	6.40	0.16%	53.67M
+1646	RENE	Cartesian Growth Corporation II	241.72M	11.18	-0.09%	-
+1647	USAP	Universal Stainless & Alloy Products, Inc.	241.51M	26.31	0.67%	285.94M
+1648	IBEX	IBEX Limited	241.26M	13.73	2.77%	513.10M
+1649	ADVM	Adverum Biotechnologies, Inc.	240.96M	11.61	2.38%	3.60M
+1650	JAKK	JAKKS Pacific, Inc.	240.48M	22.26	-0.93%	711.56M
+1651	API	Agora, Inc.	239.00M	2.46	2.50%	141.54M
+1652	ESEA	Euroseas Ltd.	238.49M	34.00	2.69%	189.36M
+1653	BLDE	Blade Air Mobility, Inc.	238.37M	3.15	-7.23%	225.18M
+1654	FLIC	The First of Long Island Corporation	238.10M	10.60	1.53%	93.53M
+1655	SFST	Southern First Bancshares, Inc.	238.00M	29.60	2.07%	86.25M
+1656	IHRT	iHeartMedia, Inc.	237.58M	1.93	1.32%	3.75B
+1657	CIVB	Civista Bancshares, Inc.	237.03M	15.11	0.60%	158.22M
+1658	PBFS	Pioneer Bancorp, Inc.	236.40M	9.10	-	78.37M
+1659	HLXB	Helix Acquisition Corp. II	235.14M	10.26	0.14%	-
+1660	CRNT	Ceragon Networks Ltd.	234.85M	2.75	0.55%	347.18M
+1661	INO	Inovio Pharmaceuticals, Inc.	234.64M	10.07	4.03%	832.01K
+1662	TWIN	Twin Disc, Incorporated	234.43M	16.73	-0.18%	294.24M
+1663	HMST	HomeStreet, Inc.	233.65M	12.42	-2.05%	209.12M
+1664	CLAR	Clarus Corporation	233.43M	6.10	-2.24%	286.02M
+1665	TSVT	2seventy bio, Inc.	232.95M	4.56	0.77%	100.39M
+1666	ALDX	Aldeyra Therapeutics, Inc.	231.55M	3.94	1.94%	-
+1667	IMMR	Immersion Corporation	231.26M	7.30	1.81%	33.92M
+1668	INSE	Inspired Entertainment, Inc.	231.10M	8.71	-2.02%	323.00M
+1669	PCYO	Pure Cycle Corporation	230.65M	9.58	0.52%	18.84M
+1670	CDT	Conduit Pharmaceuticals Inc.	230.35M	3.12	4.35%	-
+1671	PAYS	PaySign, Inc.	229.88M	4.35	-	47.27M
+1672	OVID	Ovid Therapeutics Inc.	229.81M	3.24	0.31%	391.70K
+1673	BLNK	Blink Charging Co.	229.76M	2.28	-0.66%	140.60M
+1674	WSBF	Waterstone Financial, Inc.	229.00M	11.41	-1.55%	130.74M
+1675	BCML	BayCom Corp	228.72M	19.85	-0.85%	102.84M
+1676	QURE	uniQure N.V.	228.43M	4.77	2.03%	15.84M
+1677	IVCB	Investcorp Europe Acquisition Corp I	228.33M	11.32	-	-
+1678	BAER	Bridger Aerospace Group Holdings, Inc.	228.08M	4.86	-0.21%	66.71M
+1679	ADAP	Adaptimmune Therapeutics plc	227.17M	1.01	2.90%	60.28M
+1680	QSI	Quantum-Si incorporated	226.83M	1.60	1.59%	1.08M
+1681	ME	23andMe Holding Co.	226.63M	0.47	-3.19%	247.99M
+1682	APEI	American Public Education, Inc.	224.92M	12.79	1.43%	600.55M
+1683	FHTX	Foghorn Therapeutics Inc.	224.32M	5.32	0.38%	34.16M
+1684	SIFY	Sify Technologies Limited	223.06M	1.22	-0.81%	421.93M
+1685	RCEL	AVITA Medical, Inc.	221.59M	8.61	-0.35%	51.57M
+1686	BOLD	Boundless Bio, Inc.	221.28M	9.95	-1.39%	-
+1687	CONX	CONX Corp.	221.22M	10.60	0.09%	-
+1688	ARQ	Arq, Inc.	220.37M	6.60	-4.76%	99.18M
+1689	PCB	PCB Bancorp	219.47M	15.47	0.29%	99.32M
+1690	SWKH	SWK Holdings Corporation	218.95M	17.57	-0.68%	37.76M
+1691	KNDI	Kandi Technologies Group, Inc.	218.40M	2.52	-1.18%	123.60M
+1692	ALCO	Alico, Inc.	216.96M	28.36	1.29%	43.24M
+1693	CVLY	Codorus Valley Bancorp, Inc.	216.77M	22.62	1.23%	95.31M
+1694	PLL	Piedmont Lithium Inc.	216.75M	11.24	-3.19%	39.82M
+1695	NECB	Northeast Community Bancorp, Inc.	216.19M	15.37	0.20%	99.96M
+1696	MHLD	Maiden Holdings, Ltd.	216.01M	2.15	2.87%	89.23M
+1697	CVGI	Commercial Vehicle Group, Inc.	215.92M	6.36	0.47%	994.68M
+1698	ARAY	Accuray Incorporated	215.20M	2.17	1.40%	447.48M
+1699	SSBK	Southern States Bancshares, Inc.	214.60M	24.10	0.42%	82.90M
+1700	MACK	Merrimack Pharmaceuticals, Inc.	214.49M	14.76	0.24%	-
+1701	DIBS	1stdibs.Com, Inc.	214.35M	5.35	0.56%	84.68M
+1702	GTHX	G1 Therapeutics, Inc.	214.10M	4.12	0.24%	82.51M
+1703	USCB	USCB Financial Holdings, Inc.	212.42M	10.60	-0.52%	63.60M
+1704	CZFS	Citizens Financial Services, Inc.	211.81M	45.00	4.00%	86.34M
+1705	DSGN	Design Therapeutics, Inc.	211.41M	3.78	2.16%	-
+1706	GASS	StealthGas Inc.	210.44M	5.95	0.93%	143.53M
+1707	CSTE	Caesarstone Ltd.	209.63M	6.07	6.68%	565.23M
+1708	LCUT	Lifetime Brands, Inc.	209.47M	9.59	1.05%	686.68M
+1709	PLBC	Plumas Bancorp	209.13M	36.02	1.90%	77.74M
+1710	CHMG	Chemung Financial Corporation	209.03M	45.05	3.56%	95.74M
+1711	ABEO	Abeona Therapeutics Inc.	208.72M	7.63	0.73%	3.50M
+1712	XFOR	X4 Pharmaceuticals, Inc.	208.24M	1.24	-1.59%	-
+1713	CAN	Canaan Inc.	207.99M	0.90	19.64%	211.48M
+1714	FREE	Whole Earth Brands, Inc.	207.44M	4.84	0.10%	550.91M
+1715	COMM	CommScope Holding Company, Inc.	207.11M	0.97	5.52%	5.79B
+1716	MRNO	Murano Global Investments PLC	205.06M	8.50	5.33%	6.64M
+1717	BLFY	Blue Foundry Bancorp	204.37M	8.54	1.30%	44.17M
+1718	KVAC	Keen Vision Acquisition Corporation	203.25M	10.50	-0.05%	-
+1719	TRVI	Trevi Therapeutics, Inc.	202.74M	2.92	3.00%	-
+1720	PSTX	Poseida Therapeutics, Inc.	202.63M	2.10	3.96%	64.70M
+1721	IPSC	Century Therapeutics, Inc.	202.56M	3.12	0.97%	2.24M
+1722	LCNB	LCNB Corp.	202.39M	15.26	1.94%	69.68M
+1723	GHIX	Gores Holdings IX, Inc.	202.28M	10.56	-0.66%	-
+1724	CDXS	Codexis, Inc.	201.77M	2.86	0.88%	70.14M
+1725	PFMT	Performant Financial Corporation	201.53M	2.62	1.95%	113.74M
+1726	DTSS	Datasea Inc.	201.44M	7.25	-2.82%	23.68M
+1727	LGCL	Lucas GC Limited	201.30M	2.55	-1.54%	177.25M
+1728	TSBK	Timberland Bancorp, Inc.	200.65M	24.70	-0.44%	75.91M
+1729	PMTS	CPI Card Group Inc.	200.48M	17.59	0.49%	444.55M
+1730	ZVRA	Zevra Therapeutics, Inc.	200.19M	4.62	2.10%	27.46M
+1731	FLXS	Flexsteel Industries, Inc.	200.03M	38.55	2.83%	399.58M
+1732	PDLB	Ponce Financial Group, Inc.	199.75M	8.43	0.42%	74.52M
+1733	VRA	Vera Bradley, Inc.	199.52M	6.48	0.62%	470.79M
+1734	HOFT	Hooker Furnishings Corporation	199.43M	18.71	2.13%	433.23M
+1735	ATLX	Atlas Lithium Corporation	199.26M	13.63	-1.84%	-
+1736	OB	Outbrain Inc.	198.67M	4.07	-0.49%	935.82M
+1737	BWFG	Bankwell Financial Group, Inc.	197.70M	24.93	1.26%	98.44M
+1738	RCKY	Rocky Brands, Inc.	197.69M	26.71	0.19%	461.83M
+1739	SMID	Smith-Midland Corporation	197.36M	37.66	3.11%	57.68M
+1740	THCH	TH International Limited	196.91M	1.25	1.63%	222.25M
+1741	PKBK	Parke Bancorp, Inc.	196.71M	16.55	-	72.96M
+1742	RGCO	RGC Resources, Inc.	196.45M	19.45	1.14%	88.58M
+1743	LFCR	Lifecore Biomedical, Inc.	196.11M	6.42	-4.04%	103.27M
+1744	ITI	Iteris, Inc.	195.23M	4.55	1.11%	171.68M
+1745	NWFL	Norwood Financial Corp.	195.13M	24.01	-1.15%	64.64M
+1746	TCX	Tucows Inc.	195.08M	17.85	1.94%	339.34M
+1747	CRDF	Cardiff Oncology, Inc.	194.79M	4.35	-	488.00K
+1748	IRBT	iRobot Corporation	194.27M	6.87	-5.11%	890.58M
+1749	SHIP	Seanergy Maritime Holdings Corp.	194.04M	9.46	1.61%	110.23M
+1750	VERU	Veru Inc.	193.95M	1.33	1.15%	15.93M
+1751	BLUE	bluebird bio, Inc.	193.71M	1.01	-0.98%	21.73M
+1752	NNBR	NN, Inc.	193.22M	3.90	1.30%	489.27M
+1753	ELEV	Elevation Oncology, Inc.	193.14M	3.96	4.21%	-
+1754	ABOS	Acumen Pharmaceuticals, Inc.	192.56M	3.20	1.59%	-
+1755	FVCB	FVCBankcorp, Inc.	192.54M	10.76	1.22%	40.89M
+1756	DXLG	Destination XL Group, Inc.	191.94M	3.31	1.38%	521.82M
+1757	OVLY	Oak Valley Bancorp	191.75M	24.13	-0.70%	81.46M
+1758	RIGL	Rigel Pharmaceuticals, Inc.	191.60M	1.10	1.39%	116.88M
+1759	CMPX	Compass Therapeutics, Inc.	191.23M	1.52	3.40%	-
+1760	MASS	908 Devices Inc.	190.88M	5.78	3.58%	50.23M
+1761	CBAN	Colony Bankcorp, Inc.	190.86M	10.86	2.16%	110.28M
+1762	GBIO	Generation Bio Co.	190.79M	2.85	1.79%	5.90M
+1763	PROF	Profound Medical Corp.	190.77M	7.62	-1.68%	5.41M
+1764	MAMA	Mama's Creations, Inc.	190.61M	5.09	-0.39%	99.38M
+1765	CLLS	Cellectis S.A.	190.14M	2.65	3.92%	24.41M
+1766	OXSQ	Oxford Square Capital Corp.	189.76M	3.19	0.79%	51.82M
+1767	EGAN	eGain Corporation	189.71M	6.08	-0.49%	95.64M
+1768	BPRN	Princeton Bancorp Inc	189.48M	29.93	0.45%	83.99M
+1769	AKYA	Akoya Biosciences, Inc.	189.44M	3.86	1.58%	96.63M
+1770	CTRN	Citi Trends, Inc.	189.26M	22.26	-0.09%	747.94M
+1771	ESCA	Escalade, Incorporated	189.21M	13.61	-0.51%	263.57M
+1772	FANH	Fanhua Inc.	189.08M	3.52	0.57%	451.11M
+1773	TELO	Telomir Pharmaceuticals, Inc.	188.91M	6.00	-24.91%	-
+1774	EML	The Eastern Company	188.79M	30.40	2.70%	273.45M
+1775	SEVN	Seven Hills Realty Trust	188.39M	12.69	2.26%	34.51M
+1776	FFNW	First Financial Northwest, Inc.	187.25M	20.39	0.15%	43.52M
+1777	MOND	Mondee Holdings, Inc.	187.16M	2.23	1.83%	223.33M
+1778	SMLR	Semler Scientific, Inc.	187.03M	26.60	3.38%	68.18M
+1779	QSG	QuantaSing Group Ltd	187.03M	3.34	-0.30%	3.49B
+1780	APPS	Digital Turbine, Inc.	186.19M	1.83	-1.35%	572.38M
+1781	GOEV	Canoo Inc.	184.33M	2.86	0.35%	886.00K
+1782	JYNT	The Joint Corp.	183.67M	12.41	1.85%	117.70M
+1783	MFIN	Medallion Financial Corp.	183.64M	7.82	0.39%	161.60M
+1784	STRS	Stratus Properties Inc.	183.00M	22.73	-0.92%	17.27M
+1785	IVCA	Investcorp India Acquisition Corp	182.90M	11.25	0.18%	-
+1786	COFS	ChoiceOne Financial Services, Inc.	182.78M	24.20	0.37%	80.64M
+1787	GNFT	Genfit S.A.	181.86M	3.66	0.55%	42.42M
+1788	CALB	California BanCorp	181.48M	21.56	0.65%	78.13M
+1789	CPSS	Consumer Portfolio Services, Inc.	181.21M	8.59	-4.56%	352.01M
+1790	ASUR	Asure Software, Inc.	181.11M	7.03	0.57%	119.08M
+1791	IVA	Inventiva S.A.	180.68M	3.45	3.92%	25.74M
+1792	ALIM	Alimera Sciences, Inc.	180.62M	3.48	4.04%	80.75M
+1793	IPHA	Innate Pharma S.A.	180.59M	2.43	-0.61%	68.49M
+1794	ATOS	Atossa Therapeutics, Inc.	180.44M	1.44	5.11%	-
+1795	OMER	Omeros Corporation	180.20M	3.11	1.97%	-
+1796	PTMN	Portman Ridge Finance Corporation	179.96M	19.30	0.47%	76.32M
+1797	MBCN	Middlefield Banc Corp.	179.86M	22.40	1.17%	68.89M
+1798	RMBL	RumbleON, Inc.	178.93M	5.11	-0.78%	1.37B
+1799	CCG	Cheche Group Inc	178.79M	2.37	2.16%	465.64M
+1800	KOD	Kodiak Sciences Inc.	178.79M	3.41	1.49%	-
+1801	QRHC	Quest Resource Holding Corporation	178.72M	8.93	3.06%	288.38M
+1802	GALT	Galectin Therapeutics Inc.	178.28M	2.91	-13.65%	-
+1803	OTLK	Outlook Therapeutics, Inc.	177.96M	8.25	0.98%	-
+1804	PNRG	PrimeEnergy Resources Corporation	177.68M	99.69	-1.34%	132.81M
+1805	HNRG	Hallador Energy Company	177.57M	5.10	5.81%	634.48M
+1806	OGI	OrganiGram Holdings Inc.	177.37M	1.89	-0.26%	-
+1807	AGBA	AGBA Acquisition Limited	177.05M	2.31	84.80%	54.19M
+1808	FLL	Full House Resorts, Inc.	176.75M	5.11	-0.39%	241.06M
+1809	KLTR	Kaltura, Inc.	176.21M	1.21	0.83%	175.17M
+1810	MAMO	Massimo Group	175.94M	4.26	-0.23%	115.04M
+1811	RGTI	Rigetti Computing, Inc.	175.58M	1.12	1.36%	12.01M
+1812	ATLO	Ames National Corporation	175.53M	19.52	1.93%	53.05M
+1813	AISP	Airship AI Holdings, Inc.	175.50M	7.61	14.09%	12.30M
+1814	HCVI	Hennessy Capital Investment Corp. VI	174.32M	10.48	-	-
+1815	DRTS	Alpha Tau Medical Ltd.	174.18M	2.50	-4.58%	-
+1816	III	Information Services Group, Inc.	174.01M	3.60	-	291.05M
+1817	PPYA	Papaya Growth Opportunity Corp. I	172.35M	10.93	-1.80%	-
+1818	ESSA	ESSA Bancorp, Inc.	172.03M	16.86	-0.30%	68.56M
+1819	SSTI	SoundThinking Inc	171.73M	13.48	1.13%	92.72M
+1820	GEVO	Gevo, Inc.	171.59M	0.71	7.24%	17.20M
+1821	HQI	HireQuest, Inc.	171.22M	12.50	1.21%	37.88M
+1822	LOT	Lotus Technology Inc.	171.07M	5.91	4.05%	679.01M
+1823	SPKL	Spark I Acquisition Corp. Class A Ordinary Share	169.64M	10.33	0.19%	-
+1824	SKGR	SK Growth Opportunities Corporation	169.64M	11.09	-	-
+1825	VERY	Vericity, Inc.	169.28M	11.38	0.35%	177.57M
+1826	QUIK	QuickLogic Corporation	168.93M	11.80	2.25%	21.20M
+1827	CGEN	Compugen Ltd.	168.32M	1.90	-	33.46M
+1828	TDUP	ThredUp Inc.	168.16M	1.55	-0.96%	322.02M
+1829	VIRC	Virco Mfg. Corporation	168.05M	10.28	0.19%	269.12M
+1830	GAQ	Generation Asia I Acquisition Limited	167.92M	11.06	-0.81%	-
+1831	OPRX	OptimizeRx Corporation	167.84M	9.15	-1.82%	71.52M
+1832	HFFG	HF Foods Group Inc.	167.43M	3.21	-1.83%	1.15B
+1833	NKSH	National Bankshares, Inc.	167.09M	28.35	-1.15%	47.90M
+1834	SCPH	scPharmaceuticals Inc.	166.93M	4.63	1.54%	13.59M
+1835	CAPT	Captivision Inc.	166.71M	5.73	23.98%	32.75M
+1836	BRKH	Burtech Acquisition Corp.	166.47M	10.98	0.08%	-
+1837	GLSI	Greenwich LifeSciences, Inc.	166.20M	12.78	5.88%	-
+1838	GOSS	Gossamer Bio, Inc.	165.74M	0.74	-5.59%	-
+1839	ACET	Adicet Bio, Inc.	165.57M	2.04	4.36%	-
+1840	GEOS	Geospace Technologies Corporation	165.46M	12.36	-1.20%	143.43M
+1841	STKS	The ONE Group Hospitality, Inc.	165.00M	5.27	1.54%	332.77M
+1842	PRQR	ProQR Therapeutics N.V.	164.86M	2.03	2.01%	10.58M
+1843	BNAI	Brand Engagement Network, Inc.	164.82M	4.95	-9.84%	35.21K
+1844	OBIO	Orchestra BioMed Holdings, Inc.	164.22M	4.58	-1.29%	2.76M
+1845	XTKG	X3 Holdings Co Ltd.	164.11M	0.64	-2.11%	10.05M
+1846	BCBP	BCB Bancorp, Inc.	163.95M	9.75	-2.26%	102.05M
+1847	EM	Smart Share Global Limited	163.69M	0.63	-0.16%	417.30M
+1848	MCAA	Mountain & Co. I Acquisition Corp.	162.92M	11.53	0.09%	-
+1849	HBIO	Harvard Bioscience, Inc.	162.75M	3.75	1.35%	112.25M
+1850	HITI	High Tide Inc.	162.65M	2.16	-4.42%	497.66M
+1851	SCWO	374Water, Inc.	162.58M	1.22	-3.17%	743.95K
+1852	INMB	INmune Bio, Inc.	162.40M	8.93	6.69%	155.00K
+1853	PRPL	Purple Innovation, Inc.	162.08M	1.51	2.72%	510.54M
+1854	CADL	Candel Therapeutics, Inc.	161.26M	5.59	8.12%	-
+1855	FNGR	FingerMotion, Inc.	161.24M	3.05	-	40.40M
+1856	NIU	Niu Technologies	160.82M	2.10	9.38%	374.01M
+1857	CAPR	Capricor Therapeutics, Inc.	160.35M	5.08	1.40%	25.18M
+1858	STHO	Star Holdings	160.23M	12.03	1.52%	123.05M
+1859	PIII	P3 Health Partners Inc.	160.23M	0.51	-0.02%	1.27B
+1860	INVZ	Innoviz Technologies Ltd.	160.10M	0.97	-4.19%	20.88M
+1861	DLHC	DLH Holdings Corp.	159.81M	11.33	0.49%	401.00M
+1862	INOD	Innodata Inc.	159.58M	5.55	-4.31%	86.78M
+1863	ISTR	Investar Holding Corporation	159.49M	16.21	3.12%	83.06M
+1864	TAYD	Taylor Devices, Inc.	159.25M	51.47	7.84%	43.24M
+1865	MVST	Microvast Holdings, Inc.	158.89M	0.51	2.02%	306.62M
+1866	LIFW	MSP Recovery, Inc.	158.86M	1.14	20.25%	7.71M
+1867	SUUN	SolarBank Corporation	158.75M	5.85	7.34%	-
+1868	ALCY	Alchemy Investments Acquisition Corp 1	158.69M	10.60	-0.14%	-
+1869	DTI	Drilling Tools International Corp.	158.37M	5.31	3.11%	152.03M
+1870	MFI	mF International Limited	157.96M	11.92	138.40%	4.46M
+1871	MRAM	Everspin Technologies, Inc.	156.86M	7.39	1.65%	63.77M
+1872	LVO	LiveOne, Inc.	156.73M	1.72	3.61%	113.09M
+1873	INGN	Inogen, Inc.	156.64M	6.75	-	315.66M
+1874	MRCC	Monroe Capital Corporation	156.54M	7.23	0.77%	64.30M
+1875	TUSK	Mammoth Energy Services, Inc.	155.82M	3.29	-1.20%	309.49M
+1876	VOXX	VOXX International Corporation	155.47M	6.88	-0.15%	497.35M
+1877	SCLX	Scilex Holding Company	154.76M	0.93	3.72%	46.74M
+1878	HAO	Haoxi Health Technology Limited	153.66M	4.82	1.47%	28.23M
+1879	SNFCA	Security National Financial Corporation	153.51M	6.68	0.91%	318.50M
+1880	RCMT	RCM Technologies, Inc.	153.47M	19.31	1.21%	263.24M
+1881	REKR	Rekor Systems, Inc.	153.16M	1.80	0.28%	34.93M
+1882	CDZI	Cadiz Inc.	152.44M	2.26	0.44%	1.99M
+1883	ESHA	ESH Acquisition Corp.	152.20M	10.33	-0.48%	-
+1884	EMLD	FTAC Emerald Acquisition Corp.	152.10M	10.68	-	-
+1885	ASPI	ASP Isotopes Inc.	151.66M	3.10	-	433.03K
+1886	SWIN	Solowin Holdings Ordinary Share	151.60M	10.45	-2.52%	5.93M
+1887	PEBK	Peoples Bancorp of North Carolina, Inc.	151.40M	27.75	-0.18%	76.07M
+1888	CRVO	CervoMed Inc.	150.93M	24.35	1.46%	7.14M
+1889	ACHV	Achieve Life Sciences, Inc.	150.37M	4.41	-2.33%	-
+1890	PESI	Perma-Fix Environmental Services, Inc.	149.70M	10.99	-2.36%	89.74M
+1891	BCSA	Blockchain Coinvestors Acquisition Corp. I	149.65M	11.14	-	-
+1892	EOSE	Eos Energy Enterprises, Inc.	149.61M	0.75	1.01%	16.38M
+1893	IMAB	I-Mab	149.38M	1.80	-	3.90M
+1894	ALAR	Alarum Technologies Ltd.	148.93M	21.79	5.27%	26.52M
+1895	CLPT	ClearPoint Neuro, Inc.	148.37M	5.39	1.13%	23.96M
+1896	VCSA	Vacasa, Inc.	148.25M	5.73	-4.02%	1.12B
+1897	FUNC	First United Corporation	148.14M	22.30	0.54%	69.72M
+1898	ULBI	Ultralife Corporation	147.86M	9.02	4.04%	158.64M
+1899	PROP	Prairie Operating Co.	147.63M	14.69	-3.39%	1.55M
+1900	MYFW	First Western Financial, Inc.	147.49M	15.40	4.06%	82.70M
+1901	RGLS	Regulus Therapeutics Inc.	147.30M	2.24	5.16%	-
+1902	DLTH	Duluth Holdings Inc.	147.28M	4.27	-0.70%	646.68M
+1903	KOPN	Kopin Corporation	146.23M	1.23	0.82%	40.39M
+1904	AMTX	Aemetis, Inc.	146.17M	3.68	-2.90%	186.72M
+1905	QIPT	Quipt Home Medical Corp.	146.10M	3.47	0.29%	185.18M
+1906	MDWD	MediWound Ltd.	145.79M	15.36	-2.60%	18.69M
+1907	AUGX	Augmedix, Inc.	145.73M	3.00	0.33%	44.86M
+1908	BRAG	Bragg Gaming Group Inc.	145.59M	6.27	1.62%	103.91M
+1909	ATOM	Atomera Incorporated	144.97M	5.40	-5.35%	550.00K
+1910	SANG	Sangoma Technologies Corporation	144.97M	4.35	-1.14%	189.28M
+1911	BDSX	Biodesix, Inc.	144.91M	1.27	1.20%	49.09M
+1912	RZLT	Rezolute, Inc.	144.46M	3.58	4.37%	-
+1913	ALTO	Alto Ingredients, Inc.	144.35M	1.91	-1.30%	1.22B
+1914	NTIC	Northern Technologies International Corporation	144.29M	15.31	-2.20%	82.70M
+1915	ARBE	Arbe Robotics Ltd.	144.00M	1.86	1.09%	1.47M
+1916	IBAC	IB Acquisition Corp.	142.83M	10.01	-	-
+1917	EXFY	Expensify, Inc.	142.77M	1.68	2.13%	150.69M
+1918	YS	YS Biopharma Co., Ltd.	141.85M	0.74	2.67%	-
+1919	RELL	Richardson Electronics, Ltd.	141.56M	10.06	-3.78%	207.92M
+1920	WISH	ContextLogic Inc.	141.26M	5.80	-0.68%	287.00M
+1921	ZFOX	ZeroFox Holdings, Inc.	141.07M	1.13	-0.88%	233.30M
+1922	SGA	Saga Communications, Inc.	141.07M	23.13	1.60%	112.77M
+1923	ZURA	Zura Bio Limited	140.81M	3.25	-1.81%	-
+1924	VFF	Village Farms International, Inc.	140.02M	1.24	-6.77%	285.60M
+1925	ISRL	Israel Acquisitions Corp	139.93M	10.88	-0.09%	-
+1926	SAMG	Silvercrest Asset Management Group Inc.	139.91M	14.81	1.30%	117.41M
+1927	MYNA	Mynaric AG	139.79M	5.61	-4.27%	4.70M
+1928	HYZN	Hyzon Motors Inc.	139.74M	0.57	-5.32%	295.00K
+1929	TWLV	Twelve Seas Investment Company II	139.73M	10.75	-0.28%	-
+1930	VTSI	VirTra, Inc.	139.54M	12.51	-1.65%	38.04M
+1931	PEGR	Project Energy Reimagined Acquisition Corp.	139.18M	7.97	-11.01%	-
+1932	ALSA	Alpha Star Acquisition Corporation	139.12M	11.34	-	-
+1933	HWBK	Hawthorn Bancshares, Inc.	139.08M	20.10	1.77%	64.34M
+1934	WNEB	Western New England Bancorp, Inc.	138.99M	6.45	-1.83%	77.93M
+1935	RPTX	Repare Therapeutics Inc.	138.78M	3.29	4.44%	51.13M
+1936	PVBC	Provident Bancorp, Inc.	138.62M	7.85	0.77%	65.91M
+1937	RDCM	RADCOM Ltd.	138.62M	8.96	3.82%	51.60M
+1938	CSPI	CSP Inc.	138.42M	14.39	0.95%	61.68M
+1939	VTNR	Vertex Energy, Inc.	138.40M	1.48	-1.01%	3.18B
+1940	OPBK	OP Bancorp	137.60M	9.30	1.47%	81.22M
+1941	DBVT	DBV Technologies S.A.	136.97M	0.71	3.55%	15.73M
+1942	GRWG	GrowGeneration Corp.	136.53M	2.21	4.74%	225.88M
+1943	ALOT	AstroNova, Inc.	136.28M	17.76	3.23%	148.09M
+1944	VXRT	Vaxart, Inc.	135.89M	0.78	3.80%	7.38M
+1945	DSP	Viant Technology Inc.	135.80M	8.61	1.29%	222.93M
+1946	PWOD	Penns Woods Bancorp, Inc.	135.40M	18.05	0.50%	64.82M
+1947	FRAF	Franklin Financial Services Corporation	133.96M	30.50	1.23%	65.76M
+1948	VMCA	Valuence Merger Corp. I	133.76M	11.42	0.09%	-
+1949	AEYE	AudioEye, Inc.	133.68M	11.52	-7.66%	31.32M
+1950	DCTH	Delcath Systems, Inc.	133.62M	5.45	11.91%	2.07M
+1951	AMLX	Amylyx Pharmaceuticals, Inc.	133.53M	1.97	5.08%	380.79M
+1952	BANX	ArrowMark Financial Corp.	132.75M	18.68	1.69%	-
+1953	TLGY	TLGY Acquisition Corporation	132.25M	11.35	-	-
+1954	EHTH	eHealth, Inc.	131.96M	4.56	1.56%	452.87M
+1955	OMGA	Omega Therapeutics, Inc.	131.82M	2.41	0.42%	3.09M
+1956	UEIC	Universal Electronics Inc.	131.49M	10.13	0.50%	420.46M
+1957	VABK	Virginia National Bankshares Corporation	131.42M	24.51	1.07%	57.34M
+1958	SY	So-Young International Inc.	131.37M	1.27	6.72%	211.29M
+1959	FINW	FinWise Bancorp	131.37M	10.25	0.87%	64.00M
+1960	VTGN	VistaGen Therapeutics, Inc.	131.07M	4.82	1.26%	1.04M
+1961	KPTI	Karyopharm Therapeutics Inc.	131.02M	1.13	-3.85%	146.03M
+1962	ZLS	Zalatoris II Acquisition Corp.	130.49M	10.86	-0.08%	-
+1963	GPAC	Global Partner Acquisition Corp II	130.32M	10.82	-	-
+1964	NNAG	99 Acquisition Group Inc.	130.28M	10.36	-	-
+1965	FTLF	FitLife Brands, Inc.	130.11M	28.30	-1.99%	52.70M
+1966	OPAL	OPAL Fuels Inc.	129.74M	4.59	-1.94%	256.11M
+1967	RMBI	Richmond Mutual Bancorporation, Inc.	129.50M	11.56	-1.53%	41.74M
+1968	WW	WW International, Inc.	129.50M	1.64	-4.39%	889.55M
+1969	SPWH	Sportsman's Warehouse Holdings, Inc.	129.43M	3.45	7.81%	1.29B
+1970	UBFO	United Security Bancshares	128.55M	7.45	1.36%	53.43M
+1971	FGBI	First Guaranty Bancshares, Inc.	128.50M	10.00	3.09%	91.57M
+1972	VERI	Veritone, Inc.	128.42M	3.46	-5.46%	127.56M
+1973	UNB	Union Bankshares, Inc.	128.31M	28.20	4.00%	48.25M
+1974	SGMT	Sagimet Biosciences Inc.	128.29M	4.02	0.12%	2.00M
+1975	SFWL	Shengfeng Development Limited	127.82M	1.54	-4.94%	404.12M
+1976	SYRS	Syros Pharmaceuticals, Inc.	127.77M	4.82	6.17%	9.94M
+1977	RMGC	RMG Acquisition Corp. III	126.98M	9.99	-0.35%	-
+1978	UBXG	U-BX Technology Ltd.	126.90M	4.70	2.40%	94.32M
+1979	CFFI	C&F Financial Corporation	126.84M	37.60	1.70%	119.05M
+1980	OFS	OFS Capital Corporation	126.81M	9.47	-0.05%	56.94M
+1981	LOOP	Loop Industries, Inc.	126.43M	2.68	3.88%	119.49K
+1982	BFIN	BankFinancial Corporation	126.35M	10.11	1.10%	55.93M
+1983	WILC	G. Willi-Food International Ltd.	126.19M	9.10	-1.52%	149.66M
+1984	AXTI	AXT, Inc.	125.48M	2.88	3.97%	75.80M
+1985	NPAB	New Providence Acquisition Corp. II	125.20M	10.87	0.65%	-
+1986	PLMI	Plum Acquisition Corp. I	124.94M	10.52	-5.23%	-
+1987	HURC	Hurco Companies, Inc.	124.46M	19.13	0.47%	218.18M
+1988	NVCT	Nuvectis Pharma, Inc.	124.29M	7.03	3.08%	-
+1989	GATE	Marblegate Acquisition Corp.	124.20M	10.50	-	-
+1990	EVGR	Evergreen Corporation	123.97M	11.37	-0.09%	-
+1991	HNVR	Hanover Bancorp, Inc.	123.12M	17.03	6.11%	60.45M
+1992	FATBB	FAT Brands Inc.	123.08M	6.20	5.08%	480.46M
+1993	GLYC	GlycoMimetics, Inc.	122.46M	1.90	-1.56%	10.00K
+1994	MOLN	Molecular Partners AG	122.26M	3.72	4.82%	8.38M
+1995	FCCO	First Community Corporation	121.91M	15.98	-0.16%	58.18M
+1996	LTRX	Lantronix, Inc.	121.80M	3.27	6.17%	137.96M
+1997	LAKE	Lakeland Industries, Inc.	121.45M	16.48	-0.03%	124.69M
+1998	TRSG	Tungray Technologies Inc	121.23M	7.46	25.38%	13.21M
+1999	CRGO	Freightos Limited	121.16M	2.53	1.00%	20.28M
+2000	BOCN	Blue Ocean Acquisition Corp.	120.89M	11.09	-	-

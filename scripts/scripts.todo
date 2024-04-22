@@ -1,14 +1,14 @@
 STD for getting population script-program live
 not completed (-), completed (X)
 
-    - Create json_to_database endpoint that accepts .json
+    X Create json_to_database endpoint that accepts .json
 
-    - Get NYSE and NASDAQ comprehensive ticker lists
+    X Get NYSE and NASDAQ comprehensive ticker lists
 	X NASDAQ: https://stockanalysis.com/list/nasdaq-stocks/
 	X NYSE: https://stockanalysis.com/list/nyse-stocks/
 
-    - Write api script that fetches data and immediately
-      passes to json_to_database endpoint
+    X Write api script that fetches data and immediately
+      writes to json directory
     
     - Test-case scripts using ticker retrieval endpoint
 	- Basically, are all stocks there? Yes | No
