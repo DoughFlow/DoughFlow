@@ -39,24 +39,24 @@ class StockPreviewView(APIView):
         # Find the last date available in the data for the given ticker
         last_date = StockMarketData.objects.filter(
             ticker=ticker
-        ).order_by('-timestamp__date').values('timestamp__date').distinct().first()
+        ).order_by('-timestamp').values('timestamp').first()
 
         if last_date:
-            last_date = last_date['timestamp__date']
+            last_date = last_date['timestamp']
             # Get the last 5 available dates
             last_five_dates = StockMarketData.objects.filter(
                 ticker=ticker,
-                timestamp__date__lte=last_date
-            ).order_by('-timestamp__date').values('timestamp__date').distinct()[:5]
+                timestamp__lte=last_date
+            ).order_by('-timestamp').values('timestamp').distinct()[:5]
 
             # Convert QuerySet of dates to a list for filtering
-            dates_list = [date['timestamp__date'] for date in last_five_dates]
+            dates_list = [date['timestamp'] for date in last_five_dates]
 
             # Filter data based on ticker and the last five dates
             stock_data = StockMarketData.objects.filter(
                 ticker=ticker,
-                timestamp__date__in=dates_list
-            ).order_by('timestamp')
+                timestamp__in=dates_list
+            ).order_by('-timestamp')
 
             # Serialize the data
             serializer = StockMarketDataSerializer(stock_data, many=True)
