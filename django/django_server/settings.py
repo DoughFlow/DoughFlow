@@ -18,10 +18,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Static settings
 STATIC_URL = "/static/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 
 # Quick-start development settings - unsuitable for production
@@ -33,7 +35,7 @@ SECRET_KEY = "django-insecure-#(_wvz1ti$#6@#(po52$fcdi*ix&71s9%rz#9e%ln*mit9o@7z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0"]
 
 
 # Application definition
@@ -85,10 +87,10 @@ WSGI_APPLICATION = "django_server.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        'NAME': os.environ.get('POSTGRES_DB', 'django_db'),
-        'USER': os.environ.get('POSTGRES_USER', 'django_user'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', '1057'),
-        'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
+        "NAME": os.environ.get("POSTGRES_DB", "django_db"),
+        "USER": os.environ.get("POSTGRES_USER", "django_user"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "1057"),
+        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
         "PORT": "5432",
     }
 }
