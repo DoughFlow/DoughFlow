@@ -15,10 +15,13 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
-    colors: {
-    transpart: 'transparent',
-    current: 'currentColor',
-    dfyellow: '#FFBB84',
+      colors: {
+      transpart: 'transparent',
+      current: 'currentColor',
+      'dfyellow': '#FFBB84',
+      'dfbrown': '#996F4F',
+      'dfwhite': 'FFE4D1',
+      'dfgray': '998E86',
     },
   },
   plugins: [],
