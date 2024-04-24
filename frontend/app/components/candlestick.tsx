@@ -85,7 +85,7 @@ const CandleChart = ({data: data}: {data: StockData[]}) => {
     /* Source:
      * https://observablehq.com/@john-guerra/how-to-add-a-tooltip-in-d3#cell-70
      * */
-    const tooltip = g
+    const tooltip = g     
         .append("text")
         .attr("class", "tooltip")
         .attr("fill", "black")
@@ -154,6 +154,7 @@ High: ${(d.high)}`;
       .style('color', 'black');
     
     y_axis_svg.append('g')
+        .attr('transform', `translate(${margin.right}, 0)`) // Translate the y-axis group to adjust for margins;
         .call(yAxis)
         .style('color', 'black')
         .attr('text-anchor','start');
@@ -177,6 +178,9 @@ High: ${(d.high)}`;
     .attr('y2', d => y(d))
     .attr('stroke', "green")
     .attr('stroke-width', .5);
+
+    // tooltip needs to be on top of the other graph elements
+    tooltip.raise();
 
 
   }, [data]);
