@@ -15,14 +15,14 @@ interface StockData {
     high: number;
     low: number;
     close: number;
+    volume?: number;
 }
 
 /* 
  * CandleChart from medium
  * */
-const CandleChart = ({newData}: {newData: StockData[]}) => {
+const CandleChart = ({data: data}: {data: StockData[]}) => {
   console.log("begining 'Medium' plot");
-  const data = newData;
   //console.log(data.slice(0,2));
   const svgRef = useRef(null);
 
@@ -33,7 +33,7 @@ const CandleChart = ({newData}: {newData: StockData[]}) => {
     d3.select(svgRef.current).selectAll('svg').remove();
 
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
-    const width = (data.length * 75)
+    const width = (data.length * 20)
     const new_width = (800);
     //const width = svgRef.current.clientWidth - margin.left - margin.right;
     const height = 500 - margin.top - margin.bottom;
@@ -104,7 +104,8 @@ const CandleChart = ({newData}: {newData: StockData[]}) => {
       .on("mouseenter", (evt, d) => {
               const [mx, my] = d3.pointer(evt);
               const tooltipText =
-`Open: ${(d.open)}
+`Date: ${(d.datetime.toISOString().slice(0,10))}
+Open: ${(d.open)}
 Close: ${(d.close)} 
 Low: ${(d.low)}
 High: ${(d.high)}`;
@@ -113,8 +114,8 @@ High: ${(d.high)}`;
               .selectAll("tspan")
               .data(tooltipText.split("\n"))
               .join("tspan")
-              .attr("dy", "1.5em")
-              .attr("x", "20px")
+              .attr("dy", "1.5em") // spacing between the lines
+              .attr("x", "20px") // Space to the right of the cursor
               .text((text) => text );
               })
     .on("mouseout", () => tooltip.selectAll("tspan").remove());
@@ -139,8 +140,11 @@ High: ${(d.high)}`;
 
     g.append('g').attr('transform', `translate(0,${height})`)
       .call(xAxis
-        .ticks(d3.timeMonth.every(6))
+        .tickValues(d3.utcMonday
+        .every(width > 720 ? 1 : 2)
+        .range(data.at(0).datetime, data.at(-1).datetime))
         .tickFormat(d3.timeFormat("%Y-%m-%d")))
+      .call(g => g.select(".domain").remove())
       .attr('dx', '10em')
       .style('display', 'flex')
       .style('text-anchor', 'center')

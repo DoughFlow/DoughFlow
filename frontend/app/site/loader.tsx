@@ -15,6 +15,7 @@ interface values_type {
     high: number;
     low: number;
     close: number;
+    volume: number;
     }
 interface stock_json {
     meta: meta_type;
@@ -40,10 +41,10 @@ function parseJsonData(data: any): stock_json{
 }
 
 
-function DummyData(): stock_json {
+function LoadData(): stock_json {
     //let unknownData: unknown = dummyData;
     
     return parseJsonData(dummyData);
     }
 
-export default DummyData;
+export default LoadData;
