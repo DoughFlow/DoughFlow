@@ -1,4 +1,5 @@
 __pycache__/
+api_keys.txt
 node_modules/
 .next/
 .venv/
