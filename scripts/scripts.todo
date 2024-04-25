@@ -13,7 +13,7 @@ not completed (-), completed (X)
     - Test-case scripts using ticker retrieval endpoint
 	- Basically, are all stocks there? Yes | No
 
-    - Flesh out logic for completed_ticker_list and
+    X Flesh out logic for completed_ticker_list and
       pick-up/put-down functionality with no redundancy
 
     - NASDAQ index test-case passed
