@@ -1,4 +1,5 @@
 import json
+import sys
 from django.core.management.base import BaseCommand
 from django.db import transaction
 from app.models import StockMarketData
@@ -44,7 +45,8 @@ class Command(BaseCommand):
                 stock_market_data.save()
                 processed_rows += 1
                 percentage_complete = (processed_rows / total_rows) * 100
-                self.stdout.write(self.style.SUCCESS(f'Imported {processed_rows}/{total_rows} rows ({percentage_complete:.2f}%)'))
+                if processed_rows % 500 == 0:
+                    self.stdout.write(self.style.SUCCESS(f'Imported {processed_rows}/{total_rows} rows ({percentage_complete:.2f}%)'))
         self.stdout.write(self.style.SUCCESS('Successfully imported data into the database.'))
 
 
