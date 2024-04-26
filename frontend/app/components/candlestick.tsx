@@ -154,7 +154,7 @@ High: ${(d.high)}`;
       .style('color', 'black');
     
     y_axis_svg.append('g')
-        .attr('transform', `translate(${margin.left}, 0)`) // Translate the y-axis group to adjust for margins;
+        .attr('transform', `translate(${margin.left}, ${margin.top})`) // Translate the y-axis group to adjust for margins;
         .call(yAxis)
         .style('color', 'black')
         .attr('text-anchor','end');
