@@ -13,6 +13,8 @@ COPY . /app/
 COPY entrypoint.sh /app/
 RUN chmod +x /app/entrypoint.sh
 
+RUN python3 manage.py collectstatic
+
 ENTRYPOINT ["/app/entrypoint.sh"]
 
 EXPOSE 8000
