@@ -1,6 +1,7 @@
 import api_to_data as a
-import django_insert as d
+import django_insert as i
 import django_compliance as c
+import data_cleaner as dc
 import os
 import time
 
@@ -30,10 +31,10 @@ def start():
     # Load all tickers and finished tickers
     with open('nasdaq.txt', 'r') as file:
         for line in file:
-            tickers.insert(0, line.strip())
+            tickers.append(line.strip())
     print(tickers)
 
-    with open('c_nasdaq.txt', 'r') as file:
+    with open('c_stocks.txt', 'r') as file:
         for line in file:
             c_tickers.append(line.strip())
 
@@ -47,7 +48,9 @@ def start():
             if ticker not in c_tickers:
                 a.write_call(ticker, api_keys[0])
                 file_path = os.path.join(data_path,f"{ticker}.json")
-                d.run_django_command(django_path, file_path)
+                # Clean TwelveData's crap request body
+                dc.clean(file_path)
+                i.run_django_command(django_path, file_path)
                 os.chdir(script_path)
                 with open('c_nasdaq.txt', 'a') as file:
                     file.write(str(ticker) + '\n')
