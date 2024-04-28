@@ -1,1 +1,7 @@
 __pycache__/
+node_modules/
+.next/
+.venv/
+.awskeycache
+.secrets
+./django/.secrets
