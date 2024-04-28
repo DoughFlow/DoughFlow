@@ -1,7 +1,8 @@
 __pycache__/
-node_modules/
 .next/
-.venv/
 .awskeycache
 .secrets
-./django/.secrets
+.venv
+node_modules/
+npm-debug.log*
+.DS_Store
