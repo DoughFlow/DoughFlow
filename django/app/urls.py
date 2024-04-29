@@ -1,6 +1,6 @@
 from django.urls import path
 
-from app.views import StockDataView, StockFilterView, StockPreviewView, StockSixMonthView, StockOneYearView, StockThreeYearView, StockFiveYearView
+from app.views import StockFilterView, StockPreviewView, StockSixMonthView, StockOneYearView, StockThreeYearView, StockFiveYearView
 
 app_name = "app"
 
