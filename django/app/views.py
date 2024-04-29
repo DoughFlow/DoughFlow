@@ -12,6 +12,15 @@ import datetime
 #        stock_data = StockMarketData.objects.all()
 #        serializer = StockMarketDataSerializer(stock_data, many=True)
 #        return Response(serializer.data)
+class StockWeekView(APIView):
+    def get(self, request, ticker):
+        start = datetime.date(2024, 4, 1)
+        end = datetime.date(2024, 5, 1)
+        stock_data = StockMarketData.objects.filter(
+            ticker=ticker.upper(),
+            timestamp__range=(start, end)).order_by('timestamp')
+        serializer = StockMarketDataSerializer(stock_data, many=True)
+        return Response(serializer.data)
 
 class StockSixMonthView(APIView):
     def get(self, request, ticker):
