@@ -18,9 +18,9 @@ class StockWeekView(APIView):
         end = datetime.date(2024, 5, 1)
         stock_data = StockMarketData.objects.filter(
             ticker=ticker.upper(),
-            timestamp__range=(start, end)).order_by('timestamp')
-        serializer = StockMarketDataSerializer(stock_data, many=True)
-        return Response(serializer.data)
+            timestamp__range=(start, end)).order_by('timestamp').values_list('close_price', flat=True)
+        close_prices = list(stock_data)
+        return JsonResponse(close_prices)
 
 class StockSixMonthView(APIView):
     def get(self, request, ticker):
