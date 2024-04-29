@@ -23,11 +23,11 @@ export default async function Page({
   return (
     <>
       <h1>Big Test { ticker }</h1>
-      <Stocks list={mockData} />
       <AreaGraph list={mockData} />
     </>
   )
 }
 
+      //<Stocks list={mockData} />
 
 //<Stocks list={stockData}></Stocks>
