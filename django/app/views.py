@@ -21,7 +21,7 @@ class StockWeekView(APIView):
             ticker=ticker.upper(),
             timestamp__range=(start, end)).order_by('timestamp').values_list('close_price', flat=True)
         close_prices = list(stock_data)
-        return JsonResponse(close_prices)
+        return JsonResponse(close_prices, safe=False)
 
 class StockSixMonthView(APIView):
     def get(self, request, ticker):
