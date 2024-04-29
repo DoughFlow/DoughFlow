@@ -2,7 +2,7 @@ import Stocks from '@components/Stocks'
 
 //const response = await fetch("http://3.140.61.213/api/aapl/1y")
 async function getStocks(ticker: string) {
-  const res = await fetch('http://3.140.61.213/api/${ticker}/1y')
+  const res = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
   return res.json()
 }
 
