@@ -7,21 +7,53 @@ from django.utils.timezone import now
 from datetime import timedelta
 
 
-class StockDataView(APIView):
-    def get(self, request):
-        stock_data = StockMarketData.objects.all()
-        serializer = StockMarketDataSerializer(stock_data, many=True)
-        return Response(serializer.data)
+#class StockDataView(APIView):
+#    def get(self, request):
+#        stock_data = StockMarketData.objects.all()
+#        serializer = StockMarketDataSerializer(stock_data, many=True)
+#        return Response(serializer.data)
 
-class StockOneYearView(APIView):
+class StockSixMonthView(APIView):
     def get(self, request, ticker):
-        start = datetime.date(2023, 04, 20)
-        end = datetime.date(2024, 04, 20)
+        start = datetime.date(2023, 11, 1)
+        end = datetime.date(2024, 5, 1)
         stock_data = StockMarkData.objects.filter(
             ticker=ticker,
             timestamp__range=(start, end)).order_by('timestamp')
         serializer = StockMarketDataSerializer(stock_data, many=True)
         return Response(serializer.data)
+
+class StockOneYearView(APIView):
+    def get(self, request, ticker):
+        start = datetime.date(2023, 5, 1)
+        end = datetime.date(2024, 5, 1)
+        stock_data = StockMarkData.objects.filter(
+            ticker=ticker,
+            timestamp__range=(start, end)).order_by('timestamp')
+        serializer = StockMarketDataSerializer(stock_data, many=True)
+        return Response(serializer.data)
+
+class StockThreeYearView(APIView):
+    def get(self, request, ticker):
+        start = datetime.date(2021, 5, 1)
+        end = datetime.date(2024, 5, 1)
+        stock_data = StockMarkData.objects.filter(
+            ticker=ticker,
+            timestamp__range=(start, end)).order_by('timestamp')
+        serializer = StockMarketDataSerializer(stock_data, many=True)
+        return Response(serializer.data)
+
+class StockFiveYearView(APIView):
+    def get(self, request, ticker):
+        start = datetime.date(2019, 5, 1)
+        end = datetime.date(2024, 5, 1)
+        stock_data = StockMarkData.objects.filter(
+            ticker=ticker,
+            timestamp__range=(start, end)).order_by('timestamp')
+        serializer = StockMarketDataSerializer(stock_data, many=True)
+        return Response(serializer.data)
+
+
 
 
 class StockFilterView(APIView):
