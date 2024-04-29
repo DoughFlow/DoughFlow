@@ -6,7 +6,7 @@ import SmallResults from './SmallResults';
 import SmallBar from './SmallBar';
 import ListWatcher from './ListWatcher';
 
-const SearchFooter: React.FC = () => {
+const SearchFooter = () => {
     const [results, setResults] = useState<string[]>([]);
 
     const fuse = new Fuse(tickers, {
