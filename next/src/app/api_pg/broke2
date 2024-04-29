@@ -1,0 +1,47 @@
+"use client"
+export const dynamic = 'force-dynamic'
+import React, { useState } from 'react';
+import type { StockData } from '@StockData'
+
+function getData() {
+  const [data, setData] = useState([]);
+  fetch('http://3.140.61.213/api/aapl/1y')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error with api call');
+      }
+      return res.json();
+      })
+      .then(data => {
+        setData(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data');
+      });
+}
+
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+/** 
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data')
+  }
+  console.log("Success") 
+  return res.json()
+}
+**/
+function generateList(array) {
+  return (
+  <ul>
+    {array.map((item, index) => (
+      <li key={index}>{item}</li>
+    ))}
+  </ul>
+  );
+}
+ 
+export default function Page() {
+  const data = getData()
+  return <main>{generateList(data)}</main>
+}
