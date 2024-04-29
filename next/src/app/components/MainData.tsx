@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react';
+import CandleGraph from './CandleGraph';
 
 interface MainDataProps {
   ticker: string;
@@ -33,21 +34,14 @@ const MainData = ({ ticker }: MainDataProps) => {
 
   return (
     <div>
-      <div>
-        {/* Rendering data points as a list of div elements */}
-        {dataPoints.map((data, index) => (
-          <div key={index}>
-            <p>Date: {data.timestamp}</p>
-            <p>Ticker: {data.ticker}</p>
-            <p>Open: {data.open_price}</p>
-            <p>High: {data.high_price}</p>
-            <p>Low: {data.low_price}</p>
-            <p>Close: {data.close_price}</p>
-            <p>Volume: {data.volume}</p>
-            <p>Candle Time: {data.candle_time}</p>
-          </div>
-        ))}
-      </div>
+      <CandleGraph data={dataPoints.map(dp => ({
+        timestamp: dp.timestamp,
+        open_price: dp.open_price,
+        high_price: dp.high_price,
+        low_price: dp.low_price,
+        close_price: dp.close_price,
+        volume: dp.volume
+      }))} />
     </div>
   );
 };
