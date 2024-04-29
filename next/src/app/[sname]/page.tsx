@@ -1,3 +1,4 @@
+import MainData from '@/components/MainData';
 import SearchFooter from '@/components/search/footer/SearchFooter';
 import React from 'react';
 
@@ -18,6 +19,7 @@ const StockPage = ({ params }: ParamsType) => {
             <div>
                 {params.sname}
             </div>
+            <MainData ticker={params.sname} />
             <div className='absolute bottom-0 left-0 right-0 text-center'>
                 <SearchFooter />
             </div>

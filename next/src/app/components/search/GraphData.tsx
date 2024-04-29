@@ -8,7 +8,6 @@ interface GraphDataProps {
 
 const GraphData = ({ ticker, size }: GraphDataProps) => {
   const [dataPoints, setDataPoints] = useState<number[]>([]);
-  const graphSize = `min-h-[${size}rem] max-h-[${size}rem]`;
 
   useEffect(() => {
     const getPreviewData = async () => {
