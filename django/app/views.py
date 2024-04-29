@@ -13,6 +13,16 @@ class StockDataView(APIView):
         serializer = StockMarketDataSerializer(stock_data, many=True)
         return Response(serializer.data)
 
+class StockOneYearView(APIView):
+    def get(self, request, ticker):
+        start = datetime.date(2023, 04, 20)
+        end = datetime.date(2024, 04, 20)
+        stock_data = StockMarkData.objects.filter(
+            ticker=ticker,
+            timestamp__range=(start, end)).order_by('timestamp')
+        serializer = StockMarketDataSerializer(stock_data, many=True)
+        return Response(serializer.data)
+
 
 class StockFilterView(APIView):
     def get(self, request, ticker, start_date, end_date):
