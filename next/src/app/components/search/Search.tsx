@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import SearchResults from './SearchResults';
 import Fuse from 'fuse.js';
-import tickers from '@/app/comprehensive_stock_list.json';
+import tickers from '@/comprehensive_stock_list.json';
 
 const Search = () => {
     const [results, setResults] = useState<string[]>([]);
