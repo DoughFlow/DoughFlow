@@ -20,10 +20,10 @@ services:
       - "443:443"
     depends_on:
       - django
-      - frontend
+      - next
 
-  frontend:
-    container_name: prod-frontend
+  next:
+    container_name: prod-next
     build: ./next
     ports:
       - "3000:3000" # Assuming your frontend runs on port 3000
