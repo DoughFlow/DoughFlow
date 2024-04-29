@@ -1,3 +1,4 @@
+import SearchFooter from '@/components/search/footer/SearchFooter';
 import React from 'react';
 
 type ParamsType = {
@@ -7,15 +8,20 @@ type ParamsType = {
 }
 
 export function generateStaticParams() {
-  return [{ sname: 'AAPL' }]
+    return [{ sname: 'AAPL' }]
 }
 
 
 const StockPage = ({ params }: ParamsType) => {
-    return ( 
+    return (
         <div>
-            {params.sname}
+            <div>
+                {params.sname}
+            </div>
+            <div className='absolute bottom-0 left-0 right-0 text-center'>
+                <SearchFooter />
+            </div>
         </div>
-    )
-}
+    );
+};
 export default StockPage;
