@@ -4,7 +4,7 @@ from .models import StockMarketData
 from .serializers import StockMarketDataSerializer
 from django.utils.dateparse import parse_datetime
 from django.utils.timezone import now
-from datetime import timedelta
+import datetime
 
 
 #class StockDataView(APIView):
@@ -17,8 +17,8 @@ class StockSixMonthView(APIView):
     def get(self, request, ticker):
         start = datetime.date(2023, 11, 1)
         end = datetime.date(2024, 5, 1)
-        stock_data = StockMarkData.objects.filter(
-            ticker=ticker,
+        stock_data = StockMarketData.objects.filter(
+            ticker=ticker.upper(),
             timestamp__range=(start, end)).order_by('timestamp')
         serializer = StockMarketDataSerializer(stock_data, many=True)
         return Response(serializer.data)
@@ -27,8 +27,8 @@ class StockOneYearView(APIView):
     def get(self, request, ticker):
         start = datetime.date(2023, 5, 1)
         end = datetime.date(2024, 5, 1)
-        stock_data = StockMarkData.objects.filter(
-            ticker=ticker,
+        stock_data = StockMarketData.objects.filter(
+            ticker=ticker.upper(),
             timestamp__range=(start, end)).order_by('timestamp')
         serializer = StockMarketDataSerializer(stock_data, many=True)
         return Response(serializer.data)
@@ -37,8 +37,8 @@ class StockThreeYearView(APIView):
     def get(self, request, ticker):
         start = datetime.date(2021, 5, 1)
         end = datetime.date(2024, 5, 1)
-        stock_data = StockMarkData.objects.filter(
-            ticker=ticker,
+        stock_data = StockMarketData.objects.filter(
+            ticker=ticker.upper(),
             timestamp__range=(start, end)).order_by('timestamp')
         serializer = StockMarketDataSerializer(stock_data, many=True)
         return Response(serializer.data)
@@ -47,8 +47,8 @@ class StockFiveYearView(APIView):
     def get(self, request, ticker):
         start = datetime.date(2019, 5, 1)
         end = datetime.date(2024, 5, 1)
-        stock_data = StockMarkData.objects.filter(
-            ticker=ticker,
+        stock_data = StockMarketData.objects.filter(
+            ticker=ticker.upper(),
             timestamp__range=(start, end)).order_by('timestamp')
         serializer = StockMarketDataSerializer(stock_data, many=True)
         return Response(serializer.data)
