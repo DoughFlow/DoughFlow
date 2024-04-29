@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 async function getData() {
   const res = await fetch('http://18.217.141.99/api/brk.b/6m')
   // The return value is *not* serialized
