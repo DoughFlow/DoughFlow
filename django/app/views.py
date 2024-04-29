@@ -4,6 +4,7 @@ from .models import StockMarketData
 from .serializers import StockMarketDataSerializer
 from django.utils.dateparse import parse_datetime
 from django.utils.timezone import now
+from django.http import JsonResponse
 import datetime
 
 
