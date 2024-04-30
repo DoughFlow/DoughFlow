@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import CandleGraph from './CandleGraph';
+import CandlestickChart from './CandleGraph';
 
 interface MainDataProps {
   ticker: string;
@@ -34,7 +34,7 @@ const MainData = ({ ticker }: MainDataProps) => {
 
   return (
     <div>
-      <CandleGraph data={dataPoints.map(dp => ({
+      <CandlestickChart data={dataPoints.map(dp => ({
         timestamp: dp.timestamp,
         open_price: dp.open_price,
         high_price: dp.high_price,
