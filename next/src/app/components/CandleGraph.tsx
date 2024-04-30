@@ -1,9 +1,8 @@
-// CandleGraph.tsx
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
-interface DataPoint {
-  timestamp: string;  // Assuming ISO format
+interface CandlestickData {
+  timestamp: string;
   open_price: number;
   high_price: number;
   low_price: number;
@@ -11,73 +10,78 @@ interface DataPoint {
   volume: number;
 }
 
-interface CandleGraphProps {
-  data: DataPoint[];
+interface CandlestickChartProps {
+  data: CandlestickData[];
 }
 
-const CandleGraph = ({ data }: CandleGraphProps) => {
-  const svgRef = useRef<SVGSVGElement>(null);
+const CandlestickChart = ({ data }: CandlestickChartProps) => {
+  const ref = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
-    if (!data.length) return;
+    if (data.length === 0) return;
 
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
-    const width = 1000 - margin.left - margin.right;
-    const height = 600 - margin.top - margin.bottom;
+    const width = 960 - margin.left - margin.right;
+    const height = 500 - margin.top - margin.bottom;
 
-    // Clear the SVG on each render
-    d3.select(svgRef.current).selectAll('*').remove();
+    d3.select(ref.current).selectAll("*").remove();
 
-    const svg = d3.select(svgRef.current)
-      .attr('width', width + margin.left + margin.right)
-      .attr('height', height + margin.top + margin.bottom)
-      .append('g')
-      .attr('transform', `translate(${margin.left}, ${margin.top})`);
+    const svg = d3.select(ref.current)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    // Scaling
-    const xScale = d3.scaleBand()
+    const x = d3.scaleBand()
       .range([0, width])
-      .padding(0.2);
+      .padding(0.3);
 
-    const yScale = d3.scaleLinear()
+    const y = d3.scaleLinear()
       .range([height, 0]);
-    // Domains
-      xScale.domain(data.map(d => d.timestamp))
-      yScale.domain([Math.min(...data.map(d => d.low_price)), Math.max(...data.map(d => d.high_price))])
-    // Draw candles
-    svg.selectAll(".candle")
-      .data(data)
-      .enter()
-      .append("rect")
-      .attr('x', d => xScale(d.timestamp) + xScale.bandwidth() / 4)
-      .attr('y', d => yScale(Math.max(d.open_price, d.close_price)))
-      .attr('width', xScale.bandwidth() / 2)
-      .attr('height', d => Math.abs(yScale(d.open_price) - yScale(d.close_price)))
-      .attr('fill', d => d.open_price > d.close_price ? 'red' : 'green');
 
-    // Draw wicks
-    svg.selectAll(".wick")
-      .data(data)
-      .enter()
-      .append("line")
-      .attr('x1', d => xScale(d.timestamp) + xScale.bandwidth() / 2)
-      .attr('x2', d => xScale(d.timestamp) + xScale.bandwidth() / 2)
-      .attr('y1', d => yScale(d.high_price))
-      .attr('y2', d => yScale(d.low_price))
-      .attr('stroke', d => d.open_price > d.close_price ? 'red' : 'green');
+    const ymin = Math.min(...data.map(d => d.low_price));
+    const ymax = Math.max(...data.map(d => d.high_price));
+    y.domain([ymin, ymax]);
 
-    // Add axes
-    svg.append('g')
-      .attr('transform', `translate(0, ${height})`)
-      .call(d3.axisBottom(xScale).tickFormat(d3.timeFormat("%Y-%m-%d")));
-    
-    svg.append('g')
-      .call(d3.axisLeft(yScale));
+    x.domain(data.map(d => d.timestamp));
+
+    svg.selectAll("rect")
+      .data(data)
+      .enter().append("rect")
+      .attr("x", d => x(d.timestamp)!)
+      .attr("y", d => y(Math.max(d.open_price, d.close_price)))
+      .attr("height", d => Math.abs(y(d.open_price) - y(d.close_price)))
+      .attr("width", x.bandwidth())
+      .attr("fill", d => d.open_price > d.close_price ? "red" : "green");
+
+    svg.selectAll("line.stem")
+      .data(data)
+      .enter().append("line")
+      .attr("class", "stem")
+      .attr("x1", d => x(d.timestamp)! + x.bandwidth() / 2)
+      .attr("x2", d => x(d.timestamp)! + x.bandwidth() / 2)
+      .attr("y1", d => y(d.high_price))
+      .attr("y2", d => y(d.low_price))
+      .attr("stroke", d => d.open_price > d.close_price ? "red" : "green");
+
+    svg.append("g")
+       .attr("class", "x axis")
+       .attr("transform", `translate(0,${height})`)
+       .call(d3.axisBottom(x).tickFormat(d => formatDate(d)));
+
+    svg.append("g")
+       .attr("class", "y axis")
+       .call(d3.axisLeft(y));
 
   }, [data]);
 
-  return <svg ref={svgRef}></svg>;
+  // Helper function to format date for ticks
+  const formatDate = (dateString: string): string => {
+    const date = new Date(dateString);
+    return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+  }
+
+  return <svg ref={ref}></svg>;
 };
 
-export default CandleGraph;
-
+export default CandlestickChart;
