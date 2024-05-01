@@ -25,9 +25,11 @@ const Search = () => {
     };
 
     return (
-        <div className='flex-1 items-center input-border rounded-3xl w-full p-4 mt-16'>
-            <SearchBar onSearch={handleSearch} />
-            <SearchResults results={results} />
+        <div className='flex flex-col justify-center rounded-3xl mx-6'>
+                <SearchBar onSearch={handleSearch} />
+            <div className='flex justify-center'>
+                <SearchResults results={results} />
+            </div>
         </div>
     );
 };
