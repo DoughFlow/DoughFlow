@@ -59,7 +59,11 @@ const SearchGraph = ({ dataPoints }: GraphProps) => {
     maintainAspectRatio: false,
   };
 
-  return <Line data={data} options={options} />;
+  return (
+    <div className='max-w-32'>
+      <Line data={data} options={options} />
+    </div>
+  );
 };
 
 export default SearchGraph;
