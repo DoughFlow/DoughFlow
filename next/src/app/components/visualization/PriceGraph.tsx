@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import PriceData from '@components/visualization/PriceData';
 import * as d3 from 'd3';
-
-interface CandlestickData {
+/**
+interface PriceGraphData {
   timestamp: string;
   open_price: number;
   high_price: number;
@@ -10,19 +11,38 @@ interface CandlestickData {
   volume: number;
 }
 
-interface CandlestickChartProps {
-  data: CandlestickData[];
+interface PriceGraphProps {
+  data: PriceGraphData[];
+}
+**/
+interface DataPoint {
+    timestamp: string;
+    ticker: string;
+    open_price: number;
+    high_price: number;
+    low_price: number;
+    close_price: number;
+    volume: number;
+    candle_time: string;
 }
 
-const CandlestickChart = ({ data }: CandlestickChartProps) => {
+const PriceGraph = ({ticker}:{ticker:string}) => {
   const ref = useRef<SVGSVGElement>(null);
+
+  const [data, setData] = useState<DataPoint[]>([]);
+
+  useEffect(() => {
+    PriceData(ticker).then((result) => {
+      setData(result);
+      });
+  }, [ticker, data]);
 
   useEffect(() => {
     if (data.length === 0) return;
 
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
-    const width = 960 - margin.left - margin.right;
-    const height = 500 - margin.top - margin.bottom;
+    const width = 700 - margin.left - margin.right;
+    const height = 350 - margin.top - margin.bottom;
 
     d3.select(ref.current).selectAll("*").remove();
 
@@ -81,7 +101,9 @@ const CandlestickChart = ({ data }: CandlestickChartProps) => {
     return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
   }
 
-  return <svg ref={ref}></svg>;
+  return (
+  <svg ref={ref}></svg>
+  );
 };
 
-export default CandlestickChart;
+export default PriceGraph;
