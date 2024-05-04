@@ -12,18 +12,14 @@ const VisualizationContainer = (
     const [isHovered, setIsHovered] = useState(false);
 
     const handleHover = () => {
-        setIsHovered(true);
-    };
-
-    const handleHoverOut = () => {
-        setIsHovered(false);
+        setIsHovered(prevIsHovered => !prevIsHovered);
     };
 
    return (
         <div className="h-1/2">
         <div className="relative bg-gray-200 rounded-lg shadow-xl p-8">
             <div className="absolute top-0 left-0">
-                <HoverSearch onMouseEnter={handleHover} onMouseLeave={handleHoverOut} />
+                <HoverSearch onMouseEnter={handleHover} onMouseLeave={handleHover} />
             </div>
             
             {isHovered && (

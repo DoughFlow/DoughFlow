@@ -35,10 +35,11 @@ const PriceGraph = ({ticker}:{ticker:string}) => {
     PriceData(ticker).then((result) => {
       setData(result);
       });
-  }, [ticker, data]);
+  }, [ticker]);
 
   useEffect(() => {
     if (data.length === 0) return;
+    console.log(data)
 
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
     const width = 700 - margin.left - margin.right;
