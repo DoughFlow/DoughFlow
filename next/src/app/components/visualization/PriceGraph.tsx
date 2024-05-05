@@ -31,7 +31,7 @@ const PriceGraph = ({ticker}: {ticker:string}) => {
         PriceData(ticker).then((result) => {
             setData(result)
             });
-        }, [ticker, data]);
+        }, [ticker]);
 
 
   useEffect(() => {
