@@ -44,7 +44,7 @@ const PriceGraph = ({ticker}: {ticker:string}) => {
     d3.select(svgRef.current).selectAll('svg').remove();
 
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
-    const total_width = (data.length * 15)
+    const total_width = (data.length * 16)
     const component_width = 700;
     //const width = svgRef.current.clientWidth - margin.left - margin.right;
     const height = 350 - margin.top - margin.bottom;
@@ -151,7 +151,7 @@ if (d.volume !== undefined) {
       .enter()
       .append("rect")
       .attr('class', 'wick')
-      .attr('x', d => (xScale(d.timestamp)! + 10))
+      .attr('x', d => (xScale(d.timestamp)! + 8))
       //.attr('x', d => (xScale(formatDate(d.timestamp))! + 8))
       .attr("y", d => yScale(d.high_price))
       .attr('width', '1px')
@@ -166,7 +166,7 @@ if (d.volume !== undefined) {
 
     let xTickValues: string[] = [];
 
-    if (total_width < 500) {
+    if (total_width > component_width) {
         // usual for larger width
         //xTickValues = data.filter(d => Date(d.timestamp).getDay() === 1).map(d => d.timestamp)
         xTickValues = mondayFilter(data);
