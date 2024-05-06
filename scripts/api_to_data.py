@@ -34,7 +34,7 @@ class CollectData:
 
 
 def main():
-    api_key = 'cd384b0e986a484abc427d73cfdc7c90'
+    api_key = ''
     ticker = 'AAPL'
     data_collector = CollectData(api_key, ticker)
     data_collector.fetch_all_data()
