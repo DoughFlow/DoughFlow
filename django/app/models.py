@@ -12,6 +12,10 @@ class StockMarketData(models.Model):
     close_price = models.DecimalField(max_digits=10, decimal_places=2)
     volume = models.IntegerField()
     candle_time = models.IntegerField(null=True, blank=True)
+    rsi = models.IntegerField(max_length=3, null=True)
+    macd = models.DecimalField(max_digits=10, decimal_places=4, null=True)
+    moving_average = models.DecimalField(max_digits=10, null=True)
+    e_moving_average = models.DecimalField(max_digits=10, null=True)
 
     class Meta:
         db_table = 'stock_data'
