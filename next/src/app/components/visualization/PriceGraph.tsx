@@ -187,7 +187,7 @@ High: ${d.high_price}`;
     tooltip.raise();
 
     // Delete the extra useless scrollbar we get for some reason
-    d3.selectAll<HTMLDivElement, unknown>("div").each(function () {
+    parent.selectAll<HTMLDivElement, unknown>("div").each(function () {
       if (this.childNodes.length === 0 || !this.textContent?.trim()) {
         d3.select(this).remove();
       }
