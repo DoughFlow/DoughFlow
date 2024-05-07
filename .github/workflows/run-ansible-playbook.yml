@@ -29,6 +29,6 @@ jobs:
         shell: bash
         run: |
           service ssh status
-          cd infrastructure/ansible
-          cat setup-prod.yml
+          cd ansible
+          cat deploy.yml
           ansible-playbook -vvv --private-key /home/runner/.ssh/id_rsa deploy.yml
