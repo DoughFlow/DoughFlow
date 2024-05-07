@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   django:
     container_name: prod-django
@@ -25,11 +23,7 @@ services:
       - "443:443"
     depends_on:
       - django
-      - frontend
 
-  frontend:
-    container_name: prod-frontend
-    build: ./next
-    ports:
-      - "3000:3000" # Assuming your frontend runs on port 3000
-    hostname: nextjs
+volumes:
+  static_volume:
+  media_volume:
