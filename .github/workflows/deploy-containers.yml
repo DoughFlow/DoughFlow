@@ -97,7 +97,7 @@ jobs:
             id: meta
             uses: docker/metadata-action@v5
             with:
-              images: ${{ env.REGISTRY }}/${{ env.REPOSITORY_NAME }}/django
+              images: ${{ env.REGISTRY }}/${{ env.REPOSITORY_NAME }}/nextjs
 
           - name: 'Build NextJS Image'
             uses: docker/build-push-action@v5
