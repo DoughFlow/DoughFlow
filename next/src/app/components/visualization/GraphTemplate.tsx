@@ -82,6 +82,7 @@ const GraphTemplate = (
     return (
         <div>
             <PriceGraph {...{ticker}}/>
+            <IndicatorGraph {...{ticker}}/>
             <p>I love {ticker}, { ticker2}, and&nbsp;{temp}</p>
         </div>
     )
