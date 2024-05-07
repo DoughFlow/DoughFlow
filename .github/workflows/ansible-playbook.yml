@@ -1,11 +1,15 @@
 name: Ansible Deploy
 
 on:
+  workflow_run:
+    workflows: ["Deploy Images to GHCR"]
+    types:
+      - completed
+
   push:
     branches:
       - workflow-next-patch
   workflow_dispatch:
-
 jobs:
   run-playbook:
     runs-on: ubuntu-latest
@@ -17,21 +21,16 @@ jobs:
         uses: dawidd6/action-ansible-playbook@v2
         with:
           playbook: deploy.yaml
-          # Optional, directory where playbooks live
           directory: ansible/
-          # Optional, ansible configuration file content (ansible.cfg)
           configuration: |
             [defaults]
             callbacks_enabled = ansible.posix.profile_tasks, ansible.posix.timer
             stdout_callback = yaml
             nocows = false
-          # Optional, SSH private key
           key: ${{secrets.SSH_KEY}}
-          # Optional, literal inventory file contents
           inventory: |
             [ec2]
-            prod_app ansible_host=18.216.215.179 ansible_user=ec2-user
-          # Optional, additional flags to pass to ansible-playbook
+            prod_app ansible_host=${{EC2_IP_ADDRESS}} ansible_user=ec2-user
           options: |
             --verbose
             --ssh-extra-args "-o StrictHostKeyChecking=no"
