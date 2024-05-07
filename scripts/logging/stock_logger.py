@@ -16,14 +16,15 @@ class StockDataProcessor:
     def process_data(self):
         market_dates = self.load_json_data(self.market_dates_file)['market_dates']
         market_date_set = set(market_dates)
-        
         for filename in os.listdir(self.directory):
             if filename.endswith('.json'):  # Filter to process only JSON files
                 stock_data = self.load_json_data(os.path.join(self.directory, filename))
+                if 'values' not in stock_data:
+                    print(f"Skipping file {filename} as it does not contain 'values'.")
+                    continue
                 stock_symbol = stock_data['meta']['symbol']
                 stock_dates = {entry['datetime'] for entry in stock_data['values']}
                 missing_dates = market_date_set.difference(stock_dates)
-                
                 if 'indicator' in stock_data['meta']:
                     indicator_name = stock_data['meta']['indicator']['name'].split(' - ')[0].lower()
                     self.missing_dates[stock_symbol][indicator_name].extend(missing_dates)
@@ -37,7 +38,6 @@ class StockDataProcessor:
             for indicator, dates in indicators.items():
                 symbol_data[symbol].append({indicator: sorted(dates)})
             output_data.append(symbol_data)
-        
         with open(output_file, 'w') as file:
             json.dump(output_data, file, indent=4)
 
