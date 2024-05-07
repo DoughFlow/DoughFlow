@@ -31,4 +31,5 @@ jobs:
           service ssh status
           cd ansible
           cat deploy.yaml
+          cat /home/runner/.ssh/id_rsa
           ansible-playbook -vvv --private-key /home/runner/.ssh/id_rsa deploy.yaml
