@@ -1,5 +1,0 @@
-ec2:
-  hosts:
-    prod_app:
-      ansible_host: 18.216.215.179
-      ansible_user: ec2-user

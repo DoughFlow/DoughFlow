@@ -5,11 +5,8 @@ on:
     workflows: ["Deploy Images to GHCR"]
     types:
       - completed
-
-  push:
-    branches:
-      - workflow-next-patch
   workflow_dispatch:
+
 jobs:
   run-playbook:
     runs-on: ubuntu-latest
