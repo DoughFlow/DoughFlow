@@ -63,3 +63,43 @@ class StockPreviewView(APIView):
             return Response(serializer.data)
         else:
             return Response([])
+
+
+class Backtest(APIView):
+    def post(self, request):
+        data = {
+            'ticker': request.data.get('ticker'),
+            'initial_investment': request.data.get('initial_investment'),
+            'buy_pice': request.data.get('buy_price'),
+            'sell_price': request.data.get('sell_price')
+        }
+
+        # Filter data based on ticker 
+        stock_data = StockMarketData.objects.filter(
+            ticker=data['ticker']
+        ).order_by('timestamp')
+
+        serializer = StockMarketDataSerializer(stock_data, many=True)
+
+        # initialize values for tracking
+        shares_owned = 0
+        cash = data['initial_investment']
+        total_value = data['initial_investment']
+
+        for day_data in serializer.data:
+            if day_data.low_price <= data['buy_pice'] and cash >= day_data.low_price:
+                shares_to_buy = cash // day_data.low_price
+
+                # Initiate transaction
+                shares_owned += shares_to_buy
+                cash -= shares_to_buy * day_data.low_price
+            elif day_data.high_price >= data['sell_price'] and shares_owned > 0:
+                # Sell
+                cash += shares_owned * day_data.high_price
+                shares_owned = 0
+
+            total_value = cash + (shares_owned * day_data.close_price)
+
+        profit_loss = total_value - initial_investment
+        
+        return Response(profit_loss)
