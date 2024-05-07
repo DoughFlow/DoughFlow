@@ -6,4 +6,4 @@ node_modules/
 .awskeycache
 .secrets
 ./django/.secrets
-data/
+data/*
