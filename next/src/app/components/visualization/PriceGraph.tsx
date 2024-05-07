@@ -2,16 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import PriceData from "@components/visualization/PriceData";
 import * as d3 from "d3";
 
-interface StockData {
-  timestamp: string;
-  open_price: number;
-  high_price: number;
-  low_price: number;
-  close_price: number;
-  volume?: number;
-  candle_time: string;
-}
-
 /**
  * Candlestick Graph component for visualizing stock price data.
  * 
@@ -19,7 +9,7 @@ interface StockData {
  * @returns Candlestick Graph component.
  */
 const PriceGraph = ({ ticker }: { ticker: string }) => {
-  const [data, setData] = useState<StockData[]>([]);
+  const [data, setData] = useState<DataPoint[]>([]);
   const svgRef = useRef(null);
 
   useEffect(() => {
@@ -154,14 +144,12 @@ High: ${d.high_price}`;
       .style("text-anchor", "center")
       .style("font-size", "12px")
       .style("margin", "20px")
-      .attr("overflow", "scroll")
-      .style("color", "white");
+      .attr("overflow", "scroll");
 
     y_axis_svg
       .append("g")
       .attr("transform", `translate(${margin.left}, ${margin.top})`) // Translate the y-axis group to adjust for margins;
       .call(yAxis)
-      .style("color", "white")
       .attr("text-anchor", "end");
 
     g.selectAll("xGrid")
@@ -195,7 +183,7 @@ High: ${d.high_price}`;
   }, [data]);
 
   // Helper function to check date for x axis
-  const mondayFilter = (data: StockData[]): string[] => {
+  const mondayFilter = (data: DataPoint[]): string[] => {
     const mondays: string[] = [];
 
     data.forEach((obj) => {
