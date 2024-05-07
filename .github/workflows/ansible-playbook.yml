@@ -15,7 +15,7 @@ jobs:
         with:
           playbook: deploy.yaml
           # Optional, directory where playbooks live
-          directory: ./ansible/
+          directory: ansible/
           # Optional, ansible configuration file content (ansible.cfg)
           configuration: |
             [defaults]
