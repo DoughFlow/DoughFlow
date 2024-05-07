@@ -1,0 +1,80 @@
+- hosts: ec2
+
+  become: yes
+  tasks:
+    - name: Update Packages
+      yum:
+        name: "*"
+        state: latest
+        update_only: yes
+
+    - name: Install Extra Packages
+      yum:
+        name: "{{ packages }}"
+        state: latest
+        update_cache: yes
+      vars:
+        packages:
+          - python-pip
+          - yum-utils
+          - device-mapper-persistent-data
+          - lvm2
+          - git
+
+    - name: Install Docker
+      yum:
+        name: docker
+        state: latest
+        update_cache: yes
+
+    - name: Install Docker Compose
+      shell: |
+        curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+        chmod +x /usr/local/bin/docker-compose
+
+    - name: Add User to Docker Group
+      user:
+        name: ec2-user
+        groups: docker
+        append: yes
+
+    - name: Start and Enable Docker
+      systemd:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Install Python Packages
+      pip:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - boto3
+
+    - name: Get running containers
+      docker_host_info:
+        containers: yes
+      register: docker_info
+
+    - name: Stop running containers
+      docker_container:
+        name: "{{ item }}"
+        state: stopped
+      loop: "{{ docker_info.containers | map(attribute='Id') | list }}"
+
+    - name: Clone DoughFlow Repo
+      git:
+        repo: https://github.com/DoughFlow/DoughFlow.git
+        dest: /home/ec2-user/DoughFlow
+        version: main
+
+    - name: Insert Django Secrets
+      shell: |
+        cd /home/ec2-user/DoughFlow
+        /home/ec2-user/DoughFlow/configure_cache.sh
+      ignore_errors: true
+
+    - name: Start DoughFlow Stack
+      shell: |
+        cd /home/ec2-user/DoughFlow
+        docker-compose up -d
