@@ -1,6 +1,9 @@
 name: Ansible Deploy
 
 on:
+  push:
+    branches:
+      - workflow-next-patch
   workflow_dispatch:
 
 jobs:
