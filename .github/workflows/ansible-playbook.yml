@@ -30,7 +30,7 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           inventory: |
             [ec2]
-            prod_app ansible_host=${{EC2_IP_ADDRESS}} ansible_user=ec2-user
+            prod_app ansible_host=${{env.EC2_IP_ADDRESS}} ansible_user=ec2-user
           options: |
             --verbose
             --ssh-extra-args "-o StrictHostKeyChecking=no"
