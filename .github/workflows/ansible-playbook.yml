@@ -1,24 +1,33 @@
-- name: Run playbook
-  uses: dawidd6/action-ansible-playbook@v2
-  with:
-    playbook: deploy.yaml
-    # Optional, directory where playbooks live
-    directory: ./ansible/
-    # Optional, ansible configuration file content (ansible.cfg)
-    configuration: |
-      [defaults]
-      callbacks_enabled = ansible.posix.profile_tasks, ansible.posix.timer
-      stdout_callback = yaml
-      nocows = false
-    # Optional, SSH private key
-    key: ${{secrets.SSH_KEY}}
-    # Optional, literal inventory file contents
-    inventory: |
-      [ec2]
-      18.216.215.179
-    # Optional, SSH known hosts file content
-    known_hosts: |
-      example.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
-    # Optional, additional flags to pass to ansible-playbook
-    options: |
-      --verbose
+name: Ansible Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-playbook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run playbook
+        uses: dawidd6/action-ansible-playbook@v2
+        with:
+          playbook: deploy.yaml
+          # Optional, directory where playbooks live
+          directory: ./ansible/
+          # Optional, ansible configuration file content (ansible.cfg)
+          configuration: |
+            [defaults]
+            callbacks_enabled = ansible.posix.profile_tasks, ansible.posix.timer
+            stdout_callback = yaml
+            nocows = false
+          # Optional, SSH private key
+          key: ${{secrets.SSH_KEY}}
+          # Optional, literal inventory file contents
+          inventory: |
+            [ec2]
+            18.216.215.179
+          # Optional, SSH known hosts file content
+          known_hosts: |
+            example.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
+          # Optional, additional flags to pass to ansible-playbook
+          options: |
+            --verbose
