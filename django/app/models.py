@@ -30,8 +30,6 @@ class StockIndicatorData(models.Model):
     sma = models.DecimalField(max_digits=10, decimal_places=2)
     volume = models.IntegerField()
 
-    candle_time = models.IntegerField(null=True, blank=True)
-
     class Meta:
         db_table = 'validated_data'
         unique_together = (('timestamp', 'ticker'),)
