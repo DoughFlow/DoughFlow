@@ -1,14 +1,4 @@
-{
-    "meta": {
-        "symbol": "AAPL",
-        "interval": "1day",
-        "currency": "USD",
-        "exchange_timezone": "America/New_York",
-        "exchange": "NASDAQ",
-        "mic_code": "XNGS",
-        "type": "Common Stock"
-    },
-    "values": [
+[
         {
             "datetime": "2019-05-17",
             "open": "46.73250",
@@ -99,5 +89,4 @@
             "sma": "51.60056",
             "rsi": "52.81349"
         }
-    ]
-}
+]

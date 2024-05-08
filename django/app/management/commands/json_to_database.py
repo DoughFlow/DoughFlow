@@ -24,18 +24,16 @@ class Command(BaseCommand):
         with open(json_file_path, 'r') as file:
             data = json.load(file)
 
-        stock_ticker = data['meta']['symbol']
-
         # Check for preloaded data
-        if StockIndicatorData.objects.filter(ticker=stock_ticker).exists():
+        if StockIndicatorData.objects.filter(ticker=ticker_name).exists():
             print('$$$TICKER EXISTS ALREADY$$$')
             sys.exit()
         
-        total_rows =  len(data['values'])
+        total_rows =  len(data)
         processed_rows = 0
         #Use a transaction to ensure data integrity
         with transaction.atomic():
-            for stock in data['values']:
+            for stock in data:
                 stock_indicator_data = StockIndicatorData(
                         timestamp=stock['datetime'],
                         ticker=ticker_name,
