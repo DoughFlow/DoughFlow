@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import PriceData from "@components/visualization/PriceData";
+import IndicatorData from "@components/visualization/IndicatorData";
 import * as d3 from "d3";
 
 interface IndicatorGraphData {
@@ -13,11 +13,11 @@ interface IndicatorGraphProps {
 
 //const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}) => {
 const IndicatorGraph = ({ticker}: {ticker: string}) => {
-  const [data, setData] = useState<DataPoint[]>([]);
+  const [data, setData] = useState<IndicatorDataPoint[]>([]);
   const svgRef = useRef(null);
 
   useEffect(() => {
-    PriceData(ticker).then((result) => {
+    IndicatorData(ticker).then((result) => {
       setData(result);
     });
   }, [ticker]);
@@ -96,7 +96,7 @@ const IndicatorGraph = ({ticker}: {ticker: string}) => {
       .domain(data.map((d) => d.timestamp));
 
     const indicator = "volume"; // placeholder
-    const yData = indicatorData(data, indicator);
+    const yData = indicatorDataParse(data, indicator);
 
     // yScale
     const ymin = Math.min(...yData);
@@ -149,9 +149,9 @@ Volume: ${d.volume}`;
       .append("rect")
       .attr("class", "bar")
       .attr("x", (d) => xScale(d.timestamp)!)
-      .attr("y", (d) => yScale(d.volume)) // won't work for general indicator
+      .attr("y", (d) => yScale(d.volume!)) // won't work for general indicator
       .attr("width", "12px")
-      .attr("height", (d) => height - yScale(d.volume)) // won't work for general indicator
+      .attr("height", (d) => height - yScale(d.volume!)) // won't work for general indicator
       .style("stroke", "#996F4F") // can't get the stroke to work in the classed call
       .style("stroke-width", "2px")
       .classed("fill-dfyellow", true)
@@ -191,9 +191,9 @@ Volume: ${d.volume}`;
 
       }, [data]);
 
-  const indicatorData = (data: DataPoint[], indicator: string): number[] => {
+  const indicatorDataParse = (data: IndicatorDataPoint[], indicator: string): number[] => {
       // currently only doing volume
-      return data.map(d => d.volume);
+      return data.map(d => d.volume!);
       };
 
   return(

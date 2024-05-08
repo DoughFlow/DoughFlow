@@ -10,5 +10,13 @@ declare global {
       close_price: number;
       volume: number;
       candle_time: string;
-    }
+    };
+
+    interface IndicatorDataPoint {
+        timestamp: string;
+        sma?: number;
+        macd?: number;
+        volume?: number; // here for completeness
+        // add others
+    };
 }
