@@ -100,6 +100,6 @@ class Backtest(APIView):
 
             total_value = cash + (shares_owned * day_data.close_price)
 
-        profit_loss = total_value - initial_investment
+        profit_loss = total_value - data['initial_investment']
         
         return Response(profit_loss)
