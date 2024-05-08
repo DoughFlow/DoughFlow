@@ -3,7 +3,7 @@ import json
 import time
 
 #HARDCODE this each file
-API_key = "557fc57f111442d890b4ab9a27c4f897"
+API_key = ""
 LIST_file = "list_one.txt"
 
 def request_data(indicator, API_key):
