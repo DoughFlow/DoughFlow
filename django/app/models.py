@@ -26,9 +26,12 @@ class StockIndicatorData(models.Model):
     high_price = models.DecimalField(max_digits=10, decimal_places=2)
     low_price = models.DecimalField(max_digits=10, decimal_places=2)
     close_price = models.DecimalField(max_digits=10, decimal_places=2)
+    rsi = models.DecimalField(max_digits=10, decimal_places=4)
+    sma = models.DecimalField(max_digits=10, decimal_places=2)
     volume = models.IntegerField()
+
     candle_time = models.IntegerField(null=True, blank=True)
 
     class Meta:
-        db_table = 'stock_data'
+        db_table = 'validated_data'
         unique_together = (('timestamp', 'ticker'),)
