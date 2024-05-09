@@ -11,9 +11,6 @@ services:
   nginx:
     container_name: prod-nginx
     image: ghcr.io/doughflow/doughflow/nginx:main
-    ports:
-      - "80:80"
-      - "443:443"
     depends_on:
       - django
       - next
