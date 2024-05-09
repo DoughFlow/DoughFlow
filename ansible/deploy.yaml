@@ -20,6 +20,7 @@
           - device-mapper-persistent-data
           - lvm2
           - git
+          - cronie
 
     - name: Install Docker
       yum:
@@ -44,12 +45,19 @@
         state: started
         enabled: yes
 
+    - name: Start and Enable Cron
+      systemd:
+        name: crond
+        state: started
+        enabled: yes
+
     - name: Install Python Packages
       pip:
         name: "{{ packages }}"
       vars:
         packages:
           - boto3
+          - urllib3
 
     - name: Get running containers
       docker_host_info:
@@ -82,6 +90,14 @@
 
     - name: Download NGINX Proxy Manager
       shell: aws s3 cp --recursive s3://doughflow-npm-config /home/ec2-user/proxy/
+
+    - name: Cron Job for Keeping NPM Config in S3
+      cron:
+        name: "NPM S3 Sync"
+        user: "ec2-user"
+        minute: 0
+        hour: 1
+        job: "aws s3 cp --recursive /home/ec2-user/proxy/ s3://doughflow-npm-config"
 
     - name: Start DoughFlow Stack
       shell: |
