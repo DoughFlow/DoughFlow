@@ -96,7 +96,7 @@
         name: "NPM S3 Sync"
         user: "ec2-user"
         minute: 0
-        hour: 1
+        hour: "*"
         job: "aws s3 cp --recursive /home/ec2-user/proxy/ s3://doughflow-npm-config"
 
     - name: Start DoughFlow Stack
