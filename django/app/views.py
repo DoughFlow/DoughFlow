@@ -49,8 +49,8 @@ class SMASixView(APIView):
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
             timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'sma')
-        data = list(price_data)
-        return JsonResponse(data, safe=False)
+        serializer = SMAIndicatorDataSerializer(price_data, many=True)
+        return Response(serializer.data)
 
 class SMAOneView(APIView):
     def get(self, request, ticker):
@@ -58,8 +58,8 @@ class SMAOneView(APIView):
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
             timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'sma')
-        data = list(price_data)
-        return JsonResponse(data, safe=False)
+        serializer = SMAIndicatorDataSerializer(price_data, many=True)
+        return Response(serializer.data)
 
 class SMAFiveView(APIView):
     def get(self, request, ticker):
@@ -67,8 +67,8 @@ class SMAFiveView(APIView):
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
             timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'sma')
-        data = list(price_data)
-        return JsonResponse(data, safe=False)
+        serializer = SMAIndicatorDataSerializer(price_data, many=True)
+        return Response(serializer.data)
 
 class RSISixView(APIView):
     def get(self, request, ticker):
@@ -76,8 +76,8 @@ class RSISixView(APIView):
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
             timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'rsi')
-        data = list(price_data)
-        return JsonResponse(data, safe=False)
+        serializer = RSIIndicatorDataSerializer(price_data, many=True)
+        return Response(serializer.data)
 
 class RSIOneView(APIView):
     def get(self, request, ticker):
@@ -85,8 +85,8 @@ class RSIOneView(APIView):
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
             timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'rsi')
-        data = list(price_data)
-        return JsonResponse(data, safe=False)
+        serializer = RSIIndicatorDataSerializer(price_data, many=True)
+        return Response(serializer.data)
 
 class RSIFiveView(APIView):
     def get(self, request, ticker):
@@ -94,8 +94,8 @@ class RSIFiveView(APIView):
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
             timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'rsi')
-        data = list(price_data)
-        return JsonResponse(data, safe=False)
+        serializer = RSIIndicatorDataSerializer(price_data, many=True)
+        return Response(serializer.data)
 
 class VOLSixView(APIView):
     def get(self, request, ticker):
@@ -103,8 +103,8 @@ class VOLSixView(APIView):
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
             timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'volume')
-        data = list(price_data)
-        return JsonResponse(data, safe=False)
+        serializer = VOLIndicatorDataSerializer(price_data, many=True)
+        return Response(serializer.data)
 
 class VOLOneView(APIView):
     def get(self, request, ticker):
@@ -112,8 +112,8 @@ class VOLOneView(APIView):
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
             timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'volume')
-        data = list(price_data)
-        return JsonResponse(data, safe=False)
+        serializer = VOLIndicatorDataSerializer(price_data, many=True)
+        return Response(serializer.data)
 
 class VOLFiveView(APIView):
     def get(self, request, ticker):
@@ -121,8 +121,8 @@ class VOLFiveView(APIView):
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
             timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'volume')
-        data = list(price_data)
-        return JsonResponse(data, safe=False)
+        serializer = VOLIndicatorDataSerializer(price_data, many=True)
+        return Response(serializer.data)
 
 class WeekView(APIView):
     def get(self, request, ticker):
