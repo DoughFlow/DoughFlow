@@ -10,4 +10,19 @@ class StockMarketDataSerializer(serializers.ModelSerializer):
 class StockIndicatorDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = StockIndicatorData
-        fields = ['timestamp', 'ticker', 'open_price', 'high_price', 'low_price', 'close_price', 'rsi', 'sma', 'volume']
+        fields = ['timestamp', 'open_price', 'high_price', 'low_price', 'close_price']
+
+class RSIIndicatorDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = StockIndicatorData
+        fields = ['timestamp', 'rsi']
+
+class SMAIndicatorDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = StockIndicatorData
+        fields = ['timestamp', 'sma']
+
+class VOLIndicatorDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = StockIndicatorData
+        fields = ['timestamp', 'volume']
