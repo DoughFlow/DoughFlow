@@ -22,7 +22,6 @@ class PriceSixView(APIView):
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
             timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'open_price', 'high_price', 'low_price', 'close_price')
-            rsi=True, sma=True, volume=True)
         serializer = StockIndicatorDataSerializer(price_data, many=True)
         return Response(serializer.data)
 
