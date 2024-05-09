@@ -21,7 +21,7 @@ class PriceSixView(APIView):
         start, end = helper_function('6m')
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
-            timestamp__range=(start,end)).order_by('timestamp').values().exclude(
+            timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'open_price', 'high_price', 'low_price', 'close_price')
             rsi=True, sma=True, volume=True)
         serializer = StockIndicatorDataSerializer(price_data, many=True)
         return Response(serializer.data)
@@ -31,8 +31,7 @@ class PriceOneView(APIView):
         start, end = helper_function('1y')
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
-            timestamp__range=(start,end)).order_by('timestamp').values().exclude(
-            rsi=True, sma=True, volume=True)
+            timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'open_price', 'high_price', 'low_price', 'close_price')
         serializer = StockIndicatorDataSerializer(price_data, many=True)
         return Response(serializer.data)
 
@@ -41,8 +40,7 @@ class PriceFiveView(APIView):
         start, end = helper_function('5y')
         price_data = StockIndicatorData.objects.filter(
             ticker=ticker.upper(),
-            timestamp__range=(start,end)).order_by('timestamp').values().exclude(
-            rsi=True, sma=True, volume=True)
+            timestamp__range=(start,end)).order_by('timestamp').values('timestamp', 'open_price', 'high_price', 'low_price', 'close_price')
         serializer = StockIndicatorDataSerializer(price_data, many=True)
         return Response(serializer.data)
 
