@@ -1,27 +1,26 @@
 'use client'
+import { useEffect, useRef } from 'react';
 import { useGlobal, StockData } from '@/components/GlobalContext';
 
-const StockPage = ({ params }: { params: { stock: string } }) => {
+function StockPage({ params }: { params: { stock: string } }) {
+    // Add context and Ref for useEffect
     const { stocks, addStock, clearStock } = useGlobal();
-
+    const hasRun = useRef(false);
     
-
-    const saveStock = () => {
-        const newStock: StockData = {
-            ticker: params.stock,
-            indicator: 'vol',
-            position: 'left'
-        };
+    if (!hasRun.current) {
+      hasRun.current = true;
+        const newStock = {
+          ticker: params.stock,
+          indicator: 'vol',
+          position: 'left'}
         addStock(newStock);
     }
 
     return (
         <div>
-            <button onClick={saveStock}>Add Stock</button>
             {stocks.map((stock, index) => (
                 <p key={index}>{stock.ticker} - {stock.indicator} - {stock.position}</p>
             ))}
-            <button onClick={clearStock}>Clear Stock</button>
         </div>
     );
 };
