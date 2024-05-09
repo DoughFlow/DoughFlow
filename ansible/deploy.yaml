@@ -71,7 +71,7 @@
     - name: Insert Django Secrets
       shell: |
         cd /home/ec2-user/DoughFlow
-        /home/ec2-user/DoughFlow/configure_cache.sh
+        /home/ec2-user/DoughFlow/configure_cache.sh --access-key {{ access_key }} --secret-key {{ secret_key }} --secret-name {{ secret_name }}
       ignore_errors: true
 
     - name: Start DoughFlow Stack

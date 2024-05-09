@@ -31,3 +31,4 @@ jobs:
           options: |
             --verbose
             --ssh-extra-args "-o StrictHostKeyChecking=no"
+            --extra-vars "access_key=${{secrets.AWS_ACCESS_KEY}} secret_key=${{secrets.AWS_SECRET_KEY}} secret_name=${{secrets.AWS_SECRET_NAME}}"
