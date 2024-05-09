@@ -1,4 +1,4 @@
-import Search from "./components/search/Search";
+//import Search from "./components/search/Search";
 
 export default function Home() {
     return(
@@ -8,9 +8,6 @@ export default function Home() {
             </div>
             <div className="flex-1">
                 SearchHelper
-            </div>
-            <div className="flex-1">
-                <Search />
             </div>
         </div>
 );
