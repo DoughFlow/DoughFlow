@@ -5,7 +5,7 @@ data_path = '/home/ethanrohman/all_data/good_data'
 
 def main():
     stocks = []
-    with open('l0', 'r') as file:
+    with open('l5', 'r') as file:
         for line in file:
             stocks.append(line.strip())
 
