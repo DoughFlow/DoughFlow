@@ -10,7 +10,7 @@ const ListWatcher = ({ results }: ListWatcherProps) => {
 
     return (
         <div>
-            {topResult ? <GraphData ticker={topResult} size={1}/> : <p>No ticker selected</p>}
+            {topResult ? <GraphData ticker={topResult} size={1}/> : <p></p>}
         </div>
     );
 };

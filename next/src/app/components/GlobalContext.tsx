@@ -21,6 +21,10 @@ type GlobalContextType = {
     initStock: (ticker: string) => void;
     addStock: (stock: Stock) => void;
     clearStock: () => void;
+    editFirstIndicator: (indicator: string) => void;
+    editSecondIndicator: (indicator: string) => void;
+    editFirstPosition: (position: string) => void;
+    editSecondPosition: (position: string) => void;
 };
 
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined);

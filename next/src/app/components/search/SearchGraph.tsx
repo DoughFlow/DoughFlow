@@ -33,13 +33,23 @@ const SearchGraph = ({ dataPoints }: GraphProps) => {
     labels: Array(dataPoints.length).fill(''), // Empty labels for no X axis
     datasets: [
       {
-        label: '',
+        label: 'Outline',
+        data: dataPoints,
+        borderColor: '#FFBB84', // White color for the outline
+        borderWidth: 2, // Slightly larger border width for the outline effect
+        fill: false,
+        pointRadius: 0,
+        borderCapStyle: 'round',
+      },
+      {
+        label: 'Main Line',
         data: dataPoints,
         borderColor: getLineColor(dataPoints),
-        borderWidth: 2,
+        borderWidth: 6,
         fill: false,
-        pointRadius: 0
-      },
+        pointRadius: 0,
+        borderCapStyle: 'round',
+      }
     ],
   };
 
@@ -60,7 +70,7 @@ const SearchGraph = ({ dataPoints }: GraphProps) => {
   };
 
   return (
-    <div className='max-w-32'>
+    <div className=''>
       <Line data={data} options={options} />
     </div>
   );

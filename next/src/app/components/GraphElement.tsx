@@ -20,8 +20,8 @@ const GraphElement = () => {
             <div>
                 <PriceGraph ticker={ticker1}/>
                 <IndicatorGraph ticker={ticker1} indicator={indicator1}/>
-		{stocks.ticker2 && <PriceGraph ticker={ticker2}/>}
-		{stocks.ticker2 && <IndicatorGraph ticker={ticker2} indicator={indicator2}/>}
+		        {stocks.ticker2 && <PriceGraph ticker={ticker2}/>}
+		        {stocks.ticker2 && <IndicatorGraph ticker={ticker2} indicator={indicator2}/>}
             </div>
             {Object.entries(stocks).map(([key, value]) => (
                 <div key={key}>{key}: {value}</div>

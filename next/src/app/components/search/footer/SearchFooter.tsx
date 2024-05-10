@@ -1,14 +1,17 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Fuse from 'fuse.js';
 import tickers from '@/comprehensive_stock_list.json';
 import SmallResults from './SmallResults';
 import SmallBar from './SmallBar';
+import ListWatcher from './ListWatcher';
 
+interface SearchFooterProps {
+    results: string[];
+    setResults: React.Dispatch<React.SetStateAction<string[]>>;
+}
 
-const Search = () => {
-    const [results, setResults] = useState<string[]>([]);
-
+const SearchFooter = ({ results, setResults }: SearchFooterProps) => {
     const fuse = new Fuse(tickers, {
         keys: ['path'],  // Make sure this key aligns with the structure of your 'tickers' data
         includeScore: true,
@@ -26,11 +29,16 @@ const Search = () => {
     };
 
     return (
-        <div>
-            <SmallBar onSearch={handleSearch} />
-            <SmallResults results={results} />
+        <div className='flex flex-row bg-dfbrown rounded mx-2'>
+            <div className='flex-1 flex flex-col w-fit px-2'>
+                <SmallBar onSearch={handleSearch} />
+                <SmallResults results={results} />
+            </div>
+            <div>
+                <ListWatcher results={results}/>
+            </div>
         </div>
     );
 };
 
-export default Search;
+export default SearchFooter;

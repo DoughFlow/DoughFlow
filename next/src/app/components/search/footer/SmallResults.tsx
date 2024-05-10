@@ -8,7 +8,7 @@ interface Props {
 
 const SmallResults = ({ results }: Props) => {
     return (
-        <div>
+        <div className='bg-dfbrown'>
             {results && results.map((result, index) => (
                 <SmallOutput key={index} result={result} />
             ))}

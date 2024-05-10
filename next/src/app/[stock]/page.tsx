@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { useGlobal } from '@/components/GlobalContext';
 import VisualizationContainer from '@/components/VisualizationContainer';
+import SearchFooter from '@/components/search/footer/SearchFooter';
 
 function StockPage({ params }: { params: { stock: string } }) {
     // Add context and Ref for useEffect

@@ -11,12 +11,13 @@ import ContextController from './ContextController';
 import { useState, useRef, useEffect } from 'react';
 import Fuse from 'fuse.js';
 import tickers from '@/comprehensive_stock_list.json';
-import Link from 'next/link';
+import SearchFooter from '@/components/search/footer/SearchFooter';
 
 
 const VisualizationContainer = () => {
     const [showSearchBar, setShowSearchBar] = useState<boolean>(false);
     const [showI, setShowI] = useState<boolean>(false);
+    const [results, setResults] = useState<string[]>([]);
     const iconRef = useRef<HTMLDivElement>(null);
     const {stocks, clearStock, addStock} = useGlobal();
 
@@ -33,7 +34,8 @@ const VisualizationContainer = () => {
 
     const clearPopups = () => {
         setShowSearchBar(false);
-        setShowI(false)
+        setShowI(false);
+        setResults([]);
     };
     
 
@@ -94,9 +96,9 @@ const VisualizationContainer = () => {
             <div onClick={clearPopups}>
                 <GraphElement />
             </div>
-            <button onClick={toggleSearchBar} className="btn">
-                Toggle Search
-            </button>
+            <div className='fixed bottom-0 left-0'>
+                <SearchFooter results={results} setResults={setResults}/>
+            </div>
         </div>
     );
 };
@@ -156,7 +158,7 @@ const HoverSearch = () => {
                     placeholder="Add stock tickers..."
                 />
             </div>
-            <div className='search-results text-dfwhite bg-dfbrown rounded-b w-full'>
+            <div className='text-dfwhite bg-dfbrown rounded-b w-full'>
                 {results && results.map((result, index) => (
                     <button key={index} className='text-left w-full' onClick={() => handleAddClick(result)}>
                         <div>{result}</div>

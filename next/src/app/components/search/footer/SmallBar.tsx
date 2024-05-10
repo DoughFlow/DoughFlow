@@ -14,13 +14,13 @@ const SmallBar = ({ onSearch }: Props) => {
   };
 
   return (
-    <div className='hover-search fixed left-0 top-0  bg-dfwhite rounded p-2 m-2'>
+    <div className='text-dfwhite'>
       <input
         type="text"
-        className='p-1 border-none outline-none pl-7 focus:outline-none text-dfbrown rounded'
+        className='bg-dfbrown border-b border-dfwhite text-dfwhite pl-2 mt-1 focus:outline-none placeholder-dfyellow'
         value={input}
         onChange={handleInputChange}
-        placeholder="Search stock tickers..."
+        placeholder="Create new visualization..."
       />
     </div>
   );
