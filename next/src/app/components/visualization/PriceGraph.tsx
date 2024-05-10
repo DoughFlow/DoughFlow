@@ -8,15 +8,16 @@ import * as d3 from "d3";
  * @param ticker - Ticker symbol for the stock data.
  * @returns Candlestick Graph component.
  */
-const PriceGraph = ({ ticker }: { ticker: string }) => {
+const PriceGraph = ({ ticker, date, height, width }:
+    { ticker: string, date: string, height: number, width: number }) => {
   const [data, setData] = useState<DataPoint[]>([]);
   const svgRef = useRef(null);
 
   useEffect(() => {
-    PriceData(ticker).then((result) => {
+    PriceData(ticker, date).then((result) => {
       setData(result);
     });
-  }, [ticker]);
+  }, [ticker, date]);
 
   useEffect(() => {
     console.log("begining main plot");

@@ -1,8 +1,9 @@
 "use server";
 
-const IndicatorData = async (ticker: string, indicator: string) => {
+
+const IndicatorData = async (ticker: string, date: string, indicator: string) => {
   const response = await fetch(
-    `http://3.140.61.213/api/${ticker}/${indicator}/6m`,
+    `http://3.140.61.213/api/${ticker}/${indicator}/${ date }`,
   );
   const json_data = await response.json();
 

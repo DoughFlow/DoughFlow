@@ -12,16 +12,17 @@ interface IndicatorGraphProps {
 }
 
 //const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}) => {
-const IndicatorGraph = ({ ticker }: { ticker: string }) => {
-  const [data, setData] = useState<IndicatorDataPoint[]>([]);
-  const [indicator, setIndicator] = useState<string>("rsi");
+const IndicatorGraph = ({ ticker, date, indicator, height, width}:
+    { ticker: string, date: string, indicator: string, height: number, width: number }) => {
+  const [data, setData] = useState<IndicatorDataPoint[]>([])
+  //const [indicator, setIndicator] = useState<string>("rsi");
   const svgRef = useRef(null);
 
   useEffect(() => {
-    IndicatorData(ticker, indicator).then((result) => {
+    IndicatorData(ticker, date, indicator).then((result) => {
       setData(result);
     });
-  }, [ticker]);
+  }, [ticker, date, indicator]);
 
   useEffect(() => {
     console.log("beginning indicator plot");
