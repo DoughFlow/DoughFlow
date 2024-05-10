@@ -65,14 +65,15 @@ const GraphElement = () => {
             );
         }
     };
-
+/*
+    <div>
+        {Object.entries(stocks).map(([key, value]) => (
+            <div key={key}>{key}: {value}</div>))}
+    </div>
+*/
     return (
         <>
             {renderGraphs(position1)}
-	    <div>
-            	{Object.entries(stocks).map(([key, value]) => (
-            <div key={key}>{key}: {value}</div>))}
-	    </div>
         </>
     );
 
