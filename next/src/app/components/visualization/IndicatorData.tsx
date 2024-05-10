@@ -1,7 +1,7 @@
 'use server'
 
 const IndicatorData = async (ticker:string) => {
-    const response = await fetch(`http://3.140.61.213/api/${ ticker }/6m`);
+    const response = await fetch(`http://3.140.61.213/api/${ ticker }/vol/6m`);
     const json_data = await response.json();
     
     const data: IndicatorDataPoint[] = json_data.map((dp: any) => ({
