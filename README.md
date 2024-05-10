@@ -1,6 +1,6 @@
 # DoughFlow
 
-Welcome to DoughFlow, a collaborative project that integrates Django, {insert DB choice once made here} and NextJS to create a powerful web application for managing time-series data related to financial transactions.
+Welcome to DoughFlow, a collaborative project that integrates Django, PostgreSQL and NextJS to create a powerful web application for managing time-series data related to financial transactions. Explore a vast array of historical stock data with access to **over** 3500 tickers, empowering you to make valuable insights to inform your investment strategies.
 
 ### Django Stack
 
@@ -11,6 +11,23 @@ Our Django backend will serve as a robust REST API, providing seamless communica
 #### Django Python Object Interaction
 
 Utilizing Django's ORM, we will ensure efficient interaction with the database, allowing for a slightly abstracted (SQL or NoSQL) approach to data management.
+
+```python
+class StockMarketData(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    timestamp = models.DateField()
+    ticker = models.CharField(max_length=8)
+    open_price = models.DecimalField(max_digits=10, decimal_places=2)
+    high_price = models.DecimalField(max_digits=10, decimal_places=2)
+    low_price = models.DecimalField(max_digits=10, decimal_places=2)
+    close_price = models.DecimalField(max_digits=10, decimal_places=2)
+    volume = models.IntegerField()
+    candle_time = models.IntegerField(null=True, blank=True)
+
+class Meta:
+    db_table = 'stock_data'
+    unique_together = (('timestamp', 'ticker'),)
+```
 
 ### NextJS Stack
 
@@ -29,15 +46,15 @@ Create a plug-and-play frontend that can be easily integrated into an extensive 
 ### Time-Series Dataset and Database
 
 We are currently exploring options for our time-series dataset and database.(PostgreSQL and MongoDB or OracleDB)  
-### Database: (PostgreSQL, MongoDB, or some Oracle DB)
+### Database: PostgreSQL
 
 #### Time-Series Data Format and Usage
 
-Our time-series data involves the recording of financial transactions over time, capturing information like datetime, stock ticker, open, close, and volume.
+Our time-series data involves the recording of financial transactions over time, capturing information like datetime, stock ticker, open, close, and volume as well as indicators. 
 
 #### Connection and Maintenance
 
-The connection between the Django backend API and the chosen database (PostgreSQL or MongoDB) will be carefully established and maintained to ensure data integrity and reliability.  
+The connection between the Django backend API and the PostgreSQL database will be carefully established and maintained to ensure data integrity and reliability.  
 
 #### Example Schema
 
@@ -52,15 +69,4 @@ TABLE financial_data (
     close DECIMAL,
     volume INT
 );  
-
-##### NoSQL (Time-Series Structure)
-
-{
-    "_id": ObjectId("5f43a7d8c9e77c4e3b3f36c4"),  
-    "datetime": ISODate("2024-02-18T12:00:00Z"),  
-    "open": 150.0,  
-    "high": 155.0,  
-    "low": 145.0,  
-    "close": 152.0,  
-    "volume": 1000000  
-}
+```
