@@ -24,7 +24,7 @@ const GraphElement = () => {
     const position2 = stocks.position2;
 
     const screenWidth = window.innerWidth;
-    const graphWidth = screenWidth * 0.97;
+    const graphWidth = screenWidth * 0.93;
     const midWidth = graphWidth * 0.5;
 
     const screenHeight = window.innerHeight;
@@ -65,15 +65,13 @@ const GraphElement = () => {
             );
         }
     };
-/*
-    <div>
-        {Object.entries(stocks).map(([key, value]) => (
-            <div key={key}>{key}: {value}</div>))}
-    </div>
-*/
     return (
         <>
             {renderGraphs(position1)}
+            <div>
+                {Object.entries(stocks).map(([key, value]) => (
+                    <div key={key}>{key}: {value}</div>))}
+            </div>
         </>
     );
 

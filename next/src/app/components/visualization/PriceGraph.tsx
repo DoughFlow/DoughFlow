@@ -28,10 +28,10 @@ const PriceGraph = ({ ticker, date, height, width }:
     d3.select(svgRef.current).selectAll("svg").remove();
 
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
-    const total_width = data.length * 12;
-    const component_width = 700;
-    //const width = svgRef.current.clientWidth - margin.left - margin.right;
-    const height = 350 - margin.top - margin.bottom;
+    //const total_width = data.length * 12;
+    //const component_width = 700;
+    //const width = widt;
+    //const height = ();
 
     // Helper function for tooltip position
     const tooltipHelper = (x: number, y: number): [number, number] => {
@@ -46,8 +46,8 @@ const PriceGraph = ({ ticker, date, height, width }:
         case adjustedX + 300 > window.innerWidth:
           adjustedX = window.innerWidth - 300;
           break;
-        case adjustedX + 250 > total_width:
-          adjustedX = total_width - 250;
+        case adjustedX + 250 > width:
+          adjustedX = width - 250;
           break;
       }
       return [adjustedX, adjustedY];
@@ -56,7 +56,7 @@ const PriceGraph = ({ ticker, date, height, width }:
     // Begin defining plot stuff
     const parent = d3
       .select(svgRef.current)
-      .attr("width", component_width)
+      .attr("width", width)
       .attr("height", height + margin.top + margin.bottom);
 
     // holds y axis
@@ -66,7 +66,7 @@ const PriceGraph = ({ ticker, date, height, width }:
       //.attr('width','')
       .style("position", "absolute")
       .style("pointer-events", "none")
-      //.style("z-index", 0);
+      .style("z-index", '-1');
 
     // body holds the plot with x axis
     const body = parent.append("div").style("overflow-x", "auto");
@@ -74,7 +74,7 @@ const PriceGraph = ({ ticker, date, height, width }:
     // svg is the x axis and plot
     const svg = body
       .append("svg")
-      .attr("width", total_width)
+      .attr("width", width)
       .attr("height", height + margin.top + margin.bottom);
 
     const g = svg
@@ -89,7 +89,7 @@ const PriceGraph = ({ ticker, date, height, width }:
     // xScale
     const xScale = d3
       .scaleBand()
-      .range([0, total_width])
+      .range([0, width])
       .domain(data.map((d) => d.timestamp));
 
     // yScale
@@ -150,7 +150,7 @@ High: ${d.high_price}`;
       .attr("class", "candle")
       .attr("x", (d) => xScale(d.timestamp)!)
       .attr("y", (d) => yScale(Math.max(d.open_price, d.close_price)))
-      .attr("width", "12px")
+      .attr("width", (width/ data.length))
       .attr("height", (d) =>
         Math.abs(yScale(d.open_price) - yScale(d.close_price)),
       )
@@ -188,7 +188,7 @@ High: ${d.high_price}`;
       .enter()
       .append("rect")
       .attr("class", "wick")
-      .attr("x", (d) => xScale(d.timestamp)! + 6)
+      .attr("x", (d) => xScale(d.timestamp)! + (width / data.length ) / 2 - 0.5)
       .attr("y", (d) => yScale(d.high_price))
       .attr("width", "1px")
       .attr("height", (d) => yScale(d.low_price) - yScale(d.high_price))
@@ -231,11 +231,24 @@ High: ${d.high_price}`;
       .classed("stroke-dfbrown", true)
       .attr("stroke-width", 1);
 
+
+    const text = g.append("text")
+        .attr("class", "ticker-label")
+        .attr("x", 10)  // X position, 0 to align it with the left margin
+        .attr("y", height) // Positive Y position to move it inside the graph area
+        .text(ticker)  // Set the text to the ticker symbol
+        .attr("fill", "white") // Text color
+        .style("opacity", 0.125)  // 50% opacity
+        .attr("font-size", width /6) // Larger font size
+        .attr("font-weight", "bold") // Bold text
+        .style("text-anchor", "start")
+        .style("pointer-events", "none");
+
     g.selectAll("yGrid")
       .data(y.ticks().slice(1))
       .join("line")
       .attr("x1", 0)
-      .attr("x2", total_width)
+      .attr("x2", width)
       .attr("y1", (d) => y(d))
       .attr("y2", (d) => y(d))
       .attr("stroke", "green")
@@ -243,7 +256,7 @@ High: ${d.high_price}`;
 
     // tooltip needs to be on top of the other graph elements
     tooltip.raise();
-  }, [data]);
+  }, [data, height, width]);
 
   // Helper function for mondayFilter and for x-axis bars
   const isMonday = (d: DataPoint): boolean => {

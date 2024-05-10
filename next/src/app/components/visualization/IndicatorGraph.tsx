@@ -33,10 +33,10 @@ const IndicatorGraph = ({ ticker, date, indicator, height, width}:
     d3.select(svgRef.current).selectAll("svg").remove();
 
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
-    const total_width = data.length * 12;
-    const component_width = 700;
+    //const width = data.length * 12;
+    //const width = 700;
     //const width = svgRef.current.clientWidth - margin.left - margin.right;
-    const height = 250 - margin.top - margin.bottom;
+    //const height = 250 - margin.top - margin.bottom;
 
     // Helper function for tooltip position
     const tooltipHelper = (x: number, y: number): [number, number] => {
@@ -51,8 +51,8 @@ const IndicatorGraph = ({ ticker, date, indicator, height, width}:
         case adjustedX + 300 > window.innerWidth:
           adjustedX = window.innerWidth - 300;
           break;
-        case adjustedX + 250 > total_width:
-          adjustedX = total_width - 250;
+        case adjustedX + 250 > width:
+          adjustedX = width - 250;
           break;
       }
       return [adjustedX, adjustedY];
@@ -61,7 +61,7 @@ const IndicatorGraph = ({ ticker, date, indicator, height, width}:
     // Begin plot stuff
     const parent = d3
       .select(svgRef.current)
-      .attr("width", component_width)
+      .attr("width", width)
       .attr("height", height + margin.top + margin.bottom);
 
     // holds y axis
@@ -71,7 +71,7 @@ const IndicatorGraph = ({ ticker, date, indicator, height, width}:
       //.attr('width','')
       .style("position", "absolute")
       .style("pointer-events", "none")
-      .style("z-index", 1);
+      .style("z-index",'-1');
 
     // body holds the plot with x axis
     const body = parent.append("div").style("overflow-x", "auto");
@@ -79,14 +79,14 @@ const IndicatorGraph = ({ ticker, date, indicator, height, width}:
     // svg is the x axis and plot
     const svg = body
       .append("svg")
-      .attr("width", total_width)
+      .attr("width", width)
       .attr("height", height + margin.top + margin.bottom);
 
     const g = svg
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    //const x = d3.scaleBand().range([0, total_width])
+    //const x = d3.scaleBand().range([0, width])
     //.domain(data.map((d) => d.timestamp));
 
     const y = d3.scaleLinear().range([height, 0]);
@@ -94,7 +94,7 @@ const IndicatorGraph = ({ ticker, date, indicator, height, width}:
     // xScale
     const xScale = d3
       .scaleBand()
-      .range([0, total_width])
+      .range([0, width])
       .domain(data.map((d) => d.timestamp));
 
     const yData = indicatorDataParse(data, indicator);
