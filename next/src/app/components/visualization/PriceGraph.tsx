@@ -65,7 +65,7 @@ const PriceGraph = ({ ticker }: { ticker: string }) => {
       //.attr('width','')
       .style("position", "absolute")
       .style("pointer-events", "none")
-      .style("z-index", 0);
+      //.style("z-index", 0);
 
     // body holds the plot with x axis
     const body = parent.append("div").style("overflow-x", "auto");
@@ -271,7 +271,7 @@ High: ${d.high_price}`;
     return everyOtherMonday;
   };
 
-  return <div ref={svgRef}></div>;
+  return <div ref={svgRef} className=""></div>;
 };
 
 export default PriceGraph;

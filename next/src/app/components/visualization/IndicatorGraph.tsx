@@ -4,15 +4,17 @@ import * as d3 from "d3";
 
 interface IndicatorGraphData {
   timestamp: string;
-  volume: number;
+  [key: string]: number | string;
 }
 
 interface IndicatorGraphProps {
   data: IndicatorGraphData[];
 }
 
-const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}) => {
+//const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}) => {
+const IndicatorGraph = ({ ticker }: { ticker: string }) => {
   const [data, setData] = useState<IndicatorDataPoint[]>([]);
+  const [indicator, setIndicator] = useState<string>("rsi");
   const svgRef = useRef(null);
 
   useEffect(() => {
@@ -23,7 +25,7 @@ const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}
 
   useEffect(() => {
     console.log("beginning indicator plot");
-    console.log(data.slice(0,3))
+    console.log(data.slice(0, 3));
 
     if (data.length === 0) return;
 
@@ -94,16 +96,18 @@ const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}
       .range([0, total_width])
       .domain(data.map((d) => d.timestamp));
 
-    const indicator = "volume"; // placeholder
     const yData = indicatorDataParse(data, indicator);
 
     // yScale
     const ymin = Math.min(...yData);
     const ymax = Math.max(...yData);
-    console.log(ymin)
+    console.log(ymin);
     console.log(ymax);
 
-    const yScale = d3.scaleLinear().range([height, 0]).domain([ymin/2, ymax]);
+    const yScale = d3
+      .scaleLinear()
+      .range([height, 0])
+      .domain([ymin / 2, ymax]);
 
     const tooltip = g
       .append("text")
@@ -117,47 +121,14 @@ const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}
       .append("rect")
       .attr("class", "xBar")
       .attr("x", (d) => xScale(d.timestamp)!)
-      .attr("y", 0) 
+      .attr("y", 0)
       .attr("width", "12px")
       .attr("height", height)
       //.style("fill", "dfgrey")
       .on("mouseover", (evt, d) => {
         const [mx, my] = d3.pointer(evt);
-        let tooltipText = `Date: ${d.timestamp}
-Volume: ${d.volume}`;
 
-        //const tooltipPosition = tooltipHelper(mx, my);
-
-        tooltip
-          .attr(
-            "transform",
-            //`translate(${tooltipPosition[0]}, ${tooltipPosition[1]})`,
-            `translate(0, 0)`,
-          )
-          .selectAll("tspan")
-          .data(tooltipText.split("\n"))
-          .join("tspan")
-          .attr("dy", "1.5em") // spacing between the lines
-          .attr("x", "20px") // Space to the right of the cursor
-          .text((text) => text);
-      })
-      .on("mouseout", () => tooltip.selectAll("tspan").remove());
-    g.selectAll(".bar")
-      .data(data)
-      .enter()
-      .append("rect")
-      .attr("class", "bar")
-      .attr("x", (d) => xScale(d.timestamp)!)
-      .attr("y", (d) => yScale(d.volume!)) // won't work for general indicator
-      .attr("width", "12px")
-      .attr("height", (d) => height - yScale(d.volume!)) // won't work for general indicator
-      .style("stroke", "#996F4F") // can't get the stroke to work in the classed call
-      .style("stroke-width", "2px")
-      .classed("fill-dfyellow", true)
-      .on("mouseover", (evt, d) => {
-        const [mx, my] = d3.pointer(evt);
-        let tooltipText = `Date: ${d.timestamp}
-Volume: ${d.volume}`;
+        let tooltipText = tooltipTextHelper(d, indicator);
 
         //const tooltipPosition = tooltipHelper(mx, my);
 
@@ -176,8 +147,91 @@ Volume: ${d.volume}`;
       })
       .on("mouseout", () => tooltip.selectAll("tspan").remove());
 
-    //    
-    const yAxis = d3.axisLeft(yScale).tickSize(0).tickPadding(10).tickFormat(d3.format(".2e"));
+    // main line or bar graph
+    if (indicator === "rsi") {
+      // line graph
+      console.log("rsi");
+      const line = d3
+        .line<IndicatorDataPoint>()
+        .x((d) => xScale(d.timestamp)!)
+        .y((d) => yScale(d.rsi!));
+
+      g.append("path")
+        .datum(data)
+        .attr("class", "line")
+        .style("stroke", "#996F4F")
+        .style("stroke-width", "3px")
+        .attr("d", line)
+        .on("mouseover", (evt) => {
+          const [mx, my] = d3.pointer(evt);
+
+          // Find the nearest data point
+          const bisect = d3.bisector(
+            (d: IndicatorDataPoint) => d.timestamp,
+          ).left;
+          const invertedCoord = invertBand(xScale, mx);
+          const index = bisect(data, invertedCoord);
+          const nearestDataPoint = data[index];
+
+          let tooltipText = tooltipTextHelper(nearestDataPoint, indicator);
+
+          //const tooltipPosition = tooltipHelper(mx, my);
+
+          tooltip
+            .attr(
+              "transform",
+              //`translate(${tooltipPosition[0]}, ${tooltipPosition[1]})`,
+              `translate(0, 0)`,
+            )
+            .selectAll("tspan")
+            .data(tooltipText.split("\n"))
+            .join("tspan")
+            .attr("dy", "1.5em") // spacing between the lines
+            .attr("x", "20px") // Space to the right of the cursor
+            .text((text) => text);
+        })
+        .on("mouseout", () => tooltip.selectAll("tspan").remove());
+    } else {
+      // bar graph
+      g.selectAll(".bar")
+        .data(data)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", (d) => xScale(d.timestamp)!)
+        .attr("y", (d, i) => yScale(yData[i])) // won't work for general indicator
+        .attr("width", "12px")
+        .attr("height", (d, i) => height - yScale(yData[i])) // won't work for general indicator
+        .style("stroke", "#996F4F") // can't get the stroke to work in the classed call
+        .style("stroke-width", "2px")
+        .classed("fill-dfyellow", true)
+        .on("mouseover", (evt, d) => {
+          const [mx, my] = d3.pointer(evt);
+          let tooltipText = tooltipTextHelper(d, indicator);
+
+          //const tooltipPosition = tooltipHelper(mx, my);
+
+          tooltip
+            .attr(
+              "transform",
+              //`translate(${tooltipPosition[0]}, ${tooltipPosition[1]})`,
+              `translate(0, 0)`,
+            )
+            .selectAll("tspan")
+            .data(tooltipText.split("\n"))
+            .join("tspan")
+            .attr("dy", "1.5em") // spacing between the lines
+            .attr("x", "20px") // Space to the right of the cursor
+            .text((text) => text);
+        })
+        .on("mouseout", () => tooltip.selectAll("tspan").remove());
+    }
+    //
+    const yAxis = d3
+      .axisLeft(yScale)
+      .tickSize(0)
+      .tickPadding(10)
+      .tickFormat(d3.format(".2s"));
 
     y_axis_svg
       .append("g")
@@ -187,17 +241,62 @@ Volume: ${d.volume}`;
 
     // tooltip needs to be on top of the other graph elements
     tooltip.raise();
+  }, [data]);
 
-      }, [data]);
+  const indicatorDataParse = (
+    data: IndicatorDataPoint[],
+    indicator: string,
+  ): number[] => {
+    let returnParse: number[] = [];
+    switch (indicator) {
+      case "vol": {
+        returnParse = data.map((d) => d.volume!);
+        break;
+      }
+      case "sma": {
+        returnParse = data.map((d) => d.sma!);
+        break;
+      }
+      case "rsi": {
+        returnParse = data.map((d) => d.rsi!);
+        break;
+      }
+    }
+    return returnParse;
+  };
 
-  const indicatorDataParse = (data: IndicatorDataPoint[], indicator: string): number[] => {
-      // currently only doing volume
-      return data.map(d => d.volume!);
-      };
+  const tooltipTextHelper = (
+    d: IndicatorDataPoint,
+    indicator: string,
+  ): string => {
+    let returnParse = "";
+    switch (indicator) {
+      case "vol": {
+        returnParse = `Date: ${d.timestamp}\nVolume: ${d.volume}`;
+        break;
+      }
+      case "sma": {
+        returnParse = `Date: ${d.timestamp}\nSMA: ${d.sma}`;
+        break;
+      }
+      case "rsi": {
+        returnParse = `Date: ${d.timestamp}\nRSI: ${d.rsi}`;
+        break;
+      }
+    }
+    return returnParse;
+  };
 
-  return(
-    <div ref={svgRef}></div>
-  );
-}
+  // helper function for line graph tooltip
+  function invertBand(scale: d3.ScaleBand<string>, value: number): string {
+    const domain = scale.domain();
+    const step = scale.step();
+    const firstVisibleBand = Math.abs(scale.range()[0]) / step;
+    const index = Math.floor(value / step + firstVisibleBand);
+    return domain[Math.max(0, Math.min(index, domain.length - 1))];
+  }
 
-export default IndicatorGraph
+  return <div ref={svgRef} className="z-0"></div>;
+};
+
+export default IndicatorGraph;

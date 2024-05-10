@@ -22,7 +22,7 @@ const GraphData = ({ ticker, size }: GraphDataProps) => {
     }, [ticker]);
 
     return (
-        <div className='mt-4 mr-4'>
+        <div>
 
             {size === 0 ? (
                 <div>
