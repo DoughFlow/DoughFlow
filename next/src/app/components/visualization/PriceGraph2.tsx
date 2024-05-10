@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import PriceData from "@components/visualization/PriceData";
+import { useGlobal } from "@components/GlobalContext";
 import * as d3 from "d3";
 
 /**
@@ -8,8 +9,10 @@ import * as d3 from "d3";
  * @param ticker - Ticker symbol for the stock data.
  * @returns Candlestick Graph component.
  */
-const PriceGraph = ({ ticker }: { ticker: string }) => {
+const PriceGraph = () => {
   const [data, setData] = useState<DataPoint[]>([]);
+  const {stocks} = useGlobal();
+  const ticker = stocks.ticker1;
   const svgRef = useRef(null);
 
   useEffect(() => {
@@ -65,7 +68,7 @@ const PriceGraph = ({ ticker }: { ticker: string }) => {
       //.attr('width','')
       .style("position", "absolute")
       .style("pointer-events", "none")
-      .style("z-index", 0);
+      .style("z-index", 1);
 
     // body holds the plot with x axis
     const body = parent.append("div").style("overflow-x", "auto");

@@ -1,15 +1,28 @@
 'use server'
 
-const IndicatorData = async (ticker:string) => {
-    const response = await fetch(`http://3.140.61.213/api/${ ticker }/vol/6m`);
-    const json_data = await response.json();
+interface IndicatorDataPoint {
+	timestamp: string;
+    indicator: string;
+	value: number;
+}
+
+type IndicatorData = {
+    indicatorList: IndicatorDataPoint[];
+}
+
+const IndicatorData = async (ticker:string, indicator:string) => {
+    const response = await fetch(`http://3.140.61.213/api/${ ticker }/${ indicator }/6m`);
+    const jsonData = await response.json();
     
-    const data: IndicatorDataPoint[] = json_data.map((dp: any) => ({
-        timestamp: dp.timestamp,
-        sma: dp.sma,
-        macd: dp.macd,
-        volume: dp.volume, // here for now
-    }));
+    const data: IndicatorDataPoint[] = jsonData.map((dp: any) => {
+        const { timestamp, ...rest } = dp;
+        const indKey = Object.keys(rest)[0]; // Assuming only one key apart from timestamp
+        return {
+            timestamp,
+            indicator: indKey,  // Use the dynamic key name as the indicator
+            value: Number(dp[indKey])  // Convert the value to a number
+        };
+    });
     return (
         data
     )

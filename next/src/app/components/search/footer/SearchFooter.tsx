@@ -4,9 +4,9 @@ import Fuse from 'fuse.js';
 import tickers from '@/comprehensive_stock_list.json';
 import SmallResults from './SmallResults';
 import SmallBar from './SmallBar';
-import ListWatcher from './ListWatcher';
 
-const SearchFooter = () => {
+
+const Search = () => {
     const [results, setResults] = useState<string[]>([]);
 
     const fuse = new Fuse(tickers, {
@@ -26,16 +26,11 @@ const SearchFooter = () => {
     };
 
     return (
-        <div className='flex flex-row border-t p-4 min-h-fit focus-within:min-h-[18.5rem] focus-within:max-h-[18.5rem]'>
-            <div className='flex-1 items-center input-border rounded-3xl p-4 max-w-sm'>
-                <SmallBar onSearch={handleSearch} />
-                <SmallResults results={results} />
-            </div>
-            <div className='flex-1 p-4 max-h-full'>
-                <ListWatcher results={results} />
-            </div>
+        <div>
+            <SmallBar onSearch={handleSearch} />
+            <SmallResults results={results} />
         </div>
     );
 };
 
-export default SearchFooter;
+export default Search;

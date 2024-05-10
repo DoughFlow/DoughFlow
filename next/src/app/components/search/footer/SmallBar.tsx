@@ -14,14 +14,13 @@ const SmallBar = ({ onSearch }: Props) => {
   };
 
   return (
-    <div className='flex-1 focus-within:border-b'>
+    <div className='hover-search fixed left-0 top-0  bg-dfwhite rounded p-2 m-2'>
       <input
         type="text"
-        className='bg-transpart p-1 border-none outline-none w-full'
+        className='p-1 border-none outline-none pl-7 focus:outline-none text-dfbrown rounded'
         value={input}
         onChange={handleInputChange}
         placeholder="Search stock tickers..."
-        aria-label="Search stocks"
       />
     </div>
   );

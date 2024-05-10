@@ -11,13 +11,12 @@ interface IndicatorGraphProps {
   data: IndicatorGraphData[];
 }
 
-//const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}) => {
-const IndicatorGraph = ({ticker}: {ticker: string}) => {
+const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}) => {
   const [data, setData] = useState<IndicatorDataPoint[]>([]);
   const svgRef = useRef(null);
 
   useEffect(() => {
-    IndicatorData(ticker).then((result) => {
+    IndicatorData(ticker, indicator).then((result) => {
       setData(result);
     });
   }, [ticker]);
