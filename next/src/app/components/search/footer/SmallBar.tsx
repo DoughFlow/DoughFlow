@@ -17,7 +17,7 @@ const SmallBar = ({ onSearch }: Props) => {
     <div className='text-dfwhite'>
       <input
         type="text"
-        className='bg-dfbrown border-b border-dfwhite text-dfwhite pl-2 mt-1 focus:outline-none placeholder-dfyellow'
+        className='bg-dfbrown focus:border-b border-dfwhite text-dfwhite pl-2 mt-1 focus:outline-none placeholder-dfyellow'
         value={input}
         onChange={handleInputChange}
         placeholder="Create new visualization..."

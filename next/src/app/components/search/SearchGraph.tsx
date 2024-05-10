@@ -39,7 +39,7 @@ const SearchGraph = ({ dataPoints }: GraphProps) => {
         borderWidth: 2, // Slightly larger border width for the outline effect
         fill: false,
         pointRadius: 0,
-        borderCapStyle: 'round',
+        borderCapStyle: 'round' as CanvasLineCap,
       },
       {
         label: 'Main Line',
@@ -48,7 +48,7 @@ const SearchGraph = ({ dataPoints }: GraphProps) => {
         borderWidth: 6,
         fill: false,
         pointRadius: 0,
-        borderCapStyle: 'round',
+        borderCapStyle: 'round' as CanvasLineCap,
       }
     ],
   };
@@ -70,7 +70,7 @@ const SearchGraph = ({ dataPoints }: GraphProps) => {
   };
 
   return (
-    <div className=''>
+    <div className='mt-4 mr-4'>
       <Line data={data} options={options} />
     </div>
   );

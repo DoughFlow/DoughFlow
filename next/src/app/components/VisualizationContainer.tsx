@@ -42,12 +42,6 @@ const VisualizationContainer = () => {
 
     const handleAddStock = () => {
         setShowSearchBar(true);
-        const aStock = {
-            ticker: "TSLA",
-            indicator: "vol",
-            position: "bottom"
-        };
-        addStock(aStock);
     };
 
 
@@ -59,7 +53,7 @@ const VisualizationContainer = () => {
             </div>
                 <div
                     ref={iconRef}
-                    className='fixed left-0 p-2 m-2 hover:cursor-pointer'
+                    className='fixed left-0 p-2 m-2 z-50 hover:cursor-pointer'
                     onClick={toggleSearchBar}
                 >
                     <Image
@@ -134,7 +128,8 @@ const HoverSearch = () => {
         const selectedStock = {
             ticker: ticker,
             indicator: "vol", // You might need dynamic handling based on actual requirements
-            position: "bottom" // Same as above
+            position: "bottom", // Same as above
+            date: "6m"
         };
         addStock(selectedStock);
     };

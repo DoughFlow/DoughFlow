@@ -4,24 +4,23 @@ import * as d3 from "d3";
 
 interface IndicatorGraphData {
   timestamp: string;
-  [key: string]: number | string;
+  [key: string]: number;
 }
 
 interface IndicatorGraphProps {
   data: IndicatorGraphData[];
 }
 
-//const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}) => {
-const IndicatorGraph = ({ ticker }: { ticker: string }) => {
+const IndicatorGraph = ({ticker, indicator}: {ticker: string, indicator: string}) => {
   const [data, setData] = useState<IndicatorDataPoint[]>([]);
-  const [indicator, setIndicator] = useState<string>("rsi");
+  //const [indicator, setIndicator] = useState<string>("rsi");
   const svgRef = useRef(null);
 
   useEffect(() => {
     IndicatorData(ticker, indicator).then((result) => {
       setData(result);
     });
-  }, [ticker]);
+  }, [ticker, indicator]);
 
   useEffect(() => {
     console.log("beginning indicator plot");
@@ -70,10 +69,10 @@ const IndicatorGraph = ({ ticker }: { ticker: string }) => {
       //.attr('width','')
       .style("position", "absolute")
       .style("pointer-events", "none")
-      .style("z-index", 1);
+      .style("z-index", '-1');
 
     // body holds the plot with x axis
-    const body = parent.append("div").style("overflow-x", "auto");
+    const body = parent.append("div").style("overflow-x", "visable");
 
     // svg is the x axis and plot
     const svg = body
@@ -241,7 +240,7 @@ const IndicatorGraph = ({ ticker }: { ticker: string }) => {
 
     // tooltip needs to be on top of the other graph elements
     tooltip.raise();
-  }, [data]);
+  }, [data, indicator]);
 
   const indicatorDataParse = (
     data: IndicatorDataPoint[],
@@ -270,17 +269,18 @@ const IndicatorGraph = ({ ticker }: { ticker: string }) => {
     indicator: string,
   ): string => {
     let returnParse = "";
+    const f = d3.format(",.0f")
     switch (indicator) {
       case "vol": {
-        returnParse = `Date: ${d.timestamp}\nVolume: ${d.volume}`;
+        returnParse = `Date: ${d.timestamp}\nVolume: ${f(d.volume)}`;
         break;
       }
       case "sma": {
-        returnParse = `Date: ${d.timestamp}\nSMA: ${d.sma}`;
+        returnParse = `Date: ${d.timestamp}\nSMA: ${f(d.sma)}`;
         break;
       }
       case "rsi": {
-        returnParse = `Date: ${d.timestamp}\nRSI: ${d.rsi}`;
+        returnParse = `Date: ${d.timestamp}\nRSI: ${f(d.rsi)}`;
         break;
       }
     }
