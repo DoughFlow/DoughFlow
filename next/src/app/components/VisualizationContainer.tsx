@@ -39,6 +39,7 @@ const VisualizationContainer = () => {
 
 
     const handleAddStock = () => {
+        setShowSearchBar(true);
         const aStock = {
             ticker: "Googler",
             indicator: "Poonsex",
