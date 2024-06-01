@@ -1,0 +1,30 @@
+{
+  "data":
+    [
+      {
+        "ticker": "AAPL",
+        "value": "price",
+        "time": "6m"
+      },
+      {
+        "ticker": "TSLA",
+        "value": "price",
+        "time": "6m"
+      },
+      {
+        "ticker": "AAPL",
+        "value": "rsi",
+        "time": "1y"
+      },
+      {
+        "ticker": "AAPL",
+        "value": "volume",
+        "time": "6m"
+      },
+      {
+        "ticker": "TSLA",
+        "value": "sma",
+        "time": "6m"
+      }
+    ]
+}
