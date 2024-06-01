@@ -4,7 +4,7 @@
       {
         "ticker": "AAPL",
         "value": "price",
-        "time": "6m"
+        "time": "3m"
       },
       {
         "ticker": "TSLA",
@@ -19,7 +19,7 @@
       {
         "ticker": "AAPL",
         "value": "volume",
-        "time": "6m"
+        "time": "5y"
       },
       {
         "ticker": "TSLA",
