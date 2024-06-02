@@ -4,19 +4,28 @@ import { useGlobal } from './GlobalContextProvider';
 
 
 const VisualizationContext = () => {
-  const { stocks, updateStock, resetStocks, removeStock } = useGlobal();
+  const { stocks, updateStock, resetStocks, removeStock, updateSvg } = useGlobal();
   const [ticker, setTicker] = useState<string>('');
   const [value, setValue] = useState<string>('');
   const [time, setTime] = useState<string>('');
   const [index, setIndex] = useState<number>(0);
+  const [svg, setSvg] = useState<string>('');
 
-  const handleUpdate = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent form from submitting the traditional way
+  const handleUpdateStock = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     const updatedStock = { ticker, value, time };
     if (index >= 0 && index < stocks.length) {
       updateStock(index, updatedStock);
     } else {
       alert('Invalid index.');
+    }
+  };
+
+  const handleUpdateSvg = () => {
+    if (index >= 0 && index < stocks.length) {
+      updateSvg(index, svg);
+    } else {
+      alert('Invalid index for SVG update.');
     }
   };
 
@@ -35,7 +44,7 @@ const VisualizationContext = () => {
   return (
     <div>
       <div>
-        <form onSubmit={handleUpdate} className='space-y-4'>
+        <form onSubmit={handleUpdateStock} className='space-y-4'>
           <input
             type="text"
             placeholder="Ticker"
@@ -57,6 +66,7 @@ const VisualizationContext = () => {
             onChange={(e) => setTime(e.target.value)}
             className="border px-2 py-1 bg-black"
           />
+
           <div className="flex space-x-2">
             <select
               value={index}
@@ -69,6 +79,18 @@ const VisualizationContext = () => {
             </select>
             <button type="button" onClick={handleRemoveStock} className="bg-red-500 text-white px-4 py-2">Remove Stock</button>
           </div>
+
+          <div>
+            <input
+              type="text"
+              placeholder="SVG"
+              value={svg}
+              onChange={(e) => setSvg(e.target.value)}
+              className="border px-2 py-1 bg-black"
+            />
+            <button type="button" onClick={handleUpdateSvg} className="bg-purple-500 text-white px-4 py-2">Update SVG</button>
+          </div>
+
           <button type="button" onClick={handleResetStocks} className="bg-green-500 text-white px-4 py-2 mt-4">Reset Stocks</button>
           <button type="submit" className="bg-blue-500 text-white px-4 py-2">Update Stock</button>
         </form>
@@ -80,6 +102,7 @@ const VisualizationContext = () => {
             <p>Ticker: {stock.ticker}</p>
             <p>Value: {stock.value}</p>
             <p>Time: {stock.time}</p>
+            <p>svg: {stock.svg}</p>
           </div>
         ))}
       </div>

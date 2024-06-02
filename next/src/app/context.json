@@ -7,11 +7,6 @@
         "time": "3m"
       },
       {
-        "ticker": "TSLA",
-        "value": "price",
-        "time": "6m"
-      },
-      {
         "ticker": "AAPL",
         "value": "rsi",
         "time": "1y"
@@ -22,9 +17,14 @@
         "time": "5y"
       },
       {
-        "ticker": "TSLA",
-        "value": "sma",
-        "time": "6m"
+        "ticker": "",
+        "value": "",
+        "time": ""
+      },
+      {
+        "ticker": "",
+        "value": "",
+        "time": ""
       }
     ]
 }
