@@ -95,17 +95,6 @@ const VisualizationContext = () => {
           <button type="submit" className="bg-blue-500 text-white px-4 py-2">Update Stock</button>
         </form>
       </div>
-
-      <div className='border-2 text-lg'>
-        {stocks.map((stock, index) => (
-          <div key={index}>
-            <p>Ticker: {stock.ticker}</p>
-            <p>Value: {stock.value}</p>
-            <p>Time: {stock.time}</p>
-            <p>svg: {stock.svg}</p>
-          </div>
-        ))}
-      </div>
     </div>
   );
 };

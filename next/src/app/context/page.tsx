@@ -1,11 +1,14 @@
 "use client"
 import React from 'react';
 import VisualizationContext from '../components/VisualizationContext';
+import Search from '../components/Search';
+import Controller from '../components/Controller';
 
 
 const Context = () => {
     return (
-      <div className='border-2 p-3'>
+      <div className=''>
+        <Controller />
         <VisualizationContext/>
       </div>
     );

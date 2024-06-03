@@ -10,6 +10,7 @@ interface Stock {
 
 type GlobalContextType = {
   stocks: Stock[];
+  removeStock: () => void;
   updateStock: (index: number, updatedStock: Stock) => void;
   resetStocks: () => void;
   updateSvg: (index: number, updatedSvg: string) => void;
