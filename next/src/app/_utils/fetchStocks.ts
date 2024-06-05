@@ -1,0 +1,94 @@
+// fetchStocks 
+// takes in ticker value time returns function calls to the generateSvgs stuff
+//
+// generateSvgs
+// will take in the data and a time frame 3m 6m 1y 3y 5y
+// the data will be cut into the correct stuff for the time frame 
+import * as d3 from 'd3';
+
+interface DataPoint {
+  timestamp: string;
+  ticker: string;
+  open_price: number;
+  high_price: number;
+  low_price: number;
+  close_price: number;
+  volume?: number;
+}
+
+
+async function fetchStocks(ticker: string, value: string, time: string, updateSvg: (index: number, timeframe: string, svg: string) => void) {
+  try {
+    const response = await fetch(`http://3.140.61.213/api/${ticker}/${time}`);
+    if (!response.ok) throw new Error('Network response was not ok');
+    const jsonData = await response.json();
+    const data: DataPoint[] = jsonData.map((dp: any) => ({
+      timestamp: dp.timestamp,
+      open_price: dp.open_price,
+      high_price: dp.high_price,
+      low_price: dp.low_price,
+      close_price: dp.close_price,
+      volume: dp.volume
+    }));
+    const svg = generateSvgGraph(data); // Ensure generateSvgGraph is also moved or accessible here
+    updateSvg(0, "6m", svg); // Pass updateSvg as a callback
+    console.log(svg);
+  } catch (error) {
+    console.error('Failed to fetch or process data:', error);
+  }
+}
+
+const generateSvgGraph = (data: DataPoint[]): string => {
+  if (data.length === 0) return '';
+
+  const svgWidth = 600;
+  const svgHeight = 300;
+  const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+
+  // Manual parsing and scaling
+  const parseDate = (dateStr: string): number => new Date(dateStr).getTime();
+  const timestamps = data.map(dp => parseDate(dp.timestamp));
+  const closePrices = data.map(dp => dp.close_price);
+  const xMin = Math.min(...timestamps);
+  const xMax = Math.max(...timestamps);
+  const yMin = Math.min(...closePrices);
+  const yMax = Math.max(...closePrices);
+
+  const xScale = (x: number) => ((x - xMin) / (xMax - xMin)) * (svgWidth - margin.left - margin.right) + margin.left;
+  const yScale = (y: number) => svgHeight - margin.bottom - ((y - yMin) / (yMax - yMin)) * (svgHeight - margin.top - margin.bottom);
+
+  // Create SVG with D3
+  const svg = d3.create("svg")
+    .attr("width", svgWidth)
+    .attr("height", svgHeight)
+    .attr("xmlns", "http://www.w3.org/2000/svg");
+
+  svg.append("rect") // Background
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .attr("fill", "white");
+
+  // Generate path data manually
+  let pathD = "M" + xScale(timestamps[0]) + " " + yScale(closePrices[0]);
+  timestamps.forEach((timestamp, index) => {
+    pathD += " L" + xScale(timestamp) + " " + yScale(closePrices[index]);
+  });
+
+  svg.append("path") // Add the path with D3
+    .attr("d", pathD)
+    .attr("stroke", "steelblue")
+    .attr("fill", "none")
+    .attr("stroke-width", 2);
+
+  const svgNode = svg.node();
+  if (svgNode === null) {
+    console.error("Failed to create SVG node");
+    return '';
+  }
+
+  return svgNode.outerHTML;
+};
+
+
+
+export { fetchStocks, generateSvgGraph };
