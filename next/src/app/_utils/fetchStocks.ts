@@ -6,7 +6,7 @@
 // the data will be cut into the correct stuff for the time frame 
 import * as d3 from 'd3';
 
-interface DataPoint {
+interface PriceDataPoint {
   timestamp: string;
   ticker: string;
   open_price: number;
@@ -16,26 +16,167 @@ interface DataPoint {
   volume?: number;
 }
 
+interface IndicatorDataPoint {
+  timestamp: string;
+  [key: string]: number | string;
+}
+
+type DataPoint = PriceDataPoint | IndicatorDataPoint;
+
+function filterRecentData(data: DataPoint[], months: number): DataPoint[] {
+  if (data.length === 0) return [];
+  const lastDataPointDate = new Date(data[data.length - 1].timestamp);
+  const cutoffDate = new Date(lastDataPointDate);
+  cutoffDate.setMonth(lastDataPointDate.getMonth() - months);
+  return data.filter(dp => new Date(dp.timestamp) >= cutoffDate);
+}
+
+async function processPriceResponse (response: Response): Promise<DataPoint[]> {
+  if (!response.ok) throw new Error('Network response was not ok');
+  const jsonData = await response.json();
+  const data: DataPoint[] = jsonData.map((dp: any) => ({
+    timestamp: dp.timestamp,
+    open_price: dp.open_price,
+    high_price: dp.high_price,
+    low_price: dp.low_price,
+    close_price: dp.close_price,
+  }));
+  console.log(data)
+  return data;
+}
+
+async function processVRSResponse (response: Response, value: string): Promise<DataPoint[]> {
+  if (!response.ok) throw new Error('Network response was not ok');
+  const jsonData = await response.json();
+  let data: IndicatorDataPoint[] = [];
+  switch (value) {
+    case "vol": {
+      data = jsonData.map((dp: any) => ({
+        timestamp: dp.timestamp,
+        volume: dp.volume,
+      }));
+      break;
+    }
+    case "sma": {
+      data = jsonData.map((dp: any) => ({
+        timestamp: dp.timestamp,
+        sma: dp.sma,
+      }));
+      break;
+    }
+    case "rsi": {
+      data = jsonData.map((dp: any) => ({
+        timestamp: dp.timestamp,
+        rsi: dp.rsi,
+      }));
+      break;
+    }
+  }
+
+  return data;
+}
 
 async function fetchStocks(ticker: string, value: string, time: string, updateSvg: (index: number, timeframe: string, svg: string) => void) {
-  try {
-    const response = await fetch(`http://3.140.61.213/api/${ticker}/${time}`);
-    if (!response.ok) throw new Error('Network response was not ok');
-    const jsonData = await response.json();
-    const data: DataPoint[] = jsonData.map((dp: any) => ({
-      timestamp: dp.timestamp,
-      open_price: dp.open_price,
-      high_price: dp.high_price,
-      low_price: dp.low_price,
-      close_price: dp.close_price,
-      volume: dp.volume
-    }));
-    const svg = generateSvgGraph(data); // Ensure generateSvgGraph is also moved or accessible here
-    updateSvg(0, "6m", svg); // Pass updateSvg as a callback
-    console.log(svg);
-  } catch (error) {
-    console.error('Failed to fetch or process data:', error);
+  if (value === "price") {
+    if (time === "3m" || "6m" || "1y") {
+
+      try {
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+        const data = await processPriceResponse(response)
+        const newData = filterRecentData(data, 3)
+        const threeMsvg = generateSvgGraph(newData);
+        updateSvg(0, time, threeMsvg);
+        const sixMonthData = data;
+        const oneYearData = data;
+      } catch (error) {
+        console.log("Error handling price for small range: ", error);
+      }
+
+    } else {
+
+      try {
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+      } catch (error) {
+        console.log("Error handling price for large range: ", error);
+      }
+    }
+
+  } else if (value === "volume") {
+    if (time === "3m" || "6m" || "1y") {
+
+      try {
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+      } catch (error) {
+          console.log("Error handling volume for small range: ", error);
+      }
+     
+    } else {
+
+      try {
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+      } catch (error) {
+        console.log("Error handling volume for large range: ", error);
+      }
+    }
+
+  } else if (value === "rsi") {
+    if (time === "3m" || "6m" || "1y") {
+
+      try {
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+      } catch (error) {
+        console.log("Error handling rsi for small range: ", error);
+      }
+
+    } else {
+
+      try {
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+      } catch (error) {
+        console.log("Error handling rsi for large range: ", error);
+      }
+    }
+
+  } else if (value === "sma") {
+    if (time === "3m" || "6m" || "1y") {
+
+      try {
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+      } catch (error) {
+        console.log("Error handling sma for small range: ", error);
+      }
+
+    } else {
+
+      try {
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+      } catch (error) {
+        console.log("Error handling sma for large range: ", error);
+      }
+     
+    }
+
+  } else {
+    console.log("Error parsing value: ", value)
   }
+  // try {
+  //   const response = await fetch(`http://3.140.61.213/api/${ticker}/${time}`);
+  //   if (!response.ok) throw new Error('Network response was not ok');
+  //   const jsonData = await response.json();
+  //   const data: DataPoint[] = jsonData.map((dp: any) => ({
+  //     timestamp: dp.timestamp,
+  //     open_price: dp.open_price,
+  //     high_price: dp.high_price,
+  //     low_price: dp.low_price,
+  //     close_price: dp.close_price,
+  //     volume: dp.volume
+  //   }));
+  //   const svg = generateSvgGraph(data); // Ensure generateSvgGraph is also moved or accessible here
+  //   updateSvg(0, "6m", svg); // Pass updateSvg as a callback
+  //   console.log(svg);
+  // } catch (error) {
+  //   console.error('Failed to fetch or process data:', error);
+  // }
 }
 
 const generateSvgGraph = (data: DataPoint[]): string => {
