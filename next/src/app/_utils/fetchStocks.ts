@@ -41,7 +41,6 @@ async function processPriceResponse (response: Response): Promise<DataPoint[]> {
     low_price: dp.low_price,
     close_price: dp.close_price,
   }));
-  console.log(data)
   return data;
 }
 
@@ -76,36 +75,74 @@ async function processVRSResponse (response: Response, value: string): Promise<D
   return data;
 }
 
-async function fetchStocks(ticker: string, value: string, time: string, updateSvg: (index: number, timeframe: string, svg: string) => void) {
+async function fetchStocks(stockLocation: number, ticker: string, value: string, time: string, updateSvg: (index: number, timeframe: string, svg: string) => void) {
   if (value === "price") {
-    if (time === "3m" || "6m" || "1y") {
+    if (time === "3m" || time === "6m" || time ===  "1y") {
 
       try {
         const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
-        const data = await processPriceResponse(response)
-        const newData = filterRecentData(data, 3)
-        const threeMsvg = generateSvgGraph(newData);
-        updateSvg(0, time, threeMsvg);
-        const sixMonthData = data;
-        const oneYearData = data;
+        const data = await processPriceResponse(response);
+
+        // 3m
+        const threeData = filterRecentData(data, 3);
+        const threeMsvg = generateSvgGraph(threeData);
+        updateSvg(stockLocation, "3m", threeMsvg);
+
+        // 6m
+        const sixData = filterRecentData(data, 6);
+        const sixMsvg = generateSvgGraph(sixData);
+        updateSvg(stockLocation, "6m", sixMsvg);
+
+        // 1y
+        const oneYsvg = generateSvgGraph(data);
+        updateSvg(stockLocation, "1y", oneYsvg);
+
       } catch (error) {
         console.log("Error handling price for small range: ", error);
       }
 
-    } else {
+    } else if (time === "3y" || time === "5y") {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/5y`);
+        const data = await processPriceResponse(response);
+
+        // 3y
+        const threeYData= filterRecentData(data, 36);
+        const threeYsvg = generateSvgGraph(threeYData);
+        updateSvg(stockLocation, "3y", threeYsvg);
+
+        // 5y
+        const fiveYsvg = generateSvgGraph(data);
+        updateSvg(stockLocation, "5y", fiveYsvg);
+
       } catch (error) {
         console.log("Error handling price for large range: ", error);
       }
     }
 
-  } else if (value === "volume") {
+  } else if (value === "vol") {
     if (time === "3m" || "6m" || "1y") {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
+        const data = await processVRSResponse(response, value);
+
+        // 3m
+        const threeData = filterRecentData(data, 3);
+        console.log(threeData)
+        const threeMsvg = generateSvgGraph(threeData);
+        updateSvg(stockLocation, "3m", threeMsvg);
+
+        // 6m
+        const sixData = filterRecentData(data, 6);
+        const sixMsvg = generateSvgGraph(sixData);
+        updateSvg(stockLocation, "6m", sixMsvg);
+
+        // 1y
+        const oneYsvg = generateSvgGraph(data);
+        updateSvg(stockLocation, "1y", oneYsvg);
+
       } catch (error) {
           console.log("Error handling volume for small range: ", error);
       }
@@ -113,7 +150,19 @@ async function fetchStocks(ticker: string, value: string, time: string, updateSv
     } else {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/5y`);
+        const data = await processVRSResponse(response, value);
+
+        // 3y
+        const threeYData= filterRecentData(data, 36);
+        const threeYsvg = generateSvgGraph(threeYData);
+        updateSvg(stockLocation, "3y", threeYsvg);
+
+        // 5y
+        const fiveYsvg = generateSvgGraph(data);
+        updateSvg(stockLocation, "5y", fiveYsvg);
+
+
       } catch (error) {
         console.log("Error handling volume for large range: ", error);
       }
@@ -123,7 +172,23 @@ async function fetchStocks(ticker: string, value: string, time: string, updateSv
     if (time === "3m" || "6m" || "1y") {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
+        const data = await processVRSResponse(response, value);
+
+        // 3m
+        const threeData = filterRecentData(data, 3);
+        const threeMsvg = generateSvgGraph(threeData);
+        updateSvg(stockLocation, "3m", threeMsvg);
+
+        // 6m
+        const sixData = filterRecentData(data, 6);
+        const sixMsvg = generateSvgGraph(sixData);
+        updateSvg(stockLocation, "6m", sixMsvg);
+
+        // 1y
+        const oneYsvg = generateSvgGraph(data);
+        updateSvg(stockLocation, "1y", oneYsvg);
+
       } catch (error) {
         console.log("Error handling rsi for small range: ", error);
       }
@@ -131,7 +196,18 @@ async function fetchStocks(ticker: string, value: string, time: string, updateSv
     } else {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/5y`);
+        const data = await processVRSResponse(response, value);
+
+        // 3y
+        const threeYData= filterRecentData(data, 36);
+        const threeYsvg = generateSvgGraph(threeYData);
+        updateSvg(stockLocation, "3y", threeYsvg);
+
+        // 5y
+        const fiveYsvg = generateSvgGraph(data);
+        updateSvg(stockLocation, "5y", fiveYsvg);
+
       } catch (error) {
         console.log("Error handling rsi for large range: ", error);
       }
@@ -141,7 +217,23 @@ async function fetchStocks(ticker: string, value: string, time: string, updateSv
     if (time === "3m" || "6m" || "1y") {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
+        const data = await processVRSResponse(response, value);
+
+        // 3m
+        const threeData = filterRecentData(data, 3);
+        const threeMsvg = generateSvgGraph(threeData);
+        updateSvg(stockLocation, "3m", threeMsvg);
+
+        // 6m
+        const sixData = filterRecentData(data, 6);
+        const sixMsvg = generateSvgGraph(sixData);
+        updateSvg(stockLocation, "6m", sixMsvg);
+
+        // 1y
+        const oneYsvg = generateSvgGraph(data);
+        updateSvg(stockLocation, "1y", oneYsvg);
+
       } catch (error) {
         console.log("Error handling sma for small range: ", error);
       }
@@ -149,7 +241,18 @@ async function fetchStocks(ticker: string, value: string, time: string, updateSv
     } else {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/5y`);
+        const data = await processVRSResponse(response, value);
+
+        // 3y
+        const threeYData= filterRecentData(data, 36);
+        const threeYsvg = generateSvgGraph(threeYData);
+        updateSvg(stockLocation, "3y", threeYsvg);
+
+        // 5y
+        const fiveYsvg = generateSvgGraph(data);
+        updateSvg(stockLocation, "5y", fiveYsvg);
+
       } catch (error) {
         console.log("Error handling sma for large range: ", error);
       }
@@ -159,24 +262,6 @@ async function fetchStocks(ticker: string, value: string, time: string, updateSv
   } else {
     console.log("Error parsing value: ", value)
   }
-  // try {
-  //   const response = await fetch(`http://3.140.61.213/api/${ticker}/${time}`);
-  //   if (!response.ok) throw new Error('Network response was not ok');
-  //   const jsonData = await response.json();
-  //   const data: DataPoint[] = jsonData.map((dp: any) => ({
-  //     timestamp: dp.timestamp,
-  //     open_price: dp.open_price,
-  //     high_price: dp.high_price,
-  //     low_price: dp.low_price,
-  //     close_price: dp.close_price,
-  //     volume: dp.volume
-  //   }));
-  //   const svg = generateSvgGraph(data); // Ensure generateSvgGraph is also moved or accessible here
-  //   updateSvg(0, "6m", svg); // Pass updateSvg as a callback
-  //   console.log(svg);
-  // } catch (error) {
-  //   console.error('Failed to fetch or process data:', error);
-  // }
 }
 
 const generateSvgGraph = (data: DataPoint[]): string => {

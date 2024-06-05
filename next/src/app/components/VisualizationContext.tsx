@@ -18,7 +18,7 @@ const VisualizationContext: React.FC<
     const updatedStock = { ticker, value, time };
     if (index >= 0 && index < stocks.length) {
       updateStock(index, updatedStock);
-      fetchStocks(updatedStock.ticker, updatedStock.value, updatedStock.time, updateSvg)
+      fetchStocks(index, updatedStock.ticker, updatedStock.value, updatedStock.time, updateSvg)
     } else {
       alert('Invalid index.');
     }
