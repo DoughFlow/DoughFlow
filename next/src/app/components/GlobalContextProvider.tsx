@@ -5,15 +5,15 @@ interface Stock {
   ticker: string;
   value: string;
   time: string;
-  svg?: string;
+  svgs?: { "3m"?: string; "6m"?: string, "1y"?: string, "3y"?: string, "5y"?: string };
 }
 
 type GlobalContextType = {
   stocks: Stock[];
-  removeStock: () => void;
+  removeStock: (index: number) => void;
   updateStock: (index: number, updatedStock: Stock) => void;
   resetStocks: () => void;
-  updateSvg: (index: number, updatedSvg: string) => void;
+  updateSvg: (index: number, timeframe: string, updatedSvg: string) => void;
 }
 
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined);
@@ -23,46 +23,52 @@ type GlobalContextProviderProps = {
 }
 
 export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) => {
-  const [stocks, setStocks] = useState<Stock[]>(Array(5).fill({ ticker: "", value: "", time: "", svg: ""}));
+  const [stocks, setStocks] = useState<Stock[]>(Array(5).fill({ ticker: "", value: "", time: "", svgs: { "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }}));
   
   const removeStock = (index: number) => {
     setStocks(prevStocks => {
       const newStocks = [...prevStocks.slice(0, index), ...prevStocks.slice(index + 1)];
-      newStocks.push({ ticker: "", value: "", time: "" , svg: ""});
+      newStocks.push({ ticker: "", value: "", time: "" , svgs: { "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }});
       return newStocks;
     });
   };
 
-  const updateStock = (index: number, updatedStock: Omit<Stock, 'svg'>) => {
-    // updating a stock triggers the data fetching and the graph building 
-    // will put the svg into the context 
-    // listener on svg's will control rerender on the visualizations
-    // call function that fetches the data
-    // data fetching function will call the graph maker 
-    // the graph maker will return the svg and then what will enter the svg into
-    // the context
+  const updateStock = (index: number, updatedStock: {ticker: string; value: string; time: string;}) => {
     setStocks(prevStocks => prevStocks.map((stock, i) => 
       i === index ? {...stock, ...updatedStock} : stock
     ));
-
-    // trigger the data fetching after the context has been updated with ticker
-    // value and time
-    console.log("fetching_data")
+    console.log("Stock updated, fetching data for new SVGs");
   };
 
   const resetStocks = () => {
     setStocks(prevStocks => [
       prevStocks[0],
-      ...Array(4).fill({ ticker: "", value: "", time: "" })
+      ...Array(4).fill({ ticker: "", value: "", time: "", svgs: { "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }})
     ]);
   };
 
-  function updateSvg(index: number, updatedSvg: string): void {
-    setStocks(prevStocks => prevStocks.map((stock, i) => 
-      i === index ? {...stock, svg: updatedSvg} : stock
-    ));
-  };
-
+  function updateSvg(index: number, timeframe: string, updatedSvg: string): void {
+    setStocks(prevStocks => prevStocks.map((stock, i) => {
+      if (i === index) {
+        switch (timeframe) {
+          case "3m":
+            return { ...stock, svgs: { ...stock.svgs, "3m": updatedSvg } };
+          case "6m":
+            return { ...stock, svgs: { ...stock.svgs, "6m": updatedSvg } };
+          case "1y":
+            return { ...stock, svgs: { ...stock.svgs, "1y": updatedSvg } };
+          case "3y":
+            return { ...stock, svgs: { ...stock.svgs, "3y": updatedSvg } };
+          case "5y":
+            return { ...stock, svgs: { ...stock.svgs, "5y": updatedSvg } };
+          default:
+            console.error("Incorrect timeframe provided:", timeframe);
+            return stock;
+        }
+      }
+      return stock;
+    }));
+  }
   const value = {
     stocks, updateStock, resetStocks, removeStock, updateSvg
   };

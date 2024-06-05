@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, FormEvent } from 'react';
 import { useGlobal } from './GlobalContextProvider';
+import * as d3 from 'd3';
 
 interface DataPoint {
   timestamp: string;
@@ -32,29 +33,55 @@ const VisualizationContext = () => {
     }
   };
 
-  const generateSvgGraph = (data: DataPoint[]): string  => {
-    if (data.length === 0) return ''; // Return an empty string if no data is available.
-    const svgWidth = 300;  // Width of the entire SVG
-    const svgHeight = 100; // Height of the entire SVG
-    const rectWidth = 280; // Width of the rectangle
-    const rectHeight = 80; // Height of the rectangle
-    const firstDataPoint = data[0]; // Get the first data point
-    // Start SVG string
-    let svg = `<svg width="${svgWidth}" height="${svgHeight}" xmlns="http://www.w3.org/2000/svg">`;
-    // Add a white background rectangle
-    svg += `<rect width="100%" height="100%" fill="white"/>`;
-    // Rectangle coordinates
-    const x = 10; // X position for the rectangle
-    const y = 10; // Y position for the rectangle
-    // Add a rectangle
-    svg += `<rect x="${x}" y="${y}" width="${rectWidth}" height="${rectHeight}" fill="none" stroke="black" />`;
-    // Add text inside the rectangle, adjusting x and y to center the text approximately
-    svg += `<text x="${x + 10}" y="${y + 40}" fill="black" font-size="16" font-family="Arial">`;
-    // Compose the display text from the first data point
-    svg += `Timestamp: ${firstDataPoint.timestamp}, Ticker: ${firstDataPoint.ticker}, Open Price: ${firstDataPoint.open_price}`;
-    // Close text and SVG tags
-    svg += `</text></svg>`;
-    return svg;
+  const generateSvgGraph = (data: DataPoint[]): string => {
+    if (data.length === 0) return '';
+
+    const svgWidth = 600;
+    const svgHeight = 300;
+    const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+
+    // Manual parsing and scaling
+    const parseDate = (dateStr: string): number => new Date(dateStr).getTime();
+    const timestamps = data.map(dp => parseDate(dp.timestamp));
+    const closePrices = data.map(dp => dp.close_price);
+    const xMin = Math.min(...timestamps);
+    const xMax = Math.max(...timestamps);
+    const yMin = Math.min(...closePrices);
+    const yMax = Math.max(...closePrices);
+
+    const xScale = (x: number) => ((x - xMin) / (xMax - xMin)) * (svgWidth - margin.left - margin.right) + margin.left;
+    const yScale = (y: number) => svgHeight - margin.bottom - ((y - yMin) / (yMax - yMin)) * (svgHeight - margin.top - margin.bottom);
+
+    // Create SVG with D3
+    const svg = d3.create("svg")
+      .attr("width", svgWidth)
+      .attr("height", svgHeight)
+      .attr("xmlns", "http://www.w3.org/2000/svg");
+
+    svg.append("rect") // Background
+      .attr("width", "100%")
+      .attr("height", "100%")
+      .attr("fill", "white");
+
+    // Generate path data manually
+    let pathD = "M" + xScale(timestamps[0]) + " " + yScale(closePrices[0]);
+    timestamps.forEach((timestamp, index) => {
+      pathD += " L" + xScale(timestamp) + " " + yScale(closePrices[index]);
+    });
+
+    svg.append("path") // Add the path with D3
+      .attr("d", pathD)
+      .attr("stroke", "steelblue")
+      .attr("fill", "none")
+      .attr("stroke-width", 2);
+
+    const svgNode = svg.node();
+    if (svgNode === null) {
+      console.error("Failed to create SVG node");
+      return '';
+    }
+
+    return svgNode.outerHTML;
   };
 
   const fetchStocks = async (ticker:string, value: string, time: string) => {
@@ -71,7 +98,7 @@ const VisualizationContext = () => {
         volume: dp.volume
       }));
       const svg = generateSvgGraph(data);
-      updateSvg(0, svg);
+      updateSvg(0, "6m", svg)
       console.log(svg);
     } catch (error) {
       console.error('Failed to fetch or process data:', error);
@@ -80,7 +107,7 @@ const VisualizationContext = () => {
 
   const handleUpdateSvg = () => {
     if (index >= 0 && index < stocks.length) {
-      updateSvg(index, svg);
+      updateSvg(index, "6m", svg)
     } else {
       alert('Invalid index for SVG update.');
     }
