@@ -21,9 +21,13 @@ const ButtonContext = () => {
   
   return(
     <div>
-      <div dangerouslySetInnerHTML={{ __html: svg || '' }} />
-      {menu ? <Button onClick={onClick} onDrag={onDrag}area={area}/> :
-      <VisualizationContext  onClick={onClick}/>}
+      <div className="fixed" dangerouslySetInnerHTML={{ __html: svg || '' }} />
+      {menu ? 
+      <div className="text-red-500">
+      <Button onClick={onClick} onDrag={onDrag}area={area}/>
+      </div> :
+      <div className="absolute top-0 left-0 w-64 bg-yellow-500 z-50">
+      <VisualizationContext  onClick={onClick}/></div>}
     </div>
     );
 };
