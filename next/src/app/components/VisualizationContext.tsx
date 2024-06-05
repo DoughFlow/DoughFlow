@@ -4,7 +4,8 @@ import { useGlobal } from './GlobalContextProvider';
 import { fetchStocks } from '../_utils/fetchStocks';
 
 
-const VisualizationContext = () => {
+const VisualizationContext: React.FC<
+{ onClick: (event: any) => void}> = ({onClick}) => {
   const { stocks, updateStock, resetStocks, removeStock, updateSvg } = useGlobal();
   const [ticker, setTicker] = useState<string>('');
   const [value, setValue] = useState<string>('');
@@ -95,6 +96,7 @@ const VisualizationContext = () => {
 
           <button type="button" onClick={handleResetStocks} className="bg-green-500 text-white px-4 py-2 mt-4">Reset Stocks</button>
           <button type="submit" className="bg-blue-500 text-white px-4 py-2">Update Stock</button>
+          <button type="button" onClick={onClick} className="bg-red-500 text-white px-4 py-2 mt-4">Exit/ClickOutside!</button>
         </form>
       </div>
     </div>

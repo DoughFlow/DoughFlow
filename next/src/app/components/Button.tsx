@@ -1,33 +1,24 @@
 'use client'
 import React, { useState } from 'react';
 
-const Button = () => {
-  const styles=[{position:"absolute",left:"100px", top:"100px"},
+const Button: React.FC<
+{ onClick: (event: any) => void, onDrag: (event: any) => void,
+area: number}> = ({onClick, onDrag, area}) => {
+  const styles:any=[{position:"absolute",left:"100px", top:"100px"},
                 {position:"absolute",right:"100px", top:"100px"},
                 {position:"absolute",right:"100px", bottom:"100px"},
                 {position:"absolute",left:"100px", bottom:"100px"}]
 
-  const [area,Setarea] = useState(0);
-  const [clicked, setClicked] = useState(false);
-
-  const handleDrag = (event: React.DragEvent<HTMLButtonElement>) => {
-    if (area < 3) {
-      Setarea(area+1)} else {
-      Setarea(0)}
-  };
-
-  const handleClick = (event: any) => {
-    setClicked(!clicked)
-  }
+//const [area,Setarea] = useState(0);
   
-  return(clicked? null : (<button
-      onClick={handleClick}
+  return (<button
+      onClick={onClick}
       draggable={true}
-      onDragEnter={handleDrag}
+      onDragEnter={onDrag}
       style={styles[area]}
       >
     Drag or Click
-    </button>));
+    </button>);
 };
 
 export default Button;
