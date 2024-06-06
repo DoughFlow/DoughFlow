@@ -108,14 +108,15 @@ async function fetchStocks(stockLocation: number, ticker: string, value: string,
     } else if (time === "3y" || time === "5y") {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/5y`);
-        const data = await processPriceResponse(response);
+        const threeResponse = await fetch(`http://3.140.61.213/api/${ticker}/3y`);
+        const threeData = await processPriceResponse(threeResponse);
 
         // 3y
-        const threeYData= filterRecentData(data, 36);
-        const threeYsvg = generateSvgGraph(threeYData);
+        const threeYsvg = generateSvgGraph(threeData);
         updateSvg(stockLocation, "3y", threeYsvg);
 
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/5y`);
+        const data = await processPriceResponse(response);
         // 5y
         const fiveYsvg = generateSvgGraph(data);
         updateSvg(stockLocation, "5y", fiveYsvg);
@@ -129,20 +130,20 @@ async function fetchStocks(stockLocation: number, ticker: string, value: string,
     if (time === "3m" || "6m" || "1y") {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
-        const data = await processVRSResponse(response, value);
+        const sixResponse = await fetch(`http://3.140.61.213/api/${ticker}/${value}/6m`);
+        const sixData = await processVRSResponse(sixResponse, value);
 
         // 3m
-        const threeData = filterRecentData(data, 3);
-        console.log(threeData)
+        const threeData = filterRecentData(sixData, 3);
         const threeMsvg = generateSvgGraph(threeData);
         updateSvg(stockLocation, "3m", threeMsvg);
 
         // 6m
-        const sixData = filterRecentData(data, 6);
         const sixMsvg = generateSvgGraph(sixData);
         updateSvg(stockLocation, "6m", sixMsvg);
 
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
+        const data = await processVRSResponse(response, value);
         // 1y
         const oneYsvg = generateSvgGraph(data);
         updateSvg(stockLocation, "1y", oneYsvg);
@@ -154,14 +155,15 @@ async function fetchStocks(stockLocation: number, ticker: string, value: string,
     } else {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/5y`);
-        const data = await processVRSResponse(response, value);
+        const threeResponse = await fetch(`http://3.140.61.213/api/${ticker}/${value}/3y`);
+        const threeData = await processVRSResponse(threeResponse, value);
 
         // 3y
-        const threeYData= filterRecentData(data, 36);
-        const threeYsvg = generateSvgGraph(threeYData);
+        const threeYsvg = generateSvgGraph(threeData);
         updateSvg(stockLocation, "3y", threeYsvg);
 
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/5y`);
+        const data = await processVRSResponse(response, value);
         // 5y
         const fiveYsvg = generateSvgGraph(data);
         updateSvg(stockLocation, "5y", fiveYsvg);
@@ -176,19 +178,20 @@ async function fetchStocks(stockLocation: number, ticker: string, value: string,
     if (time === "3m" || "6m" || "1y") {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
-        const data = await processVRSResponse(response, value);
+        const sixResponse = await fetch(`http://3.140.61.213/api/${ticker}/${value}/6m`);
+        const sixData = await processVRSResponse(sixResponse, value);
 
         // 3m
-        const threeData = filterRecentData(data, 3);
+        const threeData = filterRecentData(sixData, 3);
         const threeMsvg = generateSvgGraph(threeData);
         updateSvg(stockLocation, "3m", threeMsvg);
 
         // 6m
-        const sixData = filterRecentData(data, 6);
         const sixMsvg = generateSvgGraph(sixData);
         updateSvg(stockLocation, "6m", sixMsvg);
 
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
+        const data = await processVRSResponse(response, value);
         // 1y
         const oneYsvg = generateSvgGraph(data);
         updateSvg(stockLocation, "1y", oneYsvg);
@@ -200,14 +203,15 @@ async function fetchStocks(stockLocation: number, ticker: string, value: string,
     } else {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/5y`);
-        const data = await processVRSResponse(response, value);
+        const threeResponse = await fetch(`http://3.140.61.213/api/${ticker}/${value}/3y`);
+        const threeData = await processVRSResponse(threeResponse, value);
 
         // 3y
-        const threeYData= filterRecentData(data, 36);
-        const threeYsvg = generateSvgGraph(threeYData);
+        const threeYsvg = generateSvgGraph(threeData);
         updateSvg(stockLocation, "3y", threeYsvg);
 
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/5y`);
+        const data = await processVRSResponse(response, value);
         // 5y
         const fiveYsvg = generateSvgGraph(data);
         updateSvg(stockLocation, "5y", fiveYsvg);
@@ -221,19 +225,20 @@ async function fetchStocks(stockLocation: number, ticker: string, value: string,
     if (time === "3m" || "6m" || "1y") {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
-        const data = await processVRSResponse(response, value);
+        const sixResponse = await fetch(`http://3.140.61.213/api/${ticker}/${value}/6m`);
+        const sixData = await processVRSResponse(sixResponse, value);
 
         // 3m
-        const threeData = filterRecentData(data, 3);
+        const threeData = filterRecentData(sixData, 3);
         const threeMsvg = generateSvgGraph(threeData);
         updateSvg(stockLocation, "3m", threeMsvg);
 
         // 6m
-        const sixData = filterRecentData(data, 6);
         const sixMsvg = generateSvgGraph(sixData);
         updateSvg(stockLocation, "6m", sixMsvg);
 
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
+        const data = await processVRSResponse(response, value);
         // 1y
         const oneYsvg = generateSvgGraph(data);
         updateSvg(stockLocation, "1y", oneYsvg);
@@ -245,14 +250,15 @@ async function fetchStocks(stockLocation: number, ticker: string, value: string,
     } else {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/5y`);
-        const data = await processVRSResponse(response, value);
+        const threeResponse = await fetch(`http://3.140.61.213/api/${ticker}/${value}/3y`);
+        const threeData = await processVRSResponse(threeResponse, value);
 
         // 3y
-        const threeYData= filterRecentData(data, 36);
-        const threeYsvg = generateSvgGraph(threeYData);
+        const threeYsvg = generateSvgGraph(threeData);
         updateSvg(stockLocation, "3y", threeYsvg);
 
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/5y`);
+        const data = await processVRSResponse(response, value);
         // 5y
         const fiveYsvg = generateSvgGraph(data);
         updateSvg(stockLocation, "5y", fiveYsvg);
