@@ -76,8 +76,13 @@ async function processVRSResponse (response: Response, value: string): Promise<D
 }
 
 
+function getSvgSize (height: number, width: number, layout: number) {
+    console.log(height)
+    console.log(width)
+    console.log(layout)
+};
 
-async function fetchStocks(stockLocation: number, ticker: string, value: string, time: string, updateSvg: (index: number, timeframe: string, svg: string) => void) {
+async function fetchStocks (stockLocation: number, ticker: string, value: string, time: string, updateSvg: (index: number, timeframe: string, svg: string) => void) {
   if (value === "price") {
     if (time === "3m" || time === "6m" || time ===  "1y") {
 
@@ -321,4 +326,4 @@ const generateSvgGraph = (data: DataPoint[]): string => {
 
 
 
-export { fetchStocks, generateSvgGraph };
+export { fetchStocks, generateSvgGraph, getSvgSize };

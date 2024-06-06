@@ -14,6 +14,7 @@ type GlobalContextType = {
   updateStock: (index: number, updatedStock: Stock) => void;
   resetStocks: () => void;
   updateSvg: (index: number, timeframe: string, updatedSvg: string) => void;
+  getStockLayout: () => number;
 }
 
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined);
