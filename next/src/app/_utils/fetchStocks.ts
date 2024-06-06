@@ -77,41 +77,46 @@ async function processVRSResponse (response: Response, value: string): Promise<D
 
 
 function getSvgSize (stockLocation: number, height: number, width: number, layout: number): [number, number] {
+  const croppedHeight = Math.floor(height * 0.98);
+  const croppedWidth = Math.floor(width * 0.98);
   if (layout === 0) {
-    const svgHeight = height * 0.97;
-    const svgWidth = width * 0.97;
+    const svgHeight = croppedHeight;
+    const svgWidth = croppedWidth;
     return [svgHeight, svgWidth];
   } else if (layout === 1) {
-    const svgHeight = height / 2;
-    const svgWidth = width * 0.97;
+    const svgHeight = Math.floor(croppedHeight / 2);
+    const svgWidth = croppedWidth;
     return [svgHeight, svgWidth];
   } else if (layout === 2) {
     if (stockLocation == 0) {
-      const svgHeight = height / 2;
-      const svgWidth = width * 0.97;
+      const svgHeight = Math.floor(croppedHeight / 2);
+      const svgWidth = croppedWidth;
       return [svgHeight, svgWidth];
     } else {
-      const svgHeight = height / 2;
-      const svgWidth = width / 2;
+      const svgHeight = Math.floor(croppedHeight / 2);
+      const svgWidth = Math.floor(croppedWidth / 2);
       return [svgHeight, svgWidth];
     }
   } else if (layout === 3) {
-    const svgHeight = height / 2;
-    const svgWidth = height / 2;
+    const svgHeight = Math.floor(croppedHeight / 2);
+    const svgWidth = Math.floor(croppedWidth / 2);
     return [svgHeight, svgWidth];
   } else if (layout === 4) {
     if (stockLocation <= 1) {
-      const svgHeight = height / 2;
-      const svgWidth = width / 2;
+      const svgHeight = Math.floor(croppedHeight / 2);
+      const svgWidth = Math.floor(croppedWidth / 2);
+      return [svgHeight, svgWidth];
+    } else if (stockLocation > 1) {
+      const svgHeight = Math.floor(croppedHeight / 2);
+      const svgWidth = Math.floor(croppedWidth / 3) + 1;
       return [svgHeight, svgWidth];
     } else {
-      const svgHeight = height / 2;
-      const svgWidth = width / 3;
-      return [svgHeight, svgWidth];
+      console.log("Error parsing row format")
+      return [200, 200];
     }
   } else {
     console.log("Error parsing layout")
-    return [0, 0];
+    return [200, 200];
   }
 }
 
@@ -154,11 +159,11 @@ async function fetchStocks (stockLocation: number, height: number,
 
         // 3y
         const threeData = filterRecentData(data, 36);
-        const threeYsvg = generateSvgGraph(threeData);
+        const threeYsvg = generateSvgGraph(threeData, svgHeight, svgWidth);
         updateSvg(stockLocation, "3y", threeYsvg);
         
         // 5y
-        const fiveYsvg = generateSvgGraph(data);
+        const fiveYsvg = generateSvgGraph(data, svgHeight, svgWidth);
         updateSvg(stockLocation, "5y", fiveYsvg);
 
       } catch (error) {
@@ -175,17 +180,17 @@ async function fetchStocks (stockLocation: number, height: number,
 
         // 3m
         const threeData = filterRecentData(sixData, 3);
-        const threeMsvg = generateSvgGraph(threeData);
+        const threeMsvg = generateSvgGraph(threeData, svgHeight, svgWidth);
         updateSvg(stockLocation, "3m", threeMsvg);
 
         // 6m
-        const sixMsvg = generateSvgGraph(sixData);
+        const sixMsvg = generateSvgGraph(sixData, svgHeight, svgWidth);
         updateSvg(stockLocation, "6m", sixMsvg);
 
         const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
         const data = await processVRSResponse(response, value);
         // 1y
-        const oneYsvg = generateSvgGraph(data);
+        const oneYsvg = generateSvgGraph(data, svgHeight, svgWidth);
         updateSvg(stockLocation, "1y", oneYsvg);
 
       } catch (error) {
@@ -200,11 +205,11 @@ async function fetchStocks (stockLocation: number, height: number,
 
         // 3y
         const threeData = filterRecentData(data, 36);
-        const threeYsvg = generateSvgGraph(threeData);
+        const threeYsvg = generateSvgGraph(threeData, svgHeight, svgWidth);
         updateSvg(stockLocation, "3y", threeYsvg);
 
         // 5y
-        const fiveYsvg = generateSvgGraph(data);
+        const fiveYsvg = generateSvgGraph(data, svgHeight, svgWidth);
         updateSvg(stockLocation, "5y", fiveYsvg);
 
 
@@ -222,17 +227,17 @@ async function fetchStocks (stockLocation: number, height: number,
 
         // 3m
         const threeData = filterRecentData(sixData, 3);
-        const threeMsvg = generateSvgGraph(threeData);
+        const threeMsvg = generateSvgGraph(threeData, svgHeight, svgWidth);
         updateSvg(stockLocation, "3m", threeMsvg);
 
         // 6m
-        const sixMsvg = generateSvgGraph(sixData);
+        const sixMsvg = generateSvgGraph(sixData, svgHeight, svgWidth);
         updateSvg(stockLocation, "6m", sixMsvg);
 
         const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
         const data = await processVRSResponse(response, value);
         // 1y
-        const oneYsvg = generateSvgGraph(data);
+        const oneYsvg = generateSvgGraph(data, svgHeight, svgWidth);
         updateSvg(stockLocation, "1y", oneYsvg);
 
       } catch (error) {
@@ -247,11 +252,11 @@ async function fetchStocks (stockLocation: number, height: number,
 
         // 3y
         const threeData = filterRecentData(data, 36);
-        const threeYsvg = generateSvgGraph(threeData);
+        const threeYsvg = generateSvgGraph(threeData, svgHeight, svgWidth);
         updateSvg(stockLocation, "3y", threeYsvg);
 
         // 5y
-        const fiveYsvg = generateSvgGraph(data);
+        const fiveYsvg = generateSvgGraph(data, svgHeight, svgWidth);
         updateSvg(stockLocation, "5y", fiveYsvg);
 
       } catch (error) {
@@ -268,17 +273,17 @@ async function fetchStocks (stockLocation: number, height: number,
 
         // 3m
         const threeData = filterRecentData(sixData, 3);
-        const threeMsvg = generateSvgGraph(threeData);
+        const threeMsvg = generateSvgGraph(threeData, svgHeight, svgWidth);
         updateSvg(stockLocation, "3m", threeMsvg);
 
         // 6m
-        const sixMsvg = generateSvgGraph(sixData);
+        const sixMsvg = generateSvgGraph(sixData, svgHeight, svgWidth);
         updateSvg(stockLocation, "6m", sixMsvg);
 
         const response = await fetch(`http://3.140.61.213/api/${ticker}/${value}/1y`);
         const data = await processVRSResponse(response, value);
         // 1y
-        const oneYsvg = generateSvgGraph(data);
+        const oneYsvg = generateSvgGraph(data, svgHeight, svgWidth);
         updateSvg(stockLocation, "1y", oneYsvg);
 
       } catch (error) {
@@ -293,11 +298,11 @@ async function fetchStocks (stockLocation: number, height: number,
 
         // 3y
         const threeData = filterRecentData(data, 36);
-        const threeYsvg = generateSvgGraph(threeData);
+        const threeYsvg = generateSvgGraph(threeData, svgHeight, svgWidth);
         updateSvg(stockLocation, "3y", threeYsvg);
 
         // 5y
-        const fiveYsvg = generateSvgGraph(data);
+        const fiveYsvg = generateSvgGraph(data, svgHeight, svgWidth);
         updateSvg(stockLocation, "5y", fiveYsvg);
 
       } catch (error) {
@@ -314,8 +319,8 @@ async function fetchStocks (stockLocation: number, height: number,
 const generateSvgGraph = (data: DataPoint[], height: number, width: number): string => {
   if (data.length === 0) return '';
 
-  const svgWidth = height;
-  const svgHeight = width;
+  const svgHeight = height;
+  const svgWidth = width;
   const margin = { top: 20, right: 20, bottom: 30, left: 50 };
 
   // Manual parsing and scaling

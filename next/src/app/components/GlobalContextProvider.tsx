@@ -1,11 +1,18 @@
 "use client"
 import { createContext, useContext, useState, ReactNode } from "react";
 
-interface Stock {
+export interface Stock {
   ticker: string;
   value: string;
-  time: string;
-  svgs?: { "3m"?: string; "6m"?: string, "1y"?: string, "3y"?: string, "5y"?: string };
+  time: keyof Stock['svgs'];
+  svgs: {
+    "": string;
+    "3m": string;
+    "6m": string;
+    "1y": string;
+    "3y": string;
+    "5y": string;
+  };
 }
 
 type GlobalContextType = {
@@ -30,12 +37,12 @@ export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) 
   const removeStock = (index: number) => {
     setStocks(prevStocks => {
       const newStocks = [...prevStocks.slice(0, index), ...prevStocks.slice(index + 1)];
-      newStocks.push({ ticker: "", value: "", time: "" , svgs: { "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }});
+      newStocks.push({ ticker: "", value: "", time: "" , svgs: {"": "",  "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }});
       return newStocks;
     });
   };
 
-  const updateStock = (index: number, updatedStock: {ticker: string; value: string; time: string;}) => {
+  const updateStock = (index: number, updatedStock: {ticker: string; value: string; time: keyof Stock['svgs'];}) => {
     setStocks(prevStocks => prevStocks.map((stock, i) => 
       i === index ? {...stock, ...updatedStock} : stock
     ));
@@ -62,8 +69,11 @@ export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) 
 
 
   const getStockLayout = () => {
-    const index = stocks.findIndex(stock => stock.ticker === "");
-    return index - 1;
+      const index = stocks.findIndex(stock => stock.ticker === "");
+      if (index === -1) {
+          return 4;
+      }
+      return index - 1;
   };
 
   const value = {

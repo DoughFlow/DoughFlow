@@ -3,17 +3,76 @@ import React from 'react';
 import VisualizationContext from '../components/VisualizationContext';
 import Search from '../components/Search';
 import Controller from '../components/Controller';
-import { useGlobal } from '../components/GlobalContextProvider';
+import { useGlobal, Stock } from '../components/GlobalContextProvider';
 
 
 const Context = () => {
-  const { stocks } = useGlobal();
-  const svg = stocks.at(0)?.svgs?.['6m']
+  const { stocks, getStockLayout } = useGlobal();
+  const layout = getStockLayout();
+
+  const getSvgContent = (stock: Stock): string => {
+    if (stock.svgs && stock.time in stock.svgs) {
+      const svgString = stock.svgs[stock.time as keyof typeof stock.svgs] as string; 
+      return svgString || '<i>No SVG available</i>';
+    }
+    return '<i>No SVG available</i>'; // Fallback if key does not exist
+  };
     return (
       <div className=''>
+        <div className='min-h-screen min-w-screen'>
+          {layout === 0 && stocks.slice(0, 1).map((stock, index) => (
+            <div key={index} dangerouslySetInnerHTML={{ __html: getSvgContent(stock) }} />
+          ))}
+          {layout === 1 && 
+            <div className='flex flex-col'>
+              {stocks.slice(0, 2).map((stock, index) => (
+                <div key={index} dangerouslySetInnerHTML={{ __html: getSvgContent(stock) }} />
+              ))}
+            </div>
+          }
+          {layout === 2 &&
+            <div className='flex flex-col'>
+              {stocks.slice(0, 1).map((stock, index) => (
+                <div key={index} dangerouslySetInnerHTML={{ __html: getSvgContent(stock) }} />
+              ))}
+              <div className='flex flex-row'>
+                {stocks.slice(1, 3).map((stock, index) => (
+                  <div key={index} dangerouslySetInnerHTML={{ __html: getSvgContent(stock) }} />
+                ))}
+              </div>
+            </div>
+          }
+          {layout === 3 &&
+            <div className='flex flex-col'>
+              <div className='flex flex-row'>
+                {stocks.slice(0, 2).map((stock, index) => (
+                  <div key={index} dangerouslySetInnerHTML={{ __html: getSvgContent(stock) }} />
+                ))}
+              </div>
+              <div className='flex flex-row'>
+                {stocks.slice(2, 4).map((stock, index) => (
+                  <div key={index} dangerouslySetInnerHTML={{ __html: getSvgContent(stock) }} />
+                ))}
+              </div>
+            </div>
+          }
+          {layout === 4 &&
+            <div className='flex flex-col'>
+              <div className='flex flex-row'>
+                {stocks.slice(0, 2).map((stock, index) => (
+                  <div key={index} dangerouslySetInnerHTML={{ __html: getSvgContent(stock) }} />
+                ))}
+              </div>
+              <div className='flex flex-row'>
+                {stocks.slice(2, 5).map((stock, index) => (
+                  <div key={index} dangerouslySetInnerHTML={{ __html: getSvgContent(stock) }} />
+                ))}
+              </div>
+            </div>
+          }
+        </div>
         <Controller />
-        <VisualizationContext/>
-        <div dangerouslySetInnerHTML={{ __html: svg || '' }} />
+        <VisualizationContext />
         {stocks.map((stock, index) => (
           <div key={index}>
             <h3>Stock Information</h3>
