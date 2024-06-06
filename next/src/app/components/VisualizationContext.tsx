@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, FormEvent, useContext } from 'react';
 import { useGlobal } from './GlobalContextProvider';
-import { fetchStocks } from '../_utils/fetchStocks';
+import { fetchStocks, getSvgSize } from '../_utils/fetchStocks';
 
 // useSvgListener 
 // is a use effect that changes a context to trigger a re render of the graphs
@@ -26,7 +26,8 @@ const VisualizationContext: React.FC<
       updateStock(index, updatedStock);
       const height = window.innerHeight;
       const width = window.innerWidth;
-      const layout = 
+      const layout = getStockLayout();
+      getSvgSize(height, width, layout);
       fetchStocks(index, updatedStock.ticker, updatedStock.value, updatedStock.time, updateSvg);
     } else {
       alert('Invalid index.');
