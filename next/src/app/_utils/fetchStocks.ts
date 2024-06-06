@@ -76,34 +76,70 @@ async function processVRSResponse (response: Response, value: string): Promise<D
 }
 
 
-function getSvgSize (height: number, width: number, layout: number) {
-    console.log(height)
-    console.log(width)
-    console.log(layout)
-};
+function getSvgSize (stockLocation: number, height: number, width: number, layout: number): [number, number] {
+  if (layout === 0) {
+    const svgHeight = height * 0.97;
+    const svgWidth = width * 0.97;
+    return [svgHeight, svgWidth];
+  } else if (layout === 1) {
+    const svgHeight = height / 2;
+    const svgWidth = width * 0.97;
+    return [svgHeight, svgWidth];
+  } else if (layout === 2) {
+    if (stockLocation == 0) {
+      const svgHeight = height / 2;
+      const svgWidth = width * 0.97;
+      return [svgHeight, svgWidth];
+    } else {
+      const svgHeight = height / 2;
+      const svgWidth = width / 2;
+      return [svgHeight, svgWidth];
+    }
+  } else if (layout === 3) {
+    const svgHeight = height / 2;
+    const svgWidth = height / 2;
+    return [svgHeight, svgWidth];
+  } else if (layout === 4) {
+    if (stockLocation <= 1) {
+      const svgHeight = height / 2;
+      const svgWidth = width / 2;
+      return [svgHeight, svgWidth];
+    } else {
+      const svgHeight = height / 2;
+      const svgWidth = width / 3;
+      return [svgHeight, svgWidth];
+    }
+  } else {
+    console.log("Error parsing layout")
+    return [0, 0];
+  }
+}
 
-async function fetchStocks (stockLocation: number, ticker: string, value: string, time: string, updateSvg: (index: number, timeframe: string, svg: string) => void) {
+async function fetchStocks (stockLocation: number, height: number, 
+                            width: number, layout:number,  ticker: string,
+                            value: string, time: string,
+                            updateSvg: (index: number, timeframe: string, svg: string) => void) {
+  const [ svgHeight, svgWidth ] = getSvgSize(stockLocation, height, width, layout);
   if (value === "price") {
     if (time === "3m" || time === "6m" || time ===  "1y") {
 
       try {
         const sixResponse = await fetch(`http://3.140.61.213/api/${ticker}/6m`);
         const sixData = await processPriceResponse(sixResponse);
-
         // 3m
         const threeData = filterRecentData(sixData, 3);
-        const threeMsvg = generateSvgGraph(threeData);
+        const threeMsvg = generateSvgGraph(threeData, svgHeight, svgWidth);
         updateSvg(stockLocation, "3m", threeMsvg);
 
         // 6m
-        const sixMsvg = generateSvgGraph(sixData);
+        const sixMsvg = generateSvgGraph(threeData, svgHeight, svgWidth);
         updateSvg(stockLocation, "6m", sixMsvg);
 
 
         const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
         const data = await processPriceResponse(response);
         // 1y
-        const oneYsvg = generateSvgGraph(data);
+        const oneYsvg = generateSvgGraph(data, svgHeight, svgWidth);
         updateSvg(stockLocation, "1y", oneYsvg);
 
       } catch (error) {
@@ -279,11 +315,11 @@ async function fetchStocks (stockLocation: number, ticker: string, value: string
   }
 }
 
-const generateSvgGraph = (data: DataPoint[]): string => {
+const generateSvgGraph = (data: DataPoint[], height: number, width: number): string => {
   if (data.length === 0) return '';
 
-  const svgWidth = 600;
-  const svgHeight = 300;
+  const svgWidth = height;
+  const svgHeight = width;
   const margin = { top: 20, right: 20, bottom: 30, left: 50 };
 
   // Manual parsing and scaling

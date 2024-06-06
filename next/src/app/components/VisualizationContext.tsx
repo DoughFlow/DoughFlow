@@ -27,8 +27,7 @@ const VisualizationContext: React.FC<
       const height = window.innerHeight;
       const width = window.innerWidth;
       const layout = getStockLayout();
-      getSvgSize(height, width, layout);
-      fetchStocks(index, updatedStock.ticker, updatedStock.value, updatedStock.time, updateSvg);
+      fetchStocks(index, height, width, layout, updatedStock.ticker, updatedStock.value, updatedStock.time, updateSvg);
     } else {
       alert('Invalid index.');
     }
