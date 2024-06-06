@@ -1,12 +1,18 @@
 "use client"
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useContext } from 'react';
 import { useGlobal } from './GlobalContextProvider';
 import { fetchStocks } from '../_utils/fetchStocks';
 
+// useSvgListener 
+// is a use effect that changes a context to trigger a re render of the graphs
+// this will also take the window size and send it to the function makeLayout
+// makeLayout will take in a window size and access the stocks global context 
+// where the abscence of stocks will show what the layout should be for the
+// space
 
 const VisualizationContext: React.FC<
 { onClick: (event: any) => void}> = ({onClick}) => {
-  const { stocks, updateStock, resetStocks, removeStock, updateSvg } = useGlobal();
+  const { stocks, updateStock, resetStocks, removeStock, updateSvg, getStockLayout } = useGlobal();
   const [ticker, setTicker] = useState<string>('');
   const [value, setValue] = useState<string>('');
   const [time, setTime] = useState<string>('');
@@ -18,7 +24,10 @@ const VisualizationContext: React.FC<
     const updatedStock = { ticker, value, time };
     if (index >= 0 && index < stocks.length) {
       updateStock(index, updatedStock);
-      fetchStocks(index, updatedStock.ticker, updatedStock.value, updatedStock.time, updateSvg)
+      const height = window.innerHeight;
+      const width = window.innerWidth;
+      const layout = 
+      fetchStocks(index, updatedStock.ticker, updatedStock.value, updatedStock.time, updateSvg);
     } else {
       alert('Invalid index.');
     }

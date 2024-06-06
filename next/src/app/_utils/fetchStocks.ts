@@ -75,24 +75,28 @@ async function processVRSResponse (response: Response, value: string): Promise<D
   return data;
 }
 
+
+
 async function fetchStocks(stockLocation: number, ticker: string, value: string, time: string, updateSvg: (index: number, timeframe: string, svg: string) => void) {
   if (value === "price") {
     if (time === "3m" || time === "6m" || time ===  "1y") {
 
       try {
-        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
-        const data = await processPriceResponse(response);
+        const sixResponse = await fetch(`http://3.140.61.213/api/${ticker}/6m`);
+        const sixData = await processPriceResponse(sixResponse);
 
         // 3m
-        const threeData = filterRecentData(data, 3);
+        const threeData = filterRecentData(sixData, 3);
         const threeMsvg = generateSvgGraph(threeData);
         updateSvg(stockLocation, "3m", threeMsvg);
 
         // 6m
-        const sixData = filterRecentData(data, 6);
         const sixMsvg = generateSvgGraph(sixData);
         updateSvg(stockLocation, "6m", sixMsvg);
 
+
+        const response = await fetch(`http://3.140.61.213/api/${ticker}/1y`);
+        const data = await processPriceResponse(response);
         // 1y
         const oneYsvg = generateSvgGraph(data);
         updateSvg(stockLocation, "1y", oneYsvg);

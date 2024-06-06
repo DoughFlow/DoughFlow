@@ -24,6 +24,7 @@ type GlobalContextProviderProps = {
 
 export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) => {
   const [stocks, setStocks] = useState<Stock[]>(Array(5).fill({ ticker: "", value: "", time: "", svgs: { "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }}));
+  const [svgEdited, setSvgEdited] = useState<boolean>(false);
   
   const removeStock = (index: number) => {
     setStocks(prevStocks => {
@@ -47,37 +48,32 @@ export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) 
     ]);
   };
 
-  function updateSvg(index: number, timeframe: string, updatedSvg: string): void {
+  const updateSvg = (index: number, timeframe: keyof Stock['svgs'], updatedSvg: string): void => {
     setStocks(prevStocks => prevStocks.map((stock, i) => {
       if (i === index) {
-        switch (timeframe) {
-          case "3m":
-            return { ...stock, svgs: { ...stock.svgs, "3m": updatedSvg } };
-          case "6m":
-            return { ...stock, svgs: { ...stock.svgs, "6m": updatedSvg } };
-          case "1y":
-            return { ...stock, svgs: { ...stock.svgs, "1y": updatedSvg } };
-          case "3y":
-            return { ...stock, svgs: { ...stock.svgs, "3y": updatedSvg } };
-          case "5y":
-            return { ...stock, svgs: { ...stock.svgs, "5y": updatedSvg } };
-          default:
-            console.error("Incorrect timeframe provided:", timeframe);
-            return stock;
-        }
+        const newSvgs = { ...stock.svgs, [timeframe]: updatedSvg };
+        setSvgEdited(true);
+        return { ...stock, svgs: newSvgs };
       }
       return stock;
     }));
-  }
+  };
+
+
+  const getStockLayout = () => {
+    const index = stocks.findIndex(stock => stock.ticker === "");
+    return index - 1;
+  };
+
   const value = {
-    stocks, updateStock, resetStocks, removeStock, updateSvg
+    stocks, updateStock, resetStocks, removeStock, updateSvg, getStockLayout
   };
   
-    return (
-      <GlobalContext.Provider value={value} >
-        { children }
-      </GlobalContext.Provider>
-    );
+  return (
+    <GlobalContext.Provider value={value} >
+      { children }
+    </GlobalContext.Provider>
+  );
 };
 
 export const useGlobal = () => {
