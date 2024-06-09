@@ -1,5 +1,6 @@
 "use client"
 import { createContext, useContext, useState, ReactNode } from "react";
+import { fetchStocks } from "../_utils/fetchStocks";
 
 export interface Stock {
   ticker: string;
@@ -21,7 +22,7 @@ type GlobalContextType = {
   removeStock: (index: number) => void;
   updateStock: (index: number, updatedStock: Partial<Stock>) => void;
   resetStocks: () => void;
-  updateSvg: (index: number, timeframe: string, updatedSvg: string) => void;
+  updateSvg: (index: number, timeframe: keyof Stock['svgs'], updatedSvg: string) => void;
   getStockLayout: () => number;
 }
 
@@ -31,10 +32,30 @@ type GlobalContextProviderProps = {
   children: ReactNode;
 }
 
+
+
 export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) => {
   const [stocks, setStocks] = useState<Stock[]>(Array(5).fill({ ticker: "", value: "", time: "", svgs: { "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }}));
   const [svgEdited, setSvgEdited] = useState<boolean>(false);
-  
+
+  const renderPreviousSvgs = async (index: number) => {
+    const height = window.innerHeight;
+    const width = window.innerWidth;
+    const layout = getStockLayout();
+
+    for (let i = 0; i < index; i++) {
+      const stock = stocks[i];
+      if (stock.ticker !== "") {
+        Object.keys(stock.svgs).forEach(async (time) => {
+          const updatedSvg = stock.svgs[time];
+          if (updatedSvg !== "") {
+            await fetchStocks(i, height, width, layout, stock.ticker, stock.value, stock.time, updateSvg);
+          }
+        });
+      }
+    }
+  };
+
   const removeStock = (index: number) => {
     setStocks(prevStocks => {
       const newStocks = [...prevStocks.slice(0, index), ...prevStocks.slice(index + 1)];
@@ -43,11 +64,15 @@ export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) 
     });
   };
 
-  const updateStock = (index: number, updatedStock: {ticker: string; company: string, value: string; time: keyof Stock['svgs'];}) => {
+  const updateStock = (index: number, updatedStock: Partial<Stock>) => {
+    if (stocks[index].ticker === "") {
+      renderPreviousSvgs(index);
+    }
+
     setStocks(prevStocks => prevStocks.map((stock, i) => 
       i === index ? {...stock, ...updatedStock} : stock
     ));
-    console.log("Stock updated, fetching data for new SVGs");
+
   };
 
   const resetStocks = () => {
@@ -67,7 +92,6 @@ export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) 
       return stock;
     }));
   };
-
 
   const getStockLayout = () => {
       const index = stocks.findIndex(stock => stock.ticker === "");
