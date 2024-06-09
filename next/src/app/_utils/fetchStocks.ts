@@ -316,6 +316,8 @@ async function fetchStocks (stockLocation: number, height: number,
   }
 }
 
+// add logic for the different data forms and different graphs
+
 const generateSvgGraph = (data: DataPoint[], height: number, width: number): string => {
   if (data.length === 0) return '';
 

@@ -14,6 +14,7 @@ const VisualizationContext: React.FC<
 { onClick: (event: any) => void}> = ({onClick}) => {
   const { stocks, updateStock, resetStocks, removeStock, updateSvg, getStockLayout } = useGlobal();
   const [ticker, setTicker] = useState<string>('');
+  const [company, setCompany] = useState<string>('');
   const [value, setValue] = useState<string>('');
   const [time, setTime] = useState<string>('');
   const [index, setIndex] = useState<number>(0);
@@ -22,7 +23,7 @@ const VisualizationContext: React.FC<
   const handleUpdateStock = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const currentSvgs = stocks[index].svgs
-    const updatedStock = { ticker, value, time, svgs: currentSvgs };
+    const updatedStock = { ticker, company,  value, time, svgs: currentSvgs };
     if (index >= 0 && index < stocks.length) {
       updateStock(index, updatedStock);
       const height = window.innerHeight;
@@ -70,6 +71,14 @@ const VisualizationContext: React.FC<
             onChange={(e) => setTicker(e.target.value)}
             className="border px-2 py-1 bg-black"
           />
+          <input
+            type="text"
+            placeholder="Company"
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
+            className="border px-2 py-1 bg-black"
+          />
+
           <input
             type="text"
             placeholder="Value"

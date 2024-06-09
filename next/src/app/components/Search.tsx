@@ -27,7 +27,7 @@ const Search = () => {
     const { value } = event.target;
     setQuery(value);
     if (value.length > 0) {
-      const searchResults = fuse.search(value).slice(0, 3);  // Limit to top 3 results
+      const searchResults = fuse.search(value).slice(0, 5);  // Limit to top 3 results
       setResults(searchResults.map(result => result.item));
     } else {
       setResults([]);

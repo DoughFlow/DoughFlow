@@ -4,6 +4,7 @@ import VisualizationContext from '../components/VisualizationContext';
 import Search from '../components/Search';
 import Controller from '../components/Controller';
 import { useGlobal, Stock } from '../components/GlobalContextProvider';
+import List from '../components/List';
 
 
 const Context = () => {
@@ -19,12 +20,13 @@ const Context = () => {
   };
     return (
       <div className=''>
+        <List />
         <div className='min-h-screen min-w-screen'>
           {layout === 0 && stocks.slice(0, 1).map((stock, index) => (
             <div key={index} dangerouslySetInnerHTML={{ __html: getSvgContent(stock) }} />
           ))}
           {layout === 1 && 
-            <div className='flex flex-col'>
+            <div className='flex flex-col justify-between'>
               {stocks.slice(0, 2).map((stock, index) => (
                 <div key={index} dangerouslySetInnerHTML={{ __html: getSvgContent(stock) }} />
               ))}

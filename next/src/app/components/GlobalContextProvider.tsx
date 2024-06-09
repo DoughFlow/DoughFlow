@@ -3,6 +3,7 @@ import { createContext, useContext, useState, ReactNode } from "react";
 
 export interface Stock {
   ticker: string;
+  company: string;
   value: string;
   time: keyof Stock['svgs'];
   svgs: {
@@ -18,7 +19,7 @@ export interface Stock {
 type GlobalContextType = {
   stocks: Stock[];
   removeStock: (index: number) => void;
-  updateStock: (index: number, updatedStock: Stock) => void;
+  updateStock: (index: number, updatedStock: Partial<Stock>) => void;
   resetStocks: () => void;
   updateSvg: (index: number, timeframe: string, updatedSvg: string) => void;
   getStockLayout: () => number;
@@ -37,12 +38,12 @@ export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) 
   const removeStock = (index: number) => {
     setStocks(prevStocks => {
       const newStocks = [...prevStocks.slice(0, index), ...prevStocks.slice(index + 1)];
-      newStocks.push({ ticker: "", value: "", time: "" , svgs: {"": "",  "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }});
+      newStocks.push({ ticker: "", company: "",  value: "", time: "" , svgs: {"": "",  "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }});
       return newStocks;
     });
   };
 
-  const updateStock = (index: number, updatedStock: {ticker: string; value: string; time: keyof Stock['svgs'];}) => {
+  const updateStock = (index: number, updatedStock: {ticker: string; company: string, value: string; time: keyof Stock['svgs'];}) => {
     setStocks(prevStocks => prevStocks.map((stock, i) => 
       i === index ? {...stock, ...updatedStock} : stock
     ));
@@ -52,7 +53,7 @@ export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) 
   const resetStocks = () => {
     setStocks(prevStocks => [
       prevStocks[0],
-      ...Array(4).fill({ ticker: "", value: "", time: "", svgs: { "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }})
+      ...Array(4).fill({ ticker: "", company: "", value: "", time: "", svgs: { "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }})
     ]);
   };
 
