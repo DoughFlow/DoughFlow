@@ -17,6 +17,7 @@ type GlobalContextType = {
   // Stock[one stock on call] => updates {stocks: Stock[]} => new svgs
   updateStock: (index: number, newStock: newStockType) => void;
   removeStock: (index: number) => void;
+  initStock: (ticker: string) => void;
 }
 
 const StockContext = createContext<GlobalContextType | undefined>(undefined);
@@ -56,18 +57,22 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
    
   }
 
-  const initStock = (ticker: string) => {
+  const initStock = async (ticker: string) => {
+    
+    const data = await fetchData(ticker, "6m", "price");
 
-    const stock = {ticker: ticker, value: "price", time: "6m", svg: ""};
+    const height = window.innerHeight;
+    const width = window.innerWidth;
+    
+    const svg = candlestickSVG(data, height, width);
+    const stock = {ticker: ticker, value: "price", time: "6m", svg: svg};
 
-    setStocks([{stock}]);
-
-    stocks[0] = {}
+    setStocks([stock]);
 
   }
 
   const value = {
-      stocks, updateStock, removeStock
+      stocks, updateStock, removeStock, initStock
   }
 
   return (

@@ -1,6 +1,6 @@
 "use server"
 import { DataPoint } from "@/_utils/fetchData";
-import d3 from "d3";
+import * as d3 from "d3";
 
 export const candlestickSVG = (data: DataPoint[], height: number, width:number) => {
   

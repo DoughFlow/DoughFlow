@@ -7,6 +7,8 @@ import Visualization from "@C/Visualization";
 
 const Page = ({ params }: { params: {first:string } }) => {
 
+  const { initStock } = useStocks();
+  initStock(params.first)
 
 
   return (<div>
