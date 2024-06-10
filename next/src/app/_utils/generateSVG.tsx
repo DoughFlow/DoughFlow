@@ -1,4 +1,3 @@
-"use server"
 import { DataPoint } from "@/_utils/fetchData";
 import * as d3 from "d3";
 
