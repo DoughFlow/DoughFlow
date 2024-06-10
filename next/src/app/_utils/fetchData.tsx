@@ -1,6 +1,6 @@
 "use server"
 
-interface PriceDataPoint {
+export interface PriceDataPoint {
   timestamp: string;
   ticker: string;
   open_price: number;
@@ -9,14 +9,14 @@ interface PriceDataPoint {
   close_price: number;
 }
 
-interface IndicatorDataPoint {
+export interface IndicatorDataPoint {
   timestamp: string;
   [key: string]: number | string;
 }
 
-type DataPoint = PriceDataPoint | IndicatorDataPoint;
+export type DataPoint = PriceDataPoint | IndicatorDataPoint;
 
-const fetchStocks = async (ticker: string, time: string, value: string): Promise<DataPoint[]> => {
+export const fetchData = async (ticker: string, time: string, value: string): Promise<DataPoint[]> => {
   if (value === "price") {
     const res = await fetch(`http://3.140.61.213/api/${ticker}/${time}`);
     if (!res.ok) throw new Error("Network response was not ok");
