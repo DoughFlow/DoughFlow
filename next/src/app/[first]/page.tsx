@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 //import List from "@C/List";
 import Button from "@C/Button";
 import { useStocks } from "@C/StockContext";
@@ -7,8 +7,10 @@ import Visualization from "@C/Visualization";
 
 const Page = ({ params }: { params: {first:string } }) => {
 
-  //const []
+  const [menu, setMenu] = useState(false);
   const { initStock } = useStocks();
+  
+  const onClick = (event: any) => {setMenu(!menu)};
 
   useEffect(() => {
     if (params.first) {
@@ -16,12 +18,22 @@ const Page = ({ params }: { params: {first:string } }) => {
     }
   }, [params.first]);
 
-  return (<div>
-
-            <Visualization />
-
-          </div>
-         );
+  return (
+  <div>
+    <div>
+      { menu ?
+        <div className="absolute top-0 left-0 z-50  text-red-500">
+          <Button onClick={onClick}/>
+        </div> 
+        : 
+        <div className="absolute bg-yellow-500 z-50">
+          <div onClick={onClick} className="text-5xl">text</div>
+        </div>
+      }
+    </div>
+    <Visualization />
+  </div>
+    );
 
 }
 
