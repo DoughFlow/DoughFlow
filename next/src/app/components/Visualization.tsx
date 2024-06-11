@@ -20,11 +20,12 @@ const Visualization = () => {
       <div className="flex flex-col min-h-screen min-w-screen m-0 z-0">
         <div className="flex flex-row">
           {renderStockSVG(0)}
-          {renderStockSVG(1)}
-        </div>
-        <div className="flex flex-row">
-          {renderStockSVG(2)}
           {renderStockSVG(3)}
+        </div>
+
+        <div className="flex flex-row">
+          {renderStockSVG(1)}
+          {renderStockSVG(2)}
           {renderStockSVG(4)}
         </div>
       </div>
