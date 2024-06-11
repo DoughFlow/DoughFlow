@@ -27,11 +27,13 @@ const Page = ({ params }: { params: {first:string } }) => {
         </div> 
         : 
         <div className="absolute bg-yellow-500 z-50">
-          <div onClick={onClick} className="text-5xl">text</div>
+          <div className="text-5xl">text</div>
         </div>
       }
     </div>
-    <Visualization />
+    <div onClick={onClick}>
+      <Visualization />
+    </div>
   </div>
     );
 
