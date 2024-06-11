@@ -29,6 +29,9 @@ type GlobalContextProviderProps = {
 
 export const StockContextProvider = ({children }: GlobalContextProviderProps) => {
 
+  // set the stocks ticker value first initially to make sure that the entry in
+  // the list exists
+
   const [stocks, setStocks ] = useState<Stock[]>([]);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
 
@@ -120,7 +123,7 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
     
     const stockZero = {ticker: ticker, value: "price", time: "6m"};
     const stockOne = {ticker: ticker, value: "price", time: "6m"};
-    const stockTwo = {ticker: ticker, value: "price", time: "6m"};
+    const stockTwo = {ticker: ticker, value: "vol", time: "6m"};
     const stockThree = {ticker: ticker, value: "price", time: "6m"};
     const stockFour = {ticker: ticker, value: "price", time: "6m"};
 
