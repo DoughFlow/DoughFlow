@@ -7,17 +7,17 @@ export interface Stock {
   ticker: string;
   value: string;
   time: string;
-  svg: string; 
+  svg?: string; 
 };
 
 type newStockType = Omit<Stock, 'svg'>;
 
 type GlobalContextType = {
   stocks: Stock[];
-  // Stock[one stock on call] => updates {stocks: Stock[]} => new svgs
   updateStock: (index: number, newStock: newStockType) => void;
   removeStock: (index: number) => void;
   initStock: (ticker: string) => void;
+  renderPrevious: () => void;
 }
 
 const StockContext = createContext<GlobalContextType | undefined>(undefined);
@@ -28,17 +28,12 @@ type GlobalContextProviderProps = {
 }
 
 export const StockContextProvider = ({children }: GlobalContextProviderProps) => {
-
-  // set the stocks ticker value first initially to make sure that the entry in
-  // the list exists
-
   const [stocks, setStocks ] = useState<Stock[]>([]);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
 
   useEffect(() => {
     const handleResize = () => {
       setDimensions({ width: window.innerWidth, height: window.innerHeight });
-      // Optionally, trigger re-rendering of all stock SVGs if needed:
       stocks.forEach((stock, i) => updateStock(i, stock));
     };
 
@@ -46,64 +41,89 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
     return () => window.removeEventListener('resize', handleResize);
   }, [stocks]);
 
-  const updateStock = async (index: number, newStock: newStockType) => {
-
-    const data = await fetchData(newStock.ticker, newStock.time, newStock.value);
-
+  const scale = (index: number): [number, number] => {
+    const sLength = stocks.length + 1;
     const height = window.innerHeight;
     const width = window.innerWidth;
 
-    const scale = (): [number, number] => {
-      const sLength = stocks.length;
-      if (sLength === 1) {
-        const svgHeight = height * 1;
-        const svgWidth = width * 1;
-        return [svgHeight, svgWidth]
-      } else if (sLength === 2) {
-        const svgHeight = height * .5;
-        const svgWidth = width * 1;
-        return [svgHeight, svgWidth]
-      } else if (sLength === 3) {
-        if (index < 1) {
-          const svgHeight = height * .5;
-          const svgWidth = width * 1;
-          return [svgHeight, svgWidth]
-        } else {
-          const svgHeight = height * .5;
-          const svgWidth = width * .5;
-          return [svgHeight, svgWidth]
-        }
-
-      } else if (sLength === 4) {
-        const svgHeight = height * .5;
-        const svgWidth = width * .5;
-        return [svgHeight, svgWidth]
+    if (sLength === 1) {
+      return [height, width];
+    } else if (sLength === 2) {
+      return [height * 0.5, width];
+    } else if (sLength === 3) {
+      if (index < 1) {
+        return [height * 0.5, width];
       } else {
-        if (index === 0 || index === 3) {
-          const svgHeight = height * .5;
-          const svgWidth = width * .5;
-          return [svgHeight, svgWidth]
-        } else {
-          const svgHeight = height * .5;
-          const svgWidth = Math.floor(width * .3333);
-          return [svgHeight, svgWidth]
-        }
+        return [height * 0.5, width * 0.5];
+      }
+    } else if (sLength === 4) {
+      return [height * 0.5, width * 0.5];
+    } else {
+      if (index === 0 || index === 3) {
+        return [height * 0.5, width * 0.5];
+      } else {
+        return [height * 0.5, Math.floor(width * 0.3333)];
       }
     }
+  };
 
-    const [svgHeight, svgWidth] = scale();
+  const renderPrevious = async () => {
+    stocks.forEach((stock, index) => updateStock(index, stock));
+  };
+
+  const updateStock = async (index: number, newStock: newStockType) => {
+
+    setStocks(prevStocks => {
+      const updatedStocks = [...prevStocks];
+      if (index < prevStocks.length) {
+        updatedStocks[index] = {...updatedStocks[index], ...newStock};
+      } 
+      else {
+        updatedStocks.push(newStock);
+      }
+      console.log("Updated Stocks", updatedStocks);
+      return updatedStocks;
+    });
+
+
+    const [svgHeight, svgWidth] = scale(index);
+    const data = await fetchData(newStock.ticker, newStock.time, newStock.value);
+
     const svg = candlestickSVG(data, svgHeight, svgWidth);
+    updateSvg(index, svg);
+    // if (index >= updatedStocks.length) {
+    //     // Adding a new stock entry
+    //     updatedStocks.push({ ...newStock, svg });
+    // } else {
+    //     // Updating existing stock entry
+    //     updatedStocks[index] = { ...updatedStocks[index], ...newStock, svg };
+    // }
 
-    const updatedStock: Stock = { ticker: newStock.ticker, time: newStock.time, value: newStock.value,  svg: svg };
-    if (index === stocks.length){
-      stocks.forEach((stock, i) => updateStock(i, stock));
-      stocks.push(updatedStock);
-    } else {
-      setStocks(prevStocks => prevStocks.map((stock, i) =>
-        i === index ? {...stock, ...updatedStock} : stock
-      ));
-    }
+    // setStocks(updatedStocks);
 
+    // console.log(stocks);
+
+    // setStocks(prevStocks => prevStocks.map((stock, i) =>
+    //   i === index ? {...stock, ...newStock} : stock
+    // ));
+
+    // console.log(stocks);
+    // const data = await fetchData(newStock.ticker, newStock.time, newStock.value);
+    // const [svgHeight, svgWidth] = scale(index);
+    // const svg = candlestickSVG(data, svgHeight, svgWidth);
+    // console.log(svg);
+    // updateSvg(index, svg);
+    // console.log(stocks[1]);
+
+    // const updatedStock: Stock = { ticker: newStock.ticker, time: newStock.time, value: newStock.value,  svg: svg };
+    // if (index === stocks.length){
+    //   stocks.forEach((stock, i) => updateStock(i, stock));
+    //   stocks.push(updatedStock);
+    // } else {
+    //   setStocks(prevStocks => prevStocks.map((stock, i) =>
+    //     i === index ? {...stock, ...updatedStock} : stock
+    //   ));
+    // }
 
     // partial<Stock> => Datafetching+Make SVG (_utils?) => return SVG
     //
@@ -112,32 +132,49 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
     // Stock(currentStock) = 
     //    ticker, time, value, company : new data from Partial, 
     //    svg  : new SVG from _utils
-  }
+  };
+
+  const updateSvg = (index: number, updatedSvg: string): void => {
+    setStocks(prevStocks => {
+      if (index < 0 || index >= prevStocks.length) {
+        console.error("Index out of bounds: Cannot update SVG.");
+        return prevStocks;
+      }
+      return prevStocks.map((stock, i) => {
+        if (i === index) {
+          const updatedStock = { ...stock, svg: updatedSvg };
+          console.log("svg updated", updatedStock);
+          return updatedStock;
+        }
+        return stock;
+      });
+    });
+  };
+
 
   const removeStock = (index: number) => {
-    // Remove this stock from Stock[]
-    // Update all SVGs (size? and not new data) on append/delet
+    setStocks(prevStocks => {
+      if (index < 0 || index >= prevStocks.length) {
+        console.error("Index out of bounds: Cannot remove stock.");
+        return prevStocks;
+      }
+      const updatedStocks = [
+        ...prevStocks.slice(0, index),
+        ...prevStocks.slice(index + 1)
+      ];
+      console.log("stock removed", updatedStocks);
+      return updatedStocks;
+    });
   };
 
   const initStock = async (ticker: string) => {
     
-    const stockZero = {ticker: ticker, value: "price", time: "6m"};
-    const stockOne = {ticker: ticker, value: "price", time: "6m"};
-    const stockTwo = {ticker: ticker, value: "vol", time: "6m"};
-    const stockThree = {ticker: ticker, value: "price", time: "6m"};
-    const stockFour = {ticker: ticker, value: "price", time: "6m"};
-
-    updateStock(0, stockZero);
-    updateStock(1, stockOne);
-    updateStock(2, stockTwo);
-    updateStock(3, stockThree);
-
-
-
+    const stock = {ticker: ticker, value: "price", time: "6m"};
+    updateStock(0, stock);
   }
 
   const value = {
-      stocks, updateStock, removeStock, initStock
+      stocks, updateStock, removeStock, initStock, renderPrevious
   }
 
   return (
