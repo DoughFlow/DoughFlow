@@ -11,6 +11,7 @@ const Page = ({ params }: { params: {first:string } }) => {
   const { initStock, updateStock } = useStocks();
   
   const onClick = (event: any) => {setMenu(!menu)};
+  const onClose = (event: any) => {setMenu(true)};
 
   useEffect(() => {
     if (params.first) {
@@ -19,24 +20,21 @@ const Page = ({ params }: { params: {first:string } }) => {
   }, [params.first]);
 
   return (
+
   <div>
-    <div>
+    <div className="absolute z-50">
       { menu ?
-        <div className="absolute top-0 left-0 z-50  text-red-500">
-          <Button onClick={onClick}/>
-        </div> 
+          <Button onClick={onClick} />
         : 
-        <div className="absolute bg-yellow-500 z-50">
           <List />
-        </div>
       }
     </div>
-    <div onClick={onClick}>
+    <div onClick={onClose}>
       <Visualization />
     </div>
   </div>
-    );
-
+    
+  );
 }
 
 export default Page;
