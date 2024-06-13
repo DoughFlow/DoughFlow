@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import List from "@C/List";
+import UI from "@C/UI";
 import Button from "@C/Button";
 import { useStocks } from "@C/StockContext";
 import Visualization from "@C/Visualization";
@@ -26,7 +27,7 @@ const Page = ({ params }: { params: {first:string } }) => {
       { menu ?
           <Button onClick={onClick} />
         : 
-          <List />
+            <UI />
       }
     </div>
     <div onClick={onClose}>
