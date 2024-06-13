@@ -9,7 +9,7 @@ interface Result {
   name: string;
 }
 
-const Search = () => {
+const Search: React.FC<{initText:string}> = ({initText})  => {
   const [query, setQuery] = useState<string>("");
   const [results, setResults] = useState<Result[]>([]);
 
@@ -27,7 +27,7 @@ const Search = () => {
     const { value } = event.target;
     setQuery(value);
     if (value.length > 0) {
-      const searchResults = fuse.search(value).slice(0, 5);  // Limit to top 3 results
+      const searchResults = fuse.search(value).slice(0, 3);  // Limit to top 3 results
       setResults(searchResults.map(result => result.item));
     } else {
       setResults([]);
@@ -35,13 +35,13 @@ const Search = () => {
   };
 
   return (
-    <div className='border-2'>
+    <div className=''>
       <input
         type="text"
         value={query}
         onChange={handleSearch}
-        placeholder="Search for a stock..."
-        className="mb-2 bg-black"
+        placeholder={initText}
+        className="text-black"
       />
       {results.length > 0 && (
         <ul>
