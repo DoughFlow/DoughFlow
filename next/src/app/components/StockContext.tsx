@@ -1,6 +1,6 @@
 "use client"
 import { createContext, useContext, useState, ReactNode, useEffect } from "react";
-import { fetchData } from "@/_utils/fetchData";
+import { fetchPriceData, fetchIndicatorData } from "@/_utils/fetchData";
 import {candlestickSVG, barSVG, lineSVG} from "@/_utils/generateSVG";
 
 export interface Stock {
@@ -55,7 +55,6 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
       else {
         updatedStocks.push(newStock);
       }
-      console.log("Updated Stocks", updatedStocks);
       localUpdatedStocks = updatedStocks
       const sLength = localUpdatedStocks.length;
       const height = window.innerHeight;
@@ -94,9 +93,19 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
       }
       return updatedStocks;
     });
-    const data = await fetchData(newStock.ticker, newStock.time, newStock.value);
-    const svg = candlestickSVG(data, svgHeight, svgWidth);
-    updateSvg(index, svg);
+    if (newStock.value === "price") {
+      const data = await fetchPriceData(newStock.ticker, newStock.time, newStock.value);
+      const svg = candlestickSVG(data, svgHeight, svgWidth);
+      updateSvg(index, svg);
+    } else if (newStock.value === "vol") {
+      const data = await fetchIndicatorData(newStock.ticker, newStock.time, newStock.value);
+      const svg = barSVG(data, svgHeight, svgWidth);
+      updateSvg(index, svg);
+    } else {
+      const data = await fetchIndicatorData(newStock.ticker, newStock.time, newStock.value);
+      const svg = lineSVG(data, svgHeight, svgWidth);
+      updateSvg(index, svg);
+    }
   };
 
   const updateSvg = (index: number, updatedSvg: string): void => {
@@ -108,7 +117,6 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
       return prevStocks.map((stock, i) => {
         if (i === index) {
           const updatedStock = { ...stock, svg: updatedSvg };
-          console.log("svg updated", updatedStock);
           return updatedStock;
         }
         return stock;

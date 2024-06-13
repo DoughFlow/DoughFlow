@@ -1,12 +1,8 @@
 import { useStocks } from "@C/StockContext";
-import { Stock } from "@C/StockContext";
 
 const Visualization = () => {
 
   const { stocks } = useStocks();
-  
-  const length = stocks.length;
-  
   const renderStockSVG = (index: number) => {
       if (index < stocks.length && stocks[index] && stocks[index].svg) {
         return (

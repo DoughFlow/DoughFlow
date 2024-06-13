@@ -7,7 +7,7 @@ import Search from '@C/Search';
 const List = () => {
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const [showEdit, setShowEdit] = useState<boolean>(false);
-  const { stocks, removeStock, updateStock } = useStocks();
+  const { stocks, updateStock, removeAndRender } = useStocks();
 
   const startEdit = (index: number): void => {
     setEditingIndex(index);
@@ -33,7 +33,7 @@ const List = () => {
             <div>Ticker: {stock.ticker}</div>
             <div>Value: {stock.value}</div>
             <div>Time: {stock.time}</div>
-            <div>Svg: {stock.svg}</div>
+            <div>{stock.svg ? 'Svg: true' : 'Svg is empty'}</div>
           </div>
         ))}
       </div>
@@ -58,7 +58,7 @@ const List = () => {
                 <div>Value: {stock.value}</div>
                 <div>Time: {stock.time}</div>
                 <div onClick={() => startEdit(index)}> Pencil </div>
-                <div onClick={() => removeStock(index)}> Trash </div>
+                <div onClick={() => removeAndRender(index)}> Trash </div>
               </div>
             )
           )}
