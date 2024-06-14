@@ -30,11 +30,18 @@ type GlobalContextProviderProps = {
 export const StockContextProvider = ({children }: GlobalContextProviderProps) => {
   const [stocks, setStocks ] = useState<Stock[]>([]);
   useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>;
     const handleResize = () => {
-      stocks.forEach((stock, i) => updateStock(i, stock));
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        stocks.forEach((stock, i) => updateStock(i, stock));
+      }, 300);
     };
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      clearTimeout(timer);
+    };
   }, [stocks]);
 
   const renderPrevious = async (): Promise<void> => {
@@ -135,7 +142,6 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
             ...prevStocks.slice(0, index),
             ...prevStocks.slice(index + 1)
         ];
-        console.log("Stock removed", localUpdatedStocks);
         return localUpdatedStocks;
     });
     await new Promise(resolve => setTimeout(resolve, 0));

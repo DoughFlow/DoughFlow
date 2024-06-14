@@ -15,7 +15,6 @@ const Context = () => {
           Pre-Header
         </div>
         <Controller />
-        <VisualizationContext/>
         <div dangerouslySetInnerHTML={{ __html: svg || '' }} />
         {stocks.map((stock, index) => (
           <div key={index}>

@@ -41,7 +41,7 @@ const List = () => {
         <div key={index} className=''>
           {index === editingIndex && showEdit ? (
             <div className='flex flex-row justify-between'>
-              <Search />
+              <Search initText='beast'/>
               <div>
                 Dropdown for value
               </div>

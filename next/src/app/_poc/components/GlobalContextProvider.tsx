@@ -1,6 +1,5 @@
 "use client"
 import { createContext, useContext, useState, ReactNode } from "react";
-import { fetchStocks } from "../_utils/fetchStocks";
 
 export interface Stock {
   ticker: string;
@@ -38,23 +37,23 @@ export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) 
   const [stocks, setStocks] = useState<Stock[]>(Array(5).fill({ ticker: "", value: "", time: "", svgs: { "3m": "", "6m": "", "1y":"", "3y":"", "5y":"" }}));
   const [svgEdited, setSvgEdited] = useState<boolean>(false);
 
-  const renderPreviousSvgs = async (index: number) => {
-    const height = window.innerHeight;
-    const width = window.innerWidth;
-    const layout = getStockLayout();
+  // const renderPreviousSvgs = async (index: number) => {
+  //   const height = window.innerHeight;
+  //   const width = window.innerWidth;
+  //   const layout = getStockLayout();
 
-    for (let i = 0; i < index; i++) {
-      const stock = stocks[i];
-      if (stock.ticker !== "") {
-        Object.keys(stock.svgs).forEach(async (time) => {
-          const updatedSvg = stock.svgs[time];
-          if (updatedSvg !== "") {
-            await fetchStocks(i, height, width, layout, stock.ticker, stock.value, stock.time, updateSvg);
-          }
-        });
-      }
-    }
-  };
+  //   for (let i = 0; i < index; i++) {
+  //     const stock = stocks[i];
+  //     if (stock.ticker !== "") {
+  //       Object.keys(stock.svgs).forEach(async (time) => {
+  //         const updatedSvg = stock.svgs[time];
+  //         if (updatedSvg !== "") {
+  //           await fetchStocks(i, height, width, layout, stock.ticker, stock.value, stock.time, updateSvg);
+  //         }
+  //       });
+  //     }
+  //   }
+  // };
 
   const removeStock = (index: number) => {
     setStocks(prevStocks => {
@@ -66,7 +65,7 @@ export const GlobalContextProvider = ({ children }: GlobalContextProviderProps) 
 
   const updateStock = (index: number, updatedStock: Partial<Stock>) => {
     if (stocks[index].ticker === "") {
-      renderPreviousSvgs(index);
+      // renderPreviousSvgs(index);
     }
 
     setStocks(prevStocks => prevStocks.map((stock, i) => 

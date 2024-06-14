@@ -1,7 +1,7 @@
 "use client"
 import React, {useState} from 'react';
 import Fuse from 'fuse.js';
-import stockList from "../stock_list.json";
+// import stockList from "../stock_list.json";
 
 
 interface Result {
@@ -21,25 +21,25 @@ const Search = () => {
     threshold: 0.3
   };
 
-  const fuse = new Fuse(stockList, options);
+  // const fuse = new Fuse(stockList, options);
 
-  const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { value } = event.target;
-    setQuery(value);
-    if (value.length > 0) {
-      const searchResults = fuse.search(value).slice(0, 5);  // Limit to top 3 results
-      setResults(searchResults.map(result => result.item));
-    } else {
-      setResults([]);
-    }
-  };
+  // const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   const { value } = event.target;
+  //   setQuery(value);
+  //   if (value.length > 0) {
+  //     const searchResults = fuse.search(value).slice(0, 5);  // Limit to top 3 results
+  //     setResults(searchResults.map(result => result.item));
+  //   } else {
+  //     setResults([]);
+  //   }
+  // };
 
   return (
     <div className='border-2'>
       <input
         type="text"
         value={query}
-        onChange={handleSearch}
+        // onChange={handleSearch}
         placeholder="Search for a stock..."
         className="mb-2 bg-black"
       />

@@ -26,7 +26,6 @@ export const fetchPriceData = async (ticker: string, time: string, value: string
     low_price: dp.low_price,
     close_price: dp.close_price,
   }));
-  console.log(data);
   return data;
 }
 

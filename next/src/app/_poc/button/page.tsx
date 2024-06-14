@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 const Page = () => {
 
-  return(<div><Button/></div>);
+  return(<div></div>);
 };
 
 export default Page;
