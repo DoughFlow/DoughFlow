@@ -1,0 +1,6534 @@
+[
+    {
+        "ticker": "AACG",
+        "company": "ATA Creativity Global American Depositary Shares"
+    },
+    {
+        "ticker": "AADI",
+        "company": "Aadi Bioscience Inc. Common Stock"
+    },
+    {
+        "ticker": "AAL",
+        "company": "American Airlines Group Inc. Common Stock"
+    },
+    {
+        "ticker": "AAME",
+        "company": "Atlantic American Corporation Common Stock"
+    },
+    {
+        "ticker": "AAN",
+        "company": "Aarons Holdings Company Inc. Common Stock "
+    },
+    {
+        "ticker": "AAON",
+        "company": "AAON Inc. Common Stock"
+    },
+    {
+        "ticker": "AAPL",
+        "company": "Apple Inc. Common Stock"
+    },
+    {
+        "ticker": "ABBV",
+        "company": "AbbVie Inc. Common Stock"
+    },
+    {
+        "ticker": "ABCB",
+        "company": "Ameris Bancorp Common Stock"
+    },
+    {
+        "ticker": "ABEV",
+        "company": "Ambev S.A. American Depositary Shares (Each representing 1 Common Share)"
+    },
+    {
+        "ticker": "ABIO",
+        "company": "ARCA biopharma Inc. Common Stock"
+    },
+    {
+        "ticker": "ABT",
+        "company": "Abbott Laboratories Common Stock"
+    },
+    {
+        "ticker": "ABTS",
+        "company": "Abits Group Inc Ordinary Shares"
+    },
+    {
+        "ticker": "AC",
+        "company": "Associated Capital Group Inc. Common Stock"
+    },
+    {
+        "ticker": "ACAD",
+        "company": "ACADIA Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "ACGL",
+        "company": "Arch Capital Group Ltd. Common Stock"
+    },
+    {
+        "ticker": "ACHC",
+        "company": "Acadia Healthcare Company Inc. Common Stock"
+    },
+    {
+        "ticker": "ACIW",
+        "company": "ACI Worldwide Inc. Common Stock"
+    },
+    {
+        "ticker": "ACLS",
+        "company": "Axcelis Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "ACN",
+        "company": "Accenture plc Class A Ordinary Shares (Ireland)"
+    },
+    {
+        "ticker": "ACR",
+        "company": "ACRES Commercial Realty Corp. Common Stock"
+    },
+    {
+        "ticker": "ACRE",
+        "company": "Ares Commercial Real Estate Corporation Common Stock"
+    },
+    {
+        "ticker": "ACST",
+        "company": "Acasti Pharma Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "ADBE",
+        "company": "Adobe Inc. Common Stock"
+    },
+    {
+        "ticker": "ADD",
+        "company": "Color Star Technology Co. Ltd. Class A Ordinary Shares"
+    },
+    {
+        "ticker": "ADI",
+        "company": "Analog Devices Inc. Common Stock"
+    },
+    {
+        "ticker": "ADIL",
+        "company": "Adial Pharmaceuticals Inc Common Stock"
+    },
+    {
+        "ticker": "ADM",
+        "company": "Archer-Daniels-Midland Company Common Stock"
+    },
+    {
+        "ticker": "ADN",
+        "company": "Advent Technologies Holdings Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "ADP",
+        "company": "Automatic Data Processing Inc. Common Stock"
+    },
+    {
+        "ticker": "ADSK",
+        "company": "Autodesk Inc. Common Stock"
+    },
+    {
+        "ticker": "AEE",
+        "company": "Ameren Corporation Common Stock"
+    },
+    {
+        "ticker": "AEHL",
+        "company": "Antelope Enterprise Holdings Limited Class A Ordinary Shares"
+    },
+    {
+        "ticker": "AEIS",
+        "company": "Advanced Energy Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "AEM",
+        "company": "Agnico Eagle Mines Limited Common Stock"
+    },
+    {
+        "ticker": "AEMD",
+        "company": "Aethlon Medical Inc. Common Stock"
+    },
+    {
+        "ticker": "AEP",
+        "company": "American Electric Power Company Inc. Common Stock"
+    },
+    {
+        "ticker": "AEZS",
+        "company": "Aeterna Zentaris Inc. Common Stock"
+    },
+    {
+        "ticker": "AFL",
+        "company": "AFLAC Incorporated Common Stock"
+    },
+    {
+        "ticker": "AGMH",
+        "company": "AGM Group Holdings Inc. Class A Ordinary Shares"
+    },
+    {
+        "ticker": "AGNC",
+        "company": "AGNC Investment Corp. Common Stock"
+    },
+    {
+        "ticker": "AGS",
+        "company": "PlayAGS Inc. Common Stock"
+    },
+    {
+        "ticker": "AGYS",
+        "company": "Agilysys Inc. Common Stock (DE)"
+    },
+    {
+        "ticker": "AHG",
+        "company": "Akso Health Group ADS"
+    },
+    {
+        "ticker": "AHH",
+        "company": "Armada Hoffler Properties Inc. Common Stock"
+    },
+    {
+        "ticker": "AHT",
+        "company": "Ashford Hospitality Trust Inc Common Stock"
+    },
+    {
+        "ticker": "AIG",
+        "company": "American International Group Inc. New Common Stock"
+    },
+    {
+        "ticker": "AIHS",
+        "company": "Senmiao Technology Limited Common Stock"
+    },
+    {
+        "ticker": "AIRG",
+        "company": "Airgain Inc. Common Stock"
+    },
+    {
+        "ticker": "AIRT",
+        "company": "Air T Inc. Common Stock"
+    },
+    {
+        "ticker": "AIU",
+        "company": "Meta Data Limited ADS"
+    },
+    {
+        "ticker": "AJG",
+        "company": "Arthur J. Gallagher & Co. Common Stock"
+    },
+    {
+        "ticker": "AJX",
+        "company": "Great Ajax Corp. Common Stock"
+    },
+    {
+        "ticker": "AKAM",
+        "company": "Akamai Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "AKTS",
+        "company": "Akoustis Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "AKTX",
+        "company": "Akari Therapeutics plc ADS"
+    },
+    {
+        "ticker": "ALBT",
+        "company": "Avalon GloboCare Corp. Common Stock"
+    },
+    {
+        "ticker": "ALC",
+        "company": "Alcon Inc. Ordinary Shares"
+    },
+    {
+        "ticker": "ALGN",
+        "company": "Align Technology Inc. Common Stock"
+    },
+    {
+        "ticker": "ALKS",
+        "company": "Alkermes plc Ordinary Shares"
+    },
+    {
+        "ticker": "ALL",
+        "company": "Allstate Corporation (The) Common Stock"
+    },
+    {
+        "ticker": "ALNY",
+        "company": "Alnylam Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "ALPP",
+        "company": "Alpine 4 Holdings Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "ALRM",
+        "company": "Alarm.com Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "ALTG",
+        "company": "Alta Equipment Group Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "ALTR",
+        "company": "Altair Engineering Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "AMAT",
+        "company": "Applied Materials Inc. Common Stock"
+    },
+    {
+        "ticker": "AMBC",
+        "company": "Ambac Financial Group Inc. Common Stock"
+    },
+    {
+        "ticker": "AMD",
+        "company": "Advanced Micro Devices Inc. Common Stock"
+    },
+    {
+        "ticker": "AME",
+        "company": "AMETEK Inc."
+    },
+    {
+        "ticker": "AMED",
+        "company": "Amedisys Inc Common Stock"
+    },
+    {
+        "ticker": "AMGN",
+        "company": "Amgen Inc. Common Stock"
+    },
+    {
+        "ticker": "AMKR",
+        "company": "Amkor Technology Inc. Common Stock"
+    },
+    {
+        "ticker": "AMP",
+        "company": "Ameriprise Financial Inc. Common Stock"
+    },
+    {
+        "ticker": "AMPH",
+        "company": "Amphastar Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "AMPY",
+        "company": "Amplify Energy Corp. Common Stock"
+    },
+    {
+        "ticker": "AMT",
+        "company": "American Tower Corporation (REIT) Common Stock"
+    },
+    {
+        "ticker": "AMX",
+        "company": "America Movil S.A.B. de C.V. American Depositary Shares (each representing the right to receive twenty (20) Series B Shares"
+    },
+    {
+        "ticker": "AMZN",
+        "company": "Amazon.com Inc. Common Stock"
+    },
+    {
+        "ticker": "ANDE",
+        "company": "Andersons Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "ANET",
+        "company": "Arista Networks Inc. Common Stock"
+    },
+    {
+        "ticker": "ANSS",
+        "company": "ANSYS Inc. Common Stock"
+    },
+    {
+        "ticker": "ANTE",
+        "company": "AirNet Technology Inc. American Depositary Shares"
+    },
+    {
+        "ticker": "ANY",
+        "company": "Sphere 3D Corp. Common Shares"
+    },
+    {
+        "ticker": "AON",
+        "company": "Aon plc Class A Ordinary Shares (Ireland)"
+    },
+    {
+        "ticker": "AP",
+        "company": "Ampco-Pittsburgh Corporation Common Stock"
+    },
+    {
+        "ticker": "APA",
+        "company": "APA Corporation Common Stock"
+    },
+    {
+        "ticker": "APCX",
+        "company": "AppTech Payments Corp. Common Stock"
+    },
+    {
+        "ticker": "APD",
+        "company": "Air Products and Chemicals Inc. Common Stock"
+    },
+    {
+        "ticker": "APDN",
+        "company": "Applied DNA Sciences Inc. Common Stock"
+    },
+    {
+        "ticker": "APH",
+        "company": "Amphenol Corporation Common Stock"
+    },
+    {
+        "ticker": "APLS",
+        "company": "Apellis Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "APM",
+        "company": "Aptorum Group Limited Class A Ordinary Shares"
+    },
+    {
+        "ticker": "APPF",
+        "company": "AppFolio Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "APPN",
+        "company": "Appian Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "APTO",
+        "company": "Aptose Biosciences Inc. Common Shares"
+    },
+    {
+        "ticker": "APVO",
+        "company": "Aptevo Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "APWC",
+        "company": "Asia Pacific Wire & Cable Corporation Ltd. Ordinary Shares (Bermuda)"
+    },
+    {
+        "ticker": "APYX",
+        "company": "Apyx Medical Corporation Common Stock"
+    },
+    {
+        "ticker": "AQB",
+        "company": "AquaBounty Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "AQMS",
+        "company": "Aqua Metals Inc. Common Stock"
+    },
+    {
+        "ticker": "ARC",
+        "company": "ARC Document Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "ARCB",
+        "company": "ArcBest Corporation Common Stock"
+    },
+    {
+        "ticker": "ARE",
+        "company": "Alexandria Real Estate Equities Inc. Common Stock"
+    },
+    {
+        "ticker": "ARES",
+        "company": "Ares Management Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "ARGX",
+        "company": "argenx SE American Depositary Shares"
+    },
+    {
+        "ticker": "ARL",
+        "company": "American Realty Investors Inc. Common Stock"
+    },
+    {
+        "ticker": "ARLP",
+        "company": "Alliance Resource Partners L.P. Common Units representing Limited Partners Interests"
+    },
+    {
+        "ticker": "ARTW",
+        "company": "Art's-Way Manufacturing Co. Inc. Common Stock"
+    },
+    {
+        "ticker": "ARVN",
+        "company": "Arvinas Inc. Common Stock"
+    },
+    {
+        "ticker": "ARWR",
+        "company": "Arrowhead Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "ASC",
+        "company": "Ardmore Shipping Corporation Common Stock"
+    },
+    {
+        "ticker": "ASIX",
+        "company": "AdvanSix Inc. Common Stock "
+    },
+    {
+        "ticker": "ASLN",
+        "company": "ASLAN Pharmaceuticals Limited American Depositary Shares"
+    },
+    {
+        "ticker": "ASML",
+        "company": "ASML Holding N.V. New York Registry Shares"
+    },
+    {
+        "ticker": "ASND",
+        "company": "Ascendis Pharma A/S American Depositary Shares"
+    },
+    {
+        "ticker": "ASPS",
+        "company": "Altisource Portfolio Solutions S.A. Common Stock"
+    },
+    {
+        "ticker": "ASRV",
+        "company": "AmeriServ Financial Inc. Common Stock"
+    },
+    {
+        "ticker": "ASTC",
+        "company": "Astrotech Corporation (DE) Common Stock"
+    },
+    {
+        "ticker": "ASTH",
+        "company": "Astrana Health Inc. Common Stock"
+    },
+    {
+        "ticker": "ASTI",
+        "company": "Ascent Solar Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "ASX",
+        "company": "ASE Technology Holding Co. Ltd. American Depositary Shares (each representing Two Common Shares) "
+    },
+    {
+        "ticker": "ASYS",
+        "company": "Amtech Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "ATEC",
+        "company": "Alphatec Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "ATHE",
+        "company": "Alterity Therapeutics Limited American Depositary Shares"
+    },
+    {
+        "ticker": "ATIF",
+        "company": "ATIF Holdings Limited Ordinary Shares"
+    },
+    {
+        "ticker": "ATNF",
+        "company": "180 Life Sciences Corp. Common Stock"
+    },
+    {
+        "ticker": "ATPC",
+        "company": "Agape ATP Corporation Common Stock"
+    },
+    {
+        "ticker": "ATXI",
+        "company": "Avenue Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "AVAV",
+        "company": "AeroVironment Inc. Common Stock"
+    },
+    {
+        "ticker": "AVB",
+        "company": "AvalonBay Communities Inc. Common Stock"
+    },
+    {
+        "ticker": "AVD",
+        "company": "American Vanguard Corporation Common Stock ($0.10 Par Value)"
+    },
+    {
+        "ticker": "AVGO",
+        "company": "Broadcom Inc. Common Stock"
+    },
+    {
+        "ticker": "AVGR",
+        "company": "Avinger Inc. Common Stock"
+    },
+    {
+        "ticker": "AVRO",
+        "company": "AVROBIO Inc. Common Stock"
+    },
+    {
+        "ticker": "AVT",
+        "company": "Avnet Inc. Common Stock"
+    },
+    {
+        "ticker": "AVTX",
+        "company": "Avalo Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "AWH",
+        "company": "Aspira Women's Health Inc. Common Stock"
+    },
+    {
+        "ticker": "AWK",
+        "company": "American Water Works Company Inc. Common Stock"
+    },
+    {
+        "ticker": "AWRE",
+        "company": "Aware Inc. Common Stock"
+    },
+    {
+        "ticker": "AXDX",
+        "company": "Accelerate Diagnostics Inc. Common Stock"
+    },
+    {
+        "ticker": "AXNX",
+        "company": "Axonics Inc. Common Stock"
+    },
+    {
+        "ticker": "AXON",
+        "company": "Axon Enterprise Inc. Common Stock"
+    },
+    {
+        "ticker": "AXP",
+        "company": "American Express Company Common Stock"
+    },
+    {
+        "ticker": "AXSM",
+        "company": "Axsome Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "AY",
+        "company": "Atlantica Sustainable Infrastructure plc Ordinary Shares"
+    },
+    {
+        "ticker": "AYRO",
+        "company": "AYRO Inc. Common Stock"
+    },
+    {
+        "ticker": "AYTU",
+        "company": "Aytu BioPharma Inc.  Common Stock"
+    },
+    {
+        "ticker": "AZN",
+        "company": "AstraZeneca PLC American Depositary Shares"
+    },
+    {
+        "ticker": "AZO",
+        "company": "AutoZone Inc. Common Stock"
+    },
+    {
+        "ticker": "AZPN",
+        "company": "Aspen Technology Inc. Common Stock"
+    },
+    {
+        "ticker": "AZTA",
+        "company": "Azenta Inc."
+    },
+    {
+        "ticker": "AZUL",
+        "company": "Azul S.A. American Depositary Shares (each representing three preferred shares)"
+    },
+    {
+        "ticker": "BA",
+        "company": "Boeing Company (The) Common Stock"
+    },
+    {
+        "ticker": "BABA",
+        "company": "Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share"
+    },
+    {
+        "ticker": "BAC",
+        "company": "Bank of America Corporation Common Stock"
+    },
+    {
+        "ticker": "BACK",
+        "company": "IMAC Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "BALL",
+        "company": "Ball Corporation Common Stock"
+    },
+    {
+        "ticker": "BALY",
+        "company": "Bally's Corporation Common Stock"
+    },
+    {
+        "ticker": "BANF",
+        "company": "BancFirst Corporation Common Stock"
+    },
+    {
+        "ticker": "BATRA",
+        "company": "Atlanta Braves Holdings Inc. Series A Common Stock"
+    },
+    {
+        "ticker": "BATRK",
+        "company": "Atlanta Braves Holdings Inc. Series C Common Stock"
+    },
+    {
+        "ticker": "BAX",
+        "company": "Baxter International Inc. Common Stock"
+    },
+    {
+        "ticker": "BBD",
+        "company": "Banco Bradesco Sa American Depositary Shares"
+    },
+    {
+        "ticker": "BBDO",
+        "company": "Banco Bradesco Sa American Depositary Shares (each representing one Common Share)"
+    },
+    {
+        "ticker": "BBGI",
+        "company": "Beasley Broadcast Group Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "BBLG",
+        "company": "Bone Biologics Corp Common Stock"
+    },
+    {
+        "ticker": "BBVA",
+        "company": "Banco Bilbao Vizcaya Argentaria S.A. Common Stock"
+    },
+    {
+        "ticker": "BBW",
+        "company": "Build-A-Bear Workshop Inc. Common Stock"
+    },
+    {
+        "ticker": "BCDA",
+        "company": "BioCardia Inc. Common Stock"
+    },
+    {
+        "ticker": "BCE",
+        "company": "BCE Inc. Common Stock"
+    },
+    {
+        "ticker": "BCLI",
+        "company": "Brainstorm Cell Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "BCOW",
+        "company": "1895 Bancorp of Wisconsin Inc. (MD) Common Stock"
+    },
+    {
+        "ticker": "BCPC",
+        "company": "Balchem Corporation Common Stock"
+    },
+    {
+        "ticker": "BCS",
+        "company": "Barclays PLC Common Stock"
+    },
+    {
+        "ticker": "BCTX",
+        "company": "BriaCell Therapeutics Corp. Common Shares"
+    },
+    {
+        "ticker": "BDX",
+        "company": "Becton Dickinson and Company Common Stock"
+    },
+    {
+        "ticker": "BECN",
+        "company": "Beacon Roofing Supply Inc. Common Stock"
+    },
+    {
+        "ticker": "BEDU",
+        "company": "Bright Scholar Education Holdings Limited American Depositary Shares each  representing four Class A Ordinary Share"
+    },
+    {
+        "ticker": "BEST",
+        "company": "BEST Inc. American Depositary Shares each representing twenty (20) Class A Ordinary Shares"
+    },
+    {
+        "ticker": "BGC",
+        "company": "BGC Group Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "BGFV",
+        "company": "Big 5 Sporting Goods Corporation Common Stock"
+    },
+    {
+        "ticker": "BGNE",
+        "company": "BeiGene Ltd. American Depositary Shares"
+    },
+    {
+        "ticker": "BGSF",
+        "company": "BGSF Inc. Common Stock"
+    },
+    {
+        "ticker": "BH",
+        "company": "Biglari Holdings Inc. Class B Common Stock"
+    },
+    {
+        "ticker": "BHF",
+        "company": "Brighthouse Financial Inc. Common Stock"
+    },
+    {
+        "ticker": "BHP",
+        "company": "BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares)"
+    },
+    {
+        "ticker": "BHR",
+        "company": "Braemar Hotels & Resorts Inc. Common Stock"
+    },
+    {
+        "ticker": "BIDU",
+        "company": "Baidu Inc. ADS"
+    },
+    {
+        "ticker": "BIG",
+        "company": "Big Lots Inc. Common Stock"
+    },
+    {
+        "ticker": "BIIB",
+        "company": "Biogen Inc. Common Stock"
+    },
+    {
+        "ticker": "BILI",
+        "company": "Bilibili Inc. American Depositary Shares"
+    },
+    {
+        "ticker": "BIMI",
+        "company": "BIMI International Medical Inc. Common Stock"
+    },
+    {
+        "ticker": "BIOL",
+        "company": "Biolase Inc. Common Stock"
+    },
+    {
+        "ticker": "BK",
+        "company": "The Bank of New York Mellon Corporation Common Stock"
+    },
+    {
+        "ticker": "BKNG",
+        "company": "Booking Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "BKYI",
+        "company": "BIO-key International Inc. Common Stock"
+    },
+    {
+        "ticker": "BL",
+        "company": "BlackLine Inc. Common Stock"
+    },
+    {
+        "ticker": "BLDR",
+        "company": "Builders FirstSource Inc. Common Stock"
+    },
+    {
+        "ticker": "BLIN",
+        "company": "Bridgeline Digital Inc. Common Stock"
+    },
+    {
+        "ticker": "BLK",
+        "company": "BlackRock Inc. Common Stock"
+    },
+    {
+        "ticker": "BLKB",
+        "company": "Blackbaud Inc. Common Stock"
+    },
+    {
+        "ticker": "BLMN",
+        "company": "Bloomin' Brands Inc. Common Stock"
+    },
+    {
+        "ticker": "BLRX",
+        "company": "BioLineRx Ltd. American Depositary Shares"
+    },
+    {
+        "ticker": "BMO",
+        "company": "Bank Of Montreal Common Stock"
+    },
+    {
+        "ticker": "BMRA",
+        "company": "Biomerica Inc. Common Stock"
+    },
+    {
+        "ticker": "BMRN",
+        "company": "BioMarin Pharmaceutical Inc. Common Stock"
+    },
+    {
+        "ticker": "BMY",
+        "company": "Bristol-Myers Squibb Company Common Stock"
+    },
+    {
+        "ticker": "BN",
+        "company": "Brookfield Corporation Class A Limited Voting Shares"
+    },
+    {
+        "ticker": "BNED",
+        "company": "Barnes & Noble Education Inc Common Stock"
+    },
+    {
+        "ticker": "BNGO",
+        "company": "Bionano Genomics Inc. Common Stock"
+    },
+    {
+        "ticker": "BNS",
+        "company": "Bank Nova Scotia Halifax Pfd 3 Ordinary Shares"
+    },
+    {
+        "ticker": "BNTC",
+        "company": "Benitec Biopharma Inc. Common Stock"
+    },
+    {
+        "ticker": "BOC",
+        "company": "Boston Omaha Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "BOKF",
+        "company": "BOK Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "BOSC",
+        "company": "B.O.S. Better Online Solutions Common Stock"
+    },
+    {
+        "ticker": "BOTJ",
+        "company": "Bank of the James Financial Group Inc. Common Stock"
+    },
+    {
+        "ticker": "BOXL",
+        "company": "Boxlight Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "BP",
+        "company": "BP p.l.c. Common Stock"
+    },
+    {
+        "ticker": "BPMC",
+        "company": "Blueprint Medicines Corporation Common Stock"
+    },
+    {
+        "ticker": "BPOP",
+        "company": "Popular Inc. Common Stock"
+    },
+    {
+        "ticker": "BPT",
+        "company": "BP Prudhoe Bay Royalty Trust Common Stock"
+    },
+    {
+        "ticker": "BPTH",
+        "company": "Bio-Path Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "BR",
+        "company": "Broadridge Financial Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "BRFH",
+        "company": "Barfresh Food Group Inc. Common Stock"
+    },
+    {
+        "ticker": "BRKR",
+        "company": "Bruker Corporation Common Stock"
+    },
+    {
+        "ticker": "BRO",
+        "company": "Brown & Brown Inc. Common Stock"
+    },
+    {
+        "ticker": "BRT",
+        "company": "BRT Apartments Corp. (MD) Common Stock"
+    },
+    {
+        "ticker": "BRTX",
+        "company": "BioRestorative Therapies Inc. Common Stock (NV)"
+    },
+    {
+        "ticker": "BSBR",
+        "company": "Banco Santander Brasil SA American Depositary Shares each representing one unit"
+    },
+    {
+        "ticker": "BSX",
+        "company": "Boston Scientific Corporation Common Stock"
+    },
+    {
+        "ticker": "BTCM",
+        "company": "BIT Mining Limited ADS"
+    },
+    {
+        "ticker": "BTCS",
+        "company": "BTCS Inc. Common Stock"
+    },
+    {
+        "ticker": "BTCT",
+        "company": "BTC Digital Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "BTCY",
+        "company": "Biotricity Inc. Common Stock"
+    },
+    {
+        "ticker": "BTI",
+        "company": "British American Tobacco  Industries p.l.c. Common Stock ADR"
+    },
+    {
+        "ticker": "BUD",
+        "company": "Anheuser-Busch Inbev SA Sponsored ADR (Belgium)"
+    },
+    {
+        "ticker": "BW",
+        "company": "Babcock & Wilcox Enterprises Inc. Common Stock"
+    },
+    {
+        "ticker": "BWEN",
+        "company": "Broadwind Inc. Common Stock"
+    },
+    {
+        "ticker": "BX",
+        "company": "Blackstone Inc. Common Stock"
+    },
+    {
+        "ticker": "BYFC",
+        "company": "Broadway Financial Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "BYU",
+        "company": "BAIYU Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "C",
+        "company": "Citigroup Inc. Common Stock"
+    },
+    {
+        "ticker": "CACC",
+        "company": "Credit Acceptance Corporation Common Stock"
+    },
+    {
+        "ticker": "CAH",
+        "company": "Cardinal Health Inc. Common Stock"
+    },
+    {
+        "ticker": "CAKE",
+        "company": "Cheesecake Factory Incorporated (The) Common Stock"
+    },
+    {
+        "ticker": "CALM",
+        "company": "Cal-Maine Foods Inc. Common Stock"
+    },
+    {
+        "ticker": "CAMT",
+        "company": "Camtek Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "CANG",
+        "company": "Cango Inc. American Depositary Shares  each representing two (2) Class A Ordinary Shares"
+    },
+    {
+        "ticker": "CAR",
+        "company": "Avis Budget Group Inc. Common Stock"
+    },
+    {
+        "ticker": "CARA",
+        "company": "Cara Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "CARG",
+        "company": "CarGurus Inc. Class A Common Stock "
+    },
+    {
+        "ticker": "CARM",
+        "company": "Carisma Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "CARV",
+        "company": "Carver Bancorp Inc. Common Stock"
+    },
+    {
+        "ticker": "CASI",
+        "company": "CASI Pharmaceuticals Inc. Ordinary Shares"
+    },
+    {
+        "ticker": "CASY",
+        "company": "Casey's General Stores Inc. Common Stock"
+    },
+    {
+        "ticker": "CAT",
+        "company": "Caterpillar Inc. Common Stock"
+    },
+    {
+        "ticker": "CATO",
+        "company": "Cato Corporation (The) Class A Common Stock"
+    },
+    {
+        "ticker": "CATY",
+        "company": "Cathay General Bancorp Common Stock"
+    },
+    {
+        "ticker": "CB",
+        "company": "Chubb Limited  Common Stock"
+    },
+    {
+        "ticker": "CBRE",
+        "company": "CBRE Group Inc Common Stock Class A"
+    },
+    {
+        "ticker": "CBSH",
+        "company": "Commerce Bancshares Inc. Common Stock"
+    },
+    {
+        "ticker": "CCEP",
+        "company": "Coca-Cola Europacific Partners plc Ordinary Shares"
+    },
+    {
+        "ticker": "CCI",
+        "company": "Crown Castle Inc. Common Stock"
+    },
+    {
+        "ticker": "CCJ",
+        "company": "Cameco Corporation Common Stock"
+    },
+    {
+        "ticker": "CCLD",
+        "company": "CareCloud Inc. Common Stock"
+    },
+    {
+        "ticker": "CCO",
+        "company": "Clear Channel Outdoor Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "CCOI",
+        "company": "Cogent Communications Holdings Inc."
+    },
+    {
+        "ticker": "CCRD",
+        "company": "CoreCard Corporation Common Stock"
+    },
+    {
+        "ticker": "CDNS",
+        "company": "Cadence Design Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "CDTX",
+        "company": "Cidara Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "CDW",
+        "company": "CDW Corporation Common Stock"
+    },
+    {
+        "ticker": "CEAD",
+        "company": "CEA Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "CELH",
+        "company": "Celsius Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "CELZ",
+        "company": "Creative Medical Technology Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "CENN",
+        "company": "Cenntro Inc. Common Stock"
+    },
+    {
+        "ticker": "CENT",
+        "company": "Central Garden & Pet Company Common Stock"
+    },
+    {
+        "ticker": "CENTA",
+        "company": "Central Garden & Pet Company Class A Common Stock Nonvoting"
+    },
+    {
+        "ticker": "CETX",
+        "company": "Cemtrex Inc. Common Stock"
+    },
+    {
+        "ticker": "CG",
+        "company": "The Carlyle Group Inc. Common Stock"
+    },
+    {
+        "ticker": "CGA",
+        "company": "China Green Agriculture Inc. Common Stock"
+    },
+    {
+        "ticker": "CGNX",
+        "company": "Cognex Corporation Common Stock"
+    },
+    {
+        "ticker": "CHCT",
+        "company": "Community Healthcare Trust Incorporated Common Stock"
+    },
+    {
+        "ticker": "CHD",
+        "company": "Church & Dwight Company Inc. Common Stock"
+    },
+    {
+        "ticker": "CHDN",
+        "company": "Churchill Downs Incorporated Common Stock"
+    },
+    {
+        "ticker": "CHEK",
+        "company": "Check-Cap Ltd. Ordinary Share"
+    },
+    {
+        "ticker": "CHGG",
+        "company": "Chegg Inc. Common Stock"
+    },
+    {
+        "ticker": "CHKP",
+        "company": "Check Point Software Technologies Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "CHMI",
+        "company": "Cherry Hill Mortgage Investment Corporation Common Stock"
+    },
+    {
+        "ticker": "CHNR",
+        "company": "China Natural Resources Inc. Common Stock"
+    },
+    {
+        "ticker": "CHR",
+        "company": "Cheer Holding Inc. Ordinary Share"
+    },
+    {
+        "ticker": "CHRD",
+        "company": "Chord Energy Corporation Common Stock"
+    },
+    {
+        "ticker": "CHRW",
+        "company": "C.H. Robinson Worldwide Inc. Common Stock"
+    },
+    {
+        "ticker": "CHT",
+        "company": "Chunghwa Telecom Co. Ltd."
+    },
+    {
+        "ticker": "CHTR",
+        "company": "Charter Communications Inc. Class A Common Stock New"
+    },
+    {
+        "ticker": "CI",
+        "company": "The Cigna Group Common Stock"
+    },
+    {
+        "ticker": "CIA",
+        "company": "Citizens Inc. Class A Common Stock ($1.00 Par)"
+    },
+    {
+        "ticker": "CIGI",
+        "company": "Colliers International Group Inc. Subordinate Voting Shares"
+    },
+    {
+        "ticker": "CINF",
+        "company": "Cincinnati Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "CIO",
+        "company": "City Office REIT Inc. Common Stock"
+    },
+    {
+        "ticker": "CJJD",
+        "company": "China Jo-Jo Drugstores Inc. (Cayman Islands) Ordinary Shares"
+    },
+    {
+        "ticker": "CKPT",
+        "company": "Checkpoint Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "CL",
+        "company": "Colgate-Palmolive Company Common Stock"
+    },
+    {
+        "ticker": "CLBK",
+        "company": "Columbia Financial Inc. Common Stock"
+    },
+    {
+        "ticker": "CLDT",
+        "company": "Chatham Lodging Trust (REIT) Common Shares of Beneficial Interest"
+    },
+    {
+        "ticker": "CLDX",
+        "company": "Celldex Therapeutics Inc."
+    },
+    {
+        "ticker": "CLGN",
+        "company": "CollPlant Biotechnologies Ltd Ordinary Shares"
+    },
+    {
+        "ticker": "CLIR",
+        "company": "ClearSign Technologies Corporation Common Stock (DE)"
+    },
+    {
+        "ticker": "CLPR",
+        "company": "Clipper Realty Inc. Common Stock"
+    },
+    {
+        "ticker": "CLPS",
+        "company": "CLPS Incorporation Common Stock"
+    },
+    {
+        "ticker": "CLSK",
+        "company": "CleanSpark Inc. Common Stock"
+    },
+    {
+        "ticker": "CLW",
+        "company": "Clearwater Paper Corporation Common Stock"
+    },
+    {
+        "ticker": "CLWT",
+        "company": "Euro Tech Holdings Company Limited Common Stock"
+    },
+    {
+        "ticker": "CM",
+        "company": "Canadian Imperial Bank of Commerce Common Stock"
+    },
+    {
+        "ticker": "CMCM",
+        "company": "Cheetah Mobile Inc. American Depositary Shares each representing fifty (50) Class A Ordinary Shares"
+    },
+    {
+        "ticker": "CMCSA",
+        "company": "Comcast Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "CME",
+        "company": "CME Group Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "CMG",
+        "company": "Chipotle Mexican Grill Inc. Common Stock"
+    },
+    {
+        "ticker": "CMI",
+        "company": "Cummins Inc. Common Stock"
+    },
+    {
+        "ticker": "CMLS",
+        "company": "Cumulus Media Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "CMMB",
+        "company": "Chemomab Therapeutics Ltd. American Depositary Share"
+    },
+    {
+        "ticker": "CMP",
+        "company": "Compass Minerals Intl Inc Common Stock"
+    },
+    {
+        "ticker": "CMPR",
+        "company": "Cimpress plc Ordinary Shares (Ireland)"
+    },
+    {
+        "ticker": "CMTL",
+        "company": "Comtech Telecommunications Corp. Common Stock"
+    },
+    {
+        "ticker": "CNC",
+        "company": "Centene Corporation Common Stock"
+    },
+    {
+        "ticker": "CNET",
+        "company": "ZW Data Action Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "CNF",
+        "company": "CNFinance Holdings Limited American Depositary Shares each representing  twenty (20) Ordinary Shares"
+    },
+    {
+        "ticker": "CNI",
+        "company": "Canadian National Railway Company Common Stock"
+    },
+    {
+        "ticker": "CNQ",
+        "company": "Canadian Natural Resources Limited Common Stock"
+    },
+    {
+        "ticker": "CNVS",
+        "company": "Cineverse Corp. Class A Common Stock"
+    },
+    {
+        "ticker": "COCP",
+        "company": "Cocrystal Pharma Inc. Common Stock"
+    },
+    {
+        "ticker": "CODA",
+        "company": "Coda Octopus Group Inc. Common stock"
+    },
+    {
+        "ticker": "CODX",
+        "company": "Co-Diagnostics Inc. Common Stock"
+    },
+    {
+        "ticker": "COF",
+        "company": "Capital One Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "COKE",
+        "company": "Coca-Cola Consolidated Inc. Common Stock"
+    },
+    {
+        "ticker": "COLB",
+        "company": "Columbia Banking System Inc. Common Stock"
+    },
+    {
+        "ticker": "COO",
+        "company": "The Cooper Companies Inc. Common Stock"
+    },
+    {
+        "ticker": "COOP",
+        "company": "Mr. Cooper Group Inc. Common Stock"
+    },
+    {
+        "ticker": "COP",
+        "company": "ConocoPhillips Common Stock"
+    },
+    {
+        "ticker": "COR",
+        "company": "Cencora Inc. Common Stock"
+    },
+    {
+        "ticker": "CORT",
+        "company": "Corcept Therapeutics Incorporated Common Stock"
+    },
+    {
+        "ticker": "COST",
+        "company": "Costco Wholesale Corporation Common Stock"
+    },
+    {
+        "ticker": "CP",
+        "company": "Canadian Pacific Kansas City Limited Common Shares"
+    },
+    {
+        "ticker": "CPAC",
+        "company": "Cementos Pacasmayo S.A.A. American Depositary Shares (Each representing five Common Shares)"
+    },
+    {
+        "ticker": "CPF",
+        "company": "Central Pacific Financial Corp New"
+    },
+    {
+        "ticker": "CPIX",
+        "company": "Cumberland Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "CPRT",
+        "company": "Copart Inc. (DE) Common Stock"
+    },
+    {
+        "ticker": "CPRX",
+        "company": "Catalyst Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "CPS",
+        "company": "Cooper-Standard Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "CPSH",
+        "company": "CPS Technologies Corp. Common Stock"
+    },
+    {
+        "ticker": "CQP",
+        "company": "Cheniere Energy Partners LP Common Units"
+    },
+    {
+        "ticker": "CREG",
+        "company": "Smart Powerr Corp. Common Stock"
+    },
+    {
+        "ticker": "CREX",
+        "company": "Creative Realities Inc. Common Stock"
+    },
+    {
+        "ticker": "CRH",
+        "company": "CRH PLC Ordinary Shares"
+    },
+    {
+        "ticker": "CRM",
+        "company": "Salesforce Inc. Common Stock"
+    },
+    {
+        "ticker": "CRNX",
+        "company": "Crinetics Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "CROX",
+        "company": "Crocs Inc. Common Stock"
+    },
+    {
+        "ticker": "CRSP",
+        "company": "CRISPR Therapeutics AG Common Shares"
+    },
+    {
+        "ticker": "CRT",
+        "company": "Cross Timbers Royalty Trust Common Stock"
+    },
+    {
+        "ticker": "CRTO",
+        "company": "Criteo S.A. American Depositary Shares"
+    },
+    {
+        "ticker": "CRUS",
+        "company": "Cirrus Logic Inc. Common Stock"
+    },
+    {
+        "ticker": "CRVL",
+        "company": "CorVel Corp. Common Stock"
+    },
+    {
+        "ticker": "CRVS",
+        "company": "Corvus Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "CRWS",
+        "company": "Crown Crafts Inc Common Stock"
+    },
+    {
+        "ticker": "CSBR",
+        "company": "Champions Oncology Inc. Common Stock"
+    },
+    {
+        "ticker": "CSCO",
+        "company": "Cisco Systems Inc. Common Stock (DE)"
+    },
+    {
+        "ticker": "CSGP",
+        "company": "CoStar Group Inc. Common Stock"
+    },
+    {
+        "ticker": "CSSE",
+        "company": "Chicken Soup for the Soul Entertainment Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "CSV",
+        "company": "Carriage Services Inc. Common Stock"
+    },
+    {
+        "ticker": "CSWI",
+        "company": "CSW Industrials Inc. Common Stock"
+    },
+    {
+        "ticker": "CSX",
+        "company": "CSX Corporation Common Stock"
+    },
+    {
+        "ticker": "CTAS",
+        "company": "Cintas Corporation Common Stock"
+    },
+    {
+        "ticker": "CTHR",
+        "company": "Charles & Colvard Ltd Common Stock"
+    },
+    {
+        "ticker": "CTO",
+        "company": "CTO Realty Growth Inc. Common Stock"
+    },
+    {
+        "ticker": "CTRA",
+        "company": "Coterra Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "CTRM",
+        "company": "Castor Maritime Inc. Common Shares"
+    },
+    {
+        "ticker": "CTSH",
+        "company": "Cognizant Technology Solutions Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "CTSO",
+        "company": "Cytosorbents Corporation Common Stock"
+    },
+    {
+        "ticker": "CULP",
+        "company": "Culp Inc. Common Stock"
+    },
+    {
+        "ticker": "CUTR",
+        "company": "Cutera Inc. Common Stock"
+    },
+    {
+        "ticker": "CVBF",
+        "company": "CVB Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "CVCO",
+        "company": "Cavco Industries Inc. Common Stock When Issued"
+    },
+    {
+        "ticker": "CVE",
+        "company": "Cenovus Energy Inc Common Stock"
+    },
+    {
+        "ticker": "CVEO",
+        "company": "Civeo Corporation (Canada) Common Shares"
+    },
+    {
+        "ticker": "CVLT",
+        "company": "Commvault Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "CVS",
+        "company": "CVS Health Corporation Common Stock"
+    },
+    {
+        "ticker": "CVV",
+        "company": "CVD Equipment Corporation Common Stock"
+    },
+    {
+        "ticker": "CVX",
+        "company": "Chevron Corporation Common Stock"
+    },
+    {
+        "ticker": "CWST",
+        "company": "Casella Waste Systems Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "CYBR",
+        "company": "CyberArk Software Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "CYCC",
+        "company": "Cyclacel Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "CYCN",
+        "company": "Cyclerion Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "CYD",
+        "company": "China Yuchai International Limited Common Stock"
+    },
+    {
+        "ticker": "CYH",
+        "company": "Community Health Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "CYTK",
+        "company": "Cytokinetics Incorporated Common Stock"
+    },
+    {
+        "ticker": "CYTO",
+        "company": "Altamira Therapeutics Ltd. Common Shares"
+    },
+    {
+        "ticker": "CZR",
+        "company": "Caesars Entertainment Inc. Common Stock"
+    },
+    {
+        "ticker": "D",
+        "company": "Dominion Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "DAIO",
+        "company": "Data I/O Corporation Common Stock"
+    },
+    {
+        "ticker": "DAL",
+        "company": "Delta Air Lines Inc. Common Stock"
+    },
+    {
+        "ticker": "DARE",
+        "company": "Dare Bioscience Inc. Common Stock"
+    },
+    {
+        "ticker": "DB",
+        "company": "Deutsche Bank AG Common Stock"
+    },
+    {
+        "ticker": "DBI",
+        "company": "Designer Brands Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "DBX",
+        "company": "Dropbox Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "DD",
+        "company": "DuPont de Nemours Inc. Common Stock"
+    },
+    {
+        "ticker": "DDD",
+        "company": "3D Systems Corporation Common Stock"
+    },
+    {
+        "ticker": "DE",
+        "company": "Deere & Company Common Stock"
+    },
+    {
+        "ticker": "DECK",
+        "company": "Deckers Outdoor Corporation Common Stock"
+    },
+    {
+        "ticker": "DELL",
+        "company": "Dell Technologies Inc. Class C Common Stock "
+    },
+    {
+        "ticker": "DEO",
+        "company": "Diageo plc Common Stock"
+    },
+    {
+        "ticker": "DESP",
+        "company": "Despegar.com Corp. Ordinary Shares"
+    },
+    {
+        "ticker": "DFS",
+        "company": "Discover Financial Services Common Stock"
+    },
+    {
+        "ticker": "DG",
+        "company": "Dollar General Corporation Common Stock"
+    },
+    {
+        "ticker": "DGLY",
+        "company": "Digital Ally Inc. Common Stock"
+    },
+    {
+        "ticker": "DHI",
+        "company": "D.R. Horton Inc. Common Stock"
+    },
+    {
+        "ticker": "DHR",
+        "company": "Danaher Corporation Common Stock"
+    },
+    {
+        "ticker": "DHX",
+        "company": "DHI Group Inc. Common Stock"
+    },
+    {
+        "ticker": "DIN",
+        "company": "Dine Brands Global Inc. Common Stock"
+    },
+    {
+        "ticker": "DIOD",
+        "company": "Diodes Incorporated Common Stock"
+    },
+    {
+        "ticker": "DIS",
+        "company": "Walt Disney Company (The) Common Stock"
+    },
+    {
+        "ticker": "DLNG",
+        "company": "Dynagas LNG Partners LP Common Units"
+    },
+    {
+        "ticker": "DLPN",
+        "company": "Dolphin Entertainment Inc. Common Stock"
+    },
+    {
+        "ticker": "DLR",
+        "company": "Digital Realty Trust Inc. Common Stock"
+    },
+    {
+        "ticker": "DLTR",
+        "company": "Dollar Tree Inc. Common Stock"
+    },
+    {
+        "ticker": "DMTK",
+        "company": "DermTech Inc. Common Stock"
+    },
+    {
+        "ticker": "DNLI",
+        "company": "Denali Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "DOCU",
+        "company": "DocuSign Inc. Common Stock"
+    },
+    {
+        "ticker": "DOGZ",
+        "company": "Dogness (International) Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "DOMH",
+        "company": "Dominari Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "DOOO",
+        "company": "BRP Inc. (Recreational Products) Common Subordinate Voting Shares"
+    },
+    {
+        "ticker": "DORM",
+        "company": "Dorman Products Inc. Common Stock"
+    },
+    {
+        "ticker": "DOV",
+        "company": "Dover Corporation Common Stock"
+    },
+    {
+        "ticker": "DOW",
+        "company": "Dow Inc. Common Stock "
+    },
+    {
+        "ticker": "DOX",
+        "company": "Amdocs Limited Ordinary Shares"
+    },
+    {
+        "ticker": "DRD",
+        "company": "DRDGOLD Limited American Depositary Shares"
+    },
+    {
+        "ticker": "DRIO",
+        "company": "DarioHealth Corp. Common Stock"
+    },
+    {
+        "ticker": "DRQ",
+        "company": "Dril-Quip Inc. Common Stock"
+    },
+    {
+        "ticker": "DRRX",
+        "company": "DURECT Corporation Common Stock"
+    },
+    {
+        "ticker": "DRS",
+        "company": "Leonardo DRS Inc. Common Stock"
+    },
+    {
+        "ticker": "DSGX",
+        "company": "Descartes Systems Group Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "DSWL",
+        "company": "Deswell Industries Inc. Common Shares"
+    },
+    {
+        "ticker": "DSX",
+        "company": "Diana Shipping inc. common stock"
+    },
+    {
+        "ticker": "DTE",
+        "company": "DTE Energy Company Common Stock"
+    },
+    {
+        "ticker": "DTIL",
+        "company": "Precision BioSciences Inc. Common Stock"
+    },
+    {
+        "ticker": "DTST",
+        "company": "Data Storage Corporation Common Stock"
+    },
+    {
+        "ticker": "DUK",
+        "company": "Duke Energy Corporation (Holding Company) Common Stock"
+    },
+    {
+        "ticker": "DUOT",
+        "company": "Duos Technologies Group Inc. Common Stock"
+    },
+    {
+        "ticker": "DVN",
+        "company": "Devon Energy Corporation Common Stock"
+    },
+    {
+        "ticker": "DX",
+        "company": "Dynex Capital Inc. Common Stock"
+    },
+    {
+        "ticker": "DXCM",
+        "company": "DexCom Inc. Common Stock"
+    },
+    {
+        "ticker": "DXYN",
+        "company": "Dixie Group Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "DYAI",
+        "company": "Dyadic International Inc. Common Stock"
+    },
+    {
+        "ticker": "DYNT",
+        "company": "Dynatronics Corporation Common Stock"
+    },
+    {
+        "ticker": "DZSI",
+        "company": "DZS Inc. Common Stock"
+    },
+    {
+        "ticker": "E",
+        "company": "ENI S.p.A. Common Stock"
+    },
+    {
+        "ticker": "EA",
+        "company": "Electronic Arts Inc. Common Stock"
+    },
+    {
+        "ticker": "EAF",
+        "company": "GrafTech International Ltd. Common Stock"
+    },
+    {
+        "ticker": "EARN",
+        "company": "Ellington Credit Company Common Shares of Beneficial Interest"
+    },
+    {
+        "ticker": "EAST",
+        "company": "Eastside Distilling Inc. Common Stock"
+    },
+    {
+        "ticker": "EB",
+        "company": "Eventbrite Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "EBAY",
+        "company": "eBay Inc. Common Stock"
+    },
+    {
+        "ticker": "EBF",
+        "company": "Ennis Inc. Common Stock"
+    },
+    {
+        "ticker": "EBS",
+        "company": "Emergent Biosolutions Inc. Common Stock"
+    },
+    {
+        "ticker": "EC",
+        "company": "Ecopetrol S.A. American Depositary Shares"
+    },
+    {
+        "ticker": "ECL",
+        "company": "Ecolab Inc. Common Stock"
+    },
+    {
+        "ticker": "ECOR",
+        "company": "electroCore Inc. Common Stock"
+    },
+    {
+        "ticker": "ED",
+        "company": "Consolidated Edison Inc. Common Stock"
+    },
+    {
+        "ticker": "EDRY",
+        "company": "EuroDry Ltd. Common Shares "
+    },
+    {
+        "ticker": "EDSA",
+        "company": "Edesa Biotech Inc. Common Shares"
+    },
+    {
+        "ticker": "EDUC",
+        "company": "Educational Development Corporation Common Stock"
+    },
+    {
+        "ticker": "EEFT",
+        "company": "Euronet Worldwide Inc. Common Stock"
+    },
+    {
+        "ticker": "EEX",
+        "company": "Emerald Holding Inc. Common Stock"
+    },
+    {
+        "ticker": "EFOI",
+        "company": "Energy Focus Inc. Common Stock"
+    },
+    {
+        "ticker": "EFX",
+        "company": "Equifax Inc. Common Stock"
+    },
+    {
+        "ticker": "EGIO",
+        "company": "Edgio Inc. Common Stock"
+    },
+    {
+        "ticker": "EGRX",
+        "company": "Eagle Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "EGY",
+        "company": "VAALCO Energy Inc.  Common Stock"
+    },
+    {
+        "ticker": "EIX",
+        "company": "Edison International Common Stock"
+    },
+    {
+        "ticker": "EKSO",
+        "company": "Ekso Bionics Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "EL",
+        "company": "Estee Lauder Companies Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "ELDN",
+        "company": "Eledon Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "ELV",
+        "company": "Elevance Health Inc. Common Stock"
+    },
+    {
+        "ticker": "EMKR",
+        "company": "EMCORE Corporation Common Stock"
+    },
+    {
+        "ticker": "EMR",
+        "company": "Emerson Electric Company Common Stock"
+    },
+    {
+        "ticker": "ENB",
+        "company": "Enbridge Inc Common Stock"
+    },
+    {
+        "ticker": "ENG",
+        "company": "ENGlobal Corporation Common Stock"
+    },
+    {
+        "ticker": "ENLV",
+        "company": "Enlivex Therapeutics Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "ENPH",
+        "company": "Enphase Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "ENSC",
+        "company": "Ensysce Biosciences Inc. Common Stock"
+    },
+    {
+        "ticker": "ENSG",
+        "company": "The Ensign Group Inc. Common Stock"
+    },
+    {
+        "ticker": "ENTG",
+        "company": "Entegris Inc. Common Stock"
+    },
+    {
+        "ticker": "ENTX",
+        "company": "Entera Bio Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "ENVB",
+        "company": "Enveric Biosciences Inc. Common Stock"
+    },
+    {
+        "ticker": "ENZ",
+        "company": "Enzo Biochem Inc. Common Stock ($0.01 Par Value)"
+    },
+    {
+        "ticker": "EOG",
+        "company": "EOG Resources Inc. Common Stock"
+    },
+    {
+        "ticker": "EPD",
+        "company": "Enterprise Products Partners L.P. Common Stock"
+    },
+    {
+        "ticker": "EQ",
+        "company": "Equillium Inc. Common Stock"
+    },
+    {
+        "ticker": "EQBK",
+        "company": "Equity Bancshares Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "EQIX",
+        "company": "Equinix Inc. Common Stock REIT"
+    },
+    {
+        "ticker": "EQNR",
+        "company": "Equinor ASA"
+    },
+    {
+        "ticker": "EQR",
+        "company": "Equity Residential Common Shares of Beneficial Interest"
+    },
+    {
+        "ticker": "ERIC",
+        "company": "Ericsson American Depositary Shares"
+    },
+    {
+        "ticker": "ERIE",
+        "company": "Erie Indemnity Company Class A Common Stock"
+    },
+    {
+        "ticker": "ERNA",
+        "company": "Eterna Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "ES",
+        "company": "Eversource Energy (D/B/A) Common Stock"
+    },
+    {
+        "ticker": "ESGR",
+        "company": "Enstar Group Limited Ordinary Shares"
+    },
+    {
+        "ticker": "ESLT",
+        "company": "Elbit Systems Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "ET",
+        "company": "Energy Transfer LP Common Units "
+    },
+    {
+        "ticker": "ETN",
+        "company": "Eaton Corporation PLC Ordinary Shares"
+    },
+    {
+        "ticker": "ETR",
+        "company": "Entergy Corporation Common Stock"
+    },
+    {
+        "ticker": "ETSY",
+        "company": "Etsy Inc. Common Stock"
+    },
+    {
+        "ticker": "EVA",
+        "company": "Enviva Inc. Common Stock"
+    },
+    {
+        "ticker": "EVC",
+        "company": "Entravision Communications Corporation Common Stock"
+    },
+    {
+        "ticker": "EVGN",
+        "company": "Evogene Ltd Ordinary Shares"
+    },
+    {
+        "ticker": "EVOK",
+        "company": "Evoke Pharma Inc. Common Stock"
+    },
+    {
+        "ticker": "EVRG",
+        "company": "Evergy Inc. Common Stock"
+    },
+    {
+        "ticker": "EVRI",
+        "company": "Everi Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "EVTV",
+        "company": "Envirotech Vehicles Inc. Common Stock"
+    },
+    {
+        "ticker": "EW",
+        "company": "Edwards Lifesciences Corporation Common Stock"
+    },
+    {
+        "ticker": "EWBC",
+        "company": "East West Bancorp Inc. Common Stock"
+    },
+    {
+        "ticker": "EXAS",
+        "company": "Exact Sciences Corporation Common Stock"
+    },
+    {
+        "ticker": "EXC",
+        "company": "Exelon Corporation Common Stock"
+    },
+    {
+        "ticker": "EXEL",
+        "company": "Exelixis Inc. Common Stock"
+    },
+    {
+        "ticker": "EXK",
+        "company": "Endeavour Silver Corporation Ordinary Shares (Canada)"
+    },
+    {
+        "ticker": "EXLS",
+        "company": "ExlService Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "EXPE",
+        "company": "Expedia Group Inc. Common Stock"
+    },
+    {
+        "ticker": "EXPO",
+        "company": "Exponent Inc. Common Stock"
+    },
+    {
+        "ticker": "EXR",
+        "company": "Extra Space Storage Inc Common Stock"
+    },
+    {
+        "ticker": "EYEN",
+        "company": "Eyenovia Inc. Common Stock"
+    },
+    {
+        "ticker": "F",
+        "company": "Ford Motor Company Common Stock"
+    },
+    {
+        "ticker": "FAMI",
+        "company": "Farmmi Inc. Ordinary Shares"
+    },
+    {
+        "ticker": "FANG",
+        "company": "Diamondback Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "FARM",
+        "company": "Farmer Brothers Company Common Stock"
+    },
+    {
+        "ticker": "FAST",
+        "company": "Fastenal Company Common Stock"
+    },
+    {
+        "ticker": "FBIO",
+        "company": "Fortress Biotech Inc. Common Stock"
+    },
+    {
+        "ticker": "FBRX",
+        "company": "Forte Biosciences Inc. Common Stock"
+    },
+    {
+        "ticker": "FC",
+        "company": "Franklin Covey Company Common Stock"
+    },
+    {
+        "ticker": "FCFS",
+        "company": "FirstCash Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "FCNCA",
+        "company": "First Citizens BancShares Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "FCX",
+        "company": "Freeport-McMoRan Inc. Common Stock"
+    },
+    {
+        "ticker": "FDX",
+        "company": "FedEx Corporation Common Stock"
+    },
+    {
+        "ticker": "FE",
+        "company": "FirstEnergy Corp. Common Stock"
+    },
+    {
+        "ticker": "FEDU",
+        "company": "Four Seasons Education (Cayman) Inc. American Depositary Shares each ADS representing 10 ordinary shares"
+    },
+    {
+        "ticker": "FELE",
+        "company": "Franklin Electric Co. Inc. Common Stock"
+    },
+    {
+        "ticker": "FENG",
+        "company": "Phoenix New Media Limited American Depositary Shares each representing 48 Class A ordinary shares."
+    },
+    {
+        "ticker": "FET",
+        "company": "Forum Energy Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "FF",
+        "company": "FutureFuel Corp.  Common shares"
+    },
+    {
+        "ticker": "FFBC",
+        "company": "First Financial Bancorp. Common Stock"
+    },
+    {
+        "ticker": "FFIN",
+        "company": "First Financial Bankshares Inc. Common Stock"
+    },
+    {
+        "ticker": "FFIV",
+        "company": "F5 Inc. Common Stock"
+    },
+    {
+        "ticker": "FFWM",
+        "company": "First Foundation Inc. Common Stock"
+    },
+    {
+        "ticker": "FGF",
+        "company": "Fundamental Global Inc. Common Stock "
+    },
+    {
+        "ticker": "FHB",
+        "company": "First Hawaiian Inc. Common Stock"
+    },
+    {
+        "ticker": "FI",
+        "company": "Fiserv Inc. Common Stock"
+    },
+    {
+        "ticker": "FIBK",
+        "company": "First Interstate BancSystem Inc. Common Stock (DE)"
+    },
+    {
+        "ticker": "FICO",
+        "company": "Fair Isaac Corproation Common Stock"
+    },
+    {
+        "ticker": "FIS",
+        "company": "Fidelity National Information Services Inc. Common Stock"
+    },
+    {
+        "ticker": "FITB",
+        "company": "Fifth Third Bancorp Common Stock"
+    },
+    {
+        "ticker": "FIVE",
+        "company": "Five Below Inc. Common Stock"
+    },
+    {
+        "ticker": "FIVN",
+        "company": "Five9 Inc. Common Stock"
+    },
+    {
+        "ticker": "FIZZ",
+        "company": "National Beverage Corp. Common Stock"
+    },
+    {
+        "ticker": "FKWL",
+        "company": "Franklin Wireless Corp. Common Stock"
+    },
+    {
+        "ticker": "FLEX",
+        "company": "Flex Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "FLNT",
+        "company": "Fluent Inc. Common Stock"
+    },
+    {
+        "ticker": "FLUT",
+        "company": "Flutter Entertainment plc Ordinary Shares"
+    },
+    {
+        "ticker": "FMX",
+        "company": "Fomento Economico Mexicano S.A.B. de C.V. Common Stock"
+    },
+    {
+        "ticker": "FNV",
+        "company": "Franco-Nevada Corporation"
+    },
+    {
+        "ticker": "FOLD",
+        "company": "Amicus Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "FORD",
+        "company": "Forward Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "FORM",
+        "company": "FormFactor Inc. FormFactor Inc. Common Stock"
+    },
+    {
+        "ticker": "FOSL",
+        "company": "Fossil Group Inc. Common Stock"
+    },
+    {
+        "ticker": "FOX",
+        "company": "Fox Corporation Class B Common Stock"
+    },
+    {
+        "ticker": "FOXA",
+        "company": "Fox Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "FPAY",
+        "company": "FlexShopper Inc. Common Stock"
+    },
+    {
+        "ticker": "FPH",
+        "company": "Five Point Holdings LLC Class A Common Shares"
+    },
+    {
+        "ticker": "FPI",
+        "company": "Farmland Partners Inc. Common Stock"
+    },
+    {
+        "ticker": "FRGT",
+        "company": "Freight Technologies Inc. Ordinary Shares"
+    },
+    {
+        "ticker": "FRHC",
+        "company": "Freedom Holding Corp. Common Stock"
+    },
+    {
+        "ticker": "FRME",
+        "company": "First Merchants Corporation Common Stock"
+    },
+    {
+        "ticker": "FRPT",
+        "company": "Freshpet Inc. Common Stock"
+    },
+    {
+        "ticker": "FRSX",
+        "company": "Foresight Autonomous Holdings Ltd. American Depositary Shares"
+    },
+    {
+        "ticker": "FSLR",
+        "company": "First Solar Inc. Common Stock"
+    },
+    {
+        "ticker": "FSV",
+        "company": "FirstService Corporation Common Shares"
+    },
+    {
+        "ticker": "FTAI",
+        "company": "FTAI Aviation Ltd. Common Stock"
+    },
+    {
+        "ticker": "FTDR",
+        "company": "Frontdoor Inc. Common Stock"
+    },
+    {
+        "ticker": "FTEK",
+        "company": "Fuel Tech Inc. Common Stock"
+    },
+    {
+        "ticker": "FTFT",
+        "company": "Future FinTech Group Inc. Common Stock"
+    },
+    {
+        "ticker": "FTK",
+        "company": "Flotek Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "FTNT",
+        "company": "Fortinet Inc. Common Stock"
+    },
+    {
+        "ticker": "FTV",
+        "company": "Fortive Corporation Common Stock "
+    },
+    {
+        "ticker": "FUBO",
+        "company": "fuboTV Inc. Common Stock"
+    },
+    {
+        "ticker": "FULT",
+        "company": "Fulton Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "FUTU",
+        "company": "Futu Holdings Limited American Depositary Shares"
+    },
+    {
+        "ticker": "FWONA",
+        "company": "Liberty Media Corporation Series A Liberty Formula One Common Stock"
+    },
+    {
+        "ticker": "FWONK",
+        "company": "Liberty Media Corporation Series C Liberty Formula One Common Stock"
+    },
+    {
+        "ticker": "GBDC",
+        "company": "Golub Capital BDC Inc. Common Stock"
+    },
+    {
+        "ticker": "GCI",
+        "company": "Gannett Co. Inc. Common Stock"
+    },
+    {
+        "ticker": "GCMG",
+        "company": "GCM Grosvenor Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "GCO",
+        "company": "Genesco Inc. Common Stock"
+    },
+    {
+        "ticker": "GD",
+        "company": "General Dynamics Corporation Common Stock"
+    },
+    {
+        "ticker": "GDC",
+        "company": "GD Culture Group Limited Common Stock"
+    },
+    {
+        "ticker": "GDOT",
+        "company": "Green Dot Corporation Class A Common Stock $0.001 par value"
+    },
+    {
+        "ticker": "GE",
+        "company": "GE Aerospace Common Stock"
+    },
+    {
+        "ticker": "GEG",
+        "company": "Great Elm Group Inc. Common Stock"
+    },
+    {
+        "ticker": "GENE",
+        "company": "Genetic Technologies Ltd ADS"
+    },
+    {
+        "ticker": "GERN",
+        "company": "Geron Corporation Common Stock"
+    },
+    {
+        "ticker": "GGAL",
+        "company": "Grupo Financiero Galicia S.A. American Depositary Shares"
+    },
+    {
+        "ticker": "GH",
+        "company": "Guardant Health Inc. Common Stock"
+    },
+    {
+        "ticker": "GHG",
+        "company": "GreenTree Hospitality Group Ltd. American depositary shares each representing one Class A ordinary share"
+    },
+    {
+        "ticker": "GHI",
+        "company": "Greystone Housing Impact Investors LP Beneficial Unit Certificates representing assignments of limited partnership interests"
+    },
+    {
+        "ticker": "GHM",
+        "company": "Graham Corporation Common Stock"
+    },
+    {
+        "ticker": "GHSI",
+        "company": "Guardion Health Sciences Inc. Common Stock"
+    },
+    {
+        "ticker": "GIB",
+        "company": "CGI Inc. Common Stock"
+    },
+    {
+        "ticker": "GIGM",
+        "company": "GigaMedia Limited Ordinary Shares"
+    },
+    {
+        "ticker": "GILD",
+        "company": "Gilead Sciences Inc. Common Stock"
+    },
+    {
+        "ticker": "GIS",
+        "company": "General Mills Inc. Common Stock"
+    },
+    {
+        "ticker": "GLBS",
+        "company": "Globus Maritime Limited Common Stock"
+    },
+    {
+        "ticker": "GLMD",
+        "company": "Galmed Pharmaceuticals Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "GLNG",
+        "company": "Golar Lng Ltd"
+    },
+    {
+        "ticker": "GLPG",
+        "company": "Galapagos NV American Depositary Shares"
+    },
+    {
+        "ticker": "GLPI",
+        "company": "Gaming and Leisure Properties Inc. Common Stock"
+    },
+    {
+        "ticker": "GLT",
+        "company": "Glatfelter Corporation Common Stock"
+    },
+    {
+        "ticker": "GLW",
+        "company": "Corning Incorporated Common Stock"
+    },
+    {
+        "ticker": "GM",
+        "company": "General Motors Company Common Stock"
+    },
+    {
+        "ticker": "GMAB",
+        "company": "Genmab A/S ADS"
+    },
+    {
+        "ticker": "GMRE",
+        "company": "Global Medical REIT Inc. Common Stock"
+    },
+    {
+        "ticker": "GNE",
+        "company": "Genie Energy Ltd. Class B Common Stock Stock"
+    },
+    {
+        "ticker": "GNLN",
+        "company": "Greenlane Holdings Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "GNPX",
+        "company": "Genprex Inc. Common Stock"
+    },
+    {
+        "ticker": "GNTX",
+        "company": "Gentex Corporation Common Stock"
+    },
+    {
+        "ticker": "GNTY",
+        "company": "Guaranty Bancshares Inc. Common Stock"
+    },
+    {
+        "ticker": "GOGL",
+        "company": "Golden Ocean Group Limited Common Stock"
+    },
+    {
+        "ticker": "GOLD",
+        "company": "Barrick Gold Corporation Common Stock (BC)"
+    },
+    {
+        "ticker": "GOOG",
+        "company": "Alphabet Inc. Class C Capital Stock"
+    },
+    {
+        "ticker": "GOOGL",
+        "company": "Alphabet Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "GORV",
+        "company": "Lazydays Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "GPC",
+        "company": "Genuine Parts Company Common Stock"
+    },
+    {
+        "ticker": "GPMT",
+        "company": "Granite Point Mortgage Trust Inc. Common Stock"
+    },
+    {
+        "ticker": "GPN",
+        "company": "Global Payments Inc. Common Stock"
+    },
+    {
+        "ticker": "GPRK",
+        "company": "Geopark Ltd Common Shares"
+    },
+    {
+        "ticker": "GREE",
+        "company": "Greenidge Generation Holdings Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "GRFS",
+        "company": "Grifols S.A. American Depositary Shares"
+    },
+    {
+        "ticker": "GRMN",
+        "company": "Garmin Ltd. Common Stock (Switzerland)"
+    },
+    {
+        "ticker": "GRNQ",
+        "company": "Greenpro Capital Corp. Common Stock"
+    },
+    {
+        "ticker": "GROW",
+        "company": "U.S. Global Investors Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "GS",
+        "company": "Goldman Sachs Group Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "GSK",
+        "company": "GSK plc American Depositary Shares (Each representing two Ordinary Shares)"
+    },
+    {
+        "ticker": "GT",
+        "company": "The Goodyear Tire & Rubber Company Common Stock"
+    },
+    {
+        "ticker": "GTBP",
+        "company": "GT Biopharma Inc. Common Stock"
+    },
+    {
+        "ticker": "GTEC",
+        "company": "Greenland Technologies Holding Corporation Ordinary Shares"
+    },
+    {
+        "ticker": "GTIM",
+        "company": "Good Times Restaurants Inc. Common Stock"
+    },
+    {
+        "ticker": "GTX",
+        "company": "Garrett Motion Inc. Common Stock"
+    },
+    {
+        "ticker": "GURE",
+        "company": "Gulf Resources Inc. (NV) Common Stock"
+    },
+    {
+        "ticker": "GVP",
+        "company": "GSE Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "GWAV",
+        "company": "Greenwave Technology Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "GWW",
+        "company": "W.W. Grainger Inc. Common Stock"
+    },
+    {
+        "ticker": "HAL",
+        "company": "Halliburton Company Common Stock"
+    },
+    {
+        "ticker": "HALO",
+        "company": "Halozyme Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "HAS",
+        "company": "Hasbro Inc. Common Stock"
+    },
+    {
+        "ticker": "HBAN",
+        "company": "Huntington Bancshares Incorporated Common Stock"
+    },
+    {
+        "ticker": "HBB",
+        "company": "Hamilton Beach Brands Holding Company Class A Common Stock "
+    },
+    {
+        "ticker": "HCA",
+        "company": "HCA Healthcare Inc. Common Stock"
+    },
+    {
+        "ticker": "HCM",
+        "company": "HUTCHMED (China) Limited American Depositary Shares"
+    },
+    {
+        "ticker": "HD",
+        "company": "Home Depot Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "HDB",
+        "company": "HDFC Bank Limited Common Stock"
+    },
+    {
+        "ticker": "HEES",
+        "company": "H&E Equipment Services Inc. Common Stock"
+    },
+    {
+        "ticker": "HELE",
+        "company": "Helen of Troy Limited Common Stock"
+    },
+    {
+        "ticker": "HEPA",
+        "company": "Hepion Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "HES",
+        "company": "Hess Corporation Common Stock"
+    },
+    {
+        "ticker": "HFBL",
+        "company": "Home Federal Bancorp Inc. of Louisiana Common Stock"
+    },
+    {
+        "ticker": "HHS",
+        "company": "Harte Hanks Inc. Common Stock"
+    },
+    {
+        "ticker": "HIG",
+        "company": "Hartford Financial Services Group Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "HLNE",
+        "company": "Hamilton Lane Incorporated Class A Common Stock"
+    },
+    {
+        "ticker": "HLT",
+        "company": "Hilton Worldwide Holdings Inc. Common Stock "
+    },
+    {
+        "ticker": "HMC",
+        "company": "Honda Motor Company Ltd. Common Stock"
+    },
+    {
+        "ticker": "HNNA",
+        "company": "Hennessy Advisors Inc. Common Stock"
+    },
+    {
+        "ticker": "HOFV",
+        "company": "Hall of Fame Resort & Entertainment Company Common Stock"
+    },
+    {
+        "ticker": "HOLX",
+        "company": "Hologic Inc. Common Stock"
+    },
+    {
+        "ticker": "HON",
+        "company": "Honeywell International Inc. Common Stock"
+    },
+    {
+        "ticker": "HOOK",
+        "company": "HOOKIPA Pharma Inc. Common Stock"
+    },
+    {
+        "ticker": "HOTH",
+        "company": "Hoth Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "HOUS",
+        "company": "Anywhere Real Estate Inc. Common Stock"
+    },
+    {
+        "ticker": "HPE",
+        "company": "Hewlett Packard Enterprise Company Common Stock"
+    },
+    {
+        "ticker": "HPK",
+        "company": "HighPeak Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "HPQ",
+        "company": "HP Inc. Common Stock"
+    },
+    {
+        "ticker": "HQY",
+        "company": "HealthEquity Inc. Common Stock"
+    },
+    {
+        "ticker": "HRTG",
+        "company": "Heritage Insurance Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "HSBC",
+        "company": "HSBC Holdings plc. Common Stock"
+    },
+    {
+        "ticker": "HSDT",
+        "company": "Helius Medical Technologies Inc. Class A Common Stock (DE)"
+    },
+    {
+        "ticker": "HSIC",
+        "company": "Henry Schein Inc. Common Stock"
+    },
+    {
+        "ticker": "HSON",
+        "company": "Hudson Global Inc. Common Stock"
+    },
+    {
+        "ticker": "HST",
+        "company": "Host Hotels & Resorts Inc. Common Stock"
+    },
+    {
+        "ticker": "HSY",
+        "company": "The Hershey Company Common Stock"
+    },
+    {
+        "ticker": "HTHT",
+        "company": "H World Group Limited American Depositary Shares"
+    },
+    {
+        "ticker": "HUBB",
+        "company": "Hubbell Inc Common Stock"
+    },
+    {
+        "ticker": "HUBG",
+        "company": "Hub Group Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "HUBS",
+        "company": "HubSpot Inc. Common Stock"
+    },
+    {
+        "ticker": "HUGE",
+        "company": "FSD Pharma Inc. Class B Subordinate Voting Shares"
+    },
+    {
+        "ticker": "HUM",
+        "company": "Humana Inc. Common Stock"
+    },
+    {
+        "ticker": "HURN",
+        "company": "Huron Consulting Group Inc. Common Stock"
+    },
+    {
+        "ticker": "HWC",
+        "company": "Hancock Whitney Corporation Common Stock"
+    },
+    {
+        "ticker": "HWM",
+        "company": "Howmet Aerospace Inc. Common Stock"
+    },
+    {
+        "ticker": "HZO",
+        "company": "MarineMax Inc.  (FL) Common Stock"
+    },
+    {
+        "ticker": "IAC",
+        "company": "IAC Inc. Common Stock"
+    },
+    {
+        "ticker": "IART",
+        "company": "Integra LifeSciences Holdings Corporation Common Stock"
+    },
+    {
+        "ticker": "IBKR",
+        "company": "Interactive Brokers Group Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "IBM",
+        "company": "International Business Machines Corporation Common Stock"
+    },
+    {
+        "ticker": "IBN",
+        "company": "ICICI Bank Limited Common Stock"
+    },
+    {
+        "ticker": "IBOC",
+        "company": "International Bancshares Corporation Common Stock"
+    },
+    {
+        "ticker": "IBRX",
+        "company": "ImmunityBio Inc. Common Stock"
+    },
+    {
+        "ticker": "IBTX",
+        "company": "Independent Bank Group Inc Common Stock"
+    },
+    {
+        "ticker": "ICAD",
+        "company": "iCAD Inc. Common Stock"
+    },
+    {
+        "ticker": "ICCC",
+        "company": "ImmuCell Corporation Common Stock"
+    },
+    {
+        "ticker": "ICD",
+        "company": "Independence Contract Drilling Inc. Common Stock"
+    },
+    {
+        "ticker": "ICE",
+        "company": "Intercontinental Exchange Inc. Common Stock"
+    },
+    {
+        "ticker": "ICFI",
+        "company": "ICF International Inc. Common Stock"
+    },
+    {
+        "ticker": "ICLK",
+        "company": "iClick Interactive Asia Group Limited American Depositary Shares"
+    },
+    {
+        "ticker": "ICLR",
+        "company": "ICON plc Ordinary Shares"
+    },
+    {
+        "ticker": "ICMB",
+        "company": "Investcorp Credit Management BDC Inc. Common Stock"
+    },
+    {
+        "ticker": "ICUI",
+        "company": "ICU Medical Inc. Common Stock"
+    },
+    {
+        "ticker": "IDCC",
+        "company": "InterDigital Inc. Common Stock"
+    },
+    {
+        "ticker": "IDEX",
+        "company": "Ideanomics Inc. Common Stock"
+    },
+    {
+        "ticker": "IDN",
+        "company": "Intellicheck Inc. Common Stock"
+    },
+    {
+        "ticker": "IDXX",
+        "company": "IDEXX Laboratories Inc. Common Stock"
+    },
+    {
+        "ticker": "IEP",
+        "company": "Icahn Enterprises L.P. Common Stock"
+    },
+    {
+        "ticker": "IESC",
+        "company": "IES Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "IFF",
+        "company": "International Flavors & Fragrances Inc. Common Stock"
+    },
+    {
+        "ticker": "IIIN",
+        "company": "Insteel Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "ILMN",
+        "company": "Illumina Inc. Common Stock"
+    },
+    {
+        "ticker": "IMRN",
+        "company": "Immuron Limited American Depositary Shares"
+    },
+    {
+        "ticker": "IMTE",
+        "company": "Integrated Media Technology Limited Ordinary Shares"
+    },
+    {
+        "ticker": "INCY",
+        "company": "Incyte Corp. Common Stock"
+    },
+    {
+        "ticker": "INDB",
+        "company": "Independent Bank Corp. Common Stock"
+    },
+    {
+        "ticker": "INDP",
+        "company": "Indaptus Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "INDV",
+        "company": "Indivior PLC Ordinary Shares"
+    },
+    {
+        "ticker": "INFY",
+        "company": "Infosys Limited American Depositary Shares"
+    },
+    {
+        "ticker": "ING",
+        "company": "ING Group N.V. Common Stock"
+    },
+    {
+        "ticker": "INM",
+        "company": "InMed Pharmaceuticals Inc. Common Shares"
+    },
+    {
+        "ticker": "INN",
+        "company": "Summit Hotel Properties Inc. Common Stock"
+    },
+    {
+        "ticker": "INSG",
+        "company": "Inseego Corp. Common Stock"
+    },
+    {
+        "ticker": "INSM",
+        "company": "Insmed Incorporated Common Stock"
+    },
+    {
+        "ticker": "INTC",
+        "company": "Intel Corporation Common Stock"
+    },
+    {
+        "ticker": "INTU",
+        "company": "Intuit Inc. Common Stock"
+    },
+    {
+        "ticker": "INTZ",
+        "company": "Intrusion Inc. Common Stock"
+    },
+    {
+        "ticker": "INVH",
+        "company": "Invitation Homes Inc. Common Stock"
+    },
+    {
+        "ticker": "INVO",
+        "company": "INVO BioScience Inc. Common Stock"
+    },
+    {
+        "ticker": "IONS",
+        "company": "Ionis Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "IOSP",
+        "company": "Innospec Inc. Common Stock"
+    },
+    {
+        "ticker": "IOVA",
+        "company": "Iovance Biotherapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "IPA",
+        "company": "ImmunoPrecise Antibodies Ltd. Common Stock"
+    },
+    {
+        "ticker": "IPAR",
+        "company": "Inter Parfums Inc. Common Stock"
+    },
+    {
+        "ticker": "IPDN",
+        "company": "Professional Diversity Network Inc. Common Stock"
+    },
+    {
+        "ticker": "IPGP",
+        "company": "IPG Photonics Corporation Common Stock"
+    },
+    {
+        "ticker": "IPI",
+        "company": "Intrepid Potash Inc Common Stock"
+    },
+    {
+        "ticker": "IPWR",
+        "company": "Ideal Power Inc. Common Stock"
+    },
+    {
+        "ticker": "IQ",
+        "company": "iQIYI Inc. American Depositary Shares"
+    },
+    {
+        "ticker": "IQV",
+        "company": "IQVIA Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "IR",
+        "company": "Ingersoll Rand Inc. Common Stock"
+    },
+    {
+        "ticker": "IRDM",
+        "company": "Iridium Communications Inc Common Stock"
+    },
+    {
+        "ticker": "IRIX",
+        "company": "IRIDEX Corporation Common Stock"
+    },
+    {
+        "ticker": "IRM",
+        "company": "Iron Mountain Incorporated (Delaware)Common Stock REIT"
+    },
+    {
+        "ticker": "IRTC",
+        "company": "iRhythm Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "ISRG",
+        "company": "Intuitive Surgical Inc. Common Stock"
+    },
+    {
+        "ticker": "IT",
+        "company": "Gartner Inc. Common Stock"
+    },
+    {
+        "ticker": "ITCI",
+        "company": "Intra-Cellular Therapies Inc. Common Stock"
+    },
+    {
+        "ticker": "ITRI",
+        "company": "Itron Inc. Common Stock"
+    },
+    {
+        "ticker": "ITRM",
+        "company": "Iterum Therapeutics plc Ordinary Share"
+    },
+    {
+        "ticker": "ITUB",
+        "company": "Itau Unibanco Banco Holding SA American Depositary Shares (Each repstg 500 Preferred shares)"
+    },
+    {
+        "ticker": "ITW",
+        "company": "Illinois Tool Works Inc. Common Stock"
+    },
+    {
+        "ticker": "IVR",
+        "company": "INVESCO MORTGAGE CAPITAL INC Common Stock"
+    },
+    {
+        "ticker": "IX",
+        "company": "Orix Corp Ads Common Stock"
+    },
+    {
+        "ticker": "IZEA",
+        "company": "IZEA Worldwide Inc. Common Stock"
+    },
+    {
+        "ticker": "JAGX",
+        "company": "Jaguar Health Inc. Common Stock"
+    },
+    {
+        "ticker": "JAN",
+        "company": "JanOne Inc. Common Stock (NV)"
+    },
+    {
+        "ticker": "JAZZ",
+        "company": "Jazz Pharmaceuticals plc Common Stock (Ireland)"
+    },
+    {
+        "ticker": "JBHT",
+        "company": "J.B. Hunt Transport Services Inc. Common Stock"
+    },
+    {
+        "ticker": "JBLU",
+        "company": "JetBlue Airways Corporation Common Stock"
+    },
+    {
+        "ticker": "JCI",
+        "company": "Johnson Controls International plc Ordinary Share"
+    },
+    {
+        "ticker": "JD",
+        "company": "JD.com Inc. American Depositary Shares"
+    },
+    {
+        "ticker": "JG",
+        "company": "Aurora Mobile Limited American Depositary Shares"
+    },
+    {
+        "ticker": "JILL",
+        "company": "J. Jill Inc. Common Stock"
+    },
+    {
+        "ticker": "JJSF",
+        "company": "J & J Snack Foods Corp. Common Stock"
+    },
+    {
+        "ticker": "JKHY",
+        "company": "Jack Henry & Associates Inc. Common Stock"
+    },
+    {
+        "ticker": "JMIA",
+        "company": "Jumia Technologies AG American Depositary Shares each representing two Ordinary Shares"
+    },
+    {
+        "ticker": "JNJ",
+        "company": "Johnson & Johnson Common Stock"
+    },
+    {
+        "ticker": "JPM",
+        "company": "JP Morgan Chase & Co. Common Stock"
+    },
+    {
+        "ticker": "JVA",
+        "company": "Coffee Holding Co. Inc. Common Stock"
+    },
+    {
+        "ticker": "JXJT",
+        "company": "JX Luxventure Limited Common Stock"
+    },
+    {
+        "ticker": "KA",
+        "company": "Kineta Inc. Common Stock"
+    },
+    {
+        "ticker": "KALA",
+        "company": "KALA BIO Inc. Common Stock"
+    },
+    {
+        "ticker": "KDP",
+        "company": "Keurig Dr Pepper Inc. Common Stock"
+    },
+    {
+        "ticker": "KEYS",
+        "company": "Keysight Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "KFS",
+        "company": "Kingsway Financial Services Inc. Common Stock (DE)"
+    },
+    {
+        "ticker": "KHC",
+        "company": "The Kraft Heinz Company Common Stock"
+    },
+    {
+        "ticker": "KINS",
+        "company": "Kingstone Companies Inc. Common Stock"
+    },
+    {
+        "ticker": "KIRK",
+        "company": "Kirkland's Inc. COMMONSTOCK"
+    },
+    {
+        "ticker": "KKR",
+        "company": "KKR & Co. Inc. Common Stock"
+    },
+    {
+        "ticker": "KLAC",
+        "company": "KLA Corporation Common Stock"
+    },
+    {
+        "ticker": "KLIC",
+        "company": "Kulicke and Soffa Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "KMB",
+        "company": "Kimberly-Clark Corporation Common Stock"
+    },
+    {
+        "ticker": "KMI",
+        "company": "Kinder Morgan Inc. Common Stock"
+    },
+    {
+        "ticker": "KNOP",
+        "company": "KNOT Offshore Partners LP Common Units representing Limited Partner Interests"
+    },
+    {
+        "ticker": "KO",
+        "company": "Coca-Cola Company (The) Common Stock"
+    },
+    {
+        "ticker": "KODK",
+        "company": "Eastman Kodak Company Common New"
+    },
+    {
+        "ticker": "KOF",
+        "company": "Coca Cola Femsa S.A.B. de C.V.  American Depositary Shares each representing 10 Units (each Unit consists of 3 Series B Shares and 5 Series L Shares)"
+    },
+    {
+        "ticker": "KOSS",
+        "company": "Koss Corporation Common Stock"
+    },
+    {
+        "ticker": "KPRX",
+        "company": "Kiora Pharmaceuticals Inc.  Common Stock"
+    },
+    {
+        "ticker": "KR",
+        "company": "Kroger Company (The) Common Stock"
+    },
+    {
+        "ticker": "KREF",
+        "company": "KKR Real Estate Finance Trust Inc. Common Stock"
+    },
+    {
+        "ticker": "KRYS",
+        "company": "Krystal Biotech Inc. Common Stock"
+    },
+    {
+        "ticker": "KTCC",
+        "company": "Key Tronic Corporation Common Stock"
+    },
+    {
+        "ticker": "KTOS",
+        "company": "Kratos Defense & Security Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "KTRA",
+        "company": "Kintara Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "KXIN",
+        "company": "Kaixin Holdings Ordinary Shares"
+    },
+    {
+        "ticker": "KZIA",
+        "company": "Kazia Therapeutics Limited American Depositary Shares"
+    },
+    {
+        "ticker": "KZR",
+        "company": "Kezar Life Sciences Inc. Common Stock"
+    },
+    {
+        "ticker": "LAMR",
+        "company": "Lamar Advertising Company Class A Common Stock"
+    },
+    {
+        "ticker": "LANC",
+        "company": "Lancaster Colony Corporation Common Stock"
+    },
+    {
+        "ticker": "LAUR",
+        "company": "Laureate Education Inc. Common Stock"
+    },
+    {
+        "ticker": "LBRDA",
+        "company": "Liberty Broadband Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "LBRDK",
+        "company": "Liberty Broadband Corporation Class C Common Stock"
+    },
+    {
+        "ticker": "LBTYA",
+        "company": "Liberty Global Ltd. Class A Common Shares"
+    },
+    {
+        "ticker": "LBTYK",
+        "company": "Liberty Global Ltd. Class C Common Shares"
+    },
+    {
+        "ticker": "LDWY",
+        "company": "Lendway Inc. Common Stock (DE)"
+    },
+    {
+        "ticker": "LECO",
+        "company": "Lincoln Electric Holdings Inc. Common Shares"
+    },
+    {
+        "ticker": "LEDS",
+        "company": "SemiLEDS Corporation Common Stock"
+    },
+    {
+        "ticker": "LFT",
+        "company": "Lument Finance Trust Inc. Common Stock"
+    },
+    {
+        "ticker": "LFUS",
+        "company": "Littelfuse Inc. Common Stock"
+    },
+    {
+        "ticker": "LFWD",
+        "company": "ReWalk Robotics Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "LGIH",
+        "company": "LGI Homes Inc. Common Stock"
+    },
+    {
+        "ticker": "LGMK",
+        "company": "LogicMark Inc. Common Stock (NV)"
+    },
+    {
+        "ticker": "LHX",
+        "company": "L3Harris Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "LIN",
+        "company": "Linde plc Ordinary Shares"
+    },
+    {
+        "ticker": "LINK",
+        "company": "Interlink Electronics Inc. Common Stock"
+    },
+    {
+        "ticker": "LIQT",
+        "company": "LiqTech International Inc. Common Stock"
+    },
+    {
+        "ticker": "LITB",
+        "company": "LightInTheBox Holding Co. Ltd. American Depositary Shares each representing 2 ordinary shares"
+    },
+    {
+        "ticker": "LITE",
+        "company": "Lumentum Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "LIVN",
+        "company": "LivaNova PLC Ordinary Shares"
+    },
+    {
+        "ticker": "LKCO",
+        "company": "Luokung Technology Corp Ordinary Shares"
+    },
+    {
+        "ticker": "LKQ",
+        "company": "LKQ Corporation Common Stock"
+    },
+    {
+        "ticker": "LL",
+        "company": "LL Flooring Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "LLY",
+        "company": "Eli Lilly and Company Common Stock"
+    },
+    {
+        "ticker": "LMFA",
+        "company": "LM Funding America Inc. Common Stock"
+    },
+    {
+        "ticker": "LMT",
+        "company": "Lockheed Martin Corporation Common Stock"
+    },
+    {
+        "ticker": "LND",
+        "company": "Brasilagro Brazilian Agric Real Estate Co Sponsored ADR (Brazil)"
+    },
+    {
+        "ticker": "LNG",
+        "company": "Cheniere Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "LNT",
+        "company": "Alliant Energy Corporation Common Stock"
+    },
+    {
+        "ticker": "LNTH",
+        "company": "Lantheus Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "LNW",
+        "company": "Light & Wonder Inc. Common Stock"
+    },
+    {
+        "ticker": "LOAN",
+        "company": "Manhattan Bridge Capital Inc"
+    },
+    {
+        "ticker": "LOGI",
+        "company": "Logitech International S.A. Ordinary Shares"
+    },
+    {
+        "ticker": "LOPE",
+        "company": "Grand Canyon Education Inc. Common Stock"
+    },
+    {
+        "ticker": "LOW",
+        "company": "Lowe's Companies Inc. Common Stock"
+    },
+    {
+        "ticker": "LPCN",
+        "company": "Lipocine Inc. Common Stock"
+    },
+    {
+        "ticker": "LPLA",
+        "company": "LPL Financial Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "LPSN",
+        "company": "LivePerson Inc. Common Stock"
+    },
+    {
+        "ticker": "LPTH",
+        "company": "LightPath Technologies Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "LRCX",
+        "company": "Lam Research Corporation Common Stock"
+    },
+    {
+        "ticker": "LRFC",
+        "company": "Logan Ridge Finance Corporation Common Stock"
+    },
+    {
+        "ticker": "LSCC",
+        "company": "Lattice Semiconductor Corporation Common Stock"
+    },
+    {
+        "ticker": "LSTA",
+        "company": "Lisata Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "LSTR",
+        "company": "Landstar System Inc. Common Stock"
+    },
+    {
+        "ticker": "LSXMA",
+        "company": "Liberty Media Corporation Series A Liberty SiriusXM Common Stock"
+    },
+    {
+        "ticker": "LSXMB",
+        "company": "Liberty Media Corporation Series B Liberty SiriusXM Common Stock"
+    },
+    {
+        "ticker": "LSXMK",
+        "company": "Liberty Media Corporation Series C Liberty SiriusXM Common Stock"
+    },
+    {
+        "ticker": "LTBR",
+        "company": "Lightbridge Corporation Common Stock"
+    },
+    {
+        "ticker": "LULU",
+        "company": "lululemon athletica inc. Common Stock"
+    },
+    {
+        "ticker": "LUMO",
+        "company": "Lumos Pharma Inc. Common Stock"
+    },
+    {
+        "ticker": "LVS",
+        "company": "Las Vegas Sands Corp. Common Stock"
+    },
+    {
+        "ticker": "LXFR",
+        "company": "Luxfer Holdings PLC Ordinary Shares"
+    },
+    {
+        "ticker": "LXU",
+        "company": "LSB Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "LYB",
+        "company": "LyondellBasell Industries NV Ordinary Shares Class A (Netherlands)"
+    },
+    {
+        "ticker": "LYFT",
+        "company": "Lyft Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "LYG",
+        "company": "Lloyds Banking Group Plc American Depositary Shares"
+    },
+    {
+        "ticker": "LYV",
+        "company": "Live Nation Entertainment Inc. Common Stock"
+    },
+    {
+        "ticker": "MA",
+        "company": "Mastercard Incorporated Common Stock"
+    },
+    {
+        "ticker": "MANH",
+        "company": "Manhattan Associates Inc. Common Stock"
+    },
+    {
+        "ticker": "MAR",
+        "company": "Marriott International Class A Common Stock"
+    },
+    {
+        "ticker": "MARA",
+        "company": "Marathon Digital Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "MARPS",
+        "company": "Marine Petroleum Trust Units of Beneficial Interest"
+    },
+    {
+        "ticker": "MASI",
+        "company": "Masimo Corporation Common Stock"
+    },
+    {
+        "ticker": "MAT",
+        "company": "Mattel Inc. Common Stock"
+    },
+    {
+        "ticker": "MBI",
+        "company": "MBIA Inc. Common Stock"
+    },
+    {
+        "ticker": "MBIO",
+        "company": "Mustang Bio Inc. Common Stock"
+    },
+    {
+        "ticker": "MBOT",
+        "company": "Microbot Medical Inc. Common Stock"
+    },
+    {
+        "ticker": "MBRX",
+        "company": "Moleculin Biotech Inc. Common Stock"
+    },
+    {
+        "ticker": "MCB",
+        "company": "Metropolitan Bank Holding Corp. Common Stock"
+    },
+    {
+        "ticker": "MCD",
+        "company": "McDonald's Corporation Common Stock"
+    },
+    {
+        "ticker": "MCHP",
+        "company": "Microchip Technology Incorporated Common Stock"
+    },
+    {
+        "ticker": "MCHX",
+        "company": "Marchex Inc. Class B Common Stock"
+    },
+    {
+        "ticker": "MCK",
+        "company": "McKesson Corporation Common Stock"
+    },
+    {
+        "ticker": "MCO",
+        "company": "Moody's Corporation Common Stock"
+    },
+    {
+        "ticker": "MCS",
+        "company": "Marcus Corporation (The) Common Stock"
+    },
+    {
+        "ticker": "MCVT",
+        "company": "Mill City Ventures III Ltd. Common Stock"
+    },
+    {
+        "ticker": "MDB",
+        "company": "MongoDB Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "MDGL",
+        "company": "Madrigal Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "MDLZ",
+        "company": "Mondelez International Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "MDRR",
+        "company": "Medalist Diversified REIT Inc. Common Stock"
+    },
+    {
+        "ticker": "MDT",
+        "company": "Medtronic plc. Ordinary Shares"
+    },
+    {
+        "ticker": "MEC",
+        "company": "Mayville Engineering Company Inc. Common Stock"
+    },
+    {
+        "ticker": "MED",
+        "company": "MEDIFAST INC Common Stock"
+    },
+    {
+        "ticker": "MEDP",
+        "company": "Medpace Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "MEI",
+        "company": "Methode Electronics Inc. Common Stock"
+    },
+    {
+        "ticker": "MEIP",
+        "company": "MEI Pharma Inc. Common Stock"
+    },
+    {
+        "ticker": "MELI",
+        "company": "MercadoLibre Inc. Common Stock"
+    },
+    {
+        "ticker": "MEOH",
+        "company": "Methanex Corporation Common Stock"
+    },
+    {
+        "ticker": "MESA",
+        "company": "Mesa Air Group Inc. Common Stock"
+    },
+    {
+        "ticker": "MET",
+        "company": "MetLife Inc. Common Stock"
+    },
+    {
+        "ticker": "META",
+        "company": "Meta Platforms Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "MFC",
+        "company": "Manulife Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "MFG",
+        "company": "Mizuho Financial Group Inc. Sponosred ADR (Japan)"
+    },
+    {
+        "ticker": "MFH",
+        "company": "Mercurity Fintech Holding Inc. Ordinary Shares"
+    },
+    {
+        "ticker": "MG",
+        "company": "Mistras Group Inc Common Stock"
+    },
+    {
+        "ticker": "MGEE",
+        "company": "MGE Energy Inc"
+    },
+    {
+        "ticker": "MGPI",
+        "company": "MGP Ingredients Inc."
+    },
+    {
+        "ticker": "MGRC",
+        "company": "McGrath RentCorp Common Stock"
+    },
+    {
+        "ticker": "MIDD",
+        "company": "Middleby Corporation (The) Common Stock"
+    },
+    {
+        "ticker": "MIND",
+        "company": "MIND Technology Inc. Common Stock (DE)"
+    },
+    {
+        "ticker": "MITT",
+        "company": "AG Mortgage Investment Trust Inc. Common Stock"
+    },
+    {
+        "ticker": "MKC",
+        "company": "McCormick & Company Incorporated Common Stock"
+    },
+    {
+        "ticker": "MKSI",
+        "company": "MKS Instruments Inc. Common Stock"
+    },
+    {
+        "ticker": "MKTX",
+        "company": "MarketAxess Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "MLCO",
+        "company": "Melco Resorts & Entertainment Limited American Depositary Shares"
+    },
+    {
+        "ticker": "MLKN",
+        "company": "MillerKnoll Inc. Common Stock"
+    },
+    {
+        "ticker": "MLM",
+        "company": "Martin Marietta Materials Inc. Common Stock"
+    },
+    {
+        "ticker": "MLP",
+        "company": "Maui Land & Pineapple Company Inc. Common Stock"
+    },
+    {
+        "ticker": "MLR",
+        "company": "Miller Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "MMC",
+        "company": "Marsh & McLennan Companies Inc. Common Stock"
+    },
+    {
+        "ticker": "MMM",
+        "company": "3M Company Common Stock"
+    },
+    {
+        "ticker": "MMSI",
+        "company": "Merit Medical Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "MMYT",
+        "company": "MakeMyTrip Limited Ordinary Shares"
+    },
+    {
+        "ticker": "MNDO",
+        "company": "MIND C.T.I. Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "MNOV",
+        "company": "Medicinova Inc Common Stock"
+    },
+    {
+        "ticker": "MNST",
+        "company": "Monster Beverage Corporation"
+    },
+    {
+        "ticker": "MO",
+        "company": "Altria Group Inc."
+    },
+    {
+        "ticker": "MOGO",
+        "company": "Mogo Inc. Common Shares"
+    },
+    {
+        "ticker": "MOGU",
+        "company": "MOGU Inc. American Depositary Shares (each  representing 25 Class A Ordinary Shares)"
+    },
+    {
+        "ticker": "MOH",
+        "company": "Molina Healthcare Inc Common Stock"
+    },
+    {
+        "ticker": "MOR",
+        "company": "MorphoSys AG American Depositary Shares"
+    },
+    {
+        "ticker": "MORN",
+        "company": "Morningstar Inc. Common Stock"
+    },
+    {
+        "ticker": "MOV",
+        "company": "Movado Group Inc. Common Stock"
+    },
+    {
+        "ticker": "MPC",
+        "company": "Marathon Petroleum Corporation Common Stock"
+    },
+    {
+        "ticker": "MPLX",
+        "company": "MPLX LP Common Units Representing Limited Partner Interests"
+    },
+    {
+        "ticker": "MPWR",
+        "company": "Monolithic Power Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "MPX",
+        "company": "Marine Products Corporation Common Stock"
+    },
+    {
+        "ticker": "MRIN",
+        "company": "Marin Software Incorporated Common Stock"
+    },
+    {
+        "ticker": "MRK",
+        "company": "Merck & Company Inc. Common Stock (new)"
+    },
+    {
+        "ticker": "MRKR",
+        "company": "Marker Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "MRNA",
+        "company": "Moderna Inc. Common Stock"
+    },
+    {
+        "ticker": "MRUS",
+        "company": "Merus N.V. Common Shares"
+    },
+    {
+        "ticker": "MRVL",
+        "company": "Marvell Technology Inc. Common Stock"
+    },
+    {
+        "ticker": "MS",
+        "company": "Morgan Stanley Common Stock"
+    },
+    {
+        "ticker": "MSB",
+        "company": "Mesabi Trust Common Stock"
+    },
+    {
+        "ticker": "MSCI",
+        "company": "MSCI Inc. Common Stock"
+    },
+    {
+        "ticker": "MSFT",
+        "company": "Microsoft Corporation Common Stock"
+    },
+    {
+        "ticker": "MSI",
+        "company": "Motorola Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "MSTR",
+        "company": "MicroStrategy Incorporated Common Stock Class A"
+    },
+    {
+        "ticker": "MT",
+        "company": "Arcelor Mittal NY Registry Shares NEW"
+    },
+    {
+        "ticker": "MTB",
+        "company": "M&T Bank Corporation Common Stock"
+    },
+    {
+        "ticker": "MTCH",
+        "company": "Match Group Inc. Common Stock"
+    },
+    {
+        "ticker": "MTD",
+        "company": "Mettler-Toledo International Inc. Common Stock"
+    },
+    {
+        "ticker": "MTEM",
+        "company": "Molecular Templates Inc. Common Stock"
+    },
+    {
+        "ticker": "MTSI",
+        "company": "MACOM Technology Solutions Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "MTW",
+        "company": "Manitowoc Company Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "MU",
+        "company": "Micron Technology Inc. Common Stock"
+    },
+    {
+        "ticker": "MUFG",
+        "company": "Mitsubishi UFJ Financial Group Inc. Common Stock"
+    },
+    {
+        "ticker": "MULN",
+        "company": "Mullen Automotive Inc. Common Stock"
+    },
+    {
+        "ticker": "MUX",
+        "company": "McEwen Mining Inc. Common Stock"
+    },
+    {
+        "ticker": "MX",
+        "company": "Magnachip Semiconductor Corporation Common Stock"
+    },
+    {
+        "ticker": "MYRG",
+        "company": "MYR Group Inc. Common Stock"
+    },
+    {
+        "ticker": "MYSZ",
+        "company": "My Size Inc. Common Stock"
+    },
+    {
+        "ticker": "NAII",
+        "company": "Natural Alternatives International Inc. Common Stock"
+    },
+    {
+        "ticker": "NAOV",
+        "company": "NanoVibronix Inc. Common Stock"
+    },
+    {
+        "ticker": "NAVI",
+        "company": "Navient Corporation Common Stock"
+    },
+    {
+        "ticker": "NBIX",
+        "company": "Neurocrine Biosciences Inc. Common Stock"
+    },
+    {
+        "ticker": "NBR",
+        "company": "Nabors Industries Ltd."
+    },
+    {
+        "ticker": "NC",
+        "company": "NACCO Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "NCNA",
+        "company": "NuCana plc American Depositary Share"
+    },
+    {
+        "ticker": "NCSM",
+        "company": "NCS Multistage Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "NCTY",
+        "company": "The9 Limited American Depository Shares"
+    },
+    {
+        "ticker": "NDAQ",
+        "company": "Nasdaq Inc. Common Stock"
+    },
+    {
+        "ticker": "NDLS",
+        "company": "Noodles & Company Class A Common Stock"
+    },
+    {
+        "ticker": "NDRA",
+        "company": "ENDRA Life Sciences Inc. Common Stock"
+    },
+    {
+        "ticker": "NEE",
+        "company": "NextEra Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "NEM",
+        "company": "Newmont Corporation"
+    },
+    {
+        "ticker": "NEO",
+        "company": "NeoGenomics Inc. Common Stock"
+    },
+    {
+        "ticker": "NEOG",
+        "company": "Neogen Corporation Common Stock"
+    },
+    {
+        "ticker": "NEON",
+        "company": "Neonode Inc. Common Stock"
+    },
+    {
+        "ticker": "NEPH",
+        "company": "Nephros Inc. Common Stock"
+    },
+    {
+        "ticker": "NERV",
+        "company": "Minerva Neurosciences Inc Common Stock"
+    },
+    {
+        "ticker": "NFE",
+        "company": "New Fortress Energy Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "NFLX",
+        "company": "Netflix Inc. Common Stock"
+    },
+    {
+        "ticker": "NGG",
+        "company": "National Grid Transco PLC National Grid PLC (NEW) American Depositary Shares"
+    },
+    {
+        "ticker": "NGS",
+        "company": "Natural Gas Services Group Inc. Common Stock"
+    },
+    {
+        "ticker": "NGVC",
+        "company": "Natural Grocers by Vitamin Cottage Inc. Common Stock"
+    },
+    {
+        "ticker": "NICE",
+        "company": "NICE Ltd American Depositary Shares"
+    },
+    {
+        "ticker": "NICK",
+        "company": "Nicholas Financial Inc. Common Stock"
+    },
+    {
+        "ticker": "NINE",
+        "company": "Nine Energy Service Inc. Common Stock"
+    },
+    {
+        "ticker": "NISN",
+        "company": "NiSun International Enterprise Development Group Co. Ltd. Class A Common Shares"
+    },
+    {
+        "ticker": "NITO",
+        "company": "N2OFF Inc. Common Stock"
+    },
+    {
+        "ticker": "NKE",
+        "company": "Nike Inc. Common Stock"
+    },
+    {
+        "ticker": "NL",
+        "company": "NL Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "NMIH",
+        "company": "NMI Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "NMTC",
+        "company": "NeuroOne Medical Technologies Corporation Common Stock"
+    },
+    {
+        "ticker": "NOA",
+        "company": "North American Construction Group Ltd. Common Shares (no par)"
+    },
+    {
+        "ticker": "NOC",
+        "company": "Northrop Grumman Corporation Common Stock"
+    },
+    {
+        "ticker": "NOK",
+        "company": "Nokia Corporation Sponsored American Depositary Shares"
+    },
+    {
+        "ticker": "NOVT",
+        "company": "Novanta Inc. Common Stock"
+    },
+    {
+        "ticker": "NOW",
+        "company": "ServiceNow Inc. Common Stock"
+    },
+    {
+        "ticker": "NPK",
+        "company": "National Presto Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "NR",
+        "company": "Newpark Resources Inc. Common Stock"
+    },
+    {
+        "ticker": "NRBO",
+        "company": "NeuroBo Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "NRT",
+        "company": "North European Oil Royality Trust Common Stock"
+    },
+    {
+        "ticker": "NSC",
+        "company": "Norfolk Southern Corporation Common Stock"
+    },
+    {
+        "ticker": "NSIT",
+        "company": "Insight Enterprises Inc. Common Stock"
+    },
+    {
+        "ticker": "NSPR",
+        "company": "InspireMD Inc. Common Stock"
+    },
+    {
+        "ticker": "NSYS",
+        "company": "Nortech Systems Incorporated Common Stock"
+    },
+    {
+        "ticker": "NTAP",
+        "company": "NetApp Inc. Common Stock"
+    },
+    {
+        "ticker": "NTBL",
+        "company": "Notable Labs Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "NTES",
+        "company": "NetEase Inc. American Depositary Shares"
+    },
+    {
+        "ticker": "NTLA",
+        "company": "Intellia Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "NTNX",
+        "company": "Nutanix Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "NTR",
+        "company": "Nutrien Ltd. Common Shares"
+    },
+    {
+        "ticker": "NTRA",
+        "company": "Natera Inc. Common Stock"
+    },
+    {
+        "ticker": "NTRP",
+        "company": "NextTrip Inc. Common Stock"
+    },
+    {
+        "ticker": "NTRS",
+        "company": "Northern Trust Corporation Common Stock"
+    },
+    {
+        "ticker": "NTWK",
+        "company": "NetSol Technologies Inc. Common  Stock"
+    },
+    {
+        "ticker": "NTZ",
+        "company": "Natuzzi S.p.A."
+    },
+    {
+        "ticker": "NUE",
+        "company": "Nucor Corporation Common Stock"
+    },
+    {
+        "ticker": "NUKK",
+        "company": "Nukkleus Inc. Common Stock"
+    },
+    {
+        "ticker": "NURO",
+        "company": "NeuroMetrix Inc. Common Stock"
+    },
+    {
+        "ticker": "NUS",
+        "company": "Nu Skin Enterprises Inc. Common Stock"
+    },
+    {
+        "ticker": "NUWE",
+        "company": "Nuwellis Inc. Common Stock"
+    },
+    {
+        "ticker": "NVDA",
+        "company": "NVIDIA Corporation Common Stock"
+    },
+    {
+        "ticker": "NVFY",
+        "company": "Nova Lifestyle Inc. Common Stock"
+    },
+    {
+        "ticker": "NVMI",
+        "company": "Nova Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "NVNO",
+        "company": "enVVeno Medical Corporation Common Stock"
+    },
+    {
+        "ticker": "NVO",
+        "company": "Novo Nordisk A/S Common Stock"
+    },
+    {
+        "ticker": "NVR",
+        "company": "NVR Inc. Common Stock"
+    },
+    {
+        "ticker": "NVRI",
+        "company": "Enviri Corporation Common Stock"
+    },
+    {
+        "ticker": "NVRO",
+        "company": "Nevro Corp. Common Stock"
+    },
+    {
+        "ticker": "NVS",
+        "company": "Novartis AG Common Stock"
+    },
+    {
+        "ticker": "NWE",
+        "company": "NorthWestern Energy Group Inc. Common Stock"
+    },
+    {
+        "ticker": "NWG",
+        "company": "NatWest Group plc American Depositary Shares (each representing two (2) Ordinary Shares)"
+    },
+    {
+        "ticker": "NWL",
+        "company": "Newell Brands Inc. Common Stock"
+    },
+    {
+        "ticker": "NWS",
+        "company": "News Corporation Class B Common Stock"
+    },
+    {
+        "ticker": "NWSA",
+        "company": "News Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "NXPI",
+        "company": "NXP Semiconductors N.V. Common Stock"
+    },
+    {
+        "ticker": "NXST",
+        "company": "Nexstar Media Group Inc. Common Stock"
+    },
+    {
+        "ticker": "NXTC",
+        "company": "NextCure Inc. Common Stock"
+    },
+    {
+        "ticker": "O",
+        "company": "Realty Income Corporation Common Stock"
+    },
+    {
+        "ticker": "OBLG",
+        "company": "Oblong Inc. Common Stock"
+    },
+    {
+        "ticker": "OCUP",
+        "company": "Ocuphire Pharma Inc. Common Stock"
+    },
+    {
+        "ticker": "OCX",
+        "company": "Oncocyte Corporation Common Stock"
+    },
+    {
+        "ticker": "ODC",
+        "company": "Oil-Dri Corporation Of America Common Stock"
+    },
+    {
+        "ticker": "ODFL",
+        "company": "Old Dominion Freight Line Inc. Common Stock"
+    },
+    {
+        "ticker": "ODP",
+        "company": "The ODP Corporation Common Stock"
+    },
+    {
+        "ticker": "OESX",
+        "company": "Orion Energy Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "OIS",
+        "company": "Oil States International Inc. Common Stock"
+    },
+    {
+        "ticker": "OKE",
+        "company": "ONEOK Inc. Common Stock"
+    },
+    {
+        "ticker": "OKTA",
+        "company": "Okta Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "OLED",
+        "company": "Universal Display Corporation Common Stock"
+    },
+    {
+        "ticker": "OLLI",
+        "company": "Ollie's Bargain Outlet Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "OLP",
+        "company": "One Liberty Properties Inc. Common Stock"
+    },
+    {
+        "ticker": "OMAB",
+        "company": "Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADS"
+    },
+    {
+        "ticker": "ON",
+        "company": "ON Semiconductor Corporation Common Stock"
+    },
+    {
+        "ticker": "ONB",
+        "company": "Old National Bancorp Common Stock"
+    },
+    {
+        "ticker": "ONCT",
+        "company": "Oncternal Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "ONVO",
+        "company": "Organovo Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "OOMA",
+        "company": "Ooma Inc. Common Stock"
+    },
+    {
+        "ticker": "OPCH",
+        "company": "Option Care Health Inc. Common Stock"
+    },
+    {
+        "ticker": "OPGN",
+        "company": "OpGen Inc. Common Stock"
+    },
+    {
+        "ticker": "OPHC",
+        "company": "OptimumBank Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "OPY",
+        "company": "Oppenheimer Holdings Inc. Class A Common Stock (DE)"
+    },
+    {
+        "ticker": "ORAN",
+        "company": "Orange"
+    },
+    {
+        "ticker": "ORC",
+        "company": "Orchid Island Capital Inc. Common Stock"
+    },
+    {
+        "ticker": "ORCL",
+        "company": "Oracle Corporation Common Stock"
+    },
+    {
+        "ticker": "ORGS",
+        "company": "Orgenesis Inc. Common Stock"
+    },
+    {
+        "ticker": "ORLY",
+        "company": "O'Reilly Automotive Inc. Common Stock"
+    },
+    {
+        "ticker": "ORN",
+        "company": "Orion Group Holdings Inc. Common"
+    },
+    {
+        "ticker": "OSG",
+        "company": "Overseas Shipholding Group Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "OSIS",
+        "company": "OSI Systems Inc. Common Stock (DE)"
+    },
+    {
+        "ticker": "OSS",
+        "company": "One Stop Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "OTEX",
+        "company": "Open Text Corporation Common Shares"
+    },
+    {
+        "ticker": "OTRK",
+        "company": "Ontrak Inc. Common Stock"
+    },
+    {
+        "ticker": "OTTR",
+        "company": "Otter Tail Corporation Common Stock"
+    },
+    {
+        "ticker": "OXBR",
+        "company": "Oxbridge Re Holdings Limited Ordinary Shares"
+    },
+    {
+        "ticker": "OXY",
+        "company": "Occidental Petroleum Corporation Common Stock"
+    },
+    {
+        "ticker": "OZK",
+        "company": "Bank OZK Common Stock"
+    },
+    {
+        "ticker": "PAA",
+        "company": "Plains All American Pipeline L.P. Common Units representing Limited Partner Interests"
+    },
+    {
+        "ticker": "PACK",
+        "company": "Ranpak Holdings Corp Class A Common Stock"
+    },
+    {
+        "ticker": "PAGP",
+        "company": "Plains GP Holdings L.P. Class A Units representing Limited Partner Interests"
+    },
+    {
+        "ticker": "PALT",
+        "company": "Paltalk Inc. Common Stock"
+    },
+    {
+        "ticker": "PANW",
+        "company": "Palo Alto Networks Inc. Common Stock"
+    },
+    {
+        "ticker": "PARA",
+        "company": "Paramount Global Class B Common Stock"
+    },
+    {
+        "ticker": "PARAA",
+        "company": "Paramount Global Class A Common Stock"
+    },
+    {
+        "ticker": "PATK",
+        "company": "Patrick Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "PAVM",
+        "company": "PAVmed Inc. Common Stock"
+    },
+    {
+        "ticker": "PAYX",
+        "company": "Paychex Inc. Common Stock"
+    },
+    {
+        "ticker": "PBR",
+        "company": "Petroleo Brasileiro S.A.- Petrobras Common Stock"
+    },
+    {
+        "ticker": "PBT",
+        "company": "Permian Basin Royalty Trust Common Stock"
+    },
+    {
+        "ticker": "PCAR",
+        "company": "PACCAR Inc. Common Stock"
+    },
+    {
+        "ticker": "PCG",
+        "company": "Pacific Gas & Electric Co. Common Stock"
+    },
+    {
+        "ticker": "PCH",
+        "company": "PotlatchDeltic Corporation Common Stock"
+    },
+    {
+        "ticker": "PCSA",
+        "company": "Processa Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "PCTY",
+        "company": "Paylocity Holding Corporation Common Stock"
+    },
+    {
+        "ticker": "PDCO",
+        "company": "Patterson Companies Inc. Common Stock"
+    },
+    {
+        "ticker": "PDD",
+        "company": "PDD Holdings Inc. American Depositary Shares"
+    },
+    {
+        "ticker": "PDEX",
+        "company": "Pro-Dex Inc. Common Stock"
+    },
+    {
+        "ticker": "PEG",
+        "company": "Public Service Enterprise Group Incorporated Common Stock"
+    },
+    {
+        "ticker": "PEGA",
+        "company": "Pegasystems Inc. Common Stock"
+    },
+    {
+        "ticker": "PEGY",
+        "company": "Pineapple Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "PENN",
+        "company": "PENN Entertainment Inc. Common Stock"
+    },
+    {
+        "ticker": "PEP",
+        "company": "PepsiCo Inc. Common Stock"
+    },
+    {
+        "ticker": "PETZ",
+        "company": "TDH Holdings Inc. Common Shares"
+    },
+    {
+        "ticker": "PFE",
+        "company": "Pfizer Inc. Common Stock"
+    },
+    {
+        "ticker": "PFG",
+        "company": "Principal Financial Group Inc Common Stock"
+    },
+    {
+        "ticker": "PFLT",
+        "company": "PennantPark Floating Rate Capital Ltd. Common Stock"
+    },
+    {
+        "ticker": "PG",
+        "company": "Procter & Gamble Company (The) Common Stock"
+    },
+    {
+        "ticker": "PGR",
+        "company": "Progressive Corporation (The) Common Stock"
+    },
+    {
+        "ticker": "PH",
+        "company": "Parker-Hannifin Corporation Common Stock"
+    },
+    {
+        "ticker": "PHIO",
+        "company": "Phio Pharmaceuticals Corp. Common Stock"
+    },
+    {
+        "ticker": "PHM",
+        "company": "PulteGroup Inc. Common Stock"
+    },
+    {
+        "ticker": "PHUN",
+        "company": "Phunware Inc. Common Stock"
+    },
+    {
+        "ticker": "PHX",
+        "company": "PHX Minerals Inc. Common Stock"
+    },
+    {
+        "ticker": "PI",
+        "company": "Impinj Inc. Common Stock"
+    },
+    {
+        "ticker": "PINC",
+        "company": "Premier Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "PINS",
+        "company": "Pinterest Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "PIRS",
+        "company": "Pieris Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "PIXY",
+        "company": "ShiftPixy Inc. Common Stock"
+    },
+    {
+        "ticker": "PKE",
+        "company": "Park Aerospace Corp. Common Stock"
+    },
+    {
+        "ticker": "PKX",
+        "company": "POSCO Holdings Inc. American Depositary Shares (Each representing 1/4th of a share of Common Stock)"
+    },
+    {
+        "ticker": "PLAY",
+        "company": "Dave & Buster's Entertainment Inc. Common Stock"
+    },
+    {
+        "ticker": "PLD",
+        "company": "Prologis Inc. Common Stock"
+    },
+    {
+        "ticker": "PLMR",
+        "company": "Palomar Holdings Inc. Common stock"
+    },
+    {
+        "ticker": "PLOW",
+        "company": "Douglas Dynamics Inc. Common Stock"
+    },
+    {
+        "ticker": "PLUG",
+        "company": "Plug Power Inc. Common Stock"
+    },
+    {
+        "ticker": "PLUR",
+        "company": "Pluri Inc. Common Stock"
+    },
+    {
+        "ticker": "PLUS",
+        "company": "ePlus inc. Common Stock"
+    },
+    {
+        "ticker": "PLXS",
+        "company": "Plexus Corp. Common Stock"
+    },
+    {
+        "ticker": "PM",
+        "company": "Philip Morris International Inc Common Stock"
+    },
+    {
+        "ticker": "PMCB",
+        "company": "PharmaCyte  Biotech Inc. Common Stock"
+    },
+    {
+        "ticker": "PMD",
+        "company": "Psychemedics Corporation"
+    },
+    {
+        "ticker": "PNC",
+        "company": "PNC Financial Services Group Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "PNFP",
+        "company": "Pinnacle Financial Partners Inc. Common Stock"
+    },
+    {
+        "ticker": "PNNT",
+        "company": "PennantPark Investment Corporation Common Stock"
+    },
+    {
+        "ticker": "POAI",
+        "company": "Predictive Oncology Inc. Common Stock"
+    },
+    {
+        "ticker": "POCI",
+        "company": "Precision Optics Corporation Inc. Common stock"
+    },
+    {
+        "ticker": "PODD",
+        "company": "Insulet Corporation Common Stock"
+    },
+    {
+        "ticker": "POET",
+        "company": "POET Technologies Inc. Common Shares"
+    },
+    {
+        "ticker": "POLA",
+        "company": "Polar Power Inc. Common Stock"
+    },
+    {
+        "ticker": "POOL",
+        "company": "Pool Corporation Common Stock"
+    },
+    {
+        "ticker": "POWI",
+        "company": "Power Integrations Inc. Common Stock"
+    },
+    {
+        "ticker": "PPBI",
+        "company": "Pacific Premier Bancorp Inc"
+    },
+    {
+        "ticker": "PPBT",
+        "company": "Purple Biotech Ltd. American Depositary Shares"
+    },
+    {
+        "ticker": "PPC",
+        "company": "Pilgrim's Pride Corporation Common Stock"
+    },
+    {
+        "ticker": "PPG",
+        "company": "PPG Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "PPIH",
+        "company": "Perma-Pipe International Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "PPL",
+        "company": "PPL Corporation Common Stock"
+    },
+    {
+        "ticker": "PPSI",
+        "company": "Pioneer Power Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "PRA",
+        "company": "ProAssurance Corporation Common Stock"
+    },
+    {
+        "ticker": "PRGS",
+        "company": "Progress Software Corporation Common Stock (DE)"
+    },
+    {
+        "ticker": "PRPO",
+        "company": "Precipio Inc.  Common Stock"
+    },
+    {
+        "ticker": "PRSO",
+        "company": "Peraso Inc. Common Stock"
+    },
+    {
+        "ticker": "PRT",
+        "company": "PermRock Royalty Trust Trust Units"
+    },
+    {
+        "ticker": "PSA",
+        "company": "Public Storage Common Stock"
+    },
+    {
+        "ticker": "PSEC",
+        "company": "Prospect Capital Corporation Common Stock"
+    },
+    {
+        "ticker": "PSHG",
+        "company": "Performance Shipping Inc. Common Shares"
+    },
+    {
+        "ticker": "PSMT",
+        "company": "PriceSmart Inc. Common Stock"
+    },
+    {
+        "ticker": "PSTV",
+        "company": "PLUS THERAPEUTICS Inc. Common Stock "
+    },
+    {
+        "ticker": "PSX",
+        "company": "Phillips 66 Common Stock"
+    },
+    {
+        "ticker": "PT",
+        "company": "Pintec Technology Holdings Limited American Depositary Shares"
+    },
+    {
+        "ticker": "PTC",
+        "company": "PTC Inc. Common Stock"
+    },
+    {
+        "ticker": "PTCT",
+        "company": "PTC Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "PTEN",
+        "company": "Patterson-UTI Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "PUK",
+        "company": "Prudential Public Limited Company Common Stock"
+    },
+    {
+        "ticker": "PULM",
+        "company": "Pulmatrix Inc. Common Stock"
+    },
+    {
+        "ticker": "PVL",
+        "company": "Permianville Royalty Trust Trust Units "
+    },
+    {
+        "ticker": "PWR",
+        "company": "Quanta Services Inc. Common Stock"
+    },
+    {
+        "ticker": "PXS",
+        "company": "Pyxis Tankers Inc. Common Stock"
+    },
+    {
+        "ticker": "PYPL",
+        "company": "PayPal Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "PZZA",
+        "company": "Papa John's International Inc. Common Stock"
+    },
+    {
+        "ticker": "QCOM",
+        "company": "QUALCOMM Incorporated Common Stock"
+    },
+    {
+        "ticker": "QD",
+        "company": "Qudian Inc. American Depositary Shares each representing one Class A Ordinary Share"
+    },
+    {
+        "ticker": "QDEL",
+        "company": "QuidelOrtho Corporation Common Stock"
+    },
+    {
+        "ticker": "QFIN",
+        "company": "Qifu Technology Inc. American Depositary Shares"
+    },
+    {
+        "ticker": "QLGN",
+        "company": "Qualigen Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "QLYS",
+        "company": "Qualys Inc. Common Stock"
+    },
+    {
+        "ticker": "QMCO",
+        "company": "Quantum Corporation Common Stock"
+    },
+    {
+        "ticker": "QNCX",
+        "company": "Quince Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "QNRX",
+        "company": "Quoin Pharmaceuticals Ltd. American Depositary Shares"
+    },
+    {
+        "ticker": "QRVO",
+        "company": "Qorvo Inc. Common Stock"
+    },
+    {
+        "ticker": "QSR",
+        "company": "Restaurant Brands International Inc. Common Shares"
+    },
+    {
+        "ticker": "QUAD",
+        "company": "Quad Graphics Inc Class A Common Stock"
+    },
+    {
+        "ticker": "QUBT",
+        "company": "Quantum Computing Inc. Common Stock"
+    },
+    {
+        "ticker": "RACE",
+        "company": "Ferrari N.V. Common Shares"
+    },
+    {
+        "ticker": "RAIL",
+        "company": "FreightCar America Inc. Common Stock"
+    },
+    {
+        "ticker": "RAND",
+        "company": "Rand Capital Corporation Common Stock"
+    },
+    {
+        "ticker": "RARE",
+        "company": "Ultragenyx Pharmaceutical Inc. Common Stock"
+    },
+    {
+        "ticker": "RAVE",
+        "company": "Rave Restaurant Group Inc. Common Stock"
+    },
+    {
+        "ticker": "RCI",
+        "company": "Rogers Communication Inc. Common Stock"
+    },
+    {
+        "ticker": "RCKT",
+        "company": "Rocket Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "RCL",
+        "company": "Royal Caribbean Cruises Ltd. Common Stock"
+    },
+    {
+        "ticker": "RCM",
+        "company": "R1 RCM Inc. Common Stock"
+    },
+    {
+        "ticker": "RCON",
+        "company": "Recon Technology Ltd. Class A Ordinary Shares"
+    },
+    {
+        "ticker": "RCRT",
+        "company": "Recruiter.com Group Inc. Common Stock"
+    },
+    {
+        "ticker": "RDHL",
+        "company": "Redhill Biopharma Ltd. American Depositary Shares"
+    },
+    {
+        "ticker": "RDI",
+        "company": "Reading International Inc Class A Common Stock"
+    },
+    {
+        "ticker": "RDNT",
+        "company": "RadNet Inc. Common Stock"
+    },
+    {
+        "ticker": "REFR",
+        "company": "Research Frontiers Incorporated Common Stock"
+    },
+    {
+        "ticker": "REG",
+        "company": "Regency Centers Corporation Common Stock"
+    },
+    {
+        "ticker": "REGN",
+        "company": "Regeneron Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "RELI",
+        "company": "Reliance Global Group Inc. Common Stock"
+    },
+    {
+        "ticker": "RELX",
+        "company": "RELX PLC PLC American Depositary Shares (Each representing One Ordinary Share)"
+    },
+    {
+        "ticker": "RETO",
+        "company": "ReTo Eco-Solutions Inc. Common Shares"
+    },
+    {
+        "ticker": "RFIL",
+        "company": "RF Industries Ltd. Common Stock"
+    },
+    {
+        "ticker": "RFL",
+        "company": "Rafael Holdings Inc. Class B Common Stock"
+    },
+    {
+        "ticker": "RGEN",
+        "company": "Repligen Corporation Common Stock"
+    },
+    {
+        "ticker": "RGLD",
+        "company": "Royal Gold Inc. Common Stock"
+    },
+    {
+        "ticker": "RGS",
+        "company": "Regis Corporation Common Stock"
+    },
+    {
+        "ticker": "RIO",
+        "company": "Rio Tinto Plc Common Stock"
+    },
+    {
+        "ticker": "RIOT",
+        "company": "Riot Platforms Inc. Common Stock "
+    },
+    {
+        "ticker": "RJF",
+        "company": "Raymond James Financial Inc. Common Stock"
+    },
+    {
+        "ticker": "RKDA",
+        "company": "Arcadia Biosciences Inc. Common Stock"
+    },
+    {
+        "ticker": "RM",
+        "company": "Regional Management Corp. Common Stock"
+    },
+    {
+        "ticker": "RMAX",
+        "company": "RE/MAX Holdings Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "RMBS",
+        "company": "Rambus Inc. Common Stock"
+    },
+    {
+        "ticker": "RMCF",
+        "company": "Rocky Mountain Chocolate Factory Inc. Common Stock"
+    },
+    {
+        "ticker": "RMD",
+        "company": "ResMed Inc. Common Stock"
+    },
+    {
+        "ticker": "RMTI",
+        "company": "Rockwell Medical Inc. Common Stock"
+    },
+    {
+        "ticker": "ROAD",
+        "company": "Construction Partners Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "ROCK",
+        "company": "Gibraltar Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "ROK",
+        "company": "Rockwell Automation Inc. Common Stock"
+    },
+    {
+        "ticker": "ROKU",
+        "company": "Roku Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "ROL",
+        "company": "Rollins Inc. Common Stock"
+    },
+    {
+        "ticker": "ROP",
+        "company": "Roper Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "ROST",
+        "company": "Ross Stores Inc. Common Stock"
+    },
+    {
+        "ticker": "RPD",
+        "company": "Rapid7 Inc. Common Stock"
+    },
+    {
+        "ticker": "RRR",
+        "company": "Red Rock Resorts Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "RSG",
+        "company": "Republic Services Inc. Common Stock"
+    },
+    {
+        "ticker": "RSLS",
+        "company": "ReShape Lifesciences Inc. Common Stock"
+    },
+    {
+        "ticker": "RTX",
+        "company": "RTX Corporation Common Stock"
+    },
+    {
+        "ticker": "RUN",
+        "company": "Sunrun Inc. Common Stock"
+    },
+    {
+        "ticker": "RUSHA",
+        "company": "Rush Enterprises Inc. Common Stock Cl A"
+    },
+    {
+        "ticker": "RUSHB",
+        "company": "Rush Enterprises Inc. Class B"
+    },
+    {
+        "ticker": "RVYL",
+        "company": "Ryvyl Inc. Common Stock"
+    },
+    {
+        "ticker": "RWT",
+        "company": "Redwood Trust Inc. Common Stock"
+    },
+    {
+        "ticker": "RY",
+        "company": "Royal Bank Of Canada Common Stock"
+    },
+    {
+        "ticker": "RYAAY",
+        "company": "Ryanair Holdings plc American Depositary Shares"
+    },
+    {
+        "ticker": "RYAM",
+        "company": "Rayonier Advanced Materials Inc. Common Stock"
+    },
+    {
+        "ticker": "RYTM",
+        "company": "Rhythm Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "SAIA",
+        "company": "Saia Inc. Common Stock"
+    },
+    {
+        "ticker": "SAIC",
+        "company": "Science Applications International Corporation Common Stock"
+    },
+    {
+        "ticker": "SAN",
+        "company": "Banco Santander S.A. Sponsored ADR (Spain)"
+    },
+    {
+        "ticker": "SANM",
+        "company": "Sanmina Corporation Common Stock"
+    },
+    {
+        "ticker": "SANW",
+        "company": "S&W Seed Company Common Stock (NV)"
+    },
+    {
+        "ticker": "SAP",
+        "company": "SAP  SE ADS"
+    },
+    {
+        "ticker": "SAR",
+        "company": "Saratoga Investment Corp New"
+    },
+    {
+        "ticker": "SATS",
+        "company": "EchoStar  Corporation Common Stock"
+    },
+    {
+        "ticker": "SAVE",
+        "company": "Spirit Airlines Inc. Common Stock"
+    },
+    {
+        "ticker": "SB",
+        "company": "Safe Bulkers Inc Common Stock ($0.001 par value)"
+    },
+    {
+        "ticker": "SBAC",
+        "company": "SBA Communications Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "SBCF",
+        "company": "Seacoast Banking Corporation of Florida Common Stock"
+    },
+    {
+        "ticker": "SBET",
+        "company": "SharpLink Gaming Inc. Common Stock"
+    },
+    {
+        "ticker": "SBRA",
+        "company": "Sabra Health Care REIT Inc. Common Stock"
+    },
+    {
+        "ticker": "SBUX",
+        "company": "Starbucks Corporation Common Stock"
+    },
+    {
+        "ticker": "SCCO",
+        "company": "Southern Copper Corporation Common Stock"
+    },
+    {
+        "ticker": "SCHW",
+        "company": "Charles Schwab Corporation (The) Common Stock"
+    },
+    {
+        "ticker": "SCKT",
+        "company": "Socket Mobile Inc. Common Stock"
+    },
+    {
+        "ticker": "SCM",
+        "company": "Stellus Capital Investment Corporation Common Stock"
+    },
+    {
+        "ticker": "SCNI",
+        "company": "Scinai Immunotherapeutics Ltd. American Depositary Shares"
+    },
+    {
+        "ticker": "SCOR",
+        "company": "comScore Inc. Common Stock"
+    },
+    {
+        "ticker": "SCYX",
+        "company": "SCYNEXIS Inc. Common Stock"
+    },
+    {
+        "ticker": "SD",
+        "company": "SandRidge Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "SE",
+        "company": "Sea Limited American Depositary Shares each representing one Class A Ordinary Share"
+    },
+    {
+        "ticker": "SEDG",
+        "company": "SolarEdge Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "SEED",
+        "company": "Origin Agritech Limited Common Stock"
+    },
+    {
+        "ticker": "SEEL",
+        "company": "Seelos Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "SEIC",
+        "company": "SEI Investments Company Common Stock"
+    },
+    {
+        "ticker": "SELF",
+        "company": "Global Self Storage Inc. Common Stock"
+    },
+    {
+        "ticker": "SFM",
+        "company": "Sprouts Farmers Market Inc. Common Stock"
+    },
+    {
+        "ticker": "SFNC",
+        "company": "Simmons First National Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "SGBX",
+        "company": "Safe & Green Holdings Corp. Common Stock"
+    },
+    {
+        "ticker": "SGLY",
+        "company": "Singularity Future Technology Ltd. Common Stock"
+    },
+    {
+        "ticker": "SGMA",
+        "company": "SigmaTron International Inc. Common Stock"
+    },
+    {
+        "ticker": "SGRP",
+        "company": "SPAR Group Inc. Common Stock"
+    },
+    {
+        "ticker": "SGRY",
+        "company": "Surgery Partners Inc. Common Stock"
+    },
+    {
+        "ticker": "SGU",
+        "company": "Star Group L.P. Common Stock"
+    },
+    {
+        "ticker": "SHEL",
+        "company": "Shell PLC American Depositary Shares (each representing two (2) Ordinary Shares) "
+    },
+    {
+        "ticker": "SHOO",
+        "company": "Steven Madden Ltd. Common Stock"
+    },
+    {
+        "ticker": "SHOP",
+        "company": "Shopify Inc. Class A Subordinate Voting Shares"
+    },
+    {
+        "ticker": "SHW",
+        "company": "Sherwin-Williams Company (The) Common Stock"
+    },
+    {
+        "ticker": "SIGI",
+        "company": "Selective Insurance Group Inc. Common Stock"
+    },
+    {
+        "ticker": "SIMO",
+        "company": "Silicon Motion Technology Corporation American Depositary Shares"
+    },
+    {
+        "ticker": "SINT",
+        "company": "SiNtx Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "SIRI",
+        "company": "Sirius XM Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "SISI",
+        "company": "Shineco Inc. Common Stock"
+    },
+    {
+        "ticker": "SJ",
+        "company": "Scienjoy Holding Corporation Class A Ordinary Shares "
+    },
+    {
+        "ticker": "SJT",
+        "company": "San Juan Basin Royalty Trust Common Stock"
+    },
+    {
+        "ticker": "SKYE",
+        "company": "Skye Bioscience Inc. Common Stock"
+    },
+    {
+        "ticker": "SKYW",
+        "company": "SkyWest Inc. Common Stock"
+    },
+    {
+        "ticker": "SLAB",
+        "company": "Silicon Laboratories Inc. Common Stock"
+    },
+    {
+        "ticker": "SLB",
+        "company": "Schlumberger N.V. Common Stock"
+    },
+    {
+        "ticker": "SLE",
+        "company": "Super League Enterprise Inc. Common Stock"
+    },
+    {
+        "ticker": "SLF",
+        "company": "Sun Life Financial Inc. Common Stock"
+    },
+    {
+        "ticker": "SLGL",
+        "company": "Sol-Gel Technologies Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "SLM",
+        "company": "SLM Corporation Common Stock"
+    },
+    {
+        "ticker": "SLNH",
+        "company": "Soluna Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "SLRX",
+        "company": "Salarius Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "SMBK",
+        "company": "SmartFinancial Inc. Common Stock"
+    },
+    {
+        "ticker": "SMCI",
+        "company": "Super Micro Computer Inc. Common Stock"
+    },
+    {
+        "ticker": "SMFG",
+        "company": "Sumitomo Mitsui Financial Group Inc Unsponsored American Depositary Shares (Japan)"
+    },
+    {
+        "ticker": "SMLP",
+        "company": "Summit Midstream Partners LP Common Units Representing Limited Partner Interests"
+    },
+    {
+        "ticker": "SMMT",
+        "company": "Summit Therapeutics Inc. Common Stock "
+    },
+    {
+        "ticker": "SMP",
+        "company": "Standard Motor Products Inc. Common Stock"
+    },
+    {
+        "ticker": "SMPL",
+        "company": "The Simply Good Foods Company Common Stock"
+    },
+    {
+        "ticker": "SMSI",
+        "company": "Smith Micro Software Inc. Common Stock"
+    },
+    {
+        "ticker": "SMTC",
+        "company": "Semtech Corporation Common Stock"
+    },
+    {
+        "ticker": "SNAX",
+        "company": "Stryve Foods Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "SNCR",
+        "company": "Synchronoss Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "SNDA",
+        "company": "Sonida Senior Living Inc. Common Stock"
+    },
+    {
+        "ticker": "SNDX",
+        "company": "Syndax Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "SNES",
+        "company": "SenesTech Inc. Common Stock"
+    },
+    {
+        "ticker": "SNEX",
+        "company": "StoneX Group Inc. Common Stock"
+    },
+    {
+        "ticker": "SNGX",
+        "company": "Soligenix Inc. Common Stock"
+    },
+    {
+        "ticker": "SNOA",
+        "company": "Sonoma Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "SNPS",
+        "company": "Synopsys Inc. Common Stock"
+    },
+    {
+        "ticker": "SNT",
+        "company": "Senstar Technologies Corporation Common Shares"
+    },
+    {
+        "ticker": "SNY",
+        "company": "Sanofi ADS"
+    },
+    {
+        "ticker": "SO",
+        "company": "Southern Company (The) Common Stock"
+    },
+    {
+        "ticker": "SOBR",
+        "company": "SOBR Safe Inc. Common Stock"
+    },
+    {
+        "ticker": "SOHO",
+        "company": "Sotherly Hotels Inc. Common Stock"
+    },
+    {
+        "ticker": "SOI",
+        "company": "Solaris Oilfield Infrastructure Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "SOL",
+        "company": "Emeren Group Ltd American Depositary Shares each representing 10 shares"
+    },
+    {
+        "ticker": "SONM",
+        "company": "Sonim Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "SONN",
+        "company": "Sonnet BioTherapeutics Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "SONO",
+        "company": "Sonos Inc. Common Stock"
+    },
+    {
+        "ticker": "SONY",
+        "company": "Sony Group Corporation American Depositary Shares "
+    },
+    {
+        "ticker": "SOS",
+        "company": "SOS Limited American Depositary Shares"
+    },
+    {
+        "ticker": "SOTK",
+        "company": "Sono-Tek Corporation Common Stock"
+    },
+    {
+        "ticker": "SPCB",
+        "company": "SuperCom Ltd. Ordinary Shares (Israel)"
+    },
+    {
+        "ticker": "SPCE",
+        "company": "Virgin Galactic Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "SPG",
+        "company": "Simon Property Group Inc. Common Stock"
+    },
+    {
+        "ticker": "SPGI",
+        "company": "S&P Global Inc. Common Stock"
+    },
+    {
+        "ticker": "SPI",
+        "company": "SPI Energy Co. Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "SPOT",
+        "company": "Spotify Technology S.A. Ordinary Shares"
+    },
+    {
+        "ticker": "SPSC",
+        "company": "SPS Commerce Inc. Common Stock"
+    },
+    {
+        "ticker": "SQ",
+        "company": "Block Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "SQNS",
+        "company": "Sequans Communications S.A. American Depositary Shares"
+    },
+    {
+        "ticker": "SRCL",
+        "company": "Stericycle Inc. Common Stock"
+    },
+    {
+        "ticker": "SRE",
+        "company": "DBA Sempra Common Stock"
+    },
+    {
+        "ticker": "SRG",
+        "company": "Seritage Growth Properties Class A Common Stock"
+    },
+    {
+        "ticker": "SRI",
+        "company": "Stoneridge Inc. Common Stock"
+    },
+    {
+        "ticker": "SRL",
+        "company": "Scully Royalty Ltd."
+    },
+    {
+        "ticker": "SRPT",
+        "company": "Sarepta Therapeutics Inc. Common Stock (DE)"
+    },
+    {
+        "ticker": "SRTS",
+        "company": "Sensus Healthcare Inc. Common Stock"
+    },
+    {
+        "ticker": "SSBI",
+        "company": "Summit State Bank Common Stock"
+    },
+    {
+        "ticker": "SSKN",
+        "company": "Strata Skin Sciences Inc. Common Stock"
+    },
+    {
+        "ticker": "SSNC",
+        "company": "SS&C Technologies Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "STAA",
+        "company": "STAAR Surgical Company Common Stock"
+    },
+    {
+        "ticker": "STAF",
+        "company": "Staffing 360 Solutions Inc. Common Stock (DE)"
+    },
+    {
+        "ticker": "STCN",
+        "company": "Steel Connect Inc. Common Stock"
+    },
+    {
+        "ticker": "STE",
+        "company": "STERIS plc (Ireland) Ordinary Shares"
+    },
+    {
+        "ticker": "STG",
+        "company": "Sunlands Technology Group American Depositary Shares representing Class A ordinary shares"
+    },
+    {
+        "ticker": "STLA",
+        "company": "Stellantis N.V. Common Shares"
+    },
+    {
+        "ticker": "STLD",
+        "company": "Steel Dynamics Inc."
+    },
+    {
+        "ticker": "STM",
+        "company": "STMicroelectronics N.V. Common Stock"
+    },
+    {
+        "ticker": "STRA",
+        "company": "Strategic Education Inc. Common Stock"
+    },
+    {
+        "ticker": "STRL",
+        "company": "Sterling Infrastructure Inc. Common Stock"
+    },
+    {
+        "ticker": "STRM",
+        "company": "Streamline Health Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "STRR",
+        "company": "Star Equity Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "STT",
+        "company": "State Street Corporation Common Stock"
+    },
+    {
+        "ticker": "STX",
+        "company": "Seagate Technology Holdings PLC Ordinary Shares (Ireland)"
+    },
+    {
+        "ticker": "SU",
+        "company": "Suncor Energy  Inc. Common Stock"
+    },
+    {
+        "ticker": "SUP",
+        "company": "Superior Industries International Inc. Common Stock (DE)"
+    },
+    {
+        "ticker": "SUPV",
+        "company": "Grupo Supervielle S.A. American Depositary Shares each Representing five Class B shares"
+    },
+    {
+        "ticker": "SURG",
+        "company": "SurgePays Inc. Common Stock"
+    },
+    {
+        "ticker": "SWKS",
+        "company": "Skyworks Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "SXTC",
+        "company": "China SXT Pharmaceuticals Inc. Ordinary Shares"
+    },
+    {
+        "ticker": "SYBX",
+        "company": "Synlogic Inc. Common Stock"
+    },
+    {
+        "ticker": "SYK",
+        "company": "Stryker Corporation Common Stock"
+    },
+    {
+        "ticker": "SYNA",
+        "company": "Synaptics Incorporated Common Stock $0.001 Par Value"
+    },
+    {
+        "ticker": "SYPR",
+        "company": "Sypris Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "SYTA",
+        "company": "Siyata Mobile Inc. Common Shares"
+    },
+    {
+        "ticker": "SYY",
+        "company": "Sysco Corporation Common Stock"
+    },
+    {
+        "ticker": "T",
+        "company": "AT&T Inc."
+    },
+    {
+        "ticker": "TACT",
+        "company": "TransAct Technologies Incorporated Common Stock"
+    },
+    {
+        "ticker": "TAIT",
+        "company": "Taitron Components Incorporated Class A Common Stock"
+    },
+    {
+        "ticker": "TAK",
+        "company": "Takeda Pharmaceutical Company Limited American Depositary Shares (each representing 1/2 of a share of Common Stock)"
+    },
+    {
+        "ticker": "TANH",
+        "company": "Tantech Holdings Ltd. Common Shares"
+    },
+    {
+        "ticker": "TAOP",
+        "company": "Taoping Inc. Ordinary Shares "
+    },
+    {
+        "ticker": "TARA",
+        "company": "Protara Therapeutics Inc.  Common Stock"
+    },
+    {
+        "ticker": "TBBK",
+        "company": "The Bancorp Inc Common Stock"
+    },
+    {
+        "ticker": "TBI",
+        "company": "TrueBlue Inc. Common Stock"
+    },
+    {
+        "ticker": "TBLT",
+        "company": "ToughBuilt Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "TBNK",
+        "company": "Territorial Bancorp Inc. Common Stock"
+    },
+    {
+        "ticker": "TC",
+        "company": "TuanChe Limited American Depositary Shares"
+    },
+    {
+        "ticker": "TCBI",
+        "company": "Texas Capital Bancshares Inc. Common Stock"
+    },
+    {
+        "ticker": "TCI",
+        "company": "Transcontinental Realty Investors Inc. Common Stock"
+    },
+    {
+        "ticker": "TCOM",
+        "company": "Trip.com Group Limited American Depositary Shares"
+    },
+    {
+        "ticker": "TCRT",
+        "company": "Alaunos Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "TCS",
+        "company": "Container Store (The) Common Stock"
+    },
+    {
+        "ticker": "TD",
+        "company": "Toronto Dominion Bank (The) Common Stock"
+    },
+    {
+        "ticker": "TDG",
+        "company": "Transdigm Group Incorporated Common Stock"
+    },
+    {
+        "ticker": "TEAM",
+        "company": "Atlassian Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "TECH",
+        "company": "Bio-Techne Corp Common Stock"
+    },
+    {
+        "ticker": "TECK",
+        "company": "Teck Resources Ltd Ordinary Shares"
+    },
+    {
+        "ticker": "TEF",
+        "company": "Telefonica SA Common Stock"
+    },
+    {
+        "ticker": "TEL",
+        "company": "TE Connectivity Ltd. New Switzerland Registered Shares"
+    },
+    {
+        "ticker": "TENB",
+        "company": "Tenable Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "TENX",
+        "company": "Tenax Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "TER",
+        "company": "Teradyne Inc. Common Stock"
+    },
+    {
+        "ticker": "TFC",
+        "company": "Truist Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "TFSL",
+        "company": "TFS Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "TG",
+        "company": "Tredegar Corporation Common Stock"
+    },
+    {
+        "ticker": "TGT",
+        "company": "Target Corporation Common Stock"
+    },
+    {
+        "ticker": "TGTX",
+        "company": "TG Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "THMO",
+        "company": "ThermoGenesis Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "THTX",
+        "company": "Theratechnologies Inc. Common Shares"
+    },
+    {
+        "ticker": "TIGO",
+        "company": "Millicom International Cellular S.A. Common Stock"
+    },
+    {
+        "ticker": "TISI",
+        "company": "Team Inc. Common Stock"
+    },
+    {
+        "ticker": "TJX",
+        "company": "TJX Companies Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "TK",
+        "company": "Teekay Corporation Common Stock"
+    },
+    {
+        "ticker": "TLYS",
+        "company": "Tilly's Inc. Common Stock"
+    },
+    {
+        "ticker": "TM",
+        "company": "Toyota Motor Corporation Common Stock"
+    },
+    {
+        "ticker": "TMDX",
+        "company": "TransMedics Group Inc. Common Stock"
+    },
+    {
+        "ticker": "TMO",
+        "company": "Thermo Fisher Scientific Inc Common Stock"
+    },
+    {
+        "ticker": "TMUS",
+        "company": "T-Mobile US Inc. Common Stock"
+    },
+    {
+        "ticker": "TNDM",
+        "company": "Tandem Diabetes Care Inc. Common Stock"
+    },
+    {
+        "ticker": "TNP",
+        "company": "Tsakos Energy Navigation Ltd Common Shares"
+    },
+    {
+        "ticker": "TNXP",
+        "company": "Tonix Pharmaceuticals Holding Corp. Common Stock"
+    },
+    {
+        "ticker": "TOMZ",
+        "company": "TOMI Environmental Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "TOWN",
+        "company": "TowneBank Common Stock"
+    },
+    {
+        "ticker": "TPB",
+        "company": "Turning Point Brands Inc. Common Stock"
+    },
+    {
+        "ticker": "TPC",
+        "company": "Tutor Perini Corporation Common Stock"
+    },
+    {
+        "ticker": "TPST",
+        "company": "Tempest Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "TPVG",
+        "company": "TriplePoint Venture Growth BDC Corp. Common Stock"
+    },
+    {
+        "ticker": "TRAK",
+        "company": "ReposiTrak Inc. Common Stock"
+    },
+    {
+        "ticker": "TRAW",
+        "company": "Traws Pharma Inc. Common Stock"
+    },
+    {
+        "ticker": "TRC",
+        "company": "Tejon Ranch Co Common Stock"
+    },
+    {
+        "ticker": "TRGP",
+        "company": "Targa Resources Inc. Common Stock"
+    },
+    {
+        "ticker": "TRI",
+        "company": "Thomson Reuters Corp Common Shares"
+    },
+    {
+        "ticker": "TRIB",
+        "company": "Trinity Biotech plc American Depositary Shares"
+    },
+    {
+        "ticker": "TRIP",
+        "company": "TripAdvisor Inc. Common Stock"
+    },
+    {
+        "ticker": "TRMB",
+        "company": "Trimble Inc. Common Stock"
+    },
+    {
+        "ticker": "TRMD",
+        "company": "TORM plc Class A Common Stock"
+    },
+    {
+        "ticker": "TROW",
+        "company": "T. Rowe Price Group Inc. Common Stock"
+    },
+    {
+        "ticker": "TRP",
+        "company": "TC Energy Corporation Common Stock"
+    },
+    {
+        "ticker": "TRTX",
+        "company": "TPG RE Finance Trust Inc. Common Stock"
+    },
+    {
+        "ticker": "TRV",
+        "company": "The Travelers Companies Inc. Common Stock"
+    },
+    {
+        "ticker": "TRVN",
+        "company": "Trevena Inc. Common Stock"
+    },
+    {
+        "ticker": "TS",
+        "company": "Tenaris S.A. American Depositary Shares"
+    },
+    {
+        "ticker": "TSCO",
+        "company": "Tractor Supply Company Common Stock"
+    },
+    {
+        "ticker": "TSE",
+        "company": "Trinseo PLC Ordinary Shares "
+    },
+    {
+        "ticker": "TSEM",
+        "company": "Tower Semiconductor Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "TSLA",
+        "company": "Tesla Inc. Common Stock"
+    },
+    {
+        "ticker": "TSM",
+        "company": "Taiwan Semiconductor Manufacturing Company Ltd."
+    },
+    {
+        "ticker": "TSN",
+        "company": "Tyson Foods Inc. Common Stock"
+    },
+    {
+        "ticker": "TSQ",
+        "company": "Townsquare Media Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "TSRI",
+        "company": "TSR Inc. Common Stock"
+    },
+    {
+        "ticker": "TT",
+        "company": "Trane Technologies plc"
+    },
+    {
+        "ticker": "TTD",
+        "company": "The Trade Desk Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "TTE",
+        "company": "TotalEnergies SE"
+    },
+    {
+        "ticker": "TTEK",
+        "company": "Tetra Tech Inc. Common Stock"
+    },
+    {
+        "ticker": "TTI",
+        "company": "Tetra Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "TTNP",
+        "company": "Titan Pharmaceuticals Inc. Common Stock"
+    },
+    {
+        "ticker": "TTOO",
+        "company": "T2 Biosystems Inc. Common Stock"
+    },
+    {
+        "ticker": "TTWO",
+        "company": "Take-Two Interactive Software Inc. Common Stock"
+    },
+    {
+        "ticker": "TU",
+        "company": "Telus Corporation Ordinary Shares"
+    },
+    {
+        "ticker": "TUP",
+        "company": "Tupperware Brands Corporation Common Stock"
+    },
+    {
+        "ticker": "TURN",
+        "company": "180 Degree Capital Corp. Common Stock"
+    },
+    {
+        "ticker": "TW",
+        "company": "Tradeweb Markets Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "TWOU",
+        "company": "2U Inc. Common Stock"
+    },
+    {
+        "ticker": "TXMD",
+        "company": "TherapeuticsMD Inc. Common Stock"
+    },
+    {
+        "ticker": "TXN",
+        "company": "Texas Instruments Incorporated Common Stock"
+    },
+    {
+        "ticker": "TXRH",
+        "company": "Texas Roadhouse Inc. Common Stock"
+    },
+    {
+        "ticker": "TYG",
+        "company": "Tortoise Energy Infrastructure Corporation Common Stock"
+    },
+    {
+        "ticker": "UAL",
+        "company": "United Airlines Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "UBER",
+        "company": "Uber Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "UBS",
+        "company": "UBS Group AG Registered Ordinary Shares"
+    },
+    {
+        "ticker": "UBSI",
+        "company": "United Bankshares Inc. Common Stock"
+    },
+    {
+        "ticker": "UBX",
+        "company": "Unity Biotechnology Inc. Common Stock"
+    },
+    {
+        "ticker": "UCBI",
+        "company": "United Community Banks Inc. Common Stock"
+    },
+    {
+        "ticker": "UCTT",
+        "company": "Ultra Clean Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "UFI",
+        "company": "Unifi Inc. New Common Stock"
+    },
+    {
+        "ticker": "UFPI",
+        "company": "UFP Industries Inc. Common Stock"
+    },
+    {
+        "ticker": "UHT",
+        "company": "Universal Health Realty Income Trust Common Stock"
+    },
+    {
+        "ticker": "UIS",
+        "company": "Unisys Corporation New Common Stock"
+    },
+    {
+        "ticker": "UL",
+        "company": "Unilever PLC Common Stock"
+    },
+    {
+        "ticker": "ULTA",
+        "company": "Ulta Beauty Inc. Common Stock"
+    },
+    {
+        "ticker": "UMBF",
+        "company": "UMB Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "UNFI",
+        "company": "United Natural Foods Inc. Common Stock"
+    },
+    {
+        "ticker": "UNH",
+        "company": "UnitedHealth Group Incorporated Common Stock (DE)"
+    },
+    {
+        "ticker": "UNP",
+        "company": "Union Pacific Corporation Common Stock"
+    },
+    {
+        "ticker": "UPLD",
+        "company": "Upland Software Inc. Common Stock"
+    },
+    {
+        "ticker": "UPS",
+        "company": "United Parcel Service Inc. Common Stock"
+    },
+    {
+        "ticker": "URBN",
+        "company": "Urban Outfitters Inc. Common Stock"
+    },
+    {
+        "ticker": "URI",
+        "company": "United Rentals Inc. Common Stock"
+    },
+    {
+        "ticker": "USAU",
+        "company": "U.S. Gold Corp. Common Stock"
+    },
+    {
+        "ticker": "USB",
+        "company": "U.S. Bancorp Common Stock"
+    },
+    {
+        "ticker": "USEG",
+        "company": "U.S. Energy Corp. Common Stock (DE)"
+    },
+    {
+        "ticker": "USIO",
+        "company": "Usio Inc. Common Stock"
+    },
+    {
+        "ticker": "USLM",
+        "company": "United States Lime & Minerals Inc. Common Stock"
+    },
+    {
+        "ticker": "UTHR",
+        "company": "United Therapeutics Corporation Common Stock"
+    },
+    {
+        "ticker": "UTSI",
+        "company": "UTStarcom Holdings Corp. Ordinary Shares"
+    },
+    {
+        "ticker": "UVE",
+        "company": "UNIVERSAL INSURANCE HOLDINGS INC Common Stock"
+    },
+    {
+        "ticker": "V",
+        "company": "Visa Inc."
+    },
+    {
+        "ticker": "VALE",
+        "company": "VALE S.A.  American Depositary Shares Each Representing one common share"
+    },
+    {
+        "ticker": "VATE",
+        "company": "INNOVATE Corp. Common Stock"
+    },
+    {
+        "ticker": "VBIV",
+        "company": "VBI Vaccines Inc. New Common Stock (Canada)"
+    },
+    {
+        "ticker": "VC",
+        "company": "Visteon Corporation Common Stock"
+    },
+    {
+        "ticker": "VCEL",
+        "company": "Vericel Corporation Common Stock"
+    },
+    {
+        "ticker": "VCNX",
+        "company": "Vaccinex Inc. Common Stock"
+    },
+    {
+        "ticker": "VCTR",
+        "company": "Victory Capital Holdings Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "VECO",
+        "company": "Veeco Instruments Inc. Common Stock"
+    },
+    {
+        "ticker": "VEEV",
+        "company": "Veeva Systems Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "VERB",
+        "company": "Verb Technology Company Inc. Common Stock"
+    },
+    {
+        "ticker": "VERO",
+        "company": "Venus Concept Inc. Common Stock"
+    },
+    {
+        "ticker": "VHC",
+        "company": "VirnetX Holding Corp Common Stock"
+    },
+    {
+        "ticker": "VHI",
+        "company": "Valhi Inc. Common Stock"
+    },
+    {
+        "ticker": "VIAV",
+        "company": "Viavi Solutions Inc. Common Stock"
+    },
+    {
+        "ticker": "VICI",
+        "company": "VICI Properties Inc. Common Stock"
+    },
+    {
+        "ticker": "VIOT",
+        "company": "Viomi Technology Co. Ltd American Depositary Shares"
+    },
+    {
+        "ticker": "VIRT",
+        "company": "Virtu Financial Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "VIRX",
+        "company": "Viracta Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "VISL",
+        "company": "Vislink Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "VIVK",
+        "company": "Vivakor Inc. Common Stock"
+    },
+    {
+        "ticker": "VKTX",
+        "company": "Viking Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "VLO",
+        "company": "Valero Energy Corporation Common Stock"
+    },
+    {
+        "ticker": "VLY",
+        "company": "Valley National Bancorp Common Stock"
+    },
+    {
+        "ticker": "VMC",
+        "company": "Vulcan Materials Company (Holding Company) Common Stock"
+    },
+    {
+        "ticker": "VNOM",
+        "company": "Viper Energy Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "VOC",
+        "company": "VOC Energy Trust Units of Beneficial Interest"
+    },
+    {
+        "ticker": "VOD",
+        "company": "Vodafone Group Plc American Depositary Shares"
+    },
+    {
+        "ticker": "VPG",
+        "company": "Vishay Precision Group Inc. Common Stock"
+    },
+    {
+        "ticker": "VRME",
+        "company": "VerifyMe Inc. Common Stock"
+    },
+    {
+        "ticker": "VRNS",
+        "company": "Varonis Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "VRNT",
+        "company": "Verint Systems Inc. Common Stock"
+    },
+    {
+        "ticker": "VRRM",
+        "company": "Verra Mobility Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "VRSK",
+        "company": "Verisk Analytics Inc. Common Stock"
+    },
+    {
+        "ticker": "VRSN",
+        "company": "VeriSign Inc. Common Stock"
+    },
+    {
+        "ticker": "VRT",
+        "company": "Vertiv Holdings LLC Class A Common Stock"
+    },
+    {
+        "ticker": "VRTX",
+        "company": "Vertex Pharmaceuticals Incorporated Common Stock"
+    },
+    {
+        "ticker": "VS",
+        "company": "Versus Systems Inc. Common Shares"
+    },
+    {
+        "ticker": "VSAT",
+        "company": "ViaSat Inc. Common Stock"
+    },
+    {
+        "ticker": "VST",
+        "company": "Vistra Corp. Common Stock"
+    },
+    {
+        "ticker": "VTOL",
+        "company": "Bristow Group Inc. Common Stock"
+    },
+    {
+        "ticker": "VTRS",
+        "company": "Viatris Inc. Common Stock"
+    },
+    {
+        "ticker": "VTVT",
+        "company": "vTv Therapeutics Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "VVI",
+        "company": "Viad Corp Common Stock"
+    },
+    {
+        "ticker": "VVPR",
+        "company": "VivoPower International PLC Ordinary Shares"
+    },
+    {
+        "ticker": "VYNE",
+        "company": "VYNE Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "VZ",
+        "company": "Verizon Communications Inc. Common Stock"
+    },
+    {
+        "ticker": "WAB",
+        "company": "Westinghouse Air Brake Technologies Corporation Common Stock"
+    },
+    {
+        "ticker": "WAFD",
+        "company": "WaFd Inc. Common Stock"
+    },
+    {
+        "ticker": "WAFU",
+        "company": "Wah Fu Education Group Limited Ordinary Shares"
+    },
+    {
+        "ticker": "WATT",
+        "company": "Energous Corporation Common Stock"
+    },
+    {
+        "ticker": "WB",
+        "company": "Weibo Corporation American Depositary Share"
+    },
+    {
+        "ticker": "WBA",
+        "company": "Walgreens Boots Alliance Inc. Common Stock"
+    },
+    {
+        "ticker": "WBD",
+        "company": "Warner Bros. Discovery Inc. Series A Common Stock "
+    },
+    {
+        "ticker": "WCN",
+        "company": "Waste Connections Inc. Common Shares"
+    },
+    {
+        "ticker": "WDAY",
+        "company": "Workday Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "WDC",
+        "company": "Western Digital Corporation Common Stock"
+    },
+    {
+        "ticker": "WDFC",
+        "company": "WD-40 Company Common Stock"
+    },
+    {
+        "ticker": "WDS",
+        "company": "Woodside Energy Group Limited American Depositary Shares each representing one Ordinary Share"
+    },
+    {
+        "ticker": "WEC",
+        "company": "WEC Energy Group Inc. Common Stock"
+    },
+    {
+        "ticker": "WELL",
+        "company": "Welltower Inc. Common Stock"
+    },
+    {
+        "ticker": "WEN",
+        "company": "Wendy's Company (The) Common Stock"
+    },
+    {
+        "ticker": "WERN",
+        "company": "Werner Enterprises Inc. Common Stock"
+    },
+    {
+        "ticker": "WFC",
+        "company": "Wells Fargo & Company Common Stock"
+    },
+    {
+        "ticker": "WFCF",
+        "company": "Where Food Comes From Inc. Common Stock"
+    },
+    {
+        "ticker": "WHG",
+        "company": "Westwood Holdings Group Inc Common Stock"
+    },
+    {
+        "ticker": "WHLR",
+        "company": "Wheeler Real Estate Investment Trust Inc. Common Stock"
+    },
+    {
+        "ticker": "WING",
+        "company": "Wingstop Inc. Common Stock"
+    },
+    {
+        "ticker": "WINT",
+        "company": "Windtree Therapeutics Inc. Common Stock"
+    },
+    {
+        "ticker": "WIRE",
+        "company": "Encore Wire Corporation Common Stock"
+    },
+    {
+        "ticker": "WISA",
+        "company": "WiSA Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "WIT",
+        "company": "Wipro Limited Common Stock"
+    },
+    {
+        "ticker": "WIX",
+        "company": "Wix.com Ltd. Ordinary Shares"
+    },
+    {
+        "ticker": "WKHS",
+        "company": "Workhorse Group Inc. Common Stock"
+    },
+    {
+        "ticker": "WKSP",
+        "company": "Worksport Ltd. Common Stock"
+    },
+    {
+        "ticker": "WM",
+        "company": "Waste Management Inc. Common Stock"
+    },
+    {
+        "ticker": "WMB",
+        "company": "Williams Companies Inc. (The) Common Stock"
+    },
+    {
+        "ticker": "WMT",
+        "company": "Walmart Inc. Common Stock"
+    },
+    {
+        "ticker": "WORX",
+        "company": "SCWorx Corp. Common Stock"
+    },
+    {
+        "ticker": "WOW",
+        "company": "WideOpenWest Inc. Common Stock"
+    },
+    {
+        "ticker": "WPM",
+        "company": "Wheaton Precious Metals Corp Common Shares (Canada)"
+    },
+    {
+        "ticker": "WRB",
+        "company": "W.R. Berkley Corporation Common Stock"
+    },
+    {
+        "ticker": "WSC",
+        "company": "WillScot Mobile Mini Holdings Corp. Class A Common Stock"
+    },
+    {
+        "ticker": "WSFS",
+        "company": "WSFS Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "WSR",
+        "company": "Whitestone REIT Common Shares"
+    },
+    {
+        "ticker": "WST",
+        "company": "West Pharmaceutical Services Inc. Common Stock"
+    },
+    {
+        "ticker": "WTFC",
+        "company": "Wintrust Financial Corporation Common Stock"
+    },
+    {
+        "ticker": "WTI",
+        "company": "W&T Offshore Inc. Common Stock"
+    },
+    {
+        "ticker": "WTW",
+        "company": "Willis Towers Watson Public Limited Company Ordinary Shares"
+    },
+    {
+        "ticker": "WVVI",
+        "company": "Willamette Valley Vineyards Inc. Common Stock"
+    },
+    {
+        "ticker": "WWD",
+        "company": "Woodward Inc. Common Stock"
+    },
+    {
+        "ticker": "WY",
+        "company": "Weyerhaeuser Company Common Stock"
+    },
+    {
+        "ticker": "WYNN",
+        "company": "Wynn Resorts Limited Common stock"
+    },
+    {
+        "ticker": "XAIR",
+        "company": "Beyond Air Inc. Common Stock"
+    },
+    {
+        "ticker": "XBIO",
+        "company": "Xenetic Biosciences Inc. Common Stock"
+    },
+    {
+        "ticker": "XCUR",
+        "company": "Exicure Inc. Common Stock"
+    },
+    {
+        "ticker": "XEL",
+        "company": "Xcel Energy Inc. Common Stock"
+    },
+    {
+        "ticker": "XELA",
+        "company": "Exela Technologies Inc. Common Stock"
+    },
+    {
+        "ticker": "XELB",
+        "company": "Xcel Brands Inc. Common Stock"
+    },
+    {
+        "ticker": "XENE",
+        "company": "Xenon Pharmaceuticals Inc. Common Shares"
+    },
+    {
+        "ticker": "XIN",
+        "company": "Xinyuan Real Estate Co Ltd American Depositary Shares"
+    },
+    {
+        "ticker": "XOM",
+        "company": "Exxon Mobil Corporation Common Stock"
+    },
+    {
+        "ticker": "XPER",
+        "company": "Xperi Inc. Common Stock "
+    },
+    {
+        "ticker": "XRAY",
+        "company": "DENTSPLY SIRONA Inc. Common Stock"
+    },
+    {
+        "ticker": "XRX",
+        "company": "Xerox Holdings Corporation Common Stock"
+    },
+    {
+        "ticker": "XWEL",
+        "company": "XWELL Inc. Common Stock"
+    },
+    {
+        "ticker": "XXII",
+        "company": "22nd Century Group Inc. Common Stock"
+    },
+    {
+        "ticker": "XYF",
+        "company": "X Financial American Depositary Shares each representing six Class A Ordinary Shares"
+    },
+    {
+        "ticker": "XYL",
+        "company": "Xylem Inc. Common Stock New"
+    },
+    {
+        "ticker": "XYLO",
+        "company": "Xylo Technologies Ltd. American Depositary Shares"
+    },
+    {
+        "ticker": "YEXT",
+        "company": "Yext Inc. Common Stock"
+    },
+    {
+        "ticker": "YHGJ",
+        "company": "Yunhong Green CTI Ltd. Common Stock"
+    },
+    {
+        "ticker": "YJ",
+        "company": "Yunji Inc. American Depository Shares"
+    },
+    {
+        "ticker": "YRD",
+        "company": "Yiren Digital Ltd. American Depositary Shares each representing two ordinary shares"
+    },
+    {
+        "ticker": "YUM",
+        "company": "Yum! Brands Inc."
+    },
+    {
+        "ticker": "YY",
+        "company": "JOYY Inc. American Depositary Shares"
+    },
+    {
+        "ticker": "Z",
+        "company": "Zillow Group Inc. Class C Capital Stock"
+    },
+    {
+        "ticker": "ZBH",
+        "company": "Zimmer Biomet Holdings Inc. Common Stock"
+    },
+    {
+        "ticker": "ZBRA",
+        "company": "Zebra Technologies Corporation Class A Common Stock"
+    },
+    {
+        "ticker": "ZD",
+        "company": "Ziff Davis Inc. Common Stock"
+    },
+    {
+        "ticker": "ZEPP",
+        "company": "Zepp Health Corporation American Depositary Shares"
+    },
+    {
+        "ticker": "ZG",
+        "company": "Zillow Group Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "ZION",
+        "company": "Zions Bancorporation N.A. Common Stock"
+    },
+    {
+        "ticker": "ZKIN",
+        "company": "ZK International Group Co. Ltd Ordinary Share"
+    },
+    {
+        "ticker": "ZM",
+        "company": "Zoom Video Communications Inc. Class A Common Stock"
+    },
+    {
+        "ticker": "ZS",
+        "company": "Zscaler Inc. Common Stock"
+    },
+    {
+        "ticker": "ZTS",
+        "company": "Zoetis Inc. Class A Common Stock"
+    }
+]

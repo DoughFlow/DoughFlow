@@ -1,0 +1,7649 @@
+[
+  {
+    "ticker": "AACG"
+  },
+  {
+    "ticker": "AACT"
+  },
+  {
+    "ticker": "AADI"
+  },
+  {
+    "ticker": "AAGR"
+  },
+  {
+    "ticker": "AAL"
+  },
+  {
+    "ticker": "AAME"
+  },
+  {
+    "ticker": "AAN"
+  },
+  {
+    "ticker": "AAON"
+  },
+  {
+    "ticker": "AAPL"
+  },
+  {
+    "ticker": "ABBV"
+  },
+  {
+    "ticker": "ABCB"
+  },
+  {
+    "ticker": "ABEV"
+  },
+  {
+    "ticker": "ABIO"
+  },
+  {
+    "ticker": "ABLV"
+  },
+  {
+    "ticker": "ABNB"
+  },
+  {
+    "ticker": "ABT"
+  },
+  {
+    "ticker": "ABTS"
+  },
+  {
+    "ticker": "ABVC"
+  },
+  {
+    "ticker": "AC"
+  },
+  {
+    "ticker": "ACAC"
+  },
+  {
+    "ticker": "ACAD"
+  },
+  {
+    "ticker": "ACBA"
+  },
+  {
+    "ticker": "ACGL"
+  },
+  {
+    "ticker": "ACHC"
+  },
+  {
+    "ticker": "ACHL"
+  },
+  {
+    "ticker": "ACIW"
+  },
+  {
+    "ticker": "ACLS"
+  },
+  {
+    "ticker": "ACLX"
+  },
+  {
+    "ticker": "ACN"
+  },
+  {
+    "ticker": "ACON"
+  },
+  {
+    "ticker": "ACR"
+  },
+  {
+    "ticker": "ACRE"
+  },
+  {
+    "ticker": "ACST"
+  },
+  {
+    "ticker": "ACT"
+  },
+  {
+    "ticker": "ACVA"
+  },
+  {
+    "ticker": "ACXP"
+  },
+  {
+    "ticker": "ADBE"
+  },
+  {
+    "ticker": "ADCT"
+  },
+  {
+    "ticker": "ADD"
+  },
+  {
+    "ticker": "ADI"
+  },
+  {
+    "ticker": "ADIL"
+  },
+  {
+    "ticker": "ADM"
+  },
+  {
+    "ticker": "ADN"
+  },
+  {
+    "ticker": "ADP"
+  },
+  {
+    "ticker": "ADSK"
+  },
+  {
+    "ticker": "ADTX"
+  },
+  {
+    "ticker": "ADXN"
+  },
+  {
+    "ticker": "AEE"
+  },
+  {
+    "ticker": "AEHL"
+  },
+  {
+    "ticker": "AEI"
+  },
+  {
+    "ticker": "AEIS"
+  },
+  {
+    "ticker": "AEM"
+  },
+  {
+    "ticker": "AEMD"
+  },
+  {
+    "ticker": "AEP"
+  },
+  {
+    "ticker": "AEVA"
+  },
+  {
+    "ticker": "AEZS"
+  },
+  {
+    "ticker": "AFAR"
+  },
+  {
+    "ticker": "AFIB"
+  },
+  {
+    "ticker": "AFL"
+  },
+  {
+    "ticker": "AFRM"
+  },
+  {
+    "ticker": "AGAE"
+  },
+  {
+    "ticker": "AGFY"
+  },
+  {
+    "ticker": "AGMH"
+  },
+  {
+    "ticker": "AGNC"
+  },
+  {
+    "ticker": "AGRI"
+  },
+  {
+    "ticker": "AGS"
+  },
+  {
+    "ticker": "AGYS"
+  },
+  {
+    "ticker": "AHG"
+  },
+  {
+    "ticker": "AHH"
+  },
+  {
+    "ticker": "AHI"
+  },
+  {
+    "ticker": "AHT"
+  },
+  {
+    "ticker": "AIB"
+  },
+  {
+    "ticker": "AIG"
+  },
+  {
+    "ticker": "AIH"
+  },
+  {
+    "ticker": "AIHS"
+  },
+  {
+    "ticker": "AILE"
+  },
+  {
+    "ticker": "AIMAU"
+  },
+  {
+    "ticker": "AIMD"
+  },
+  {
+    "ticker": "AIRE"
+  },
+  {
+    "ticker": "AIRG"
+  },
+  {
+    "ticker": "AIRT"
+  },
+  {
+    "ticker": "AIU"
+  },
+  {
+    "ticker": "AJG"
+  },
+  {
+    "ticker": "AJX"
+  },
+  {
+    "ticker": "AKA"
+  },
+  {
+    "ticker": "AKAM"
+  },
+  {
+    "ticker": "AKAN"
+  },
+  {
+    "ticker": "AKLI"
+  },
+  {
+    "ticker": "AKTS"
+  },
+  {
+    "ticker": "AKTX"
+  },
+  {
+    "ticker": "ALAB"
+  },
+  {
+    "ticker": "ALBT"
+  },
+  {
+    "ticker": "ALC"
+  },
+  {
+    "ticker": "ALCC"
+  },
+  {
+    "ticker": "ALCE"
+  },
+  {
+    "ticker": "ALGM"
+  },
+  {
+    "ticker": "ALGN"
+  },
+  {
+    "ticker": "ALGS"
+  },
+  {
+    "ticker": "ALKS"
+  },
+  {
+    "ticker": "ALKT"
+  },
+  {
+    "ticker": "ALL"
+  },
+  {
+    "ticker": "ALLG"
+  },
+  {
+    "ticker": "ALLR"
+  },
+  {
+    "ticker": "ALNY"
+  },
+  {
+    "ticker": "ALPN"
+  },
+  {
+    "ticker": "ALPP"
+  },
+  {
+    "ticker": "ALRM"
+  },
+  {
+    "ticker": "ALTG"
+  },
+  {
+    "ticker": "ALTR"
+  },
+  {
+    "ticker": "ALUR"
+  },
+  {
+    "ticker": "ALVO"
+  },
+  {
+    "ticker": "ALZN"
+  },
+  {
+    "ticker": "AMAT"
+  },
+  {
+    "ticker": "AMBC"
+  },
+  {
+    "ticker": "AMD"
+  },
+  {
+    "ticker": "AME"
+  },
+  {
+    "ticker": "AMED"
+  },
+  {
+    "ticker": "AMGN"
+  },
+  {
+    "ticker": "AMIX"
+  },
+  {
+    "ticker": "AMKR"
+  },
+  {
+    "ticker": "AMP"
+  },
+  {
+    "ticker": "AMPG"
+  },
+  {
+    "ticker": "AMPH"
+  },
+  {
+    "ticker": "AMPS"
+  },
+  {
+    "ticker": "AMPY"
+  },
+  {
+    "ticker": "AMST"
+  },
+  {
+    "ticker": "AMT"
+  },
+  {
+    "ticker": "AMWL"
+  },
+  {
+    "ticker": "AMX"
+  },
+  {
+    "ticker": "AMZN"
+  },
+  {
+    "ticker": "ANDE"
+  },
+  {
+    "ticker": "ANEB"
+  },
+  {
+    "ticker": "ANET"
+  },
+  {
+    "ticker": "ANGH"
+  },
+  {
+    "ticker": "ANRO"
+  },
+  {
+    "ticker": "ANSS"
+  },
+  {
+    "ticker": "ANTE"
+  },
+  {
+    "ticker": "ANY"
+  },
+  {
+    "ticker": "AOGO"
+  },
+  {
+    "ticker": "AON"
+  },
+  {
+    "ticker": "AONC"
+  },
+  {
+    "ticker": "AP"
+  },
+  {
+    "ticker": "APA"
+  },
+  {
+    "ticker": "APCA"
+  },
+  {
+    "ticker": "APCX"
+  },
+  {
+    "ticker": "APD"
+  },
+  {
+    "ticker": "APDN"
+  },
+  {
+    "ticker": "APGE"
+  },
+  {
+    "ticker": "APH"
+  },
+  {
+    "ticker": "APLM"
+  },
+  {
+    "ticker": "APLS"
+  },
+  {
+    "ticker": "APM"
+  },
+  {
+    "ticker": "APO"
+  },
+  {
+    "ticker": "APP"
+  },
+  {
+    "ticker": "APPF"
+  },
+  {
+    "ticker": "APPN"
+  },
+  {
+    "ticker": "APRE"
+  },
+  {
+    "ticker": "APTO"
+  },
+  {
+    "ticker": "APVO"
+  },
+  {
+    "ticker": "APWC"
+  },
+  {
+    "ticker": "APYX"
+  },
+  {
+    "ticker": "AQB"
+  },
+  {
+    "ticker": "AQMS"
+  },
+  {
+    "ticker": "ARBB"
+  },
+  {
+    "ticker": "ARC"
+  },
+  {
+    "ticker": "ARCB"
+  },
+  {
+    "ticker": "ARCC"
+  },
+  {
+    "ticker": "ARE"
+  },
+  {
+    "ticker": "AREB"
+  },
+  {
+    "ticker": "ARES"
+  },
+  {
+    "ticker": "ARGX"
+  },
+  {
+    "ticker": "ARHS"
+  },
+  {
+    "ticker": "ARKR"
+  },
+  {
+    "ticker": "ARL"
+  },
+  {
+    "ticker": "ARLP"
+  },
+  {
+    "ticker": "ARM"
+  },
+  {
+    "ticker": "ARRY"
+  },
+  {
+    "ticker": "ARTL"
+  },
+  {
+    "ticker": "ARTW"
+  },
+  {
+    "ticker": "ARVN"
+  },
+  {
+    "ticker": "ARWR"
+  },
+  {
+    "ticker": "ASC"
+  },
+  {
+    "ticker": "ASIX"
+  },
+  {
+    "ticker": "ASLN"
+  },
+  {
+    "ticker": "ASML"
+  },
+  {
+    "ticker": "ASND"
+  },
+  {
+    "ticker": "ASNS"
+  },
+  {
+    "ticker": "ASO"
+  },
+  {
+    "ticker": "ASPS"
+  },
+  {
+    "ticker": "ASRV"
+  },
+  {
+    "ticker": "ASST"
+  },
+  {
+    "ticker": "ASTC"
+  },
+  {
+    "ticker": "ASTH"
+  },
+  {
+    "ticker": "ASTI"
+  },
+  {
+    "ticker": "ASTR"
+  },
+  {
+    "ticker": "ASX"
+  },
+  {
+    "ticker": "ASYS"
+  },
+  {
+    "ticker": "ATAT"
+  },
+  {
+    "ticker": "ATEC"
+  },
+  {
+    "ticker": "ATER"
+  },
+  {
+    "ticker": "ATGL"
+  },
+  {
+    "ticker": "ATHE"
+  },
+  {
+    "ticker": "ATIF"
+  },
+  {
+    "ticker": "ATIP"
+  },
+  {
+    "ticker": "ATNF"
+  },
+  {
+    "ticker": "ATPC"
+  },
+  {
+    "ticker": "ATXG"
+  },
+  {
+    "ticker": "ATXI"
+  },
+  {
+    "ticker": "AUBN"
+  },
+  {
+    "ticker": "AUNA"
+  },
+  {
+    "ticker": "AUR"
+  },
+  {
+    "ticker": "AUUD"
+  },
+  {
+    "ticker": "AUVI"
+  },
+  {
+    "ticker": "AVAV"
+  },
+  {
+    "ticker": "AVB"
+  },
+  {
+    "ticker": "AVD"
+  },
+  {
+    "ticker": "AVDX"
+  },
+  {
+    "ticker": "AVGO"
+  },
+  {
+    "ticker": "AVGR"
+  },
+  {
+    "ticker": "AVRO"
+  },
+  {
+    "ticker": "AVT"
+  },
+  {
+    "ticker": "AVTX"
+  },
+  {
+    "ticker": "AWH"
+  },
+  {
+    "ticker": "AWIN"
+  },
+  {
+    "ticker": "AWK"
+  },
+  {
+    "ticker": "AWRE"
+  },
+  {
+    "ticker": "AXDX"
+  },
+  {
+    "ticker": "AXNX"
+  },
+  {
+    "ticker": "AXON"
+  },
+  {
+    "ticker": "AXP"
+  },
+  {
+    "ticker": "AXR"
+  },
+  {
+    "ticker": "AXSM"
+  },
+  {
+    "ticker": "AY"
+  },
+  {
+    "ticker": "AYRO"
+  },
+  {
+    "ticker": "AYTU"
+  },
+  {
+    "ticker": "AZ"
+  },
+  {
+    "ticker": "AZN"
+  },
+  {
+    "ticker": "AZO"
+  },
+  {
+    "ticker": "AZPN"
+  },
+  {
+    "ticker": "AZTA"
+  },
+  {
+    "ticker": "AZUL"
+  },
+  {
+    "ticker": "BA"
+  },
+  {
+    "ticker": "BABA"
+  },
+  {
+    "ticker": "BAC"
+  },
+  {
+    "ticker": "BACK"
+  },
+  {
+    "ticker": "BALL"
+  },
+  {
+    "ticker": "BALY"
+  },
+  {
+    "ticker": "BANF"
+  },
+  {
+    "ticker": "BANL"
+  },
+  {
+    "ticker": "BAOS"
+  },
+  {
+    "ticker": "BARK"
+  },
+  {
+    "ticker": "BATRA"
+  },
+  {
+    "ticker": "BATRK"
+  },
+  {
+    "ticker": "BAX"
+  },
+  {
+    "ticker": "BBAI"
+  },
+  {
+    "ticker": "BBD"
+  },
+  {
+    "ticker": "BBDO"
+  },
+  {
+    "ticker": "BBGI"
+  },
+  {
+    "ticker": "BBIO"
+  },
+  {
+    "ticker": "BBLG"
+  },
+  {
+    "ticker": "BBVA"
+  },
+  {
+    "ticker": "BBW"
+  },
+  {
+    "ticker": "BCAN"
+  },
+  {
+    "ticker": "BCDA"
+  },
+  {
+    "ticker": "BCE"
+  },
+  {
+    "ticker": "BCG"
+  },
+  {
+    "ticker": "BCLI"
+  },
+  {
+    "ticker": "BCOW"
+  },
+  {
+    "ticker": "BCPC"
+  },
+  {
+    "ticker": "BCS"
+  },
+  {
+    "ticker": "BCTX"
+  },
+  {
+    "ticker": "BDX"
+  },
+  {
+    "ticker": "BEAM"
+  },
+  {
+    "ticker": "BEAT"
+  },
+  {
+    "ticker": "BECN"
+  },
+  {
+    "ticker": "BEDU"
+  },
+  {
+    "ticker": "BEST"
+  },
+  {
+    "ticker": "BF.A"
+  },
+  {
+    "ticker": "BFAC"
+  },
+  {
+    "ticker": "BF.B"
+  },
+  {
+    "ticker": "BFI"
+  },
+  {
+    "ticker": "BFLY"
+  },
+  {
+    "ticker": "BFRG"
+  },
+  {
+    "ticker": "BFRI"
+  },
+  {
+    "ticker": "BGC"
+  },
+  {
+    "ticker": "BGFV"
+  },
+  {
+    "ticker": "BGNE"
+  },
+  {
+    "ticker": "BGSF"
+  },
+  {
+    "ticker": "BGXX"
+  },
+  {
+    "ticker": "BH"
+  },
+  {
+    "ticker": "BH.A"
+  },
+  {
+    "ticker": "BHAT"
+  },
+  {
+    "ticker": "BHF"
+  },
+  {
+    "ticker": "BHIL"
+  },
+  {
+    "ticker": "BHP"
+  },
+  {
+    "ticker": "BHR"
+  },
+  {
+    "ticker": "BIAF"
+  },
+  {
+    "ticker": "BIDU"
+  },
+  {
+    "ticker": "BIG"
+  },
+  {
+    "ticker": "BIIB"
+  },
+  {
+    "ticker": "BILI"
+  },
+  {
+    "ticker": "BIMI"
+  },
+  {
+    "ticker": "BIOL"
+  },
+  {
+    "ticker": "BIOR"
+  },
+  {
+    "ticker": "BIVI"
+  },
+  {
+    "ticker": "BJDX"
+  },
+  {
+    "ticker": "BK"
+  },
+  {
+    "ticker": "BKKT"
+  },
+  {
+    "ticker": "BKNG"
+  },
+  {
+    "ticker": "BKR"
+  },
+  {
+    "ticker": "BKSY"
+  },
+  {
+    "ticker": "BKYI"
+  },
+  {
+    "ticker": "BL"
+  },
+  {
+    "ticker": "BLAC"
+  },
+  {
+    "ticker": "BLBX"
+  },
+  {
+    "ticker": "BLDR"
+  },
+  {
+    "ticker": "BLIN"
+  },
+  {
+    "ticker": "BLK"
+  },
+  {
+    "ticker": "BLKB"
+  },
+  {
+    "ticker": "BLMN"
+  },
+  {
+    "ticker": "BLND"
+  },
+  {
+    "ticker": "BLRX"
+  },
+  {
+    "ticker": "BMO"
+  },
+  {
+    "ticker": "BMRA"
+  },
+  {
+    "ticker": "BMRN"
+  },
+  {
+    "ticker": "BMY"
+  },
+  {
+    "ticker": "BN"
+  },
+  {
+    "ticker": "BNED"
+  },
+  {
+    "ticker": "BNGO"
+  },
+  {
+    "ticker": "BNIX"
+  },
+  {
+    "ticker": "BNOX"
+  },
+  {
+    "ticker": "BNRG"
+  },
+  {
+    "ticker": "BNS"
+  },
+  {
+    "ticker": "BNTC"
+  },
+  {
+    "ticker": "BNTX"
+  },
+  {
+    "ticker": "BNZI"
+  },
+  {
+    "ticker": "BOC"
+  },
+  {
+    "ticker": "BODI"
+  },
+  {
+    "ticker": "BOF"
+  },
+  {
+    "ticker": "BOKF"
+  },
+  {
+    "ticker": "BOLT"
+  },
+  {
+    "ticker": "BON"
+  },
+  {
+    "ticker": "BOSC"
+  },
+  {
+    "ticker": "BOTJ"
+  },
+  {
+    "ticker": "BOXL"
+  },
+  {
+    "ticker": "BP"
+  },
+  {
+    "ticker": "BPMC"
+  },
+  {
+    "ticker": "BPOP"
+  },
+  {
+    "ticker": "BPT"
+  },
+  {
+    "ticker": "BPTH"
+  },
+  {
+    "ticker": "BPTS"
+  },
+  {
+    "ticker": "BR"
+  },
+  {
+    "ticker": "BRAC"
+  },
+  {
+    "ticker": "BREA"
+  },
+  {
+    "ticker": "BREZ"
+  },
+  {
+    "ticker": "BRFH"
+  },
+  {
+    "ticker": "BRK.A"
+  },
+  {
+    "ticker": "BRK.B"
+  },
+  {
+    "ticker": "BRKR"
+  },
+  {
+    "ticker": "BRO"
+  },
+  {
+    "ticker": "BRP"
+  },
+  {
+    "ticker": "BRSH"
+  },
+  {
+    "ticker": "BRT"
+  },
+  {
+    "ticker": "BRTX"
+  },
+  {
+    "ticker": "BRZE"
+  },
+  {
+    "ticker": "BSBR"
+  },
+  {
+    "ticker": "BSFC"
+  },
+  {
+    "ticker": "BSGM"
+  },
+  {
+    "ticker": "BSX"
+  },
+  {
+    "ticker": "BSY"
+  },
+  {
+    "ticker": "BTBD"
+  },
+  {
+    "ticker": "BTCM"
+  },
+  {
+    "ticker": "BTCS"
+  },
+  {
+    "ticker": "BTCT"
+  },
+  {
+    "ticker": "BTCY"
+  },
+  {
+    "ticker": "BTI"
+  },
+  {
+    "ticker": "BTM"
+  },
+  {
+    "ticker": "BTOG"
+  },
+  {
+    "ticker": "BTSG"
+  },
+  {
+    "ticker": "BUD"
+  },
+  {
+    "ticker": "BW"
+  },
+  {
+    "ticker": "BWEN"
+  },
+  {
+    "ticker": "BX"
+  },
+  {
+    "ticker": "BYFC"
+  },
+  {
+    "ticker": "BYU"
+  },
+  {
+    "ticker": "BZ"
+  },
+  {
+    "ticker": "BZFD"
+  },
+  {
+    "ticker": "C"
+  },
+  {
+    "ticker": "CACC"
+  },
+  {
+    "ticker": "CACO"
+  },
+  {
+    "ticker": "CAH"
+  },
+  {
+    "ticker": "CAKE"
+  },
+  {
+    "ticker": "CALM"
+  },
+  {
+    "ticker": "CAMP"
+  },
+  {
+    "ticker": "CAMT"
+  },
+  {
+    "ticker": "CANG"
+  },
+  {
+    "ticker": "CAR"
+  },
+  {
+    "ticker": "CARA"
+  },
+  {
+    "ticker": "CARG"
+  },
+  {
+    "ticker": "CARM"
+  },
+  {
+    "ticker": "CARR"
+  },
+  {
+    "ticker": "CART"
+  },
+  {
+    "ticker": "CARV"
+  },
+  {
+    "ticker": "CASI"
+  },
+  {
+    "ticker": "CASY"
+  },
+  {
+    "ticker": "CAT"
+  },
+  {
+    "ticker": "CATO"
+  },
+  {
+    "ticker": "CATY"
+  },
+  {
+    "ticker": "CAUD"
+  },
+  {
+    "ticker": "CB"
+  },
+  {
+    "ticker": "CBL"
+  },
+  {
+    "ticker": "CBRE"
+  },
+  {
+    "ticker": "CBSH"
+  },
+  {
+    "ticker": "CCCS"
+  },
+  {
+    "ticker": "CCEP"
+  },
+  {
+    "ticker": "CCI"
+  },
+  {
+    "ticker": "CCJ"
+  },
+  {
+    "ticker": "CCLD"
+  },
+  {
+    "ticker": "CCM"
+  },
+  {
+    "ticker": "CCO"
+  },
+  {
+    "ticker": "CCOI"
+  },
+  {
+    "ticker": "CCRD"
+  },
+  {
+    "ticker": "CCTG"
+  },
+  {
+    "ticker": "CCTS"
+  },
+  {
+    "ticker": "CDIO"
+  },
+  {
+    "ticker": "CDNS"
+  },
+  {
+    "ticker": "CDTG"
+  },
+  {
+    "ticker": "CDTX"
+  },
+  {
+    "ticker": "CDW"
+  },
+  {
+    "ticker": "CEAD"
+  },
+  {
+    "ticker": "CEG"
+  },
+  {
+    "ticker": "CELH"
+  },
+  {
+    "ticker": "CELU"
+  },
+  {
+    "ticker": "CELZ"
+  },
+  {
+    "ticker": "CENN"
+  },
+  {
+    "ticker": "CENT"
+  },
+  {
+    "ticker": "CENTA"
+  },
+  {
+    "ticker": "CERE"
+  },
+  {
+    "ticker": "CERO"
+  },
+  {
+    "ticker": "CERT"
+  },
+  {
+    "ticker": "CETU"
+  },
+  {
+    "ticker": "CETX"
+  },
+  {
+    "ticker": "CFLT"
+  },
+  {
+    "ticker": "CFSB"
+  },
+  {
+    "ticker": "CG"
+  },
+  {
+    "ticker": "CGA"
+  },
+  {
+    "ticker": "CGNX"
+  },
+  {
+    "ticker": "CGON"
+  },
+  {
+    "ticker": "CHCT"
+  },
+  {
+    "ticker": "CHD"
+  },
+  {
+    "ticker": "CHDN"
+  },
+  {
+    "ticker": "CHEK"
+  },
+  {
+    "ticker": "CHGG"
+  },
+  {
+    "ticker": "CHK"
+  },
+  {
+    "ticker": "CHKP"
+  },
+  {
+    "ticker": "CHMI"
+  },
+  {
+    "ticker": "CHNR"
+  },
+  {
+    "ticker": "CHPT"
+  },
+  {
+    "ticker": "CHR"
+  },
+  {
+    "ticker": "CHRD"
+  },
+  {
+    "ticker": "CHRW"
+  },
+  {
+    "ticker": "CHSN"
+  },
+  {
+    "ticker": "CHT"
+  },
+  {
+    "ticker": "CHTR"
+  },
+  {
+    "ticker": "CHX"
+  },
+  {
+    "ticker": "CI"
+  },
+  {
+    "ticker": "CIA"
+  },
+  {
+    "ticker": "CIGI"
+  },
+  {
+    "ticker": "CINF"
+  },
+  {
+    "ticker": "CING"
+  },
+  {
+    "ticker": "CINT"
+  },
+  {
+    "ticker": "CIO"
+  },
+  {
+    "ticker": "CISO"
+  },
+  {
+    "ticker": "CISS"
+  },
+  {
+    "ticker": "CJET"
+  },
+  {
+    "ticker": "CJJD"
+  },
+  {
+    "ticker": "CKPT"
+  },
+  {
+    "ticker": "CL"
+  },
+  {
+    "ticker": "CLBK"
+  },
+  {
+    "ticker": "CLBR"
+  },
+  {
+    "ticker": "CLBT"
+  },
+  {
+    "ticker": "CLCO"
+  },
+  {
+    "ticker": "CLDT"
+  },
+  {
+    "ticker": "CLDX"
+  },
+  {
+    "ticker": "CLEU"
+  },
+  {
+    "ticker": "CLGN"
+  },
+  {
+    "ticker": "CLIR"
+  },
+  {
+    "ticker": "CLNN"
+  },
+  {
+    "ticker": "CLOE"
+  },
+  {
+    "ticker": "CLPR"
+  },
+  {
+    "ticker": "CLPS"
+  },
+  {
+    "ticker": "CLRC"
+  },
+  {
+    "ticker": "CLRO"
+  },
+  {
+    "ticker": "CLSK"
+  },
+  {
+    "ticker": "CLST"
+  },
+  {
+    "ticker": "CLVR"
+  },
+  {
+    "ticker": "CLW"
+  },
+  {
+    "ticker": "CLWT"
+  },
+  {
+    "ticker": "CM"
+  },
+  {
+    "ticker": "CMAX"
+  },
+  {
+    "ticker": "CMCM"
+  },
+  {
+    "ticker": "CMCSA"
+  },
+  {
+    "ticker": "CME"
+  },
+  {
+    "ticker": "CMG"
+  },
+  {
+    "ticker": "CMI"
+  },
+  {
+    "ticker": "CMLS"
+  },
+  {
+    "ticker": "CMMB"
+  },
+  {
+    "ticker": "CMND"
+  },
+  {
+    "ticker": "CMP"
+  },
+  {
+    "ticker": "CMPR"
+  },
+  {
+    "ticker": "CMTL"
+  },
+  {
+    "ticker": "CNC"
+  },
+  {
+    "ticker": "CNDA"
+  },
+  {
+    "ticker": "CNET"
+  },
+  {
+    "ticker": "CNEY"
+  },
+  {
+    "ticker": "CNF"
+  },
+  {
+    "ticker": "CNFR"
+  },
+  {
+    "ticker": "CNI"
+  },
+  {
+    "ticker": "CNQ"
+  },
+  {
+    "ticker": "CNSP"
+  },
+  {
+    "ticker": "CNTG"
+  },
+  {
+    "ticker": "CNTX"
+  },
+  {
+    "ticker": "CNVS"
+  },
+  {
+    "ticker": "CNXC"
+  },
+  {
+    "ticker": "COCP"
+  },
+  {
+    "ticker": "CODA"
+  },
+  {
+    "ticker": "CODX"
+  },
+  {
+    "ticker": "COEP"
+  },
+  {
+    "ticker": "COF"
+  },
+  {
+    "ticker": "COIN"
+  },
+  {
+    "ticker": "COKE"
+  },
+  {
+    "ticker": "COLB"
+  },
+  {
+    "ticker": "COLM"
+  },
+  {
+    "ticker": "COO"
+  },
+  {
+    "ticker": "COOK"
+  },
+  {
+    "ticker": "COOP"
+  },
+  {
+    "ticker": "COOT"
+  },
+  {
+    "ticker": "COP"
+  },
+  {
+    "ticker": "COR"
+  },
+  {
+    "ticker": "CORT"
+  },
+  {
+    "ticker": "COSM"
+  },
+  {
+    "ticker": "COST"
+  },
+  {
+    "ticker": "CP"
+  },
+  {
+    "ticker": "CPAC"
+  },
+  {
+    "ticker": "CPAY"
+  },
+  {
+    "ticker": "CPBI"
+  },
+  {
+    "ticker": "CPF"
+  },
+  {
+    "ticker": "CPIX"
+  },
+  {
+    "ticker": "CPNG"
+  },
+  {
+    "ticker": "CPOP"
+  },
+  {
+    "ticker": "CPRT"
+  },
+  {
+    "ticker": "CPRX"
+  },
+  {
+    "ticker": "CPS"
+  },
+  {
+    "ticker": "CPSH"
+  },
+  {
+    "ticker": "CPTN"
+  },
+  {
+    "ticker": "CQP"
+  },
+  {
+    "ticker": "CRD.A"
+  },
+  {
+    "ticker": "CRD.B"
+  },
+  {
+    "ticker": "CRDO"
+  },
+  {
+    "ticker": "CREG"
+  },
+  {
+    "ticker": "CREV"
+  },
+  {
+    "ticker": "CREX"
+  },
+  {
+    "ticker": "CRH"
+  },
+  {
+    "ticker": "CRKN"
+  },
+  {
+    "ticker": "CRM"
+  },
+  {
+    "ticker": "CRNX"
+  },
+  {
+    "ticker": "CROX"
+  },
+  {
+    "ticker": "CRSP"
+  },
+  {
+    "ticker": "CRT"
+  },
+  {
+    "ticker": "CRTO"
+  },
+  {
+    "ticker": "CRUS"
+  },
+  {
+    "ticker": "CRVL"
+  },
+  {
+    "ticker": "CRVS"
+  },
+  {
+    "ticker": "CRWD"
+  },
+  {
+    "ticker": "CRWS"
+  },
+  {
+    "ticker": "CSBR"
+  },
+  {
+    "ticker": "CSCO"
+  },
+  {
+    "ticker": "CSGP"
+  },
+  {
+    "ticker": "CSLR"
+  },
+  {
+    "ticker": "CSSE"
+  },
+  {
+    "ticker": "CSV"
+  },
+  {
+    "ticker": "CSWI"
+  },
+  {
+    "ticker": "CSX"
+  },
+  {
+    "ticker": "CTAS"
+  },
+  {
+    "ticker": "CTCX"
+  },
+  {
+    "ticker": "CTHR"
+  },
+  {
+    "ticker": "CTNT"
+  },
+  {
+    "ticker": "CTO"
+  },
+  {
+    "ticker": "CTRA"
+  },
+  {
+    "ticker": "CTRM"
+  },
+  {
+    "ticker": "CTSH"
+  },
+  {
+    "ticker": "CTSO"
+  },
+  {
+    "ticker": "CTV"
+  },
+  {
+    "ticker": "CULP"
+  },
+  {
+    "ticker": "CURV"
+  },
+  {
+    "ticker": "CUTR"
+  },
+  {
+    "ticker": "CVBF"
+  },
+  {
+    "ticker": "CVCO"
+  },
+  {
+    "ticker": "CVE"
+  },
+  {
+    "ticker": "CVEO"
+  },
+  {
+    "ticker": "CVKD"
+  },
+  {
+    "ticker": "CVLT"
+  },
+  {
+    "ticker": "CVS"
+  },
+  {
+    "ticker": "CVV"
+  },
+  {
+    "ticker": "CVX"
+  },
+  {
+    "ticker": "CWD"
+  },
+  {
+    "ticker": "CWST"
+  },
+  {
+    "ticker": "CXAI"
+  },
+  {
+    "ticker": "CYBR"
+  },
+  {
+    "ticker": "CYCC"
+  },
+  {
+    "ticker": "CYCN"
+  },
+  {
+    "ticker": "CYD"
+  },
+  {
+    "ticker": "CYH"
+  },
+  {
+    "ticker": "CYN"
+  },
+  {
+    "ticker": "CYTH"
+  },
+  {
+    "ticker": "CYTK"
+  },
+  {
+    "ticker": "CYTO"
+  },
+  {
+    "ticker": "CZOO"
+  },
+  {
+    "ticker": "CZR"
+  },
+  {
+    "ticker": "D"
+  },
+  {
+    "ticker": "DAIO"
+  },
+  {
+    "ticker": "DAL"
+  },
+  {
+    "ticker": "DALN"
+  },
+  {
+    "ticker": "DAO"
+  },
+  {
+    "ticker": "DARE"
+  },
+  {
+    "ticker": "DASH"
+  },
+  {
+    "ticker": "DATS"
+  },
+  {
+    "ticker": "DB"
+  },
+  {
+    "ticker": "DBGI"
+  },
+  {
+    "ticker": "DBI"
+  },
+  {
+    "ticker": "DBX"
+  },
+  {
+    "ticker": "DCFC"
+  },
+  {
+    "ticker": "DD"
+  },
+  {
+    "ticker": "DDD"
+  },
+  {
+    "ticker": "DDL"
+  },
+  {
+    "ticker": "DDOG"
+  },
+  {
+    "ticker": "DE"
+  },
+  {
+    "ticker": "DEC"
+  },
+  {
+    "ticker": "DECA"
+  },
+  {
+    "ticker": "DECK"
+  },
+  {
+    "ticker": "DELL"
+  },
+  {
+    "ticker": "DEO"
+  },
+  {
+    "ticker": "DERM"
+  },
+  {
+    "ticker": "DESP"
+  },
+  {
+    "ticker": "DFLI"
+  },
+  {
+    "ticker": "DFS"
+  },
+  {
+    "ticker": "DG"
+  },
+  {
+    "ticker": "DGHI"
+  },
+  {
+    "ticker": "DGLY"
+  },
+  {
+    "ticker": "DHAC"
+  },
+  {
+    "ticker": "DHAI"
+  },
+  {
+    "ticker": "DHI"
+  },
+  {
+    "ticker": "DHR"
+  },
+  {
+    "ticker": "DHX"
+  },
+  {
+    "ticker": "DIN"
+  },
+  {
+    "ticker": "DIOD"
+  },
+  {
+    "ticker": "DIS"
+  },
+  {
+    "ticker": "DIST"
+  },
+  {
+    "ticker": "DJT"
+  },
+  {
+    "ticker": "DKNG"
+  },
+  {
+    "ticker": "DLNG"
+  },
+  {
+    "ticker": "DLO"
+  },
+  {
+    "ticker": "DLPN"
+  },
+  {
+    "ticker": "DLR"
+  },
+  {
+    "ticker": "DLTR"
+  },
+  {
+    "ticker": "DM"
+  },
+  {
+    "ticker": "DMTK"
+  },
+  {
+    "ticker": "DNLI"
+  },
+  {
+    "ticker": "DNMR"
+  },
+  {
+    "ticker": "DNUT"
+  },
+  {
+    "ticker": "DOCU"
+  },
+  {
+    "ticker": "DOGZ"
+  },
+  {
+    "ticker": "DOMA"
+  },
+  {
+    "ticker": "DOMH"
+  },
+  {
+    "ticker": "DOOO"
+  },
+  {
+    "ticker": "DORM"
+  },
+  {
+    "ticker": "DOV"
+  },
+  {
+    "ticker": "DOW"
+  },
+  {
+    "ticker": "DOX"
+  },
+  {
+    "ticker": "DPRO"
+  },
+  {
+    "ticker": "DRD"
+  },
+  {
+    "ticker": "DRIO"
+  },
+  {
+    "ticker": "DRMA"
+  },
+  {
+    "ticker": "DRQ"
+  },
+  {
+    "ticker": "DRRX"
+  },
+  {
+    "ticker": "DRS"
+  },
+  {
+    "ticker": "DRUG"
+  },
+  {
+    "ticker": "DRVN"
+  },
+  {
+    "ticker": "DSAQ"
+  },
+  {
+    "ticker": "DSGX"
+  },
+  {
+    "ticker": "DSWL"
+  },
+  {
+    "ticker": "DSX"
+  },
+  {
+    "ticker": "DTC"
+  },
+  {
+    "ticker": "DTCK"
+  },
+  {
+    "ticker": "DTE"
+  },
+  {
+    "ticker": "DTIL"
+  },
+  {
+    "ticker": "DTST"
+  },
+  {
+    "ticker": "DUK"
+  },
+  {
+    "ticker": "DUO"
+  },
+  {
+    "ticker": "DUOL"
+  },
+  {
+    "ticker": "DUOT"
+  },
+  {
+    "ticker": "DVN"
+  },
+  {
+    "ticker": "DWSN"
+  },
+  {
+    "ticker": "DX"
+  },
+  {
+    "ticker": "DXCM"
+  },
+  {
+    "ticker": "DXR"
+  },
+  {
+    "ticker": "DXYN"
+  },
+  {
+    "ticker": "DYAI"
+  },
+  {
+    "ticker": "DYN"
+  },
+  {
+    "ticker": "DYNT"
+  },
+  {
+    "ticker": "DZSI"
+  },
+  {
+    "ticker": "E"
+  },
+  {
+    "ticker": "EA"
+  },
+  {
+    "ticker": "EAF"
+  },
+  {
+    "ticker": "EARN"
+  },
+  {
+    "ticker": "EAST"
+  },
+  {
+    "ticker": "EB"
+  },
+  {
+    "ticker": "EBAY"
+  },
+  {
+    "ticker": "EBC"
+  },
+  {
+    "ticker": "EBF"
+  },
+  {
+    "ticker": "EBON"
+  },
+  {
+    "ticker": "EBS"
+  },
+  {
+    "ticker": "EC"
+  },
+  {
+    "ticker": "ECDA"
+  },
+  {
+    "ticker": "ECL"
+  },
+  {
+    "ticker": "ECOR"
+  },
+  {
+    "ticker": "ED"
+  },
+  {
+    "ticker": "EDBL"
+  },
+  {
+    "ticker": "EDRY"
+  },
+  {
+    "ticker": "EDSA"
+  },
+  {
+    "ticker": "EDTK"
+  },
+  {
+    "ticker": "EDUC"
+  },
+  {
+    "ticker": "EE"
+  },
+  {
+    "ticker": "EEFT"
+  },
+  {
+    "ticker": "EEIQ"
+  },
+  {
+    "ticker": "EEX"
+  },
+  {
+    "ticker": "EFOI"
+  },
+  {
+    "ticker": "EFTR"
+  },
+  {
+    "ticker": "EFX"
+  },
+  {
+    "ticker": "EFXT"
+  },
+  {
+    "ticker": "EGIO"
+  },
+  {
+    "ticker": "EGOX"
+  },
+  {
+    "ticker": "EGRX"
+  },
+  {
+    "ticker": "EGY"
+  },
+  {
+    "ticker": "EHAB"
+  },
+  {
+    "ticker": "EIX"
+  },
+  {
+    "ticker": "EJH"
+  },
+  {
+    "ticker": "EKSO"
+  },
+  {
+    "ticker": "EL"
+  },
+  {
+    "ticker": "ELAB"
+  },
+  {
+    "ticker": "ELBM"
+  },
+  {
+    "ticker": "ELDN"
+  },
+  {
+    "ticker": "ELSE"
+  },
+  {
+    "ticker": "ELV"
+  },
+  {
+    "ticker": "EMKR"
+  },
+  {
+    "ticker": "EMR"
+  },
+  {
+    "ticker": "ENB"
+  },
+  {
+    "ticker": "ENG"
+  },
+  {
+    "ticker": "ENLT"
+  },
+  {
+    "ticker": "ENLV"
+  },
+  {
+    "ticker": "ENPH"
+  },
+  {
+    "ticker": "ENSC"
+  },
+  {
+    "ticker": "ENSG"
+  },
+  {
+    "ticker": "ENTG"
+  },
+  {
+    "ticker": "ENTX"
+  },
+  {
+    "ticker": "ENVB"
+  },
+  {
+    "ticker": "ENZ"
+  },
+  {
+    "ticker": "EOG"
+  },
+  {
+    "ticker": "EPD"
+  },
+  {
+    "ticker": "EPOW"
+  },
+  {
+    "ticker": "EQ"
+  },
+  {
+    "ticker": "EQBK"
+  },
+  {
+    "ticker": "EQIX"
+  },
+  {
+    "ticker": "EQNR"
+  },
+  {
+    "ticker": "EQR"
+  },
+  {
+    "ticker": "EQS"
+  },
+  {
+    "ticker": "ERIC"
+  },
+  {
+    "ticker": "ERIE"
+  },
+  {
+    "ticker": "ERNA"
+  },
+  {
+    "ticker": "ES"
+  },
+  {
+    "ticker": "ESGL"
+  },
+  {
+    "ticker": "ESGR"
+  },
+  {
+    "ticker": "ESLA"
+  },
+  {
+    "ticker": "ESLT"
+  },
+  {
+    "ticker": "ET"
+  },
+  {
+    "ticker": "ETAO"
+  },
+  {
+    "ticker": "ETN"
+  },
+  {
+    "ticker": "ETR"
+  },
+  {
+    "ticker": "ETSY"
+  },
+  {
+    "ticker": "EUDA"
+  },
+  {
+    "ticker": "EVA"
+  },
+  {
+    "ticker": "EVAX"
+  },
+  {
+    "ticker": "EVC"
+  },
+  {
+    "ticker": "EVGN"
+  },
+  {
+    "ticker": "EVO"
+  },
+  {
+    "ticker": "EVOK"
+  },
+  {
+    "ticker": "EVRG"
+  },
+  {
+    "ticker": "EVRI"
+  },
+  {
+    "ticker": "EVTL"
+  },
+  {
+    "ticker": "EVTV"
+  },
+  {
+    "ticker": "EW"
+  },
+  {
+    "ticker": "EWBC"
+  },
+  {
+    "ticker": "EXAS"
+  },
+  {
+    "ticker": "EXC"
+  },
+  {
+    "ticker": "EXEL"
+  },
+  {
+    "ticker": "EXK"
+  },
+  {
+    "ticker": "EXLS"
+  },
+  {
+    "ticker": "EXPE"
+  },
+  {
+    "ticker": "EXPO"
+  },
+  {
+    "ticker": "EXR"
+  },
+  {
+    "ticker": "EYEN"
+  },
+  {
+    "ticker": "EZFL"
+  },
+  {
+    "ticker": "EZGO"
+  },
+  {
+    "ticker": "F"
+  },
+  {
+    "ticker": "FA"
+  },
+  {
+    "ticker": "FAMI"
+  },
+  {
+    "ticker": "FANG"
+  },
+  {
+    "ticker": "FARM"
+  },
+  {
+    "ticker": "FAST"
+  },
+  {
+    "ticker": "FATH"
+  },
+  {
+    "ticker": "FBIO"
+  },
+  {
+    "ticker": "FBRX"
+  },
+  {
+    "ticker": "FC"
+  },
+  {
+    "ticker": "FCFS"
+  },
+  {
+    "ticker": "FCNCA"
+  },
+  {
+    "ticker": "FCNCO"
+  },
+  {
+    "ticker": "FCUV"
+  },
+  {
+    "ticker": "FCX"
+  },
+  {
+    "ticker": "FDX"
+  },
+  {
+    "ticker": "FE"
+  },
+  {
+    "ticker": "FEDU"
+  },
+  {
+    "ticker": "FELE"
+  },
+  {
+    "ticker": "FEMY"
+  },
+  {
+    "ticker": "FENG"
+  },
+  {
+    "ticker": "FERG"
+  },
+  {
+    "ticker": "FET"
+  },
+  {
+    "ticker": "FF"
+  },
+  {
+    "ticker": "FFBC"
+  },
+  {
+    "ticker": "FFIE"
+  },
+  {
+    "ticker": "FFIN"
+  },
+  {
+    "ticker": "FFIV"
+  },
+  {
+    "ticker": "FFWM"
+  },
+  {
+    "ticker": "FGF"
+  },
+  {
+    "ticker": "FGI"
+  },
+  {
+    "ticker": "FHB"
+  },
+  {
+    "ticker": "FHLT"
+  },
+  {
+    "ticker": "FI"
+  },
+  {
+    "ticker": "FIBK"
+  },
+  {
+    "ticker": "FICO"
+  },
+  {
+    "ticker": "FIS"
+  },
+  {
+    "ticker": "FITB"
+  },
+  {
+    "ticker": "FIVE"
+  },
+  {
+    "ticker": "FIVN"
+  },
+  {
+    "ticker": "FIZZ"
+  },
+  {
+    "ticker": "FKWL"
+  },
+  {
+    "ticker": "FLEX"
+  },
+  {
+    "ticker": "FLGC"
+  },
+  {
+    "ticker": "FLJ"
+  },
+  {
+    "ticker": "FLNC"
+  },
+  {
+    "ticker": "FLNT"
+  },
+  {
+    "ticker": "FLUT"
+  },
+  {
+    "ticker": "FLUX"
+  },
+  {
+    "ticker": "FLYW"
+  },
+  {
+    "ticker": "FMX"
+  },
+  {
+    "ticker": "FNCH"
+  },
+  {
+    "ticker": "FNV"
+  },
+  {
+    "ticker": "FOA"
+  },
+  {
+    "ticker": "FOLD"
+  },
+  {
+    "ticker": "FORD"
+  },
+  {
+    "ticker": "FORM"
+  },
+  {
+    "ticker": "FOSL"
+  },
+  {
+    "ticker": "FOX"
+  },
+  {
+    "ticker": "FOXA"
+  },
+  {
+    "ticker": "FPAY"
+  },
+  {
+    "ticker": "FPH"
+  },
+  {
+    "ticker": "FPI"
+  },
+  {
+    "ticker": "FRES"
+  },
+  {
+    "ticker": "FREY"
+  },
+  {
+    "ticker": "FRGE"
+  },
+  {
+    "ticker": "FRGT"
+  },
+  {
+    "ticker": "FRHC"
+  },
+  {
+    "ticker": "FRLA"
+  },
+  {
+    "ticker": "FRME"
+  },
+  {
+    "ticker": "FROG"
+  },
+  {
+    "ticker": "FRPT"
+  },
+  {
+    "ticker": "FRSH"
+  },
+  {
+    "ticker": "FRSX"
+  },
+  {
+    "ticker": "FRZA"
+  },
+  {
+    "ticker": "FSEA"
+  },
+  {
+    "ticker": "FSLR"
+  },
+  {
+    "ticker": "FSV"
+  },
+  {
+    "ticker": "FTAI"
+  },
+  {
+    "ticker": "FTCI"
+  },
+  {
+    "ticker": "FTDR"
+  },
+  {
+    "ticker": "FTEK"
+  },
+  {
+    "ticker": "FTFT"
+  },
+  {
+    "ticker": "FTHM"
+  },
+  {
+    "ticker": "FTII"
+  },
+  {
+    "ticker": "FTK"
+  },
+  {
+    "ticker": "FTNT"
+  },
+  {
+    "ticker": "FTRE"
+  },
+  {
+    "ticker": "FTV"
+  },
+  {
+    "ticker": "FUBO"
+  },
+  {
+    "ticker": "FUFU"
+  },
+  {
+    "ticker": "FULT"
+  },
+  {
+    "ticker": "FUSB"
+  },
+  {
+    "ticker": "FUSN"
+  },
+  {
+    "ticker": "FUTU"
+  },
+  {
+    "ticker": "FUV"
+  },
+  {
+    "ticker": "FVRR"
+  },
+  {
+    "ticker": "FWBI"
+  },
+  {
+    "ticker": "FWONA"
+  },
+  {
+    "ticker": "FWONK"
+  },
+  {
+    "ticker": "FYBR"
+  },
+  {
+    "ticker": "GAME"
+  },
+  {
+    "ticker": "GAN"
+  },
+  {
+    "ticker": "GANX"
+  },
+  {
+    "ticker": "GATO"
+  },
+  {
+    "ticker": "GBDC"
+  },
+  {
+    "ticker": "GBLI"
+  },
+  {
+    "ticker": "GBNY"
+  },
+  {
+    "ticker": "GCI"
+  },
+  {
+    "ticker": "GCMG"
+  },
+  {
+    "ticker": "GCO"
+  },
+  {
+    "ticker": "GCTK"
+  },
+  {
+    "ticker": "GCTS"
+  },
+  {
+    "ticker": "GD"
+  },
+  {
+    "ticker": "GDC"
+  },
+  {
+    "ticker": "GDHG"
+  },
+  {
+    "ticker": "GDOT"
+  },
+  {
+    "ticker": "GDRX"
+  },
+  {
+    "ticker": "GDTC"
+  },
+  {
+    "ticker": "GE"
+  },
+  {
+    "ticker": "GEG"
+  },
+  {
+    "ticker": "GEHC"
+  },
+  {
+    "ticker": "GEN"
+  },
+  {
+    "ticker": "GENE"
+  },
+  {
+    "ticker": "GERN"
+  },
+  {
+    "ticker": "GETR"
+  },
+  {
+    "ticker": "GEV"
+  },
+  {
+    "ticker": "GFAI"
+  },
+  {
+    "ticker": "GFR"
+  },
+  {
+    "ticker": "GFS"
+  },
+  {
+    "ticker": "GGAL"
+  },
+  {
+    "ticker": "GH"
+  },
+  {
+    "ticker": "GHG"
+  },
+  {
+    "ticker": "GHI"
+  },
+  {
+    "ticker": "GHM"
+  },
+  {
+    "ticker": "GHSI"
+  },
+  {
+    "ticker": "GIB"
+  },
+  {
+    "ticker": "GIGM"
+  },
+  {
+    "ticker": "GILD"
+  },
+  {
+    "ticker": "GIPR"
+  },
+  {
+    "ticker": "GIS"
+  },
+  {
+    "ticker": "GLBE"
+  },
+  {
+    "ticker": "GLBS"
+  },
+  {
+    "ticker": "GLBZ"
+  },
+  {
+    "ticker": "GLMD"
+  },
+  {
+    "ticker": "GLNG"
+  },
+  {
+    "ticker": "GLPG"
+  },
+  {
+    "ticker": "GLPI"
+  },
+  {
+    "ticker": "GLT"
+  },
+  {
+    "ticker": "GLTO"
+  },
+  {
+    "ticker": "GLW"
+  },
+  {
+    "ticker": "GM"
+  },
+  {
+    "ticker": "GMAB"
+  },
+  {
+    "ticker": "GMM"
+  },
+  {
+    "ticker": "GMRE"
+  },
+  {
+    "ticker": "GNE"
+  },
+  {
+    "ticker": "GNLN"
+  },
+  {
+    "ticker": "GNPX"
+  },
+  {
+    "ticker": "GNTX"
+  },
+  {
+    "ticker": "GNTY"
+  },
+  {
+    "ticker": "GO"
+  },
+  {
+    "ticker": "GOGL"
+  },
+  {
+    "ticker": "GOLD"
+  },
+  {
+    "ticker": "GOOG"
+  },
+  {
+    "ticker": "GOOGL"
+  },
+  {
+    "ticker": "GORV"
+  },
+  {
+    "ticker": "GOVX"
+  },
+  {
+    "ticker": "GP"
+  },
+  {
+    "ticker": "GPAK"
+  },
+  {
+    "ticker": "GPC"
+  },
+  {
+    "ticker": "GPMT"
+  },
+  {
+    "ticker": "GPN"
+  },
+  {
+    "ticker": "GPRK"
+  },
+  {
+    "ticker": "GRAB"
+  },
+  {
+    "ticker": "GREE"
+  },
+  {
+    "ticker": "GRFS"
+  },
+  {
+    "ticker": "GRI"
+  },
+  {
+    "ticker": "GRMN"
+  },
+  {
+    "ticker": "GRNQ"
+  },
+  {
+    "ticker": "GROM"
+  },
+  {
+    "ticker": "GROV"
+  },
+  {
+    "ticker": "GROW"
+  },
+  {
+    "ticker": "GRRR"
+  },
+  {
+    "ticker": "GRTX"
+  },
+  {
+    "ticker": "GRYP"
+  },
+  {
+    "ticker": "GS"
+  },
+  {
+    "ticker": "GSK"
+  },
+  {
+    "ticker": "GSUN"
+  },
+  {
+    "ticker": "GT"
+  },
+  {
+    "ticker": "GTAC"
+  },
+  {
+    "ticker": "GTBP"
+  },
+  {
+    "ticker": "GTEC"
+  },
+  {
+    "ticker": "GTIM"
+  },
+  {
+    "ticker": "GTLB"
+  },
+  {
+    "ticker": "GTN"
+  },
+  {
+    "ticker": "GTN.A"
+  },
+  {
+    "ticker": "GTX"
+  },
+  {
+    "ticker": "GURE"
+  },
+  {
+    "ticker": "GV"
+  },
+  {
+    "ticker": "GVH"
+  },
+  {
+    "ticker": "GVP"
+  },
+  {
+    "ticker": "GWAV"
+  },
+  {
+    "ticker": "GWH"
+  },
+  {
+    "ticker": "GWW"
+  },
+  {
+    "ticker": "GXAI"
+  },
+  {
+    "ticker": "GYRO"
+  },
+  {
+    "ticker": "HAIA"
+  },
+  {
+    "ticker": "HAL"
+  },
+  {
+    "ticker": "HALO"
+  },
+  {
+    "ticker": "HAS"
+  },
+  {
+    "ticker": "HBAN"
+  },
+  {
+    "ticker": "HBB"
+  },
+  {
+    "ticker": "HCA"
+  },
+  {
+    "ticker": "HCM"
+  },
+  {
+    "ticker": "HCP"
+  },
+  {
+    "ticker": "HCTI"
+  },
+  {
+    "ticker": "HCWB"
+  },
+  {
+    "ticker": "HD"
+  },
+  {
+    "ticker": "HDB"
+  },
+  {
+    "ticker": "HEES"
+  },
+  {
+    "ticker": "HEI"
+  },
+  {
+    "ticker": "HEI.A"
+  },
+  {
+    "ticker": "HELE"
+  },
+  {
+    "ticker": "HEPA"
+  },
+  {
+    "ticker": "HES"
+  },
+  {
+    "ticker": "HFBL"
+  },
+  {
+    "ticker": "HGAS"
+  },
+  {
+    "ticker": "HGTY"
+  },
+  {
+    "ticker": "HHGC"
+  },
+  {
+    "ticker": "HHS"
+  },
+  {
+    "ticker": "HIG"
+  },
+  {
+    "ticker": "HIHO"
+  },
+  {
+    "ticker": "HIPO"
+  },
+  {
+    "ticker": "HKD"
+  },
+  {
+    "ticker": "HKIT"
+  },
+  {
+    "ticker": "HLLY"
+  },
+  {
+    "ticker": "HLMN"
+  },
+  {
+    "ticker": "HLN"
+  },
+  {
+    "ticker": "HLNE"
+  },
+  {
+    "ticker": "HLP"
+  },
+  {
+    "ticker": "HLT"
+  },
+  {
+    "ticker": "HLTH"
+  },
+  {
+    "ticker": "HMC"
+  },
+  {
+    "ticker": "HNNA"
+  },
+  {
+    "ticker": "HOFV"
+  },
+  {
+    "ticker": "HOLO"
+  },
+  {
+    "ticker": "HOLX"
+  },
+  {
+    "ticker": "HON"
+  },
+  {
+    "ticker": "HOOD"
+  },
+  {
+    "ticker": "HOOK"
+  },
+  {
+    "ticker": "HOTH"
+  },
+  {
+    "ticker": "HOUR"
+  },
+  {
+    "ticker": "HOUS"
+  },
+  {
+    "ticker": "HOVR"
+  },
+  {
+    "ticker": "HPCO"
+  },
+  {
+    "ticker": "HPE"
+  },
+  {
+    "ticker": "HPK"
+  },
+  {
+    "ticker": "HPQ"
+  },
+  {
+    "ticker": "HQY"
+  },
+  {
+    "ticker": "HRTG"
+  },
+  {
+    "ticker": "HRYU"
+  },
+  {
+    "ticker": "HSBC"
+  },
+  {
+    "ticker": "HSCS"
+  },
+  {
+    "ticker": "HSDT"
+  },
+  {
+    "ticker": "HSHP"
+  },
+  {
+    "ticker": "HSIC"
+  },
+  {
+    "ticker": "HSON"
+  },
+  {
+    "ticker": "HST"
+  },
+  {
+    "ticker": "HSY"
+  },
+  {
+    "ticker": "HTCR"
+  },
+  {
+    "ticker": "HTHT"
+  },
+  {
+    "ticker": "HTOO"
+  },
+  {
+    "ticker": "HTZ"
+  },
+  {
+    "ticker": "HUBB"
+  },
+  {
+    "ticker": "HUBC"
+  },
+  {
+    "ticker": "HUBG"
+  },
+  {
+    "ticker": "HUBS"
+  },
+  {
+    "ticker": "HUDA"
+  },
+  {
+    "ticker": "HUDI"
+  },
+  {
+    "ticker": "HUGE"
+  },
+  {
+    "ticker": "HUIZ"
+  },
+  {
+    "ticker": "HUM"
+  },
+  {
+    "ticker": "HURN"
+  },
+  {
+    "ticker": "HVT"
+  },
+  {
+    "ticker": "HVT.A"
+  },
+  {
+    "ticker": "HWC"
+  },
+  {
+    "ticker": "HWH"
+  },
+  {
+    "ticker": "HWM"
+  },
+  {
+    "ticker": "HYAC"
+  },
+  {
+    "ticker": "HYFM"
+  },
+  {
+    "ticker": "HYPR"
+  },
+  {
+    "ticker": "HYW"
+  },
+  {
+    "ticker": "HZO"
+  },
+  {
+    "ticker": "IAC"
+  },
+  {
+    "ticker": "IART"
+  },
+  {
+    "ticker": "IBKR"
+  },
+  {
+    "ticker": "IBM"
+  },
+  {
+    "ticker": "IBN"
+  },
+  {
+    "ticker": "IBOC"
+  },
+  {
+    "ticker": "IBRX"
+  },
+  {
+    "ticker": "IBTX"
+  },
+  {
+    "ticker": "ICAD"
+  },
+  {
+    "ticker": "ICCC"
+  },
+  {
+    "ticker": "ICCH"
+  },
+  {
+    "ticker": "ICCM"
+  },
+  {
+    "ticker": "ICCT"
+  },
+  {
+    "ticker": "ICD"
+  },
+  {
+    "ticker": "ICE"
+  },
+  {
+    "ticker": "ICFI"
+  },
+  {
+    "ticker": "ICLK"
+  },
+  {
+    "ticker": "ICLR"
+  },
+  {
+    "ticker": "ICMB"
+  },
+  {
+    "ticker": "ICU"
+  },
+  {
+    "ticker": "ICUI"
+  },
+  {
+    "ticker": "IDAI"
+  },
+  {
+    "ticker": "IDCC"
+  },
+  {
+    "ticker": "IDEX"
+  },
+  {
+    "ticker": "IDN"
+  },
+  {
+    "ticker": "IDXX"
+  },
+  {
+    "ticker": "IDYA"
+  },
+  {
+    "ticker": "IEP"
+  },
+  {
+    "ticker": "IESC"
+  },
+  {
+    "ticker": "IFBD"
+  },
+  {
+    "ticker": "IFF"
+  },
+  {
+    "ticker": "IFIN"
+  },
+  {
+    "ticker": "IGTA"
+  },
+  {
+    "ticker": "IH"
+  },
+  {
+    "ticker": "IIIN"
+  },
+  {
+    "ticker": "IINN"
+  },
+  {
+    "ticker": "IKNA"
+  },
+  {
+    "ticker": "IKT"
+  },
+  {
+    "ticker": "ILAG"
+  },
+  {
+    "ticker": "ILMN"
+  },
+  {
+    "ticker": "IMCC"
+  },
+  {
+    "ticker": "IMCR"
+  },
+  {
+    "ticker": "IMMX"
+  },
+  {
+    "ticker": "IMNN"
+  },
+  {
+    "ticker": "IMRN"
+  },
+  {
+    "ticker": "IMRX"
+  },
+  {
+    "ticker": "IMTE"
+  },
+  {
+    "ticker": "IMVT"
+  },
+  {
+    "ticker": "INAB"
+  },
+  {
+    "ticker": "INBS"
+  },
+  {
+    "ticker": "INCY"
+  },
+  {
+    "ticker": "INDB"
+  },
+  {
+    "ticker": "INDP"
+  },
+  {
+    "ticker": "INDV"
+  },
+  {
+    "ticker": "INFY"
+  },
+  {
+    "ticker": "ING"
+  },
+  {
+    "ticker": "INHD"
+  },
+  {
+    "ticker": "INKT"
+  },
+  {
+    "ticker": "INM"
+  },
+  {
+    "ticker": "INN"
+  },
+  {
+    "ticker": "INSG"
+  },
+  {
+    "ticker": "INSM"
+  },
+  {
+    "ticker": "INTA"
+  },
+  {
+    "ticker": "INTC"
+  },
+  {
+    "ticker": "INTE"
+  },
+  {
+    "ticker": "INTG"
+  },
+  {
+    "ticker": "INTJ"
+  },
+  {
+    "ticker": "INTR"
+  },
+  {
+    "ticker": "INTS"
+  },
+  {
+    "ticker": "INTU"
+  },
+  {
+    "ticker": "INTZ"
+  },
+  {
+    "ticker": "INVH"
+  },
+  {
+    "ticker": "INVO"
+  },
+  {
+    "ticker": "IONM"
+  },
+  {
+    "ticker": "IONS"
+  },
+  {
+    "ticker": "IOSP"
+  },
+  {
+    "ticker": "IOVA"
+  },
+  {
+    "ticker": "IPA"
+  },
+  {
+    "ticker": "IPAR"
+  },
+  {
+    "ticker": "IPDN"
+  },
+  {
+    "ticker": "IPGP"
+  },
+  {
+    "ticker": "IPI"
+  },
+  {
+    "ticker": "IPW"
+  },
+  {
+    "ticker": "IPWR"
+  },
+  {
+    "ticker": "IQ"
+  },
+  {
+    "ticker": "IQV"
+  },
+  {
+    "ticker": "IR"
+  },
+  {
+    "ticker": "IRDM"
+  },
+  {
+    "ticker": "IRIX"
+  },
+  {
+    "ticker": "IRM"
+  },
+  {
+    "ticker": "IROQ"
+  },
+  {
+    "ticker": "IRTC"
+  },
+  {
+    "ticker": "ISPC"
+  },
+  {
+    "ticker": "ISPO"
+  },
+  {
+    "ticker": "ISRG"
+  },
+  {
+    "ticker": "ISUN"
+  },
+  {
+    "ticker": "IT"
+  },
+  {
+    "ticker": "ITCI"
+  },
+  {
+    "ticker": "ITRI"
+  },
+  {
+    "ticker": "ITRM"
+  },
+  {
+    "ticker": "ITUB"
+  },
+  {
+    "ticker": "ITW"
+  },
+  {
+    "ticker": "IVDA"
+  },
+  {
+    "ticker": "IVP"
+  },
+  {
+    "ticker": "IVR"
+  },
+  {
+    "ticker": "IX"
+  },
+  {
+    "ticker": "IZEA"
+  },
+  {
+    "ticker": "IZM"
+  },
+  {
+    "ticker": "JAGX"
+  },
+  {
+    "ticker": "JAMF"
+  },
+  {
+    "ticker": "JAN"
+  },
+  {
+    "ticker": "JANX"
+  },
+  {
+    "ticker": "JAZZ"
+  },
+  {
+    "ticker": "JBHT"
+  },
+  {
+    "ticker": "JBLU"
+  },
+  {
+    "ticker": "JCI"
+  },
+  {
+    "ticker": "JCSE"
+  },
+  {
+    "ticker": "JCTCF"
+  },
+  {
+    "ticker": "JD"
+  },
+  {
+    "ticker": "JEWL"
+  },
+  {
+    "ticker": "JFBR"
+  },
+  {
+    "ticker": "JFU"
+  },
+  {
+    "ticker": "JG"
+  },
+  {
+    "ticker": "JILL"
+  },
+  {
+    "ticker": "JJSF"
+  },
+  {
+    "ticker": "JKHY"
+  },
+  {
+    "ticker": "JL"
+  },
+  {
+    "ticker": "JMIA"
+  },
+  {
+    "ticker": "JNJ"
+  },
+  {
+    "ticker": "JNVR"
+  },
+  {
+    "ticker": "JPM"
+  },
+  {
+    "ticker": "JRSH"
+  },
+  {
+    "ticker": "JTAI"
+  },
+  {
+    "ticker": "JUNE"
+  },
+  {
+    "ticker": "JVA"
+  },
+  {
+    "ticker": "JVSA"
+  },
+  {
+    "ticker": "JWEL"
+  },
+  {
+    "ticker": "JXJT"
+  },
+  {
+    "ticker": "JYD"
+  },
+  {
+    "ticker": "JZ"
+  },
+  {
+    "ticker": "JZXN"
+  },
+  {
+    "ticker": "KA"
+  },
+  {
+    "ticker": "KACL"
+  },
+  {
+    "ticker": "KALA"
+  },
+  {
+    "ticker": "KAVL"
+  },
+  {
+    "ticker": "KCGI"
+  },
+  {
+    "ticker": "KDP"
+  },
+  {
+    "ticker": "KEYS"
+  },
+  {
+    "ticker": "KFFB"
+  },
+  {
+    "ticker": "KFS"
+  },
+  {
+    "ticker": "KHC"
+  },
+  {
+    "ticker": "KINS"
+  },
+  {
+    "ticker": "KIRK"
+  },
+  {
+    "ticker": "KITT"
+  },
+  {
+    "ticker": "KKR"
+  },
+  {
+    "ticker": "KLAC"
+  },
+  {
+    "ticker": "KLIC"
+  },
+  {
+    "ticker": "KMB"
+  },
+  {
+    "ticker": "KMI"
+  },
+  {
+    "ticker": "KNOP"
+  },
+  {
+    "ticker": "KO"
+  },
+  {
+    "ticker": "KODK"
+  },
+  {
+    "ticker": "KOF"
+  },
+  {
+    "ticker": "KORE"
+  },
+  {
+    "ticker": "KOSS"
+  },
+  {
+    "ticker": "KPLT"
+  },
+  {
+    "ticker": "KPRX"
+  },
+  {
+    "ticker": "KR"
+  },
+  {
+    "ticker": "KREF"
+  },
+  {
+    "ticker": "KRKR"
+  },
+  {
+    "ticker": "KRON"
+  },
+  {
+    "ticker": "KROS"
+  },
+  {
+    "ticker": "KRYS"
+  },
+  {
+    "ticker": "KSCP"
+  },
+  {
+    "ticker": "KSPI"
+  },
+  {
+    "ticker": "KTCC"
+  },
+  {
+    "ticker": "KTOS"
+  },
+  {
+    "ticker": "KTRA"
+  },
+  {
+    "ticker": "KTTA"
+  },
+  {
+    "ticker": "KUKE"
+  },
+  {
+    "ticker": "KWE"
+  },
+  {
+    "ticker": "KXIN"
+  },
+  {
+    "ticker": "KYMR"
+  },
+  {
+    "ticker": "KZIA"
+  },
+  {
+    "ticker": "KZR"
+  },
+  {
+    "ticker": "LABP"
+  },
+  {
+    "ticker": "LAES"
+  },
+  {
+    "ticker": "LAMR"
+  },
+  {
+    "ticker": "LANC"
+  },
+  {
+    "ticker": "LANV"
+  },
+  {
+    "ticker": "LASE"
+  },
+  {
+    "ticker": "LAUR"
+  },
+  {
+    "ticker": "LAW"
+  },
+  {
+    "ticker": "LBRDA"
+  },
+  {
+    "ticker": "LBRDK"
+  },
+  {
+    "ticker": "LBTYA"
+  },
+  {
+    "ticker": "LBTYB"
+  },
+  {
+    "ticker": "LBTYK"
+  },
+  {
+    "ticker": "LCFY"
+  },
+  {
+    "ticker": "LCID"
+  },
+  {
+    "ticker": "LCW"
+  },
+  {
+    "ticker": "LDTC"
+  },
+  {
+    "ticker": "LDWY"
+  },
+  {
+    "ticker": "LECO"
+  },
+  {
+    "ticker": "LEDS"
+  },
+  {
+    "ticker": "LEGN"
+  },
+  {
+    "ticker": "LEN"
+  },
+  {
+    "ticker": "LEN.B"
+  },
+  {
+    "ticker": "LEV"
+  },
+  {
+    "ticker": "LEXX"
+  },
+  {
+    "ticker": "LFLY"
+  },
+  {
+    "ticker": "LFST"
+  },
+  {
+    "ticker": "LFT"
+  },
+  {
+    "ticker": "LFUS"
+  },
+  {
+    "ticker": "LFWD"
+  },
+  {
+    "ticker": "LGHL"
+  },
+  {
+    "ticker": "LGIH"
+  },
+  {
+    "ticker": "LGMK"
+  },
+  {
+    "ticker": "LGVN"
+  },
+  {
+    "ticker": "LHX"
+  },
+  {
+    "ticker": "LI"
+  },
+  {
+    "ticker": "LICN"
+  },
+  {
+    "ticker": "LICY"
+  },
+  {
+    "ticker": "LIDR"
+  },
+  {
+    "ticker": "LIN"
+  },
+  {
+    "ticker": "LINK"
+  },
+  {
+    "ticker": "LIPO"
+  },
+  {
+    "ticker": "LIQT"
+  },
+  {
+    "ticker": "LITB"
+  },
+  {
+    "ticker": "LITE"
+  },
+  {
+    "ticker": "LITM"
+  },
+  {
+    "ticker": "LIVN"
+  },
+  {
+    "ticker": "LIXT"
+  },
+  {
+    "ticker": "LKCO"
+  },
+  {
+    "ticker": "LKQ"
+  },
+  {
+    "ticker": "LL"
+  },
+  {
+    "ticker": "LLAP"
+  },
+  {
+    "ticker": "LLY"
+  },
+  {
+    "ticker": "LLYVA"
+  },
+  {
+    "ticker": "LLYVK"
+  },
+  {
+    "ticker": "LMFA"
+  },
+  {
+    "ticker": "LMT"
+  },
+  {
+    "ticker": "LND"
+  },
+  {
+    "ticker": "LNG"
+  },
+  {
+    "ticker": "LNSR"
+  },
+  {
+    "ticker": "LNT"
+  },
+  {
+    "ticker": "LNTH"
+  },
+  {
+    "ticker": "LNW"
+  },
+  {
+    "ticker": "LOAN"
+  },
+  {
+    "ticker": "LOBO"
+  },
+  {
+    "ticker": "LOCL"
+  },
+  {
+    "ticker": "LOGI"
+  },
+  {
+    "ticker": "LOPE"
+  },
+  {
+    "ticker": "LOW"
+  },
+  {
+    "ticker": "LPCN"
+  },
+  {
+    "ticker": "LPLA"
+  },
+  {
+    "ticker": "LPSN"
+  },
+  {
+    "ticker": "LPTH"
+  },
+  {
+    "ticker": "LQR"
+  },
+  {
+    "ticker": "LRCX"
+  },
+  {
+    "ticker": "LRE"
+  },
+  {
+    "ticker": "LRFC"
+  },
+  {
+    "ticker": "LRHC"
+  },
+  {
+    "ticker": "LSBK"
+  },
+  {
+    "ticker": "LSCC"
+  },
+  {
+    "ticker": "LSDI"
+  },
+  {
+    "ticker": "LSTA"
+  },
+  {
+    "ticker": "LSTR"
+  },
+  {
+    "ticker": "LSXMA"
+  },
+  {
+    "ticker": "LSXMB"
+  },
+  {
+    "ticker": "LSXMK"
+  },
+  {
+    "ticker": "LTBR"
+  },
+  {
+    "ticker": "LTRN"
+  },
+  {
+    "ticker": "LTRY"
+  },
+  {
+    "ticker": "LUCD"
+  },
+  {
+    "ticker": "LUCY"
+  },
+  {
+    "ticker": "LULU"
+  },
+  {
+    "ticker": "LUMO"
+  },
+  {
+    "ticker": "LVLU"
+  },
+  {
+    "ticker": "LVS"
+  },
+  {
+    "ticker": "LXEH"
+  },
+  {
+    "ticker": "LXFR"
+  },
+  {
+    "ticker": "LXU"
+  },
+  {
+    "ticker": "LYB"
+  },
+  {
+    "ticker": "LYFT"
+  },
+  {
+    "ticker": "LYG"
+  },
+  {
+    "ticker": "LYT"
+  },
+  {
+    "ticker": "LYV"
+  },
+  {
+    "ticker": "LZ"
+  },
+  {
+    "ticker": "LZM"
+  },
+  {
+    "ticker": "MA"
+  },
+  {
+    "ticker": "MACA"
+  },
+  {
+    "ticker": "MANH"
+  },
+  {
+    "ticker": "MAR"
+  },
+  {
+    "ticker": "MARA"
+  },
+  {
+    "ticker": "MARPS"
+  },
+  {
+    "ticker": "MASI"
+  },
+  {
+    "ticker": "MAT"
+  },
+  {
+    "ticker": "MBI"
+  },
+  {
+    "ticker": "MBIO"
+  },
+  {
+    "ticker": "MBLY"
+  },
+  {
+    "ticker": "MBOT"
+  },
+  {
+    "ticker": "MBRX"
+  },
+  {
+    "ticker": "MCAG"
+  },
+  {
+    "ticker": "MCB"
+  },
+  {
+    "ticker": "MCD"
+  },
+  {
+    "ticker": "MCHP"
+  },
+  {
+    "ticker": "MCHX"
+  },
+  {
+    "ticker": "MCK"
+  },
+  {
+    "ticker": "MCO"
+  },
+  {
+    "ticker": "MCS"
+  },
+  {
+    "ticker": "MCVT"
+  },
+  {
+    "ticker": "MDAI"
+  },
+  {
+    "ticker": "MDB"
+  },
+  {
+    "ticker": "MDGL"
+  },
+  {
+    "ticker": "MDJH"
+  },
+  {
+    "ticker": "MDLZ"
+  },
+  {
+    "ticker": "MDRR"
+  },
+  {
+    "ticker": "MDT"
+  },
+  {
+    "ticker": "MDXH"
+  },
+  {
+    "ticker": "MEC"
+  },
+  {
+    "ticker": "MED"
+  },
+  {
+    "ticker": "MEDP"
+  },
+  {
+    "ticker": "MEDS"
+  },
+  {
+    "ticker": "MEGL"
+  },
+  {
+    "ticker": "MEI"
+  },
+  {
+    "ticker": "MEIP"
+  },
+  {
+    "ticker": "MELI"
+  },
+  {
+    "ticker": "MEOH"
+  },
+  {
+    "ticker": "MESA"
+  },
+  {
+    "ticker": "MET"
+  },
+  {
+    "ticker": "META"
+  },
+  {
+    "ticker": "MFC"
+  },
+  {
+    "ticker": "MFG"
+  },
+  {
+    "ticker": "MFH"
+  },
+  {
+    "ticker": "MG"
+  },
+  {
+    "ticker": "MGEE"
+  },
+  {
+    "ticker": "MGIH"
+  },
+  {
+    "ticker": "MGOL"
+  },
+  {
+    "ticker": "MGPI"
+  },
+  {
+    "ticker": "MGRC"
+  },
+  {
+    "ticker": "MGRM"
+  },
+  {
+    "ticker": "MGRX"
+  },
+  {
+    "ticker": "MHUA"
+  },
+  {
+    "ticker": "MICS"
+  },
+  {
+    "ticker": "MIDD"
+  },
+  {
+    "ticker": "MIGI"
+  },
+  {
+    "ticker": "MIND"
+  },
+  {
+    "ticker": "MINM"
+  },
+  {
+    "ticker": "MIRA"
+  },
+  {
+    "ticker": "MITT"
+  },
+  {
+    "ticker": "MKC"
+  },
+  {
+    "ticker": "MKC.V"
+  },
+  {
+    "ticker": "MKFG"
+  },
+  {
+    "ticker": "MKSI"
+  },
+  {
+    "ticker": "MKTW"
+  },
+  {
+    "ticker": "MKTX"
+  },
+  {
+    "ticker": "ML"
+  },
+  {
+    "ticker": "MLCO"
+  },
+  {
+    "ticker": "MLGO"
+  },
+  {
+    "ticker": "MLKN"
+  },
+  {
+    "ticker": "MLM"
+  },
+  {
+    "ticker": "MLP"
+  },
+  {
+    "ticker": "MLR"
+  },
+  {
+    "ticker": "MLTX"
+  },
+  {
+    "ticker": "MMC"
+  },
+  {
+    "ticker": "MMM"
+  },
+  {
+    "ticker": "MMSI"
+  },
+  {
+    "ticker": "MMV"
+  },
+  {
+    "ticker": "MMYT"
+  },
+  {
+    "ticker": "MNDO"
+  },
+  {
+    "ticker": "MNDY"
+  },
+  {
+    "ticker": "MNOV"
+  },
+  {
+    "ticker": "MNPR"
+  },
+  {
+    "ticker": "MNST"
+  },
+  {
+    "ticker": "MNTN"
+  },
+  {
+    "ticker": "MNTS"
+  },
+  {
+    "ticker": "MO"
+  },
+  {
+    "ticker": "MOB"
+  },
+  {
+    "ticker": "MOBX"
+  },
+  {
+    "ticker": "MODD"
+  },
+  {
+    "ticker": "MOGO"
+  },
+  {
+    "ticker": "MOGU"
+  },
+  {
+    "ticker": "MOH"
+  },
+  {
+    "ticker": "MOR"
+  },
+  {
+    "ticker": "MORN"
+  },
+  {
+    "ticker": "MOV"
+  },
+  {
+    "ticker": "MOVE"
+  },
+  {
+    "ticker": "MPC"
+  },
+  {
+    "ticker": "MPLN"
+  },
+  {
+    "ticker": "MPLX"
+  },
+  {
+    "ticker": "MPWR"
+  },
+  {
+    "ticker": "MPX"
+  },
+  {
+    "ticker": "MQ"
+  },
+  {
+    "ticker": "MRAI"
+  },
+  {
+    "ticker": "MRIN"
+  },
+  {
+    "ticker": "MRK"
+  },
+  {
+    "ticker": "MRKR"
+  },
+  {
+    "ticker": "MRM"
+  },
+  {
+    "ticker": "MRNA"
+  },
+  {
+    "ticker": "MRUS"
+  },
+  {
+    "ticker": "MRVL"
+  },
+  {
+    "ticker": "MS"
+  },
+  {
+    "ticker": "MSAI"
+  },
+  {
+    "ticker": "MSB"
+  },
+  {
+    "ticker": "MSCI"
+  },
+  {
+    "ticker": "MSFT"
+  },
+  {
+    "ticker": "MSGM"
+  },
+  {
+    "ticker": "MSI"
+  },
+  {
+    "ticker": "MSS"
+  },
+  {
+    "ticker": "MSTR"
+  },
+  {
+    "ticker": "MT"
+  },
+  {
+    "ticker": "MTB"
+  },
+  {
+    "ticker": "MTCH"
+  },
+  {
+    "ticker": "MTD"
+  },
+  {
+    "ticker": "MTEK"
+  },
+  {
+    "ticker": "MTEM"
+  },
+  {
+    "ticker": "MTEN"
+  },
+  {
+    "ticker": "MTEX"
+  },
+  {
+    "ticker": "MTR"
+  },
+  {
+    "ticker": "MTSI"
+  },
+  {
+    "ticker": "MTW"
+  },
+  {
+    "ticker": "MU"
+  },
+  {
+    "ticker": "MUFG"
+  },
+  {
+    "ticker": "MULN"
+  },
+  {
+    "ticker": "MURA"
+  },
+  {
+    "ticker": "MUX"
+  },
+  {
+    "ticker": "MX"
+  },
+  {
+    "ticker": "MYMD"
+  },
+  {
+    "ticker": "MYNZ"
+  },
+  {
+    "ticker": "MYRG"
+  },
+  {
+    "ticker": "MYSZ"
+  },
+  {
+    "ticker": "MYTE"
+  },
+  {
+    "ticker": NaN
+  },
+  {
+    "ticker": "NAII"
+  },
+  {
+    "ticker": "NAMS"
+  },
+  {
+    "ticker": "NAOV"
+  },
+  {
+    "ticker": "NARI"
+  },
+  {
+    "ticker": "NAVI"
+  },
+  {
+    "ticker": "NBIX"
+  },
+  {
+    "ticker": "NBR"
+  },
+  {
+    "ticker": "NBSE"
+  },
+  {
+    "ticker": "NBST"
+  },
+  {
+    "ticker": "NC"
+  },
+  {
+    "ticker": "NCNA"
+  },
+  {
+    "ticker": "NCNC"
+  },
+  {
+    "ticker": "NCNO"
+  },
+  {
+    "ticker": "NCPL"
+  },
+  {
+    "ticker": "NCRA"
+  },
+  {
+    "ticker": "NCSM"
+  },
+  {
+    "ticker": "NCTY"
+  },
+  {
+    "ticker": "NDAQ"
+  },
+  {
+    "ticker": "NDLS"
+  },
+  {
+    "ticker": "NDRA"
+  },
+  {
+    "ticker": "NDSN"
+  },
+  {
+    "ticker": "NEE"
+  },
+  {
+    "ticker": "NEM"
+  },
+  {
+    "ticker": "NEO"
+  },
+  {
+    "ticker": "NEOG"
+  },
+  {
+    "ticker": "NEON"
+  },
+  {
+    "ticker": "NEOV"
+  },
+  {
+    "ticker": "NEPH"
+  },
+  {
+    "ticker": "NERV"
+  },
+  {
+    "ticker": "NET"
+  },
+  {
+    "ticker": "NEUE"
+  },
+  {
+    "ticker": "NEXI"
+  },
+  {
+    "ticker": "NFE"
+  },
+  {
+    "ticker": "NFLX"
+  },
+  {
+    "ticker": "NFYS"
+  },
+  {
+    "ticker": "NGG"
+  },
+  {
+    "ticker": "NGS"
+  },
+  {
+    "ticker": "NGVC"
+  },
+  {
+    "ticker": "NICE"
+  },
+  {
+    "ticker": "NICK"
+  },
+  {
+    "ticker": "NINE"
+  },
+  {
+    "ticker": "NISN"
+  },
+  {
+    "ticker": "NITO"
+  },
+  {
+    "ticker": "NIVF"
+  },
+  {
+    "ticker": "NKE"
+  },
+  {
+    "ticker": "NKGN"
+  },
+  {
+    "ticker": "NL"
+  },
+  {
+    "ticker": "NLOP"
+  },
+  {
+    "ticker": "NLSP"
+  },
+  {
+    "ticker": "NMG"
+  },
+  {
+    "ticker": "NMHI"
+  },
+  {
+    "ticker": "NMIH"
+  },
+  {
+    "ticker": "NMTC"
+  },
+  {
+    "ticker": "NOA"
+  },
+  {
+    "ticker": "NOC"
+  },
+  {
+    "ticker": "NOK"
+  },
+  {
+    "ticker": "NOTE"
+  },
+  {
+    "ticker": "NOVA"
+  },
+  {
+    "ticker": "NOVT"
+  },
+  {
+    "ticker": "NOVV"
+  },
+  {
+    "ticker": "NOW"
+  },
+  {
+    "ticker": "NPK"
+  },
+  {
+    "ticker": "NR"
+  },
+  {
+    "ticker": "NRBO"
+  },
+  {
+    "ticker": "NRDY"
+  },
+  {
+    "ticker": "NRGV"
+  },
+  {
+    "ticker": "NRSN"
+  },
+  {
+    "ticker": "NRT"
+  },
+  {
+    "ticker": "NRXP"
+  },
+  {
+    "ticker": "NSC"
+  },
+  {
+    "ticker": "NSIT"
+  },
+  {
+    "ticker": "NSPR"
+  },
+  {
+    "ticker": "NSTS"
+  },
+  {
+    "ticker": "NSYS"
+  },
+  {
+    "ticker": "NTAP"
+  },
+  {
+    "ticker": "NTBL"
+  },
+  {
+    "ticker": "NTES"
+  },
+  {
+    "ticker": "NTLA"
+  },
+  {
+    "ticker": "NTNX"
+  },
+  {
+    "ticker": "NTR"
+  },
+  {
+    "ticker": "NTRA"
+  },
+  {
+    "ticker": "NTRB"
+  },
+  {
+    "ticker": "NTRP"
+  },
+  {
+    "ticker": "NTRS"
+  },
+  {
+    "ticker": "NTWK"
+  },
+  {
+    "ticker": "NTZ"
+  },
+  {
+    "ticker": "NU"
+  },
+  {
+    "ticker": "NUE"
+  },
+  {
+    "ticker": "NUKK"
+  },
+  {
+    "ticker": "NURO"
+  },
+  {
+    "ticker": "NUS"
+  },
+  {
+    "ticker": "NUTX"
+  },
+  {
+    "ticker": "NUVB"
+  },
+  {
+    "ticker": "NUVL"
+  },
+  {
+    "ticker": "NUWE"
+  },
+  {
+    "ticker": "NUZE"
+  },
+  {
+    "ticker": "NVAC"
+  },
+  {
+    "ticker": "NVDA"
+  },
+  {
+    "ticker": "NVEI"
+  },
+  {
+    "ticker": "NVFY"
+  },
+  {
+    "ticker": "NVMI"
+  },
+  {
+    "ticker": "NVNI"
+  },
+  {
+    "ticker": "NVNO"
+  },
+  {
+    "ticker": "NVO"
+  },
+  {
+    "ticker": "NVOS"
+  },
+  {
+    "ticker": "NVR"
+  },
+  {
+    "ticker": "NVRI"
+  },
+  {
+    "ticker": "NVRO"
+  },
+  {
+    "ticker": "NVS"
+  },
+  {
+    "ticker": "NVVE"
+  },
+  {
+    "ticker": "NWE"
+  },
+  {
+    "ticker": "NWG"
+  },
+  {
+    "ticker": "NWL"
+  },
+  {
+    "ticker": "NWS"
+  },
+  {
+    "ticker": "NWSA"
+  },
+  {
+    "ticker": "NWTN"
+  },
+  {
+    "ticker": "NXGL"
+  },
+  {
+    "ticker": "NXL"
+  },
+  {
+    "ticker": "NXPI"
+  },
+  {
+    "ticker": "NXPL"
+  },
+  {
+    "ticker": "NXST"
+  },
+  {
+    "ticker": "NXT"
+  },
+  {
+    "ticker": "NXTC"
+  },
+  {
+    "ticker": "NXTT"
+  },
+  {
+    "ticker": "NXU"
+  },
+  {
+    "ticker": "NYC"
+  },
+  {
+    "ticker": "O"
+  },
+  {
+    "ticker": "OBLG"
+  },
+  {
+    "ticker": "OCC"
+  },
+  {
+    "ticker": "OCEA"
+  },
+  {
+    "ticker": "OCFT"
+  },
+  {
+    "ticker": "OCG"
+  },
+  {
+    "ticker": "OCN"
+  },
+  {
+    "ticker": "OCTO"
+  },
+  {
+    "ticker": "OCUP"
+  },
+  {
+    "ticker": "OCX"
+  },
+  {
+    "ticker": "ODC"
+  },
+  {
+    "ticker": "ODD"
+  },
+  {
+    "ticker": "ODFL"
+  },
+  {
+    "ticker": "ODP"
+  },
+  {
+    "ticker": "ODV"
+  },
+  {
+    "ticker": "OESX"
+  },
+  {
+    "ticker": "OIS"
+  },
+  {
+    "ticker": "OKE"
+  },
+  {
+    "ticker": "OKTA"
+  },
+  {
+    "ticker": "OKYO"
+  },
+  {
+    "ticker": "OLB"
+  },
+  {
+    "ticker": "OLED"
+  },
+  {
+    "ticker": "OLK"
+  },
+  {
+    "ticker": "OLLI"
+  },
+  {
+    "ticker": "OLP"
+  },
+  {
+    "ticker": "OMAB"
+  },
+  {
+    "ticker": "OMH"
+  },
+  {
+    "ticker": "OMIC"
+  },
+  {
+    "ticker": "OMQS"
+  },
+  {
+    "ticker": "ON"
+  },
+  {
+    "ticker": "ONB"
+  },
+  {
+    "ticker": "ONCO"
+  },
+  {
+    "ticker": "ONCT"
+  },
+  {
+    "ticker": "ONFO"
+  },
+  {
+    "ticker": "ONL"
+  },
+  {
+    "ticker": "ONMD"
+  },
+  {
+    "ticker": "ONTF"
+  },
+  {
+    "ticker": "ONVO"
+  },
+  {
+    "ticker": "OOMA"
+  },
+  {
+    "ticker": "OP"
+  },
+  {
+    "ticker": "OPAD"
+  },
+  {
+    "ticker": "OPCH"
+  },
+  {
+    "ticker": "OPFI"
+  },
+  {
+    "ticker": "OPGN"
+  },
+  {
+    "ticker": "OPHC"
+  },
+  {
+    "ticker": "OPXS"
+  },
+  {
+    "ticker": "OPY"
+  },
+  {
+    "ticker": "ORAN"
+  },
+  {
+    "ticker": "ORC"
+  },
+  {
+    "ticker": "ORCL"
+  },
+  {
+    "ticker": "ORGS"
+  },
+  {
+    "ticker": "ORLY"
+  },
+  {
+    "ticker": "ORN"
+  },
+  {
+    "ticker": "OSG"
+  },
+  {
+    "ticker": "OSI"
+  },
+  {
+    "ticker": "OSIS"
+  },
+  {
+    "ticker": "OSS"
+  },
+  {
+    "ticker": "OST"
+  },
+  {
+    "ticker": "OTEC"
+  },
+  {
+    "ticker": "OTEX"
+  },
+  {
+    "ticker": "OTIS"
+  },
+  {
+    "ticker": "OTRK"
+  },
+  {
+    "ticker": "OTTR"
+  },
+  {
+    "ticker": "OUST"
+  },
+  {
+    "ticker": "OWLT"
+  },
+  {
+    "ticker": "OXBR"
+  },
+  {
+    "ticker": "OXY"
+  },
+  {
+    "ticker": "OZK"
+  },
+  {
+    "ticker": "PAA"
+  },
+  {
+    "ticker": "PACK"
+  },
+  {
+    "ticker": "PAGP"
+  },
+  {
+    "ticker": "PALI"
+  },
+  {
+    "ticker": "PALT"
+  },
+  {
+    "ticker": "PANW"
+  },
+  {
+    "ticker": "PARA"
+  },
+  {
+    "ticker": "PARAA"
+  },
+  {
+    "ticker": "PATK"
+  },
+  {
+    "ticker": "PAVM"
+  },
+  {
+    "ticker": "PAVS"
+  },
+  {
+    "ticker": "PAX"
+  },
+  {
+    "ticker": "PAYO"
+  },
+  {
+    "ticker": "PAYX"
+  },
+  {
+    "ticker": "PBBK"
+  },
+  {
+    "ticker": "PBM"
+  },
+  {
+    "ticker": "PBR"
+  },
+  {
+    "ticker": "PBR.A"
+  },
+  {
+    "ticker": "PBT"
+  },
+  {
+    "ticker": "PCAR"
+  },
+  {
+    "ticker": "PCG"
+  },
+  {
+    "ticker": "PCH"
+  },
+  {
+    "ticker": "PCSA"
+  },
+  {
+    "ticker": "PCTY"
+  },
+  {
+    "ticker": "PCVX"
+  },
+  {
+    "ticker": "PDCO"
+  },
+  {
+    "ticker": "PDD"
+  },
+  {
+    "ticker": "PDEX"
+  },
+  {
+    "ticker": "PDYN"
+  },
+  {
+    "ticker": "PECO"
+  },
+  {
+    "ticker": "PEG"
+  },
+  {
+    "ticker": "PEGA"
+  },
+  {
+    "ticker": "PEGY"
+  },
+  {
+    "ticker": "PENN"
+  },
+  {
+    "ticker": "PEP"
+  },
+  {
+    "ticker": "PETZ"
+  },
+  {
+    "ticker": "PEV"
+  },
+  {
+    "ticker": "PFE"
+  },
+  {
+    "ticker": "PFG"
+  },
+  {
+    "ticker": "PFLT"
+  },
+  {
+    "ticker": "PG"
+  },
+  {
+    "ticker": "PGNY"
+  },
+  {
+    "ticker": "PGR"
+  },
+  {
+    "ticker": "PGRU"
+  },
+  {
+    "ticker": "PGSS"
+  },
+  {
+    "ticker": "PH"
+  },
+  {
+    "ticker": "PHIO"
+  },
+  {
+    "ticker": "PHM"
+  },
+  {
+    "ticker": "PHUN"
+  },
+  {
+    "ticker": "PHX"
+  },
+  {
+    "ticker": "PHYT"
+  },
+  {
+    "ticker": "PI"
+  },
+  {
+    "ticker": "PIK"
+  },
+  {
+    "ticker": "PINC"
+  },
+  {
+    "ticker": "PINS"
+  },
+  {
+    "ticker": "PIRS"
+  },
+  {
+    "ticker": "PIXY"
+  },
+  {
+    "ticker": "PKE"
+  },
+  {
+    "ticker": "PKX"
+  },
+  {
+    "ticker": "PL"
+  },
+  {
+    "ticker": "PLAY"
+  },
+  {
+    "ticker": "PLBY"
+  },
+  {
+    "ticker": "PLD"
+  },
+  {
+    "ticker": "PLMR"
+  },
+  {
+    "ticker": "PLOW"
+  },
+  {
+    "ticker": "PLTK"
+  },
+  {
+    "ticker": "PLTR"
+  },
+  {
+    "ticker": "PLUG"
+  },
+  {
+    "ticker": "PLUR"
+  },
+  {
+    "ticker": "PLUS"
+  },
+  {
+    "ticker": "PLXS"
+  },
+  {
+    "ticker": "PM"
+  },
+  {
+    "ticker": "PMCB"
+  },
+  {
+    "ticker": "PMD"
+  },
+  {
+    "ticker": "PMEC"
+  },
+  {
+    "ticker": "PMN"
+  },
+  {
+    "ticker": "PNBK"
+  },
+  {
+    "ticker": "PNC"
+  },
+  {
+    "ticker": "PNFP"
+  },
+  {
+    "ticker": "PNNT"
+  },
+  {
+    "ticker": "PNST"
+  },
+  {
+    "ticker": "POAI"
+  },
+  {
+    "ticker": "POCI"
+  },
+  {
+    "ticker": "PODC"
+  },
+  {
+    "ticker": "PODD"
+  },
+  {
+    "ticker": "POET"
+  },
+  {
+    "ticker": "POLA"
+  },
+  {
+    "ticker": "POOL"
+  },
+  {
+    "ticker": "POWI"
+  },
+  {
+    "ticker": "PPBI"
+  },
+  {
+    "ticker": "PPBT"
+  },
+  {
+    "ticker": "PPC"
+  },
+  {
+    "ticker": "PPG"
+  },
+  {
+    "ticker": "PPHP"
+  },
+  {
+    "ticker": "PPIH"
+  },
+  {
+    "ticker": "PPL"
+  },
+  {
+    "ticker": "PPSI"
+  },
+  {
+    "ticker": "PRA"
+  },
+  {
+    "ticker": "PRCT"
+  },
+  {
+    "ticker": "PRE"
+  },
+  {
+    "ticker": "PRFX"
+  },
+  {
+    "ticker": "PRGS"
+  },
+  {
+    "ticker": "PRPO"
+  },
+  {
+    "ticker": "PRSO"
+  },
+  {
+    "ticker": "PRST"
+  },
+  {
+    "ticker": "PRT"
+  },
+  {
+    "ticker": "PRTG"
+  },
+  {
+    "ticker": "PRVA"
+  },
+  {
+    "ticker": "PRZO"
+  },
+  {
+    "ticker": "PSA"
+  },
+  {
+    "ticker": "PSBD"
+  },
+  {
+    "ticker": "PSEC"
+  },
+  {
+    "ticker": "PSHG"
+  },
+  {
+    "ticker": "PSMT"
+  },
+  {
+    "ticker": "PSNL"
+  },
+  {
+    "ticker": "PSNY"
+  },
+  {
+    "ticker": "PSQH"
+  },
+  {
+    "ticker": "PSTL"
+  },
+  {
+    "ticker": "PSTV"
+  },
+  {
+    "ticker": "PSX"
+  },
+  {
+    "ticker": "PT"
+  },
+  {
+    "ticker": "PTC"
+  },
+  {
+    "ticker": "PTCT"
+  },
+  {
+    "ticker": "PTEN"
+  },
+  {
+    "ticker": "PTIX"
+  },
+  {
+    "ticker": "PTPI"
+  },
+  {
+    "ticker": "PTVE"
+  },
+  {
+    "ticker": "PUK"
+  },
+  {
+    "ticker": "PULM"
+  },
+  {
+    "ticker": "PVL"
+  },
+  {
+    "ticker": "PWM"
+  },
+  {
+    "ticker": "PWR"
+  },
+  {
+    "ticker": "PXD"
+  },
+  {
+    "ticker": "PXMD"
+  },
+  {
+    "ticker": "PXS"
+  },
+  {
+    "ticker": "PYCR"
+  },
+  {
+    "ticker": "PYPD"
+  },
+  {
+    "ticker": "PYPL"
+  },
+  {
+    "ticker": "PZZA"
+  },
+  {
+    "ticker": "QBTS"
+  },
+  {
+    "ticker": "QCOM"
+  },
+  {
+    "ticker": "QD"
+  },
+  {
+    "ticker": "QDEL"
+  },
+  {
+    "ticker": "QFIN"
+  },
+  {
+    "ticker": "QH"
+  },
+  {
+    "ticker": "QLGN"
+  },
+  {
+    "ticker": "QLI"
+  },
+  {
+    "ticker": "QLYS"
+  },
+  {
+    "ticker": "QMCO"
+  },
+  {
+    "ticker": "QNCX"
+  },
+  {
+    "ticker": "QNRX"
+  },
+  {
+    "ticker": "QOMO"
+  },
+  {
+    "ticker": "QRVO"
+  },
+  {
+    "ticker": "QSR"
+  },
+  {
+    "ticker": "QTI"
+  },
+  {
+    "ticker": "QUAD"
+  },
+  {
+    "ticker": "QUBT"
+  },
+  {
+    "ticker": "RACE"
+  },
+  {
+    "ticker": "RACY"
+  },
+  {
+    "ticker": "RAIL"
+  },
+  {
+    "ticker": "RAND"
+  },
+  {
+    "ticker": "RARE"
+  },
+  {
+    "ticker": "RAVE"
+  },
+  {
+    "ticker": "RAYA"
+  },
+  {
+    "ticker": "RBLX"
+  },
+  {
+    "ticker": "RBOT"
+  },
+  {
+    "ticker": "RBT"
+  },
+  {
+    "ticker": "RCFA"
+  },
+  {
+    "ticker": "RCI"
+  },
+  {
+    "ticker": "RCKT"
+  },
+  {
+    "ticker": "RCL"
+  },
+  {
+    "ticker": "RCM"
+  },
+  {
+    "ticker": "RCON"
+  },
+  {
+    "ticker": "RCRT"
+  },
+  {
+    "ticker": "RDHL"
+  },
+  {
+    "ticker": "RDI"
+  },
+  {
+    "ticker": "RDIB"
+  },
+  {
+    "ticker": "RDNT"
+  },
+  {
+    "ticker": "RDW"
+  },
+  {
+    "ticker": "REBN"
+  },
+  {
+    "ticker": "REE"
+  },
+  {
+    "ticker": "REFR"
+  },
+  {
+    "ticker": "REG"
+  },
+  {
+    "ticker": "REGN"
+  },
+  {
+    "ticker": "RELI"
+  },
+  {
+    "ticker": "RELX"
+  },
+  {
+    "ticker": "RELY"
+  },
+  {
+    "ticker": "RENT"
+  },
+  {
+    "ticker": "RERE"
+  },
+  {
+    "ticker": "RETO"
+  },
+  {
+    "ticker": "REVB"
+  },
+  {
+    "ticker": "REYN"
+  },
+  {
+    "ticker": "RFIL"
+  },
+  {
+    "ticker": "RFL"
+  },
+  {
+    "ticker": "RGEN"
+  },
+  {
+    "ticker": "RGF"
+  },
+  {
+    "ticker": "RGLD"
+  },
+  {
+    "ticker": "RGS"
+  },
+  {
+    "ticker": "RIO"
+  },
+  {
+    "ticker": "RIOT"
+  },
+  {
+    "ticker": "RIVN"
+  },
+  {
+    "ticker": "RJF"
+  },
+  {
+    "ticker": "RKDA"
+  },
+  {
+    "ticker": "RKLB"
+  },
+  {
+    "ticker": "RKT"
+  },
+  {
+    "ticker": "RLYB"
+  },
+  {
+    "ticker": "RM"
+  },
+  {
+    "ticker": "RMAX"
+  },
+  {
+    "ticker": "RMBS"
+  },
+  {
+    "ticker": "RMCF"
+  },
+  {
+    "ticker": "RMCO"
+  },
+  {
+    "ticker": "RMD"
+  },
+  {
+    "ticker": "RMTI"
+  },
+  {
+    "ticker": "RNA"
+  },
+  {
+    "ticker": "RNAZ"
+  },
+  {
+    "ticker": "RNGR"
+  },
+  {
+    "ticker": "RNLX"
+  },
+  {
+    "ticker": "RNW"
+  },
+  {
+    "ticker": "RNXT"
+  },
+  {
+    "ticker": "ROAD"
+  },
+  {
+    "ticker": "ROCK"
+  },
+  {
+    "ticker": "ROCL"
+  },
+  {
+    "ticker": "ROIV"
+  },
+  {
+    "ticker": "ROK"
+  },
+  {
+    "ticker": "ROKU"
+  },
+  {
+    "ticker": "ROL"
+  },
+  {
+    "ticker": "ROMA"
+  },
+  {
+    "ticker": "ROP"
+  },
+  {
+    "ticker": "ROST"
+  },
+  {
+    "ticker": "RPD"
+  },
+  {
+    "ticker": "RPHM"
+  },
+  {
+    "ticker": "RPID"
+  },
+  {
+    "ticker": "RPRX"
+  },
+  {
+    "ticker": "RRAC"
+  },
+  {
+    "ticker": "RRR"
+  },
+  {
+    "ticker": "RSG"
+  },
+  {
+    "ticker": "RSLS"
+  },
+  {
+    "ticker": "RTX"
+  },
+  {
+    "ticker": "RUM"
+  },
+  {
+    "ticker": "RUN"
+  },
+  {
+    "ticker": "RUSHA"
+  },
+  {
+    "ticker": "RUSHB"
+  },
+  {
+    "ticker": "RVMD"
+  },
+  {
+    "ticker": "RVSN"
+  },
+  {
+    "ticker": "RVYL"
+  },
+  {
+    "ticker": "RWOD"
+  },
+  {
+    "ticker": "RWT"
+  },
+  {
+    "ticker": "RXST"
+  },
+  {
+    "ticker": "RY"
+  },
+  {
+    "ticker": "RYAAY"
+  },
+  {
+    "ticker": "RYAM"
+  },
+  {
+    "ticker": "RYTM"
+  },
+  {
+    "ticker": "SABS"
+  },
+  {
+    "ticker": "SAI"
+  },
+  {
+    "ticker": "SAIA"
+  },
+  {
+    "ticker": "SAIC"
+  },
+  {
+    "ticker": "SAN"
+  },
+  {
+    "ticker": "SANM"
+  },
+  {
+    "ticker": "SANW"
+  },
+  {
+    "ticker": "SAP"
+  },
+  {
+    "ticker": "SAR"
+  },
+  {
+    "ticker": "SATS"
+  },
+  {
+    "ticker": "SAVE"
+  },
+  {
+    "ticker": "SB"
+  },
+  {
+    "ticker": "SBAC"
+  },
+  {
+    "ticker": "SBCF"
+  },
+  {
+    "ticker": "SBET"
+  },
+  {
+    "ticker": "SBFM"
+  },
+  {
+    "ticker": "SBLK"
+  },
+  {
+    "ticker": "SBRA"
+  },
+  {
+    "ticker": "SBUX"
+  },
+  {
+    "ticker": "SBXC"
+  },
+  {
+    "ticker": "SCCO"
+  },
+  {
+    "ticker": "SCHW"
+  },
+  {
+    "ticker": "SCKT"
+  },
+  {
+    "ticker": "SCM"
+  },
+  {
+    "ticker": "SCNI"
+  },
+  {
+    "ticker": "SCOR"
+  },
+  {
+    "ticker": "SCX"
+  },
+  {
+    "ticker": "SCYX"
+  },
+  {
+    "ticker": "SD"
+  },
+  {
+    "ticker": "SDGR"
+  },
+  {
+    "ticker": "SDIG"
+  },
+  {
+    "ticker": "SDOT"
+  },
+  {
+    "ticker": "SE"
+  },
+  {
+    "ticker": "SECO"
+  },
+  {
+    "ticker": "SEDA"
+  },
+  {
+    "ticker": "SEDG"
+  },
+  {
+    "ticker": "SEED"
+  },
+  {
+    "ticker": "SEEL"
+  },
+  {
+    "ticker": "SEIC"
+  },
+  {
+    "ticker": "SELF"
+  },
+  {
+    "ticker": "SELX"
+  },
+  {
+    "ticker": "SES"
+  },
+  {
+    "ticker": "SFM"
+  },
+  {
+    "ticker": "SFNC"
+  },
+  {
+    "ticker": "SGBX"
+  },
+  {
+    "ticker": "SGD"
+  },
+  {
+    "ticker": "SGLY"
+  },
+  {
+    "ticker": "SGMA"
+  },
+  {
+    "ticker": "SGRP"
+  },
+  {
+    "ticker": "SGRY"
+  },
+  {
+    "ticker": "SGU"
+  },
+  {
+    "ticker": "SHC"
+  },
+  {
+    "ticker": "SHEL"
+  },
+  {
+    "ticker": "SHFS"
+  },
+  {
+    "ticker": "SHOO"
+  },
+  {
+    "ticker": "SHOP"
+  },
+  {
+    "ticker": "SHPH"
+  },
+  {
+    "ticker": "SHPW"
+  },
+  {
+    "ticker": "SHW"
+  },
+  {
+    "ticker": "SIDU"
+  },
+  {
+    "ticker": "SIGI"
+  },
+  {
+    "ticker": "SILO"
+  },
+  {
+    "ticker": "SIMO"
+  },
+  {
+    "ticker": "SINT"
+  },
+  {
+    "ticker": "SIRI"
+  },
+  {
+    "ticker": "SISI"
+  },
+  {
+    "ticker": "SJ"
+  },
+  {
+    "ticker": "SJT"
+  },
+  {
+    "ticker": "SKE"
+  },
+  {
+    "ticker": "SKIL"
+  },
+  {
+    "ticker": "SKLZ"
+  },
+  {
+    "ticker": "SKYE"
+  },
+  {
+    "ticker": "SKYW"
+  },
+  {
+    "ticker": "SLAB"
+  },
+  {
+    "ticker": "SLB"
+  },
+  {
+    "ticker": "SLE"
+  },
+  {
+    "ticker": "SLF"
+  },
+  {
+    "ticker": "SLGL"
+  },
+  {
+    "ticker": "SLM"
+  },
+  {
+    "ticker": "SLNA"
+  },
+  {
+    "ticker": "SLNH"
+  },
+  {
+    "ticker": "SLRX"
+  },
+  {
+    "ticker": "SMBK"
+  },
+  {
+    "ticker": "SMCI"
+  },
+  {
+    "ticker": "SMFG"
+  },
+  {
+    "ticker": "SMLP"
+  },
+  {
+    "ticker": "SMMT"
+  },
+  {
+    "ticker": "SMP"
+  },
+  {
+    "ticker": "SMPL"
+  },
+  {
+    "ticker": "SMRT"
+  },
+  {
+    "ticker": "SMSI"
+  },
+  {
+    "ticker": "SMTC"
+  },
+  {
+    "ticker": "SMWB"
+  },
+  {
+    "ticker": "SMX"
+  },
+  {
+    "ticker": "SNAX"
+  },
+  {
+    "ticker": "SNCR"
+  },
+  {
+    "ticker": "SNDA"
+  },
+  {
+    "ticker": "SNDX"
+  },
+  {
+    "ticker": "SNES"
+  },
+  {
+    "ticker": "SNEX"
+  },
+  {
+    "ticker": "SNGX"
+  },
+  {
+    "ticker": "SNOA"
+  },
+  {
+    "ticker": "SNOW"
+  },
+  {
+    "ticker": "SNPS"
+  },
+  {
+    "ticker": "SNPX"
+  },
+  {
+    "ticker": "SNSE"
+  },
+  {
+    "ticker": "SNT"
+  },
+  {
+    "ticker": "SNTG"
+  },
+  {
+    "ticker": "SNTI"
+  },
+  {
+    "ticker": "SNY"
+  },
+  {
+    "ticker": "SO"
+  },
+  {
+    "ticker": "SOBR"
+  },
+  {
+    "ticker": "SOC"
+  },
+  {
+    "ticker": "SOFI"
+  },
+  {
+    "ticker": "SOGP"
+  },
+  {
+    "ticker": "SOHO"
+  },
+  {
+    "ticker": "SOI"
+  },
+  {
+    "ticker": "SOL"
+  },
+  {
+    "ticker": "SOND"
+  },
+  {
+    "ticker": "SONM"
+  },
+  {
+    "ticker": "SONN"
+  },
+  {
+    "ticker": "SONO"
+  },
+  {
+    "ticker": "SONY"
+  },
+  {
+    "ticker": "SOPA"
+  },
+  {
+    "ticker": "SOS"
+  },
+  {
+    "ticker": "SOTK"
+  },
+  {
+    "ticker": "SPCB"
+  },
+  {
+    "ticker": "SPCE"
+  },
+  {
+    "ticker": "SPEC"
+  },
+  {
+    "ticker": "SPG"
+  },
+  {
+    "ticker": "SPGC"
+  },
+  {
+    "ticker": "SPGI"
+  },
+  {
+    "ticker": "SPI"
+  },
+  {
+    "ticker": "SPIR"
+  },
+  {
+    "ticker": "SPOT"
+  },
+  {
+    "ticker": "SPPL"
+  },
+  {
+    "ticker": "SPRB"
+  },
+  {
+    "ticker": "SPRC"
+  },
+  {
+    "ticker": "SPRU"
+  },
+  {
+    "ticker": "SPSC"
+  },
+  {
+    "ticker": "SPT"
+  },
+  {
+    "ticker": "SQ"
+  },
+  {
+    "ticker": "SQFT"
+  },
+  {
+    "ticker": "SQNS"
+  },
+  {
+    "ticker": "SRAD"
+  },
+  {
+    "ticker": "SRCL"
+  },
+  {
+    "ticker": "SRE"
+  },
+  {
+    "ticker": "SRFM"
+  },
+  {
+    "ticker": "SRG"
+  },
+  {
+    "ticker": "SRI"
+  },
+  {
+    "ticker": "SRL"
+  },
+  {
+    "ticker": "SRM"
+  },
+  {
+    "ticker": "SRPT"
+  },
+  {
+    "ticker": "SRTS"
+  },
+  {
+    "ticker": "SRZN"
+  },
+  {
+    "ticker": "SSBI"
+  },
+  {
+    "ticker": "SSIC"
+  },
+  {
+    "ticker": "SSKN"
+  },
+  {
+    "ticker": "SSNC"
+  },
+  {
+    "ticker": "SSNT"
+  },
+  {
+    "ticker": "SST"
+  },
+  {
+    "ticker": "STAA"
+  },
+  {
+    "ticker": "STAF"
+  },
+  {
+    "ticker": "STBX"
+  },
+  {
+    "ticker": "STCN"
+  },
+  {
+    "ticker": "STE"
+  },
+  {
+    "ticker": "STEM"
+  },
+  {
+    "ticker": "STEP"
+  },
+  {
+    "ticker": "STG"
+  },
+  {
+    "ticker": "STKH"
+  },
+  {
+    "ticker": "STLA"
+  },
+  {
+    "ticker": "STLD"
+  },
+  {
+    "ticker": "STM"
+  },
+  {
+    "ticker": "STRA"
+  },
+  {
+    "ticker": "STRL"
+  },
+  {
+    "ticker": "STRM"
+  },
+  {
+    "ticker": "STRR"
+  },
+  {
+    "ticker": "STSS"
+  },
+  {
+    "ticker": "STT"
+  },
+  {
+    "ticker": "STX"
+  },
+  {
+    "ticker": "STZ"
+  },
+  {
+    "ticker": "SU"
+  },
+  {
+    "ticker": "SUGP"
+  },
+  {
+    "ticker": "SUP"
+  },
+  {
+    "ticker": "SUPV"
+  },
+  {
+    "ticker": "SURG"
+  },
+  {
+    "ticker": "SVMH"
+  },
+  {
+    "ticker": "SVRE"
+  },
+  {
+    "ticker": "SWAG"
+  },
+  {
+    "ticker": "SWAV"
+  },
+  {
+    "ticker": "SWKS"
+  },
+  {
+    "ticker": "SWTX"
+  },
+  {
+    "ticker": "SWVL"
+  },
+  {
+    "ticker": "SXTC"
+  },
+  {
+    "ticker": "SXTP"
+  },
+  {
+    "ticker": "SYBX"
+  },
+  {
+    "ticker": "SYK"
+  },
+  {
+    "ticker": "SYM"
+  },
+  {
+    "ticker": "SYNA"
+  },
+  {
+    "ticker": "SYPR"
+  },
+  {
+    "ticker": "SYRA"
+  },
+  {
+    "ticker": "SYTA"
+  },
+  {
+    "ticker": "SYY"
+  },
+  {
+    "ticker": "T"
+  },
+  {
+    "ticker": "TACT"
+  },
+  {
+    "ticker": "TAIT"
+  },
+  {
+    "ticker": "TAK"
+  },
+  {
+    "ticker": "TANH"
+  },
+  {
+    "ticker": "TAOP"
+  },
+  {
+    "ticker": "TARA"
+  },
+  {
+    "ticker": "TBBK"
+  },
+  {
+    "ticker": "TBI"
+  },
+  {
+    "ticker": "TBIO"
+  },
+  {
+    "ticker": "TBLT"
+  },
+  {
+    "ticker": "TBNK"
+  },
+  {
+    "ticker": "TC"
+  },
+  {
+    "ticker": "TCBI"
+  },
+  {
+    "ticker": "TCBP"
+  },
+  {
+    "ticker": "TCBS"
+  },
+  {
+    "ticker": "TCI"
+  },
+  {
+    "ticker": "TCJH"
+  },
+  {
+    "ticker": "TCOA"
+  },
+  {
+    "ticker": "TCOM"
+  },
+  {
+    "ticker": "TCRT"
+  },
+  {
+    "ticker": "TCS"
+  },
+  {
+    "ticker": "TCTM"
+  },
+  {
+    "ticker": "TD"
+  },
+  {
+    "ticker": "TDG"
+  },
+  {
+    "ticker": "TEAM"
+  },
+  {
+    "ticker": "TECH"
+  },
+  {
+    "ticker": "TECK"
+  },
+  {
+    "ticker": "TEF"
+  },
+  {
+    "ticker": "TEL"
+  },
+  {
+    "ticker": "TENB"
+  },
+  {
+    "ticker": "TENX"
+  },
+  {
+    "ticker": "TER"
+  },
+  {
+    "ticker": "TFC"
+  },
+  {
+    "ticker": "TFFP"
+  },
+  {
+    "ticker": "TFSL"
+  },
+  {
+    "ticker": "TG"
+  },
+  {
+    "ticker": "TGL"
+  },
+  {
+    "ticker": "TGT"
+  },
+  {
+    "ticker": "TGTX"
+  },
+  {
+    "ticker": "TGVC"
+  },
+  {
+    "ticker": "THAR"
+  },
+  {
+    "ticker": "THMO"
+  },
+  {
+    "ticker": "THTX"
+  },
+  {
+    "ticker": "TIGO"
+  },
+  {
+    "ticker": "TIL"
+  },
+  {
+    "ticker": "TIRX"
+  },
+  {
+    "ticker": "TISI"
+  },
+  {
+    "ticker": "TIVC"
+  },
+  {
+    "ticker": "TJX"
+  },
+  {
+    "ticker": "TK"
+  },
+  {
+    "ticker": "TKLF"
+  },
+  {
+    "ticker": "TLIS"
+  },
+  {
+    "ticker": "TLPH"
+  },
+  {
+    "ticker": "TLYS"
+  },
+  {
+    "ticker": "TM"
+  },
+  {
+    "ticker": "TMDX"
+  },
+  {
+    "ticker": "TMO"
+  },
+  {
+    "ticker": "TMUS"
+  },
+  {
+    "ticker": "TNDM"
+  },
+  {
+    "ticker": "TNON"
+  },
+  {
+    "ticker": "TNP"
+  },
+  {
+    "ticker": "TNXP"
+  },
+  {
+    "ticker": "TOMZ"
+  },
+  {
+    "ticker": "TOWN"
+  },
+  {
+    "ticker": "TPB"
+  },
+  {
+    "ticker": "TPC"
+  },
+  {
+    "ticker": "TPG"
+  },
+  {
+    "ticker": "TPST"
+  },
+  {
+    "ticker": "TPVG"
+  },
+  {
+    "ticker": "TRAK"
+  },
+  {
+    "ticker": "TRAW"
+  },
+  {
+    "ticker": "TRC"
+  },
+  {
+    "ticker": "TRGP"
+  },
+  {
+    "ticker": "TRI"
+  },
+  {
+    "ticker": "TRIB"
+  },
+  {
+    "ticker": "TRIP"
+  },
+  {
+    "ticker": "TRIS"
+  },
+  {
+    "ticker": "TRMB"
+  },
+  {
+    "ticker": "TRMD"
+  },
+  {
+    "ticker": "TRNR"
+  },
+  {
+    "ticker": "TROW"
+  },
+  {
+    "ticker": "TRP"
+  },
+  {
+    "ticker": "TRTL"
+  },
+  {
+    "ticker": "TRTX"
+  },
+  {
+    "ticker": "TRUG"
+  },
+  {
+    "ticker": "TRV"
+  },
+  {
+    "ticker": "TRVN"
+  },
+  {
+    "ticker": "TS"
+  },
+  {
+    "ticker": "TSBX"
+  },
+  {
+    "ticker": "TSCO"
+  },
+  {
+    "ticker": "TSE"
+  },
+  {
+    "ticker": "TSEM"
+  },
+  {
+    "ticker": "TSLA"
+  },
+  {
+    "ticker": "TSM"
+  },
+  {
+    "ticker": "TSN"
+  },
+  {
+    "ticker": "TSQ"
+  },
+  {
+    "ticker": "TSRI"
+  },
+  {
+    "ticker": "TT"
+  },
+  {
+    "ticker": "TTD"
+  },
+  {
+    "ticker": "TTE"
+  },
+  {
+    "ticker": "TTEK"
+  },
+  {
+    "ticker": "TTI"
+  },
+  {
+    "ticker": "TTNP"
+  },
+  {
+    "ticker": "TTOO"
+  },
+  {
+    "ticker": "TTWO"
+  },
+  {
+    "ticker": "TU"
+  },
+  {
+    "ticker": "TUP"
+  },
+  {
+    "ticker": "TURN"
+  },
+  {
+    "ticker": "TW"
+  },
+  {
+    "ticker": "TWOU"
+  },
+  {
+    "ticker": "TXG"
+  },
+  {
+    "ticker": "TXMD"
+  },
+  {
+    "ticker": "TXN"
+  },
+  {
+    "ticker": "TXO"
+  },
+  {
+    "ticker": "TXRH"
+  },
+  {
+    "ticker": "TYG"
+  },
+  {
+    "ticker": "TYGO"
+  },
+  {
+    "ticker": "UAL"
+  },
+  {
+    "ticker": "UBER"
+  },
+  {
+    "ticker": "UBS"
+  },
+  {
+    "ticker": "UBSI"
+  },
+  {
+    "ticker": "UBX"
+  },
+  {
+    "ticker": "UCAR"
+  },
+  {
+    "ticker": "UCBI"
+  },
+  {
+    "ticker": "UCL"
+  },
+  {
+    "ticker": "UCTT"
+  },
+  {
+    "ticker": "UFI"
+  },
+  {
+    "ticker": "UFPI"
+  },
+  {
+    "ticker": "UG"
+  },
+  {
+    "ticker": "UGRO"
+  },
+  {
+    "ticker": "UHT"
+  },
+  {
+    "ticker": "UIS"
+  },
+  {
+    "ticker": "UK"
+  },
+  {
+    "ticker": "UL"
+  },
+  {
+    "ticker": "ULTA"
+  },
+  {
+    "ticker": "ULY"
+  },
+  {
+    "ticker": "UMBF"
+  },
+  {
+    "ticker": "UNCY"
+  },
+  {
+    "ticker": "UNFI"
+  },
+  {
+    "ticker": "UNH"
+  },
+  {
+    "ticker": "UNP"
+  },
+  {
+    "ticker": "UPC"
+  },
+  {
+    "ticker": "UPLD"
+  },
+  {
+    "ticker": "UPS"
+  },
+  {
+    "ticker": "UPST"
+  },
+  {
+    "ticker": "UPXI"
+  },
+  {
+    "ticker": "URBN"
+  },
+  {
+    "ticker": "URI"
+  },
+  {
+    "ticker": "USAU"
+  },
+  {
+    "ticker": "USB"
+  },
+  {
+    "ticker": "USEA"
+  },
+  {
+    "ticker": "USEG"
+  },
+  {
+    "ticker": "USIO"
+  },
+  {
+    "ticker": "USLM"
+  },
+  {
+    "ticker": "UTHR"
+  },
+  {
+    "ticker": "UTSI"
+  },
+  {
+    "ticker": "UVE"
+  },
+  {
+    "ticker": "UWMC"
+  },
+  {
+    "ticker": "V"
+  },
+  {
+    "ticker": "VALE"
+  },
+  {
+    "ticker": "VATE"
+  },
+  {
+    "ticker": "VAXX"
+  },
+  {
+    "ticker": "VBFC"
+  },
+  {
+    "ticker": "VBIV"
+  },
+  {
+    "ticker": "VC"
+  },
+  {
+    "ticker": "VCEL"
+  },
+  {
+    "ticker": "VCIG"
+  },
+  {
+    "ticker": "VCNX"
+  },
+  {
+    "ticker": "VCTR"
+  },
+  {
+    "ticker": "VECO"
+  },
+  {
+    "ticker": "VEEE"
+  },
+  {
+    "ticker": "VEEV"
+  },
+  {
+    "ticker": "VERA"
+  },
+  {
+    "ticker": "VERB"
+  },
+  {
+    "ticker": "VERO"
+  },
+  {
+    "ticker": "VERX"
+  },
+  {
+    "ticker": "VEV"
+  },
+  {
+    "ticker": "VFS"
+  },
+  {
+    "ticker": "VGAS"
+  },
+  {
+    "ticker": "VHC"
+  },
+  {
+    "ticker": "VHI"
+  },
+  {
+    "ticker": "VIA"
+  },
+  {
+    "ticker": "VIAO"
+  },
+  {
+    "ticker": "VIAV"
+  },
+  {
+    "ticker": "VICI"
+  },
+  {
+    "ticker": "VINC"
+  },
+  {
+    "ticker": "VINO"
+  },
+  {
+    "ticker": "VIOT"
+  },
+  {
+    "ticker": "VIRI"
+  },
+  {
+    "ticker": "VIRT"
+  },
+  {
+    "ticker": "VIRX"
+  },
+  {
+    "ticker": "VISL"
+  },
+  {
+    "ticker": "VIVK"
+  },
+  {
+    "ticker": "VKTX"
+  },
+  {
+    "ticker": "VLCN"
+  },
+  {
+    "ticker": "VLD"
+  },
+  {
+    "ticker": "VLN"
+  },
+  {
+    "ticker": "VLO"
+  },
+  {
+    "ticker": "VLTO"
+  },
+  {
+    "ticker": "VLY"
+  },
+  {
+    "ticker": "VMAR"
+  },
+  {
+    "ticker": "VMC"
+  },
+  {
+    "ticker": "VNCE"
+  },
+  {
+    "ticker": "VNOM"
+  },
+  {
+    "ticker": "VOC"
+  },
+  {
+    "ticker": "VOD"
+  },
+  {
+    "ticker": "VPG"
+  },
+  {
+    "ticker": "VRAR"
+  },
+  {
+    "ticker": "VRAX"
+  },
+  {
+    "ticker": "VRM"
+  },
+  {
+    "ticker": "VRME"
+  },
+  {
+    "ticker": "VRNS"
+  },
+  {
+    "ticker": "VRNT"
+  },
+  {
+    "ticker": "VRPX"
+  },
+  {
+    "ticker": "VRRM"
+  },
+  {
+    "ticker": "VRSK"
+  },
+  {
+    "ticker": "VRSN"
+  },
+  {
+    "ticker": "VRT"
+  },
+  {
+    "ticker": "VRTX"
+  },
+  {
+    "ticker": "VS"
+  },
+  {
+    "ticker": "VSAC"
+  },
+  {
+    "ticker": "VSAT"
+  },
+  {
+    "ticker": "VSME"
+  },
+  {
+    "ticker": "VST"
+  },
+  {
+    "ticker": "VTOL"
+  },
+  {
+    "ticker": "VTRS"
+  },
+  {
+    "ticker": "VTVT"
+  },
+  {
+    "ticker": "VVI"
+  },
+  {
+    "ticker": "VVOS"
+  },
+  {
+    "ticker": "VVPR"
+  },
+  {
+    "ticker": "VWE"
+  },
+  {
+    "ticker": "VYNE"
+  },
+  {
+    "ticker": "VZ"
+  },
+  {
+    "ticker": "WAB"
+  },
+  {
+    "ticker": "WAFD"
+  },
+  {
+    "ticker": "WAFU"
+  },
+  {
+    "ticker": "WATT"
+  },
+  {
+    "ticker": "WAVD"
+  },
+  {
+    "ticker": "WAVE"
+  },
+  {
+    "ticker": "WB"
+  },
+  {
+    "ticker": "WBA"
+  },
+  {
+    "ticker": "WBD"
+  },
+  {
+    "ticker": "WBUY"
+  },
+  {
+    "ticker": "WBX"
+  },
+  {
+    "ticker": "WCN"
+  },
+  {
+    "ticker": "WDAY"
+  },
+  {
+    "ticker": "WDC"
+  },
+  {
+    "ticker": "WDFC"
+  },
+  {
+    "ticker": "WDH"
+  },
+  {
+    "ticker": "WDS"
+  },
+  {
+    "ticker": "WEC"
+  },
+  {
+    "ticker": "WEL"
+  },
+  {
+    "ticker": "WELL"
+  },
+  {
+    "ticker": "WEN"
+  },
+  {
+    "ticker": "WERN"
+  },
+  {
+    "ticker": "WFC"
+  },
+  {
+    "ticker": "WFCF"
+  },
+  {
+    "ticker": "WFRD"
+  },
+  {
+    "ticker": "WHG"
+  },
+  {
+    "ticker": "WHLM"
+  },
+  {
+    "ticker": "WHLR"
+  },
+  {
+    "ticker": "WIMI"
+  },
+  {
+    "ticker": "WING"
+  },
+  {
+    "ticker": "WINT"
+  },
+  {
+    "ticker": "WINV"
+  },
+  {
+    "ticker": "WIRE"
+  },
+  {
+    "ticker": "WISA"
+  },
+  {
+    "ticker": "WIT"
+  },
+  {
+    "ticker": "WIX"
+  },
+  {
+    "ticker": "WKEY"
+  },
+  {
+    "ticker": "WKHS"
+  },
+  {
+    "ticker": "WKSP"
+  },
+  {
+    "ticker": "WLDS"
+  },
+  {
+    "ticker": "WLGS"
+  },
+  {
+    "ticker": "WM"
+  },
+  {
+    "ticker": "WMB"
+  },
+  {
+    "ticker": "WMG"
+  },
+  {
+    "ticker": "WMT"
+  },
+  {
+    "ticker": "WNW"
+  },
+  {
+    "ticker": "WORX"
+  },
+  {
+    "ticker": "WOW"
+  },
+  {
+    "ticker": "WPM"
+  },
+  {
+    "ticker": "WRB"
+  },
+  {
+    "ticker": "WSC"
+  },
+  {
+    "ticker": "WSFS"
+  },
+  {
+    "ticker": "WSR"
+  },
+  {
+    "ticker": "WST"
+  },
+  {
+    "ticker": "WTFC"
+  },
+  {
+    "ticker": "WTI"
+  },
+  {
+    "ticker": "WTMA"
+  },
+  {
+    "ticker": "WTO"
+  },
+  {
+    "ticker": "WTW"
+  },
+  {
+    "ticker": "WVVI"
+  },
+  {
+    "ticker": "WWD"
+  },
+  {
+    "ticker": "WY"
+  },
+  {
+    "ticker": "WYNN"
+  },
+  {
+    "ticker": "XAIR"
+  },
+  {
+    "ticker": "XBIO"
+  },
+  {
+    "ticker": "XBP"
+  },
+  {
+    "ticker": "XCUR"
+  },
+  {
+    "ticker": "XEL"
+  },
+  {
+    "ticker": "XELA"
+  },
+  {
+    "ticker": "XELB"
+  },
+  {
+    "ticker": "XENE"
+  },
+  {
+    "ticker": "XGN"
+  },
+  {
+    "ticker": "XIN"
+  },
+  {
+    "ticker": "XLO"
+  },
+  {
+    "ticker": "XOM"
+  },
+  {
+    "ticker": "XOS"
+  },
+  {
+    "ticker": "XP"
+  },
+  {
+    "ticker": "XPER"
+  },
+  {
+    "ticker": "XPOF"
+  },
+  {
+    "ticker": "XPON"
+  },
+  {
+    "ticker": "XRAY"
+  },
+  {
+    "ticker": "XRTX"
+  },
+  {
+    "ticker": "XRX"
+  },
+  {
+    "ticker": "XTIA"
+  },
+  {
+    "ticker": "XTLB"
+  },
+  {
+    "ticker": "XWEL"
+  },
+  {
+    "ticker": "XXII"
+  },
+  {
+    "ticker": "XYF"
+  },
+  {
+    "ticker": "XYL"
+  },
+  {
+    "ticker": "XYLO"
+  },
+  {
+    "ticker": "YALA"
+  },
+  {
+    "ticker": "YEXT"
+  },
+  {
+    "ticker": "YGMZ"
+  },
+  {
+    "ticker": "YHGJ"
+  },
+  {
+    "ticker": "YJ"
+  },
+  {
+    "ticker": "YOSH"
+  },
+  {
+    "ticker": "YOTA"
+  },
+  {
+    "ticker": "YRD"
+  },
+  {
+    "ticker": "YSG"
+  },
+  {
+    "ticker": "YTEN"
+  },
+  {
+    "ticker": "YUM"
+  },
+  {
+    "ticker": "YY"
+  },
+  {
+    "ticker": "YYAI"
+  },
+  {
+    "ticker": "Z"
+  },
+  {
+    "ticker": "ZAPP"
+  },
+  {
+    "ticker": "ZBAO"
+  },
+  {
+    "ticker": "ZBH"
+  },
+  {
+    "ticker": "ZBRA"
+  },
+  {
+    "ticker": "ZCAR"
+  },
+  {
+    "ticker": "ZCMD"
+  },
+  {
+    "ticker": "ZD"
+  },
+  {
+    "ticker": "ZENV"
+  },
+  {
+    "ticker": "ZEO"
+  },
+  {
+    "ticker": "ZEPP"
+  },
+  {
+    "ticker": "ZG"
+  },
+  {
+    "ticker": "ZH"
+  },
+  {
+    "ticker": "ZI"
+  },
+  {
+    "ticker": "ZION"
+  },
+  {
+    "ticker": "ZKIN"
+  },
+  {
+    "ticker": "ZM"
+  },
+  {
+    "ticker": "ZOOZ"
+  },
+  {
+    "ticker": "ZPTA"
+  },
+  {
+    "ticker": "ZS"
+  },
+  {
+    "ticker": "ZTS"
+  },
+  {
+    "ticker": "ZVIA"
+  },
+  {
+    "ticker": "ZVSA"
+  }
+]

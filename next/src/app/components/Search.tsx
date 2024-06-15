@@ -1,12 +1,12 @@
 "use client"
 import React, {useState} from 'react';
 import Fuse from 'fuse.js';
-import stockList from "../stock_list.json";
+import stockList from "@/stocks.json";
 
 
 interface Result {
   ticker: string;
-  name: string;
+  company: string;
 }
 
 const Search: React.FC<{initText:string}> = ({initText})  => {
@@ -14,7 +14,7 @@ const Search: React.FC<{initText:string}> = ({initText})  => {
   const [results, setResults] = useState<Result[]>([]);
 
   const options = {
-    keys: ["ticker", "name"],
+    keys: ["ticker", "company"],
     includeMatches: true,
     includeScore: true,
     shouldSort: true,
@@ -27,7 +27,7 @@ const Search: React.FC<{initText:string}> = ({initText})  => {
     const { value } = event.target;
     setQuery(value);
     if (value.length > 0) {
-      const searchResults = fuse.search(value).slice(0, 3);  // Limit to top 3 results
+      const searchResults = fuse.search(value).slice(0, 5);  // Limit to top 3 results
       setResults(searchResults.map(result => result.item));
     } else {
       setResults([]);
@@ -46,7 +46,7 @@ const Search: React.FC<{initText:string}> = ({initText})  => {
       {results.length > 0 && (
         <ul>
           {results.map((result: Result, index: number) => (
-            <li key={index}>{result.ticker} - {result.name}</li>
+            <li key={index}>{result.ticker} - {result.company}</li>
           ))}
         </ul>
       )}

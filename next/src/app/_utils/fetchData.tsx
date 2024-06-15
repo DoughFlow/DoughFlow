@@ -1,4 +1,5 @@
 "use server"
+import stockList from "@/stocks.json";
 
 export interface PriceDataPoint {
   timestamp: string;
