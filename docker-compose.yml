@@ -18,8 +18,6 @@ services:
     ports:
       - "80:80"
       - "443:443"
-    volumes:
-      - ../.dough_certs:/etc/nginx/ssl/:ro
     depends_on:
       - django
       - next
