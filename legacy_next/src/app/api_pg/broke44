@@ -1,0 +1,17 @@
+// pages/your-page.tsx
+
+import React from 'react';
+import StockDataFetcher, { getStockData } from '@components/StockDataFetcher';
+
+function YourPage({ data }) {
+  return (
+    <div>
+      <h1>Your Page</h1>
+      {/* Render the StockDataFetcher component with the fetched data */}
+      <StockDataFetcher data={data} />
+    </div>
+  );
+}
+
+export default YourPage;
+

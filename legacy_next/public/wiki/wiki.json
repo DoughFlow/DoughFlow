@@ -1,0 +1,53 @@
+[
+  {
+    "title": "DoughFlow Wiki: Unveiling the World of Finance",
+    "content": "Welcome to the DoughFlow Wiki, your comprehensive guide to understanding the fundamentals of stocks and unraveling the mysteries of candlestick graphs. Whether you're a seasoned investor or a curious novice, this wiki is your gateway to mastering the intricacies of the financial world."
+  },
+  {
+    "title": "Stocks: The Building Blocks of Finance",
+    "content": "Stocks, also known as shares or equities, represent ownership in a company. When you purchase a stock, you become a shareholder, entitled to a portion of the company's profits and assets. Understanding the basics of stocks is crucial for navigating the financial markets effectively."
+  },
+  {
+    "title": "Key Concepts:"
+  },
+  {
+    "title": "Stock Market",
+    "content": "A marketplace where stocks are bought and sold. Major stock exchanges include the New York Stock Exchange (NYSE) and the Nasdaq."
+  },
+  {
+    "title": "Stock Price",
+    "content": "The current value of a single share of a company's stock, determined by supply and demand in the market."
+  },
+  {
+    "title": "Market Capitalization",
+    "content": "The total value of a company's outstanding shares, calculated by multiplying the stock price by the number of shares outstanding.\nDividends - Payments made by companies to shareholders as a share of their profits."
+  },
+  {
+    "title": "Candlestick Graphs: Illuminating Market Trends",
+    "content": "Candlestick graphs are a popular tool used by traders and analysts to visualize price movements in the financial markets. Each candlestick represents a specific time period (e.g., one day) and provides valuable information about the open, high, low, and close prices of a security."
+  },
+  {
+    "title": "Candlestick",
+    "content": "The rectangular shape formed by the open and close prices of a security during a specific time period. A filled (black or red) candlestick indicates a lower close price than the open, while a hollow (white or green) candlestick indicates a higher close price."
+  },
+  {
+    "title": "Wick or Shadow",
+    "content": "The thin lines extending above and below the candlestick body, representing the highest and lowest prices reached during the time period."
+  },
+  {
+    "title": "Bullish and Bearish",
+    "content": "A bullish candlestick indicates that the closing price is higher than the opening price, suggesting buying pressure. Conversely, a bearish candlestick indicates that the closing price is lower than the opening price, suggesting selling pressure."
+  },
+  {
+    "title": "Doji",
+    "content": "A candlestick pattern characterized by a small body and wicks of equal length, indicating indecision in the market."
+  },
+  {
+    "title": "Hammer and Hanging Man",
+    "content": "Single candlestick patterns with long lower wicks and small bodies, signaling potential reversals in the market."
+  },
+  {
+    "title": "Engulfing Pattern",
+    "content": "A two-candlestick pattern where the second candlestick completely engulfs the body of the first candlestick, suggesting a reversal of the prevailing trend."
+  }
+]
