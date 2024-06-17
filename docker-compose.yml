@@ -10,7 +10,7 @@ services:
     ports:
       - "8000:8000"
     env_file:
-      - ./django/.secrets # Specify the path to your .env file
+      - ./django/.django_credentials # Specify the path to your .env file
 
   nginx:
     container_name: prod-nginx
@@ -26,7 +26,7 @@ services:
     container_name: prod-next
     build: ./next
     ports:
-      - "3000:3000" # Assuming your frontend runs on port 3000
+      - "3000:3000"
     hostname: nextjs
 
   legacy_next:
@@ -34,4 +34,6 @@ services:
     build: ./legacy_next
     ports:
       - "3001:3000"
+    volumes:
+      - ../.dough_certs: /etc/nginx/ssl/
     hostname: legacy_next
