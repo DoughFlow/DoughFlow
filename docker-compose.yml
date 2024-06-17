@@ -28,3 +28,10 @@ services:
     ports:
       - "3000:3000" # Assuming your frontend runs on port 3000
     hostname: nextjs
+
+  legacy_next:
+    container_name: legacy_next
+    build: ./legacy_next
+    ports:
+      - "3001:3000"
+    hostname: legacy_next
