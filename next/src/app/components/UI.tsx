@@ -58,7 +58,7 @@ const UI: React.FC<
   const Editor = () => {
 
     interface Stock {ticker: string; time: string; value: string;}
-    const { stocks, updateStock, renderPrevious, removeAndRender } = useStocks();
+    const { stocks, updateStock, renderPrevious, removeAndRender, updateCompany } = useStocks();
     const [Stock, setStock] = useState<Stock>(stocks[0]);
     const searchRef = useRef<HTMLInputElement>(null);
     const [editIndex, setEditIndex] = useState(0);
@@ -77,6 +77,7 @@ const UI: React.FC<
     const TickerOnClick = (result: Result) => { updateStock(editIndex,
       {ticker: result.ticker, time: Stock.time, value: Stock.value})
       setTimeout(() => {renderPrevious}, 0);
+      updateCompany(editIndex, result.company);
     }
     const AddStock = () => { updateStock(stocks.length,
       {ticker: stocks[stocks.length-1].ticker, time: stocks[stocks.length-1].time,
@@ -218,7 +219,7 @@ const UI: React.FC<
         </div>
         <div className={`text-[.5rem] max-w-[7rem] max-h-[1.7rem] overflow-hidden
           mt-6 ml-2`}>
-          { }
+          { stocks[index].company }
         </div>
         {index > 0 &&
           (<div onClick={()=>removeAndRender(index)} 
@@ -233,14 +234,14 @@ const UI: React.FC<
         <div className={`flex text-2xl mr-auto mt-2 ${index === 0 ||
           index === 3 ? "ml-12" : "ml-4"}`}>
           <button onClick={()=>setTimeDrop(!timeDrop)} className="flex flex-row">
-            6m{dropDownIcon}
+            {stocks[index].time}{dropDownIcon}
           </button>
           { editIndex === index && timeDrop && (<TimeDropDown/>) }
         </div>
         <div className={`flex text-2xl ml-auto mt-2 ${index === 0 || index ===
           3 ? "mr-12" : "mr-4"}`}>
           <button onClick={()=>setValDrop(!valDrop)} className="flex flex-row">
-            price{dropDownIcon}
+            {stocks[index].value}{dropDownIcon}
           </button>
           { editIndex === index && valDrop && (<ValueDropDown/>) }
         </div>
@@ -306,4 +307,5 @@ const UI: React.FC<
 
 return (<div className="absolute"> {editor? <Editor /> : <Button />} </div>);
 }
+
 export default UI;

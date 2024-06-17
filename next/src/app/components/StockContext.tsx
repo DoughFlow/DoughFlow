@@ -7,10 +7,11 @@ export interface Stock {
   ticker: string;
   value: string;
   time: string;
+  company?: string;
   svg?: string; 
 };
 
-type newStockType = Omit<Stock, 'svg'>;
+type newStockType = Omit<Stock,'company' | 'svg'>;
 
 type GlobalContextType = {
   stocks: Stock[];
@@ -18,6 +19,7 @@ type GlobalContextType = {
   initStock: (ticker: string) => void;
   renderPrevious: () => Promise<void>;
   removeAndRender: (index: number) => void;
+  updateCompany: (index: number, company: string) => void;
 }
 
 const StockContext = createContext<GlobalContextType | undefined>(undefined);
@@ -157,8 +159,24 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
     // rando tsts
   };
 
+  const updateCompany = (index: number, company : string) => {
+    setStocks(prevStocks => {
+      if (index < 0 || index >= prevStocks.length) {
+        console.error("Index out of bounds: Cannot update Company.");
+        return prevStocks;
+      }
+      return prevStocks.map((stock, i) => {
+        if (i === index) {
+          const updatedStock = { ...stock, company: company};
+          return updatedStock;
+          }
+          return stock;
+        });
+    });
+  };
+
   const value = {
-      stocks, updateStock, initStock, renderPrevious, removeAndRender
+      stocks, updateStock, initStock, renderPrevious, removeAndRender, updateCompany
   };
 
   return (
