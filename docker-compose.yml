@@ -18,6 +18,8 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    volumes:
+      - ../.dough_certs:/etc/nginx/ssl/:ro
     depends_on:
       - django
       - next
@@ -34,6 +36,4 @@ services:
     build: ./legacy_next
     ports:
       - "3001:3000"
-    volumes:
-      - ../.dough_certs: /etc/nginx/ssl/
     hostname: legacy_next
