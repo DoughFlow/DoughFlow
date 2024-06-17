@@ -154,6 +154,7 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
   const initStock = async (ticker: string) => {
     const stock = {ticker: ticker, value: "price", time: "6m"};
     updateStock(0, stock);
+    // rando tsts
   };
 
   const value = {

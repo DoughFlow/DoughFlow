@@ -23,6 +23,8 @@ const StockEditor: React.FC<{index: number}> = ({index}) => {
     );
   }
 
+  //
+
   const DropDown: React.FC<{options: string[]}> = ({options}) => {
 
     return (

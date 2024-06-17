@@ -1,41 +1,39 @@
 "use client"
-import React, { useEffect, useState } from "react";
-import List from "@C/List";
 import UI from "@C/UI";
-import Button from "@C/Button";
-import { useStocks } from "@C/StockContext";
 import Visualization from "@C/Visualization";
+import { useStocks } from "@C/StockContext";
+import React, { useEffect, useState } from "react";
 
 const Page = ({ params }: { params: {first:string } }) => {
 
-  const [menu, setMenu] = useState(true);
-  const { initStock, updateStock } = useStocks();
+  /* State and Context */
+  const { initStock } = useStocks();
+  const [editState, setEditState] = useState(false);
   
-  const onClick = (event: any) => {setMenu(!menu)};
-  const onClose = (event: any) => {setMenu(true)};
-
+  /* UI state methods */
+  const openUI = () => { setEditState(true) ;}
+  const closeUI = () => { setEditState(false);}
+ 
+  /* Populate Initial Visualization (w/ first stock in Stock[]) */
   useEffect(() => {
-    if (params.first) {
-      initStock(params.first);
-    }
+    if (params.first) { initStock(params.first); }
   }, [params.first]);
 
-  return (
 
+  return (
   <div>
-    <div className="absolute z-50">
-      { menu ?
-          <Button onClick={onClick} />
-        : 
-            <UI />
-      }
+    {/* UI opens on button click */}
+    <div className="absolute">
+      <UI editor={editState} click={openUI}/>
     </div>
-    <div onClick={onClose}>
+
+    {/* UI closes on any click inside Vis. */}
+    <div onClick={closeUI}>
       <Visualization />
     </div>
   </div>
-    
   );
+
 }
 
 export default Page;
