@@ -1,6 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
-import IndicatorData from "@components/IndicatorData";
+import IndicatorData from "./IndicatorData";
 import * as d3 from "d3";
+
+interface IndicatorDataPoint {
+  timestamp: string;
+  sma?: number;
+  rsi?: number;
+  macd?: number;
+  volume?: number;
+};
 
 interface IndicatorGraphData {
   timestamp: string;
@@ -205,7 +213,7 @@ const IndicatorGraph = ({ ticker, date, indicator, height, width}:
         .attr("height", (d, i) => height - yScale(yData[i])) // won't work for general indicator
         .style("stroke", "#996F4F") // can't get the stroke to work in the classed call
         .style("stroke-width", "2px")
-        .classed("fill-dfyellow", true)
+        .classed("fill-dfYellow", true)
         .on("mouseover", (evt, d) => {
           const [mx, my] = d3.pointer(evt);
           let tooltipText = tooltipTextHelper(d, indicator);

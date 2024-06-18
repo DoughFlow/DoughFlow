@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef } from 'react';
-import { useGlobal } from '@/components/GlobalContext';
-import VisualizationContainer from '@/components/VisualizationContainer';
+import { useGlobal } from '.././components/GlobalContext';
+import VisualizationContainer from '.././components/VisualizationContainer';
 
 function StockPage({ params }: { params: { stock: string } }) {
     // Add context and Ref for useEffect

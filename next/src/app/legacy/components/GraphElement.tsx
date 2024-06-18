@@ -1,7 +1,7 @@
 'use client'
 import { useGlobal } from "./GlobalContext";
-import PriceGraph from "@/components/PriceGraph";
-import IndicatorGraph from "@/components/IndicatorGraph";
+import PriceGraph from "./PriceGraph";
+import IndicatorGraph from "./IndicatorGraph";
 
 const GraphElement = () => {
 

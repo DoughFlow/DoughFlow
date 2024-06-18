@@ -33,9 +33,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 SECRET_KEY = "django-insecure-#(_wvz1ti$#6@#(po52$fcdi*ix&71s9%rz#9e%ln*mit9o@7z"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'dough-flow.com',
+        '3.140.61.213']
 
 
 # Application definition

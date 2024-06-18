@@ -8,7 +8,11 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'dfYellow': '#996F4F'
+      'dfyellow': '#FFBB84',
+      'dfbrown': '#996F4F',
+      'dfwhite': '#FFE4D1',
+      'dfgray': '#36312e',
+      'dfYellow': '#996F4F',
     },
     extend: {
       backgroundImage: {

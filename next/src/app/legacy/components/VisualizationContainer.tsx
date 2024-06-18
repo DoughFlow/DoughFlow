@@ -1,17 +1,17 @@
 'use client'
-import GraphElement from '@components/GraphElement';
-import { useGlobal } from '@components/GlobalContext';
+import GraphElement from './GraphElement';
+import { useGlobal } from './GlobalContext';
 import Image from 'next/image';
-import SearchIcon from '@/search-white.svg';
-import ResetIcon from '@/reset.png';
-import HomeIcon from '@/home.png';
-import PlusIcon from '@/plus.png';
-import InfoIcon from '@/info.png';
+import SearchIcon from '../search-white.svg';
+import ResetIcon from '../reset.png';
+import HomeIcon from '../home.png';
+import PlusIcon from '../plus.png';
+import InfoIcon from '../info.png';
 import ContextController from './ContextController';
 import { useState, useRef, useEffect } from 'react';
 import Fuse from 'fuse.js';
-import tickers from '@/comprehensive_stock_list.json';
-import SearchFooter from '@/components/search/footer/SearchFooter';
+import tickers from '../comprehensive_stock_list.json';
+import SearchFooter from '../components/search/footer/SearchFooter';
 
 
 const VisualizationContainer = () => {

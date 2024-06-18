@@ -16,7 +16,7 @@ export interface IndicatorDataPoint {
 }
 
 export const fetchPriceData = async (ticker: string, time: string, value: string): Promise<PriceDataPoint[]> => {
-  const res = await fetch(`http://3.140.61.213/api/${ticker}/${time}`);
+  const res = await fetch(`http://dough-flow.com/api/${ticker}/${time}`);
   if (!res.ok) throw new Error("Network response was not ok");
   const jsonData = await res.json();
   const data: PriceDataPoint[] = jsonData.map((dp: any): PriceDataPoint => ({
@@ -31,7 +31,7 @@ export const fetchPriceData = async (ticker: string, time: string, value: string
 }
 
 export const fetchIndicatorData = async (ticker: string, time: string, value: string): Promise<IndicatorDataPoint[]> => {
-  const res = await fetch(`http://3.140.61.213/api/${ticker}/${value}/${time}`);
+  const res = await fetch(`http://dough-flow.com/api/${ticker}/${value}/${time}`);
   if (!res.ok) throw new Error("Network response was not ok");
   const jsonData = await res.json();
   let data: IndicatorDataPoint[] = [];

@@ -9,7 +9,7 @@ interface Props {
 const SmallOutput = ({ result }: Props) => {
     return (
         <Link href={`/${result}`} target="_blank" rel="noopener noreferrer">
-            <div className='pl-2 border-dfyellow border rounded my-1'>
+            <div className='pl-2 border-dfYellow border rounded my-1'>
                 {result}
             </div>
         </Link>

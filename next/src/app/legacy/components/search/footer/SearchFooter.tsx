@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useRef } from 'react';
 import Fuse from 'fuse.js';
-import tickers from '@/comprehensive_stock_list.json';
+import tickers from '../../../comprehensive_stock_list.json';
 import SmallResults from './SmallResults';
 import SmallBar from './SmallBar';
 import ListWatcher from './ListWatcher';

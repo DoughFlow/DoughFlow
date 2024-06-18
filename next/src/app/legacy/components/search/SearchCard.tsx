@@ -9,7 +9,7 @@ interface Props {
 
 const SearchCard = ({ result }: Props) => {
     return (
-        <Link href={`/${result}`} className="max-w-32 block my-4 p-2 border border-dfyellow rounded-xl">
+        <Link href={`/${result}`} className="max-w-32 block my-4 p-2 border border-dfYellow rounded-xl">
             <div className='flex flex-col'>
                 <div className='flex-1 text-2xl'>
                     {result}

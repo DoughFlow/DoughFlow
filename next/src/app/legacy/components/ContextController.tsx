@@ -16,23 +16,23 @@ const ContextController = () => {
 
 
     return (
-        <div id="side-bar" className="border border-b-dfyellow p-4 rounded-xl bg-dfgray bg-opacity-95">
+        <div id="side-bar" className="border border-b-dfYellow p-4 rounded-xl bg-dfgray bg-opacity-95">
             <div className="text-xl">{stocks.ticker1}</div>
             <div className="flex flex-row">
                 <div className="flex-1">
                      <div className="flex flex-col flex-1">
                         <button onClick={() => editFirstDate("6m")}
-                            className="border border-b-dfyellow p-2 m-1 rounded-3xl"
+                            className="border border-b-dfYellow p-2 m-1 rounded-3xl"
                         >
                             6 Month
                         </button>
                         <button onClick={() => editFirstDate("1y")}
-                            className="border border-b-dfyellow p-2 m-1 rounded-3xl"
+                            className="border border-b-dfYellow p-2 m-1 rounded-3xl"
                         >
                             1 Year
                         </button>
                         <button onClick={() => editFirstDate("5y")}
-                            className="border border-b-dfyellow p-2 m-1 rounded-3xl"
+                            className="border border-b-dfYellow p-2 m-1 rounded-3xl"
                         >
                             5 Year
                         </button>
@@ -65,17 +65,17 @@ const ContextController = () => {
                         <div className="flex-1">
                              <div className="flex flex-col flex-1">
                                 <button onClick={() => editSecondDate("6m")}
-                                    className="border border-b-dfyellow p-2 m-1 rounded-3xl"
+                                    className="border border-b-dfYellow p-2 m-1 rounded-3xl"
                                 >
                                     6 Month
                                 </button>
                                 <button onClick={() => editSecondDate("1y")}
-                                    className="border border-b-dfyellow p-2 m-1 rounded-3xl"
+                                    className="border border-b-dfYellow p-2 m-1 rounded-3xl"
                                 >
                                     1 Year
                                 </button>
                                 <button onClick={() => editSecondDate("5y")}
-                                    className="border border-b-dfyellow p-2 m-1 rounded-3xl"
+                                    className="border border-b-dfYellow p-2 m-1 rounded-3xl"
                                 >
                                     5 Year
                                 </button>
@@ -106,7 +106,7 @@ const ContextController = () => {
 
             <div className="flex flex-col">
                 <p className="text-xl">Layout:</p>
-                <div className="flex flex-col hover:cursor-pointer rounded border border-b-dfyellow m-1 p-0.5 h-24"
+                <div className="flex flex-col hover:cursor-pointer rounded border border-b-dfYellow m-1 p-0.5 h-24"
                     onClick={topBottomFormat}
                 >
                     <div className="rounded bg-dfbrown m-1 mb-0.5 h-full">
@@ -116,7 +116,7 @@ const ContextController = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-row hover:cursor-pointer rounded border border-b-dfyellow m-1 p-0.5 h-24"
+                <div className="flex flex-row hover:cursor-pointer rounded border border-b-dfYellow m-1 p-0.5 h-24"
                     onClick={leftRightFormat}
                 >
                     <div className="rounded bg-dfbrown m-1 mr-0.5 w-full">

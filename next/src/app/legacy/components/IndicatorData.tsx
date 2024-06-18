@@ -1,9 +1,16 @@
 "use server";
 
+interface IndicatorDataPoint {
+  timestamp: string;
+  sma?: number;
+  rsi?: number;
+  macd?: number;
+  volume?: number;
+};
 
 const IndicatorData = async (ticker: string, date: string, indicator: string) => {
   const response = await fetch(
-    `http://3.140.61.213/api/${ticker}/${indicator}/${ date }`,
+    `http://dough-flow.com/api/${ticker}/${indicator}/${ date }`,
   );
   const json_data = await response.json();
 
@@ -13,7 +20,7 @@ const IndicatorData = async (ticker: string, date: string, indicator: string) =>
     case "vol": {
       data = json_data.map((dp: any) => ({
         timestamp: dp.timestamp,
-        volume: dp.volume,
+        volume: dp.vol,
       }));
       break;
     }

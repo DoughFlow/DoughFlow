@@ -1,23 +1,32 @@
 from django.urls import path
 from functools import partial
-from app.views import PriceSixView, SMASixView, RSISixView, VOLSixView, PriceOneView, SMAOneView, RSIOneView, VOLOneView, PriceFiveView, SMAFiveView, RSIFiveView, VOLFiveView, WeekView
+from app.views import ( Price1m, Price3m, Price6m, Price1y, Price2y, RSI1m,
+        RSI3m, RSI6m, RSI1y, RSI2y, SMA1m, SMA3m, SMA6m, SMA1y, SMA2y,
+        VOL1m, VOL3m, VOL6m, VOL1y, VOL2y )
 
-app_name = "app"
+app_name = 'app'
 
 urlpatterns = [
-    path('<str:ticker>', WeekView.as_view(), name='week-view'),
-    path('<str:ticker>/6m', PriceSixView.as_view() ,name='sixmonth-view'),
-    path('<str:ticker>/1y', PriceOneView.as_view() ,name='one-view'),
-    path('<str:ticker>/5y', PriceFiveView.as_view() ,name='five-view'),
-    path('<str:ticker>/rsi/6m', RSISixView.as_view() ,name='sixmonth-view'),
-    path('<str:ticker>/rsi/1y', RSIOneView.as_view() ,name='sixmonth-view'),
-    path('<str:ticker>/rsi/5y', RSIFiveView.as_view() ,name='sixmonth-view'),
-    path('<str:ticker>/sma/6m', SMASixView.as_view() ,name='sixmonth-view'),
-    path('<str:ticker>/sma/1y', SMAOneView.as_view() ,name='sixmonth-view'),
-    path('<str:ticker>/sma/5y', SMAFiveView.as_view() ,name='sixmonth-view'),
-    path('<str:ticker>/vol/6m', VOLSixView.as_view() ,name='sixmonth-view'),
-    path('<str:ticker>/vol/1y', VOLOneView.as_view() ,name='sixmonth-view'),
-    path('<str:ticker>/vol/5y', VOLFiveView.as_view() ,name='sixmonth-view')
-#    path('backtest/', Backtest.as_view(), name='backtest')
+    path('<str:ticker>/1m', Price1m.as_view(), name='Price'),
+    path('<str:ticker>/3m', Price3m.as_view(), name='Price'),
+    path('<str:ticker>/6m', Price6m.as_view(), name='Price'),
+    path('<str:ticker>/1y', Price1y.as_view(), name='Price'),
+    path('<str:ticker>/2y', Price2y.as_view(), name='Price'),
+    path('<str:ticker>/rsi/1m', RSI1m.as_view(), name='Price'),
+    path('<str:ticker>/rsi/3m', RSI3m.as_view(), name='Price'),
+    path('<str:ticker>/rsi/6m', RSI6m.as_view(), name='Price'),
+    path('<str:ticker>/rsi/1y', RSI1y.as_view(), name='Price'),
+    path('<str:ticker>/rsi/2y', RSI2y.as_view(), name='Price'),
+    path('<str:ticker>/sma/1m', SMA1m.as_view(), name='Price'),
+    path('<str:ticker>/sma/3m', SMA3m.as_view(), name='Price'),
+    path('<str:ticker>/sma/6m', SMA6m.as_view(), name='Price'),
+    path('<str:ticker>/sma/1y', SMA1y.as_view(), name='Price'),
+    path('<str:ticker>/sma/2y', SMA2y.as_view(), name='Price'),
+    path('<str:ticker>/vol/1m', VOL1m.as_view(), name='Price'),
+    path('<str:ticker>/vol/3m', VOL3m.as_view(), name='Price'),
+    path('<str:ticker>/vol/6m', VOL6m.as_view(), name='Price'),
+    path('<str:ticker>/vol/1y', VOL1y.as_view(), name='Price'),
+    path('<str:ticker>/vol/2y', VOL2y.as_view(), name='Price')
+
 ]
 

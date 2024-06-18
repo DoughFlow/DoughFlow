@@ -14,7 +14,7 @@ const SearchBar = ({ onSearch }: Props) => {
   };
 
   return (
-    <div className='flex-1 mt-16 border border-dfyellow rounded-xl'>
+    <div className='flex-1 mt-16 border border-dfYellow rounded-xl'>
       <input
         type="text"
         className='bg-transpart p-1 border-none outline-none text-2xl sm:text-4xl'

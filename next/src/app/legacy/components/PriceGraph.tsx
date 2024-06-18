@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import PriceData from "@components/PriceData";
+import PriceData from "./PriceData";
 import * as d3 from "d3";
 
 /**
@@ -8,6 +8,18 @@ import * as d3 from "d3";
  * @param ticker - Ticker symbol for the stock data.
  * @returns Candlestick Graph component.
  */
+
+interface DataPoint {
+  timestamp: string;
+  ticker: string;
+  open_price: number;
+  high_price: number;
+  low_price: number;
+  close_price: number;
+  volume: number;
+  candle_time: string;
+};
+
 const PriceGraph = ({ ticker, date, height, width }:
     { ticker: string, date: string, height: number, width: number }) => {
   const [data, setData] = useState<DataPoint[]>([]);
