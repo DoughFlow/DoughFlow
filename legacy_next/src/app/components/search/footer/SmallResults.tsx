@@ -8,12 +8,10 @@ interface Props {
 
 const SmallResults = ({ results }: Props) => {
     return (
-        <div className='flex-1'>
-            <div>
-                {results && results.map((result, index) => (
-                    <SmallOutput key={index} result={result} />
-                ))}
-            </div>
+        <div className='bg-dfbrown'>
+            {results && results.map((result, index) => (
+                <SmallOutput key={index} result={result} />
+            ))}
         </div>
     );
 };

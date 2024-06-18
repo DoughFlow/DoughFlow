@@ -11,7 +11,7 @@ const GraphData = ({ ticker, size }: GraphDataProps) => {
 
     useEffect(() => {
         const getPreviewData = async () => {
-            const response = await fetch(`http://3.140.61.213/api/week/${ticker}`);
+            const response = await fetch(`http://3.140.61.213/api/${ticker}`);
             const data = await response.json();
             setDataPoints(data);
         };

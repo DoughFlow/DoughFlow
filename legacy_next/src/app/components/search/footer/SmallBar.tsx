@@ -14,14 +14,13 @@ const SmallBar = ({ onSearch }: Props) => {
   };
 
   return (
-    <div className='flex-1 focus-within:border-b'>
+    <div className='text-dfwhite'>
       <input
         type="text"
-        className='bg-transpart p-1 border-none outline-none w-full'
+        className='bg-dfbrown focus:border-b border-dfwhite text-dfwhite pl-2 mt-1 focus:outline-none placeholder-dfyellow'
         value={input}
         onChange={handleInputChange}
-        placeholder="Search stock tickers..."
-        aria-label="Search stocks"
+        placeholder="Create new visualization..."
       />
     </div>
   );

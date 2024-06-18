@@ -10,7 +10,7 @@ services:
     ports:
       - "8000:8000"
     env_file:
-      - ./django/.django_credentials # Specify the path to your .env file
+      - ./django/.secrets # Specify the path to your .env file
 
   nginx:
     container_name: prod-nginx

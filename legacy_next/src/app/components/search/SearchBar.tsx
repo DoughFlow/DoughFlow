@@ -14,10 +14,10 @@ const SearchBar = ({ onSearch }: Props) => {
   };
 
   return (
-    <div className='flex-1 input-border rounded-xl'>
+    <div className='flex-1 mt-16 border border-dfyellow rounded-xl'>
       <input
         type="text"
-        className='bg-transpart p-1 border-none outline-none text-4xl'
+        className='bg-transpart p-1 border-none outline-none text-2xl sm:text-4xl'
         value={input}
         onChange={handleInputChange}
         placeholder="Search stock tickers..."
