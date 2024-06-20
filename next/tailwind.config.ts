@@ -8,11 +8,17 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'dfyellow': '#FFBB84',
-      'dfbrown': '#996F4F',
-      'dfwhite': '#FFE4D1',
-      'dfgray': '#36312e',
-      'dfYellow': '#996F4F',
+      'dfyellow': '#FFBB84', // legacy-code support
+      'dfBrown': '#99775E',
+      'dfWhite': '#FFE4D1',
+      'dfWhiteTwo':'#FFEBDD',
+      'dfGray': '#877B74',
+      'dfYellow': '#FFBB84',
+      'dfOrange':'#FF9151',
+      'dfRed':'#510015',
+      'dfGold':'#FFB702',
+      'dfBlack':'#09030F',
+      'dfGreen': '#058907',
     },
     extend: {
       backgroundImage: {

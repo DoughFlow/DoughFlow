@@ -68,7 +68,7 @@ const MainSearch: React.FC<{initText:string}> = ({initText})  => {
         value={query}
         onChange={handleSearch}
         placeholder={initText}
-        className="text-xl w-full bg-dfYellow outline-none rounded-xl p-1 m-2"
+        className="bg-dfYellow sm: bg-dfBrown"
       />
       {results.length > 0 && (
         <div className="flex flex-col">
