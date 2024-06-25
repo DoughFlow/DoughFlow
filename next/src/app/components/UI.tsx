@@ -165,7 +165,7 @@ const UI: React.FC<
             <div key={index} onClick={() => TickerOnClick(result)}>
 
             <div key={index} className={`border border-dfYellow bg-dfYellow  text-lg
-              ${isEven(index)? "bg-opacity-40": "bg-opacity-65"} max-w-[20rem]`}
+              ${isEven(index)? "bg-opacity-40": "bg-opacity-65"} max-w-[20rem] sm:desktop-result-styles`}
             >
               {result.ticker} - <br/> {result.company}</div>
             </div>))

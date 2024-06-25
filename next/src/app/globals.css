@@ -2,24 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  height: 100%;
-  margin: 0;
-  background-color: #;
-  overflow-x: hidden;
-}
-
-body.overscroll-enabled {
-  overscroll-behavior: contain;
-}
-
 @layer base {
   .stock-page {
-    @apply absolute w-full h-full overflow-hidden bg-dfBlack;
+    @apply absolute w-full h-full overflow-hidden bg-dfBlack min-h-full;
   }
 
   .search-page {
-    @apply absolute w-full h-full bg-dfYellow bg-opacity-90;
+    @apply absolute w-full h-full bg-dfYellow bg-opacity-90 min-h-full;
   }
 
   .search-container {
@@ -32,7 +21,6 @@ body.overscroll-enabled {
   }
   
 }
-
 
 @layer components {
 
@@ -109,9 +97,12 @@ body.overscroll-enabled {
     @apply absolute flex text-dfWhiteTwo text-[.85rem] bg-dfGray w-[18rem] 
     px-2 ml-[1rem] mt-[.8rem];
   }
+
+  .desktop-result-styles {
+    @apply text-dfOrange ;
+  }
   
 }
-
 
 @layer utilities {
 
