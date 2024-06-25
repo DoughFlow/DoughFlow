@@ -17,7 +17,7 @@ const config: Config = {
       'dfOrange':'#FF9151',
       'dfRed':'#510015',
       'dfGold':'#FFB702',
-      'dfBlack':'#09030F',
+      'dfBlack':'#040107',
       'dfGreen': '#058907',
     },
     extend: {

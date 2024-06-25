@@ -11,7 +11,7 @@ export interface Stock {
   svg?: string; 
 };
 
-type newStockType = Omit<Stock,'company' | 'svg'>;
+type newStockType = Omit<Stock,'svg'>;
 
 type GlobalContextType = {
   stocks: Stock[];

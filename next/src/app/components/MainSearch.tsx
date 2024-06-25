@@ -8,7 +8,6 @@ import { candlestickSVG } from "@/_utils/generateSVG";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-
 interface Result {
   ticker: string;
   company: string;
@@ -24,8 +23,7 @@ const MainSearch: React.FC<{initText:string}> = ({initText})  => {
 
   const handleClick = (result: Result) => {
     updateCompany(0, result.company)
-    router.push(`/${result.ticker}`)
-
+    setTimeout(() => { router.push(`/${result.ticker}`) }, 70);
   }
 
   const options = {
@@ -48,7 +46,11 @@ const MainSearch: React.FC<{initText:string}> = ({initText})  => {
         const priceData = data.slice(-30);
         const lastData = priceData[priceData.length - 1];
         const lastPrice = lastData.close_price || 0;
-        const graphSVG = candlestickSVG(priceData, 150, 400);
+        let graphSVG = candlestickSVG(priceData, 115, 340);
+        if (640 > window.innerWidth) {
+          graphSVG = candlestickSVG(priceData, 75, 150);
+        }
+
         return {
           ...result.item,
           lastPrice,
@@ -62,20 +64,23 @@ const MainSearch: React.FC<{initText:string}> = ({initText})  => {
   };
 
   return (
-    <div className="max-w-xl mx-auto flex flex-col items-center">
+    <div className="flex flex-col justify-center items-center w-[20rem] sm:w-[36rem]">
       <input
         type="text"
         value={query}
         onChange={handleSearch}
-        placeholder={initText}
-        className="bg-dfYellow sm: bg-dfBrown"
+        placeholder={" " + initText}
+        className="border-2 border-dfGray rounded-2xl bg-dfGray text-dfBlack
+                  text-2xl sm:text-4xl outline-dfBrown bg-opacity-80 pl-[1rem]
+                  w-[22rem] sm:w-[38rem] pb-1 mb-2 outline-none"
       />
       {results.length > 0 && (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-[22rem] sm:w-[42rem]">
           {results.map((result: Result, index: number) => (
-            <div key={index} className="flex flex-row justify-between">
-              <div className="flex flex-col w-full border-2 border-dfYellow rounded-xl">
-                <div onClick={()=>handleClick(result)}>
+            <div onClick={()=>handleClick(result)} key={index} className="
+              flex flex-row justify-between border-t-2 py-2">
+              <div className="flex items-center text-sm sm:text-xl">
+                <div>
                   <div>{result.ticker} - ${result.lastPrice ? result.lastPrice : "N/A"}</div>
                   <div>{result.company}</div>
                 </div>
