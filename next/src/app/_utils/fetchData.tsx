@@ -1,6 +1,4 @@
 "use server"
-import stockList from "@/stocks.json";
-
 export interface PriceDataPoint {
   timestamp: string;
   ticker: string;
@@ -10,9 +8,19 @@ export interface PriceDataPoint {
   close_price: number;
 }
 
-export interface IndicatorDataPoint {
+export interface volDataPoint {
   timestamp: string;
-  [key: string]: number | string;
+  vol:  string;
+}
+
+export interface smaDataPoint {
+  timestamp: string;
+  sma: string;
+}
+
+export interface rsiDataPoint {
+  timestamp: string;
+  rsi: string;
 }
 
 export const fetchPriceData = async (ticker: string, time: string, value: string): Promise<PriceDataPoint[]> => {
@@ -30,30 +38,35 @@ export const fetchPriceData = async (ticker: string, time: string, value: string
   return data;
 }
 
-export const fetchIndicatorData = async (ticker: string, time: string, value: string): Promise<IndicatorDataPoint[]> => {
+export const fetchVolData = async (ticker: string, time: string, value: string): Promise<volDataPoint[]> => {
   const res = await fetch(`http://dough-flow.com/api/${ticker}/${value}/${time}`);
   if (!res.ok) throw new Error("Network response was not ok");
   const jsonData = await res.json();
-  let data: IndicatorDataPoint[] = [];
-  switch (value) {
-    case "vol":
-      data = jsonData.map((dp: any): IndicatorDataPoint => ({
-        timestamp: dp.timestamp,
-        volume: dp.volume,
-      }));
-      break;
-    case "sma":
-      data = jsonData.map((dp: any): IndicatorDataPoint => ({
-        timestamp: dp.timestamp,
-        sma: dp.sma,
-      }));
-      break;
-    case "rsi":
-      data = jsonData.map((dp: any): IndicatorDataPoint => ({
-        timestamp: dp.timestamp,
-        rsi: dp.rsi,
-      }));
-      break;
-  }
+  const data: volDataPoint[] = jsonData.map((dp: any): volDataPoint => ({
+    timestamp: dp.timestamp,
+    vol: dp.vol
+  }));
   return data;
-}
+};
+
+export const fetchSmaData = async (ticker: string, time: string, value: string): Promise<smaDataPoint[]> => {
+  const res = await fetch(`http://dough-flow.com/api/${ticker}/${value}/${time}`);
+  if (!res.ok) throw new Error("Network response was not ok");
+  const jsonData = await res.json();
+  const data: smaDataPoint[] = jsonData.map((dp: any): smaDataPoint => ({
+    timestamp: dp.timestamp,
+    sma: dp.sma
+  }));
+  return data;
+};
+
+export const fetchRsiData = async (ticker: string, time: string, value: string): Promise<rsiDataPoint[]> => {
+  const res = await fetch(`http://dough-flow.com/api/${ticker}/${value}/${time}`);
+  if (!res.ok) throw new Error("Network response was not ok");
+  const jsonData = await res.json();
+  const data: rsiDataPoint[] = jsonData.map((dp: any): rsiDataPoint => ({
+    timestamp: dp.timestamp,
+    rsi: dp.rsi
+  }));
+  return data;
+};
