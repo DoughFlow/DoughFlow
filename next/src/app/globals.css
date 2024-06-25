@@ -57,7 +57,7 @@
   }
 
   .desktop-bg-text {
-    @apply text-[3.8rem] mt-[0.1rem] ml-[.35rem] transform scale-y-[205%]
+    @apply text-[3.6rem] mt-[0.1rem] ml-[.35rem] transform scale-y-[205%]
     scale-x-[108%] text-opacity-25;
   }
 
@@ -98,10 +98,6 @@
     px-2 ml-[1rem] mt-[.8rem];
   }
 
-  .desktop-result-styles {
-    @apply text-dfOrange ;
-  }
-  
 }
 
 @layer utilities {
