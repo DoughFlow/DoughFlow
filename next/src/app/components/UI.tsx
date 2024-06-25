@@ -10,10 +10,12 @@ interface Result {ticker: string; company: string;}
 const UI: React.FC<
   { editor: boolean, click: (event: any)  => void }> = ({editor, click}) => { 
 
+  /* Function Scoped Variable for Rendering Button */  
+  const [posn, setPosn] = useState<{x: number, y: number}>({x: 35, y: 40});
+
   const Button = () => {
 
   /* Button State */
-  const [posn, setPosn] = useState<{x: number, y: number}>({x: 50, y: 50});
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   /* Save last button position*/
@@ -38,25 +40,23 @@ const UI: React.FC<
            );
   }
 
-
-
   /* Styles and defaults for html */
   const resize_config = { top:false, right:false, bottom:false, left:false, 
     topRight:false, bottomRight:false, bottomLeft:false, topLeft:false };
-  const buttonPosition = {x: posn.x-35, y: posn.y-40, width: 0,
-    height: 0};
+  const buttonPosition = {x: posn.x, y: posn.y, width: 10,
+    height: 10};
 
   return (
   <Rnd dragHandleClassName="handle" cancel=".btn"
       enableResizing={resize_config} default={buttonPosition}
-      className="" title="Drag me wherever!"
+      className="handle" title="Drag me wherever!"
   >
-  <div className="handle flex items-center justify-center w-[9rem] h-[8rem]
+  <div className="handle flex items-center justify-center w-[0rem] h-[0rem]
                  border-2 border-dfGray rounded-md cursor-move bg-opacity-0 
                  bg-dfYellow border-opacity-35 sm:desktop-outer-button"
   >
     <div className="z-2">
-      <div className="absolute top-2 left-2 opacity-50">
+      <div className="absolute top-2 left-2 opacity-50 hidden sm:block">
         <Icon w={18} h={18}/>
       </div>
       <button className="btn mobile-UI-button w-[3rem] h-[3rem] bg-dfYellow
@@ -64,10 +64,12 @@ const UI: React.FC<
                         border-2 border-dfGold border-opacity-25"
               ref={buttonRef}
               onClick={wrappedClick} >
-        <span className="absolute text-dfWhiteTwo text-[1.5rem] top-[2.85rem]
-          left-[4.05rem] sm:desktop-button-logo-f">F</span>
-        <span className="absolute text-dfWhiteTwo top-[1.70rem] left-[3.25rem] 
-          text-[2.95rem] sm:desktop-button-logo-d">ᗡ</span>
+        <div className="sm:h-[3rem]">
+          <span className="absolute text-dfWhiteTwo text-[1.5rem] top-[-1.075rem]
+            left-[-.33rem] sm:desktop-button-logo-f">F</span>
+          <span className="absolute text-dfWhiteTwo top-[-2.25rem] left-[-1.15rem] 
+            text-[2.95rem] hover:cursor-not-allowed sm:desktop-button-logo-d">ᗡ</span>
+        </div>
       </button>
     </div>
   </div>
@@ -108,7 +110,7 @@ const UI: React.FC<
 
     /* SVG-needs to be switched to an import later */
     const dropDownIcon = (<svg className="w-2 h-2 ms-2 mt-[1.65rem] ml-1
-                                         sm:mt-[1.25rem] sm:ml-[.1rem]"
+                                         sm:mt-[.95rem] sm:ml-[.1rem]"
       aria-hidden="true" 
       xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
@@ -163,12 +165,19 @@ const UI: React.FC<
             <div key={index} onClick={() => TickerOnClick(result)}>
 
             <div key={index} className={`border border-dfYellow bg-dfYellow  text-lg
-              ${isEven(index)? "bg-opacity-40": "bg-opacity-65"} max-w-[24rem]`}
+              ${isEven(index)? "bg-opacity-40": "bg-opacity-65"} max-w-[20rem]`}
             >
               {result.ticker} - <br/> {result.company}</div>
             </div>))
             }
         </div>)
+        }
+        { results.length === 0 && (
+          <div className="hidden sm:user-guide-styles">
+            Click a stock in the menu to edit, search using the searchbar to
+            find new stocks
+          </div>
+        )
         }
       </div>
       );
@@ -233,12 +242,12 @@ const UI: React.FC<
     return (
     
     <div onClick={()=>setEdit(index)} className={`flex flex-col h-[5rem] 
-      bg-dfYellow ${index===editIndex?"bg-opacity-85":"bg-opacity-95"}
-      border-2 border-dfOrange border-opacity-30 sm:desktop-entry-styles`}>
+      bg-dfYellow ${index===editIndex?"bg-opacity-80":"bg-opacity-90"}
+      border-2 border-dfGold border-opacity-20 sm:desktop-entry-styles`}>
       <div className={`flex flex-row`}>
-        <div className="absolute text-dfOrange text-opacity-90 text-[2.35rem] 
+        <div className="absolute text-dfWhiteTwo text-opacity-75 text-[2.35rem] 
                         mt-[.7rem] overflow-hidden z-0 sm:desktop-bg-text
-                        cursor-default">
+                        cursor-default pointer-events-none">
           { stocks[index].ticker }
         </div>
         <div className="absolute ml-[.3rem] mt-[3.35rem] text-[.75rem]
@@ -254,9 +263,9 @@ const UI: React.FC<
         }
       </div>
 
-      <div className={`absolute flex flex-row text-dfOrange text-[2.15rem]
-                      text-opacity-100 justify-center items-center mt-[.8rem]
-                      ml-[8rem] sm:desktop-dropdown-styles`
+      <div className={`absolute flex flex-row text-dfWhiteTwo text-[2.15rem]
+                      text-opacity-75 justify-center items-center mt-[.8rem]
+                      ml-[7.5rem] sm:desktop-dropdown-styles`
      }>
         <div className="mx-2 sm:desktop-dropdown-styles-f">
           <button onClick={()=>setTimeDrop(!timeDrop)} className="flex flex-row">
@@ -290,10 +299,13 @@ const UI: React.FC<
 
 
     return (
-    <div className="flex flex-col mt-[3.5rem] sm:desktop-ui-layout"
+    <div className="flex flex-col mt-[2.5rem] sm:desktop-ui-layout"
       title="Click an entry to alter it.">
-      <div className="text-xl sm:mr-2">
-        <Search initText={`${" "} editing ${stocks[editIndex].ticker}`}/>
+      <div className={`flex order-last text-xl ${stocks[1] ? "mt-[.2rem]" : "mt-[-4.65rem]"}
+                      sm:desktop-search-styles`}>
+        <div className="flex flex-col items-center">
+          <Search initText={`${" "} editing ${stocks[editIndex].ticker}`}/>
+        </div>
       </div>
       <div className="flex flex-col w-[20rem] h-[10rem] mr-auto
                      sm:desktop-ui-styles">
@@ -319,7 +331,7 @@ const UI: React.FC<
           </div>
         </div>
         </div>
-        <div className="absolute w-[4.5rem] ml-[18.35rem] mt-[4.55rem] rotate-90
+        <div className="absolute w-[4.5rem] ml-[18.35rem] mt-[1.85rem] rotate-90
                        mb-[1rem] sm:desktop-add-styles">
           { (stocks.length < 5) && (
               <div className={`text-sm sm:text-lg border-t border-l border-r
