@@ -51,7 +51,7 @@ const UI: React.FC<
           <div className="sm:h-[3rem]">
             <span className="absolute text-dfWhiteTwo text-[1.5rem]
             left-[-.33rem] top-[-1.075rem] sm:desktop-button-logo-f">F</span>
-            <span className="absolute text-dfWhiteTwo top-[-2.25rem] left-[-1.15rem] 
+            <span className="absolute text-dfWhiteTwo top-[-2.05rem] left-[-.95rem] 
             text-[2.95rem] hover:cursor-not-allowed sm:desktop-button-logo-d">ᗡ</span>
           </div>
         </button>
