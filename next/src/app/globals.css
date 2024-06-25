@@ -2,32 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  .stock-page {
+    @apply absolute w-full h-full overflow-hidden bg-dfBlack;
   }
+
+  .search-page {
+    @apply absolute w-full h-full bg-dfYellow bg-opacity-90;
+  }
+
+  .search-container {
+    @apply flex flex-col items-center w-full h-full pt-[3rem] sm:pt-[7rem]
+    overflow-hidden ;
+  }
+
+  .ui-container {
+    @apply absolute flex items-center w-full;
+  }
+  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@layer components {
+
+  {/* Button Component */}
+  .desktop-outer-button {
+    @apply w-[11rem] h-[8.5rem] bg-dfYellow bg-opacity-90 border-2
+    border-dfGold border-opacity-25;
+  }
+
+  .desktop-button-styles {
+    @apply rounded-sm w-[7rem] h-[5rem] border-2 border-dfGray
+    border-opacity-60 ;
+  }
+
+  .desktop-ui-layout {
+    @apply absolute mt-0 flex-row top-12 left-12; 
+  }
+
+  .desktop-ui-styles {
+    @apply w-[32rem] h-[14rem] ;
+  }
+
+  .desktop-entry-styles {
+    @apply h-[7rem] ;
+  }
+
+  .desktop-add-styles {
+    @apply ml-[50.25rem] w-[6rem] h-[1.5rem] cursor-pointer rotate-90
+    overflow-hidden text-center mt-[2.75rem];
+  }
+
+  .desktop-x-text {
+    @apply text-2xl;
+  }
+
+  .desktop-bg-text {
+    @apply text-[3.6rem] mt-[0rem] ml-[.15rem] transform scale-y-[205%]
+    scale-x-[108%] text-opacity-45;
+  }
+
+  .desktop-company-text {
+    @apply text-[.6rem] max-w-[11rem] mt-[5.4rem] ml-[.15rem] ;
+  }
+
+  .desktop-dropdown-styles {
+    @apply flex flex-none mt-[3.1rem];
+  }
+
+  .desktop-dropdown-styles-f {
+    @apply ml-[-8rem] text-[1.85rem] text-dfGray font-bold border-2 bg-dfYellow
+    w-[3.85rem] h-[1.65rem] flex flex-row items-center;
+  }
+
+  .desktop-dropdown-styles-v {
+    @apply flex-none text-[1.85rem] text-dfGray font-bold border-2 bg-dfYellow
+    w-[5.55rem] h-[1.65rem] flex flex-row items-center;
+  }
+  .desktop-button-logo-f {
+    @apply text-[3.5rem] top-[1.5rem] left-[4.65rem];
+  }
+  
+
+  .desktop-button-logo-d {
+    @apply text-[6rem] top-[-.475rem] left-[3.2rem];
+  }
+  
 }
+
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
 }

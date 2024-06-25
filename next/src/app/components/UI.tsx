@@ -5,22 +5,24 @@ import stockList from "@/stocks.json";
 import Fuse from "fuse.js";
 import { Rnd } from "react-rnd";
 
+interface Result {ticker: string; company: string;}
 
 const UI: React.FC<
   { editor: boolean, click: (event: any)  => void }> = ({editor, click}) => { 
-  const [posn, setPosn] = useState<{x: number, y: number}>({x: 50, y: 50});
-  interface Result {ticker: string; company: string;}
-  
+
   const Button = () => {
 
   /* Button State */
-  const buttonRef = useRef<HTMLDivElement>(null);
+  const [posn, setPosn] = useState<{x: number, y: number}>({x: 50, y: 50});
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   /* Save last button position*/
   const getCurrentPosition = () => {
     if (buttonRef.current) {
-      const posn = buttonRef.current.getBoundingClientRect();
-      setPosn({x: posn.left, y: posn.top})}
+      const newPosn = buttonRef.current.getBoundingClientRect();
+        if (Math.abs(newPosn.left - posn.x) > 40) {
+          setPosn({x: newPosn.left, y: newPosn.top})
+    }   }
   }
 
   const wrappedClick = (event: any) => {
@@ -28,28 +30,47 @@ const UI: React.FC<
     click(event);
   }
 
+  /* Navigable .svg + (any other .svg) */ 
+  const Icon: React.FC<{w: number, h: number}> = ({w, h}) => {
+    
+    return (
+      <svg fill="#FFE4D1" width={w} height={h} viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M1016.4 496.64l-8.48-8.08c-.16-.16-.335-.224-.528-.367L877.648 369.76c-9.344-8.945-24.448-8.945-33.824 0l-5.488 8.064c-9.344 8.945-6.304 23.408 3.04 32.336l76.464 69.344H546.496V106.16l69.343 76.464c8.945 9.344 23.409 12.384 32.336 3.023l8.065-5.471c8.944-9.376 8.944-24.481 0-33.841L543.072 22.368a31.874 31.874 0 0 0-12.32-13.296l-1.423-1.488C524.897 2.912 518.993.576 513.105.608c-5.904-.032-11.776 2.304-16.288 6.976l-8.096 8.463c-.16.16-.176.369-.336.544L372.881 144.335c-8.927 9.329-8.927 24.449 0 33.825l8.065 5.471c8.928 9.344 23.424 6.32 32.368-3.024l69.152-77.105v375.984H106.162l76.464-69.343c9.344-8.945 12.384-23.409 3.04-32.336l-5.471-8.065c-9.36-8.944-24.497-8.944-33.84 0L22.37 482.926a31.957 31.957 0 0 0-13.28 12.29l-1.489 1.423C2.914 501.087.593 506.992.626 512.88c-.016 5.905 2.288 11.777 6.976 16.288l8.464 8.096c.16.16.368.176.528.336l127.744 115.504c9.344 8.928 24.464 8.928 33.84 0l5.472-8.064c9.344-8.945 6.304-23.44-3.04-32.369l-77.12-69.152h379.008v376.96l-69.153-77.103c-8.944-9.344-23.44-12.369-32.368-3.025l-8.064 5.472c-8.928 9.376-8.928 24.496 0 33.824l115.504 127.744c.16.176.192.368.336.528l8.095 8.48c4.512 4.673 10.384 7.009 16.288 6.976 5.873.033 11.777-2.303 16.225-6.975l8.096-8.48c.16-.16.224-.337.368-.529l118.432-129.744c8.944-9.344 8.944-24.464 0-33.824l-8.065-5.488c-8.944-9.344-23.408-6.304-32.335 3.04l-69.344 76.464V543.502H920.48l-77.105 69.152c-9.343 8.944-12.368 23.44-3.024 32.368l5.472 8.064c9.376 8.928 24.496 8.928 33.824 0l127.744-115.504c.176-.175.368-.19.528-.334l8.48-8.096c4.672-4.496 7.008-10.368 6.976-16.288.032-5.857-2.304-11.777-6.975-16.225z"/></svg>
+           );
+  }
+
+
+
   /* Styles and defaults for html */
   const resize_config = { top:false, right:false, bottom:false, left:false, 
     topRight:false, bottomRight:false, bottomLeft:false, topLeft:false };
-  const buttonPosition = {x: posn.x, y: posn.y, width: 300,
-    height: 150};
-  const button = `handle relative w-50 h-36 border-2 bg-dfYellow bg-opacity-65
-    rounded-e-sm flex items-center justify-center transition-all duration-300
-    ease-in-out cursor-move hover:bg-dfYellow`;
-
+  const buttonPosition = {x: posn.x-35, y: posn.y-40, width: 0,
+    height: 0};
 
   return (
-  <Rnd dragHandleClassName="handle" cancel=".cancel-drag"
-      enableResizing={resize_config}  default={buttonPosition}
-      className="flex items-center justify-center" title="Drag me wherever!"
+  <Rnd dragHandleClassName="handle" cancel=".btn"
+      enableResizing={resize_config} default={buttonPosition}
+      className="" title="Drag me wherever!"
   >
-    <div className={button} ref={buttonRef}>
-      <button className=".cancel-drag text-7xl font-extrabold hover:border-b-2"
+  <div className="handle flex items-center justify-center w-[9rem] h-[8rem]
+                 border-2 border-dfGray rounded-md cursor-move bg-opacity-0 
+                 bg-dfYellow border-opacity-35 sm:desktop-outer-button"
+  >
+    <div className="z-2">
+      <div className="absolute top-2 left-2 opacity-50">
+        <Icon w={18} h={18}/>
+      </div>
+      <button className="btn mobile-UI-button w-[3rem] h-[3rem] bg-dfYellow
+                        rounded-full bg-opacity-95 sm:desktop-button-styles
+                        border-2 border-dfGold border-opacity-25"
+              ref={buttonRef}
               onClick={wrappedClick} >
-        <span className="text-8xl font-bold">ᗡ</span>
-        <span className="text-8xl font-bold">F</span>
+        <span className="absolute text-dfWhiteTwo text-[1.5rem] top-[2.85rem]
+          left-[4.05rem] sm:desktop-button-logo-f">F</span>
+        <span className="absolute text-dfWhiteTwo top-[1.70rem] left-[3.25rem] 
+          text-[2.95rem] sm:desktop-button-logo-d">ᗡ</span>
       </button>
-    </div> 
+    </div>
+  </div>
   </Rnd>
   );
   }
@@ -81,12 +102,13 @@ const UI: React.FC<
     }
     const AddStock = () => { updateStock(stocks.length,
       {ticker: stocks[stocks.length-1].ticker, time: stocks[stocks.length-1].time,
-      value: stocks[stocks.length-1].value})
+      value: stocks[stocks.length-1].value, company: stocks[stocks.length-1].company})
       renderPrevious();
     }
 
     /* SVG-needs to be switched to an import later */
-    const dropDownIcon = (<svg className="w-2 h-2 ms-2 mt-[.8rem]"
+    const dropDownIcon = (<svg className="w-2 h-2 ms-2 mt-[1.65rem] ml-1
+                                         sm:mt-[1.25rem] sm:ml-[.1rem]"
       aria-hidden="true" 
       xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
@@ -132,7 +154,8 @@ const UI: React.FC<
           value={query}
           onChange={handleSearch}
           placeholder={initText}
-          className="text-dfYellow text-4xl w-[24rem] mb-[.5rem]"
+          className="text-dfGray pb-[.15rem] mb-[.5rem] border-dfGray
+          border-2 bg-dfBlack pl-[.1rem] outline-none w-[20rem]"
         />
         { results.length > 0 && (
         <div className="flex flex-col">
@@ -155,7 +178,7 @@ const UI: React.FC<
 
     return (
 
-    <div className="absolute z-10 bg-dfYellow border-2 mt-10">
+    <div className="absolute z-30 bg-dfYellow border-2">
       <ul className="flex flex-col">
         <li className="flex justify-center cursor-pointer"
             onClick={()=>ValOnClick("vol")}>vol</li>
@@ -175,7 +198,7 @@ const UI: React.FC<
 
     return (
 
-    <div className="absolute z-10 bg-dfYellow border-2 mt-10">
+    <div className="absolute z-30 bg-dfYellow border-2">
       <ul className="">
         <li className="flex justify-center cursor-pointer" 
             onClick={()=>TimeOnClick("1m")}>1m</li>
@@ -209,37 +232,39 @@ const UI: React.FC<
 
     return (
     
-    <div onClick={()=>setEdit(index)} className={`flex flex-col h-[7rem] 
-      bg-dfYellow ${index===editIndex?"bg-opacity-80":"bg-opacity-65"}`}>
-      <div className={`
-      z-5 flex flex-row
-      `}>
-        <div className={`flex text-5xl ml-2 mt-1`}>
+    <div onClick={()=>setEdit(index)} className={`flex flex-col h-[5rem] 
+      bg-dfYellow ${index===editIndex?"bg-opacity-85":"bg-opacity-95"}
+      border-2 border-dfOrange border-opacity-30 sm:desktop-entry-styles`}>
+      <div className={`flex flex-row`}>
+        <div className="absolute text-dfOrange text-opacity-90 text-[2.35rem] 
+                        mt-[.7rem] overflow-hidden z-0 sm:desktop-bg-text
+                        cursor-default">
           { stocks[index].ticker }
         </div>
-        <div className={`text-[.5rem] max-w-[7rem] max-h-[1.7rem] overflow-hidden
-          mt-6 ml-2`}>
+        <div className="absolute ml-[.3rem] mt-[3.35rem] text-[.75rem]
+                        overflow-hidden cursor-default text-overflow-hidden z-0
+                        sm:desktop-company-text">
           { stocks[index].company }
         </div>
         {index > 0 &&
           (<div onClick={()=>removeAndRender(index)} 
-                className={`flex text-xl ml-auto mr-3 cursor-pointer`}
+                className="flex text-md ml-auto mr-1 cursor-pointer
+                          sm:desktop-x-text z-10"
             >x</div>)
         }
       </div>
 
-      <div className={`
-      z-5 flex flex-row
-      `}>
-        <div className={`flex text-2xl mr-auto mt-2 ${index === 0 ||
-          index === 3 ? "ml-12" : "ml-4"}`}>
+      <div className={`absolute flex flex-row text-dfOrange text-[2.15rem]
+                      text-opacity-100 justify-center items-center mt-[.8rem]
+                      ml-[8rem] sm:desktop-dropdown-styles`
+     }>
+        <div className="mx-2 sm:desktop-dropdown-styles-f">
           <button onClick={()=>setTimeDrop(!timeDrop)} className="flex flex-row">
             {stocks[index].time}{dropDownIcon}
           </button>
           { editIndex === index && timeDrop && (<TimeDropDown/>) }
         </div>
-        <div className={`flex text-2xl ml-auto mt-2 ${index === 0 || index ===
-          3 ? "mr-12" : "mr-4"}`}>
+        <div className="mx-2 sm:desktop-dropdown-styles-v">
           <button onClick={()=>setValDrop(!valDrop)} className="flex flex-row">
             {stocks[index].value}{dropDownIcon}
           </button>
@@ -265,12 +290,13 @@ const UI: React.FC<
 
 
     return (
-    <div className="absolute text-l top-12 left-6 flex"
+    <div className="flex flex-col mt-[3.5rem] sm:desktop-ui-layout"
       title="Click an entry to alter it.">
-      <div className="text-xl mr-2">
+      <div className="text-xl sm:mr-2">
         <Search initText={`${" "} editing ${stocks[editIndex].ticker}`}/>
       </div>
-      <div className="flex flex-col w-[32rem] h-[14rem]">
+      <div className="flex flex-col w-[20rem] h-[10rem] mr-auto
+                     sm:desktop-ui-styles">
         <div className="flex flex-row justify-between">
           <div className={`${stocks.length < 4 ? "w-full" : "w-1/2"}`}>
             <Entry index={0}/>
@@ -293,19 +319,22 @@ const UI: React.FC<
           </div>
         </div>
         </div>
-        <div className="absolute ml-[53.5rem] w-[7rem] h-[1rem] mt-12 
-          rotate-90 overflow-hidden z-1 cursor-pointer">
+        <div className="absolute w-[4.5rem] ml-[18.35rem] mt-[4.55rem] rotate-90
+                       mb-[1rem] sm:desktop-add-styles">
           { (stocks.length < 5) && (
-              <div className="text-sm border-t border-l border-r
-                rounded-t-xl overflow-hidden px-2" onClick={AddStock}>
-                Add a stock +
+              <div className={`text-sm sm:text-lg border-t border-l border-r
+                rounded-t-xl overflow-hidden px-2 pb-[.1rem] border-dfYellow 
+                text-dfGold text-opacity-75
+                ${stocks.length > 1 ? "hidden sm:block" : ""}`}
+                onClick={AddStock} title="">
+                + stock
               </div>) }
         </div>
     </div>
     );
   }
 
-return (<div className="absolute"> {editor? <Editor /> : <Button />} </div>);
+return (<div className="absolute w-full h-full flex flex-col items-center"> {editor? <Editor /> : <Button />} </div>);
 }
 
 export default UI;

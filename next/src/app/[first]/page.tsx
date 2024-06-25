@@ -21,9 +21,9 @@ const Page = ({ params }: { params: {first:string } }) => {
 
 
   return (
-  <div>
+  <div className="stock-page border-2 border-dfGray border-opacity-40">
     {/* UI opens on button click */}
-    <div className="absolute">
+    <div className="ui-container">
       <UI editor={editState} click={openUI}/>
     </div>
 
