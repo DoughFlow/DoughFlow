@@ -1,7 +1,13 @@
 "use client"
 import { createContext, useContext, useState, ReactNode, useEffect } from "react";
 import { fetchPriceData, fetchVolData, fetchSmaData, fetchRsiData } from "@/_utils/fetchData";
-import {candlestickSVG, volSVG, smaSVG, rsiSVG } from "@/_utils/generateSVG";
+import { 
+  candlestickSVG,
+  volSVG,
+  smaSVG,
+  rsiSVG,
+  mdCandleSVG
+} from "@/_utils/generateSVG";
 
 export interface Stock {
   ticker: string;
@@ -104,7 +110,7 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
     });
     if (newStock.value === "price") {
       const data = await fetchPriceData(newStock.ticker, newStock.time, newStock.value);
-      const svg = candlestickSVG(data, svgHeight, svgWidth);
+      const svg = mdCandleSVG(data, svgHeight, svgWidth);
       updateSvg(index, svg);
     } else if (newStock.value === "vol") {
       const data = await fetchVolData(newStock.ticker, newStock.time, newStock.value);
