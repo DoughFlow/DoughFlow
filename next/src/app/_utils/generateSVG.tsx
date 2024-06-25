@@ -1,6 +1,15 @@
 import { PriceDataPoint, volDataPoint, smaDataPoint, rsiDataPoint } from "@/_utils/fetchData";
 import * as d3 from "d3";
 
+// TODO
+//
+// make ticker match width of graph
+// make month label width the < width / monthLabels.length and < height 
+// month and three month tick marks and scaling
+// 6 month 
+// 1y, 2y 
+//
+
 const generateYTickMarks = (min: number, max: number): {tens: number[], fives: number[], ones: number[]} => {
     const range = max - min;
     const tens = [];
@@ -25,11 +34,17 @@ const generateYTickMarks = (min: number, max: number): {tens: number[], fives: n
                 ones.push(i);
             }
         }
-    }
+    }  
     return { tens, fives, ones };
 };
 
 export const smCandleSVG =  (data: PriceDataPoint[], height: number, width: number) => {
+  // $1 color
+  // $5 color
+  // $10 color
+  // month color
+  // monday (start of week) color
+  //
 
 };
 
@@ -104,7 +119,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
     .call(g => g.select(".domain").remove())
     .attr("opacity", 0.3)
     .selectAll(".tick line")
-    .attr("stroke", "yellow");
+    .attr("stroke", "#FFE4D1");
   yAxis.selectAll('text').remove();
   const fivesAxis = svg.append("g")
     .attr("transform", `translate(${margin.left + 3}, 0)`)
@@ -115,7 +130,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
     .call(g => g.select(".domain").remove())
     .attr("opacity", 0.3)
     .selectAll(".tick line")
-    .attr("stroke", "white");
+    .attr("stroke", "#FF9151");
   fivesAxis.selectAll('text').remove();
   const onesAxis = svg.append("g")
     .attr("transform", `translate(${margin.left + 3}, 0)`)
@@ -126,7 +141,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
     .call(g => g.select(".domain").remove())
     .attr("opacity", 0.2)
     .selectAll(".tick line")
-    .attr("stroke", "purple");
+    .attr("stroke", "#99775E");
   onesAxis.selectAll('text').remove();
   const x = scaleBand()
     .domain(stringList)
@@ -137,7 +152,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
     .call(g => g.select(".domain").remove())
     .attr("opacity", 0.3)
     .selectAll(".tick line")
-    .attr("stroke", "yellow");
+    .attr("stroke", "#FFE4D1");
   xAxis.selectAll('text').remove();
   const mondayAxis = svg.append("g")
     .attr("transform", `translate(0,${height - margin.bottom})`)
@@ -154,7 +169,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
       .attr("x", x(tick)! + 4)
       .attr("y", height - margin.bottom)
       .attr("text-anchor", "left")
-      .attr("fill", "yellow") // can fill with hex #000000
+      .attr("fill", "#FFE4D1") // can fill with hex #000000
       .style("font-size", "40")
       .text(label.toUpperCase())
       .attr("opacity", 0.6);
@@ -164,7 +179,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
       .attr("x", margin.left + 6)
       .attr("y", y(tick))
       .attr("text-anchor", "left")
-      .attr("fill", "yellow")
+      .attr("fill", "#FFE4D1")
       .style("font-size", "12")
       .text(`${format(",")(tick)}`) // Formatting tick value
       .attr("opacity", 0.3);
@@ -175,7 +190,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
       .attr("x", margin.left + 6)
       .attr("y", y(tick))
       .attr("text-anchor", "left")
-      .attr("fill", "white")
+      .attr("fill", "#FF9151")
       .style("font-size", "12")
       .text(`${format(",")(tick)}`) // Formatting tick value
       .attr("opacity", 0.3);
@@ -186,7 +201,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
       .attr("x", margin.left + 6)
       .attr("y", y(tick))
       .attr("text-anchor", "left")
-      .attr("fill", "purple")
+      .attr("fill", "#99775E")
       .style("font-size", "12")
       .text(`${format(",")(tick)}`) // Formatting tick value
       .attr("opacity", 0.3);
@@ -196,7 +211,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
       .attr("x", margin.left)
       .attr("y", height - margin.bottom)
       .attr("text-anchor", "center")
-      .attr("fill", "white")
+      .attr("fill", "#877B74")
       .style("font-size", "20em")
       .text(ticker)
       .attr("opacity", 0.2);
