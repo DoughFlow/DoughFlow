@@ -44,7 +44,7 @@ export const fetchVolData = async (ticker: string, time: string, value: string):
   const jsonData = await res.json();
   const data: volDataPoint[] = jsonData.map((dp: any): volDataPoint => ({
     timestamp: dp.timestamp,
-    vol: dp.vol
+    vol: dp.volume
   }));
   return data;
 };
