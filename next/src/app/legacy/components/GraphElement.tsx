@@ -7,9 +7,6 @@ const GraphElement = () => {
 
     const { stocks } = useGlobal();
 
-    let screenWidth = 0;
-    let screenHeight = 0;
-
     const ticker1 = stocks.ticker1;
 
     const ticker2 = stocks.ticker2;
@@ -25,14 +22,12 @@ const GraphElement = () => {
     const position1 = stocks.position1;
 
     const position2 = stocks.position2;
-    if (typeof window !== "undefined") {
-      const screenWidth = window.innerWidth;
-    }
+
+    const screenWidth = window.innerWidth;
     const graphWidth = screenWidth * 0.93;
     const midWidth = graphWidth * 0.5;
-    if (typeof window !== "undefined") {
+
     const screenHeight = window.innerHeight;
-    }
     const graphHeight = screenHeight * 0.25;
     const midHeight = graphHeight * 2;
     const indHeight = graphHeight * 0.5;
@@ -81,6 +76,7 @@ const GraphElement = () => {
             {renderGraphs(position1)}
         </>
     );
+
 };
 
 export default GraphElement;
