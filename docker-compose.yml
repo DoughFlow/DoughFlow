@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  django:
+    container_name: prod-django
+    build: ./django
+    command: gunicorn django_server.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./django:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./django/.secrets # Specify the path to your .env file
+
+  nginx:
+    container_name: prod-nginx
+    build: ./nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /home/ubuntu/ssl/:/etc/nginx/certs/:ro
+    depends_on:
+      - django
+      - next
+
+  next:
+    container_name: prod-next
+    build: ./next
+    ports:
+      - "3000:3000"
+    hostname: nextjs
