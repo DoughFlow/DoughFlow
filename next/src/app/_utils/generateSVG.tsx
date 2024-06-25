@@ -10,6 +10,9 @@ import * as d3 from "d3";
 // 1y, 2y 
 //
 
+
+
+
 const generateYTickMarks = (min: number, max: number): {tens: number[], fives: number[], ones: number[]} => {
     const range = max - min;
     const tens = [];
@@ -49,6 +52,9 @@ export const smCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
 };
 
 export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: number) => {
+  console.log(height, width);
+  // less than 400px each needs a style of its own
+  // 
   const { 
     scaleBand,
     axisBottom,
@@ -162,6 +168,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
     .selectAll(".tick line")
     .attr("stroke", "orange");
   mondayAxis.selectAll('text').remove();
+  const numberofgraphs = 4;
   monthLabels.forEach(tick => {
     const tickDate = new Date(tick);
     const label = formatMonth(tickDate);
@@ -170,7 +177,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
       .attr("y", height - margin.bottom)
       .attr("text-anchor", "left")
       .attr("fill", "#FFE4D1") // can fill with hex #000000
-      .style("font-size", "40")
+      .style("font-size", `${(16 + Math.ceil(x.bandwidth() * 3))}px`)
       .text(label.toUpperCase())
       .attr("opacity", 0.6);
   });
@@ -212,7 +219,7 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
       .attr("y", height - margin.bottom)
       .attr("text-anchor", "center")
       .attr("fill", "#877B74")
-      .style("font-size", "20em")
+      .style("font-size", `${height / 2.5}px`)
       .text(ticker)
       .attr("opacity", 0.2);
 
