@@ -51,7 +51,7 @@ export const smCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
 
 };
 
-export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: number) => {
+export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: number): Promise<string> => {
   console.log(height, width);
   // less than 400px each needs a style of its own
   // 
@@ -248,7 +248,6 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
     return '';
   }
   return (svgNode.outerHTML);
-
 };
 
 export const lgCandleSVG =  (data: PriceDataPoint[], height: number, width: number) => {

@@ -1,14 +1,7 @@
 "use client"
 import { createContext, useContext, useState, ReactNode, useEffect } from "react";
-import { fetchPriceData, fetchVolData, fetchSmaData, fetchRsiData } from "@/_utils/fetchData";
-import { 
-  candlestickSVG,
-  volSVG,
-  smaSVG,
-  rsiSVG,
-  mdCandleSVG
-} from "@/_utils/generateSVG";
-
+import { fetchData } from "@/_utils/fetchData";
+import { generateSvg } from "@/_utils/svg/Generate";
 export interface Stock {
   ticker: string;
   value: string;
@@ -108,23 +101,9 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
       }
       return updatedStocks;
     });
-    if (newStock.value === "price") {
-      const data = await fetchPriceData(newStock.ticker, newStock.time, newStock.value);
-      const svg = mdCandleSVG(data, svgHeight, svgWidth);
-      updateSvg(index, svg);
-    } else if (newStock.value === "vol") {
-      const data = await fetchVolData(newStock.ticker, newStock.time, newStock.value);
-      const svg = volSVG(data, svgHeight, svgWidth);
-      updateSvg(index, svg);
-    } else if (newStock.value === "sma") {
-      const data = await fetchSmaData(newStock.ticker, newStock.time, newStock.value);
-      const svg = smaSVG(data, svgHeight, svgWidth);
-      updateSvg(index, svg);
-    } else {
-      const data = await fetchRsiData(newStock.ticker, newStock.time, newStock.value);
-      const svg = rsiSVG(data, svgHeight, svgWidth);
-      updateSvg(index, svg);
-    }
+    const data = await fetchData(newStock.ticker, newStock.time, newStock.value);
+    const svg = generateSvg(data, newStock, svgHeight, svgWidth);
+    updateSvg(index, svg);
   };
 
   const updateSvg = (index: number, updatedSvg: string): void => {
