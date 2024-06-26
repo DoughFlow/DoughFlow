@@ -1,6 +1,6 @@
 "use server"
 import * as d3 from "d3";
-import { PriceDataPoint } from "../generateSVGTwo";
+import { PriceDataPoint } from "../fetchData";
   
 const generateYTickMarks = (min: number, max: number): {tens: number[], fives: number[], ones: number[]} => {
     const range = max - min;
