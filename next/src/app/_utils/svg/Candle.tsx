@@ -223,14 +223,13 @@ export const mdCandleSVG =  (data: PriceDataPoint[], height: number, width: numb
     .attr("y1", d => y(+d.high_price))
     .attr("y2", d => y(+d.low_price))
     .attr("stroke", d => d.open_price > d.close_price ? "red" : "green");
-  /**
+
   const svgNode = svg.node();
   if (svgNode === null) {
     console.error("Failed to create SVG node");
     return '';
-    }**/
-  //return (svgNode.outerHTML);
-  return (svg);
+  }
+  return (svgNode.outerHTML);
 };
 
 export default mdCandleSVG;
