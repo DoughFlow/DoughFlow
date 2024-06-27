@@ -90,6 +90,57 @@
 
 
 
+//     // if (length < 399) {
+//         // add tens ticks and labels
+//         const tens = tensTick(timeMin, timeMax);
+//         console.log(tens);
+//         const yTensAxis = svg.append("g")
+//             .attr("transform", `translate(${margin.left}, 0)`)
+//             .call(axisLeft(y)
+//                   .tickValues(tens)
+//                   .tickFormat(() => "")
+//                   .tickSize((-width) + (2 * margin.left)))
+//             .call(g => g.select(".domain").remove())
+//             .attr("opacity", 0.3)
+//             .selectAll(".tick line")
+//             .attr("stroke", "#FFE4D1");
+//         yTensAxis.selectAll('text').remove();
+//         tens.forEach(tick => {
+//             svg.append("text")
+//               .attr("x", margin.left + 6)
+//               .attr("y", y(tick))
+//               .attr("text-anchor", "left")
+//               .attr("fill", "#FFE4D1")
+//               .style("font-size", "12")
+//               .text(`${format(",")(tick)}`) // Formatting tick value
+//               .attr("opacity", 0.3);
+//         });
+
+//         // add month ticks and labels
+//         const months = monthTick(stringList);
+//         const monthLabels = months.slice(0, -1);
+//         const xMonthAxis = svg.append("g")
+//             .attr("transform", `translate(0,${height - margin.bottom})`)
+//             .call(axisBottom(x).tickValues(months).tickFormat(() => "").tickSize((-height) + (2 * margin.bottom)))
+//             .call(g => g.select(".domain").remove())
+//             .attr("opacity", 0.3)
+//             .selectAll(".tick line")
+//             .attr("stroke", "#FFE4D1");
+//         xMonthAxis.selectAll('text').remove();
+//         monthLabels.forEach(tick => {
+//             const tickDate = new Date(tick);
+//             const label = formatMonth(tickDate);
+//             svg.append("text")
+//               .attr("x", x(tick)! + 4)
+//               .attr("y", height - margin.bottom)
+//               .attr("text-anchor", "left")
+//               .attr("fill", "#FFE4D1") // can fill with hex #000000
+//               .style("font-size", `${(16 + Math.ceil(x.bandwidth() * 3))}px`)
+//               .text(label.toUpperCase())
+//               .attr("opacity", 0.6);
+//         });
+//     // }
+
 
 
 

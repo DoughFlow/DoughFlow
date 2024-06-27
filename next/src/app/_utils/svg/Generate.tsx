@@ -20,7 +20,7 @@ export const yBuffered = (minPrice: number, maxPrice: number): [number, number] 
 
 export const centTick = (min: number, max: number): number[] => {
   const cents: number[] = [];
-  for (let i = Math.ceil(min); i <= max; i++) {
+  for (let i = Math.ceil(min / 100) * 100; i <= max; i += 100) {
     cents.push(i);
   }
   return cents;
@@ -29,7 +29,9 @@ export const centTick = (min: number, max: number): number[] => {
 export const tensTick = (min: number, max: number): number[] => {
   const tens: number[] = [];
   for (let i = Math.ceil(min / 10) * 10; i <= max; i += 10) {
+    if (i % 100 !== 0) {
       tens.push(i);
+    }
   }
   return tens;
 };
@@ -140,30 +142,30 @@ export const dayTick = (stringList: string[]): string[] => {
 export const generateSvg =  (data: any, stock: Stock, height: number, width: number): string => {
     if (height < 450 || width < 450) {
         if (stock.value === "price") {
-            const svg = smPriceSvg(data, height, width);
+            const svg = smPriceSvg(data, height, width, stock.time);
             return svg;
         } else if (stock.value === "vol") {
-            const svg = smVolSvg(data, height, width);
+            const svg = smVolSvg(data, height, width, stock.ticker, stock.time);
             return svg;
         } else if (stock.value === "sma") {
-            const svg = smSmaSvg(data, height, width);
+            const svg = smSmaSvg(data, height, width, stock.ticker, stock.time);
             return svg;
         } else {
-            const svg = smRsiSvg(data, height, width);
+            const svg = smRsiSvg(data, height, width, stock.ticker, stock.time);
             return svg;
         }
     } else {
         if (stock.value === "price") {
-            const svg = priceSvg(data, height, width);
+            const svg = priceSvg(data, height, width, stock.time);
             return svg;
         } else if (stock.value === "vol") {
-            const svg = volSvg(data, height, width);
+            const svg = volSvg(data, height, width, stock.ticker, stock.time);
             return svg;
         } else if (stock.value === "sma") {   
-            const svg = smaSvg(data, height, width);
+            const svg = smaSvg(data, height, width, stock.ticker, stock.time);
             return svg;
         } else {
-            const svg = rsiSvg(data, height, width);
+            const svg = rsiSvg(data, height, width, stock.ticker, stock.time);
             return svg;
         }
     }
