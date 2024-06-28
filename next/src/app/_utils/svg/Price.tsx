@@ -121,7 +121,7 @@ export const smPriceSvg = (data: PriceDataPoint[], height: number, width: number
                 .text(`${format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);
         });
-    } else if (if (yDomain[1] - yDomain[0] < 40) {
+    } else if (yDomain[1] - yDomain[0] < 40) {
         const tens = tensTick(yDomain[0], yDomain[1]);
         const tensAxis = svg.append("g")
            .attr("transform", `translate(${margin.left + 3}, 0)`)
@@ -693,7 +693,7 @@ export const priceSvg = (data: PriceDataPoint[], height: number, width: number, 
                 .text(`${format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);
         });
-    } else if (if (yDomain[1] - yDomain[0] < 40) {
+    } else if (yDomain[1] - yDomain[0] < 40) {
         const tens = tensTick(yDomain[0], yDomain[1]);
         const tensAxis = svg.append("g")
            .attr("transform", `translate(${margin.left + 3}, 0)`)
