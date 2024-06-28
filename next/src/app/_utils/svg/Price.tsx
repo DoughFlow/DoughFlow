@@ -1113,8 +1113,6 @@ export const priceSvg = (data: PriceDataPoint[], height: number, width: number, 
             return '';
         }
         return (svgNode.outerHTML);
-
-
     } else {
 
     }
