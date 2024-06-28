@@ -1,7 +1,7 @@
 import { smaDataPoint } from "../fetchData";
 import {
     scaleBand, scaleLinear, axisBottom, axisLeft, utcMonday, utcMonth,
-    utcFormat, format, create
+    utcFormat, format, create, line
 } from "d3";
 import { 
     margin, yBuffered, centTick, tensTick, fivesTick, onesTick, yearTick,
@@ -249,7 +249,7 @@ export const smSmaSvg = (data: smaDataPoint[], height: number, width: number, ti
           .attr("fill", "none")
           .attr("stroke", "steelblue")
           .attr("stroke-width", 1.5)
-          .attr("d", d3.line()
+          .attr("d", line()
             .x(d => d.timestamp)
             .y(d => d.sma)
             );
@@ -358,7 +358,7 @@ export const smSmaSvg = (data: smaDataPoint[], height: number, width: number, ti
           .attr("fill", "none")
           .attr("stroke", "steelblue")
           .attr("stroke-width", 1.5)
-          .attr("d", d3.line()
+          .attr("d", line()
             .x(d => d.timestamp)
             .y(d => d.sma)
             );
@@ -415,7 +415,7 @@ export const smSmaSvg = (data: smaDataPoint[], height: number, width: number, ti
           .attr("fill", "none")
           .attr("stroke", "steelblue")
           .attr("stroke-width", 1.5)
-          .attr("d", d3.line()
+          .attr("d", line()
             .x(d => d.timestamp)
             .y(d => d.sma)
             );
@@ -490,7 +490,7 @@ export const smSmaSvg = (data: smaDataPoint[], height: number, width: number, ti
       .attr("fill", "none")
       .attr("stroke", "steelblue")
       .attr("stroke-width", 1.5)
-      .attr("d", d3.line()
+      .attr("d", line()
         .x(d => d.timestamp)
         .y(d => d.sma)
         );
@@ -742,7 +742,7 @@ export const smaSvg = (data: smaDataPoint[], height: number, width: number, tick
           .attr("fill", "none")
           .attr("stroke", "steelblue")
           .attr("stroke-width", 1.5)
-          .attr("d", d3.line()
+          .attr("d", line()
             .x(d => d.timestamp)
             .y(d => d.sma));
         const svgNode = svg.node();
@@ -802,21 +802,12 @@ export const smaSvg = (data: smaDataPoint[], height: number, width: number, tick
             .style("font-size", `${width / 3}px`)
             .text(ticker.toUpperCase())
             .attr("opacity", 0.2);
-        svg.selectAll(".bar")
-            .data(data)
-            .enter().append("rect")
-            .attr("class", "bar")
-            .attr("x", d => x(String(d.timestamp))!)
-            .attr("width", x.bandwidth())
-            .attr("y", d => y(d.vol))
-            .attr("height", d => height - y(d.vol))
-            .attr("opacity", d => calculateOpacity(y(d.vol)));
         svg.append("path")
           .datum(data)
           .attr("fill", "none")
           .attr("stroke", "steelblue")
           .attr("stroke-width", 1.5)
-          .attr("d", d3.line()
+          .attr("d", line()
             .x(d => d.timestamp)
             .y(d => d.sma));
         const svgNode = svg.node();
@@ -864,7 +855,7 @@ export const smaSvg = (data: smaDataPoint[], height: number, width: number, tick
           .attr("fill", "none")
           .attr("stroke", "steelblue")
           .attr("stroke-width", 1.5)
-          .attr("d", d3.line()
+          .attr("d", line()
             .x(d => d.timestamp)
             .y(d => d.sma));
 
@@ -922,7 +913,7 @@ export const smaSvg = (data: smaDataPoint[], height: number, width: number, tick
           .attr("fill", "none")
           .attr("stroke", "steelblue")
           .attr("stroke-width", 1.5)
-          .attr("d", d3.line()
+          .attr("d", line()
             .x(d => d.timestamp)
             .y(d => d.sma));
         const svgNode = svg.node();
@@ -978,7 +969,7 @@ export const smaSvg = (data: smaDataPoint[], height: number, width: number, tick
           .attr("fill", "none")
           .attr("stroke", "steelblue")
           .attr("stroke-width", 1.5)
-          .attr("d", d3.line()
+          .attr("d", line()
             .x(d => d.timestamp)
             .y(d => d.sma));
         const svgNode = svg.node();
@@ -1004,7 +995,7 @@ export const smaSvg = (data: smaDataPoint[], height: number, width: number, tick
           .attr("fill", "none")
           .attr("stroke", "steelblue")
           .attr("stroke-width", 1.5)
-          .attr("d", d3.line()
+          .attr("d", line()
             .x(d => d.timestamp)
             .y(d => d.sma));
     const svgNode = svg.node();
