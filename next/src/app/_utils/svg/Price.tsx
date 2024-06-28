@@ -11,7 +11,7 @@ import {
 
 
 export const smPriceSvg = (data: PriceDataPoint[], height: number, width: number, time: string): string => {
-        const candleWidth = width / (data.length * 1.75);
+    const candleWidth = width / (data.length * 1.75);
     const candleOffset = candleWidth / 2;
     const ticker: string = data[0].ticker.toString();
     const stringList = data.map((d) => String(d.timestamp));
