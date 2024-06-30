@@ -9,7 +9,8 @@ import {
 } from "./Generate";
 
 
-export const smRsiSvg = (data: rsiDataPoint[], height: number, width: number, ticker: string, time: string): string => {
+export const rsiSvg = (data: rsiDataPoint[], height: number, width: number,
+ticker: string, time: string, scalar: number): string => {
     const calculateOpacity = (yValue: number) => {
         const distanceFromBottom = height - margin.bottom - yValue;
         return Math.max(0.1, 1 - (distanceFromBottom / (height - margin.bottom)));
@@ -526,6 +527,10 @@ export const smRsiSvg = (data: rsiDataPoint[], height: number, width: number, ti
     return (svgNode.outerHTML);
 };
 
+/***
+ *
+ * deprecated possibly?
+ *
 export const rsiSvg = (data: rsiDataPoint[], height: number, width: number, ticker: string, time: string): string => {
     const calculateOpacity = (yValue: number) => {
         const distanceFromBottom = height - margin.bottom - yValue;
@@ -1042,4 +1047,4 @@ export const rsiSvg = (data: rsiDataPoint[], height: number, width: number, tick
     }
     return (svgNode.outerHTML);
 };
-
+***/

@@ -9,7 +9,8 @@ import {
 } from "./Generate";
 
 
-export const smSmaSvg = (data: smaDataPoint[], height: number, width: number, ticker: string, time: string): string => {
+export const smaSvg = (data: smaDataPoint[], height: number, width: number,
+ticker: string, time: string, scalar: number): string => {
     const stringList = data.map((d) => String(d.timestamp));
     const formatMonth = utcFormat("%b");
     const formatDay = utcFormat("%m/%d");
@@ -502,6 +503,10 @@ export const smSmaSvg = (data: smaDataPoint[], height: number, width: number, ti
     return (svgNode.outerHTML);
 };
 
+/***
+ *
+ * deprecated possibly?
+ *
 export const smaSvg = (data: smaDataPoint[], height: number, width: number, ticker: string, time: string): string => {
     const stringList = data.map((d) => String(d.timestamp));
     const formatMonth = utcFormat("%b");
@@ -1005,4 +1010,4 @@ export const smaSvg = (data: smaDataPoint[], height: number, width: number, tick
     }
     return (svgNode.outerHTML);
 };
-
+***/

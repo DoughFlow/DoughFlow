@@ -55,6 +55,7 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
     let localUpdatedStocks: Stock[] = [];
     let svgHeight = 0;
     let svgWidth = 0;
+    let scalar = 0;
     setStocks(prevStocks => {
       const updatedStocks = [...prevStocks];
       if (index < prevStocks.length) {
@@ -67,6 +68,7 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
       const sLength = localUpdatedStocks.length;
       const height = window.innerHeight;
       const width = window.innerWidth;
+      scalar = height;
       if (sLength === 0) {
         svgHeight = height;
         svgWidth = width;
@@ -102,7 +104,7 @@ export const StockContextProvider = ({children }: GlobalContextProviderProps) =>
       return updatedStocks;
     });
     const data = await fetchData(newStock.ticker, newStock.time, newStock.value);
-    const svg = generateSvg(data, newStock, svgHeight, svgWidth);
+    const svg = generateSvg(data, newStock, svgHeight, svgWidth, scalar);
     updateSvg(index, svg);
   };
 

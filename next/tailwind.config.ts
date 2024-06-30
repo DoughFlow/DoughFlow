@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     screens: {
       'sm': '450px' ,
+      'md': '935px',
     },
     colors: {
       'dfyellow': '#FFBB84', // legacy-code support

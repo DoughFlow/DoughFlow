@@ -8,7 +8,8 @@ import {
     threeMonthsTick, monthTick, weekStartTick, dayTick
 } from "./Generate";
 
-export const smVolSvg = (data: volDataPoint[], height: number, width: number, ticker: string, time: string): string => {
+export const volSvg = (data: volDataPoint[], height: number, width: number,
+ticker: string, time: string, scalar: number): string => {
     const calculateOpacity = (yValue: number) => {
         const distanceFromBottom = height - margin.bottom - yValue;
         return Math.max(0.1, 1 - (distanceFromBottom / (height - margin.bottom)));
@@ -522,6 +523,10 @@ export const smVolSvg = (data: volDataPoint[], height: number, width: number, ti
     return (svgNode.outerHTML);
 };
 
+/***
+ *
+ * deprecated possibly?
+ *
 export const volSvg = (data: volDataPoint[], height: number, width: number, ticker: string, time: string): string => {
     const calculateOpacity = (yValue: number) => {
         const distanceFromBottom = height - margin.bottom - yValue;
@@ -1035,3 +1040,4 @@ export const volSvg = (data: volDataPoint[], height: number, width: number, tick
     }
     return (svgNode.outerHTML);
 }
+***/

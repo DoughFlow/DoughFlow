@@ -38,21 +38,21 @@ const UI: React.FC<
   enableResizing={resize_config} default={buttonPosition} className="handle">
     <div className="handle flex items-center justify-center w-[0rem] h-[0rem]
     border-2 border-dfGray rounded-md cursor-move bg-opacity-0 
-    bg-dfYellow border-opacity-35 sm:desktop-outer-button">
+    bg-dfYellow border-opacity-35 md:desktop-outer-button">
       <div className="z-2">
-        <div className="absolute top-2 left-2 opacity-50 hidden sm:block">
+        <div className="absolute top-2 left-2 opacity-50 hidden md:block">
           <Icon w={18} h={18}/>
         </div>
-        <button className="btn mobile-UI-button w-[3rem] h-[3rem] bg-dfYellow
-        rounded-full bg-opacity-95 sm:desktop-button-styles
+        <button className="btn w-[3rem] h-[3rem] bg-dfYellow
+        rounded-full bg-opacity-95 md:desktop-button-styles
         border-2 border-dfGold border-opacity-25"
         ref={buttonRef}
         onClick={wrappedClick} >
           <div className="sm:h-[3rem]">
             <span className="absolute text-dfWhiteTwo text-[1.5rem]
-            left-[-.33rem] top-[-1.075rem] sm:desktop-button-logo-f">F</span>
+            left-[-.33rem] top-[-1.075rem] md:desktop-button-logo-f">F</span>
             <span className="absolute text-dfWhiteTwo top-[-2.05rem] left-[-.95rem] 
-            text-[2.95rem] hover:cursor-not-allowed sm:desktop-button-logo-d">ᗡ</span>
+            text-[2.95rem] md:desktop-button-logo-d">ᗡ</span>
           </div>
         </button>
       </div>
@@ -221,7 +221,7 @@ const UI: React.FC<
       <div className={`flex flex-row`}>
         <div className="absolute text-dfWhiteTwo text-opacity-75 text-[2.35rem] mt-[.7rem] 
         overflow-hidden z-0 sm:desktop-bg-text cursor-default pointer-events-none">
-          { stocks[index].ticker }
+          { stocks[index].ticker.toUpperCase() }
         </div>
         <div className="absolute ml-[.3rem] mt-[3.35rem] text-[.75rem] z-0
         overflow-hidden cursor-default text-overflow-hidden sm:desktop-company-text">

@@ -77,7 +77,7 @@
   .desktop-dropdown-styles-v {
     @apply flex-none text-[1.45rem] text-dfGray font-bold border-2 bg-dfYellow
     w-[4.55rem] h-[1.65rem] flex flex-row items-center mx-0 bg-opacity-55
-    ml-[0.5rem];
+    ml-[0.5rem] justify-center;
   }
   .desktop-button-logo-f {
     @apply text-[3.5rem] top-[2.65rem] left-[4.65rem] leading-[3rem] 
