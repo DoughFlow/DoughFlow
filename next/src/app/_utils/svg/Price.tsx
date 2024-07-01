@@ -22,7 +22,7 @@ time: string): string => {
     const svg = create("svg")
         .attr("width", width)
         .attr("height", height)
-        .style("background", `${C.dfBrown}`)
+        .style("background", `${C.dfBlack}`)
 
     var border = svg.append("rect")
       .attr("x", 0)
@@ -55,7 +55,7 @@ time: string): string => {
         .attr("width", candleWidth)
         .attr("y", d => y(Math.max(+d.open_price, +d.close_price)))
         .attr("height", d => Math.abs(y(+d.open_price) - y(+d.close_price)))
-        .attr("fill", d => d.open_price > d.close_price ? `${C.dfRed}` : `${C.dfGreen}`)
+        .attr("fill", d => d.open_price > d.close_price ? "red" : `${C.dfGreen}`)
         .attr("rx", 2)
         .attr("ry", 2);
     svg.selectAll(".wick")
@@ -65,7 +65,7 @@ time: string): string => {
         .attr("x2", d => x(d.timestamp)! + x.bandwidth() / 2)
         .attr("y1", d => y(+d.high_price))
         .attr("y2", d => y(+d.low_price))
-        .attr("stroke", d => d.open_price > d.close_price ? `${C.dfRed}` : `${C.dfGreen}`);
+        .attr("stroke", d => d.open_price > d.close_price ? "red" : `${C.dfGreen}`);
     const svgNode = svg.node();
     if (svgNode === null) {
         console.error("Failed to create SVG node");

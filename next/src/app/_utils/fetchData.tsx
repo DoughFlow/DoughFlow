@@ -10,7 +10,7 @@ export interface PriceDataPoint {
 
 export interface volDataPoint {
   timestamp: string;
-  vol:  string;
+  vol:  number;
 }
 
 export interface smaDataPoint {

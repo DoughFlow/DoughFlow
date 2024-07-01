@@ -11,6 +11,7 @@ export const margin = { top: 16, right: 20, bottom: 16, left: 20 };
 export const mobile_margin = { top: 0, right: 15, bottom: 10, left: 0};
 
 // d3 helper functions
+export const formatLargeInt = d3.format("~s")
 export const formatYear = d3.utcFormat("'%y");
 export const formatMonth = d3.utcFormat("%b");
 export const formatDay = d3.utcFormat("%m/%d");
@@ -56,10 +57,8 @@ d3.selection.prototype.xAxisGenerator = function<T extends d3.BaseType, Datum, P
   // (Horizontal) SE: (1.777) PM: (2.16)
 
   const len = xDomain.length;
-  console.log(len);
   return this.each(function () {
   const svg = d3.select(this as T);
-  console.log(width/height);
 
   // mobile vertical graph
   if (width / height < .75) {
@@ -148,12 +147,45 @@ d3.selection.prototype.yAxisGenerator = function<T extends d3.BaseType, Datum, P
     } else if (range < 60) {
       svg.yTickGenerator("fives", width, yDomain, yRange);
       svg.yTickGenerator("tens", width, yDomain, yRange);
-    } else {
+    } else if (range < 400) {
+      // tens and cents on every graph for non-volume
       svg.yTickGenerator("tens", width, yDomain, yRange);
     }
-    if (range < 5000) {
-    // tens and cents on every graph for non-volume
-    svg.yTickGenerator("tens", width, yDomain, yRange);
+
+    // is volume
+    else {
+      if (yDomain[1] < 2500000) {
+
+        if (range < 500000) {
+          svg.yTickGenerator("tenKs", width, yDomain, yRange);
+          svg.yTickGenerator("hundredKs", width, yDomain, yRange);} 
+        else if (range < 2500000) {
+          svg.yTickGenerator("hundredKs", width, yDomain, yRange);}
+        else if (range < 20000000) {
+          svg.yTickGenerator("ms", width, yDomain, yRange);
+          svg.yTickGenerator("tenMs", width, yDomain, yRange);} 
+        else if (range < 200000000) {
+          svg.yTickGenerator("tenMs", width, yDomain, yRange);
+          svg.yTickGenerator("hundredMs", width, yDomain, yRange);} 
+        else {
+          svg.yTickGenerator("hundredMs", width, yDomain, yRange);}
+
+      } 
+      else {
+
+        if (range < 20000000) {
+          svg.yTickGenerator("ms", width, yDomain, yRange);
+          svg.yTickGenerator("tenMs", width, yDomain, yRange);} 
+        else if (range < 200000000) {
+          svg.yTickGenerator("tenMs", width, yDomain, yRange);
+          svg.yTickGenerator("hundredMs", width, yDomain, yRange);} 
+        else {
+          svg.yTickGenerator("hundredMs", width, yDomain, yRange);}
+
+      }
+    }
+    
+    if (range < 1000) {
     svg.yTickGenerator("cents", width, yDomain, yRange);
     }
 
@@ -167,11 +199,11 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
     const x = d3.scaleBand()
            .range(xRange)
            .domain(xDomain)
+
     switch (tickCall) {
 
       case "days":        
         const LdayTicks = xDomain;
-        console.log(LdayTicks);
         svg.append("g")
             .attr("transform", `translate(0,${height - mobile_margin.bottom})`)
             .call(d3.axisBottom(x).tickValues(LdayTicks.slice(1)).tickFormat(() => "").tickSize((-height) + (2 * mobile_margin.bottom)))
@@ -245,8 +277,6 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
 
       case "threeMonths":        
         const threeMonthTicks = threeMonthTick(xDomain)
-        const trimmedThreeMonthTicks = threeMonthTicks.slice(1);
-        console.log(threeMonthTicks);
         svg.append("g")
             .attr("transform", `translate(0,${height - mobile_margin.bottom})`)
             .call(d3.axisBottom(x).tickValues(threeMonthTicks.slice(1)).tickFormat(() => "").tickSize((-height) + (2 * mobile_margin.bottom)))
@@ -272,7 +302,8 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
       case "years":
         const yearTicks = yearTick(xDomain).slice(1);
         // Remove obscure year-date from start of graph, i.e. "07-11-2023"
-        console.log(yearTicks);
+        // no tick line
+        /***
         svg.append("g")
             .attr("transform", `translate(0,${height - mobile_margin.bottom})`)
             .call(d3.axisBottom(x).tickValues(yearTicks).tickFormat(() => "").tickSize((-height) + (2 * mobile_margin.bottom)))
@@ -280,8 +311,8 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.5)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfOrange}`);
+        ***/
         yearTicks.forEach(tick => {
-          console.log(yearTicks)
           const tickDate = new Date(tick);
           const label = formatYear(tickDate);
           svg.append("text")
@@ -298,13 +329,16 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
   });
 }
 // draw ticks and labels on y-axis
-d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, tickCall:"ones"|"fives"|"tens", width: number, yDomain: number[], yRange: number[]) {
+d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, tickCall: string, width: number, yDomain: number[], yRange: number[]) {
 
   return this.each(function () {
+    // clean data
+    if (yDomain[0] < 0) {yDomain[0] *= -1}
     const svg = d3.select(this as T);
     const y = d3.scaleLinear()
            .range(yRange)
            .domain(yDomain)
+
     switch (tickCall) {
 
       case "ones":
@@ -329,6 +363,7 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "12")
                 .text(`${d3.format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
+        break;
 
       case "fives":
         const fives = fivesTick(yDomain[0], yDomain[1]);
@@ -352,6 +387,7 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "12")
                 .text(`${d3.format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
+        break;
 
       case "tens":
         const tens = tensTick(yDomain[0], yDomain[1]);
@@ -375,8 +411,9 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "14")
                 .text(`${d3.format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
+        break;
 
-      default:
+      case "cents":
         const cents = centsTick(yDomain[0], yDomain[1]);
         const centsAxis = svg.append("g")
             .attr("transform", `translate(${mobile_margin.left + 3}, 0)`)
@@ -398,6 +435,128 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "16")
                 .text(`${d3.format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
+        break;
+
+      case "tenKs":
+        const tenKs = tenKsTick(yDomain[0], yDomain[1]);
+        const tenKAxis = svg.append("g")
+            .attr("transform", `translate(${mobile_margin.left + 3}, 0)`)
+            .call(axisLeft(y)
+                 .tickValues(tenKs)
+                 .tickFormat(() => "")
+                 .tickSize((-width) + (2 * mobile_margin.left)))
+            .call(g => g.select(".domain").remove())
+            .attr("opacity", 0.40)
+            .selectAll(".tick line")
+            .attr("stroke", `${C.dfBrown}`);
+        //svg.centsAxis.selectAll('text').remove();
+        tenKs.forEach(tick => {
+            svg.append("text")
+                .attr("x", mobile_margin.left + 6)
+                .attr("y", y(tick))
+                .attr("text-anchor", "left")
+                .attr("fill", "#FF9151")
+                .style("font-size", "16")
+                .text(`${formatLargeInt(tick)}`) // Formatting tick value
+                .attr("opacity", 0.3);});
+        break;
+
+      case "hundredKs":
+        console.log("im called");
+        const hundredKs = hundredKsTick(yDomain[0], yDomain[1]);
+        const hundredKsAxis = svg.append("g")
+            .attr("transform", `translate(${mobile_margin.left + 3}, 0)`)
+            .call(axisLeft(y)
+                 .tickValues(hundredKs)
+                 .tickFormat(() => "")
+                 .tickSize((-width) + (2 * mobile_margin.left)))
+            .call(g => g.select(".domain").remove())
+            .attr("opacity", 0.40)
+            .selectAll(".tick line")
+            .attr("stroke", `${C.dfBrown}`);
+        //svg.centsAxis.selectAll('text').remove();
+        hundredKs.forEach(tick => {
+            svg.append("text")
+                .attr("x", mobile_margin.left + 6)
+                .attr("y", y(tick))
+                .attr("text-anchor", "left")
+                .attr("fill", "#FF9151")
+                .style("font-size", "16")
+                .text(`${formatLargeInt(tick)}`) // Formatting tick value
+                .attr("opacity", 0.3);});
+        break;
+
+      case "ms":
+        const ms = milsTick(yDomain[0], yDomain[1]);
+        const msAxis = svg.append("g")
+            .attr("transform", `translate(${mobile_margin.left + 3}, 0)`)
+            .call(axisLeft(y)
+                 .tickValues(ms)
+                 .tickFormat(() => "")
+                 .tickSize((-width) + (2 * mobile_margin.left)))
+            .call(g => g.select(".domain").remove())
+            .attr("opacity", 0.40)
+            .selectAll(".tick line")
+            .attr("stroke", `${C.dfBrown}`);
+        //svg.centsAxis.selectAll('text').remove();
+        ms.forEach(tick => {
+            svg.append("text")
+                .attr("x", mobile_margin.left + 6)
+                .attr("y", y(tick))
+                .attr("text-anchor", "left")
+                .attr("fill", "#FF9151")
+                .style("font-size", "16")
+                .text(`${formatLargeInt(tick)}`) // Formatting tick value
+                .attr("opacity", 0.3);});
+        break;
+
+      case "tenMs":
+        const tenMs = tenMilsTick(yDomain[0], yDomain[1]);
+        const tenMsAxis = svg.append("g")
+            .attr("transform", `translate(${mobile_margin.left + 3}, 0)`)
+            .call(axisLeft(y)
+                 .tickValues(tenMs)
+                 .tickFormat(() => "")
+                 .tickSize((-width) + (2 * mobile_margin.left)))
+            .call(g => g.select(".domain").remove())
+            .attr("opacity", 0.40)
+            .selectAll(".tick line")
+            .attr("stroke", `${C.dfBrown}`);
+        //svg.centsAxis.selectAll('text').remove();
+        tenMs.forEach(tick => {
+            svg.append("text")
+                .attr("x", mobile_margin.left + 6)
+                .attr("y", y(tick))
+                .attr("text-anchor", "left")
+                .attr("fill", "#FF9151")
+                .style("font-size", "16")
+                .text(`${formatLargeInt(tick)}`) // Formatting tick value
+                .attr("opacity", 0.3);});
+        break;
+
+      default: 
+        const hundredMs = hundredMilsTick(yDomain[0], yDomain[1]);
+        const hundredMsAxis = svg.append("g")
+            .attr("transform", `translate(${mobile_margin.left + 3}, 0)`)
+            .call(axisLeft(y)
+                 .tickValues(hundredMs)
+                 .tickFormat(() => "")
+                 .tickSize((-width) + (2 * mobile_margin.left)))
+            .call(g => g.select(".domain").remove())
+            .attr("opacity", 0.40)
+            .selectAll(".tick line")
+            .attr("stroke", `${C.dfBrown}`);
+        //svg.centsAxis.selectAll('text').remove();
+        hundredMs.forEach(tick => {
+            svg.append("text")
+                .attr("x", mobile_margin.left + 6)
+                .attr("y", y(tick))
+                .attr("text-anchor", "left")
+                .attr("fill", "#FF9151")
+                .style("font-size", "16")
+                .text(`${formatLargeInt(tick)}`) // Formatting tick value
+                .attr("opacity", 0.3);});
+         break;
     }
   });
 }
@@ -474,6 +633,47 @@ export const yBuffered = (minPrice: number, maxPrice: number): [number, number] 
 }
 
 // x and y -axis tick array creation functions
+export const hundredMilsTick = (min: number, max: number): number[] => {
+  const hundredMils: number[] = [];
+  for (let i = Math.ceil(min / 100000000) * 100000000; i <= max; 
+    i += 100000000) {
+    hundredMils.push(i);
+  }
+  return hundredMils;
+};
+
+export const tenMilsTick = (min: number, max: number): number[] => {
+  const tenMils: number[] = [];
+  for (let i = Math.ceil(min / 10000000) * 10000000; i <= max; i += 10000000) {
+    tenMils.push(i);
+  }
+  return tenMils;
+};
+
+export const milsTick = (min: number, max: number): number[] => {
+  const mils: number[] = [];
+  for (let i = Math.ceil(min / 1000000) * 1000000; i <= max; i += 1000000) {
+    mils.push(i);
+  }
+  return mils;
+};
+
+export const hundredKsTick = (min: number, max: number): number[] => {
+  const hundredKs: number[] = [];
+  for (let i = Math.ceil(min / 100000) * 100000; i <= max; i += 100000) {
+    hundredKs.push(i);
+  }
+  return hundredKs;
+};
+
+export const tenKTick = (min: number, max: number): number[] => {
+  const tenKs: number[] = [];
+  for (let i = Math.ceil(min / 10000) * 10000; i <= max; i += 10000) {
+    tenKs.push(i);
+  }
+  return tenKs;
+};
+
 export const centsTick = (min: number, max: number): number[] => {
   const cents: number[] = [];
   for (let i = Math.ceil(min / 100) * 100; i <= max; i += 100) {
