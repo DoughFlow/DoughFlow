@@ -4,8 +4,8 @@ import Fuse from "fuse.js";
 import stockList from "@/stocks.json";
 import { useStocks } from "@C/StockContext";
 import { fetchPriceData } from "@/_utils/fetchData";
-import { candlestickSVG } from "@/_utils/generateSVG";
 import Link from "next/link";
+import { searchPriceSvg } from "@/_utils/svg/SearchCandle";
 import { useRouter } from "next/navigation";
 
 interface Result {
@@ -42,13 +42,13 @@ const MainSearch: React.FC<{initText:string}> = ({initText})  => {
     if (value.length > 0) {
       const searchResults = fuse.search(value).slice(0, 5);
       const resultsWithGraphs = await Promise.all(searchResults.map(async (result) => {
-        const data = await fetchPriceData(result.item.ticker, "6m", "close");
-        const priceData = data.slice(-30);
+        const data = await fetchPriceData(result.item.ticker, "1m", "close");
+        const priceData = data.slice(-14);
         const lastData = priceData[priceData.length - 1];
         const lastPrice = lastData.close_price || 0;
-        let graphSVG = candlestickSVG(priceData, 115, 340);
+        let graphSVG = searchPriceSvg(priceData, 150, 400);
         if (640 > window.innerWidth) {
-          graphSVG = candlestickSVG(priceData, 75, 150);
+          graphSVG = searchPriceSvg(priceData, 100, 225);
         }
 
         return {
@@ -81,8 +81,7 @@ const MainSearch: React.FC<{initText:string}> = ({initText})  => {
               flex flex-row justify-between border-t-2 py-2">
               <div className="flex items-center text-sm sm:text-xl">
                 <div>
-                  <div>{result.ticker} - ${result.lastPrice ? result.lastPrice : "N/A"}</div>
-                  <div>{result.company}</div>
+                  <div className="mr-2">{result.company}</div>
                 </div>
               </div>
               <div dangerouslySetInnerHTML={{ __html: result.graph || "" }} />
