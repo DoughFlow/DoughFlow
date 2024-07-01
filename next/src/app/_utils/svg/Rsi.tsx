@@ -4,13 +4,13 @@ import {
     utcFormat, format, create, line
 } from "d3";
 import { 
-    margin, yBuffered, centTick, tensTick, fivesTick, onesTick, yearTick,
-    threeMonthsTick, monthTick, weekStartTick, dayTick
+    margin, yBuffered, centsTick, tensTick, fivesTick, onesTick, yearTick,
+    threeMonthTick, monthTick, weekStartTick, dayTick
 } from "./Generate";
 
 
 export const rsiSvg = (data: rsiDataPoint[], height: number, width: number,
-ticker: string, time: string, scalar: number): string => {
+ticker: string, time: string): string => {
     const calculateOpacity = (yValue: number) => {
         const distanceFromBottom = height - margin.bottom - yValue;
         return Math.max(0.1, 1 - (distanceFromBottom / (height - margin.bottom)));

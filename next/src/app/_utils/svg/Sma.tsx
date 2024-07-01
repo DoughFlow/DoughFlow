@@ -10,7 +10,7 @@ import {
 
 
 export const smaSvg = (data: smaDataPoint[], height: number, width: number,
-ticker: string, time: string, scalar: number): string => {
+ticker: string, time: string): string => {
 
     const stringList = data.map((d) => String(d.timestamp));
     const formatMonth = utcFormat("%b");

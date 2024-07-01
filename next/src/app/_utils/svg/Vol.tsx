@@ -9,7 +9,7 @@ import {
 } from "./Generate";
 
 export const volSvg = (data: volDataPoint[], height: number, width: number,
-ticker: string, time: string, scalar: number): string => {
+ticker: string, time: string): string => {
     const calculateOpacity = (yValue: number) => {
         const distanceFromBottom = height - margin.bottom - yValue;
         return Math.max(0.1, 1 - (distanceFromBottom / (height - margin.bottom)));

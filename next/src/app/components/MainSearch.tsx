@@ -64,7 +64,7 @@ const MainSearch: React.FC<{initText:string}> = ({initText})  => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-[20rem] sm:w-[36rem]">
+    <div className="flex flex-col justify-center items-center w-[20rem] sm:w-[36rem] select-none cursor-pointer">
       <input
         type="text"
         value={query}
