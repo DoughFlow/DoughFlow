@@ -166,7 +166,7 @@ ticker: string, time: string, scalar: number): string => {
                 .text(`${format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);
         });
-    } else {
+    } /*** else {
         const tens = tensTick(yDomain[0], yDomain[1]);
         const tensAxis = svg.append("g")
            .attr("transform", `translate(${margin.left + 3}, 0)`)
@@ -189,7 +189,7 @@ ticker: string, time: string, scalar: number): string => {
                 .text(`${format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);
         });
-    }
+    }***/
 
     if (time === "1m") {
         // x axis

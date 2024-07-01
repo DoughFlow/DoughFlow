@@ -4,6 +4,7 @@ import { smaSvg } from "./Sma"
 import { rsiSvg } from "./Rsi"
 import { Stock } from "@/components/StockContext";
 import * as d3 from "d3";
+import {axisLeft} from "d3";
 
 // globals
 export const margin = { top: 16, right: 20, bottom: 16, left: 20 };
@@ -27,23 +28,145 @@ export enum C {
 }
 
 // d3 prototype chained-method functions
-d3.selection.prototype.yCentTicks = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, minVal: number, maxVal: number) {
 
-  const cents = centTick(minVal, maxVal);
+// generate y-axis using tickGenerator and ticks functions
+d3.selection.prototype.yAxisGenerator = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, width: number, yDomain: number[], yRange: number[]) {
+  console.log(yDomain);
+  const range = yDomain[1] - yDomain[0];
 
-return this.each(function () {
-  const svg = d3.select(this as T);
+  return this.each(function () {
+    const svg = d3.select(this as T);
+    if (range < 20) {
+      svg.tickGenerator("ones", width, yDomain, yRange);
+      svg.tickGenerator("fives", width, yDomain, yRange);
+      svg.tickGenerator("tens", width, yDomain, yRange);
+    } else if (range < 60) {
+      svg.tickGenerator("fives", width, yDomain, yRange);
+      svg.tickGenerator("tens", width, yDomain, yRange);
+    } else {
+      svg.tickGenerator("tens", width, yDomain, yRange);
+    }
+    if (range < 5000) {
+    // tens and cents on every graph for non-volume
+    svg.tickGenerator("tens", width, yDomain, yRange);
+    svg.tickGenerator("cents", width, yDomain, yRange);
+    }
 
 });
 }
+// draw ticks and labels on y-axis
+d3.selection.prototype.tickGenerator = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, tickCall:"ones"|"fives"|"tens", width: number, yDomain: number[], yRange: number[]) {
 
+  return this.each(function () {
+    const svg = d3.select(this as T);
+    const y = d3.scaleLinear()
+           .range(yRange)
+           .domain(yDomain)
+    switch (tickCall) {
 
+      case "ones":
+        const ones = onesTick(yDomain[0], yDomain[1]);
+        svg.append("g")
+            .attr("transform", `translate(${mobile_margin.left + 3}, 0)`)
+            .call(d3.axisLeft(y)
+                .tickValues(ones)
+                .tickFormat(() => "")
+                .tickSize((-width) + (2 * mobile_margin.left)))
+            .call(g => g.select(".domain").remove())
+            .attr("opacity", 0.16)
+            .selectAll(".tick line")
+            .attr("stroke", `${C.dfGold}`);
+        //svg.selectAll('text').remove();
+        ones.forEach(tick => {
+            svg.append("text")
+                .attr("x", mobile_margin.left + 6)
+                .attr("y", y(tick))
+                .attr("text-anchor", "left")
+                .attr("fill", "#FF9151")
+                .style("font-size", "12")
+                .text(`${d3.format(",")(tick)}`) // Formatting tick value
+                .attr("opacity", 0.3);});
+
+      case "fives":
+        const fives = fivesTick(yDomain[0], yDomain[1]);
+        svg.append("g")
+            .attr("transform", `translate(${mobile_margin.left + 3}, 0)`)
+            .call(d3.axisLeft(y)
+                 .tickValues(fives)
+                 .tickFormat(() => "")
+                 .tickSize((-width) + (2 * mobile_margin.left)))
+            .call(g => g.select(".domain").remove())
+            .attr("opacity", 0.25)
+            .selectAll(".tick line")
+            .attr("stroke", `${C.dfGray}`);
+        //svg.fivesAxis.selectAll('text').remove();
+        fives.forEach(tick => {
+            svg.append("text")
+                .attr("x", mobile_margin.left + 6)
+                .attr("y", y(tick))
+                .attr("text-anchor", "left")
+                .attr("fill", "#FF9151")
+                .style("font-size", "12")
+                .text(`${d3.format(",")(tick)}`) // Formatting tick value
+                .attr("opacity", 0.3);});
+
+      case "tens":
+        const tens = tensTick(yDomain[0], yDomain[1]);
+        svg.append("g")
+            .attr("transform", `translate(${mobile_margin.left + 3}, 0)`)
+            .call(d3.axisLeft(y)
+                 .tickValues(tens)
+                 .tickFormat(() => "")
+                 .tickSize((-width) + (2 * mobile_margin.left)))
+            .call(g => g.select(".domain").remove())
+            .attr("opacity", 0.11)
+            .selectAll(".tick line")
+            .attr("stroke", `${C.dfGold}`);
+        //svg.tensAxis.selectAll('text').remove();
+        tens.forEach(tick => {
+            svg.append("text")
+                .attr("x", mobile_margin.left + 6)
+                .attr("y", y(tick))
+                .attr("text-anchor", "left")
+                .attr("fill", "#FF9151")
+                .style("font-size", "14")
+                .text(`${d3.format(",")(tick)}`) // Formatting tick value
+                .attr("opacity", 0.3);});
+
+      default:
+        const cents = centTick(yDomain[0], yDomain[1]);
+        const centsAxis = svg.append("g")
+            .attr("transform", `translate(${mobile_margin.left + 3}, 0)`)
+            .call(axisLeft(y)
+                 .tickValues(cents)
+                 .tickFormat(() => "")
+                 .tickSize((-width) + (2 * mobile_margin.left)))
+            .call(g => g.select(".domain").remove())
+            .attr("opacity", 0.40)
+            .selectAll(".tick line")
+            .attr("stroke", `${C.dfBrown}`);
+        //svg.centsAxis.selectAll('text').remove();
+        cents.forEach(tick => {
+            svg.append("text")
+                .attr("x", mobile_margin.left + 6)
+                .attr("y", y(tick))
+                .attr("text-anchor", "left")
+                .attr("fill", "#FF9151")
+                .style("font-size", "16")
+                .text(`${d3.format(",")(tick)}`) // Formatting tick value
+                .attr("opacity", 0.3);});
+    }
+  });
+}
+// format and draw the company's ticker on graph background
 d3.selection.prototype.backgroundTicker = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, width: number, height: number, ticker: string) {
 
-return this.each(function () {
+  return this.each(function () {
   const svg = d3.select(this as T);
-
+    
     const mobile = width < 935 || height < 935 ? true: false
+
+    svg.append("text")
 
     if (mobile) {
 
@@ -51,7 +174,7 @@ return this.each(function () {
     if (width > height * 1.15 && width < 1499) {
       svg.attr("x", `${mobile_margin.right * 2.5}px`)
       svg.attr("y", `${0 + height*.93}px`)
-      width > 750 ? svg.attr("font-size", `${height * .55}px`)
+      width > 750 ? svg.attr("font-size", `${height * .67}px`)
                   : svg.attr("font-size", `${height * .36}px`);
     } else 
     if (width > 1500) {
@@ -85,23 +208,16 @@ return this.each(function () {
 });
 }
 
-
-d3.selection.prototype.background = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, width: number, height: number) {
-
-return this.each(function () {
-  const svg = d3.select(this as T);
-  svg.attr("width", width).attr("height", height)
-  .style("background", `${C.dfBlack}`);
-});
-}
-
-// add functions to global module type declarations
+// add functions to project-wide method declarations
 declare module "d3" {
   interface Selection<GElement extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum> {
     backgroundTicker(width: number, height: number, ticker: string): this;
    }
   interface Selection<GElement extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum> {
-    background(width: number, height: number): this;
+    yAxisGenerator(width: number, yDomain: number[], yRange: number[]): this;
+   }
+  interface Selection<GElement extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum> {
+    tickGenerator(tickCall: string, width: number, yDomain: number[], yRange: number[]): this;
    }
 }
 
@@ -113,6 +229,7 @@ export const yBuffered = (minPrice: number, maxPrice: number): [number, number] 
   return [bufferedMinPrice, bufferedMaxPrice];
 }
 
+// x and y -axis tick array creation functions
 export const centTick = (min: number, max: number): number[] => {
   const cents: number[] = [];
   for (let i = Math.ceil(min / 100) * 100; i <= max; i += 100) {
@@ -234,18 +351,18 @@ export const dayTick = (stringList: string[]): string[] => {
   return ticks;
 }; 
 
-export const generateSvg =  (data: any, stock: Stock, height: number, width: number, scalar: number): string => {
+export const generateSvg =  (data: any, stock: Stock, height: number, width: number, viewHeight: number): string => {
         if (stock.value === "price") {
-            const svg = priceSvg(data, height, width, stock.time);
+            const svg = priceSvg(data, height, width, stock.time, viewHeight);
             return svg;
         } else if (stock.value === "vol") {
-            const svg = volSvg(data, height, width, stock.ticker, stock.time);
+            const svg = volSvg(data, height, width, stock.ticker, stock.time, viewHeight);
             return svg;
         } else if (stock.value === "sma") {
-            const svg = smaSvg(data, height, width, stock.ticker, stock.time);
+            const svg = smaSvg(data, height, width, stock.ticker, stock.time, viewHeight);
             return svg;
         } else {
-            const svg = rsiSvg(data, height, width, stock.ticker, stock.time);
+            const svg = rsiSvg(data, height, width, stock.ticker, stock.time, viewHeight);
             return svg;
         }
 }

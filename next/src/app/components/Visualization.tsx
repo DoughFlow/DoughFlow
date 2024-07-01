@@ -13,7 +13,7 @@ const Visualization = () => {
     };
 
     return (
-      <div className="flex flex-col min-h-screen min-w-screen m-0 z-0">
+      <div className="flex flex-col min-h-screen min-w-screen m-0 z-0 select-none">
         <div className="flex flex-row">
           {renderStockSVG(0)}
           {renderStockSVG(3)}

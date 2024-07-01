@@ -62,7 +62,7 @@
   }
 
   .desktop-company-text {
-    @apply text-[.55rem] max-w-[11rem] mt-[5.5rem] ml-[.15rem] ;
+    @apply text-[.7rem] max-w-[11rem] mt-[5.6rem] ml-[.15rem] leading-[.6rem];
   }
 
   .desktop-dropdown-styles {
@@ -94,7 +94,7 @@
   }
 
   .user-guide-styles {
-    @apply absolute flex text-dfWhiteTwo text-[.85rem] bg-dfGray w-[18rem] 
+    @apply absolute flex text-dfWhiteTwo text-[.825rem] bg-dfGray w-[18rem] 
     px-2 ml-[1rem] mt-[.8rem];
   }
 

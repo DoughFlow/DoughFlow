@@ -23,7 +23,7 @@ const UI: React.FC<
   const wrappedClick = (event: any) => {
     if (buttonRef.current) { 
       const newPosn = buttonRef.current.getBoundingClientRect();
-      if (Math.abs(newPosn.left - posn.x) > 40) {
+      if (Math.abs(newPosn.left - posn.x) > 40 || Math.abs(newPosn.top - posn.y) > 40) {
         setPosn({x: newPosn.left, y: newPosn.top})}}
     click(event);
   }
@@ -130,7 +130,7 @@ const UI: React.FC<
 
 
       return (
-      <div className="mt-[.05rem]">
+      <div className="">
         <input
         ref={searchRef}
         type="text"
@@ -153,9 +153,9 @@ const UI: React.FC<
           </div>)
         }
         { results.length === 0 && (
-          <div className="hidden sm:user-guide-styles">
-            Click a stock in the menu to edit, search using the searchbar to
-            find new stocks
+          <div className="hidden md:user-guide-styles">
+            Click a stock in the menu to edit & begin a search, 
+            tap outside of the menu to close it.
           </div>)
         }
       </div>
@@ -298,7 +298,7 @@ const UI: React.FC<
           { (stocks.length < 5) && (
             <div className={`text-sm sm:text-lg border-t border-l border-r
             rounded-t-xl overflow-hidden px-2 pb-[.1rem] border-dfYellow 
-            text-dfGold text-opacity-75
+            text-dfGold text-opacity-75 
             ${stocks.length > 1 ? "hidden sm:block" : ""}`}
             onClick={AddStock} title="">
               + stock
@@ -309,7 +309,7 @@ const UI: React.FC<
     );
   }
 
-return (<div className="absolute w-full h-full flex flex-col items-center"> 
+return (<div className="absolute w-full h-full flex flex-col items-center select-none"> 
           {editor? <Editor /> : <Button />} 
         </div>);
 }
