@@ -78,13 +78,14 @@ const MainSearch: React.FC<{initText:string}> = ({initText})  => {
         <div className="flex flex-col w-[22rem] sm:w-[42rem]">
           {results.map((result: Result, index: number) => (
             <div onClick={()=>handleClick(result)} key={index} className="
-              flex flex-row justify-between border-t-2 py-2">
+              flex flex-row justify-between border-t-2 border-t-dfyellow py-2 bg-dfBlack
+              rounded-md">
               <div className="flex items-center text-sm sm:text-xl">
                 <div>
-                  <div className="mr-2">{result.company}</div>
+                  <div className="m-2 text-dfyellow">{result.company}</div>
                 </div>
               </div>
-              <div dangerouslySetInnerHTML={{ __html: result.graph || "" }} />
+              <div className="mr-4" dangerouslySetInnerHTML={{ __html: result.graph || "" }} />
             </div>
           ))}
         </div>
