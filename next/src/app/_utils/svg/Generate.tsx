@@ -52,10 +52,6 @@ declare module "d3" {
 // generate x-axis using xTickGenerator and "*Tick" functions
 d3.selection.prototype.xAxisGenerator = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, width: number, height: number, xDomain: string[], xRange: number[]) {
 
-  // DesktopSmallest: 639 (1.1888) DesktopFourth: 960 (1.777) DesktopLong: 1920 duh h=540
-  // (Vertical) IPhone SE: 375x667 (.56) IPhone 14PM: 430x932 (.46)
-  // (Horizontal) SE: (1.777) PM: (2.16)
-
   const len = xDomain.length;
   return this.each(function () {
   const svg = d3.select(this as T);
@@ -134,6 +130,7 @@ d3.selection.prototype.xAxisGenerator = function<T extends d3.BaseType, Datum, P
   }
   });
 }
+
 // generate y-axis using yTickGenerator and "*Tick"functions
 d3.selection.prototype.yAxisGenerator = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, width: number, yDomain: number[], yRange: number[]) {
   const range = yDomain[1] - yDomain[0];
@@ -184,13 +181,14 @@ d3.selection.prototype.yAxisGenerator = function<T extends d3.BaseType, Datum, P
 
       }
     }
-    
+
+    // add hundreds to all graphs regardless of range
     if (range < 1000) {
     svg.yTickGenerator("cents", width, yDomain, yRange);
     }
-
 });
 }
+
 // draw ticks and labels on y-axis
 d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, tickCall:"days"|"Ldays"|"weeks"|"months"|"threeMonths"|"years", textSize: number, height: number, xDomain: string[], xRange: number[], t: boolean) {
   return this.each(function () {
@@ -223,7 +221,7 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", `${textSize}px`)
                 .text(label.toUpperCase())
                 .attr("opacity", 0.6);});
-        break;
+            break;
 
       case "weeks":        
       const weekTicks = tradingWeekTick(xDomain)
@@ -248,7 +246,7 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", `${textSize}px`)
                 .text(label.toUpperCase())
                 .attr("opacity", 0.6);});
-        break;
+            break;
 
       case "months":        
         const monthTicks = monthTick(xDomain)
@@ -273,7 +271,7 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", `${textSize}px`)
                 .text(label.toUpperCase())
                 .attr("opacity", 0.6);});
-        break;
+            break;
 
       case "threeMonths":        
         const threeMonthTicks = threeMonthTick(xDomain)
@@ -297,21 +295,10 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", `${textSize}px`)
                 .text(label.toUpperCase())
                 .attr("opacity", 0.6);});
-        break;
+            break;
 
       case "years":
         const yearTicks = yearTick(xDomain).slice(1);
-        // Remove obscure year-date from start of graph, i.e. "07-11-2023"
-        // no tick line
-        /***
-        svg.append("g")
-            .attr("transform", `translate(0,${height - mobile_margin.bottom})`)
-            .call(d3.axisBottom(x).tickValues(yearTicks).tickFormat(() => "").tickSize((-height) + (2 * mobile_margin.bottom)))
-            .call(g => g.select(".domain").remove())
-            .attr("opacity", 0.5)
-            .selectAll(".tick line")
-            .attr("stroke", `${C.dfOrange}`);
-        ***/
         yearTicks.forEach(tick => {
           const tickDate = new Date(tick);
           const label = formatYear(tickDate);
@@ -324,10 +311,11 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
               .text(label.toUpperCase())
               .text(label.toUpperCase())
               .attr("opacity", 0.6);});
-
+          break;
     }
   });
 }
+
 // draw ticks and labels on y-axis
 d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, tickCall: string, width: number, yDomain: number[], yRange: number[]) {
 
@@ -353,7 +341,6 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.16)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfGold}`);
-        //svg.selectAll('text').remove();
         ones.forEach(tick => {
             svg.append("text")
                 .attr("x", mobile_margin.left + 6)
@@ -363,7 +350,7 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "12")
                 .text(`${d3.format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
-        break;
+            break;
 
       case "fives":
         const fives = fivesTick(yDomain[0], yDomain[1]);
@@ -377,7 +364,6 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.25)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfGray}`);
-        //svg.fivesAxis.selectAll('text').remove();
         fives.forEach(tick => {
             svg.append("text")
                 .attr("x", mobile_margin.left + 6)
@@ -387,7 +373,7 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "12")
                 .text(`${d3.format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
-        break;
+            break;
 
       case "tens":
         const tens = tensTick(yDomain[0], yDomain[1]);
@@ -401,7 +387,6 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.11)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfGold}`);
-        //svg.tensAxis.selectAll('text').remove();
         tens.forEach(tick => {
             svg.append("text")
                 .attr("x", mobile_margin.left + 6)
@@ -411,7 +396,7 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "14")
                 .text(`${d3.format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
-        break;
+            break;
 
       case "cents":
         const cents = centsTick(yDomain[0], yDomain[1]);
@@ -425,7 +410,6 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.40)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfBrown}`);
-        //svg.centsAxis.selectAll('text').remove();
         cents.forEach(tick => {
             svg.append("text")
                 .attr("x", mobile_margin.left + 6)
@@ -435,7 +419,7 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "16")
                 .text(`${d3.format(",")(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
-        break;
+            break;
 
       case "tenKs":
         const tenKs = tenKsTick(yDomain[0], yDomain[1]);
@@ -449,7 +433,6 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.40)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfBrown}`);
-        //svg.centsAxis.selectAll('text').remove();
         tenKs.forEach(tick => {
             svg.append("text")
                 .attr("x", mobile_margin.left + 6)
@@ -459,7 +442,7 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "16")
                 .text(`${formatLargeInt(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
-        break;
+            break;
 
       case "hundredKs":
         console.log("im called");
@@ -474,7 +457,6 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.40)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfBrown}`);
-        //svg.centsAxis.selectAll('text').remove();
         hundredKs.forEach(tick => {
             svg.append("text")
                 .attr("x", mobile_margin.left + 6)
@@ -484,7 +466,7 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "16")
                 .text(`${formatLargeInt(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
-        break;
+            break;
 
       case "ms":
         const ms = milsTick(yDomain[0], yDomain[1]);
@@ -498,7 +480,6 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.40)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfBrown}`);
-        //svg.centsAxis.selectAll('text').remove();
         ms.forEach(tick => {
             svg.append("text")
                 .attr("x", mobile_margin.left + 6)
@@ -508,7 +489,7 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "16")
                 .text(`${formatLargeInt(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
-        break;
+            break;
 
       case "tenMs":
         const tenMs = tenMilsTick(yDomain[0], yDomain[1]);
@@ -522,7 +503,6 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.40)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfBrown}`);
-        //svg.centsAxis.selectAll('text').remove();
         tenMs.forEach(tick => {
             svg.append("text")
                 .attr("x", mobile_margin.left + 6)
@@ -532,7 +512,7 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "16")
                 .text(`${formatLargeInt(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
-        break;
+            break;
 
       default: 
         const hundredMs = hundredMilsTick(yDomain[0], yDomain[1]);
@@ -546,7 +526,6 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.40)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfBrown}`);
-        //svg.centsAxis.selectAll('text').remove();
         hundredMs.forEach(tick => {
             svg.append("text")
                 .attr("x", mobile_margin.left + 6)
@@ -556,50 +535,31 @@ d3.selection.prototype.yTickGenerator = function<T extends d3.BaseType, Datum, P
                 .style("font-size", "16")
                 .text(`${formatLargeInt(tick)}`) // Formatting tick value
                 .attr("opacity", 0.3);});
-         break;
+            break;
     }
   });
 }
+
 // format and draw the company's ticker on graph background
 d3.selection.prototype.backgroundTicker = function<T extends d3.BaseType, Datum, PElement extends d3.BaseType, PDatum>(this: d3.Selection<T, Datum, PElement, PDatum>, width: number, height: number, ticker: string) {
 
   return this.each(function () {
-  const svg = d3.select(this as T);
-    
-    const mobile = width < 935 || height < 935 ? true: false
-
+    const svg = d3.select(this as T);
     svg.append("text")
 
-    if (mobile) {
-
-    // mobile/small desktop turned view
-    if (width > height * 1.15 && width < 1499) {
-      svg.attr("x", `${mobile_margin.right * 2.5}px`)
-      svg.attr("y", `${0 + height*.93}px`)
-      width > 750 ? svg.attr("font-size", `${height * .67}px`)
-                  : svg.attr("font-size", `${height * .59}px`);
-    } else 
-    if (width > 1500) {
-      svg.attr("x", `${mobile_margin.right * 2.5}px`)
-      svg.attr("y", `${0 + height*.93}px`)
-      svg.attr("font-size", `${height * .88}px`)
-    }
-    // mobile/small desktop vertical view
+    // mobile view (1 stock vertical view)
+    if (height > 650 && width / height < .69) {
+        svg.attr("x", `0px`)
+        svg.attr("y", `0px`)
+        height < 800 ? svg.attr("transform", "translate(25 100) rotate(69)")
+                     : svg.attr("transform", "translate(25 175) rotate(69)")
+        svg.attr("font-size", `${width*.525}px`)}
+    
+    // desktop and horizontal view mobile
     else {
-      svg.attr("font-size", `${height * .26}px`);
-      height / width < 1.3 ? svg.attr("x", `${mobile_margin.right * 8}px`)
-                                .attr("y", `${-2 * mobile_margin.top}px`)
-                           : svg.attr("x", `${mobile_margin.right * 8}px`)
-                                .attr("y", `${mobile_margin.right * 4}px`)
-      height > 825 ? svg.attr("transform", "rotate(69)") 
-                  : svg.attr("transform", "rotate(61)") 
-    } 
-    }
-    else {
-      svg.attr("x", `${mobile_margin.right * 2.5}px`)
-      svg.attr("y", `${0 + height*.93}px`)
-      svg.attr("font-size", `${height * .63}px`)
-      svg.attr("opacity", 0.15)
+        svg.attr("x", `${mobile_margin.right*2}px`)
+        .attr("y", `${height*.93}px`)
+        .attr("font-size", `${width*.25}px`)
     }
 
     // global background styles
@@ -666,7 +626,7 @@ export const hundredKsTick = (min: number, max: number): number[] => {
   return hundredKs;
 };
 
-export const tenKTick = (min: number, max: number): number[] => {
+export const tenKsTick = (min: number, max: number): number[] => {
   const tenKs: number[] = [];
   for (let i = Math.ceil(min / 10000) * 10000; i <= max; i += 10000) {
     tenKs.push(i);
