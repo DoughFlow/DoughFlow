@@ -26,13 +26,13 @@
 
   {/* Button Component */}
   .desktop-outer-button {
-    @apply w-[11rem] h-[8.5rem] bg-dfYellow bg-opacity-90 border-2
-    border-dfGold border-opacity-25 ;
+    @apply w-[10.5rem] h-[8rem] bg-dfGray bg-opacity-10 border-2
+    border-dfGold border-opacity-15 ;
   }
 
   .desktop-button-styles {
-    @apply rounded-sm w-[7rem] h-[4.85rem] border-2 border-dfGray
-    border-opacity-60 ;
+    @apply rounded-sm w-[6rem] h-[4rem] border-2 border-dfBrown
+    border-opacity-40 ;
   }
 
   .desktop-ui-layout {
@@ -80,12 +80,12 @@
     ml-[0.5rem] justify-center;
   }
   .desktop-button-logo-f {
-    @apply text-[3.5rem] top-[2.65rem] left-[4.65rem] leading-[3rem] 
+    @apply text-[3rem] top-[2.45rem] left-[4.55rem] leading-[3rem] 
     pointer-events-none inline-block;
   }
   
   .desktop-button-logo-d {
-    @apply text-[6rem] leading-[3rem] top-[2.5rem] left-[3.15rem] inline-block
+    @apply text-[5rem] leading-[3rem] top-[2.3rem] left-[3.35rem] inline-block
     pointer-events-none;
   }
 

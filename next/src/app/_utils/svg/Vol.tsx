@@ -3,7 +3,7 @@ import { scaleBand, scaleLinear, create } from "d3";
 import { margin, yBuffered, C, mobile_margin } from "./Generate";
 
 export const volSvg = (data: volDataPoint[], height: number, width: number,
-ticker: string, time: string): string => {
+ticker: string): string => {
   /***
     const calculateOpacity = (yValue: number) => {
         const distanceFromBottom = height - margin.bottom - yValue;
@@ -17,7 +17,7 @@ ticker: string, time: string): string => {
     const timeMax = Math.max(...data.map(d => +d.vol));
     const yDomain = yBuffered(timeMin, timeMax);
     const yRange = [height - margin.top, margin.bottom];
-    const xRange = [mobile_margin.left, width - mobile_margin.right];
+    const xRange = [mobile_margin.right*2, width - mobile_margin.right];
     const y = scaleLinear()
         .range(yRange)
         .domain(yDomain);

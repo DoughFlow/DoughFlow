@@ -59,7 +59,7 @@ d3.selection.prototype.xAxisGenerator = function<T extends d3.BaseType, Datum, P
   // mobile vertical graph
   if (width / height < .75) {
     if (len < 40) {
-      svg.xTickGenerator("days", 11, height, xDomain, xRange, false)
+      svg.xTickGenerator("days", 0, height, xDomain, xRange, false)
       svg.xTickGenerator("weeks", 16, height, xDomain, xRange, false)}
     else if (len < 80) {
       svg.xTickGenerator("months", 18, height, xDomain, xRange, false)}
@@ -204,7 +204,7 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
         const LdayTicks = xDomain;
         svg.append("g")
             .attr("transform", `translate(0,${height - mobile_margin.bottom})`)
-            .call(d3.axisBottom(x).tickValues(LdayTicks.slice(1)).tickFormat(() => "").tickSize((-height) + (2 * mobile_margin.bottom)))
+            .call(d3.axisBottom(x).tickValues(LdayTicks).tickFormat(() => "").tickSize((-height) + (2 * mobile_margin.bottom)))
             .call(g => g.select(".domain").remove())
             .attr("opacity", 0.2)
             .selectAll(".tick line")
@@ -227,7 +227,7 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
       const weekTicks = tradingWeekTick(xDomain)
         svg.append("g")
             .attr("transform", `translate(0,${height - mobile_margin.bottom})`)
-            .call(d3.axisBottom(x).tickValues(weekTicks.slice(1)).tickFormat(() => "").tickSize((-height) + (2*mobile_margin.bottom)))
+            .call(d3.axisBottom(x).tickValues(weekTicks).tickFormat(() => "").tickSize((-height) + (2*mobile_margin.bottom)))
             .call(g => g.select(".domain").remove())
             .attr("opacity", 0.24)
             .selectAll(".tick line")
@@ -249,15 +249,15 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
             break;
 
       case "months":        
-        const monthTicks = monthTick(xDomain)
+        let monthTicks = monthTick(xDomain)
         svg.append("g")
             .attr("transform", `translate(0,${height - mobile_margin.bottom})`)
-            .call(d3.axisBottom(x).tickValues(monthTicks.slice(1)).tickFormat(() => "").tickSize((-height) + (2 * mobile_margin.bottom)))
+            .call(d3.axisBottom(x).tickValues(monthTicks).tickFormat(() => "").tickSize((-height) + (2 * mobile_margin.bottom)))
             .call(g => g.select(".domain").remove())
             .attr("opacity", 0.45)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfYellow}`);
-        monthTicks.forEach(tick => {
+        monthTicks.slice(0, -1).forEach(tick => {
             const tickDate = new Date(tick);
             const label = formatMonth(tickDate);
             svg.append("text")
@@ -277,12 +277,12 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
         const threeMonthTicks = threeMonthTick(xDomain)
         svg.append("g")
             .attr("transform", `translate(0,${height - mobile_margin.bottom})`)
-            .call(d3.axisBottom(x).tickValues(threeMonthTicks.slice(1)).tickFormat(() => "").tickSize((-height) + (2 * mobile_margin.bottom)))
+            .call(d3.axisBottom(x).tickValues(threeMonthTicks).tickFormat(() => "").tickSize((-height) + (2 * mobile_margin.bottom)))
             .call(g => g.select(".domain").remove())
             .attr("opacity", 0.3)
             .selectAll(".tick line")
             .attr("stroke", "#FFE4D1");
-        threeMonthTicks.forEach(tick => {
+        threeMonthTicks.slice(0, -1).forEach(tick => {
             const tickDate = new Date(tick);
             const label = formatMonth(tickDate);
             svg.append("text")
@@ -746,16 +746,16 @@ export const dayTick = (stringList: string[]): string[] => {
 
 export const generateSvg =  (data: any, stock: Stock, height: number, width: number): string => {
         if (stock.value === "price") {
-            const svg = priceSvg(data, height, width, stock.time);
+            const svg = priceSvg(data, height, width);
             return svg;
         } else if (stock.value === "vol") {
-            const svg = volSvg(data, height, width, stock.ticker, stock.time);
+            const svg = volSvg(data, height, width, stock.ticker);
             return svg;
         } else if (stock.value === "sma") {
-            const svg = smaSvg(data, height, width, stock.ticker, stock.time);
+            const svg = smaSvg(data, height, width, stock.ticker);
             return svg;
         } else {
-            const svg = rsiSvg(data, height, width, stock.ticker, stock.time);
+            const svg = rsiSvg(data, height, width, stock.ticker);
             return svg;
         }
 }

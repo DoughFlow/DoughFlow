@@ -1,16 +1,9 @@
 import { smaDataPoint } from "../fetchData";
-import {
-    scaleBand, scaleLinear, axisBottom, axisLeft, utcMonday, utcMonth,
-    utcFormat, format, create, line
-} from "d3";
-import { 
-    margin, yBuffered, centTick, tensTick, fivesTick, onesTick, yearTick,
-    threeMonthsTick, monthTick, weekStartTick, dayTick, C
-} from "./Generate";
-
+import { scaleBand, scaleLinear, utcFormat, create, line } from "d3";
+import { margin, yBuffered, C, mobile_margin } from "./Generate";
 
 export const smaSvg = (data: smaDataPoint[], height: number, width: number,
-ticker: string, time: string): string => {
+ticker: string): string => {
 
     const stringList = data.map((d) => String(d.timestamp));
     const formatMonth = utcFormat("%b");
@@ -19,7 +12,7 @@ ticker: string, time: string): string => {
     const timeMax = Math.max(...data.map(d => +d.sma));
     const yDomain = yBuffered(timeMin, timeMax);
     const yRange = [height - margin.top, 0 + margin.bottom]
-    const xRange = [margin.left, width - margin.right]
+    const xRange = [mobile_margin.right*2, width - margin.right]
 
     const svg = create("svg")
       .attr("width", width)

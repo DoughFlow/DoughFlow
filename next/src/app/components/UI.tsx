@@ -13,7 +13,7 @@ const UI: React.FC<
   { editor: boolean, click: (event: any)  => void }> = ({editor, click}) => { 
 
   /* Function Scoped Variable for Rendering Button */  
-  const [posn, setPosn] = useState<{x: number, y: number}>({x: 35, y: 40});
+  const [posn, setPosn] = useState<{x: number, y: number}>({x: 80, y: 40});
 
   const Button = () => {
 
@@ -40,7 +40,7 @@ const UI: React.FC<
     border-2 border-dfGray rounded-md cursor-move bg-opacity-0 
     bg-dfYellow border-opacity-35 md:desktop-outer-button">
       <div className="z-2">
-        <div className="absolute top-2 left-2 opacity-50 hidden md:block">
+        <div className="absolute top-2 left-2 opacity-65 hidden md:block">
           <Icon w={18} h={18}/>
         </div>
         <button className="btn w-[3rem] h-[3rem] bg-dfYellow

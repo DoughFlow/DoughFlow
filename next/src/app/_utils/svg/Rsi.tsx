@@ -1,28 +1,16 @@
 import { rsiDataPoint } from "../fetchData";
-import {
-    scaleBand, scaleLinear, axisBottom, axisLeft, utcMonday, utcMonth,
-    utcFormat, format, create, line
-} from "d3";
-import { 
-    margin, yBuffered, centsTick, tensTick, fivesTick, onesTick, yearTick,
-    threeMonthTick, monthTick, weekStartTick, dayTick
-} from "./Generate";
+import { scaleBand, scaleLinear, utcFormat, create, line } from "d3";
+import { margin, yBuffered, mobile_margin } from "./Generate";
 
+export const rsiSvg = (data: rsiDataPoint[], height: number, width: number, 
+ticker: string): string => {
 
-export const rsiSvg = (data: rsiDataPoint[], height: number, width: number,
-ticker: string, time: string): string => {
-    const calculateOpacity = (yValue: number) => {
-        const distanceFromBottom = height - margin.bottom - yValue;
-        return Math.max(0.1, 1 - (distanceFromBottom / (height - margin.bottom)));
-    };
     const stringList = data.map((d) => String(d.timestamp));
-    const formatMonth = utcFormat("%b");
-    const formatDay = utcFormat("%m/%d");
     const timeMin = Math.min(...data.map(d => +d.rsi));
     const timeMax = Math.max(...data.map(d => +d.rsi));
     const yDomain = yBuffered(timeMin, timeMax);
     const yRange = [height - margin.top, 0 + margin.bottom]
-    const xRange = [margin.left, width - margin.right]
+    const xRange = [mobile_margin.right*2, width - margin.right]
 
     const svg = create("svg")
       .attr("width", width)
@@ -42,7 +30,6 @@ ticker: string, time: string): string => {
     // add axis
     svg.xAxisGenerator(width, height, stringList, xRange);
     svg.yAxisGenerator(width, yDomain, yRange);
-
 
     const rsiLine = line<rsiDataPoint>()
         .x(d => x(String(d.timestamp))! + x.bandwidth() / 2)
