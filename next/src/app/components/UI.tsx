@@ -13,7 +13,7 @@ const UI: React.FC<
   { editor: boolean, click: (event: any)  => void }> = ({editor, click}) => { 
 
   /* Function Scoped Variable for Rendering Button */  
-  const [posn, setPosn] = useState<{x: number, y: number}>({x: 35, y: 40});
+  const [posn, setPosn] = useState<{x: number, y: number}>({x: 80, y: 40});
 
   const Button = () => {
 
@@ -23,7 +23,7 @@ const UI: React.FC<
   const wrappedClick = (event: any) => {
     if (buttonRef.current) { 
       const newPosn = buttonRef.current.getBoundingClientRect();
-      if (Math.abs(newPosn.left - posn.x) > 40) {
+      if (Math.abs(newPosn.left - posn.x) > 40 || Math.abs(newPosn.top - posn.y) > 40) {
         setPosn({x: newPosn.left, y: newPosn.top})}}
     click(event);
   }
@@ -38,21 +38,21 @@ const UI: React.FC<
   enableResizing={resize_config} default={buttonPosition} className="handle">
     <div className="handle flex items-center justify-center w-[0rem] h-[0rem]
     border-2 border-dfGray rounded-md cursor-move bg-opacity-0 
-    bg-dfYellow border-opacity-35 sm:desktop-outer-button">
+    bg-dfYellow border-opacity-35 md:desktop-outer-button">
       <div className="z-2">
-        <div className="absolute top-2 left-2 opacity-50 hidden sm:block">
+        <div className="absolute top-2 left-2 opacity-65 hidden md:block">
           <Icon w={18} h={18}/>
         </div>
-        <button className="btn mobile-UI-button w-[3rem] h-[3rem] bg-dfYellow
-        rounded-full bg-opacity-95 sm:desktop-button-styles
+        <button className="btn w-[3rem] h-[3rem] bg-dfYellow
+        rounded-full bg-opacity-95 md:desktop-button-styles
         border-2 border-dfGold border-opacity-25"
         ref={buttonRef}
         onClick={wrappedClick} >
           <div className="sm:h-[3rem]">
             <span className="absolute text-dfWhiteTwo text-[1.5rem]
-            left-[-.33rem] top-[-1.075rem] sm:desktop-button-logo-f">F</span>
+            left-[-.33rem] top-[-1.075rem] md:desktop-button-logo-f">F</span>
             <span className="absolute text-dfWhiteTwo top-[-2.05rem] left-[-.95rem] 
-            text-[2.95rem] hover:cursor-not-allowed sm:desktop-button-logo-d">ᗡ</span>
+            text-[2.95rem] md:desktop-button-logo-d">ᗡ</span>
           </div>
         </button>
       </div>
@@ -130,7 +130,7 @@ const UI: React.FC<
 
 
       return (
-      <div className="mt-[.05rem]">
+      <div className="">
         <input
         ref={searchRef}
         type="text"
@@ -153,9 +153,9 @@ const UI: React.FC<
           </div>)
         }
         { results.length === 0 && (
-          <div className="hidden sm:user-guide-styles">
-            Click a stock in the menu to edit, search using the searchbar to
-            find new stocks
+          <div className="hidden md:user-guide-styles">
+            Click a stock in the menu to edit & begin a search, 
+            tap outside of the menu to close it.
           </div>)
         }
       </div>
@@ -221,7 +221,7 @@ const UI: React.FC<
       <div className={`flex flex-row`}>
         <div className="absolute text-dfWhiteTwo text-opacity-75 text-[2.35rem] mt-[.7rem] 
         overflow-hidden z-0 sm:desktop-bg-text cursor-default pointer-events-none">
-          { stocks[index].ticker }
+          { stocks[index].ticker.toUpperCase() }
         </div>
         <div className="absolute ml-[.3rem] mt-[3.35rem] text-[.75rem] z-0
         overflow-hidden cursor-default text-overflow-hidden sm:desktop-company-text">
@@ -298,7 +298,7 @@ const UI: React.FC<
           { (stocks.length < 5) && (
             <div className={`text-sm sm:text-lg border-t border-l border-r
             rounded-t-xl overflow-hidden px-2 pb-[.1rem] border-dfYellow 
-            text-dfGold text-opacity-75
+            text-dfGold text-opacity-75 
             ${stocks.length > 1 ? "hidden sm:block" : ""}`}
             onClick={AddStock} title="">
               + stock
@@ -309,7 +309,7 @@ const UI: React.FC<
     );
   }
 
-return (<div className="absolute w-full h-full flex flex-col items-center"> 
+return (<div className="absolute w-full h-full flex flex-col items-center select-none"> 
           {editor? <Editor /> : <Button />} 
         </div>);
 }
