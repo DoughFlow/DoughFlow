@@ -1,12 +1,6 @@
 import { volDataPoint } from "../fetchData";
-import {
-    scaleBand, scaleLinear, axisBottom, axisLeft, utcMonday, utcMonth,
-    utcFormat, format, create
-} from "d3";
-import { 
-    margin, yBuffered, centTick, tensTick, fivesTick, onesTick, yearTick,
-    threeMonthsTick, monthTick, weekStartTick, dayTick, C
-} from "./Generate";
+import { scaleBand, scaleLinear, create } from "d3";
+import { margin, yBuffered, C, mobile_margin } from "./Generate";
 
 export const volSvg = (data: volDataPoint[], height: number, width: number,
 ticker: string, time: string): string => {
@@ -16,15 +10,14 @@ ticker: string, time: string): string => {
         return Math.max(0.1, 1 - (distanceFromBottom / (height - margin.bottom)));
     };
   ***/
+    const barWidth = width / (data.length * 1.75); // Same as candleWidth
+    const barOffset = barWidth / 2;
     const stringList = data.map((d) => String(d.timestamp));
-    const formatMonth = utcFormat("%b");
-    const formatDay = utcFormat("%m/%d");
     const timeMin = Math.min(...data.map(d => +d.vol));
     const timeMax = Math.max(...data.map(d => +d.vol));
     const yDomain = yBuffered(timeMin, timeMax);
-    console.log(yDomain);
     const yRange = [height - margin.top, margin.bottom];
-    const xRange = [margin.left, width - margin.right];
+    const xRange = [mobile_margin.left, width - mobile_margin.right];
     const y = scaleLinear()
         .range(yRange)
         .domain(yDomain);
@@ -44,18 +37,38 @@ ticker: string, time: string): string => {
     svg.xAxisGenerator(width, height, stringList, xRange);
     svg.yAxisGenerator(width, yDomain, yRange);
 
+    // Define the gradients dynamically
+    data.forEach((d, i) => {
+        const barHeight = height - mobile_margin.bottom - y(d.vol);
+        const grad = svg.append("defs")
+            .append("linearGradient")
+            .attr("id", `grad${i}`)
+            .attr("x1", "0%")
+            .attr("x2", "0%")
+            .attr("y1", "0%")
+            .attr("y2", "100%");
+
+        grad.append("stop")
+            .attr("offset", "0%")
+            .attr("stop-color", `${C.dfYellow}`)
+            .attr("stop-opacity", 0.6);
+
+        grad.append("stop")
+            .attr("offset", "100%")
+            .attr("stop-color", `${C.dfYellow}`)
+            .attr("stop-opacity", 0.01);
+    });
+
     svg.selectAll(".bar")
         .data(data)
         .enter().append("rect")
         .attr("class", "bar")
-        .attr("x", d => x(String(d.timestamp))!)
-        .attr("width", x.bandwidth())
+        .attr("x", d => x(d.timestamp)! + x.bandwidth() / 2 - barOffset)
+        .attr("width", barWidth)
         .attr("y", d => y(d.vol))
-        .attr("height", d => height - y(d.vol))
-        .attr("fill", `${C.dfBrown}`)
-        // removed while making axis
-        // .attr("opacity", d => calculateOpacity(y(d.vol)));
-        .attr("opacity", 0.7);
+        .attr("height", d => height - margin.bottom - y(d.vol))
+        .style("fill", (d, i) => `url(#grad${i})`);
+
     const svgNode = svg.node();
     if (svgNode === null) {
         console.error("Failed to create SVG node");
