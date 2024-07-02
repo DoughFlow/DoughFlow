@@ -43,14 +43,18 @@ ticker: string, time: string): string => {
     svg.xAxisGenerator(width, height, stringList, xRange);
     svg.yAxisGenerator(width, yDomain, yRange);
 
-          svg.append("path")
-          .datum(data)
-          .attr("fill", "none")
-          .attr("stroke", "steelblue")
-          .attr("stroke-width", 1.5)
-          .attr("d", line()
-            .x(d => d.timestamp)
-            .y(d => d.sma));
+
+    const rsiLine = line<rsiDataPoint>()
+        .x(d => x(String(d.timestamp))! + x.bandwidth() / 2)
+        .y(d => y(+d.rsi));
+     svg.append("path")
+        .datum(data)
+        .attr("class", "line")
+        .style("stroke", "#996F4F")
+        .style("stroke-width", "3px")
+        .style("fill", "none")
+        .attr("d", rsiLine);
+
     const svgNode = svg.node();
     if (svgNode === null) {
         console.error("Failed to create SVG node");
