@@ -26,13 +26,13 @@
 
   {/* Button Component */}
   .desktop-outer-button {
-    @apply w-[11rem] h-[8.5rem] bg-dfYellow bg-opacity-90 border-2
-    border-dfGold border-opacity-25 ;
+    @apply w-[10.5rem] h-[8rem] bg-dfGray bg-opacity-10 border-2
+    border-dfGold border-opacity-15 ;
   }
 
   .desktop-button-styles {
-    @apply rounded-sm w-[7rem] h-[4.85rem] border-2 border-dfGray
-    border-opacity-60 ;
+    @apply rounded-sm w-[6rem] h-[4rem] border-2 border-dfBrown
+    border-opacity-40 ;
   }
 
   .desktop-ui-layout {
@@ -62,7 +62,7 @@
   }
 
   .desktop-company-text {
-    @apply text-[.55rem] max-w-[11rem] mt-[5.5rem] ml-[.15rem] ;
+    @apply text-[.7rem] max-w-[11rem] mt-[5.6rem] ml-[.15rem] leading-[.6rem];
   }
 
   .desktop-dropdown-styles {
@@ -77,15 +77,15 @@
   .desktop-dropdown-styles-v {
     @apply flex-none text-[1.45rem] text-dfGray font-bold border-2 bg-dfYellow
     w-[4.55rem] h-[1.65rem] flex flex-row items-center mx-0 bg-opacity-55
-    ml-[0.5rem];
+    ml-[0.5rem] justify-center;
   }
   .desktop-button-logo-f {
-    @apply text-[3.5rem] top-[2.65rem] left-[4.65rem] leading-[3rem] 
+    @apply text-[3rem] top-[2.45rem] left-[4.55rem] leading-[3rem] 
     pointer-events-none inline-block;
   }
   
   .desktop-button-logo-d {
-    @apply text-[6rem] leading-[3rem] top-[2.5rem] left-[3.15rem] inline-block
+    @apply text-[5rem] leading-[3rem] top-[2.3rem] left-[3.35rem] inline-block
     pointer-events-none;
   }
 
@@ -94,7 +94,7 @@
   }
 
   .user-guide-styles {
-    @apply absolute flex text-dfWhiteTwo text-[.85rem] bg-dfGray w-[18rem] 
+    @apply absolute flex text-dfWhiteTwo text-[.825rem] bg-dfGray w-[18rem] 
     px-2 ml-[1rem] mt-[.8rem];
   }
 

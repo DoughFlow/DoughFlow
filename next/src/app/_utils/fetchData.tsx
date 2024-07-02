@@ -10,7 +10,7 @@ export interface PriceDataPoint {
 
 export interface volDataPoint {
   timestamp: string;
-  vol:  string;
+  vol:  number;
 }
 
 export interface smaDataPoint {
@@ -22,6 +22,25 @@ export interface rsiDataPoint {
   timestamp: string;
   rsi: string;
 }
+
+export interface jointInterface {
+  
+}
+
+export const fetchData = async (ticker: string, time: string, value: string) => {
+  switch(value) {
+    case "price":
+      return fetchPriceData(ticker, time, value);
+    case "vol":
+      return fetchVolData(ticker, time, value);
+    case "sma":
+      return fetchSmaData(ticker, time, value);
+    case "rsi":
+      return fetchRsiData(ticker, time, value);
+    default:
+      throw new Error("Invalid data type");
+  }
+};
 
 export const fetchPriceData = async (ticker: string, time: string, value: string): Promise<PriceDataPoint[]> => {
   const res = await fetch(`http://dough-flow.com/api/${ticker}/${time}`);

@@ -7,6 +7,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'sm': '450px' ,
+      'md': '935px',
+    },
     colors: {
       'dfyellow': '#FFBB84', // legacy-code support
       'dfBrown': '#99775E',
