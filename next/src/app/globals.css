@@ -21,13 +21,25 @@
   }
 
   .desktop-info-header {
-    @apply text-[4rem] ;
+    @apply text-[5rem] ;
   }
 
   .desktop-info-page {
-    @apply text-[3rem] ;
+    @apply mx-[18rem];
   }
-  
+
+  .desktop-technologies-list {
+    @apply text-[2rem];
+  }
+
+  .desktop-hero {
+    @apply w-[26rem] mx-[3rem] ;
+  }
+
+  .desktop-notable-work {
+    @apply text-[1.15rem] ml-3;
+  }
+
 }
 
 @layer components {
