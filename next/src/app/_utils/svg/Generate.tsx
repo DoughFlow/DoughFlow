@@ -97,14 +97,14 @@ d3.selection.prototype.xAxisGenerator = function<T extends d3.BaseType, Datum, P
       svg.xTickGenerator("days", 0, height, xDomain, xRange, true)
       svg.xTickGenerator("weeks", 26, height, xDomain, xRange, false)}
     else if (len < 80) {
-      svg.xTickGenerator("weeks", 14, height, xDomain, xRange, true)
+      svg.xTickGenerator("weeks", 0, height, xDomain, xRange, true)
       svg.xTickGenerator("months", 32, height, xDomain, xRange, false)}
     else if (len < 180) {
       svg.xTickGenerator("weeks", 0, height, xDomain, xRange, true)
       svg.xTickGenerator("months", 18, height, xDomain, xRange, false)}
     else if (len < 280) {
       svg.xTickGenerator("years", 18, height, xDomain, xRange, false)
-      svg.xTickGenerator("months", 16, height, xDomain, xRange, false)}
+      svg.xTickGenerator("months", 12, height, xDomain, xRange, false)}
     else {
       svg.xTickGenerator("threeMonths", 18, height, xDomain, xRange, false)
       svg.xTickGenerator("years", 18, height, xDomain, xRange, false)}
@@ -232,7 +232,7 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
             .attr("opacity", 0.24)
             .selectAll(".tick line")
             .attr("stroke", `${C.dfGold}`);
-        weekTicks.forEach(tick => {
+        weekTicks.slice(0,-1).forEach(tick => {
             const tickDate = new Date(tick);
             const label = formatDay(tickDate);
             svg.append("text")
@@ -289,7 +289,7 @@ d3.selection.prototype.xTickGenerator = function<T extends d3.BaseType, Datum, P
                 .attr("x", x(tick)! + 4)
                 .attr("y", height - mobile_margin.bottom)
                 .attr("transform",
-                initTextRight ? (initTextRight = false, "translate(12, 0)") : null)
+                initTextRight ? (initTextRight = false, "translate(0, 0)") : null)
                 .attr("text-anchor", "left")
                 .attr("fill", "#FFE4D1") // can fill with hex #000000
                 .style("font-size", `${textSize}px`)
