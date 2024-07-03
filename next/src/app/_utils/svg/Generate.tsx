@@ -97,7 +97,7 @@ d3.selection.prototype.xAxisGenerator = function<T extends d3.BaseType, Datum, P
       svg.xTickGenerator("days", 0, height, xDomain, xRange, true)
       svg.xTickGenerator("weeks", 26, height, xDomain, xRange, false)}
     else if (len < 80) {
-      svg.xTickGenerator("weeks", 14, height, xDomain, xRange, true)
+      svg.xTickGenerator("weeks", 0, height, xDomain, xRange, true)
       svg.xTickGenerator("months", 32, height, xDomain, xRange, false)}
     else if (len < 180) {
       svg.xTickGenerator("weeks", 0, height, xDomain, xRange, true)
