@@ -19,6 +19,14 @@
   .ui-container {
     @apply absolute flex items-center w-full;
   }
+
+  .desktop-info-header {
+    @apply text-[4rem] ;
+  }
+
+  .desktop-info-page {
+    @apply text-[3rem] ;
+  }
   
 }
 
@@ -97,7 +105,6 @@
     @apply absolute flex text-dfWhiteTwo text-[.825rem] bg-dfGray w-[18rem] 
     px-2 ml-[1rem] mt-[.8rem];
   }
-
 }
 
 @layer utilities {
