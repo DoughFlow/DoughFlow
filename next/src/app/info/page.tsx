@@ -10,9 +10,11 @@ const Info = () => {
   <div className="drop-shadow-2xl min-w-screen bg-dfBrown text-[2.25rem]
   text-dfWhite py-[.75rem] flex flex-row justify-center items-center border-b-[.55rem] 
   border-dfGold border-opacity-70 sticky md:desktop-info-header">
-    <div>
-      DoughFlow
-    </div>
+    <a href="/">
+      <div>
+        DoughFlow
+      </div>
+    </a>
     <a href="https://github.com/DoughFlow/DoughFlow" title="Check out our GitHub!">
       <Image src="/github-mark-white.png" alt="GitHub Link" width={40} height={40}
       className="ml-[.55rem] flex md:hidden"/>
@@ -100,42 +102,43 @@ const Info = () => {
             Notable Work:
           </li>
           <li>
-            -one thang
+            -AWS Organizer
           </li>
           <li>
-            -one thang
+            -API + Database
           </li>
           <li>
-            -one thang
+            -Visualiztion
           </li>
           <li>
-            -one thang
+            -Data Validation
           </li>
         </ul>
       </div>
       <div className="w-[11rem] bg-dfYellow bg-opacity-75 rounded-sm
       md:desktop-hero">
         <a href="">
-          <h1 className="flex justify-center items-center md:text-[3rem]">
-            Jack Messerli-
-          </h1>
-          <h1 className="flex justify-center items-center md:text-[3rem]">
-            Wallace
+          <h1 className="flex justify-center items-center md:text-[2.25rem]
+          leading-[4.5rem]">
+            Jack Messerli-Wallace
           </h1>
         </a>
           <h2 className="bg-dfGray bg-opacity-75 mx-[.25rem] text-[.75rem] px-1 
           flex justify-center md:text-[1.25rem]">
-            NextJS framework specialist + Math Guru
+            Front-End Researcher
           </h2>
         <ul className="ml-[.33rem] text-[.85rem] md:desktop-notable-work">
           <li>
             Notable Work:
           </li>
           <li>
-            -one thang
+            -Product Presentations
           </li>
           <li>
-            -one thang
+            -Initial Candle Design
+          </li>
+          <li>
+            -NextJS Router Setup
           </li>
         </ul>
       </div>
@@ -158,13 +161,16 @@ const Info = () => {
             Notable Work:
           </li>
           <li>
-            -one thang
+            -User Interface
           </li>
           <li>
-            -one thang
+            -Visualization
           </li>
           <li>
-            -one thang
+            -Git Master
+          </li>
+          <li>
+            -Database Population (ETL)
           </li>
         </ul>
       </div>
@@ -177,17 +183,17 @@ const Info = () => {
         </a>
           <h2 className="bg-dfGray bg-opacity-75 mx-[.25rem] text-[.75rem] px-1
           flex justify-center md:text-[1.25rem]">
-            IAC Research Lead
+            Deployment Pipeline Researcher
           </h2>
         <ul className="ml-[.33rem] text-[.85rem] md:desktop-notable-work">
           <li>
             Notable Work:
           </li>
           <li>
-            -one thang
+            -GitHub actions
           </li>
           <li>
-            -one than
+            -nginx upstream configs
           </li>
         </ul>
       </div>
